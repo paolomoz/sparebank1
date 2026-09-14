@@ -16,7 +16,7 @@ import { richtext } from '../encoders.mjs';
 import { quoteHtml } from './news-article.mjs';
 
 const { section, block, q, qa, cls, esc, inline, txt, pic } = L;
-const varOf = (el, name) => { const m = (el?.getAttribute('style') || '').match(new RegExp(`${name}:\\s*url\\(\\s*["']?([^"')]+)`)); return m ? m[1] : null; };
+const varOf = (el, name) => { const st = el?.getAttribute('style') || ''; const m = st.match(new RegExp(`${name}:\\s*url\\(\\s*(["'])(.*?)\\1\\s*\\)`)) || st.match(new RegExp(`${name}:\\s*url\\(\\s*([^"')]+)`)); return m ? (m[2] ?? m[1]) : null; }; // quoted urls may contain parentheses
 
 /** live richtext inside a story card / text module: `<p><span class="h5">…</span></p>` is a pseudo-heading → h5 (site-wide ROLE SWAP rule);
  *  h1/h2 keep their rank; `.ta-center` on the only heading is reported to the caller for the section style. */

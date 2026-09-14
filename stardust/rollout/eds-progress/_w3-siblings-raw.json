@@ -395,7 +395,8 @@
    ]
   },
   "notes": [
-   "cards nav: 5 visual-nav modules (5 photo, 0 icon) folded into one block — one row per card"
+   "cards nav: 5 visual-nav modules (5 photo, 0 icon) folded into one block — one row per card",
+   "shortcuts: hub-style markup (button pills) read from .shortcuts__item — same block shape as the core (heading + link list)"
   ],
   "lintJustifications": [
    "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
@@ -437,6 +438,7 @@
    "undefined: authored inside a columns-grid column on live — a columns cell cannot hold a block, so it follows the columns block as a sibling (layout stacks; content complete)",
    "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)",
    "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "shortcuts: hub-style markup (button pills) read from .shortcuts__item — same block shape as the core (heading + link list)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/pall.svg is 86953 bytes of SVG (> 40000) — authored as DA media pall.png (rasterised)",
    "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
@@ -914,6 +916,7 @@
   "notes": [
    "price-terms: the overlay link targets its own module anchor on live (bank chooser dialog) — kept verbatim, no-op until the dialog dynamic exists",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg is 69217 bytes of SVG (> 40000) — authored as DA media mann-bil-tre.png (rasterised)",
+   "shortcuts: hub-style markup (button pills) read from .shortcuts__item — same block shape as the core (heading + link list)",
    "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [

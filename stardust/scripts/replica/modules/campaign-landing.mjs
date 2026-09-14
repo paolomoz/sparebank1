@@ -15,9 +15,9 @@ const has = (n, c) => n?.classList?.contains(c);
 const mobileBackgrounds = (slug) => {
   const map = { 'nb-bank-om-oss-hjemme-html': 'hjemme-360-detail.json' };
   if (!map[slug]) return [];
-  try { const L = JSON.parse(fs.readFileSync(new URL(`../../../replica/lift/${map[slug]}`, import.meta.url), 'utf8')); return (L['.image__background'] || []).map((e) => { const m = String(e.style?.backgroundImage || '').match(/url\(\s*["']?([^"')]+)/); return m ? m[1] : null; }); } catch { return []; }
+  try { const L = JSON.parse(fs.readFileSync(new URL(`../../../replica/lift/${map[slug]}`, import.meta.url), 'utf8')); return (L['.image__background'] || []).map((e) => { const m = String(e.style?.backgroundImage || '').match(/url\(\s*(["'])(.*?)\1\s*\)/) || String(e.style?.backgroundImage || '').match(/url\(\s*([^"')]+)/); return m ? m[1] : null; }); } catch { return []; }
 };
-const bgUrl = (n) => { const m = (n?.getAttribute('style') || '').match(/url\(\s*["']?([^"')]+)/); return m ? m[1] : null; };
+const bgUrl = (n) => { const st = n?.getAttribute('style') || ''; const m = st.match(/url\(\s*(["'])(.*?)\1\s*\)/) || st.match(/url\(\s*([^"')]+)/); return m ? (m[2] ?? m[1]) : null; }; // quoted urls may contain parentheses
 
 export default {
   'sb1-story__body'(node, ctx) {

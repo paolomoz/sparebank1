@@ -1,27 +1,9 @@
 {
-  "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen": {
+  "/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T21:21:46.266Z",
-    "put": 201,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T21:21:46.266Z",
-    "put": 201,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss/nyheter/bruk-mobilbanken-fa-kontroll-pa-okonomien": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T21:21:52.954Z",
-    "put": 201,
+    "ts": "2026-09-14T21:23:25.516Z",
+    "put": 200,
     "preview": 200,
     "live": 200,
     "verify": "ok"

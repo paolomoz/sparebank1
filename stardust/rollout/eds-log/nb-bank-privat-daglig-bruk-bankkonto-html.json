@@ -79,10 +79,11 @@
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
   "cards nav: 5 visual-nav modules (5 photo, 0 icon) folded into one block — one row per card",
+  "shortcuts: hub-style markup (button pills) read from .shortcuts__item — same block shape as the core (heading + link list)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T21:21:16.948Z"
+ "writtenAt": "2026-09-14T21:22:51.051Z"
 }

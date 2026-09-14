@@ -234,7 +234,14 @@ const ENC_INLINE = { 'price-terms': priceTerms, disclosure, steps, 'accordion-mo
 const hasNew = (root) => !!q(root, NEW_KINDS);
 
 // family-gated wrappers installed on the CORE map (see header): the original core encoders stay the fallback for every other page
-const coreBand = CORE.band, coreCols = CORE.cols, coreFaq = CORE.faq, coreTip = CORE.tip, coreModule = CORE.module, coreReference = CORE.reference, coreCalculator = CORE.calculator, coreRelated = CORE['related-products'], coreBanner = CORE['banner-small'], coreRichtext = CORE.richtext;
+const coreBand = CORE.band, coreCols = CORE.cols, coreFaq = CORE.faq, coreTip = CORE.tip, coreModule = CORE.module, coreReference = CORE.reference, coreCalculator = CORE.calculator, coreRelated = CORE['related-products'], coreBanner = CORE['banner-small'], coreRichtext = CORE.richtext, coreShortcuts = CORE.shortcuts;
+/** shortcuts: category-hub.mjs authors the hub markup (.shortcuts__title h2 + .shortcuts__item a.btn--shortcut) on every family; the core reader expects .shortcuts__link → 0 links (silent content loss on bankkort/billan/bankkonto) */
+function productShortcuts(root, ctx, opts) {
+  if (!isProductSibling(ctx) || q(root, '.shortcuts__link') || !q(root, '.shortcuts__item a')) return coreShortcuts(root, ctx, opts);
+  const parts = [heading(q(root, 'h2'), ctx), `<ul>${qa(root, '.shortcuts__item a').map((a) => `<li><a href="${esc(href(a.getAttribute('href') || ''))}">${esc(L.txt(q(a, '.btn__label')) || L.txt(a))}</a></li>`).join('')}</ul>`];
+  ctx.notes.push('shortcuts: hub-style markup (button pills) read from .shortcuts__item — same block shape as the core (heading + link list)');
+  return { html: section([block('shortcuts', [], [[parts.join('')]])], { style: 'gap-72' }), blocks: ['shortcuts'] };
+}
 /** the hub-style related-products (icon card list — category-hub.mjs authors it on every family) → heading + `cards small`; the core reads .newsfeed cards only (0 rows = silent content loss) */
 function productRelated(root, ctx, opts) {
   if (!isProductSibling(ctx) || !q(root, '.card-list')) return coreRelated(root, ctx, opts);
@@ -265,6 +272,7 @@ const wrapped = {
   // tip: the live `ffe-message-box--tips` (lightbulb in a sol ring, sand box) is recognised by its Material icon path → callout variant `tips lightbulb`
   'related-products': productRelated,
   richtext: productRichtext,
+  shortcuts: productShortcuts,
   // top-level banner-small on product siblings: the live module sits 72px (48 mobile) under the previous module
   'banner-small': (root, ctx, opts) => { const r = coreBanner(root, ctx, opts); if (r && isProductSibling(ctx) && !opts?.inline && root.parentElement?.tagName === 'MAIN') r.html = r.html.replace(/<\/div>\s*$/, `${L.sectionMeta({ style: 'gap-72' })}</div>`); return r; },
   tip: (root, ctx, opts) => { const r = coreTip(root, ctx, opts); if (r && isProductSibling(ctx)) { ctx.notes.push('lint D1 callout: the FFE message box (round glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell'); if (q(root, '.tip__icon svg path[d^="M480-80q-33.67"]')) { r.html = r.html.replace('class="callout tip"', 'class="callout tips lightbulb"'); ctx.notes.push('callout tips lightbulb: the live message box is the `tips` kind (lightbulb glyph, sol ring, sand box) — carried as block variants'); } } return r; },

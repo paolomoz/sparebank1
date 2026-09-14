@@ -34,11 +34,10 @@
   "story: unmodelled live component (sb1-story columns-noColor / columns-bgColor: figure + caption, pseudo-heading text, button group — the replica module carries it as a verbatim copy) emitted as default content; needs a live lift before production",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
-  "story: unmodelled live component (sb1-story columns-noColor / columns-bgColor: figure + caption, pseudo-heading text, button group — the replica module carries it as a verbatim copy) emitted as default content; needs a live lift before production",
-  "template: news-article → campaign-landing (W5 _w5-template-fix.mjs — the live page is an sb1-story; roster misclassification filed in eds-requests.md)"
+  "story: unmodelled live component (sb1-story columns-noColor / columns-bgColor: figure + caption, pseudo-heading text, button group — the replica module carries it as a verbatim copy) emitted as default content; needs a live lift before production"
  ],
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:43:36.872Z"
+ "writtenAt": "2026-09-14T21:23:25.444Z"
 }
