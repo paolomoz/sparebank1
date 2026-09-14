@@ -1,0 +1,74 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-html",
+ "daPath": "/nb/bank/bedrift/kundeservice",
+ "file": "content/nb/bank/bedrift/kundeservice.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns",
+    "cards"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns",
+    "accordion"
+   ]
+  },
+  {
+   "module": "tip",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards",
+    "columns"
+   ]
+  },
+  {
+   "module": "banner-small",
+   "blocks": [
+    "banner"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "columns",
+  "cards",
+  "accordion",
+  "callout",
+  "banner"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "columns chat: the boost.ai entry field (dynamics #6 interim, no backend) — the trailing paragraph of the last cell is the field label (EW8: the authored <p> moves into the <label>); \"Send melding\" is fixed control chrome",
+  "cards grid: consecutive same-shaped card rows folded into one block (D9)",
+  "lint D1 callout: the FFE message box (round icon overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T19:52:18.581Z"
+}

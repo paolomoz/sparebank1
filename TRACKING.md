@@ -1,15 +1,15 @@
 # Tracking — sparebank1 (Flow A: replica → EDS)
 
-Updated: 2026-09-14T20:50:00Z
+Updated: 2026-09-14T21:40:00Z
 
 | phase | status | evidence |
 |---|---|---|
 | 0 EDS repo | done | fstab.yaml, status.jsonl (eds-new-site), https://main--sparebank1--paolomoz.aem.live/ 200 |
 | 1 extract (100 pages) | done | stardust/current/_prep-summary.md · 100/100 live · vision 95 ok / 5 recaptured |
 | 2 preserve direction + dynamics triage | done | stardust/direction.md · stardust/replica/inconsistency-register.md · stardust/dynamic-features.md (20 features, decision batch) |
-| 3 recreate archetypes | 10/13 approved (product, category-hub, kundeservice-hub, market-landing, faq, utility, tool, news-article, news-listing, campaign-landing); om-oss / theme / markedsnytt-listing in progress (worker C) | stardust/prototypes/*-proposed.html · scripts/replica/author.mjs + modules/<family>.mjs · stardust/replica/progress.json |
-| 4 source-fidelity gates | 10/10 approved archetypes PASS (pixel 0.23–7.94 %, Δh ≤ 2, chrome ≥ 98 %; market-landing hero rotation + campaign video justified) | stardust/replica/progress.json · gates/<short>-{1440,360} |
-| 5 EDS conversion + deploy | product LIVE: https://main--sparebank1--paolomoz.aem.live/nb/bank/privat/lan/boliglan — published gate 1440 0.52 % / 360 1.83 % Δ0; W1 (landing) + W2 (service) converting 6 families under stardust/rollout/EDS-BRIEF.md; C/D families next; siblings + full rollout + qa pending | content/**, blocks/**, stardust/rollout/{eds-log,deploy-ledger.json,svg-sizes.json} |
+| 3 recreate archetypes | done — 13/13 approved (hands-off) | stardust/prototypes/*-proposed.html · scripts/replica/author.mjs + modules/<family>.mjs · stardust/replica/progress.json |
+| 4 source-fidelity gates | 13/13 PASS (pixel 0.23–7.94 %, Δh ≤ 3, chrome ≥ 98 %; market-landing hero rotation, campaign video, markedsnytt YouTube placeholder justified) | stardust/replica/progress.json · gates/<short>-{1440,360} |
+| 5 EDS conversion + deploy | product LIVE: https://main--sparebank1--paolomoz.aem.live/nb/bank/privat/lan/boliglan — published gate 1440 0.52 % / 360 1.83 % Δ0; W1 landing · W2 service · W3 product siblings · W4 om-oss/theme/markedsnytt · W5 frontend families converting under stardust/rollout/EDS-BRIEF.md; siblings + full rollout + qa pending | content/**, blocks/**, stardust/rollout/{eds-log,deploy-ledger.json,svg-sizes.json} |
 | Flow B redesign (sibling project) | in progress — agent seeding ../sparebank1-redesign, direct + prepare-migration (13 archetype prototypes), stops before migrate | ../sparebank1-redesign/stardust/{direction.md,journal.md} |
 
 ## Decisions
