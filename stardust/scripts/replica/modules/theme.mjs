@@ -23,7 +23,7 @@ export default {
   referance(node, ctx) {
     const { el, richtext, moduleOf } = ctx;
     const s = el('section', { class: 'reference' });
-    if (ctx.family !== 'theme' || !node.querySelector('.columns-grid')) { for (const t of node.querySelectorAll('.text')) s.append(richtext(t)); return s; }
+    if (!FEATURED_FAMILIES.has(ctx.family) || !node.querySelector('.columns-grid')) { for (const t of node.querySelectorAll('.text')) s.append(richtext(t)); return s; }
     for (const ch of (node.querySelector('.cq-dd-paragraph') || node).children) { const m = moduleOf(ch); if (m) s.append(m); }
     return s;
   },

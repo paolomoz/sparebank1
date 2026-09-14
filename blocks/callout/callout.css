@@ -1,0 +1,19 @@
+/* callout — lifted from stardust/prototypes/css/category-hub.css (.tip.tip--small, .tip__col/.tip__box/.tip__icon/.tip__body) */
+main .section .callout-wrapper { max-width: 640px; }
+.callout { display: flex; justify-content: center; }
+.callout .callout__box { display: block; width: 100%; max-width: 480px; padding-top: 16px; line-height: 0; text-align: center; }
+.callout .callout__icon { position: relative; bottom: -16px; display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; margin: 0 0 -13px; border: 2px solid var(--vann); border-radius: 50%; background: var(--white); color: var(--vann); vertical-align: top; line-height: 0; }
+.callout .callout__icon svg { width: 56px; height: 56px; }
+.callout .callout__body { display: block; padding: 40px 32px; border-radius: 8px; background: var(--frost-30); color: var(--text); line-height: 24px; text-align: center; }
+.callout.tips .callout__body { background: var(--sand-30); }
+.callout .callout__body > :first-child { margin-top: 0; }
+.callout .callout__body :is(h2, h3, h4) { margin: 0 0 8px; font-family: var(--font-medium); font-size: 17px; line-height: 20px; color: var(--text); text-align: center; }
+.callout .callout__body p { margin: 16px 0; text-align: center; }
+.callout .callout__body p.button-wrapper { margin: 40px 0 0; padding-bottom: 8px; }
+.callout .callout__body a.button:any-link { display: flex; width: 100%; min-height: 44px; margin: 0; padding: 8px 17px; border: 2px solid transparent; border-radius: 22px; background: transparent; color: var(--vann); }
+.callout .callout__body a.button:hover { background: transparent; color: var(--vann); text-decoration: underline; }
+
+@media (width >= 768px) {
+  .callout .callout__body :is(h2, h3, h4) { margin-bottom: 24px; font-size: 18px; line-height: 24px; }
+  .callout .callout__body a.button:any-link { display: inline-flex; width: auto; margin: 0 -4px; }
+}

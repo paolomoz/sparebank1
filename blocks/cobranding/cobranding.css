@@ -1,0 +1,22 @@
+/* cobranding — lifted from stardust/prototypes/css/category-hub.css (.cobranding*, .btn--expand) */
+.cobranding { text-align: center; }
+.cobranding .cobranding__header { position: relative; z-index: 1; }
+.cobranding .cobranding__heading { margin: 0 0 8px; font-family: var(--font-medium); font-size: 18px; line-height: 24px; color: var(--fjell); }
+.cobranding button.cobranding__toggle { display: flex; width: 100%; height: 44px; min-height: 44px; border-radius: 34px; }
+.cobranding .cobranding__toggle p { margin: 0; }
+.cobranding .cobranding__toggle .cobranding__close { display: none; line-height: 0; }
+.cobranding .cobranding__toggle--open .cobranding__label { display: none; }
+.cobranding .cobranding__toggle--open .cobranding__close { display: inline-flex; width: 24px; height: 24px; }
+.cobranding .cobranding__toggle--open .cobranding__close svg { width: 24px; height: 24px; }
+.cobranding .cobranding__panel { position: relative; margin-top: -20px; padding: 40px 10px 20px; background: var(--white); text-align: left; }
+.cobranding.sand .cobranding__panel { background: var(--sand-30); }
+.cobranding .cobranding__intro { max-width: var(--container); margin: 0 auto; }
+.cobranding .cobranding__intro img { width: auto; height: 60px; }
+.cobranding .cobranding__columns { display: flex; flex-wrap: wrap; gap: 16px; max-width: var(--container); margin: 0 auto; }
+.cobranding .cobranding__col { flex: 1 1 300px; }
+.cobranding .cobranding__col img { max-width: 100%; height: auto; }
+
+@media (width >= 768px) {
+  .cobranding .cobranding__heading { margin-bottom: 24px; font-size: 22px; line-height: 28px; }
+  .cobranding button.cobranding__toggle { display: inline-flex; width: auto; }
+}

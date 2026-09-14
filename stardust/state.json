@@ -1006,18 +1006,28 @@
    "archetypeFamily": "campaign-landing",
    "aemPageType": "",
    "clientlib": "frontend",
-   "status": "extracted",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
      "at": "2026-09-14T14:57:32.922Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T18:55:25Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T18:55:25Z",
+     "approvedBy": "hands-off",
+     "gate": "stardust/replica/progress/campaign-landing.json"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-om-oss-hjemme-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-hjemme-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-om-oss-hjemme-html-proposed.html",
    "migratedPath": null,
    "fidelityTier": "archetype",
    "archetypeSource": null,
@@ -1230,18 +1240,28 @@
    "archetypeFamily": "news-article",
    "aemPageType": "",
    "clientlib": "frontend",
-   "status": "extracted",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
      "at": "2026-09-14T14:58:54.553Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T18:55:25Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T18:55:25Z",
+     "approvedBy": "hands-off",
+     "gate": "stardust/replica/progress/news-article.json"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html-proposed.html",
    "migratedPath": null,
    "fidelityTier": "archetype",
    "archetypeSource": null,
@@ -1286,18 +1306,28 @@
    "archetypeFamily": "news-listing",
    "aemPageType": "",
    "clientlib": "frontend",
-   "status": "extracted",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
      "at": "2026-09-14T14:57:32.228Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T18:55:25Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T18:55:25Z",
+     "approvedBy": "hands-off",
+     "gate": "stardust/replica/progress/news-listing.json"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-om-oss-nyheter-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-nyheter-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-om-oss-nyheter-html-proposed.html",
    "migratedPath": null,
    "fidelityTier": "archetype",
    "archetypeSource": null,

@@ -63,11 +63,13 @@ footer .footer {
   transition: background-color 0.2s;
 }
 
+.footer .contact__icon { color: var(--white); } /* the inlined icon paints in currentColor */
 .footer .contact__icon .icon { display: block; height: 100%; }
 .footer .contact__icon svg {
   display: inline;
   width: 50px;
   height: 100%;
+  fill: currentColor;
 }
 
 .footer .contact__action:hover .contact__icon { background: var(--fjell); }

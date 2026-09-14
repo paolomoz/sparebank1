@@ -7,6 +7,7 @@
 .page--theme .richtext { display: flow-root; }
 .page--theme .richtext > p:first-child { margin-top: 16px; }
 .page--theme .main > .richtext { max-width: 620px; margin: 0 auto; padding: 0 20px; box-sizing: content-box; }
+.page--theme .main > .richtext.richtext--max { max-width: var(--max); }
 .page--theme .main > .richtext + .band { margin-top: 48px; }
 .page--theme .richtext--max { max-width: var(--max); margin-left: auto; margin-right: auto; }
 .page--theme .main-lead, .page--theme .lead, .page--theme .sub-lead-left, .page--theme .sub-lead { display: block; margin: 0 0 1em; text-wrap: pretty; }
@@ -49,9 +50,9 @@
 /* ---------------------------------------------------------------- tip = ffe-message-box--tips callout (utility.mjs handler output; tips colours) */
 .page--theme .main > .tip { max-width: none; margin: 48px 0 0; padding: 0 20px; border-radius: 0; background: transparent; text-align: center; }
 .page--theme .tip__col { display: flex; justify-content: center; max-width: var(--container); margin: 0 auto; }
-.page--theme .tip__box { width: 100%; padding-top: 16px; text-align: center; }
+.page--theme .tip__box { width: 100%; text-align: center; }
 .page--theme .tip--small .tip__box { max-width: 480px; }
-.page--theme .tip__icon { display: inline-flex; position: relative; align-items: center; justify-content: center; width: 64px; height: 64px; margin: 0 0 -16px; border: 2px solid #dc8000; border-radius: 50%; background: var(--white); color: #dc8000; }
+.page--theme .tip__icon { display: inline-flex; position: relative; align-items: center; justify-content: center; width: 64px; height: 64px; top: 16px; margin: 0 0 -16px; border: 2px solid #dc8000; border-radius: 50%; background: var(--white); color: #dc8000; }
 .page--theme .tip__icon svg { width: 40px; height: 40px; fill: currentColor; }
 .page--theme .tip__body { display: flow-root; padding: 40px 32px; border-radius: 8px; background: #f8e9dd; text-align: center; }
 .page--theme .tip__body h2 { margin: 0 0 8px; font-family: var(--font-medium); font-size: 17px; line-height: 20px; color: var(--text); }
@@ -85,6 +86,9 @@
 .page--theme .main > .image picture { display: inline; }
 .page--theme .main > .image .image__img { display: inline; vertical-align: baseline; width: 100%; max-width: 250px; }
 @media (min-width: 1024px) { .page--theme .main > .image { margin-top: 72px; } }
+
+/* links inside an authored-tahoma paragraph keep the site font on live (.text-wrapper a { font-family: var(--ffe-g-font) }) */
+.page--theme .richtext [style*="font-family"] a { font-family: 'SpareBank1-regular', arial, sans-serif; }
 
 /* live button-list items keep an 8px bottom margin at desktop too (canon only has it on mobile) */
 @media (min-width: 768px) { .page--theme .button-list .button-wrap { margin-bottom: 8px; } }
