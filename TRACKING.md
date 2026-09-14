@@ -1,6 +1,6 @@
 # Tracking — sparebank1 (Flow A: replica → EDS)
 
-Updated: 2026-09-14T21:40:00Z
+Updated: 2026-09-15T01:30:00Z
 
 | phase | status | evidence |
 |---|---|---|
@@ -9,8 +9,8 @@ Updated: 2026-09-14T21:40:00Z
 | 2 preserve direction + dynamics triage | done | stardust/direction.md · stardust/replica/inconsistency-register.md · stardust/dynamic-features.md (20 features, decision batch) |
 | 3 recreate archetypes | done — 13/13 approved (hands-off) | stardust/prototypes/*-proposed.html · scripts/replica/author.mjs + modules/<family>.mjs · stardust/replica/progress.json |
 | 4 source-fidelity gates | 13/13 PASS (pixel 0.23–7.94 %, Δh ≤ 3, chrome ≥ 98 %; market-landing hero rotation, campaign video, markedsnytt YouTube placeholder justified) | stardust/replica/progress.json · gates/<short>-{1440,360} |
-| 5 EDS conversion + deploy | product LIVE: https://main--sparebank1--paolomoz.aem.live/nb/bank/privat/lan/boliglan — published gate 1440 0.52 % / 360 1.83 % Δ0; W1 landing · W2 service · W3 product siblings · W4 om-oss/theme/markedsnytt · W5 frontend families converting under stardust/rollout/EDS-BRIEF.md; siblings + full rollout + qa pending | content/**, blocks/**, stardust/rollout/{eds-log,deploy-ledger.json,svg-sizes.json} |
-| Flow B redesign (sibling project) | in progress — agent seeding ../sparebank1-redesign, direct + prepare-migration (13 archetype prototypes), stops before migrate | ../sparebank1-redesign/stardust/{direction.md,journal.md} |
+| 5 EDS conversion + deploy | 58/100 pages + 12 chrome docs + redirects LIVE on https://main--sparebank1--paolomoz.aem.live (10 archetypes gated on the published origin: all ≤ 8.8 % pixel, Δh ≤ 2 except spacer-debris pages sperre-kort 48 / kundeservice 24, chrome ≥ 98 % except two 360 footers explained); pending: 29 product siblings (W3), om-oss/theme/markedsnytt 13 pages (W4); then QA sweep | content/**, blocks/**, stardust/rollout/{eds-log,deploy-ledger.json,svg-sizes.json} |
+| Flow B redesign (sibling project) | prep done — direction + 13/13 redesign prototypes approved (hands-off), canon, assets, dynamics reuse; migrate → rollout to paolomoz/sparebank1-redesign running (agent) | ../sparebank1-redesign/stardust/{direction.md,journal.md} |
 
 ## Decisions
 - D1 slug `sparebank1`; repo IS the stardust project root (experian pattern).

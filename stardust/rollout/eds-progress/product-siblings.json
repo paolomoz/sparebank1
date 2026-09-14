@@ -1,0 +1,817 @@
+{
+ "regime": "published-origin (local EDS emulation, stardust/scripts/eds/serve.mjs :3013, content/** + blocks) vs the cached live PNGs of 3 representative siblings (forbrukslan = price-and-terms, mobilbank = guide-carousel, vare-eksperter = contentfragmentlist); prototype↔EDS content-diff on the emulation",
+ "at": "2026-09-14T21:24:33.141Z",
+ "worker": "W3",
+ "family": "product",
+ "archetype": "nb-bank-privat-lan-boliglan-html (LIVE — not touched; document byte-identical with and without encoders/product.mjs; 1440 regression 0.65% Δ0)",
+ "documents": [
+  "content/nb/bank/privat/lan/forbrukslan.html",
+  "content/nb/bank/privat/daglig-bruk/mobilbank.html",
+  "content/nb/bank/om-oss/vare-eksperter.html",
+  "+26 sibling documents (see siblings[])"
+ ],
+ "blocks": {
+  "new": [
+   "carousel (guide — one row per slide [screenshot][title + copy][slide name]; \"N av M\" + Forrige/Neste chrome)",
+   "price-terms (template-slotted, one row [title + price figure][check list, overlay link, footnote]; variants large/small + tint)"
+  ],
+  "reused": [
+   "accordion (+ additive variants disclosure, steps, tabs; plain accordion for the generic AEM accordion)",
+   "cards (+ additive variant people = experts; static variant CSS)",
+   "columns (+ additive cell tokens hN / rAxB / w1280 / video, block variants photo-cells, illo-cells + hN)",
+   "callout (+ additive variant lightbulb = the live tips box; icons/lightbulb.svg verbatim)",
+   "calculator (credit-calculator snapshot data/calculator/privat-lan-forbrukslan.html)",
+   "banner, cards small (hub related), shortcuts, feedback, bank-choice, breadcrumbs"
+  ]
+ },
+ "moduleModels": {
+  "price-and-terms": "price-terms block (new): h2 + [Eff. rente / figure] + ✓ list + \"Se alle priser\" / \"Se … hos en av våre banker\" link + small footnote; the live overlay link opens a client-rendered bank chooser (dynamics interim → plain link). Nested in a band → inline block with tint variant; nested in a columns column (bankkort, kredittkort) → follows the columns block as a sibling.",
+  "progressive-disclosure": "accordion disclosure: one row [pill label][content]; variants box / white / left / center; section tokens disclosure[-tight]. Label <p> moves into the expand pill (EW8).",
+  "step-by-step": "h2 default content + accordion steps (one row per step [linked title][content]); section steps + sand/frost/grey; numbers are block chrome.",
+  "accordion": "h3 + sub-lead default content + plain accordion block; section accordion-module (768px).",
+  "guide-carousel": "h2 default content + carousel guide block; section carousel + tint. Inside a FAQ answer (bankkort) → prose slides (no nested blocks).",
+  "contentfragmentlist": "cards people: one row per expert [portrait][h3 name, role p, bio p, \"Les mer om …\" link]; card-as-link via the trailing link; empty second list omitted.",
+  "section": "the AEM \"section\" master/detail module (forbrukslan layout2, mobilbank/barneforsikring small-img): default content [illustration, h2, sub-lead] + accordion tabs (one row per item [title][content]); section section-list + layout2|small-img + tint; a nested columns-grid in an item is prose with the illustration first (floated).",
+  "comparison": "coverage table inside a FAQ answer (bilforsikring): flattened to default content per feature (<p><strong>feature</strong></p><ul>Dekkes av …</ul><p>details</p>) — a table cannot nest in an accordion row; every live text and href kept (grep-verified).",
+  "image--center": "default content image in an icon-image section (+ rounded, w-N / h-N tokens).",
+  "button-wrap--center": "default content CTA in a cta, center section.",
+  "module--columns": "empty live placeholder (spare-i-fond) — omitted.",
+  "base-component": "the forbrukslan consumer-credit calculator (client-rendered, empty at capture) — re-captured hydrated from live (shadow root + its stylesheet + ffe tokens) → calculator block linking data/calculator/privat-lan-forbrukslan.html.",
+  "related-products (hub markup)": "heading + cards small (the core newsfeed reader dropped the icon cards); section related, related-icons.",
+  "shortcuts (hub markup)": "shortcuts block read from .shortcuts__item (the core reader dropped the pills).",
+  "tip (tips kind)": "callout tips lightbulb (recognised by the live Material lightbulb path).",
+  "video": "poster image in a 16:9 columns cell (r16x9-video); the embed itself is a dynamics request."
+ },
+ "iterations": 3,
+ "gates": {
+  "forbrukslan": {
+   "360": {
+    "pixelPct": 14.84,
+    "heightDelta": -7,
+    "chromeHeaderPct": 96.42,
+    "chromeHeaderPctExcludingSkipLink": null,
+    "chromeFooterPct": 98.81,
+    "bandsOver15": [
+     {
+      "y": "3500–4000",
+      "pct": 18.5
+     },
+     {
+      "y": "4500–5000",
+      "pct": 26.8
+     },
+     {
+      "y": "5000–5500",
+      "pct": 37.8
+     },
+     {
+      "y": "5500–6000",
+      "pct": 37.6
+     },
+     {
+      "y": "6000–6500",
+      "pct": 36.9
+     },
+     {
+      "y": "6500–7000",
+      "pct": 25.9
+     },
+     {
+      "y": "7000–7500",
+      "pct": 29.8
+     }
+    ],
+    "evidence": "stardust/replica/gates/forbrukslan-eds-360/ (pixel-iter1.txt, chrome-header.txt, chrome-footer.txt)",
+    "pass": false,
+    "why": "pixel 14.84% > 10 with Δh -7: the 360 render drifts vertically inside a few modules (hero lead list -32, small print -24, static cards +48, 4-up cards +64 — mobile line boxes of the columns block) and every text band below shifts; bands 3500–7500 are the shifted section/columns/static/FAQ text"
+   },
+   "1440": {
+    "pixelPct": 3.98,
+    "heightDelta": 4,
+    "chromeHeaderPct": 99.58,
+    "chromeHeaderPctExcludingSkipLink": null,
+    "chromeFooterPct": 98.81,
+    "bandsOver15": [],
+    "evidence": "stardust/replica/gates/forbrukslan-eds-1440/ (pixel-iter1.txt, chrome-header.txt, chrome-footer.txt)",
+    "pass": true
+   },
+   "daPath": "/nb/bank/privat/lan/forbrukslan"
+  },
+  "mobilbank": {
+   "360": {
+    "pixelPct": 13.29,
+    "heightDelta": -71,
+    "chromeHeaderPct": 96.42,
+    "chromeHeaderPctExcludingSkipLink": null,
+    "chromeFooterPct": 98.6,
+    "bandsOver15": [
+     {
+      "y": "1000–1500",
+      "pct": 48.9
+     },
+     {
+      "y": "1500–2000",
+      "pct": 15.6
+     },
+     {
+      "y": "5500–6000",
+      "pct": 22
+     },
+     {
+      "y": "6500–7000",
+      "pct": 17
+     },
+     {
+      "y": "8000–8500",
+      "pct": 22.1
+     },
+     {
+      "y": "8500–9000",
+      "pct": 21.7
+     }
+    ],
+    "evidence": "stardust/replica/gates/mobilbank-eds-360/ (pixel-iter1.txt, chrome-header.txt, chrome-footer.txt)",
+    "pass": false,
+    "why": "Δh -71 (section-list small-img mobile +31, related icon cards +32, hero +8) and 13.29%"
+   },
+   "1440": {
+    "pixelPct": 10.33,
+    "heightDelta": 8,
+    "chromeHeaderPct": 99.58,
+    "chromeHeaderPctExcludingSkipLink": null,
+    "chromeFooterPct": 98.81,
+    "bandsOver15": [
+     {
+      "y": "500–1000",
+      "pct": 27.7
+     },
+     {
+      "y": "1000–1500",
+      "pct": 29.3
+     },
+     {
+      "y": "3500–4000",
+      "pct": 28.7
+     }
+    ],
+    "evidence": "stardust/replica/gates/mobilbank-eds-1440/ (pixel-iter1.txt, chrome-header.txt, chrome-footer.txt)",
+    "pass": false,
+    "why": "pixel 10.33% (bar 10), Δh 8 (bar 8): photo bands: hero / 1:1 portrait photos differ as rasters (cover-crop + scaling — the archetype-gate permanent residual class); the rest of the band is line-wrap drift of one heading"
+   },
+   "daPath": "/nb/bank/privat/daglig-bruk/mobilbank"
+  },
+  "vare-eksperter": {
+   "360": {
+    "pixelPct": 29.01,
+    "heightDelta": 793,
+    "chromeHeaderPct": 96.42,
+    "chromeHeaderPctExcludingSkipLink": null,
+    "chromeFooterPct": 86.88,
+    "bandsOver15": [
+     {
+      "y": "1500–2000",
+      "pct": 23.7
+     },
+     {
+      "y": "2000–2500",
+      "pct": 24.2
+     },
+     {
+      "y": "2500–3000",
+      "pct": 25.9
+     },
+     {
+      "y": "3000–3500",
+      "pct": 29.5
+     },
+     {
+      "y": "3500–4000",
+      "pct": 91.6
+     },
+     {
+      "y": "4000–4128",
+      "pct": 92.4
+     }
+    ],
+    "evidence": "stardust/replica/gates/eksperter-eds-360/ (pixel-iter1.txt, chrome-header.txt, chrome-footer.txt, pixel-main-only.txt)",
+    "pass": false,
+    "mainOnlyDiffPct": 24.72,
+    "why": "same chrome/title causes (Δh 793, footer 87%)"
+   },
+   "1440": {
+    "pixelPct": 26.01,
+    "heightDelta": 500,
+    "chromeHeaderPct": 98.52,
+    "chromeHeaderPctExcludingSkipLink": null,
+    "chromeFooterPct": 91.35,
+    "bandsOver15": [
+     {
+      "y": "1500–2000",
+      "pct": 48.9
+     },
+     {
+      "y": "2000–2240",
+      "pct": 96.1
+     }
+    ],
+    "evidence": "stardust/replica/gates/eksperter-eds-1440/ (pixel-iter1.txt, chrome-header.txt, chrome-footer.txt, pixel-main-only.txt)",
+    "pass": false,
+    "mainOnlyDiffPct": 13.51,
+    "why": "CHROME, not content: the slug is missing from stardust/rollout/chrome-map.json so the document gets /nav + /footer instead of the om-oss variants — footer 471px vs 954 (Δh 500, footer crop 91%); inside main the W2 `title` module is still prose (left-aligned h1, +16px) which shifts the lead and the 5 expert cards (main-only 13.5%). cards people itself matches (proto gate 1.71%)."
+   },
+   "daPath": "/nb/bank/om-oss/vare-eksperter"
+  }
+ },
+ "contentDiff": {
+  "forbrukslan": "59 findings, 8 structural — all ROLE SWAP (live pseudo-heading spans → heading at the visual rank; site-wide justified class)",
+  "mobilbank": "67 findings, 11 structural — all ROLE SWAP (same class)",
+  "vare-eksperter": "48 findings, 0 structural",
+  "utenlandsbetaling": "2 structural — ROLE SWAP",
+  "bilforsikring": "33 structural — 28 ROLE SWAP + 5 MISSING CTA inside the flattened comparison table (the hrefs ARE in the document: delkasko.html ×8, steinsprutplaster ×2 — the diff tool does not resolve links inside the collapsed accordion prose)",
+  "bankkort": "5 structural — 2 ROLE SWAP + shortcuts heading/CTAs that the hub-markup reader now restores (re-run pending)"
+ },
+ "regression": {
+  "document": "content/nb/bank/privat/lan/boliglan.html unchanged with vs without encoders/product.mjs (isolation diff, 3 runs; the file differs from my 20:40Z copy only through concurrent core changes by other workers)",
+  "pixel1440": 0.65,
+  "evidence": "stardust/replica/gates/boliglan-eds-1440/_w3-pixel.txt"
+ },
+ "lint": {
+  "red": 0,
+  "yellowTotal": 121,
+  "yellowKinds": [
+   "D1 breadcrumbs / feedback / callout (widgets — noted in ctx.notes)",
+   "D3 bank-choice positional rows (noted)",
+   "D1 price-terms / accordion disclosure / steps / tabs / carousel (designed widgets — noted per encoder)",
+   "D4 authored SVG batch-verify (advisory; oversize SVGs rasterised: 25 uploaded, mirrored into stardust/prototypes/assets/img for the emulation)"
+  ]
+ },
+ "siblings": {
+  "converted": 29,
+  "gapFree": 26,
+  "withGaps": [
+   {
+    "slug": "nb-bank-om-oss-vare-eksperter-html",
+    "gaps": [
+     "module title emitted as prose"
+    ]
+   },
+   {
+    "slug": "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+    "gaps": [
+     "module title emitted as prose"
+    ]
+   },
+   {
+    "slug": "nb-bank-privat-lan-gronne-lan-html",
+    "gaps": [
+     "module title emitted as prose"
+    ]
+   }
+  ],
+  "note": "the 3 remaining gaps are the `title` module (owned by W2 — key held by category-hub/tool, family-gated); the h1 is in the documents as prose",
+  "pages": [
+   {
+    "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+    "daPath": "/nb/bank/bedrift/bedriftskort/kredittkort",
+    "blocks": [
+     "bank-choice",
+     "columns",
+     "usp",
+     "cards",
+     "price-terms",
+     "accordion",
+     "callout",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 5
+    }
+   },
+   {
+    "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+    "daPath": "/nb/bank/bedrift/betaling/utenlandsbetaling",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "cards",
+     "accordion",
+     "callout",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 5
+    }
+   },
+   {
+    "slug": "nb-bank-bedrift-konto-bedriftskonto-html",
+    "daPath": "/nb/bank/bedrift/konto/bedriftskonto",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "usp",
+     "price-terms",
+     "callout",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 6
+    }
+   },
+   {
+    "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+    "daPath": "/nb/bank/bedrift/lan-finansiering/bedriftslan",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "usp",
+     "price-terms",
+     "callout",
+     "accordion",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 5
+    }
+   },
+   {
+    "slug": "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+    "daPath": "/nb/bank/bedrift/lan-finansiering/kassekreditt",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "usp",
+     "price-terms",
+     "accordion",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 4
+    }
+   },
+   {
+    "slug": "nb-bank-bedrift-lan-finansiering-leasing-html",
+    "daPath": "/nb/bank/bedrift/lan-finansiering/leasing",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "usp",
+     "price-terms",
+     "accordion",
+     "cards"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 4
+    }
+   },
+   {
+    "slug": "nb-bank-bedrift-open-api-html",
+    "daPath": "/nb/bank/bedrift/open-api",
+    "blocks": [
+     "bank-choice",
+     "columns",
+     "cards"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 2
+    }
+   },
+   {
+    "slug": "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+    "daPath": "/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "cards",
+     "accordion",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 4
+    }
+   },
+   {
+    "slug": "nb-bank-om-oss-vare-eksperter-html",
+    "daPath": "/nb/bank/om-oss/vare-eksperter",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "cards"
+    ],
+    "gaps": 1,
+    "lint": {
+     "red": 0,
+     "yellow": 2
+    }
+   },
+   {
+    "slug": "nb-bank-privat-daglig-bruk-bankid-html",
+    "daPath": "/nb/bank/privat/daglig-bruk/bankid",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "banner",
+     "accordion",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 4
+    }
+   },
+   {
+    "slug": "nb-bank-privat-daglig-bruk-bankkonto-html",
+    "daPath": "/nb/bank/privat/daglig-bruk/bankkonto",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "cards",
+     "shortcuts",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 4
+    }
+   },
+   {
+    "slug": "nb-bank-privat-daglig-bruk-bankkort-html",
+    "daPath": "/nb/bank/privat/daglig-bruk/bankkort",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "usp",
+     "price-terms",
+     "accordion",
+     "cobranding",
+     "shortcuts",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 6
+    }
+   },
+   {
+    "slug": "nb-bank-privat-daglig-bruk-kredittkort-html",
+    "daPath": "/nb/bank/privat/daglig-bruk/kredittkort",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "usp",
+     "price-terms",
+     "accordion",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 5
+    }
+   },
+   {
+    "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+    "daPath": "/nb/bank/privat/daglig-bruk/mobilbank",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "banner",
+     "carousel",
+     "accordion",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 4
+    }
+   },
+   {
+    "slug": "nb-bank-privat-forsikring-barneforsikring-html",
+    "daPath": "/nb/bank/privat/forsikring/barneforsikring",
+    "blocks": [
+     "breadcrumbs",
+     "columns",
+     "usp",
+     "accordion",
+     "callout",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 4
+    }
+   },
+   {
+    "slug": "nb-bank-privat-forsikring-bilforsikring-html",
+    "daPath": "/nb/bank/privat/forsikring/bilforsikring",
+    "blocks": [
+     "breadcrumbs",
+     "columns",
+     "usp",
+     "accordion",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 3
+    }
+   },
+   {
+    "slug": "nb-bank-privat-forsikring-innboforsikring-html",
+    "daPath": "/nb/bank/privat/forsikring/innboforsikring",
+    "blocks": [
+     "breadcrumbs",
+     "columns",
+     "usp",
+     "accordion",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 4
+    }
+   },
+   {
+    "slug": "nb-bank-privat-forsikring-kundehistorier-html",
+    "daPath": "/nb/bank/privat/forsikring/kundehistorier",
+    "blocks": [
+     "breadcrumbs",
+     "columns",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 3
+    }
+   },
+   {
+    "slug": "nb-bank-privat-forsikring-reiseforsikring-html",
+    "daPath": "/nb/bank/privat/forsikring/reiseforsikring",
+    "blocks": [
+     "breadcrumbs",
+     "columns",
+     "usp",
+     "cobranding",
+     "callout",
+     "accordion",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 4
+    }
+   },
+   {
+    "slug": "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+    "daPath": "/nb/bank/privat/kundeservice/bestill/bli-kunde",
+    "blocks": [
+     "bank-choice",
+     "columns",
+     "usp",
+     "banner",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 1,
+    "lint": {
+     "red": 0,
+     "yellow": 2
+    }
+   },
+   {
+    "slug": "nb-bank-privat-lan-billan-html",
+    "daPath": "/nb/bank/privat/lan/billan",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "usp",
+     "price-terms",
+     "cobranding",
+     "cards",
+     "shortcuts",
+     "accordion",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 6
+    }
+   },
+   {
+    "slug": "nb-bank-privat-lan-forbrukslan-html",
+    "daPath": "/nb/bank/privat/lan/forbrukslan",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "price-terms",
+     "callout",
+     "calculator",
+     "accordion",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 6
+    }
+   },
+   {
+    "slug": "nb-bank-privat-lan-gronne-lan-html",
+    "daPath": "/nb/bank/privat/lan/gronne-lan",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "cards",
+     "banner"
+    ],
+    "gaps": 1,
+    "lint": {
+     "red": 0,
+     "yellow": 3
+    }
+   },
+   {
+    "slug": "nb-bank-privat-lan-lanekalkulator-html",
+    "daPath": "/nb/bank/privat/lan/lanekalkulator",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "cards",
+     "calculator",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 5
+    }
+   },
+   {
+    "slug": "nb-bank-privat-lan-refinansiering-html",
+    "daPath": "/nb/bank/privat/lan/refinansiering",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "cards",
+     "accordion",
+     "banner",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 4
+    }
+   },
+   {
+    "slug": "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+    "daPath": "/nb/bank/privat/pensjon/egen-pensjonskonto",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "usp",
+     "price-terms",
+     "accordion",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 5
+    }
+   },
+   {
+    "slug": "nb-bank-privat-sparing-spare-i-fond-html",
+    "daPath": "/nb/bank/privat/sparing/spare-i-fond",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "cards",
+     "columns",
+     "accordion",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 4
+    }
+   },
+   {
+    "slug": "nb-bank-privat-sparing-spare-pa-konto-html",
+    "daPath": "/nb/bank/privat/sparing/spare-pa-konto",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "cards",
+     "columns",
+     "cobranding",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 4
+    }
+   },
+   {
+    "slug": "nb-bank-privat-sparing-spare-til-barn-html",
+    "daPath": "/nb/bank/privat/sparing/spare-til-barn",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 4
+    }
+   }
+  ]
+ },
+ "justified": [
+  {
+   "flag": "360 header crop 96.42% (all 360 runs)",
+   "why": "live focused skip link \"Til hovedmeny\" (instrument artefact); 99.86% excluding x<115 (PIL crop, chrome-header-x115.txt)",
+   "permanent": true
+  },
+  {
+   "flag": "ROLE SWAP structural reds",
+   "why": "live pseudo-heading spans (h2 > span.h6, p > span.h4) authored at the visual rank — site-wide class",
+   "permanent": true
+  },
+  {
+   "flag": "to-top disc at chunk seams",
+   "why": "archetype residual",
+   "permanent": true
+  },
+  {
+   "flag": "mobilbank 1440 bands 500–1500 / 3500–4000 (both sides)",
+   "why": "photo bands: hero / 1:1 portrait photos differ as rasters (cover-crop + scaling — the archetype-gate permanent residual class); the rest of the band is line-wrap drift of one heading",
+   "permanent": true
+  }
+ ],
+ "residuals": [
+  "EDS forbrukslan/mobilbank at 360: vertical drift inside columns-block cells (hero lead list bullets, 4-up card cells, static cards) — core columns block metrics on mobile; the archetype has none of these cells",
+  "EDS mobilbank 1440 10.33%: photo rasters (permanent) push the total 0.33 over the bar",
+  "vare-eksperter EDS blocked on chrome-map (om-oss nav/footer) and the W2 title encoder",
+  "the video embed (forbrukslan) is a poster image only",
+  "the price-and-terms overlay link is a plain link (bank-chooser dialog = dynamics)"
+ ],
+ "requests": "stardust/rollout/eds-requests.md — W3 section (loader chaining, blocks-in-FAQ, block-in-column, chrome-map eksperter, title, link placeholders, hub-markup readers, calculator-container skin, core reference rule)"
+}

@@ -1,0 +1,217 @@
+{
+ "family": "product (siblings)",
+ "worker": "W3",
+ "at": "2026-09-14T21:24:33.141Z",
+ "archetype": "nb-bank-privat-lan-boliglan-html (gated; prototype body identical with and without modules/product.mjs)",
+ "siblingVariance": {
+  "run": "stardust/replica/progress/_w3-sibling-variance.json (archetype vs forbrukslan, mobilbank, vare-eksperter @1440)",
+  "findings": {
+   "forbrukslan": "EXTRA .price-and-terms; hero photo 608×456 (4:3) vs 715×476; FAQ 558 vs 716 (content); 4 columns-grids vs 3",
+   "mobilbank": "EXTRA .guide-carousel; hero grid full-bleed 1440×543 (content); 5 columns-grids",
+   "vare-eksperter": "MISSING hero grid and FAQ; EXTRA .biolist"
+  },
+  "conclusion": "every variance is one of the new module kinds (modelled) or content geometry; no unmodelled template variant"
+ },
+ "modules": [
+  "price-and-terms",
+  "progressive-disclosure",
+  "step-by-step",
+  "accordion",
+  "guide-carousel",
+  "contentfragmentlist",
+  "section",
+  "comparison",
+  "image--center",
+  "button-wrap--center",
+  "module--columns",
+  "base-component",
+  "related-products (hub markup)",
+  "shortcuts (hub markup)",
+  "tip (tips kind)",
+  "video"
+ ],
+ "breakpoints": {
+  "forbrukslan": {
+   "360": {
+    "pixelPct": 15.47,
+    "heightDelta": 30,
+    "chromeHeaderPct": 96.42,
+    "chromeHeaderPctExcludingSkipLink": 99.86,
+    "chromeFooterPct": 99.28,
+    "bandsOver15": [
+     {
+      "y": "3500–4000",
+      "pct": 18.5
+     },
+     {
+      "y": "4500–5000",
+      "pct": 26.8
+     },
+     {
+      "y": "5000–5500",
+      "pct": 37.8
+     },
+     {
+      "y": "5500–6000",
+      "pct": 37.4
+     },
+     {
+      "y": "6000–6500",
+      "pct": 36.6
+     },
+     {
+      "y": "6500–7000",
+      "pct": 32.1
+     },
+     {
+      "y": "7000–7500",
+      "pct": 31.2
+     },
+     {
+      "y": "9500–10000",
+      "pct": 15.1
+     }
+    ],
+    "evidence": "stardust/replica/gates/forbrukslan-360/ (pixel-iter1.txt, chrome-header.txt, chrome-footer.txt, chrome-header-x115.txt)",
+    "pass": false,
+    "why": "Δh +30 (hero lead list -16, small print -16, 4-up heading/cards…) and 15.47%: text bands 4500–7500 shift with the accumulated offset"
+   },
+   "1440": {
+    "pixelPct": 3.94,
+    "heightDelta": -5,
+    "chromeHeaderPct": 99.58,
+    "chromeHeaderPctExcludingSkipLink": null,
+    "chromeFooterPct": 99.69,
+    "bandsOver15": [],
+    "evidence": "stardust/replica/gates/forbrukslan-1440/ (pixel-iter1.txt, chrome-header.txt, chrome-footer.txt)",
+    "pass": true
+   }
+  },
+  "mobilbank": {
+   "360": {
+    "pixelPct": 11.72,
+    "heightDelta": 5,
+    "chromeHeaderPct": 96.42,
+    "chromeHeaderPctExcludingSkipLink": 99.86,
+    "chromeFooterPct": 98.97,
+    "bandsOver15": [
+     {
+      "y": "1000–1500",
+      "pct": 39.8
+     },
+     {
+      "y": "5000–5500",
+      "pct": 22.4
+     },
+     {
+      "y": "5500–6000",
+      "pct": 27.6
+     }
+    ],
+    "evidence": "stardust/replica/gates/mobilbank-360/ (pixel-iter1.txt, chrome-header.txt, chrome-footer.txt, chrome-header-x115.txt)",
+    "pass": false,
+    "why": "Δh 5 but 11.72%: illustration grid (SVG raster + 1000–1500 band 40%), section-list header/list metrics at 360, related cards"
+   },
+   "1440": {
+    "pixelPct": 8.5,
+    "heightDelta": -4,
+    "chromeHeaderPct": 99.58,
+    "chromeHeaderPctExcludingSkipLink": null,
+    "chromeFooterPct": 99.69,
+    "bandsOver15": [
+     {
+      "y": "500–1000",
+      "pct": 26.8
+     },
+     {
+      "y": "1000–1500",
+      "pct": 29.9
+     },
+     {
+      "y": "3500–4000",
+      "pct": 26.5
+     }
+    ],
+    "evidence": "stardust/replica/gates/mobilbank-1440/ (pixel-iter1.txt, chrome-header.txt, chrome-footer.txt)",
+    "pass": true,
+    "bandsWhy": "photo bands: hero / 1:1 portrait photos differ as rasters (cover-crop + scaling — the archetype-gate permanent residual class); the rest of the band is line-wrap drift of one heading"
+   }
+  },
+  "vare-eksperter": {
+   "360": {
+    "pixelPct": 7.6,
+    "heightDelta": -6,
+    "chromeHeaderPct": 96.42,
+    "chromeHeaderPctExcludingSkipLink": 99.86,
+    "chromeFooterPct": 98.89,
+    "bandsOver15": [],
+    "evidence": "stardust/replica/gates/eksperter-360/ (pixel-iter1.txt, chrome-header.txt, chrome-footer.txt, chrome-header-x115.txt)",
+    "pass": true
+   },
+   "1440": {
+    "pixelPct": 1.71,
+    "heightDelta": 1,
+    "chromeHeaderPct": 98.52,
+    "chromeHeaderPctExcludingSkipLink": null,
+    "chromeFooterPct": 99.53,
+    "bandsOver15": [],
+    "evidence": "stardust/replica/gates/eksperter-1440/ (pixel-iter1.txt, chrome-header.txt, chrome-footer.txt)",
+    "pass": true
+   }
+  }
+ },
+ "iterations": 3,
+ "result": "4 of 6 prototype gates pass (forbrukslan 1440, mobilbank 1440, vare-eksperter 1440 + 360); forbrukslan 360 and mobilbank 360 fail on % / Δh (residuals listed)",
+ "justified": [
+  {
+   "flag": "360 header crop 96.42% (all 360 runs)",
+   "why": "live focused skip link \"Til hovedmeny\" (instrument artefact); 99.86% excluding x<115 (PIL crop, chrome-header-x115.txt)",
+   "permanent": true
+  },
+  {
+   "flag": "ROLE SWAP structural reds",
+   "why": "live pseudo-heading spans (h2 > span.h6, p > span.h4) authored at the visual rank — site-wide class",
+   "permanent": true
+  },
+  {
+   "flag": "to-top disc at chunk seams",
+   "why": "archetype residual",
+   "permanent": true
+  },
+  {
+   "flag": "mobilbank 1440 bands 500–1500 / 3500–4000 (both sides)",
+   "why": "photo bands: hero / 1:1 portrait photos differ as rasters (cover-crop + scaling — the archetype-gate permanent residual class); the rest of the band is line-wrap drift of one heading",
+   "permanent": true
+  }
+ ],
+ "residuals": [
+  "forbrukslan 360 hero lead ✓-list -16 and small-print -16 (canon list/small-text metrics at 360 not lifted)",
+  "mobilbank 360: illustration grid SVG raster, section-list small-img header 110 vs ~90 (not lifted)",
+  "the forbrukslan credit calculator is a static snapshot (computation disabled)",
+  "comparison table: static snapshot inside the FAQ answer (not visible at rest)"
+ ],
+ "captureState": [
+  "live PNGs: stardust/replica/gates/{forbrukslan,mobilbank,eksperter}-{1440,360}/live.png (captured once, 2026-09-14)",
+  "lifts: stardust/replica/lift/_w3-{pt,gc,bio,pd,st}-{1440,360}.json",
+  "widget snapshot: stardust/replica/lift/forbrukslan-widget.shadow.html (+ .json)"
+ ],
+ "motion": {
+  "observed": "not probed (live budget spent on lifts/captures)",
+  "implemented": [
+   "disclosure toggle (aria-expanded contract)",
+   "carousel prev/next + counter",
+   "steps / section-list item switch (detail panel, mobile open)",
+   "comparison row expand + mobile filter tabs"
+  ],
+  "dead": []
+ },
+ "liveHits": {
+  "lifts": 10,
+  "captures": 6,
+  "siblingVariance": 4,
+  "widgetSnapshot": 1,
+  "total": 21,
+  "perModuleKind": "≤ 2 (one lift per width per kind)"
+ },
+ "canonRequests": "stardust/replica/canon-requests.md — W3 entries"
+}
