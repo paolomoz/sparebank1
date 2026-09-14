@@ -14,7 +14,9 @@
   outline: 0;
 }
 
-.cards a.card:any-link { border-bottom: 1px solid var(--border); color: var(--text); }
+.cards .card--clickable { cursor: pointer; }
+.cards .card__title a:any-link { border: none; color: inherit; text-decoration: none; }
+.cards .card--clickable:hover .card__title a:any-link { text-decoration: underline; }
 .cards .card--medium { grid-template-rows: var(--card-image-height) 1fr; }
 .cards .card--small { grid-template-rows: 1fr; align-items: center; }
 .cards .card--clickable:hover { background: var(--surface-hover); box-shadow: 0 0 0 1px var(--border-hover); }
@@ -71,3 +73,70 @@
 @media (width >= 1280px) {
   .cards.price .card-list li { width: 25%; }
 }
+
+/* ===== category-hub / kundeservice-hub (additive variants) =====
+   nav — the hub visual navigation (stardust/prototypes/css/category-hub.css .vnav*): a photo row (400px photo + 400px white
+   card at ≥768; 225px photo with the card overlapping its bottom at <768) or an icon row (44px icon · title · text · chevron).
+   small — the hub related-products icon list (.card-list--small): 86px icon column, 88px box, 3-up 400px cells at ≥1024.
+   grid cols-N — the live grid row is N columns wide (centred N/12 of the container). */
+.cards.nav .card-list { display: flex; flex-direction: column; align-items: center; }
+.cards.nav .card-list li { display: flex; justify-content: center; width: 100%; margin-top: 24px; }
+.cards.nav .card { display: flex; flex-direction: column; width: 92%; border: 0; border-radius: 0; background: none; color: inherit; }
+.cards.nav a.card:any-link { border-bottom: 0; color: inherit; }
+.cards.nav .card--clickable:hover { background: none; box-shadow: none; }
+.cards.nav .card--clickable:hover .card__title { text-decoration: none; } /* live: no hover change on visual-nav cards (motion-observe) */
+.cards.nav .card__arrow { display: grid; grid-template-columns: 24px; align-content: start; }
+.cards.nav .card__arrow svg { width: 24px; height: 24px; }
+.cards.nav .card--medium { grid-template-rows: none; height: 265px; }
+.cards.nav .card--medium .card__media { flex: 0 0 auto; height: 225px; border-radius: 16px; box-shadow: 0 3px 8px 0 rgb(38 38 38 / 30%); }
+.cards.nav .card--medium .card__media picture, .cards.nav .card--medium .card__media img { height: 225px; border-radius: 16px; object-position: 50% 50%; }
+.cards.nav .card--medium .card__body { position: relative; z-index: 1; display: flex; height: 120px; margin: -80px 16px 0; padding: 24px 16px 16px 24px; border: 2px solid transparent; border-radius: 11px; background: var(--white); box-shadow: 0 3px 8px 0 rgb(38 38 38 / 30%); }
+.cards.nav .card--medium .card__content { flex: 1 1 auto; }
+.cards.nav .card--medium .card__title { display: block; margin: 0 0 8px; font-family: var(--font-medium); font-size: 17px; line-height: 20px; color: var(--fjell); }
+.cards.nav .card--medium .card__text { margin: 0; font-size: 16px; line-height: 24px; color: var(--text); }
+.cards.nav .card--small { flex-direction: row; align-items: center; justify-content: flex-end; height: 114px; padding: 21px; border: 2px solid transparent; border-radius: 16px; background: var(--white); box-shadow: 0 3px 8px 0 rgb(38 38 38 / 30%); }
+.cards.nav .card--small .card__media { display: none; }
+.cards.nav .card--small .card__body { position: relative; display: grid; grid-template-columns: 1fr 24px; align-items: start; align-content: start; width: 100%; padding: 0; }
+.cards.nav .card--small .card__title { display: block; margin: 0 0 8px; font-family: var(--font-medium); font-size: 17px; line-height: 20px; color: var(--fjell); }
+.cards.nav .card--small .card__text { margin: 0 0 16px; font-size: 16px; line-height: 24px; color: var(--text); }
+.cards.nav li:has(.card--small) + li:has(.card--small) { margin-top: 48px; } /* live mobile pitch 162 = 114 + 24 (module) + 24 (link) */
+
+.cards.small .card-list { display: flex; flex-wrap: wrap; justify-content: center; max-width: var(--container); margin: 0 auto; }
+.cards.small .card-list li { width: 100%; padding: 8px; }
+.cards.small .card { grid-template-columns: 86px 1fr; grid-template-rows: 86px; align-items: center; border-radius: 16px; } /* 86 + 2px border = the live 88px box */
+.cards.small .card--small .card__media { display: flex; align-items: center; justify-content: center; width: 86px; height: 86px; margin: 1px 0 0 1px; border-radius: 0; overflow: visible; }
+.cards.small .card--small .card__media picture, .cards.small .card--small .card__media img { width: 70px; height: 70px; object-fit: fill; }
+.cards.small .card__body { padding: 16px 8px 16px 16px; }
+.cards.small .card__title { font-size: 17px; line-height: 20px; }
+
+@media (width >= 768px) {
+  .cards.nav .card-list li { margin-top: 10px; }
+  .cards.nav .card--medium { flex-direction: row; align-items: center; justify-content: center; width: 848px; height: 292px; }
+  .cards.nav .card--medium .card__media { width: 400px; height: 260px; margin: 16px 8px 16px 16px; box-shadow: 0 2px 3px 2px rgb(38 38 38 / 30%); }
+  .cards.nav .card--medium .card__media picture, .cards.nav .card--medium .card__media img { width: 400px; height: 260px; }
+  .cards.nav .card--medium .card__body { flex: 0 0 auto; width: 400px; height: 260px; margin: 16px 16px 16px 8px; padding: 30px; border-radius: 16px; box-shadow: 0 2px 3px 2px rgb(38 38 38 / 30%); }
+  .cards.nav .card--medium .card__title { font-size: 28px; line-height: 36px; }
+  .cards.nav .card--medium .card__text { margin-bottom: 19.2px; font-size: 19.2px; line-height: 32px; color: var(--fjell); }
+  .cards.nav .card--medium .card__arrow { position: absolute; right: 8px; bottom: 110px; display: flex; align-items: center; justify-content: center; width: 26px; height: 20px; }
+  .cards.nav .card--medium .card__arrow svg { margin-right: 6px; }
+  .cards.nav .card--small { width: 816px; height: 120px; margin-top: 12px; padding: 16px; box-shadow: 0 2px 3px 2px rgb(38 38 38 / 30%); }
+  .cards.nav .card--small .card__media { display: flex; flex: 0 0 auto; align-items: center; justify-content: center; width: 44px; height: 44px; margin: 0; }
+  .cards.nav .card--small .card__media picture, .cards.nav .card--small .card__media img { width: 44px; height: 44px; object-fit: contain; }
+  .cards.nav .card--small .card__body { grid-template-columns: 1fr; align-items: center; width: 55%; margin: 0 70px 0 20px; padding: 5px; }
+  .cards.nav .card--small .card__arrow { position: absolute; top: 50%; right: -70px; width: 20px; height: 20px; margin-top: -10px; grid-template-columns: 20px; align-content: center; }
+  .cards.nav .card--small .card__arrow svg { width: 20px; height: 20px; }
+  .cards.nav .card--small .card__title { margin: 0; font-size: 22px; line-height: 28px; }
+  .cards.nav .card--small .card__text { margin: 0; font-size: 18px; line-height: 32px; color: var(--fjell); }
+  .cards.nav li:has(.card--small) + li:has(.card--small) { margin-top: 10px; }
+  .cards.small .card__title { font-size: 18px; line-height: 24px; }
+  .cards.grid.cols-8 .card-list { grid-template-columns: repeat(2, 1fr); max-width: min(66.6667%, 853.33px); }
+  .cards.grid.cols-8 .card--no-image .card__title { font-size: 20px; line-height: 24px; }
+  .cards.grid.cols-8 .card { height: auto; } /* live: the 88px card sits on its 16px margin inside the 120px row, it does not stretch */
+  .cards.grid.cols-10 .card-list { max-width: min(83.3333%, 1066.67px); }
+}
+
+@media (width >= 1024px) {
+  .cards.small .card-list li { width: 33.333%; max-width: 400px; }
+  .cards.grid.cols-8 .card-list { grid-template-columns: repeat(2, 1fr); }
+}
+/* ===== /category-hub / kundeservice-hub ===== */

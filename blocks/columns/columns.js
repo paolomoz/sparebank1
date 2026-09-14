@@ -1,4 +1,4 @@
-import { el } from '../../scripts/sb1.js';
+import { el, icon, inlineIcons, uid, text } from '../../scripts/sb1.js';
 
 /**
  * columns — the FFE 12-column text/image row (collection pattern, reconstructive). One row, one cell per column.
@@ -32,5 +32,23 @@ export default function decorate(block) {
     if (content.children.length && [...content.children].every((c) => c.querySelector?.('picture, img') || c.matches?.('picture, img'))) col.classList.add('col--media');
     col.append(content); grid.append(col);
   });
+  if (block.classList.contains('chat')) buildChatField(grid); // additive variant (kundeservice hub)
   block.replaceChildren(grid);
+}
+
+/**
+ * `chat` variant: the last paragraph of the last column is the label of the boost.ai entry field (EW8 — the authored <p>
+ * moves into the <label>; the placeholder mirrors it at decorate time). The field is UI (dynamics #6 interim: no backend);
+ * "Send melding" is fixed control chrome. Authored elements are moved, never rebuilt.
+ */
+function buildChatField(grid) {
+  const content = grid.lastElementChild?.querySelector('.col__content'); const p = content && [...content.querySelectorAll('p')].pop(); if (!p) return;
+  const id = uid('chat-field');
+  const form = el('form', { class: 'chat-field', action: window.location.pathname, method: 'get', 'data-dynamics': 'chat (boost.ai) — interim: no backend connected' });
+  const root = el('div', { class: 'chat-field__root' });
+  const label = el('label', { class: 'chat-field__label visually-hidden', for: id }); label.append(p);
+  const input = el('textarea', { class: 'chat-field__input', id, name: 'q', rows: '1', placeholder: text(p) });
+  const btn = el('button', { type: 'submit', class: 'chat-field__button', 'aria-label': 'Send melding' }, icon('send'));
+  root.append(label, input, btn); form.append(root); content.append(form);
+  inlineIcons(form);
 }

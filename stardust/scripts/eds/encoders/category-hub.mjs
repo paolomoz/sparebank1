@@ -26,6 +26,14 @@ export function normaliseHrefs(root) { for (const a of qa(root, 'a[href]')) { co
 const TINT = { '#f2f2f9': 'syrin' };
 export const tint = (hex) => (hex ? (bgToken(hex) ?? TINT[hex] ?? null) : null);
 
+/** Append section-style tokens to an encoder result (same section-metadata patch convert.mjs applies for a preceding hr). */
+export function withStyle(r, ...tokens) {
+  const add = tokens.filter(Boolean).join(', '); if (!r || !add) return r;
+  if (/<div class="section-metadata"><div><div>style<\/div><div>/.test(r.html)) r.html = r.html.replace(/(<div class="section-metadata"><div><div>style<\/div><div>)([^<]*)/, (m, a, v) => `${a}${v}, ${add}`);
+  else r.html = r.html.replace(/<\/div>\s*$/, `${L.sectionMeta({ style: add })}</div>`);
+  return r;
+}
+
 const gridCols = (row) => { const m = /grid-row--cols-(\d+)/.exec(row.getAttribute('class') || ''); return m && m[1] !== '12' ? `cols-${m[1]}` : null; };
 
 /** One live .grid-row → { kind: 'cards' | 'columns' | 'prose' } — mirrors core band(): card-grid row, single centred heading row, text/image columns.
@@ -45,7 +53,7 @@ export function gridRow(row, ctx) {
     if (chat) { html += `<p>${esc(q(chat, 'textarea')?.getAttribute('placeholder') || q(chat, 'label')?.textContent.trim() || '')}</p>`; variants.push('chat'); ctx.notes.push('columns chat: the boost.ai entry field (dynamics #6 interim, no backend) — the trailing paragraph of the last cell is the field label (EW8: the authored <p> moves into the <label>); "Send melding" is fixed control chrome'); }
     return html;
   });
-  if (q(row, '.lead-blue')) variants.push('lead');
+  if (q(row, '.lead-blue')) { const ps = qa(row, '.col__content .richtext p').filter((p) => p.textContent.trim()); const leads = ps.filter((p) => q(p, '.lead-blue')); variants.push(leads.length === ps.length ? 'lead-all' : 'lead'); } // lead-all: every text paragraph is a lead (live h2 + .lead-blue ×N)
   const gc = gridCols(row); if (gc) variants.push(gc);
   return { kind: 'columns', variants, cells };
 }
@@ -118,7 +126,7 @@ export default {
     ctx.notes.push('lint D1 shortcuts: one cell with a plain list of links (D5 simple list) — the block renders the live pill buttons with chevrons; the heading above stays default content');
     const links = qa(root, '.shortcuts__item a, .shortcuts__link');
     const list = `<ul>${links.map((a) => `<li><a href="${esc(href(a.getAttribute('href') || ''))}">${inline(a, ctx).replace(/\s+/g, ' ').trim()}</a></li>`).join('')}</ul>`;
-    return { html: section([heading(q(root, 'h2'), ctx), block('shortcuts', [], [[list]])], { style: 'center, gap-48' }), blocks: ['shortcuts'] };
+    return { html: section([heading(q(root, 'h2'), ctx), block('shortcuts', [], [[list]])], { style: 'center, gap-48, hub-shortcuts' }), blocks: ['shortcuts'] };
   },
 
   // cobranding (LOfavør expander): single-cell rows read by position — [heading + toggle label] [logo + title] [panel column]×N
@@ -132,13 +140,17 @@ export default {
     return { html: section([block('cobranding', [tint(bandBg(content))].filter(Boolean), rows)], { style: 'gap-48' }), blocks: ['cobranding'] };
   },
 
+  // faq: a live pseudo-heading <h2><span class="h4">…</span><br></h2> must keep its visual rank — the stray trailing <br> defeats lib.headingTag (request filed); pre-cleaned here for hub pages
+  faq: (root, ctx) => { if (isHub(ctx)) for (const h of qa(root, '.accordion__body h1, .accordion__body h2, .accordion__body h3, .accordion__body h4')) for (const br of qa(h, 'br')) if (!br.nextSibling || !br.nextSibling.textContent.trim()) br.remove(); return CORE.faq(root, ctx); },
+
   // tip → core callout; the note records the D1 justification
   tip: (root, ctx) => { const r = CORE.tip(root, ctx); if (r && isHub(ctx)) ctx.notes.push('lint D1 callout: the FFE message box (round icon overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell'); return r; },
 
   // top-level banner-small on hub pages carries the module rhythm (48/72px above); inside a band the core handles it
-  'banner-small': (root, ctx, opts) => { if (!isHub(ctx) || opts?.inline) return CORE['banner-small'](root, ctx, opts); const r = bannerSmall(root, ctx, { inline: true }); return { html: section([r.html], { style: 'gap-48' }), blocks: r.blocks }; },
+  'banner-small': (root, ctx, opts) => { if (!isHub(ctx) || opts?.inline) return CORE['banner-small'](root, ctx, opts); const r = bannerSmall(root, ctx, { inline: true }); return { html: section([r.html], { style: 'gap-48, hub-banner' }), blocks: r.blocks }; },
 
   // band / cols: the hub walker only where the core encoder mis-encodes (document order, nested bands, related icon lists, cols-N grids, syrin tint)
-  band: (root, ctx) => (isHub(ctx) && needsHubBand(root) ? hubBand(root, ctx) : CORE.band(root, ctx)),
-  cols: (root, ctx) => (isHub(ctx) && needsHubBand(root) ? hubBand(root, ctx, { topLevelCols: true }) : CORE.cols(root, ctx)),
+  // + the hub module rhythm: live category-hub .main > .band/.cols carry margin-top 48/72; kundeservice-hub bands sit flush (its top band opens the page), its cols carry it
+  band: (root, ctx) => { const r = isHub(ctx) && needsHubBand(root) ? hubBand(root, ctx) : CORE.band(root, ctx); return familyOf(ctx) === 'category-hub' ? withStyle(r, 'gap-48') : r; },
+  cols: (root, ctx) => { const r = isHub(ctx) && needsHubBand(root) ? hubBand(root, ctx, { topLevelCols: true }) : CORE.cols(root, ctx); return isHub(ctx) ? withStyle(r, 'gap-48') : r; },
 };

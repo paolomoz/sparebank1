@@ -9,14 +9,24 @@ export default {
   // card — the featured card (card__container--featured): contain-fit illustration on top + a full richtext body (canon card() only knows title/body-text cards).
   card(node, ctx) {
     const cont = node.querySelector('.card__container') || node; const cls = cont.getAttribute('class') || '';
-    if (!FEATURED_FAMILIES.has(ctx.family) || !/--featured/.test(cls)) return ctx.card(node);
-    const { el, picture, moduleOf } = ctx;
+    if (!FEATURED_FAMILIES.has(ctx.family)) return ctx.card(node);
+    const { el, picture, moduleOf, txt } = ctx;
+    if (!/--featured/.test(cls)) {
+      // canon card + the publication date canon drops (.card__date, newsfeed cards)
+      const c = ctx.card(node); const date = cont.querySelector('.card__date'); const content = c.querySelector('.card__content');
+      if (date && content) content.append(el('span', { class: 'card__date' }, [txt(date)]));
+      return c;
+    }
     const c = el('div', { class: 'card card--featured' });
     const imgWrap = cont.querySelector('.card__container-image');
     if (imgWrap) { const p = picture(imgWrap, 'card__img'); if (p) c.append(el('div', { class: 'card__media' + (/--contain/.test(imgWrap.className) ? ' card__media--contain' : '') }, [p])); }
     const body = el('div', { class: 'card__body' }); const content = el('div', { class: 'card__content' });
-    const wrap = cont.querySelector('.card__container-content-wrapper') || cont.querySelector('.card__container-content') || cont;
-    for (const ch of wrap.children) { const m = moduleOf(ch); if (m) content.append(m); }
+    // live: .card__container-content > (.card__container-content-wrapper > .text…) + .button — the wrapper is flattened
+    const inner = cont.querySelector('.card__container-content') || cont;
+    for (const ch of inner.children) {
+      const kids = ch.classList.contains('card__container-content-wrapper') ? [...ch.children] : [ch];
+      for (const k of kids) { const m = moduleOf(k); if (m) content.append(m); }
+    }
     body.append(content); c.append(body); return c;
   },
   // referance — on theme pages the reference block wraps a sand columns-grid (text + buttons + image); canon only lifts the .text nodes.

@@ -10,6 +10,21 @@ export default {
     if (fr) { const src = fr.getAttribute('src') || fr.getAttribute('data-video-url'); if (src) w.append(el('iframe', { class: 'video__frame', src, title: fr.getAttribute('title'), allowfullscreen: true, loading: 'lazy', frameborder: '0' })); }
     s.append(w); return s;
   },
+  // related-topics — canon's newsfeed rail verbatim, plus (markedsnytt-listing only) the publication date canon card() drops.
+  'related-topics'(node, ctx) {
+    const { el, bgStyle, cleanCopy, card, buttonWrapper, txt } = ctx; const k = 'related-topics';
+    const s = el('section', { class: k, style: bgStyle(node.querySelector(':scope > div')) }); const inner = el('div', { class: k + '__inner' });
+    const h = node.querySelector('.title h2, h2'); if (h) inner.append(el('div', { class: k + '__title' }, [cleanCopy(h)]));
+    const feed = el('div', { class: 'newsfeed' }); const track = el('div', { class: 'newsfeed__track' });
+    for (const c of node.querySelectorAll('.card')) {
+      const cc = card(c, 'card--news');
+      if (ctx.family === 'markedsnytt-listing') { const date = c.querySelector('.card__date'); const content = cc.querySelector('.card__content'); if (date && content) content.append(el('span', { class: 'card__date' }, [txt(date)])); }
+      track.append(cc);
+    }
+    feed.append(track); inner.append(feed);
+    const btn = node.querySelector(':scope .button'); if (btn && !node.querySelector('.card .button')) { const bw = buttonWrapper(btn, 'center'); if (bw) inner.append(bw); }
+    s.append(inner); return s;
+  },
   image(node, ctx) {
     if (ctx.family === 'markedsnytt-listing') for (const img of node.querySelectorAll('img[data-lazy-src]:not([src])')) img.setAttribute('src', img.getAttribute('data-lazy-src'));
     return ctx.imageBlock(node);

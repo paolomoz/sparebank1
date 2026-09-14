@@ -53,3 +53,26 @@
   .columns .col-lg-offset-0 { grid-column-start: 1; } .columns .col-lg-offset-1 { grid-column-start: 2; } .columns .col-lg-offset-2 { grid-column-start: 3; } .columns .col-lg-offset-3 { grid-column-start: 4; }
   .columns .col-lg-offset-1.col-lg-4 { grid-column: 2 / span 4; } .columns .col-lg-offset-0.col-lg-6 { grid-column: 1 / span 6; } .columns .col-lg-offset-0.col-lg-3 { grid-column: 1 / span 3; }
 }
+
+/* ===== kundeservice-hub / market-landing (additive variants) =====
+   cols-N — the live grid row is N columns wide (centred N/12 of the container; the col-lg-* spans stay as authored).
+   chat — the boost.ai entry field under the text of the last column (stardust/prototypes/css/kundeservice-hub.css .chat-field*). */
+.columns.chat .chat-field { position: relative; height: 65px; margin: 0; }
+.columns.chat .chat-field__root { position: relative; height: 54.39px; }
+.columns.chat .chat-field__label p { margin: 0; }
+.columns.chat .chat-field__input { display: block; box-sizing: border-box; width: 100%; height: 54.39px; margin: 0 0 8px; padding: 16px 60px 16px 16px; border: 2px solid rgb(155 151 151); border-radius: 4px; background: var(--white); color: var(--text); font: 400 16px/18.4px var(--font); resize: none; overflow: hidden; }
+.columns.chat .chat-field__input:focus { outline: 0; border-color: var(--vann); box-shadow: 0 0 0 2px var(--vann); }
+.columns.chat .chat-field__button { position: absolute; top: 0; right: 0; width: 60px; height: 54px; padding: 1px 6px; border: 0; background: none; color: var(--vann); text-align: center; line-height: 18.4px; cursor: pointer; }
+.columns.chat .chat-field__button .icon { display: inline-block; line-height: 0; }
+.columns.chat .chat-field__button svg { display: inline; width: 25px; height: 32px; margin-top: 4px; vertical-align: top; }
+
+@media (width >= 768px) {
+  .columns.cols-10 .grid-row { grid-template-columns: repeat(10, 1fr); max-width: min(83.3333%, 1066.67px); }
+  .columns.cols-8 .grid-row { grid-template-columns: repeat(8, 1fr); max-width: min(66.6667%, 853.33px); }
+  .columns.cols-6 .grid-row { grid-template-columns: repeat(6, 1fr); max-width: min(50%, 640px); }
+}
+.columns .col__text > p:has(> :is(picture, img):only-child) { margin: 0; } /* hub columns: image above text, flush (live .image has no margin) */
+/* lead-all: every paragraph of the text column is a lead (live h2 + span.lead-blue ×N, 18/24 → 24/32 fjell, 18/24px under) */
+.columns.lead-all .col__text p { display: block; margin: 16px 0 18px; font-size: 18px; line-height: 24px; color: var(--fjell); }
+@media (width >= 768px) { .columns.lead-all .col__text p { margin-bottom: 24px; font-size: 24px; line-height: 32px; text-wrap: pretty; } }
+/* ===== /kundeservice-hub / market-landing ===== */

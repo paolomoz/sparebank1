@@ -10,10 +10,12 @@
 .page--theme .main > .richtext.richtext--max { max-width: var(--max); }
 .page--theme .main > .richtext + .band { margin-top: 48px; }
 .page--theme .richtext--max { max-width: var(--max); margin-left: auto; margin-right: auto; }
-.page--theme .main-lead, .page--theme .lead, .page--theme .sub-lead-left, .page--theme .sub-lead { display: block; margin: 0 0 1em; text-wrap: pretty; }
+.page--theme .main-lead, .page--theme .lead, .page--theme .sub-lead-left, .page--theme .sub-lead { display: block; margin: 0 0 1em; font-family: 'SpareBank1-regular', arial, sans-serif; font-variant-numeric: tabular-nums; text-wrap: pretty; }
+/* the lead/subtle spans carry the site font on live even inside an authored-tahoma paragraph */
+.page--theme .checked-list .subtle-text { font-family: 'SpareBank1-regular', arial, sans-serif; }
 .page--theme .main-lead { text-align: center; font-size: 18px; line-height: 24px; color: var(--fjell); margin-bottom: 18px; }
-.page--theme .lead, .page--theme .sub-lead { text-align: center; font-size: 17px; line-height: 28px; color: var(--text); }
-.page--theme .sub-lead-left { text-align: left; font-size: 17px; line-height: 28px; color: var(--text); }
+.page--theme .lead, .page--theme .sub-lead { text-align: center; font-size: 17px; line-height: 24px; color: var(--text); }
+.page--theme .sub-lead-left { text-align: left; font-size: 17px; line-height: 24px; color: var(--text); }
 @media (min-width: 768px) {
   .page--theme .main > .title h1, .page--theme .main > .intro h1 { margin-bottom: 24px; }
   .page--theme .main-lead { font-size: 24px; line-height: 32px; margin-bottom: 24px; }
@@ -80,6 +82,10 @@
 .page--theme .reference .image:not([style*="--ratio"]) picture { display: inline; }
 .page--theme .reference .image:not([style*="--ratio"]) .image__img { display: inline; vertical-align: baseline; width: 100%; }
 @media (min-width: 1024px) { .page--theme .reference > .cols { padding: 72px 0 56px; } }
+
+/* BEDRIFT footer: the contact block has an empty text container on live that still reserves 24px above the action row */
+.page--theme .contact__actions { margin-top: 72px; }
+@media (min-width: 768px) { .page--theme .contact__actions { margin-top: 88px; } }
 
 /* ---------------------------------------------------------------- top-level icon image + centred text + button */
 .page--theme .main > .image { margin-top: 48px; text-align: center; }

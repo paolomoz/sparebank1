@@ -22,3 +22,8 @@ main .section:has(> .breadcrumbs-wrapper) { padding: 0; }
 
 /* the band that follows overlaps the breadcrumb row by 36px on the live site */
 main .section:has(> .breadcrumbs-wrapper) + .section.band { margin-top: -36px; }
+
+/* ===== faq (additive variant) =====
+   question — the question page's back-link row (live .question-page > .to-parent: flush top, margin 0 0 16, 20px inset inside the 20px page gutter) */
+.breadcrumbs.question .breadcrumb { margin: 0 auto 16px; padding: 0 40px; }
+/* ===== /faq ===== */

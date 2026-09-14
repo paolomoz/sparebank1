@@ -5,5 +5,19 @@
   "bytes": 62102,
   "size": "300x272@2x",
   "at": "2026-09-14T18:51:49.350Z"
+ },
+ "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-gar-smiler.svg": {
+  "png": "dame-gar-smiler.png",
+  "status": 201,
+  "bytes": 61220,
+  "size": "282x485@2x",
+  "at": "2026-09-14T19:04:32.384Z"
+ },
+ "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/samtale-2.svg": {
+  "png": "samtale-2.png",
+  "status": 201,
+  "bytes": 76488,
+  "size": "763x382@2x",
+  "at": "2026-09-14T19:04:33.586Z"
  }
 }

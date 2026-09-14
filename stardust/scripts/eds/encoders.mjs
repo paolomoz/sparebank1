@@ -158,7 +158,8 @@ export const relatedProducts = relatedTopics;
 export function feedback(root, ctx) {
   ctx.notes.push('lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only');
   const qEl = q(root, '.feedback__question');
-  return { html: section([block('feedback', [], [[`<p>${inline(qEl, ctx)}</p>`]])], { style: 'gap-48' }), blocks: ['feedback'] };
+  const qt = qEl && /^h[1-6]$/i.test(qEl.tagName) ? qEl.tagName.toLowerCase() : 'p'; // the live question is an h2 — keep its rank
+  return { html: section([block('feedback', [], [[`<${qt}>${inline(qEl, ctx)}</${qt}>`]])], { style: 'gap-48' }), blocks: ['feedback'] };
 }
 
 export function reference(root, ctx) {

@@ -1,6 +1,6 @@
 /* shortcuts — lifted from stardust/prototypes/css/category-hub.css (.shortcuts*, .btn--shortcut) */
 main .section .shortcuts-wrapper { max-width: none; }
-.shortcuts .shortcuts__list { list-style: none; max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); font-size: 0; line-height: 0; text-align: center; }
+.shortcuts .shortcuts__list { list-style: none; max-width: var(--container); margin: 0 auto; padding: 0; font-size: 0; line-height: 0; text-align: center; }
 .shortcuts .shortcuts__item { display: inline-block; width: 100%; margin: 0 0 10px; font-size: 16px; line-height: 24px; vertical-align: top; text-align: center; }
 .shortcuts a.shortcuts__link:any-link { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 44px; padding: 8px 24px; border: 2px solid var(--vann); border-radius: 96px; background: var(--white); color: var(--vann); text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: 0.2s var(--ease); }
 .shortcuts .shortcuts__link .icon { display: inline-flex; width: 16px; height: 16px; margin-left: 8px; line-height: 0; }
@@ -9,7 +9,6 @@ main .section .shortcuts-wrapper { max-width: none; }
 .shortcuts a.shortcuts__link:hover svg { transform: rotate(-90deg) translate(12px, 0); }
 
 @media (width >= 768px) {
-  .shortcuts .shortcuts__list { padding: 0; }
   .shortcuts .shortcuts__item { width: 256px; max-width: 256px; margin: 0 12.2px 10px; }
   .shortcuts a.shortcuts__link:any-link { display: inline-flex; }
 }

@@ -7,6 +7,26 @@
   .page--markedsnytt-listing .grid-row--cols-11, .page--markedsnytt-listing .main > .cols > .grid-row--cols-11 { grid-template-columns: repeat(11, 1fr); max-width: 1173.33px; }
 }
 
+/* the hero grid tucks 36px under the bank-choice band (live columns-grid margin-top:-36px) */
+.page--markedsnytt-listing .main > .breadcrumb + .cols, .page--markedsnytt-listing .main > .bank-choice + .cols { margin-top: -36px; }
+
+/* canon pulls the first band 36px up (.main > .band:first-of-type) — on live the first band follows the hero flush */
+.page--markedsnytt-listing .main > .cols + .band { margin-top: 0; }
+
+/* live h3 is the medium face (canon uses the title face) */
+.page--markedsnytt-listing .richtext h3 { font-family: var(--font-medium); }
+
+/* live .text-wrapper lists: ul margin 0 0 16px 16px, items 8px 0 0 32px, disc */
+.page--markedsnytt-listing .richtext ul { margin: 0 0 16px 16px; padding: 0; list-style: disc; text-align: left; }
+.page--markedsnytt-listing .richtext ul li { margin: 8px 0 0 32px; }
+
+/* heading utility classes on live are the heading sizes (h2 > .h3 renders 28/36) */
+.page--markedsnytt-listing .h3 { font-size: 20px; line-height: 24px; }
+@media (min-width: 768px) { .page--markedsnytt-listing .h3 { font-size: 28px; line-height: 36px; } }
+
+/* newsfeed card date (live .card__date) */
+.page--markedsnytt-listing .card__date { display: block; max-width: fit-content; padding: 4px 0; font-size: 14px; line-height: 1.4; }
+
 /* live button-list items keep an 8px bottom margin at desktop too */
 @media (min-width: 768px) { .page--markedsnytt-listing .button-list .button-wrap { margin-bottom: 8px; } }
 
@@ -15,6 +35,7 @@
 .page--markedsnytt-listing .card--featured .card__media { height: 200px; border-radius: 15px 15px 0 0; overflow: hidden; }
 .page--markedsnytt-listing .card--featured .card__img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .page--markedsnytt-listing .card--featured .card__body { display: grid; grid-template-columns: 1fr; align-content: space-between; padding: 16px; }
+.page--markedsnytt-listing .card--featured .card__content .richtext { display: flow-root; }
 .page--markedsnytt-listing .card--featured .card__content .richtext > p:first-child { margin-top: 16px; }
 .page--markedsnytt-listing .card--featured .card__content .button-wrap { margin: 8px 0; }
 .page--markedsnytt-listing .h6 { line-height: 20px; }

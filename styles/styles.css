@@ -472,3 +472,62 @@ main .section > div:empty {
 @media (width >= 1024px) {
   main .section.gap-48 { margin-top: 72px; }
 }
+
+/* ===== category-hub ===== */
+/* intro: h1 + centred lead (live .aem-main-container — 800px lead column; the lead's 24px bottom margin is contained like the live flow-root) */
+main .section.intro { text-align: center; }
+main .section.intro > div { display: flow-root; max-width: 800px; }
+main .section.intro .default-content-wrapper h1 { margin: 16px 0 8px; text-align: center; }
+main .section.intro .default-content-wrapper h1 + p { max-width: 280px; margin: 24px auto 18px; text-align: center; }
+/* visual-nav: the cards nav block spans the viewport (card widths are its own) */
+main .section.visual-nav { padding: 0; }
+main .section.visual-nav > div { max-width: none; }
+/* hub band holding the related icon list: left-aligned heading, no wrapper slack under it */
+main .section.hub-related .default-content-wrapper { padding-bottom: 0; }
+main .section.hub-related .default-content-wrapper h2 { margin-bottom: 8px; text-align: left; }
+
+@media (width >= 768px) {
+  main .section.intro .default-content-wrapper h1 { margin-bottom: 24px; }
+  main .section.intro .default-content-wrapper h1 + p { max-width: none; margin: 40px 0 24px; }
+  main .section.hub-related .default-content-wrapper h2 { margin-bottom: 24px; }
+}
+/* hub-banner: the top-level banner on hub pages keeps the live 165px inner height at ≥768 (illustration 190 − 25 overlap; the text centres in it) */
+@media (width >= 768px) { main .section.hub-banner .banner .banner-small__inner { height: 165px; } }
+/* mobile: the shortcuts heading keeps 20px under it (live .shortcuts__title margin); the hub banner spans the viewport (its inner carries the 16px inset) */
+@media (width <= 767px) {
+  main .section.hub-shortcuts .default-content-wrapper h2 { margin-bottom: 20px; }
+  main .section.hub-banner { padding: 0; }
+}
+/* ===== /category-hub ===== */
+
+/* ===== kundeservice-hub ===== */
+main .section.syrin { background: #f2f2f9; } /* --ffe-farge-syrin-30 */
+/* hub-head: the live empty spacer band under the h1 (32/48px); hub-rule: the live rule between the intro columns and the card grid */
+main .section.hub-head .default-content-wrapper:first-child { padding-bottom: 32px; }
+main .section.hub-head .default-content-wrapper:first-child h1 { margin-bottom: 8px; text-align: center; }
+main .section.hub-rule .columns-wrapper + .cards-wrapper { margin-top: 64px; }
+
+@media (width >= 768px) {
+  main .section.hub-head .default-content-wrapper:first-child { padding-bottom: 48px; }
+  main .section.hub-head .default-content-wrapper:first-child h1 { margin-bottom: 24px; }
+}
+/* ===== /kundeservice-hub ===== */
+
+/* ===== faq ===== */
+/* question — the Spørsmål question page: 768px centred column (live .question-page__question-container), h1 28/36 → 46/56,
+   answer prose 16/24 with the live list indents (16 → 48), the inline feedback row flush left (values: stardust/prototypes/css/faq.css) */
+main .section.question > div { max-width: 768px; }
+main .section.question > div { display: flow-root; }
+main .section.question .default-content-wrapper h1 { margin: 0 0 8px; }
+main .section.question .default-content-wrapper h1 + p { margin-top: 16px; }
+main .section.question .default-content-wrapper p { margin: 16px 0; }
+main .section.question .default-content-wrapper ul { margin: 0 0 16px; padding: 0; list-style: disc; }
+main .section.question .default-content-wrapper ul li { margin: 8px 0 0 16px; }
+main .section.question .feedback-wrapper { margin-top: 0; }
+
+@media (width >= 768px) {
+  main .section.question .default-content-wrapper h1 { margin-bottom: 24px; }
+  main .section.question .default-content-wrapper ul { margin-left: 16px; }
+  main .section.question .default-content-wrapper ul li { margin-left: 32px; }
+}
+/* ===== /faq ===== */

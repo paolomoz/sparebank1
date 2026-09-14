@@ -15,19 +15,24 @@
   },
   {
    "module": "qp",
-   "blocks": []
+   "blocks": [
+    "breadcrumbs",
+    "feedback"
+   ]
   }
  ],
  "blocks": [
-  "bank-choice"
+  "bank-choice",
+  "breadcrumbs",
+  "feedback"
  ],
  "notes": [
-  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally"
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron, back-link) — not default content; variant `question` = the question-page geometry",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only; variant `inline` = the live left-aligned row under the answer"
  ],
- "gaps": [
-  "module qp emitted as prose",
-  "no encoder for module qp"
- ],
+ "gaps": [],
  "assets": [],
- "writtenAt": "2026-09-14T18:34:57.713Z"
+ "rasterise": [],
+ "writtenAt": "2026-09-14T19:09:24.558Z"
 }

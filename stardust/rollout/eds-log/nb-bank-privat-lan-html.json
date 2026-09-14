@@ -18,35 +18,37 @@
    "blocks": []
   },
   {
-   "module": "vnav vnav--medium",
+   "module": "vnav",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "vnav",
    "blocks": []
   },
   {
-   "module": "vnav vnav--medium",
+   "module": "vnav",
    "blocks": []
   },
   {
-   "module": "vnav vnav--medium",
+   "module": "vnav",
    "blocks": []
   },
   {
-   "module": "vnav vnav--medium",
+   "module": "vnav",
    "blocks": []
   },
   {
-   "module": "vnav vnav--small",
+   "module": "vnav",
    "blocks": []
   },
   {
-   "module": "vnav vnav--small",
+   "module": "vnav",
    "blocks": []
   },
   {
-   "module": "vnav vnav--small",
-   "blocks": []
-  },
-  {
-   "module": "vnav vnav--small",
+   "module": "vnav",
    "blocks": []
   },
   {
@@ -57,7 +59,9 @@
   },
   {
    "module": "cobranding",
-   "blocks": []
+   "blocks": [
+    "cobranding"
+   ]
   },
   {
    "module": "cols",
@@ -96,41 +100,27 @@
  ],
  "blocks": [
   "bank-choice",
+  "cards",
   "shortcuts",
+  "cobranding",
   "columns",
   "banner",
-  "cards",
   "callout",
   "feedback"
  ],
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "cards nav: 8 visual-nav modules (4 photo, 4 icon) folded into one block — one row per card",
+  "lint D1 shortcuts: one cell with a plain list of links (D5 simple list) — the block renders the live pill buttons with chevrons; the heading above stays default content",
+  "lint D3 cobranding: single-cell rows read by position — row 1 heading + toggle label (EW8: the label moves into the expand button), row 2 partner logo + title, rows 3+ one panel column each; the panel is closed at rest (dynamics #14 static snapshot)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-gar-smiler.svg is 51371 bytes of SVG (> 40000) — authored as DA media dame-gar-smiler.png (rasterised)",
+  "lint D1 callout: the FFE message box (round icon overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module intro emitted as prose",
-  "no encoder for module intro",
-  "module vnav.vnav--medium emitted as prose",
-  "no encoder for module vnav vnav--medium",
-  "module vnav.vnav--medium emitted as prose",
-  "no encoder for module vnav vnav--medium",
-  "module vnav.vnav--medium emitted as prose",
-  "no encoder for module vnav vnav--medium",
-  "module vnav.vnav--medium emitted as prose",
-  "no encoder for module vnav vnav--medium",
-  "module vnav.vnav--small emitted as prose",
-  "no encoder for module vnav vnav--small",
-  "module vnav.vnav--small emitted as prose",
-  "no encoder for module vnav vnav--small",
-  "module vnav.vnav--small emitted as prose",
-  "no encoder for module vnav vnav--small",
-  "module vnav.vnav--small emitted as prose",
-  "no encoder for module vnav vnav--small",
-  "module cobranding emitted as prose",
-  "no encoder for module cobranding"
+ "gaps": [],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-gar-smiler.svg"
  ],
- "assets": [
-  "chevron.svg"
- ],
- "writtenAt": "2026-09-14T18:34:31.425Z"
+ "writtenAt": "2026-09-14T19:08:37.964Z"
 }
