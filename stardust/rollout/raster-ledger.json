@@ -411,5 +411,54 @@
   "bytes": 79132,
   "size": "596x335@2x",
   "at": "2026-09-14T20:38:51.851Z"
+ },
+ "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-snakker-sand-sirkel-usymmetrisk.svg": {
+  "png": "illustrasjon-snakker-sand-sirkel-usymmetrisk.png",
+  "status": 201,
+  "bytes": 199218,
+  "size": "1200x1200@2x",
+  "at": "2026-09-14T21:53:12.715Z"
+ },
+ "https://www.sparebank1.no/content/dam/SB1/kampanjer/Forsikring/illustrasjon-kyss-sand-sirkel-usymmetrisk.svg": {
+  "png": "illustrasjon-kyss-sand-sirkel-usymmetrisk.png",
+  "status": 201,
+  "bytes": 266698,
+  "size": "1200x1200@2x",
+  "at": "2026-09-14T21:53:14.134Z"
+ },
+ "https://www.sparebank1.no/content/dam/SB1/kampanjer/Forsikring/illustrasjon-dame-sand-sirkel-usymmetrisk.svg": {
+  "png": "illustrasjon-dame-sand-sirkel-usymmetrisk.png",
+  "status": 201,
+  "bytes": 206219,
+  "size": "1200x1200@2x",
+  "at": "2026-09-14T21:53:15.282Z"
+ },
+ "https://www.sparebank1.no/content/dam/SB1/kampanjer/Forsikring/illustrasjon-dame-i-bil-usymmetrisk.svg": {
+  "png": "illustrasjon-dame-i-bil-usymmetrisk.png",
+  "status": 201,
+  "bytes": 180106,
+  "size": "1200x1088@2x",
+  "at": "2026-09-14T21:53:16.227Z"
+ },
+ "https://www.sparebank1.no/content/dam/SB1/kampanjer/Forsikring/illustrasjonbil-usymmetrisk.svg": {
+  "png": "illustrasjonbil-usymmetrisk.png",
+  "status": 201,
+  "bytes": 155746,
+  "size": "1200x1088@2x",
+  "at": "2026-09-14T21:53:17.115Z"
+ },
+ "https://www.sparebank1.no/content/dam/SB1/kampanjer/Forsikring/illustrasjon-samle-forsikring-usymmetrisk.svg": {
+  "png": "illustrasjon-samle-forsikring-usymmetrisk.png",
+  "status": 201,
+  "bytes": 222034,
+  "size": "1200x1088@2x",
+  "at": "2026-09-14T21:53:18.081Z"
+ },
+ "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/illustrasjon-kundeservice-sand-sirkel-usymmetrisk.svg": {
+  "png": "illustrasjon-kundeservice-sand-sirkel-usymmetrisk.png",
+  "status": 201,
+  "bytes": 184407,
+  "size": "1200x1200@2x",
+  "at": "2026-09-14T21:53:19.020Z"
  }
 }

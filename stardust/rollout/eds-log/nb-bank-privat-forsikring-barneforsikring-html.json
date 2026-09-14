@@ -131,6 +131,9 @@
  ],
  "notes": [
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-snakker-sand-sirkel-usymmetrisk.svg is 941398 bytes of SVG (> 40000) — authored as DA media illustrasjon-snakker-sand-sirkel-usymmetrisk.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/kampanjer/Forsikring/illustrasjon-kyss-sand-sirkel-usymmetrisk.svg is 983750 bytes of SVG (> 40000) — authored as DA media illustrasjon-kyss-sand-sirkel-usymmetrisk.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/kampanjer/Forsikring/illustrasjon-dame-sand-sirkel-usymmetrisk.svg is 1012845 bytes of SVG (> 40000) — authored as DA media illustrasjon-dame-sand-sirkel-usymmetrisk.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kyss-sand-sirkel-usymmetrisk.svg is 983750 bytes of SVG (> 40000) — authored as DA media illustrasjon-kyss-sand-sirkel-usymmetrisk.png (rasterised)",
   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "lint D1 accordion tabs: the live \"section\" master/detail module (list of section-items, active item shown in a detail panel; inline on mobile) — one row per item [item title][content]; item 1 open at rest",
@@ -162,8 +165,11 @@
  "gaps": [],
  "assets": [],
  "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-snakker-sand-sirkel-usymmetrisk.svg",
+  "https://www.sparebank1.no/content/dam/SB1/kampanjer/Forsikring/illustrasjon-kyss-sand-sirkel-usymmetrisk.svg",
+  "https://www.sparebank1.no/content/dam/SB1/kampanjer/Forsikring/illustrasjon-dame-sand-sirkel-usymmetrisk.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kyss-sand-sirkel-usymmetrisk.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mobil-lege.svg"
  ],
- "writtenAt": "2026-09-14T21:26:41.379Z"
+ "writtenAt": "2026-09-14T21:53:09.026Z"
 }

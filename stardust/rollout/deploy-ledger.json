@@ -1,9 +1,117 @@
 {
-  "/nb/bank/om-oss/vare-eksperter": {
+  "/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T21:39:58.533Z",
-    "put": 200,
+    "ts": "2026-09-14T21:41:41.846Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/bedrift/bedriftsforsikring": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:41:41.847Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/om-oss/investor": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:41:41.847Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/om-oss/jobb-og-karriere": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:41:48.015Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/om-oss/om-banken/selskapsinformasjon": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:41:48.196Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/om-oss/personvern/generelle-vilkar": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:41:48.290Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/om-oss/personvern": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:41:52.716Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/om-oss/presse": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:41:52.719Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/om-oss/samfunnsansvar": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:41:53.099Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/om-oss/selskaper": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:41:57.922Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:41:58.182Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:41:58.580Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/privat/sparing/markedsnytt": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:42:02.188Z",
+    "put": 201,
     "preview": 200,
     "live": 200,
     "verify": "ok"

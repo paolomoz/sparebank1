@@ -145,6 +145,10 @@
  "notes": [
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kyss-sand-sirkel-usymmetrisk.svg is 983750 bytes of SVG (> 40000) — authored as DA media illustrasjon-kyss-sand-sirkel-usymmetrisk.png (rasterised)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/illustrasjon-kundeservice-sand-sirkel-usymmetrisk.svg is 918860 bytes of SVG (> 40000) — authored as DA media illustrasjon-kundeservice-sand-sirkel-usymmetrisk.png (rasterised)",
   "lint D3 cobranding: single-cell rows read by position — row 1 heading + toggle label (EW8: the label moves into the expand button), row 2 partner logo + title, rows 3+ one panel column each; the panel is closed at rest (dynamics #14 static snapshot)",
   "lint D1 callout: the FFE message box (round glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
   "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)",
@@ -203,7 +207,9 @@
  "gaps": [],
  "assets": [],
  "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kyss-sand-sirkel-usymmetrisk.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/illustrasjon-kundeservice-sand-sirkel-usymmetrisk.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-koffert-reise-rosa.svg"
  ],
- "writtenAt": "2026-09-14T21:26:41.793Z"
+ "writtenAt": "2026-09-14T21:53:07.891Z"
 }

@@ -180,7 +180,10 @@ export function tip(root, ctx) {
   return { html: section([block('callout', ['tip'], [[richtext(root, ctx)]])], { style: 'gap-48' }), blocks: ['callout'] };
 }
 export function usp(root, ctx) {
-  return { html: section([block('usp', [], qa(root, '.usp__item').map((it) => [inline(it, ctx) ? `<p>${inline(it, ctx)}</p>` : richtext(it, ctx)]))]), blocks: ['usp'] };
+  // one row per item: [icon][text]; the illustrated (icon-list) variant carries the live layout token
+  const items = qa(root, '.usp__item'); if (!items.length) { ctx.notes.push('usp: live module rendered no items (client-side) — nothing authored'); return null; }
+  const rows = items.map((it) => { const ic = q(it, '.usp__icon img'); const sv = q(it, '.usp__icon svg'); const icon = ic ? pic(ic, ctx) : sv ? `<p>${L.iconOf(sv)}</p>` : ''; const rest = { childNodes: [...it.childNodes].filter((n) => !(n.nodeType === 1 && n.classList.contains('usp__icon'))) }; return [icon, richtext(rest, ctx) || prose(rest, ctx)]; });
+  return { html: section([block('usp', root.classList.contains('usp--icons-left') ? ['illustrated'] : [], rows)]), blocks: ['usp'] };
 }
 export function moduleFallback(root, ctx) { // unknown module → prose default content + gap
   const html = richtext(root, ctx); if (!html.trim()) return null; ctx.gaps.push(`module ${cls(root).join('.')} emitted as prose`);

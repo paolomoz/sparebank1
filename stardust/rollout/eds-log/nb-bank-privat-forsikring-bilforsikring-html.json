@@ -148,6 +148,9 @@
  ],
  "notes": [
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "media: https://www.sparebank1.no/content/dam/SB1/kampanjer/Forsikring/illustrasjon-dame-i-bil-usymmetrisk.svg is 1089987 bytes of SVG (> 40000) — authored as DA media illustrasjon-dame-i-bil-usymmetrisk.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/kampanjer/Forsikring/illustrasjonbil-usymmetrisk.svg is 1161955 bytes of SVG (> 40000) — authored as DA media illustrasjonbil-usymmetrisk.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/kampanjer/Forsikring/illustrasjon-samle-forsikring-usymmetrisk.svg is 1161686 bytes of SVG (> 40000) — authored as DA media illustrasjon-samle-forsikring-usymmetrisk.png (rasterised)",
   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "richtext small-text: the live paragraph is wrapped in span.subtle-text (14/20) — carried as a section token (no inline classes in David's Model)",
@@ -192,7 +195,10 @@
  "gaps": [],
  "assets": [],
  "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/kampanjer/Forsikring/illustrasjon-dame-i-bil-usymmetrisk.svg",
+  "https://www.sparebank1.no/content/dam/SB1/kampanjer/Forsikring/illustrasjonbil-usymmetrisk.svg",
+  "https://www.sparebank1.no/content/dam/SB1/kampanjer/Forsikring/illustrasjon-samle-forsikring-usymmetrisk.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-dame-sand-sirkel-usymmetrisk.svg"
  ],
- "writtenAt": "2026-09-14T21:26:41.489Z"
+ "writtenAt": "2026-09-14T21:53:07.415Z"
 }

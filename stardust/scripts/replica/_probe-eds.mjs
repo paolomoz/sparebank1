@@ -6,7 +6,7 @@ await p.goto(url, { waitUntil: 'networkidle' });
 await p.evaluate(async () => { for (let y = 0; y < document.documentElement.scrollHeight; y += 600) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 60)); } window.scrollTo(0, 0); });
 await p.waitForTimeout(700);
 const rows = await p.evaluate(([y0, y1]) => {
-  const out = []; const sel = 'h1,h2,h3,h4,p,li,a,button,img,svg,hr,input,label,span,td,th,summary,dt,dd';
+  const out = []; const sel = 'h1,h2,h3,h4,h5,h6,p,li,a,button,img,svg,hr,input,label,span,td,th,summary,dt,dd';
   for (const e of document.querySelectorAll(sel)) {
     const r = e.getBoundingClientRect(); if (!r.height || !r.width) continue; const y = Math.round(r.y + scrollY); if (y < y0 || y > y1) continue;
     const own = [...e.childNodes].filter((n) => n.nodeType === 3).map((n) => n.textContent).join(' ').replace(/\s+/g, ' ').trim();

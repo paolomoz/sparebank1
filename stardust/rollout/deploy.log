@@ -182,3 +182,16 @@
 {"t":"2026-09-14T21:29:33.686Z","path":"/nb/bank/privat/lan/gronne-lan","step":"verify","ok":true}
 {"t":"2026-09-14T21:38:30.785Z","path":"/nb/bank/om-oss/vare-eksperter","step":"verify","ok":true}
 {"t":"2026-09-14T21:40:04.672Z","path":"/nb/bank/om-oss/vare-eksperter","step":"verify","ok":true}
+{"t":"2026-09-14T21:41:48.014Z","path":"/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie","step":"verify","ok":true}
+{"t":"2026-09-14T21:41:48.195Z","path":"/nb/bank/om-oss/investor","step":"verify","ok":true}
+{"t":"2026-09-14T21:41:48.290Z","path":"/nb/bank/bedrift/bedriftsforsikring","step":"verify","ok":true}
+{"t":"2026-09-14T21:41:52.716Z","path":"/nb/bank/om-oss/personvern/generelle-vilkar","step":"verify","ok":true}
+{"t":"2026-09-14T21:41:52.718Z","path":"/nb/bank/om-oss/om-banken/selskapsinformasjon","step":"verify","ok":true}
+{"t":"2026-09-14T21:41:53.099Z","path":"/nb/bank/om-oss/jobb-og-karriere","step":"verify","ok":true}
+{"t":"2026-09-14T21:41:57.921Z","path":"/nb/bank/om-oss/personvern","step":"verify","ok":true}
+{"t":"2026-09-14T21:41:58.182Z","path":"/nb/bank/om-oss/samfunnsansvar","step":"verify","ok":true}
+{"t":"2026-09-14T21:41:58.580Z","path":"/nb/bank/om-oss/presse","step":"verify","ok":true}
+{"t":"2026-09-14T21:42:02.188Z","path":"/nb/bank/om-oss/selskaper","step":"verify","ok":true}
+{"t":"2026-09-14T21:42:04.151Z","path":"/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man","step":"verify","ok":true}
+{"t":"2026-09-14T21:42:04.446Z","path":"/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort","step":"verify","ok":true}
+{"t":"2026-09-14T21:42:08.718Z","path":"/nb/bank/privat/sparing/markedsnytt","step":"verify","ok":true}

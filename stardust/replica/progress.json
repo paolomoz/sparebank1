@@ -1,7 +1,7 @@
 {
  "_provenance": {
   "writtenBy": "stardust:replica (Phase 3–4 ledger)",
-  "writtenAt": "2026-09-14T21:28:55Z",
+  "writtenAt": "2026-09-14T21:48:05Z",
   "againstInput": "https://www.sparebank1.no/nb/bank/ — 100-page roster, 13 archetype families",
   "readArtifacts": [
    "stardust/current/_page-types.json",
@@ -1318,6 +1318,22 @@
       },
       "canonRequests": "stardust/replica/canon-requests.md — W3 entries"
      }
+    },
+    "publishedSample": {
+     "at": "2026-09-14T21:48:05Z",
+     "origin": "https://main--sparebank1--paolomoz.aem.live",
+     "forbrukslan": {
+      "1440": "3.94% Δh 4 PASS",
+      "360": "14.84% Δh −7 FAIL (hot bands 3500–7500: the sand cols band and its photo cells sit ~25px higher than live from the section top; the replica prototype fails 360 the same way — sibling-only mobile metrics never exercised by the archetype)"
+     },
+     "mobilbank": {
+      "1440": "10.34% Δh 8 (photo bands; marginal)",
+      "360": "13.44% Δh −71 (Spink banner: live frost tint + secondary pill button vs plain link; sibling-only module)"
+     },
+     "vare-eksperter": {
+      "1440": "6.35% Δh −79 after the chrome fix (privat footer with contact); 360 18.87% Δh −158 (people cards mobile metrics; role lines merged by the pipeline br drop)"
+     },
+     "verdict": "product siblings are content-complete (26/29 + 3 fixed, lint 0 🔴) and live; their mobile fidelity is a recorded residual class, not gated — filed as eds-requests (orchestrator)"
     }
    }
   },
@@ -4160,7 +4176,7 @@
    "mergedAt": "2026-09-14T19:52:05Z",
    "eds": {
     "ledger": "stardust/rollout/eds-progress/om-oss.json",
-    "mergedAt": "2026-09-14T21:00:57Z",
+    "mergedAt": "2026-09-14T21:48:05Z",
     "data": {
      "regime": "published-origin (local EDS emulation :3014, content/nb/bank/om-oss/presse.html + blocks) vs live capture (stardust/replica/gates/presse-{1440,360}/live.png)",
      "at": "2026-09-14T22:40:00Z",
@@ -4394,7 +4410,7 @@
    "mergedAt": "2026-09-14T19:52:05Z",
    "eds": {
     "ledger": "stardust/rollout/eds-progress/theme.json",
-    "mergedAt": "2026-09-14T21:00:57Z",
+    "mergedAt": "2026-09-14T21:48:05Z",
     "data": {
      "regime": "published-origin (local EDS emulation :3014, content/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html + blocks) vs live capture (stardust/replica/gates/borettslag-{1440,360}/live.png)",
      "at": "2026-09-14T23:20:00Z",
@@ -4421,14 +4437,6 @@
      },
      "iterations": 4,
      "breakpoints": {
-      "1440": {
-       "pixelPct": 3.66,
-       "heightDelta": 5,
-       "chromeHeaderPct": 0.42,
-       "chromeFooterPct": 1.22,
-       "pass": true,
-       "evidence": "stardust/replica/gates/borettslag-eds-1440/ (pixel-iter4.txt, chrome-header.txt, chrome-footer.txt [--y-b 4240], content-diff.txt, content-diff-live.txt)"
-      },
       "360": {
        "pixelPct": 3.79,
        "heightDelta": 1,
@@ -4437,6 +4445,14 @@
        "chromeFooterPct": 1.03,
        "pass": true,
        "evidence": "stardust/replica/gates/borettslag-eds-360/ (pixel-iter3.txt, chrome-header.txt, chrome-header-x115.txt, chrome-footer.txt [--y-b 6401])"
+      },
+      "1440": {
+       "pixelPct": 3.66,
+       "heightDelta": 5,
+       "chromeHeaderPct": 0.42,
+       "chromeFooterPct": 1.22,
+       "pass": true,
+       "evidence": "stardust/replica/gates/borettslag-eds-1440/ (pixel-iter4.txt, chrome-header.txt, chrome-footer.txt [--y-b 4240], content-diff.txt, content-diff-live.txt)"
       }
      },
      "justified": [
@@ -4499,6 +4515,14 @@
         "static-cards (`cards static`) has no dedicated rules yet — renders as bordered medium cards (title inside the body) where the prototype shows borderless image + title rows; no lifted values exist for it (canon has none) → left for the owner of the static variant"
        ]
       }
+     },
+     "postGateNote": {
+      "at": "2026-09-14T23:50:00Z",
+      "borettslag1440": {
+       "pixelPct": 7.94,
+       "heightDelta": 33
+      },
+      "why": "external lib.mjs change (22:54) drops the trailing <br>&nbsp; of the two featured-card lead paragraphs (live blank 28px line each) — pipeline-faithful, not expressible by an author; eds-requests W4 #14. The gated figures above stand for the encoder/blocks; re-baseline after the orchestrator rules on #14."
      }
     }
    }
@@ -4634,6 +4658,115 @@
      "pass": true,
      "evidence": "gates/markedsnytt-360/pixel-iter9.txt",
      "bands": "card photo JPEG rescale + video embed (same geometry)"
+    }
+   },
+   "eds": {
+    "ledger": "stardust/rollout/eds-progress/markedsnytt-listing.json",
+    "mergedAt": "2026-09-14T21:48:05Z",
+    "data": {
+     "regime": "published-origin (local EDS emulation :3014, content/nb/bank/privat/sparing/markedsnytt.html + blocks) vs live capture (stardust/replica/gates/markedsnytt-{1440,360}/live.png)",
+     "at": "2026-09-14T23:55:00Z",
+     "worker": "W4",
+     "family": "markedsnytt-listing",
+     "archetype": "nb-bank-privat-sparing-markedsnytt-html",
+     "document": "content/nb/bank/privat/sparing/markedsnytt.html",
+     "encoder": "stardust/scripts/eds/encoders/markedsnytt-listing.mjs (featured photo cards, video bands → head + split-video default-content sections, expert / stack-cta cell tokens, dated news rail, hero tuck, hr#id anchors) over the om-oss band walker; the band-wrapped reference block via theme.mjs (family set)",
+     "blocks": [
+      "bank-choice, breadcrumbs (core)",
+      "columns (reused; additive lead, media-4-3, media-1-1, cols-9/10/11, expert, stack-cta, split cell model, text-gap (W2), flat)",
+      "cards grid lg-3 featured photo cols-9 (reused + additive: cover photo, h6 teaser in the 24px strut, centred button; cols-9 = 3-up 960px grid)",
+      "cards news (reused; the date paragraph after the title)",
+      "embed (NEW — Block Collection embed, auto-blocked by scripts.js from a paragraph that is only a YouTube/Vimeo embed link; D1)",
+      "feedback",
+      "header (/nav), footer (/footer)"
+     ],
+     "newBlocks": [
+      "embed (blocks/embed) + scripts.js buildEmbedAutoBlocks (additive)"
+     ],
+     "sectionStyles": "styles.css /* ===== markedsnytt-listing ===== */: mn-hero (−36px tuck), mn (medium h3, disc lists), cta-row, mn-flush, head / split-video (heading row + text/embed pairs on the live 11-column grid, embed first = live mobile order, kicker/title h3 pair line boxes), mn-ref (h2 > .h3 line box); section ids artikler / verdierogverdensbilder / kommentarer / sparebank1markets",
+     "chrome": {
+      "nav": "/nav",
+      "footer": "/footer"
+     },
+     "iterations": 6,
+     "breakpoints": {
+      "1440": {
+       "pixelPct": 7.29,
+       "pixelPctExcludingVideoBoxes": 3.86,
+       "heightDelta": 1,
+       "chromeHeaderPct": 0.42,
+       "chromeFooterPct": 1.25,
+       "pass": true,
+       "evidence": "stardust/replica/gates/markedsnytt-eds-1440/ (pixel-iter6.txt, pixel-iter6-novideo.txt, chrome-header.txt, chrome-footer.txt [--y-b], content-diff.txt, content-diff-live.txt)"
+      },
+      "360": {
+       "pixelPct": 11.16,
+       "pixelPctExcludingVideoBoxes": 7.09,
+       "heightDelta": 4,
+       "chromeHeaderPct": 3.58,
+       "chromeHeaderPctExcludingSkipLink": 0.1,
+       "chromeFooterPct": 1.44,
+       "pass": true,
+       "passNote": "raw 11.16% > 10% is carried entirely by the three YouTube boxes (live: lazy placeholder logo image; EDS: the player) — the brief's permanent residual; 7.09% with those three boxes masked on both sides (stardust/scripts/replica/_w4-mask.mjs), Δh 4",
+       "evidence": "stardust/replica/gates/markedsnytt-eds-360/ (pixel-iter6.txt, pixel-iter6-novideo.txt, chrome-header.txt, chrome-header-x115.txt, chrome-footer.txt [--y-b])"
+      }
+     },
+     "justified": [
+      {
+       "flag": "pixel bands y2000–3500 / 5000–5500 (1440) and 2500–3500 / 5500–7500 (360)",
+       "why": "the three YouTube embeds: live shows the lazy-load placeholder (SpareBank 1 logo on white/black) — EDS renders the player thumbnail; brief: permanent residual ('placeholder on live, player in the sidecar'). Masked measure 3.86% / 7.09%",
+       "permanent": true
+      },
+      {
+       "flag": "card photo bands (featured articles, news rail, portraits)",
+       "why": "JPEG rescale / cover crop — permanent class",
+       "permanent": true
+      },
+      {
+       "flag": "content-diff 🔴 ×8",
+       "why": "7 ROLE SWAP = live pseudo-heading spans (h1>.h1, h6 teasers, h3 links, h2>.h3) authored at the heading rank (site-wide class); 1 MISSING HEADING 'Hvorfor sparer folk i fond?' = the second text node of the same split heading (<h2><span class=h6>Episode 1:</span><br>Hvorfor…</h2>) — one heading in EDS, same text; 🟠 EXTRA ctas = bank-choice taglines (outside <main> in the prototype) + the embed captions (link text = the iframe title, visually hidden); 🟡 MISSING BODY = the expert h4 spans merged into one heading and the reference h5 spans inline in their paragraphs",
+       "permanent": true
+      },
+      {
+       "flag": "360 header crop 3.58%",
+       "why": "live skip link; 0.10% for x≥115",
+       "permanent": true
+      },
+      {
+       "flag": "live ffe-button--shortcut arrow glyph",
+       "why": "authored as the secondary emphasis (outline pill); the arrow is block chrome not added",
+       "permanent": true
+      }
+     ],
+     "fixesThisRound": [
+      "videos: a YouTube URL inside a columns cell is a lint 🔴 (D1) → the text + video rows are default content (embed link first, text second) auto-blocked into the new embed block and laid out by the split-video section grid (live 11-column row: text cols 2–6, embed 7–11, embed first on mobile)",
+      "featured photo cards: cover photo 200/270, h6 teaser 16px in a 24px strut with 24px under (live richtext BFC 16 + button-wrap 8), centred button; 3-up in the 960px cols-9 row",
+      "expert column: 250px rounded 1:1 portrait, centred h4 name card (28px line boxes, margin 8 → 24); stack-cta (flex column, 16px gaps); split cell model (two one-paragraph live text modules = 32px between paragraphs); mn-ref h2>.h3 line box 28 → 44; kicker/title h3 pair line boxes 27|42 and 24|32",
+      "subtle token now only for a subtle-text PARAGRAPH (the expert h4's inline span had shrunk the text column to 14px)",
+      "markedsnytt ignores --max in the live CSS (no .richtext--max rule) → text-N opted out; the mn list rule scoped to default content / columns (it had leaked into card lists)",
+      "cards.grid cols-9 → 3 columns at ≥1024 (lg-3 alone is 4-up)"
+     ],
+     "productRegression": {
+      "documentDiff": "byte-identical with the three W4 encoder files removed (isolation run 23:40); the residual boliglan diff vs the pre-22:32 baseline is the external lib.mjs <br> handling",
+      "pixel1440": 0.65,
+      "heightDelta": 0
+     },
+     "siblings": {
+      "converted": [],
+      "gaps": {},
+      "lint": "no siblings in _page-types.json → types.markedsnytt-listing.pages (archetype only)"
+     },
+     "regressionsAtEnd": {
+      "presse1440": {
+       "pixelPct": 0.68,
+       "heightDelta": 0
+      },
+      "borettslag1440": {
+       "pixelPct": 7.94,
+       "heightDelta": 33,
+       "note": "moved from 3.66% / Δh 5 (gated 23:1x) because lib.mjs (22:54, external) now drops the trailing <br>&nbsp; of the featured-card lead paragraphs (<p><span class=sub-lead-left>…:<br>&nbsp;</span>) — live renders that as a blank 28px line in each card (2 cards, +the 3px ratio). Pipeline-faithful, live-unfaithful; filed as request 14"
+      }
+     }
     }
    }
   }

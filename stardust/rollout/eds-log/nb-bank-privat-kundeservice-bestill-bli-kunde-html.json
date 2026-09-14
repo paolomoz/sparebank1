@@ -64,6 +64,9 @@
  ],
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-dame-sand-sirkel-usymmetrisk.svg is 1012845 bytes of SVG (> 40000) — authored as DA media illustrasjon-dame-sand-sirkel-usymmetrisk.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-usymmetrisk-samboer-dame-mann-high-five.svg is 43025 bytes of SVG (> 40000) — authored as DA media illustrasjon-usymmetrisk-samboer-dame-mann-high-five.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kyss-sand-sirkel-usymmetrisk.svg is 983750 bytes of SVG (> 40000) — authored as DA media illustrasjon-kyss-sand-sirkel-usymmetrisk.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-penger-sand-sirkel-usymmetrisk.svg is 1026451 bytes of SVG (> 40000) — authored as DA media illustrasjon-penger-sand-sirkel-usymmetrisk.png (rasterised)",
   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
@@ -71,7 +74,10 @@
  "gaps": [],
  "assets": [],
  "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-dame-sand-sirkel-usymmetrisk.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-usymmetrisk-samboer-dame-mann-high-five.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kyss-sand-sirkel-usymmetrisk.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-penger-sand-sirkel-usymmetrisk.svg"
  ],
- "writtenAt": "2026-09-14T21:29:27.194Z"
+ "writtenAt": "2026-09-14T21:53:08.093Z"
 }

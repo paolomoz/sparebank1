@@ -404,3 +404,18 @@ i, em { font-family: 'SpareBank1-italic', arial, sans-serif; }
 .usp__item { flex: 1 1 200px; display: flex; gap: 12px; align-items: flex-start; font-size: 14px; line-height: 20px; }
 .usp__icon svg { width: 32px; height: 32px; fill: var(--vann); }
 .module { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+
+/* usp — the FFE icon-list variant (illustration + text; live .usp-wrap--iconsLeft, clientlib_base): 480px column on mobile with an 80px icon
+   beside the text; from 768 a 4-up row (25 % columns, 10px padding) with the 115px illustration above the text */
+.usp--icons-left { display: flex; flex-wrap: wrap; justify-content: space-evenly; max-width: 480px; margin: auto; padding: 20px; gap: 0; }
+.usp--icons-left .usp__item--illustrated { flex: 1 1 100%; display: flex; align-items: center; gap: 0; margin-top: .8rem; font-size: 16px; line-height: 24px; }
+.usp--icons-left .usp__item--illustrated .usp__icon { flex: 0 0 80px; width: 80px; margin-right: 10px; max-height: 120px; overflow: hidden; }
+.usp--icons-left .usp__item--illustrated .usp__icon img { display: block; width: 100%; height: auto; }
+.usp--icons-left .usp__item--illustrated p { margin: 0; }
+@media (min-width: 768px) {
+  .usp--icons-left { max-width: var(--container); }
+  .usp--icons-left .usp__item--illustrated { flex: 0 0 25%; display: block; padding: 10px; margin-top: 1rem; }
+  .usp--icons-left .usp__item--illustrated .usp__icon { width: auto; margin: 0; }
+  .usp--icons-left .usp__item--illustrated .usp__icon img { width: auto; height: 115px; }
+  .usp--icons-left .usp__item--illustrated p { margin-top: 16px; }
+}

@@ -193,3 +193,4 @@ canon-level change is requested here, not applied. Product page byte-identical, 
 17. **Live kicker/title heading pairs** (`<h3><b>…:</b></h3><h3><b>…</b></h3>`) render with odd line boxes (42|54 first, 64|48 second at
     1440|360) — W4 expressed them on `h3:has(+ h3)` inside `split-video`; the canon should decide what the authored model is (kicker as
     a paragraph? an h4?) — the live markup is two h3s.
+- Product siblings at 360 (forbrukslan 14.8 %, mobilbank 13.4 %, vare-eksperter 18.9 % on the published origin; the replica prototypes fail the same way): the sand `cols` band at mobile starts its heading ~25px higher than live, the Spink `banner color2` lacks the frost tint and its CTA is a plain link (live: secondary pill), `cards people` mobile metrics unmeasured. Sibling-only modules were never lifted at 360 — a dedicated 360 lift + gate pass over the product siblings is the next fidelity step.
