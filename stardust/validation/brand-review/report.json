@@ -1,0 +1,74 @@
+{
+  "target": "file:///Users/paolo/stardust/2026-08/sparebank1/stardust/current/brand-review.html",
+  "viewports": {
+    "desktop": {
+      "console": [],
+      "networkFailures": [],
+      "exceptions": [],
+      "layout": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "horizontalOverflow": false,
+        "overflowEls": [],
+        "landmarks": [
+          "header",
+          "nav",
+          "main",
+          "footer"
+        ],
+        "h1Count": 1,
+        "imgsNoAlt": 0,
+        "inputsNoLabel": 0,
+        "headingSkips": 0,
+        "docHeight": 15030
+      },
+      "issues": []
+    },
+    "tablet": {
+      "console": [],
+      "networkFailures": [],
+      "exceptions": [],
+      "layout": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "horizontalOverflow": false,
+        "overflowEls": [],
+        "landmarks": [
+          "header",
+          "nav",
+          "main",
+          "footer"
+        ],
+        "h1Count": 1,
+        "imgsNoAlt": 0,
+        "inputsNoLabel": 0,
+        "headingSkips": 0,
+        "docHeight": 20300
+      },
+      "issues": []
+    },
+    "mobile": {
+      "console": [],
+      "networkFailures": [],
+      "exceptions": [],
+      "layout": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "horizontalOverflow": false,
+        "overflowEls": [],
+        "landmarks": [
+          "header",
+          "nav",
+          "main",
+          "footer"
+        ],
+        "h1Count": 1,
+        "imgsNoAlt": 0,
+        "inputsNoLabel": 0,
+        "headingSkips": 0,
+        "docHeight": 50557
+      },
+      "issues": []
+    }
+  }
+}

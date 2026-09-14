@@ -1,0 +1,2840 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract (--prep --dynamics semantics via stardust:replica Phase 1)",
+    "writtenAt": "2026-09-14T15:12:04.981Z",
+    "stardustVersion": "0.20.0"
+  },
+  "site": {
+    "originUrl": "https://www.sparebank1.no",
+    "entryUrl": "https://www.sparebank1.no/nb/bank/privat.html",
+    "deployUrl": "https://main--sparebank1--paolomoz.aem.page",
+    "liveUrl": "https://main--sparebank1--paolomoz.aem.live",
+    "extractedAt": "2026-09-14T14:56:35.544Z",
+    "pageCap": 100,
+    "perTemplateCap": 20,
+    "totalDiscovered": 9821,
+    "discoveredOnProperty": 3124,
+    "crawled": 100,
+    "pagesInInventory": 100,
+    "redirects": [
+      {
+        "from": "/nb/bank.html",
+        "to": "(client-side, device-preference bank chooser)",
+        "note": "noindex JS shell; excluded from roster (D2)"
+      }
+    ],
+    "designSystemBoundary": "One design system across all 13 properties (sb1/nettsider clientlib + FFE); iteration 1 = /nb/bank/ only — see stardust/roster.md § A1",
+    "excludedProperties": [
+      "/nb/<regional-bank>/* (12 banks, 6,697 pages — later iterations)",
+      "/nb/bank/privat/innlogging.html + /nb/bank/bedrift/innlogging.html (authenticated apps, not in sitemap)",
+      "/nb/bank.html (JS bank-chooser shell)"
+    ]
+  },
+  "direction": {
+    "mode": "preserve",
+    "flow": "replica → migrate → rollout"
+  },
+  "handsOff": true,
+  "pages": [
+    {
+      "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+      "title": "Borettslag og sameie | Forsikringer | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "theme",
+      "aemPageType": "Tema",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:08.650Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "archetype",
+      "archetypeSource": null,
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-bedriftsforsikring-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/bedriftsforsikring.html",
+      "title": "Bedriftsforsikring | Næringslivsforsikring | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "theme",
+      "aemPageType": "Tema",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:15.682Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-bedriftsforsikring-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-bedriftsforsikring-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-bedriftsforsikring-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-bedriftskort-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/bedriftskort.html",
+      "title": "Bedriftskort | Bankkort og kredittkort bedrift | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Kategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:10.039Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-bedriftskort-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-bedriftskort-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-bedriftskort-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/bedriftskort/kredittkort.html",
+      "title": "Kredittkort bedrift | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:08.650Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-bedriftskort-kredittkort-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-bedriftskort-kredittkort-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-bedriftskort-kredittkort-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-betaling-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/betaling.html",
+      "title": "Betaling | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Kategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:10.049Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-betaling-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-betaling-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-betaling-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/betaling/utenlandsbetaling.html",
+      "title": "Utenlandsbetaling bedrift | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Underkategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:08.650Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-betaling-utenlandsbetaling-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-betaling-utenlandsbetaling-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-betaling-utenlandsbetaling-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-daglig-drift-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/daglig-drift.html",
+      "title": "Daglig drift | Nettbank og regnskapsprogram for bedrifter | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Kategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:04.451Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-daglig-drift-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-daglig-drift-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-daglig-drift-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift.html",
+      "title": "Bedrift | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "market-landing",
+      "aemPageType": "Marked",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T15:06:04.575Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-konto-bedriftskonto-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/konto/bedriftskonto.html",
+      "title": "Bedriftskonto | Bedriftens brukskonto | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:02.860Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-konto-bedriftskonto-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-konto-bedriftskonto-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-konto-bedriftskonto-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-konto-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/konto.html",
+      "title": "Konto for bedrift | Opprett bedriftskonto | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Kategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:09.558Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-konto-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-konto-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-konto-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+      "title": "Administrere prisavtaler i SpareBank 1 Regnskap | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "faq",
+      "aemPageType": "Spørsmål",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:25.661Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+      "title": "Aktivere EHF i SpareBank 1 Regnskap | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "faq",
+      "aemPageType": "Spørsmål",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:31.001Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+      "title": "Hva betyr begunstigelse? | Velg begunstiget | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "faq",
+      "aemPageType": "Spørsmål",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:30.996Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+      "title": "Rabatt på forsikringen ved sprinkleranlegg | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "faq",
+      "aemPageType": "Spørsmål",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:30.999Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-blir-jeg-bedriftskunde.html",
+      "title": "BLI KUNDE Hvordan blir jeg bedriftskunde? | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "faq",
+      "aemPageType": "Spørsmål",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:30.999Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
+      "title": "Flytte avtalegiro, eFaktura og EHF | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "faq",
+      "aemPageType": "Spørsmål",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:36.528Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankaxept.html",
+      "title": "Hva er BankAxept? | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "faq",
+      "aemPageType": "Spørsmål",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:36.528Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode.html",
+      "title": "Hva er bankkode? | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "faq",
+      "aemPageType": "Spørsmål",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:36.528Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan.html",
+      "title": "Bør bedriften velge fast eller flytende rente på lånet? | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "faq",
+      "aemPageType": "Spørsmål",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:36.528Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "archetype",
+      "archetypeSource": null,
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd.html",
+      "title": "Kan jeg lease uten innskudd? | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "faq",
+      "aemPageType": "Spørsmål",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:42.017Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift.html",
+      "title": "Hvordan endrer jeg kasserer i Nettbank bedrift? | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "faq",
+      "aemPageType": "Spørsmål",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:42.018Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura.html",
+      "title": "Hvordan sender jeg eFaktura fra Nettbank bedrift? | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "faq",
+      "aemPageType": "Spørsmål",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:42.018Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice.html",
+      "title": "Kundeservice | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "kundeservice-hub",
+      "aemPageType": "Kundeservice",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:21.346Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-kundeservice-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-kundeservice-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-kundeservice-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-kundeservice-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering/bedriftslan.html",
+      "title": "Bedriftslån – langsiktig finansiering for din bedrift | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:02.860Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-lan-finansiering-bedriftslan-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-lan-finansiering-bedriftslan-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-lan-finansiering-bedriftslan-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-lan-finansiering-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering.html",
+      "title": "Finansiering | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:15.143Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-lan-finansiering-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-lan-finansiering-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-lan-finansiering-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering/kassekreditt.html",
+      "title": "Kassekreditt – kortsiktig finansiering for din bedrift | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:02.859Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-lan-finansiering-kassekreditt-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-lan-finansiering-kassekreditt-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-lan-finansiering-kassekreditt-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-lan-finansiering-leasing-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering/leasing.html",
+      "title": "Leasing | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:08.015Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-lan-finansiering-leasing-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-lan-finansiering-leasing-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-lan-finansiering-leasing-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-open-api-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/open-api.html",
+      "title": "Open APIs | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:03.805Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-open-api-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-open-api-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-open-api-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-pensjon-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/pensjon.html",
+      "title": "Pensjon for bedrifter | Spar til pensjon til dine ansatte | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Kategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:15.679Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-pensjon-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-pensjon-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-pensjon-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-regnskap-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/regnskap.html",
+      "title": "Regnskap | Alt på ett sted | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:10.043Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-regnskap-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-regnskap-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-regnskap-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-sparing-investering-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/sparing-investering.html",
+      "title": "Sparing og investering bedrift | Få mer ut av overskuddet | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Kategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:15.678Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-sparing-investering-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-sparing-investering-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-sparing-investering-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-starte-bedrift-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/starte-bedrift.html",
+      "title": "Starte egen bedrift? | Gode råd om hvordan starte bedrift | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:20.865Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-starte-bedrift-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-starte-bedrift-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-starte-bedrift-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+      "title": "Aksjeselskap vs enkeltpersonforetak | Forskjellen mellom AS og ENK | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:25.549Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-bedrift-tips-og-rad-html",
+      "url": "https://www.sparebank1.no/nb/bank/bedrift/tips-og-rad.html",
+      "title": "Tips og råd | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Oversikt side",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:21.350Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-bedrift-tips-og-rad-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-tips-og-rad-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-bedrift-tips-og-rad-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-hjemme-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/hjemme.html",
+      "title": "Der du føler deg hjemme | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "campaign-landing",
+      "aemPageType": "",
+      "clientlib": "frontend",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:32.922Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-hjemme-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-hjemme-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "archetype",
+      "archetypeSource": null,
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-hjemme-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss.html",
+      "title": "Om oss | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "market-landing",
+      "aemPageType": "Marked",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:35.546Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-investor-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/investor.html",
+      "title": "Investor | SpareBank 1",
+      "type": "static",
+      "archetypeFamily": "om-oss",
+      "aemPageType": "Om oss",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:26.422Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-investor-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-investor-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-om-oss-presse-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-investor-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-jobb-og-karriere-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/jobb-og-karriere.html",
+      "title": "Jobb og karriere | SpareBank 1",
+      "type": "static",
+      "archetypeFamily": "om-oss",
+      "aemPageType": "Om oss",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:26.811Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-jobb-og-karriere-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-jobb-og-karriere-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-om-oss-presse-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-jobb-og-karriere-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-.html",
+      "title": "Kredittkort - 5 smarte tips til julehandel med kredittkort | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "news-article",
+      "aemPageType": "",
+      "clientlib": "frontend",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:41.862Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.html",
+      "title": "Advarer mot ny svindelbølge: – Eldre og enslige kvinner særlig utsatt | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "news-article",
+      "aemPageType": "",
+      "clientlib": "frontend",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:48.358Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html",
+      "title": "“Det kunne gått mye verre” – Bamses historie fra traktorulykken | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "news-article",
+      "aemPageType": "",
+      "clientlib": "frontend",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:48.361Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket.html",
+      "title": "Regnskapet fikser jeg selv | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "news-article",
+      "aemPageType": "",
+      "clientlib": "frontend",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:48.362Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+      "title": "Ditt neste bankkort er laget av resirkulert plast | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "news-article",
+      "aemPageType": "",
+      "clientlib": "frontend",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:54.553Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "archetype",
+      "archetypeSource": null,
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.html",
+      "title": "Bruk mobilbanken for å få kontroll på økonomien | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "news-article",
+      "aemPageType": "",
+      "clientlib": "frontend",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:48.361Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.html",
+      "title": "Nyheter | SpareBank 1",
+      "type": "listing",
+      "archetypeFamily": "news-listing",
+      "aemPageType": "",
+      "clientlib": "frontend",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:32.228Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-nyheter-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-nyheter-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "archetype",
+      "archetypeSource": null,
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-nyheter-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/om-banken/selskapsinformasjon.html",
+      "title": "Selskapsinformasjon | SpareBank 1",
+      "type": "static",
+      "archetypeFamily": "om-oss",
+      "aemPageType": "Om oss",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:58.527Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-om-banken-selskapsinformasjon-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-om-banken-selskapsinformasjon-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-om-oss-presse-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-om-banken-selskapsinformasjon-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-personvern-generelle-vilkar-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/personvern/generelle-vilkar.html",
+      "title": "Generelle vilkår | SpareBank 1",
+      "type": "static",
+      "archetypeFamily": "om-oss",
+      "aemPageType": "Om oss",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:58.528Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-personvern-generelle-vilkar-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-personvern-generelle-vilkar-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-om-oss-presse-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-personvern-generelle-vilkar-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-personvern-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/personvern.html",
+      "title": "Personvern | SpareBank 1",
+      "type": "static",
+      "archetypeFamily": "om-oss",
+      "aemPageType": "Om oss",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:04.452Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-personvern-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-personvern-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-om-oss-presse-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-personvern-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-presse-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/presse.html",
+      "title": "Presse | SpareBank 1",
+      "type": "static",
+      "archetypeFamily": "om-oss",
+      "aemPageType": "Om oss",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:21.346Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-presse-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-presse-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "archetype",
+      "archetypeSource": null,
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-presse-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-samfunnsansvar-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/samfunnsansvar.html",
+      "title": "Samfunnsansvar | SpareBank 1",
+      "type": "static",
+      "archetypeFamily": "om-oss",
+      "aemPageType": "Om oss",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:26.810Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-samfunnsansvar-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-samfunnsansvar-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-om-oss-presse-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-samfunnsansvar-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-selskaper-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/selskaper.html",
+      "title": "Selskaper | SpareBank 1",
+      "type": "static",
+      "archetypeFamily": "om-oss",
+      "aemPageType": "Om oss",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:26.810Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-selskaper-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-selskaper-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-om-oss-presse-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-selskaper-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-om-oss-vare-eksperter-html",
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/vare-eksperter.html",
+      "title": "Våre eksperter | Få råd om økonomi, sparing og pensjon | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:32.919Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-om-oss-vare-eksperter-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-vare-eksperter-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-om-oss-vare-eksperter-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-bankid-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/bankid.html",
+      "title": "BankID (Bank ID) | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T15:06:12.331Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-daglig-bruk-bankid-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-daglig-bruk-bankid-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-daglig-bruk-bankid-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-bankkonto-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/bankkonto.html",
+      "title": "Bankkonto | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Underkategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:44.843Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-daglig-bruk-bankkonto-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-daglig-bruk-bankkonto-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-daglig-bruk-bankkonto-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-bankkort-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/bankkort.html",
+      "title": "Bankkort | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:44.843Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-daglig-bruk-bankkort-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-daglig-bruk-bankkort-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-daglig-bruk-bankkort-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk.html",
+      "title": "Daglig bruk | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Kategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:35.544Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-daglig-bruk-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-daglig-bruk-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-daglig-bruk-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-kredittkort-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/kredittkort.html",
+      "title": "Kredittkort | Mastercard | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T15:03:41.331Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-daglig-bruk-kredittkort-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-daglig-bruk-kredittkort-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-daglig-bruk-kredittkort-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+      "title": "Netthandel og kredittkort | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "theme",
+      "aemPageType": "Tema",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:13.890Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/mobilbank.html",
+      "title": "Mobilbank | Nettbank på mobil | Enklere privatøkonomi | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:44.844Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-daglig-bruk-mobilbank-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-daglig-bruk-mobilbank-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-daglig-bruk-mobilbank-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-eiendom-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/eiendom.html",
+      "title": "Eiendom | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Kategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:47.433Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-eiendom-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-eiendom-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-eiendom-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-barneforsikring-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/barneforsikring.html",
+      "title": "Barneforsikring | Kåret til Norges beste i 2025 | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:02.356Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-forsikring-barneforsikring-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-forsikring-barneforsikring-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-forsikring-barneforsikring-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-bilforsikring-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/bilforsikring.html",
+      "title": "Bilforsikring | Fremtind | Best på skadeoppgjør | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:57.011Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-forsikring-bilforsikring-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-forsikring-bilforsikring-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-forsikring-bilforsikring-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/forsikring.html",
+      "title": "Forsikring | Se våre dekninger og sjekk pris | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Kategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:41.155Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-forsikring-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-forsikring-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-forsikring-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+      "title": "Hvilke forsikringer trenger jeg? | Sparebank 1 | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "theme",
+      "aemPageType": "Tema",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:14.435Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-innboforsikring-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/innboforsikring.html",
+      "title": "Innboforsikring | Norges beste | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:57.011Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-forsikring-innboforsikring-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-forsikring-innboforsikring-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-forsikring-innboforsikring-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-kundehistorier-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/kundehistorier.html",
+      "title": "Kundehistorier | Hvordan lykkes med egen bedrift | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:25.035Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-forsikring-kundehistorier-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-forsikring-kundehistorier-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-forsikring-kundehistorier-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade.html",
+      "title": "Sikrer seg mot vannlekkasje - klok av skade | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "news-article",
+      "aemPageType": "",
+      "clientlib": "frontend",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:25.550Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-meld-skade-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/meld-skade.html",
+      "title": "Meld skade, tap eller sykdom | SpareBank 1",
+      "type": "form",
+      "archetypeFamily": "tool",
+      "aemPageType": "Verktoy",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:53.013Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-forsikring-meld-skade-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-forsikring-meld-skade-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-forsikring-meld-skade-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-reiseforsikring-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/reiseforsikring.html",
+      "title": "Reiseforsikring | Blant Norges beste | Sjekk pris | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:57.009Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-forsikring-reiseforsikring-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-forsikring-reiseforsikring-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-forsikring-reiseforsikring-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat.html",
+      "title": "Privat | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "market-landing",
+      "aemPageType": "Marked",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T15:06:04.318Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "archetype",
+      "archetypeSource": null,
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+      "title": "Bli kunde | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:53.015Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-bestill-bli-kunde-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-bestill-bli-kunde-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-bestill-bli-kunde-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/prisliste.html",
+      "title": "Prisliste | SpareBank 1",
+      "type": "static",
+      "archetypeFamily": "utility",
+      "aemPageType": "Pristliste",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:53.088Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-bestill-prisliste-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-bestill-prisliste-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-kundeservice-kontakt-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-bestill-prisliste-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice.html",
+      "title": "Kundeservice | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "kundeservice-hub",
+      "aemPageType": "Kundeservice",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:47.427Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "archetype",
+      "archetypeSource": null,
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-kontakt-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/kontakt.html",
+      "title": "Kontakt oss | SpareBank 1",
+      "type": "static",
+      "archetypeFamily": "utility",
+      "aemPageType": "Basepage",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:19.662Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-kontakt-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-kontakt-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "archetype",
+      "archetypeSource": null,
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-kontakt-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/iban-og-swift.html",
+      "title": "IBAN | Finn ditt IBAN | SpareBank 1",
+      "type": "form",
+      "archetypeFamily": "tool",
+      "aemPageType": "Verktoy",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:19.774Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-iban-og-swift-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-iban-og-swift-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-verktoy-iban-og-swift-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-verktoy-klager-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/klager.html",
+      "title": "Kundeklage | Bank, forsikring, pensjon | SpareBank 1",
+      "type": "form",
+      "archetypeFamily": "tool",
+      "aemPageType": "Verktoy",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:58.528Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-klager-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-klager-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-verktoy-klager-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html",
+      "title": "Sparekalkulator | Hvor mye bør du spare? | SpareBank 1",
+      "type": "form",
+      "archetypeFamily": "tool",
+      "aemPageType": "Verktoy",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:19.661Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-sparekalkulator-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-sparekalkulator-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-verktoy-sparekalkulator-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sperre-kort.html",
+      "title": "Sperre kort | Åpne sperret kort | SpareBank 1",
+      "type": "form",
+      "archetypeFamily": "tool",
+      "aemPageType": "Verktoy",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:53.016Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-sperre-kort-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-sperre-kort-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "archetype",
+      "archetypeSource": null,
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-verktoy-sperre-kort-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/valutakalkulator.html",
+      "title": "Valutakalkulator og valutakurser | SpareBank 1",
+      "type": "form",
+      "archetypeFamily": "tool",
+      "aemPageType": "Verktoy",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:14.431Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-valutakalkulator-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-kundeservice-verktoy-valutakalkulator-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-kundeservice-verktoy-valutakalkulator-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-lan-billan-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/lan/billan.html",
+      "title": "Billån | Søk lån til både ny og brukt bil | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:38.197Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-lan-billan-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-lan-billan-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-lan-billan-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-lan-boliglan-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/lan/boliglan.html",
+      "title": "Boliglån | Få tilbud på boliglån | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:32.928Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-lan-boliglan-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-lan-boliglan-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "archetype",
+      "archetypeSource": null,
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-lan-boliglan-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-lan-forbrukslan-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/lan/forbrukslan.html",
+      "title": "Forbrukslån | Lån uten sikkerhet | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T15:03:41.329Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-lan-forbrukslan-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-lan-forbrukslan-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-lan-forbrukslan-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-lan-gronne-lan-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/lan/gronne-lan.html",
+      "title": "Grønne lån | Lån til miljøvennlige løsninger | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Underkategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:38.798Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-lan-gronne-lan-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-lan-gronne-lan-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-lan-gronne-lan-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-lan-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/lan.html",
+      "title": "Søk lån til bolig, bil eller andre ting | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Kategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:41.389Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-lan-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-lan-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "archetype",
+      "archetypeSource": null,
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-lan-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-lan-lanekalkulator-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/lan/lanekalkulator.html",
+      "title": "Lånekalkulator | Hvor mye koster lånet? | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Underkategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:19.940Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-lan-lanekalkulator-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-lan-lanekalkulator-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-lan-lanekalkulator-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-lan-refinansiering-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/lan/refinansiering.html",
+      "title": "Refinansiering | Refinansiere boliglån og forbruksgjeld | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:38.801Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-lan-refinansiering-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-lan-refinansiering-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-lan-refinansiering-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-lofavor-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/lofavor.html",
+      "title": "LOfavør fordeler | Se hvor mye du kan spare | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:47.743Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-lofavor-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-lofavor-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-lofavor-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/pensjon/egen-pensjonskonto.html",
+      "title": "Egen pensjonskonto | Din pensjonsoversikt | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:56.186Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-pensjon-egen-pensjonskonto-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-pensjon-egen-pensjonskonto-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-pensjon-egen-pensjonskonto-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-pensjon-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/pensjon.html",
+      "title": "Pensjon | Din fremtidige lønn | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:42.117Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-pensjon-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-pensjon-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-pensjon-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.html",
+      "title": "Hvor mye får jeg i pensjon? | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "news-article",
+      "aemPageType": "",
+      "clientlib": "frontend",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:14.440Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-private-banking-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/private-banking.html",
+      "title": "Private Banking | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:04.452Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-private-banking-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-private-banking-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-private-banking-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-sparing-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/sparing.html",
+      "title": "Spare | Sparing | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Kategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:41.761Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-sparing-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-sparing-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-sparing-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.html",
+      "title": "Går du glipp av millioner i pensjon? – Mange får seg en overraskelse | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "news-article",
+      "aemPageType": "",
+      "clientlib": "frontend",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:54.554Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.html",
+      "title": "Teknologifond: Kan festen fortsette? | SpareBank 1",
+      "type": "article",
+      "archetypeFamily": "news-article",
+      "aemPageType": "",
+      "clientlib": "frontend",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:58:54.552Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-sparing-markedsnytt-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt.html",
+      "title": "Markedsnytt | SpareBank 1",
+      "type": "listing",
+      "archetypeFamily": "markedsnytt-listing",
+      "aemPageType": "Produkt",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T15:03:40.598Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-sparing-markedsnytt-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-sparing-markedsnytt-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "archetype",
+      "archetypeSource": null,
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-sparing-markedsnytt-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-sparing-spare-i-fond-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/sparing/spare-i-fond.html",
+      "title": "Fond | Spare i fond | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Underkategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:50.801Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-sparing-spare-i-fond-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-sparing-spare-i-fond-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-sparing-spare-i-fond-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-sparing-spare-pa-konto-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/sparing/spare-pa-konto.html",
+      "title": "Spare på konto | God rente og fleksibel sparing | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Underkategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:50.798Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-sparing-spare-pa-konto-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-sparing-spare-pa-konto-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-sparing-spare-pa-konto-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-sparing-spare-til-barn-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/sparing/spare-til-barn.html",
+      "title": "Spare til barn | SpareBank 1",
+      "type": "program",
+      "archetypeFamily": "product",
+      "aemPageType": "Underkategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:57:50.798Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-sparing-spare-til-barn-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-sparing-spare-til-barn-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-boliglan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-sparing-spare-til-barn-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-svindel-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/svindel.html",
+      "title": "Svindel | Sikkerhet | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Kategori",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:58.528Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-svindel-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-svindel-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-svindel-html.png",
+      "visionCheck": "ok"
+    },
+    {
+      "slug": "nb-bank-privat-tips-og-rad-html",
+      "url": "https://www.sparebank1.no/nb/bank/privat/tips-og-rad.html",
+      "title": "Tips og råd | SpareBank 1",
+      "type": "landing",
+      "archetypeFamily": "category-hub",
+      "aemPageType": "Oversikt side",
+      "clientlib": "base",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-14T14:56:47.427Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nb-bank-privat-tips-og-rad-html.json",
+      "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-tips-og-rad-html.html",
+      "prototypePath": null,
+      "migratedPath": null,
+      "fidelityTier": "sibling",
+      "archetypeSource": "nb-bank-privat-lan-html",
+      "gatesPassed": [],
+      "contentGap": null,
+      "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-tips-og-rad-html.png",
+      "visionCheck": "ok"
+    }
+  ]
+}

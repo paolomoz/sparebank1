@@ -1,0 +1,323 @@
+<!DOCTYPE html><html lang="nb"><head>
+<meta charset="UTF-8">
+<meta name="keywords" content="Forsikring">
+<meta name="template" content="news-article">
+
+
+    
+        <script>
+            try{!function(){var e="Expected a function",t=NaN,n="[object Symbol]",r=/^\s+|\s+$/g,i=/^[-+]0x[0-9a-f]+$/i,o=/^0b[01]+$/i,a=/^0o[0-7]+$/i,c=parseInt,u="object"==typeof global&&global&&global.Object===Object&&global,s="object"==typeof self&&self&&self.Object===Object&&self,f=u||s||Function("return this")(),l=Object.prototype.toString,p=Math.max,v=Math.min,g=function(){return f.Date.now()};function m(t,n,r){var i,o,a,c,u,s,f=0,l=!1,m=!1,b=!0;if("function"!=typeof t)throw new TypeError(e);function O(e){var n=i,r=o;return i=o=void 0,f=e,c=t.apply(r,n)}function y(e){var t=e-s;return void 0===s||t>=n||t<0||m&&e-f>=a}function N(){var e,t,r=g();if(y(r))return w(r);u=setTimeout(N,(t=n-((e=r)-s),m?v(t,a-(e-f)):t))}function w(e){return u=void 0,b&&i?O(e):(i=o=void 0,c)}function x(){var e,t=g(),r=y(t);if(i=arguments,o=this,s=t,r){if(void 0===u)return f=e=s,u=setTimeout(N,n),l?O(e):c;if(m)return u=setTimeout(N,n),O(s)}return void 0===u&&(u=setTimeout(N,n)),c}return n=d(n)||0,h(r)&&(l=!!r.leading,a=(m="maxWait"in r)?p(d(r.maxWait)||0,n):a,b="trailing"in r?!!r.trailing:b),x.cancel=function(){void 0!==u&&clearTimeout(u),f=0,i=s=o=u=void 0},x.flush=function(){return void 0===u?c:w(g())},x}function h(e){var t=typeof e;return!!e&&("object"==t||"function"==t)}function d(e){if("number"==typeof e)return e;if("symbol"==typeof(u=e)||(s=u)&&"object"==typeof s&&l.call(u)==n)return t;var u,s;if(h(e)){var f="function"==typeof e.valueOf?e.valueOf():e;e=h(f)?f+"":f}if("string"!=typeof e)return 0===e?e:+e;e=e.replace(r,"");var p=o.test(e);return p||a.test(e)?c(e.slice(2),p?2:8):i.test(e)?t:+e}var b,O,y,N,w=(b=function(){function e(e){return!isNaN(parseFloat(e))&&isFinite(e)}function t(e){return e.charAt(0).toUpperCase()+e.substring(1)}function n(e){return function(){return this[e]}}var r=["isConstructor","isEval","isNative","isToplevel"],i=["columnNumber","lineNumber"],o=["fileName","functionName","source"],a=r.concat(i,o,["args"]);function c(e){if(e instanceof Object)for(var n=0;n<a.length;n++)e.hasOwnProperty(a[n])&&void 0!==e[a[n]]&&this["set"+t(a[n])](e[a[n]])}c.prototype={getArgs:function(){return this.args},setArgs:function(e){if("[object Array]"!==Object.prototype.toString.call(e))throw new TypeError("Args must be an Array");this.args=e},getEvalOrigin:function(){return this.evalOrigin},setEvalOrigin:function(e){if(e instanceof c)this.evalOrigin=e;else{if(!(e instanceof Object))throw new TypeError("Eval Origin must be an Object or StackFrame");this.evalOrigin=new c(e)}},toString:function(){return(this.getFunctionName()||"{anonymous}")+"("+(this.getArgs()||[]).join(",")+")"+(this.getFileName()?"@"+this.getFileName():"")+(e(this.getLineNumber())?":"+this.getLineNumber():"")+(e(this.getColumnNumber())?":"+this.getColumnNumber():"")}};for(var u=0;u<r.length;u++)c.prototype["get"+t(r[u])]=n(r[u]),c.prototype["set"+t(r[u])]=function(e){return function(t){this[e]=Boolean(t)}}(r[u]);for(var s=0;s<i.length;s++)c.prototype["get"+t(i[s])]=n(i[s]),c.prototype["set"+t(i[s])]=function(t){return function(n){if(!e(n))throw new TypeError(t+" must be a Number");this[t]=Number(n)}}(i[s]);for(var f=0;f<o.length;f++)c.prototype["get"+t(o[f])]=n(o[f]),c.prototype["set"+t(o[f])]=function(e){return function(t){this[e]=String(t)}}(o[f]);return c}(),O=/(^|@)\S+\:\d+/,y=/^\s*at .*(\S+\:\d+|\(native\))/m,N=/^(eval@)?(\[native code\])?$/,{parse:function(e){if(void 0!==e.stacktrace||void 0!==e["opera#sourceloc"])return this.parseOpera(e);if(e.stack&&e.stack.match(y))return this.parseV8OrIE(e);if(e.stack)return this.parseFFOrSafari(e);throw new Error("Cannot parse given Error object")},extractLocation:function(e){if(-1===e.indexOf(":"))return[e];var t=/(.+?)(?:\:(\d+))?(?:\:(\d+))?$/.exec(e.replace(/[\(\)]/g,""));return[t[1],t[2]||void 0,t[3]||void 0]},parseV8OrIE:function(e){return e.stack.split("\n").filter(function(e){return!!e.match(y)},this).map(function(e){e.indexOf("(eval ")>-1&&(e=e.replace(/eval code/g,"eval").replace(/(\(eval at [^\()]*)|(\)\,.*$)/g,""));var t=e.replace(/^\s+/,"").replace(/\(eval code/g,"(").split(/\s+/).slice(1),n=this.extractLocation(t.pop()),r=t.join(" ")||void 0,i=["eval","<anonymous>"].indexOf(n[0])>-1?void 0:n[0];return new b({functionName:r,fileName:i,lineNumber:n[1],columnNumber:n[2],source:e})},this)},parseFFOrSafari:function(e){return e.stack.split("\n").filter(function(e){return!e.match(N)},this).map(function(e){if(e.indexOf(" > eval")>-1&&(e=e.replace(/ line (\d+)(?: > eval line \d+)* > eval\:\d+\:\d+/g,":$1")),-1===e.indexOf("@")&&-1===e.indexOf(":"))return new b({functionName:e});var t=/((.*".+"[^@]*)?[^@]*)(?:@)/,n=e.match(t),r=n&&n[1]?n[1]:void 0,i=this.extractLocation(e.replace(t,""));return new b({functionName:r,fileName:i[0],lineNumber:i[1],columnNumber:i[2],source:e})},this)},parseOpera:function(e){return!e.stacktrace||e.message.indexOf("\n")>-1&&e.message.split("\n").length>e.stacktrace.split("\n").length?this.parseOpera9(e):e.stack?this.parseOpera11(e):this.parseOpera10(e)},parseOpera9:function(e){for(var t=/Line (\d+).*script (?:in )?(\S+)/i,n=e.message.split("\n"),r=[],i=2,o=n.length;i<o;i+=2){var a=t.exec(n[i]);a&&r.push(new b({fileName:a[2],lineNumber:a[1],source:n[i]}))}return r},parseOpera10:function(e){for(var t=/Line (\d+).*script (?:in )?(\S+)(?:: In function (\S+))?$/i,n=e.stacktrace.split("\n"),r=[],i=0,o=n.length;i<o;i+=2){var a=t.exec(n[i]);a&&r.push(new b({functionName:a[3]||void 0,fileName:a[2],lineNumber:a[1],source:n[i]}))}return r},parseOpera11:function(e){return e.stack.split("\n").filter(function(e){return!!e.match(O)&&!e.match(/^Error created at/)},this).map(function(e){var t,n=e.split("@"),r=this.extractLocation(n.pop()),i=n.shift()||"",o=i.replace(/<anonymous function(: (\w+))?>/,"$2").replace(/\([^\)]*\)/g,"")||void 0;i.match(/\(([^\)]*)\)/)&&(t=i.replace(/^[^\(]+\(([^\)]*)\)$/,"$1"));var a=void 0===t||"[arguments not available]"===t?void 0:t.split(",");return new b({functionName:o,args:a,fileName:r[0],lineNumber:r[1],columnNumber:r[2],source:e})},this)}});window.onerror=function(t,n,r){var i=!0,o=!0;if("function"!=typeof t)throw new TypeError(e);return h(r)&&(i="leading"in r?!!r.leading:i,o="trailing"in r?!!r.trailing:o),m(t,n,{leading:i,maxWait:n,trailing:o})}(function(e,t,n,r,i){var o,a;i&&(o=w.parse(i)),window.location&&window.location.href&&(a=window.location.href),function(e){try{var t=new XMLHttpRequest;t.open("POST","/LogServlet",!0),t.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8"),t.send("javascriptError="+encodeURI(e))}catch(e){}}(JSON.stringify({userAgent:navigator.userAgent,url:a,logger:"apne_nettsider",message:e,source:t,lineno:n,colno:r,stacktrace:o}))},200)}()}catch(e){}
+        </script>
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes">
+    <meta name="description" content="Christian «Bamse» Sletten Hageberget har kjørt traktor siden han var 15 år gammel. Han droppet ofte setebelte, inntil en maidag i 2020.
+">
+    
+    
+
+    
+
+    
+        <meta itemprop="category" content="sb1:nyheter">
+    
+        <meta itemprop="category" content="forsikring">
+    
+
+    <!-- Open Graph General (Facebook & Pinterest) -->
+    <meta property="og:url" content="https://www.sparebank1.no/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html">
+    <meta property="og:title" content="“Det kunne gått mye verre” – Bamses historie fra traktorulykken">
+    <meta property="og:description" content="Christian «Bamse» Sletten Hageberget har kjørt traktor siden han var 15 år gammel. Han droppet ofte setebelte, inntil en maidag i 2020.
+">
+    
+    
+
+    <meta property="og:image" content="https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Bamse7.jpg.thumb.1280.2276.jpg">
+    <meta property="og:type" content="article">
+
+    <!-- Open Graph Article (Facebook & Pinterest) -->
+    <meta property="article:published_time" content="2025-04-30T15:54:34+02:00">
+    <meta property="article:modified_time" content="2025-04-30T15:54:34+02:00">
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="“Det kunne gått mye verre” – Bamses historie fra traktorulykken">
+    <meta name="twitter:description" content="Christian «Bamse» Sletten Hageberget har kjørt traktor siden han var 15 år gammel. Han droppet ofte setebelte, inntil en maidag i 2020.
+">
+    
+    
+
+    <meta name="twitter:image:src" content="https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Bamse7.jpg.thumb.1280.2276.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Data mode - this is required for author gui to work with SPA -->
+    
+    <meta property="cq:pagemodel_root_url" content="/conf/sb1/settings/wcm/templates/bank-page/structure.model.json">
+    
+
+    <link rel="preconnect" href="https://adobedc.demdex.net" crossorigin="">
+    <link rel="preconnect" href="https://edge.adobedc.net" crossorigin="">
+    <link rel="shortcut icon" type="image/png" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/favicon.png">
+    <link rel="apple-touch-icon" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/apple-touch-icon.png">
+    <link rel="canonical" href="https://www.sparebank1.no/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html">
+    <link rel="stylesheet" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.css" type="text/css">
+    <title>“Det kunne gått mye verre” – Bamses historie fra traktorulykken | SpareBank 1 </title>
+    
+    <!--#config errmsg="" -->
+    
+    <!-- aem01-02 - 5.168.0 -->
+    <script type="text/javascript">
+        var _satellite = {
+            track: function() {}
+        }
+    </script>
+
+    
+
+
+    
+    
+
+
+
+    
+    
+
+    
+
+    
+    
+    
+
+
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","headline":"“Det kunne gått mye verre” – Bamses historie fra traktorulykken","description":"Christian «Bamse» Sletten Hageberget har kjørt traktor siden han var 15 år gammel. Han droppet ofte setebelte, inntil en maidag i 2020.","image":"https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Bamse7.jpg.thumb.1280.2276.jpg","url":"https://www.sparebank1.no/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html","datePublished":"2025-04-30T15:54:34+01:00","dateModified":"2025-04-30T15:54:34+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.sparebank1.no/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html"},"publisher":{"@type":"Organization","name":"SpareBank 1 ","logo":{"@type":"ImageObject","url":"https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg"}},"keywords":"Forsikring","about":[{"@type":"Thing","name":"Forsikring"}]}</script></head>
+    <body class="basepage page basicpage sb1-article__layout1" id="basepage-cd0bf8cbc0">
+        
+        
+        
+            
+
+
+
+
+            
+
+
+
+            
+
+
+<script>
+    window.SB1 = {
+        config: {
+            app: {
+                logServlet: '/LogServlet',
+                param1: "",
+                param2: "all",
+                param3: '',
+                sendToBank: "true",
+                sendToBankList: "",
+                sendToBankClose: "3",
+                sendToBankDelay: "4",
+                loggedInRedirectEnabled: "true",
+                urlList: "LogServlet,/bin/logservlet,/bin,/content/dam,/dynres,/restportal,static,/innhold,services.cicero.no,/kjopsprosess,/api/common/banking/skjema,/nettmote,.boost.ai/,https://publish.ne.cision.com/Subscription/Subscribe,dpm.demdex.net,sparebank1.d3.sc.omtrdc.net,/solr,/sb1-dialoghub,/openapi,edge.adobedc.net,/api/tracking/webbehavior,/pm-boliglan/,/api/personal/",
+                loginRedirectTimeout: "300000",
+                isLoginIframeCheckEnabled: "true",
+                enableWebTracker: "true",
+                enableAdobeTargetCurrentPage: "",
+                adobeEdgeIdBank: "c9ffe15c-d455-425b-877f-81f1a83db1c3",
+                version: "5.168.0",
+                pmLoginMergeBanks: "sr-bank,sorost",
+            },
+            user: {
+                language: "nb",
+            },
+            urls: {
+                marketPage: "/content/sites/sb1/nb/bank/om-oss.html",
+                gotoNettbank: '',
+            },
+            server: {},
+            sites: {},
+            page: {
+                tagVariables: "sb1:nyheter\/forsikring",
+                pageType: "",
+                market: "Om oss",
+                marketName: "om-oss",
+                brand: "sb1",
+                products: [
+                    {
+                        name: "",
+                        category: "",
+                    },
+                ],
+            },
+            bank: {
+                bankSemanticUrl: "bank",
+                bankShortName: "bank",
+                bankName: "SpareBank 1 ",
+                defaultLanguage: "nb",
+                financialInstitutionId: "fid-ostlandet"
+            },
+        },
+    };
+</script>
+
+
+
+
+<noscript>
+    <div>For at du skal kunne se innhold på SpareBank 1s nettsider optimalt, må du aktivere javascript i din nettleser.</div>
+</noscript>
+<div id="outer-main-wrap" class="main-wrap">
+    
+    
+
+    <main id="main-content" class="main" tabindex="-1" role="main" aria-hidden="false"> <header class="header undefined"><div class="header__wrap "><div class="header__content aem-main-container"><div class="header__top-wrap"><div class="header__logo"><a href="/content/sites/sb1/nb/bank/privat.html"><div class="image "><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg" alt="Tilbake til forsiden for om oss - SpareBank 1" class="inline-svg responsive" style="max-width: 100%;"></div></div></figure></div></div><link rel="image_src" href="/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.768.768.jpg"></a></div><button class="hamburger-wrapper " aria-hidden="false" aria-expanded="false" aria-label="Meny"><div class="inner-wrapper"><div class="hamburger"></div></div></button><div class="header__top-nav"><ul><li><a href="/nb/bank/privat.html" class="">Privat</a></li><li><a href="/nb/bank/bedrift.html" class="">Bedrift</a></li><li><a href="/nb/bank/om-oss.html" class="active">Om oss</a></li></ul></div></div><div class="header__user-content"><button class="header-search-button" aria-controls="header-searcharea" aria-expanded="false" aria-label="Utvid søkefelt"><span role="img" aria-hidden="true" class="ffe-icons ffe-icons--md header-search-button__icon header-search-button__icon--cross" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik00ODAtNDM3Ljg0NyAyNzcuMDc2LTIzNC45MjRxLTguMzA3IDguMzA4LTIwLjg4NCA4LjUtMTIuNTc2LjE5My0yMS4yNjgtOC41LTguNjkzLTguNjkyLTguNjkzLTIxLjA3NnQ4LjY5My0yMS4wNzZMNDM3Ljg0Ny00ODAgMjM0LjkyNC02ODIuOTI0cS04LjMwOC04LjMwNy04LjUtMjAuODg0LS4xOTMtMTIuNTc2IDguNS0yMS4yNjggOC42OTItOC42OTMgMjEuMDc2LTguNjkzdDIxLjA3NiA4LjY5M0w0ODAtNTIyLjE1M2wyMDIuOTI0LTIwMi45MjNxOC4zMDctOC4zMDggMjAuODg0LTguNSAxMi41NzYtLjE5MyAyMS4yNjggOC41IDguNjkzIDguNjkyIDguNjkzIDIxLjA3NnQtOC42OTMgMjEuMDc2TDUyMi4xNTMtNDgwbDIwMi45MjMgMjAyLjkyNHE4LjMwOCA4LjMwNyA4LjUgMjAuODg0LjE5MyAxMi41NzYtOC41IDIxLjI2OC04LjY5MiA4LjY5My0yMS4wNzYgOC42OTN0LTIxLjA3Ni04LjY5M0w0ODAtNDM3Ljg0N1oiLz48L3N2Zz4=&quot;);"></span><span role="img" aria-hidden="true" class="ffe-icons ffe-icons--md header-search-button__icon header-search-button__icon--glass" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIGhlaWdodD0nMjQnIHZpZXdCb3g9JzAgLTk2MCA5NjAgOTYwJyB3aWR0aD0nMjQnPjxwYXRoIGQ9J00zODAuNzY5LTMzNS4zODZxLTEwMi40NjEgMC0xNzMuNTM3LTcxLjA3NlExMzYuMTU1LTQ3Ny41MzkgMTM2LjE1NS01ODBxMC0xMDIuNDYxIDcxLjA3Ny0xNzMuNTM4IDcxLjA3Ni03MS4wNzYgMTczLjUzNy03MS4wNzYgMTAyLjQ2MSAwIDE3My41MzggNzEuMDc2UTYyNS4zODQtNjgyLjQ2MSA2MjUuMzg0LTU4MHEwIDQyLjg0Ni0xNC4zODUgODEuODQ2LTE0LjM4NSAzOS0zOC4zODUgNjcuODQ2bDIzMC4xNTUgMjMwLjE1NHE4LjMwNyA4LjMwOCA4LjQ5OSAyMC44ODUuMTkzIDEyLjU3Ni04LjQ5OSAyMS4yNjgtOC42OTMgOC42OTItMjEuMDc3IDguNjkyLTEyLjM4NCAwLTIxLjA3Ni04LjY5Mkw1MzAuNDYxLTM4OC4xNTVxLTMwIDI0Ljc2OS02OSAzOC43Njl0LTgwLjY5MiAxNFptMC01OS45OThxNzcuMzA4IDAgMTMwLjk2Mi01My42NTRRNTY1LjM4NS01MDIuNjkyIDU2NS4zODUtNTgwcTAtNzcuMzA4LTUzLjY1NC0xMzAuOTYyLTUzLjY1NC01My42NTQtMTMwLjk2Mi01My42NTQtNzcuMzA4IDAtMTMwLjk2MiA1My42NTRRMTk2LjE1NC02NTcuMzA4IDE5Ni4xNTQtNTgwcTAgNzcuMzA4IDUzLjY1MyAxMzAuOTYyIDUzLjY1NCA1My42NTQgMTMwLjk2MiA1My42NTRaJy8+PC9zdmc+&quot;);"></span><span class="header-search-button__text">Søk</span></button><div id="login" class="bank-buttons" data-gotourl=""><button class="ffe-button ffe-button--action bank-buttons__button bank-buttons__button--customer"><span class="ffe-button__label">Bli kunde</span></button><button id="login-button" class="bank-buttons__button bank-buttons__button--login" aria-expanded="false" aria-controls="login-choices" aria-label="Logg inn"><span>Logg inn</span></button><section id="login-choices" aria-labelledby="login-button" role="region"></section></div></div><nav id="main-menu" class="header__main-nav" aria-label="Hovedmeny" tabindex="-1" role="navigation"><ul><li><a href="/nb/bank/om-oss/om-banken.html" class=""> Om SpareBank 1 </a></li><li><a href="/nb/bank/om-oss/presse.html" class=""> Presse </a></li><li><a href="/nb/bank/om-oss/investor.html" class=""> Investor </a></li><li><a href="/nb/bank/om-oss/jobb-og-karriere.html" class=""> Jobb og karriere </a></li><li><a href="/nb/bank/om-oss/samfunnsansvar.html" class=""> Samfunnsansvar </a></li><li><a href="/nb/bank/om-oss/nyheter.html" class="active"> Nyheter </a></li></ul></nav></div></div><div id="header-searcharea"></div></header><div class="sb1-article responsive-grid sb1-article"><div class="sb1-article__header responsive-grid sb1-article__header"><div class="sb1-article__header-image image--hero sb1-article__header-image--top-crop image  sb1-article__header-image image--hero sb1-article__header-image--top-crop"><div class="image__wrap"><figure><div class="image__container"><img fetchpriority="high" src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Bamse7.jpg.thumb.1280.2276.jpg" alt="" class="image--responsive "></div></figure></div></div><div class="tag"><div class="tag__item">Forsikring</div></div><div class="title"><h1 class="ffe-h1">“Det kunne gått mye verre” – Bamses historie fra traktorulykken</h1></div><div class="author"><div class="author-text"><div></div><div class="author-text__date">30. april 2025</div></div></div><div class="some"><div class="some__item"><button aria-label="Del på Facebook" id="facebook-share" class="some__item-button"><svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="svg-icon " xmlns:xlink="http://www.w3.org/1999/xlink"><g id="facebook" stroke="#005aa4" stroke-width="0.5" fill="none" fill-rule="evenodd"><g transform="translate(-793.000000, -107.000000)" fill-rule="nonzero" fill="#005aa4"><path fill="#005aa4" d="M821.389827,137 L795.043908,137 C794.057306,137 793.216867,136.196102 793.216867,135.17296 L793.216867,108.82704 C793.216867,107.840438 794.020765,107 795.043908,107 L821.389827,107 C822.376429,107 823.216867,107.803898 823.216867,108.82704 L823.216867,135.17296 C823.180327,136.159562 822.376429,137 821.389827,137 Z M811.779596,135.17296 L821.353286,135.17296 L821.353286,108.863581 L795.043908,108.863581 L795.043908,135.17296 L809.25828,135.17296 L809.25828,122.785627 L808.125515,122.785627 C807.613944,122.785627 807.321618,122.493301 807.321618,121.98173 L807.321618,121.616322 C807.321618,121.10475 807.613944,120.812424 808.125515,120.812424 L809.25828,120.812424 L809.25828,118.218027 C809.25828,115.18514 810.902617,113.869671 812.291167,113.321559 C813.131606,112.956151 814.191289,112.883069 814.483615,112.883069 C814.775942,112.883069 815.470217,112.883069 815.799084,112.883069 L815.945247,112.883069 C816.49336,112.883069 816.749145,113.138855 816.749145,113.686967 L816.822227,113.686967 L816.822227,114.235079 C816.822227,114.74665 816.566441,115.002436 815.945247,115.038977 C815.908707,115.038977 815.652921,115.038977 815.397135,115.038977 C814.885564,115.038977 814.629779,115.038977 814.593238,115.038977 C813.898962,115.112058 811.779596,115.258222 811.779596,118.327649 L811.779596,120.812424 L814.922105,120.812424 C815.433676,120.812424 815.726003,121.10475 815.726003,121.616322 L815.726003,121.98173 C815.726003,122.493301 815.433676,122.785627 814.922105,122.785627 L811.779596,122.785627 L811.779596,135.17296 Z"></path></g></g></svg></button></div><div class="some__item"><button aria-label="Del på LinkedIn" id="linkedin-share" class="some__item-button"><svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="svg-icon " xmlns:xlink="http://www.w3.org/1999/xlink"><g id="linkedin" stroke="#005aa4" stroke-width="0.5" fill="none" fill-rule="evenodd"><g transform="translate(-1009.000000, -140.000000)" fill-rule="nonzero" fill="#005aa4"><path fill="#005aa4" d="M1015.90621,149.073171 L1015.90621,148.231707 C1015.90621,147.682927 1016.19854,147.390244 1016.74665,147.390244 L1017.58709,147.390244 C1018.09866,147.390244 1018.42753,147.682927 1018.42753,148.231707 L1018.42753,149.073171 C1018.42753,149.585366 1018.1352,149.914634 1017.58709,149.914634 L1016.74665,149.914634 C1016.19854,149.878049 1015.90621,149.585366 1015.90621,149.073171 Z M1015.94275,153.280488 C1015.94275,152.731707 1016.23508,152.439024 1016.78319,152.439024 L1017.55055,152.439024 C1018.09866,152.439024 1018.39099,152.731707 1018.39099,153.280488 L1018.39099,164.402439 C1018.39099,164.95122 1018.09866,165.243902 1017.55055,165.243902 L1016.78319,165.243902 C1016.23508,165.243902 1015.94275,164.95122 1015.94275,164.402439 L1015.94275,153.280488 L1015.94275,153.280488 Z M1020.9123,153.280488 C1020.9123,152.731707 1021.20463,152.439024 1021.75274,152.439024 L1022.44702,152.439024 C1022.99513,152.439024 1023.28745,152.731707 1023.28745,153.280488 L1023.28745,154.414634 C1023.28745,154.780488 1023.21437,155.146341 1023.21437,155.146341 L1023.25091,155.146341 C1023.76248,154.04878 1025.2972,152.146341 1028.11084,152.146341 C1031.10719,152.146341 1032.4592,153.792683 1032.4592,157.04878 L1032.4592,164.402439 C1032.4592,164.95122 1032.16687,165.243902 1031.61876,165.243902 L1030.8514,165.243902 C1030.33983,165.243902 1030.01096,164.95122 1030.01096,164.402439 L1030.01096,157.597561 C1030.01096,155.804878 1029.64555,154.378049 1027.59927,154.378049 C1025.11449,154.378049 1023.324,156.463415 1023.324,159.097561 L1023.324,164.365854 C1023.324,164.914634 1023.03167,165.207317 1022.48356,165.207317 L1021.7162,165.207317 C1021.16809,165.207317 1020.87576,164.914634 1020.87576,164.365854 L1020.87576,153.280488 L1020.9123,153.280488 Z M1037.17296,170 L1010.82704,170 C1009.84044,170 1009,169.195122 1009,168.170732 L1009,141.829268 C1009,140.841463 1009.8039,140 1010.82704,140 L1037.17296,140 C1038.15956,140 1039,140.804878 1039,141.829268 L1039,168.207317 C1038.96346,169.195122 1038.15956,170 1037.17296,170 Z M1010.82704,168.170732 L1037.13642,168.170732 L1037.13642,141.829268 L1010.82704,141.829268 L1010.82704,168.170732 Z"></path></g></g></svg></button></div><div class="some__item"><button aria-label="Del på Twitter" id="twitter-share" class="some__item-button"><svg width="32" height="32" viewBox="0 0 32 32" fill="#005aa4" class="svg-icon " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="twitter" stroke="#005aa4" stroke-width="0.5" fill="none" fill-rule="evenodd"><g clip-path="url(#a)"><path d="M17.461 12.696 28.384 0h-2.589l-9.483 11.024L8.736 0H0l11.455 16.671L0 29.985h2.589l10.015-11.642 7.999 11.642h8.736L17.46 12.696h.001Zm-3.545 4.12-1.161-1.661L3.521 1.949h3.976l7.452 10.66 1.161 1.661 9.687 13.856h-3.976l-7.905-11.307v-.001Z" fill="#005aa4"></path></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h29.34v30H0V0z"></path></clipPath></defs></g></svg></button></div></div></div><div class="sb1-article__content responsive-grid sb1-article__content"><div class="sb1-article__content-teaser text sb1-article__content-teaser"><div class="text-content " data-rte-editelement="true"><p>Christian «Bamse» Sletten Hageberget har kjørt traktor siden han var 15 år gammel. Han droppet ofte setebelte, inntil en maidag i 2020.</p>
+</div><div class="glossary-backdrop " style="display: none;"></div><div class="glossary-modal" style="display: none; position: absolute; top: 0px; left: 0px;"><div class="glossary-modal__header"><p class="glossary-modal__title"></p><button aria-label="Lukk ordforklaring" class="glossary-modal__close"><span role="img" aria-label="Lukk" aria-hidden="true" class="ffe-icons ffe-icons--md" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik00ODAtNDM3Ljg0NyAyNzcuMDc2LTIzNC45MjRxLTguMzA3IDguMzA4LTIwLjg4NCA4LjUtMTIuNTc2LjE5My0yMS4yNjgtOC41LTguNjkzLTguNjkyLTguNjkzLTIxLjA3NnQ4LjY5My0yMS4wNzZMNDM3Ljg0Ny00ODAgMjM0LjkyNC02ODIuOTI0cS04LjMwOC04LjMwNy04LjUtMjAuODg0LS4xOTMtMTIuNTc2IDguNS0yMS4yNjggOC42OTItOC42OTMgMjEuMDc2LTguNjkzdDIxLjA3NiA4LjY5M0w0ODAtNTIyLjE1M2wyMDIuOTI0LTIwMi45MjNxOC4zMDctOC4zMDggMjAuODg0LTguNSAxMi41NzYtLjE5MyAyMS4yNjggOC41IDguNjkzIDguNjkyIDguNjkzIDIxLjA3NnQtOC42OTMgMjEuMDc2TDUyMi4xNTMtNDgwbDIwMi45MjMgMjAyLjkyNHE4LjMwOCA4LjMwNyA4LjUgMjAuODg0LjE5MyAxMi41NzYtOC41IDIxLjI2OC04LjY5MiA4LjY5My0yMS4wNzYgOC42OTN0LTIxLjA3Ni04LjY5M0w0ODAtNDM3Ljg0N1oiLz48L3N2Zz4=&quot;);"></span></button></div><p class="glossary-modal__description"></p></div></div><div class="text"><div class="text-content " data-rte-editelement="true"><p>Christian, eller Bamse som alle kjenner han som, lever en livsstil som krever både styrke og utholdenhet.&nbsp;Men for en tid tilbake hadde han en ulykke som gjorde det usikkert om han kunne fortsette.</p>
+</div><div class="glossary-backdrop " style="display: none;"></div><div class="glossary-modal" style="display: none; position: absolute; top: 0px; left: 0px;"><div class="glossary-modal__header"><p class="glossary-modal__title"></p><button aria-label="Lukk ordforklaring" class="glossary-modal__close"><span role="img" aria-label="Lukk" aria-hidden="true" class="ffe-icons ffe-icons--md" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik00ODAtNDM3Ljg0NyAyNzcuMDc2LTIzNC45MjRxLTguMzA3IDguMzA4LTIwLjg4NCA4LjUtMTIuNTc2LjE5My0yMS4yNjgtOC41LTguNjkzLTguNjkyLTguNjkzLTIxLjA3NnQ4LjY5My0yMS4wNzZMNDM3Ljg0Ny00ODAgMjM0LjkyNC02ODIuOTI0cS04LjMwOC04LjMwNy04LjUtMjAuODg0LS4xOTMtMTIuNTc2IDguNS0yMS4yNjggOC42OTItOC42OTMgMjEuMDc2LTguNjkzdDIxLjA3NiA4LjY5M0w0ODAtNTIyLjE1M2wyMDIuOTI0LTIwMi45MjNxOC4zMDctOC4zMDggMjAuODg0LTguNSAxMi41NzYtLjE5MyAyMS4yNjggOC41IDguNjkzIDguNjkyIDguNjkzIDIxLjA3NnQtOC42OTMgMjEuMDc2TDUyMi4xNTMtNDgwbDIwMi45MjMgMjAyLjkyNHE4LjMwOCA4LjMwNyA4LjUgMjAuODg0LjE5MyAxMi41NzYtOC41IDIxLjI2OC04LjY5MiA4LjY5My0yMS4wNzYgOC42OTN0LTIxLjA3Ni04LjY5M0w0ODAtNDM3Ljg0N1oiLz48L3N2Zz4=&quot;);"></span></button></div><p class="glossary-modal__description"></p></div></div><div class="image "><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Bamse4.jpg.thumb.1280.1280.jpg" alt="" class="image--responsive "></div></div><figcaption class="image__text">Bamse jobber fulle dager på maskinverksted i tillegg til å drive med gård på Biristrand med 75 sauer og jordbruk.</figcaption></figure></div></div><div class="text"><div class="text-content " data-rte-editelement="true"><p>– Jeg veltet rundt med traktoren to ganger mens jeg kjørte sidelengs i en skråning på jordet nedenfor her. Traktoren landet på hjulene, men jeg husker ikke om jeg endte inni eller utenfor, forteller Bamse. Han kjørte uten setebelte og ble kastet rundt i førerhytta. Det var ren flaks at han overlevde.</p>
+<p>Skadene var alvorlige: han brakk sju ribbein, flere rygg- og nakkevirvler, og han ble lam i venstrefoten en periode. Likevel var han tilbake på jobb etter bare et par måneder.</p>
+<p>– Man tåler det utrulige, sier han i dag.</p>
+<h2><b>Det mentale verst</b></h2>
+<p>Bamse legger ikke skjul på at det mentale har vært tyngre enn det fysiske.</p>
+<p>– Fysisk smerte er én ting, det mentale er verre. Når du skjønner at det ikke blir som før, da blir det tungt.</p>
+<p>Han måtte legge om hele måten han lever og jobber på. Det har vært mye frustrasjon og smerter, og det var ekstra vanskelig å akseptere at livet aldri kom til å bli helt det samme igjen. Heldigvis har mange fine folk rundt om i lokalmiljøet stilt opp for han og hjulpet familien, og det har vært rom for humor oppi det hele.</p>
+<p>– Det gikk en spøk om at jeg fikk skylda for at setebeltepåbudet i traktor kom. Ulykken var 24. mai, og påbudet kom 1. juli samme år. Det er jo litt pussig, kan du si.</p>
+</div><div class="glossary-backdrop " style="display: none;"></div><div class="glossary-modal" style="display: none; position: absolute; top: 0px; left: 0px;"><div class="glossary-modal__header"><p class="glossary-modal__title"></p><button aria-label="Lukk ordforklaring" class="glossary-modal__close"><span role="img" aria-label="Lukk" aria-hidden="true" class="ffe-icons ffe-icons--md" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik00ODAtNDM3Ljg0NyAyNzcuMDc2LTIzNC45MjRxLTguMzA3IDguMzA4LTIwLjg4NCA4LjUtMTIuNTc2LjE5My0yMS4yNjgtOC41LTguNjkzLTguNjkyLTguNjkzLTIxLjA3NnQ4LjY5My0yMS4wNzZMNDM3Ljg0Ny00ODAgMjM0LjkyNC02ODIuOTI0cS04LjMwOC04LjMwNy04LjUtMjAuODg0LS4xOTMtMTIuNTc2IDguNS0yMS4yNjggOC42OTItOC42OTMgMjEuMDc2LTguNjkzdDIxLjA3NiA4LjY5M0w0ODAtNTIyLjE1M2wyMDIuOTI0LTIwMi45MjNxOC4zMDctOC4zMDggMjAuODg0LTguNSAxMi41NzYtLjE5MyAyMS4yNjggOC41IDguNjkzIDguNjkyIDguNjkzIDIxLjA3NnQtOC42OTMgMjEuMDc2TDUyMi4xNTMtNDgwbDIwMi45MjMgMjAyLjkyNHE4LjMwOCA4LjMwNyA4LjUgMjAuODg0LjE5MyAxMi41NzYtOC41IDIxLjI2OC04LjY5MiA4LjY5My0yMS4wNzYgOC42OTN0LTIxLjA3Ni04LjY5M0w0ODAtNDM3Ljg0N1oiLz48L3N2Zz4=&quot;);"></span></button></div><p class="glossary-modal__description"></p></div></div><div class="image "><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Bamse10.jpg.thumb.1280.1280.jpg" alt="" class="image--responsive "></div></div></figure></div></div><div class="text"><div class="text-content " data-rte-editelement="true"><h2><b>Setebeltet utgjør en forskjell</b></h2>
+<p>Spør du Bamse i dag, så er han klinkende klar:</p>
+<p>– Nå bruker jeg setebelte konsekvent. Det er den største læringen etter ulykken. Jeg tror ikke jeg hadde fått de samme skadene om jeg hadde sittet fast i setet.Det er klart at du hopper mye inn og ut av traktoren, og det er ikke alltid lettvint. Men det handler om å få det inn som rutine, forteller han.</p>
+<p>– De som lærer seg å kjøre traktor i dag, lærer å bruke belte i traktor på trafikkskolen. Det er bra det er mer fokus på sikkerhet nå enn før. De unge har skjønt det, påpeker han.<br>
+</p>
+<h2>26 prosent bruker ikke belte</h2>
+<p>Bamse har vært gjennom en tøff reise, men sitter igjen med en viktig lærdom: bevisstheten rundt sikkerhet. Nå tenker han mer over kjøreturen på forhånd, og unngår enkelte bakker han før tok som en selvfølge.</p>
+<p>Historien hans er ikke ment for å skremme, men for å minne oss på hvor fort ting kan skje og hvor lite som skal til for å gjøre en forskjell. Bare i 2024 fikk forsikringsselskapet vårt, Fremtind, meldt inn 1839 skader på traktor. Ifølge Arbeidstilsynet er det 26 prosent som ikke bruker setebelte i traktor, og trenden har vært synkende siden påbudet kom i 2020.</p>
+<h2>Unngå løse gjenstander i traktorhytta<b></b></h2>
+<p>Unngå å ha løse gjenstander i hytta, det kan skape farlige situasjoner. Når du bråbremser i 40 kilometer i timen, utsettes en løs gjenstand for en kraft som gjør at den oppleves som 10–20 ganger tyngre, alt etter hvor hardt du bremser.</p>
+<p>En vanlig halvliter brusflaske veier omtrent en halv kilo, avhengig av om den er full eller ikke. Mens hvis du bråbremser traktoren og brusflasken får fart på seg inne i hytta, kan den veie opptil 70 kilo – og det kan være livsfarlig å få i hodet!</p>
+<h2>Et lite klikk kan redde liv</h2>
+<p>Bamses historie minner oss på hvor raskt alt kan snus på hodet.<br>
+Det handler om å gjøre det ene, lille grepet som kan utgjøre hele forskjellen.</p>
+<p>Å feste beltet tar bare et sekund. Men det kan bety alt.&nbsp;</p>
+</div><div class="glossary-backdrop " style="display: none;"></div><div class="glossary-modal" style="display: none; position: absolute; top: 0px; left: 0px;"><div class="glossary-modal__header"><p class="glossary-modal__title"></p><button aria-label="Lukk ordforklaring" class="glossary-modal__close"><span role="img" aria-label="Lukk" aria-hidden="true" class="ffe-icons ffe-icons--md" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik00ODAtNDM3Ljg0NyAyNzcuMDc2LTIzNC45MjRxLTguMzA3IDguMzA4LTIwLjg4NCA4LjUtMTIuNTc2LjE5My0yMS4yNjgtOC41LTguNjkzLTguNjkyLTguNjkzLTIxLjA3NnQ4LjY5My0yMS4wNzZMNDM3Ljg0Ny00ODAgMjM0LjkyNC02ODIuOTI0cS04LjMwOC04LjMwNy04LjUtMjAuODg0LS4xOTMtMTIuNTc2IDguNS0yMS4yNjggOC42OTItOC42OTMgMjEuMDc2LTguNjkzdDIxLjA3NiA4LjY5M0w0ODAtNTIyLjE1M2wyMDIuOTI0LTIwMi45MjNxOC4zMDctOC4zMDggMjAuODg0LTguNSAxMi41NzYtLjE5MyAyMS4yNjggOC41IDguNjkzIDguNjkyIDguNjkzIDIxLjA3NnQtOC42OTMgMjEuMDc2TDUyMi4xNTMtNDgwbDIwMi45MjMgMjAyLjkyNHE4LjMwOCA4LjMwNyA4LjUgMjAuODg0LjE5MyAxMi41NzYtOC41IDIxLjI2OC04LjY5MiA4LjY5My0yMS4wNzYgOC42OTN0LTIxLjA3Ni04LjY5M0w0ODAtNDM3Ljg0N1oiLz48L3N2Zz4=&quot;);"></span></button></div><p class="glossary-modal__description"></p></div></div></div><div class="sb1-article__aside responsive-grid sb1-article__aside"><div class="sb1-article__aside-related news-card sb1-article__aside-related"><div class="related-list"><h2 class="ffe-h5 related-list__header">Relaterte artikler</h2><article class="related-list__item"><a href="/content/sites/sb1/nb/bank/privat/forsikring/vedlikehold/kraftig-regn-beskytt-boligen.html"><div class="related-list__image related-list__image-wrap sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Regn_takrenne.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><span class="related-list__text">Kraftig regn på vei? Slik beskytter du boligen din</span></a></article><article class="related-list__item"><a href="/content/sites/sb1/nb/bank/om-oss/nyheter/unngaa-bulkedagen.html"><div class="related-list__image related-list__image-wrap sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/JULESTRESS_BIL.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><span class="related-list__text">Klar for (å unngå) årets bulkebonanza?</span></a></article><article class="related-list__item"><a href="/content/sites/sb1/nb/bank/om-oss/nyheter/ta-vare-dyra-nyttaarsaften.html"><div class="related-list__image related-list__image-wrap sb1-article__header-image image--hero sb1-article__header-image--center-crop"><div class="sb1-article__header-image image--hero sb1-article__header-image--center-crop image  sb1-article__header-image image--hero sb1-article__header-image--center-crop"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/hund-og-barn.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><span class="related-list__text">Slik tar du vare på dyrene på nyttårsaften</span></a></article><article class="related-list__item"><a href="/content/sites/sb1/nb/bank/om-oss/nyheter/fly-julen-raad-reisen.html"><div class="related-list__image related-list__image-wrap sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Flyplasslounge.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><span class="related-list__text">Skal du fly hjem til jul? Her er noen råd til reisen </span></a></article><article class="related-list__item"><a href="/content/sites/sb1/nb/bank/om-oss/nyheter/fyrverkeri-risiko.html"><div class="related-list__image related-list__image-wrap sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/fyrverkeri-unsplash.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><span class="related-list__text">Fyrverkeri – er det verdt risikoen?</span></a></article></div></div><div class="tags"><h2 class="ffe-h5 related-list__header">Relaterte tema</h2><a href="/content/sites/sb1/nb/bank/om-oss/nyheter.html?tema=sb1:nyheter/forsikring">#Forsikring</a></div></div></div><footer class="footer" aria-hidden="false"><div class="ffe-grid"><div class="footer-columns__top ffe-grid__row"><div class="ffe-grid__col ffe-grid__col--sm-12 ffe-grid__col--sm-offset-0"><div class="ffe-grid"><div class="ffe-grid__row"><div class="ffe-grid__col footer-columns__ffe-col ffe-grid__col--sm-12 ffe-grid__col--sm-offset-0"><div class="footer-columns__column"><h2 class="ffe-h2 ffe-h4 footer-columns__links-header">Snarveier</h2><ul class="footer-columns__link-list"><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/kundeservice/bestill/bli-kunde.html">Bli kunde </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/kundeservice/verktoy/sperre-kort.html">Sperre kort </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/forsikring/meld-skade.html">Meld skade </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/kundeservice/bestill/prisliste.html">Prisliste </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/kundeservice.html">Kundeservice </a></li></ul></div><div class="footer-columns__column"><h2 class="ffe-h2 ffe-h4 footer-columns__links-header">Logg inn</h2><ul class="footer-columns__link-list"><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/innlogging.html">Nettbank privat </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/bedrift/innlogging.html">Nettbank bedrift </a></li><li><a class="ffe-link-text footer-columns__link" href="https://kundeforsikring.sparebank1.no">Forsikring </a></li><li><a class="ffe-link-text footer-columns__link" href="https://kundeforsikring.sparebank1.no/privat/sparing">Pensjon </a></li></ul></div><div class="footer-columns__column footer-columns__column--social-media"><h2 class="ffe-h2 ffe-h4 footer-columns__links-header">Sosiale medier</h2><ul class="footer-columns__link-list footer-columns__link-list--horizontal"><li><a href="https://no.linkedin.com/company/sparebank-1" target="_blank" rel="noopener" title="Linkedin"><div class="footer-columns__link-image"><div class="image "><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg" alt="" class="image--responsive " style="max-width: 100%;"></div></div></figure></div></div> </div></a></li><li><a href="https://www.youtube.com/channel/UCdfZfi4HC6bK0-OfRcDJSzg" target="_blank" rel="noopener" title="YouTube"><div class="footer-columns__link-image"><div class="image "><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg" alt="" class="image--responsive " style="max-width: 100%;"></div></div></figure></div></div> </div></a></li></ul></div></div></div></div></div></div><hr class="footer-columns__divider"><div class="footer-columns__bottom ffe-grid__row"><div class="ffe-grid__col ffe-grid__col--sm-10 ffe-grid__col--sm-offset-1 ffe-grid__col--center"><div class="footer-columns__column"><ul class="footer-columns__link-list footer-columns__link-list--horizontal footer-columns__link-list--wrap"><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/om-oss/om-banken/selskapsinformasjon.html">Om SpareBank 1 </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/om-oss/personvern/generelle-vilkar.html">Vilkår for bruk av nettsiden </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/om-oss/personvern.html">Personvern </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/om-oss/personvern.html#cookies">Informasjonskapsler </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/bedrift/open-api.html">For utviklere </a></li></ul></div></div></div></div><div class="footer-info">SpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo</div></footer> </main>
+    <script>
+    window.SB1.lang = {
+        BANK_PICKER_MODAL_HD: "For å gå videre - velg en bank",
+        BANK_PICKER_MODAL_HD_PREFILLED: "For å gå videre...",
+        CHOOSE_BANK: "Velg en av bankene som tilbyr produktet for å gå videre.",
+        'Our best choice': "Gå til banken du var hos sist",
+        'More choices': "Se alle banker",
+        HIDE_CHOICES: "Skjul bankene",
+        BANK_PICKER_POSTAL_LABEL: "Ditt postnummer",
+        BANK_CHOICE_PLACEHOLDER: "Postnummer",
+        BANK_CHOICE_PLACEHOLDER_POSITION: "Din posisjon",
+        BANK_CHOICE_FORTSETT: "Fortsett til",
+        BANK_CHOICE_FILTERED_LIST: "Se resten av bankene",
+        BANK_CHOICE_POSITION_ACCESS: "Tips! Tillatt nettleseren å hente din stedsinformasjon.",
+        BANK_CHOICE_POSITION_API_FAIL: "Vi finner ikke posisjonen din. Prøv å skriv et postnummer i stedet!",
+        BANK_CHOICE_POSITION_BTN: "Bruk min posisjon",
+        POSTAL_CODE_ERROR: "Skriv inn et gyldig postnummer (4 siffer).",
+        MORE_ABOUT: "Les mer om",
+        MODAL_CLOSE: "Lukk",
+        SUMMARY_EXPAND: "Utvid",
+        SUMMARY_HEADER: "Kort oppsummert",
+        SUMMARY_DISCLAIMER: "Denne oppsummeringen er generert av kunstig intelligens (KI) og kvalitetssikret av redaktørene våre."
+    };
+</script>
+
+</div>
+<script type="text/javascript" async="" src="/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.js"></script>
+<script type="text/javascript" async="" src="/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/vendors_bundle.1156912316.js"></script>
+
+
+
+
+
+<!-- Remove header and footer inside Mobilbank app, Remove data-sly-test config when tested ok in mobile app in prod -->
+<script>
+    (function () { // Wrap in IIFE to avoid leaking variables to global scope
+        // Detect Mobilbank user agent
+        const isMobilbank = /mobilbank\//i.test(navigator.userAgent);
+        if (!isMobilbank) return;
+
+        document.documentElement.classList.add('in-mobilbank');
+        try {
+            if (!document.getElementById('in-mobilbank-style')) {
+                const style = document.createElement('style');
+                style.id = 'in-mobilbank-style';
+                style.textContent = `
+                            html.in-mobilbank .footer,
+                            html.in-mobilbank #outer-main-wrap header.header,
+                            html.in-mobilbank #outer-main-wrap .market-nav,
+                            html.in-mobilbank #outer-main-wrap .global-message,
+                            html.in-mobilbank #outer-main-wrap > .main > .to-parent,
+                            html.in-mobilbank #dialoghub-iframe {
+                              display: none !important;
+                            }
+                        `;
+                (document.head || document.documentElement).appendChild(style);
+            }
+        } catch (e) {
+            console.error('Failed to remove Nettsider header for User Agent Mobilbank: ', e);
+        }
+    })();
+</script>
+            
+    
+    
+
+
+
+    <script type="text/javascript">
+        const matchV2 = document.cookie.match(new RegExp(`-v2=(.*?)`));
+        let hasOptinCookie = false;
+        if(matchV2) {
+            hasOptinCookie = true;
+        }else{
+            const match = document.cookie.match(new RegExp(`=(.*?)-v`));
+            hasOptinCookie = (match) ? true : false;
+        }
+
+        if (!hasOptinCookie){
+            // js fil
+            const scriptEle = document.createElement("script");
+            const JS_URL = "/sb1-nettsider-optin/bank/static/opt-in.js";
+            scriptEle.setAttribute("src", JS_URL);
+            scriptEle.setAttribute("type", "text/javascript");
+            scriptEle.setAttribute("async", true);
+            scriptEle.setAttribute("onerror", "optinScriptError=true;");
+
+            //css fil
+            const CSS_URL = "/sb1-nettsider-optin/bank/static/opt-in.css";
+            const cssEle = document.createElement('link');
+            cssEle.setAttribute('rel', 'stylesheet');
+            cssEle.setAttribute('onerror', 'optinScriptError=true;');
+            cssEle.setAttribute('property', 'stylesheet');
+            cssEle.setAttribute('media', 'screen,print');
+            cssEle.setAttribute('type', 'text/css');
+            cssEle.setAttribute('href', CSS_URL);
+
+            // div element
+            const divEle = document.createElement('div');
+            divEle.setAttribute('id', 'opt-in');
+            divEle.setAttribute('data-trigger-modal', 'true');
+
+            document.body.appendChild(divEle);
+            document.body.appendChild(cssEle);
+            document.body.appendChild(scriptEle);
+        }
+    </script>
+
+
+    
+
+    
+
+    
+    
+    
+
+            
+
+        
+    
+
+</body></html>

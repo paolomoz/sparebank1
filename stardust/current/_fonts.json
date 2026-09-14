@@ -1,0 +1,59 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract (capture-styles.mjs)",
+    "writtenAt": "2026-09-14T15:06:21.880Z"
+  },
+  "files": [
+    {
+      "url": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2",
+      "localPath": "stardust/current/assets/fonts/SpareBank1-Medium-Web.woff2",
+      "contentType": "font/woff2",
+      "bytes": 35052
+    },
+    {
+      "url": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2",
+      "localPath": "stardust/current/assets/fonts/SpareBank1-Regular-Web.woff2",
+      "contentType": "font/woff2",
+      "bytes": 37372
+    },
+    {
+      "url": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2",
+      "localPath": "stardust/current/assets/fonts/SpareBank1-Title-Medium-Web.woff2",
+      "contentType": "font/woff2",
+      "bytes": 32268
+    }
+  ],
+  "fontFaces": [
+    {
+      "family": "SpareBank1-medium",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff\") format(\"woff\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-medium; font-display: fallback; src: url(\"clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff\") format(\"woff\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.css"
+    },
+    {
+      "family": "SpareBank1-regular",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff\") format(\"woff\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-regular; font-display: fallback; src: url(\"clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff\") format(\"woff\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.css"
+    },
+    {
+      "family": "SpareBank1-title-medium",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff\") format(\"woff\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-title-medium; font-display: fallback; src: url(\"clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff\") format(\"woff\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.css"
+    }
+  ],
+  "iconFontPages": {}
+}

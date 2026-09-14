@@ -1,0 +1,1511 @@
+<!doctype html>
+
+
+<html lang="nb">
+<head>
+
+    <meta charset="utf-8"/>
+    
+        <script>
+            try{!function(){var e="Expected a function",t=NaN,n="[object Symbol]",r=/^\s+|\s+$/g,i=/^[-+]0x[0-9a-f]+$/i,o=/^0b[01]+$/i,a=/^0o[0-7]+$/i,c=parseInt,u="object"==typeof global&&global&&global.Object===Object&&global,s="object"==typeof self&&self&&self.Object===Object&&self,f=u||s||Function("return this")(),l=Object.prototype.toString,p=Math.max,v=Math.min,g=function(){return f.Date.now()};function m(t,n,r){var i,o,a,c,u,s,f=0,l=!1,m=!1,b=!0;if("function"!=typeof t)throw new TypeError(e);function O(e){var n=i,r=o;return i=o=void 0,f=e,c=t.apply(r,n)}function y(e){var t=e-s;return void 0===s||t>=n||t<0||m&&e-f>=a}function N(){var e,t,r=g();if(y(r))return w(r);u=setTimeout(N,(t=n-((e=r)-s),m?v(t,a-(e-f)):t))}function w(e){return u=void 0,b&&i?O(e):(i=o=void 0,c)}function x(){var e,t=g(),r=y(t);if(i=arguments,o=this,s=t,r){if(void 0===u)return f=e=s,u=setTimeout(N,n),l?O(e):c;if(m)return u=setTimeout(N,n),O(s)}return void 0===u&&(u=setTimeout(N,n)),c}return n=d(n)||0,h(r)&&(l=!!r.leading,a=(m="maxWait"in r)?p(d(r.maxWait)||0,n):a,b="trailing"in r?!!r.trailing:b),x.cancel=function(){void 0!==u&&clearTimeout(u),f=0,i=s=o=u=void 0},x.flush=function(){return void 0===u?c:w(g())},x}function h(e){var t=typeof e;return!!e&&("object"==t||"function"==t)}function d(e){if("number"==typeof e)return e;if("symbol"==typeof(u=e)||(s=u)&&"object"==typeof s&&l.call(u)==n)return t;var u,s;if(h(e)){var f="function"==typeof e.valueOf?e.valueOf():e;e=h(f)?f+"":f}if("string"!=typeof e)return 0===e?e:+e;e=e.replace(r,"");var p=o.test(e);return p||a.test(e)?c(e.slice(2),p?2:8):i.test(e)?t:+e}var b,O,y,N,w=(b=function(){function e(e){return!isNaN(parseFloat(e))&&isFinite(e)}function t(e){return e.charAt(0).toUpperCase()+e.substring(1)}function n(e){return function(){return this[e]}}var r=["isConstructor","isEval","isNative","isToplevel"],i=["columnNumber","lineNumber"],o=["fileName","functionName","source"],a=r.concat(i,o,["args"]);function c(e){if(e instanceof Object)for(var n=0;n<a.length;n++)e.hasOwnProperty(a[n])&&void 0!==e[a[n]]&&this["set"+t(a[n])](e[a[n]])}c.prototype={getArgs:function(){return this.args},setArgs:function(e){if("[object Array]"!==Object.prototype.toString.call(e))throw new TypeError("Args must be an Array");this.args=e},getEvalOrigin:function(){return this.evalOrigin},setEvalOrigin:function(e){if(e instanceof c)this.evalOrigin=e;else{if(!(e instanceof Object))throw new TypeError("Eval Origin must be an Object or StackFrame");this.evalOrigin=new c(e)}},toString:function(){return(this.getFunctionName()||"{anonymous}")+"("+(this.getArgs()||[]).join(",")+")"+(this.getFileName()?"@"+this.getFileName():"")+(e(this.getLineNumber())?":"+this.getLineNumber():"")+(e(this.getColumnNumber())?":"+this.getColumnNumber():"")}};for(var u=0;u<r.length;u++)c.prototype["get"+t(r[u])]=n(r[u]),c.prototype["set"+t(r[u])]=function(e){return function(t){this[e]=Boolean(t)}}(r[u]);for(var s=0;s<i.length;s++)c.prototype["get"+t(i[s])]=n(i[s]),c.prototype["set"+t(i[s])]=function(t){return function(n){if(!e(n))throw new TypeError(t+" must be a Number");this[t]=Number(n)}}(i[s]);for(var f=0;f<o.length;f++)c.prototype["get"+t(o[f])]=n(o[f]),c.prototype["set"+t(o[f])]=function(e){return function(t){this[e]=String(t)}}(o[f]);return c}(),O=/(^|@)\S+\:\d+/,y=/^\s*at .*(\S+\:\d+|\(native\))/m,N=/^(eval@)?(\[native code\])?$/,{parse:function(e){if(void 0!==e.stacktrace||void 0!==e["opera#sourceloc"])return this.parseOpera(e);if(e.stack&&e.stack.match(y))return this.parseV8OrIE(e);if(e.stack)return this.parseFFOrSafari(e);throw new Error("Cannot parse given Error object")},extractLocation:function(e){if(-1===e.indexOf(":"))return[e];var t=/(.+?)(?:\:(\d+))?(?:\:(\d+))?$/.exec(e.replace(/[\(\)]/g,""));return[t[1],t[2]||void 0,t[3]||void 0]},parseV8OrIE:function(e){return e.stack.split("\n").filter(function(e){return!!e.match(y)},this).map(function(e){e.indexOf("(eval ")>-1&&(e=e.replace(/eval code/g,"eval").replace(/(\(eval at [^\()]*)|(\)\,.*$)/g,""));var t=e.replace(/^\s+/,"").replace(/\(eval code/g,"(").split(/\s+/).slice(1),n=this.extractLocation(t.pop()),r=t.join(" ")||void 0,i=["eval","<anonymous>"].indexOf(n[0])>-1?void 0:n[0];return new b({functionName:r,fileName:i,lineNumber:n[1],columnNumber:n[2],source:e})},this)},parseFFOrSafari:function(e){return e.stack.split("\n").filter(function(e){return!e.match(N)},this).map(function(e){if(e.indexOf(" > eval")>-1&&(e=e.replace(/ line (\d+)(?: > eval line \d+)* > eval\:\d+\:\d+/g,":$1")),-1===e.indexOf("@")&&-1===e.indexOf(":"))return new b({functionName:e});var t=/((.*".+"[^@]*)?[^@]*)(?:@)/,n=e.match(t),r=n&&n[1]?n[1]:void 0,i=this.extractLocation(e.replace(t,""));return new b({functionName:r,fileName:i[0],lineNumber:i[1],columnNumber:i[2],source:e})},this)},parseOpera:function(e){return!e.stacktrace||e.message.indexOf("\n")>-1&&e.message.split("\n").length>e.stacktrace.split("\n").length?this.parseOpera9(e):e.stack?this.parseOpera11(e):this.parseOpera10(e)},parseOpera9:function(e){for(var t=/Line (\d+).*script (?:in )?(\S+)/i,n=e.message.split("\n"),r=[],i=2,o=n.length;i<o;i+=2){var a=t.exec(n[i]);a&&r.push(new b({fileName:a[2],lineNumber:a[1],source:n[i]}))}return r},parseOpera10:function(e){for(var t=/Line (\d+).*script (?:in )?(\S+)(?:: In function (\S+))?$/i,n=e.stacktrace.split("\n"),r=[],i=0,o=n.length;i<o;i+=2){var a=t.exec(n[i]);a&&r.push(new b({functionName:a[3]||void 0,fileName:a[2],lineNumber:a[1],source:n[i]}))}return r},parseOpera11:function(e){return e.stack.split("\n").filter(function(e){return!!e.match(O)&&!e.match(/^Error created at/)},this).map(function(e){var t,n=e.split("@"),r=this.extractLocation(n.pop()),i=n.shift()||"",o=i.replace(/<anonymous function(: (\w+))?>/,"$2").replace(/\([^\)]*\)/g,"")||void 0;i.match(/\(([^\)]*)\)/)&&(t=i.replace(/^[^\(]+\(([^\)]*)\)$/,"$1"));var a=void 0===t||"[arguments not available]"===t?void 0:t.split(",");return new b({functionName:o,args:a,fileName:r[0],lineNumber:r[1],columnNumber:r[2],source:e})},this)}});window.onerror=function(t,n,r){var i=!0,o=!0;if("function"!=typeof t)throw new TypeError(e);return h(r)&&(i="leading"in r?!!r.leading:i,o="trailing"in r?!!r.trailing:o),m(t,n,{leading:i,maxWait:n,trailing:o})}(function(e,t,n,r,i){var o,a;i&&(o=w.parse(i)),window.location&&window.location.href&&(a=window.location.href),function(e){try{var t=new XMLHttpRequest;t.open("POST","/LogServlet",!0),t.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8"),t.send("javascriptError="+encodeURI(e))}catch(e){}}(JSON.stringify({userAgent:navigator.userAgent,url:a,logger:"apne_nettsider",message:e,source:t,lineno:n,colno:r,stacktrace:o}))},200)}()}catch(e){}
+        </script>
+    
+
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes"/>
+    <meta name="keywords" content="Not indexed"/>
+    
+    
+
+    
+        <meta itemprop="category" content="search-facet-tags:not-indexed"/>
+    
+
+    
+
+    <meta property="og:url" content="https://www.sparebank1.no/nb/bank/om-oss/selskaper/sparebank-1-portefolje/slik-ivaretar-vi-ditt-personvern-og-var-taushetsplikt.html"/>
+    <meta property="og:title" content="Slik ivaretar vi ditt personvern og vår taushetsplikt"/>
+    <meta property="og:description"/>
+    <meta property="og:image" content="https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"/>
+    <meta property="og:type" content="article"/>
+
+    <meta property="article:published_time" content="2019-05-15T13:28:51+02:00"/>
+    <meta property="article:modified_time" content="2019-05-15T13:28:51+02:00"/>
+
+    <meta name="twitter:title" content="Slik ivaretar vi ditt personvern og vår taushetsplikt"/>
+    <meta name="twitter:description"/>
+    <meta name="twitter:image:src" content="https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.768.768.jpg"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+
+    
+    
+    
+
+    <link rel="preconnect" href="https://adobedc.demdex.net" crossorigin/>
+    <link rel="preconnect" href="https://edge.adobedc.net" crossorigin/>
+
+    
+    <link rel="preload" as="font" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2" type="font/woff2" crossorigin/>
+    <link rel="preload" as="font" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2" type="font/woff2" crossorigin/>
+    <link rel="preload" as="font" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2" type="font/woff2" crossorigin/>
+
+    <link rel="shortcut icon" type="image/png" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/favicon.png"/>
+    <link rel="apple-touch-icon" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/apple-touch-icon.png"/>
+    <link rel="canonical" href="https://www.sparebank1.no/nb/bank/om-oss/selskaper/sparebank-1-portefolje/slik-ivaretar-vi-ditt-personvern-og-var-taushetsplikt.html"/>
+    <link rel="stylesheet" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.css" type="text/css"/>
+    <title>Slik ivaretar vi ditt personvern og vår taushetsplikt | SpareBank 1 </title>
+    
+    <!-- aem02-02 - 5.168.0 -->
+    
+
+    <script type="text/javascript">
+        var _satellite = {
+            track: function() {}
+        }
+    </script>
+
+    
+
+    
+</head>
+
+
+
+<body class="ffe-body-text">
+    
+    
+    
+    
+        
+
+<script>
+    window.SB1 = {
+        config: {
+            app: {
+                logServlet: '/LogServlet',
+                param1: "",
+                param2: "all",
+                param3: '',
+                sendToBank: "true",
+                sendToBankList: "",
+                sendToBankClose: "3",
+                sendToBankDelay: "4",
+                loggedInRedirectEnabled: "true",
+                urlList: "LogServlet,/bin/logservlet,/bin,/content/dam,/dynres,/restportal,static,/innhold,services.cicero.no,/kjopsprosess,/api/common/banking/skjema,/nettmote,.boost.ai/,https://publish.ne.cision.com/Subscription/Subscribe,dpm.demdex.net,sparebank1.d3.sc.omtrdc.net,/solr,/sb1-dialoghub,/openapi,edge.adobedc.net,/api/tracking/webbehavior,/pm-boliglan/,/api/personal/",
+                loginRedirectTimeout: "300000",
+                isLoginIframeCheckEnabled: "true",
+                chatDefaultOpen: "",
+                enableWebTracker: "true",
+                enableAdobeTargetCurrentPage: "",
+                enableSendConsent: "false", // To be removed when we have streamed the consents for a period of time
+                adobeEdgeIdBank: "c9ffe15c-d455-425b-877f-81f1a83db1c3",
+                version: "5.168.0",
+            },
+            user: {
+                language: "nb",
+            },
+            global: {
+                logAjax: false,
+            },
+            urls: {
+                marketPage: "/content/sites/sb1/nb/bank/om-oss.html",
+                gotoNettbank: '',
+            },
+            server: {},
+            sites: {},
+            page: {
+                tagVariables: "search\u002Dfacet\u002Dtags:not\u002Dindexed",
+                pageType: "Om oss",
+                market: "Om oss",
+                marketName: "om-oss",
+                brand: "sb1",
+                products: [
+                    {
+                        name: "",
+                        category: "",
+                    },
+                ],
+                is404Page: "false",
+            },
+            bank: {
+                bankSemanticUrl: "bank",
+                bankShortName: "bank",
+                bankName: "SpareBank 1 ",
+                defaultLanguage: "nb",
+                financialInstitutionId: "fid-ostlandet"
+            },
+        },
+    };
+</script>
+
+        
+<script>
+    digitalData = {
+        content: {
+            BU: "SpareBank 1",
+            subBrand: "bank",
+            language: "nb",
+            page: "sb1|nb|bank|om\u002Doss|selskaper|sparebank\u002D1\u002Dportefolje|slik\u002Divaretar\u002Dvi\u002Dditt\u002Dpersonvern\u002Dog\u002Dvar\u002Dtaushetsplikt",
+            section1: "om\u002Doss",
+            section2: "om\u002Doss|selskaper",
+            section3: "om\u002Doss|selskaper|sparebank\u002D1\u002Dportefolje",
+            section4: "om\u002Doss|selskaper|sparebank\u002D1\u002Dportefolje|slik\u002Divaretar\u002Dvi\u002Dditt\u002Dpersonvern\u002Dog\u002Dvar\u002Dtaushetsplikt",
+            errorpages: "Nei",
+            pagetype: "Om oss",
+            tags: "search\u002Dfacet\u002Dtags:not\u002Dindexed",
+            application: "sb1-nettsider"
+        }
+    };
+</script>
+   
+        <noscript>
+            <div>For at du skal kunne se innhold på SpareBank 1s nettsider optimalt, må du aktivere javascript i din nettleser.</div>
+        </noscript>
+
+        <div id="outer-main-wrap" class="main-wrap">
+            
+            
+            <nav class="page-nav">
+    <a href="#main-menu" class="visually-hidden focusable">Til hovedmeny</a>
+
+    <a href="#main-content" class="visually-hidden focusable">Til hovedinnhold</a>
+</nav>
+            
+
+
+    <aside aria-label="Melding" role="complementary">
+        <div class="global-message">
+            <div class="li-information-message-blue js-ie-message-item hide" role="alert" aria-live="assertive" data-id="ie-no-longer-supported" data-button="Lukk">
+                
+            </div>
+            
+        </div>
+    </aside>
+
+
+<header class="header">
+    
+    
+    
+    
+    
+    <div class="header__wrap">
+        <div class="header__content  aem-main-container">
+            <div class="header__top-wrap">
+                <a class="header__search-mobile search-toggle" href="?search=" aria-label="Søk" title="Søk">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+    <path aria-hidden="true" fill="currentColor" d="M378.67-326q-108.44 0-183.56-75.17Q120-476.33 120-583.33t75.17-182.17q75.16-75.17 182.5-75.17 107.33 0 182.16 75.17 74.84 75.17 74.84 182.27 0 43.23-14 82.9-14 39.66-40.67 73l236 234.66q9.67 9.37 9.67 23.86 0 14.48-9.67 24.14-9.67 9.67-24.15 9.67-14.48 0-23.85-9.67L532.67-380q-30 25.33-69.64 39.67Q423.39-326 378.67-326Zm-.67-66.67q79.17 0 134.58-55.83Q568-504.33 568-583.33q0-79-55.42-134.84Q457.17-774 378-774q-79.72 0-135.53 55.83-55.8 55.84-55.8 134.84t55.8 134.83q55.81 55.83 135.53 55.83Z"/>
+</svg>
+                    
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="header__search-icon header__search-icon--close">
+        <path fill="currentColor" d="M480-433.33 274.67-228q-9.67 9.67-23.34 9.67-13.66 0-23.33-9.67-9.67-9.67-9.67-23.33 0-13.67 9.67-23.34L433.33-480 228-685.33q-9.67-9.67-9.67-23.34 0-13.66 9.67-23.33 9.67-9.67 23.33-9.67 13.67 0 23.34 9.67L480-526.67 685.33-732q9.67-9.67 23.34-9.67 13.66 0 23.33 9.67 9.67 9.67 9.67 23.33 0 13.67-9.67 23.34L526.67-480 732-274.67q9.67 9.67 9.67 23.34 0 13.66-9.67 23.33-9.67 9.67-23.33 9.67-13.67 0-23.34-9.67L480-433.33Z"/>
+    </svg>
+
+                </a>
+                
+                <div class="header__logo">
+<a href="/nb/bank/privat.html">
+    
+    
+    
+
+    
+        
+    
+        
+
+    <picture>
+        <img aria-hidden="false" width="180" height="50" src="/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg" alt="Tilbake til forsiden for om oss - SpareBank 1" class="inline-svg responsive  "/>
+    </picture>
+    <link rel="image_src" itemprop="image" href="/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg"/>
+
+        
+    
+    
+
+        
+    
+    
+    
+    
+
+</a></div>
+
+                <button href="#" class="hamburger-wrapper" aria-hidden="false" aria-expanded="false" aria-label="Meny">
+                    <div class="inner-wrapper">
+                        <div class="hamburger"></div>
+                    </div>
+                </button>
+
+                <div class="header__top-nav">
+                    <ul>
+                        <li data-title="Privat">
+                            <a class="js-nav-link " href="/nb/bank/privat.html">Privat</a>
+                        </li>
+                    
+                        <li data-title="Bedrift">
+                            <a class="js-nav-link " href="/nb/bank/bedrift.html">Bedrift</a>
+                        </li>
+                    
+                        <li data-title="Om oss">
+                            <a class="js-nav-link active" href="/nb/bank/om-oss.html">Om oss</a>
+                        </li>
+                    
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <div class="header__user-content">
+                
+
+                <button aria-controls="search-area" class="header__search-desktop search-toggle " aria-label="Søk">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+    <path aria-hidden="true" fill="currentColor" d="M378.67-326q-108.44 0-183.56-75.17Q120-476.33 120-583.33t75.17-182.17q75.16-75.17 182.5-75.17 107.33 0 182.16 75.17 74.84 75.17 74.84 182.27 0 43.23-14 82.9-14 39.66-40.67 73l236 234.66q9.67 9.37 9.67 23.86 0 14.48-9.67 24.14-9.67 9.67-24.15 9.67-14.48 0-23.85-9.67L532.67-380q-30 25.33-69.64 39.67Q423.39-326 378.67-326Zm-.67-66.67q79.17 0 134.58-55.83Q568-504.33 568-583.33q0-79-55.42-134.84Q457.17-774 378-774q-79.72 0-135.53 55.83-55.8 55.84-55.8 134.84t55.8 134.83q55.81 55.83 135.53 55.83Z"/>
+</svg>
+                    <span>Søk</span>
+                </button>
+
+                <div class=" menu-actions">
+                    
+                    
+                    
+
+                    <div id="header-bli-kunde" class="button">
+                        <div class="button-wrapper">
+                            
+                            
+                                <a onclick="" href="/nb/bank/privat/kundeservice/bestill/bli-kunde.html" class="ffe-button ffe-button--action btn-bli-kunde overlay-btn">Bli kunde</a>
+                            
+                        </div>
+                        
+                            
+                            
+    
+    
+
+    
+    
+    
+
+    <div data-nosnippet class="bank-choice-overlay" role="dialog" aria-modal="true" title="For å gå videre - velg en bank" id="-bankchoice" data-desktop-link="/content/sites/sb1/nb/bank/privat/kundeservice/bestill/bli-kunde.html" data-prefilled-noproduct="Velg en av bankene som tilbyr produktet for å gå videre." data-modal-header="For å gå videre - velg en bank" data-modal-header-prefilled="For å gå videre..." data-prefilled-bank-text="Gå til banken du var hos sist" data-input-text="Ditt postnummer" data-optin-Bankpicker-Func="true" data-optin-Bankpicker-Func-Override="false" data-optinfunk-header="Vi kan dessverre ikke vise deg siste besøkte bank, da du ikke har tillatt funksjonelle informasjonskapsler" data-optinfunk-sublead="Hvis du ønsker å slippe å gjøre de samme valgene hver gang du er på nettsidene våre, så vil funksjonelle informasjonskapsler lagre opplysninger om din bruk av nettsidene og hvilke innstillinger du har gjort." data-optinfunk-accept="Slå på funksjonelle informasjonskapsler" data-optinfunk-reject="Nei takk" data-more-choices-text="Se alle banker" data-hide-choices-text="Skjul bankene" data-placeholder="Postnummer" data-placeholder-position="Din posisjon" data-fortsett="Fortsett til" data-filtered-list="Se resten av bankene" data-position-access="Tips! Tillatt nettleseren å hente din stedsinformasjon." data-position-api-fail="Vi finner ikke posisjonen din. Prøv å skriv et postnummer i stedet!" data-position-btn="Bruk min posisjon" data-error-msg="En feil oppstod, vennligst prøv igjen senere." data-close="Lukk" data-please-wait="Vennligst vent" data-finding-pos="Søker posisjon"></div>
+
+                        
+                    </div>
+
+                    
+
+
+
+
+
+<div id="login" class="user-buttons todo-handle">
+            
+            <div id="login-button-app" data-editmode="false" data-app-text="Åpne mobilbank-app" data-bankid-text="Logg inn med BankID" data-uten-bankid-text="Logg inn uten BankID" data-login-error-heading="Noe er feil" data-login-error-msg="Vi får ikke vist knappene for innlogging akkurat nå. Prøv igjen senere, eller bruk mobilbanken." data-login-so-me-warning-heading="Kommer du fra en SoMe-post og skal logge inn?" data-login-so-me-warning-msg="For din egen sikkerhet kan du ikke logge inn i banken via de innebygde nettleserne i Facebook, Instagram eller andre SoMe-apper.&lt;br>&lt;br>Du logger inn ved å:&lt;ul>&lt;li>åpne SpareBank 1 mobil-app, eller&lt;/li>&lt;li>åpne siden i nettleseren du bruker til vanlig. Trykk på de tre prikkene øverst i høyre hjørne og velg &lt;strong>Åpne i ekstern nettleser&lt;/strong> som Safari, Chrome, Edge eller andre.&lt;/li>&lt;/ul>" data-fin-inst="" data-lang="nb" data-app="nettbank-pm" data-bank="bank" data-login-text="Logg inn" data-close-text="Lukk" data-on-cancel="/content/sites/sb1/nb/bank/om-oss/selskaper/sparebank-1-portefolje/slik-ivaretar-vi-ditt-personvern-og-var-taushetsplikt.html" data-login-url="https://login.sparebank1.no/">
+                <a id="login-button" class="login-button--expand login-btn login" href="/nb/bank/privat/innlogging.html" aria-expanded="false" aria-controls="login-choices">
+                    <span id="login-button__text">Logg inn</span>
+                    <span id="login-button__text--close" aria-hidden="true" class="hide">Lukk<span class="visually-hidden"> Logg inn</span></span>
+                </a>
+            </div>
+        
+    
+
+    
+
+    <a id="nettbank-button" class="goto-btn to-bank-button login-buttons" href="#/">
+        <span>Til nettbank</span>
+    </a>
+
+    <a id="forsikring-button" class="goto-btn to-forsikring login-buttons" href="https://kundeforsikring.sparebank1.no">
+        <span>Til forsikring</span>
+    </a>
+
+    <button id="logout-button" class="logout-btn login-buttons" data-logout-url="/content/sites/sb1/nb/bank/privat/innlogging/logget-ut.html">
+        <span>Logg ut</span>
+    </button>
+</div>
+
+<script type="text/javascript">
+    (function () {
+
+        try {
+            var loginSection = document.getElementById('login');
+            var nettBankButton = document.getElementsByClassName('to-bank-button')[0];
+            var loginButton = document.getElementById('login-button');
+            var bank = window.SB1 ? window.SB1.config.bank.bankShortName : '';
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.open('GET', '/openapi/nettsider/ressurser/' + bank + '/user', true);
+
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {
+                        var result = JSON.parse(this.responseText);
+
+                        if (result.authenticated) {
+                            loginSection.dataset['authenticated'] = 'true';
+                            showButton(document.getElementById('logout-button'));
+                            addClass(loginSection, 'mobile-border');
+
+                            var realms = result.realms;
+                            if (realms.length > -1) {
+                                
+                                //Skjuler login knapp
+                                loginButton.style.display = 'none';
+                                var loginButtonApp = document.getElementById('login-button-app');
+                                if (loginButtonApp) {
+                                    loginButtonApp.style.display = 'none';
+                                    loginButtonApp.setAttribute('aria-hidden', true);
+                                }
+
+                                //Bli kunde button
+                                var bliKundeBtn = document.getElementById('header-bli-kunde');
+                                if (bliKundeBtn) {
+                                    bliKundeBtn.style.display = 'none';
+                                }
+
+                                //Viser kun en knapp denne runden
+                                //tilrettelegger for flere knapper i neste runde
+                            
+                                // NETTBANK-PM og finsieringsselskap-pm
+                                if (realms.includes('nettbank-pm') || realms.includes('finansieringsselskap-pm')) {
+                                    //finansieringsselskap-pm skal ikke knyttes til en spesifikk bank                                   
+                                    var toNettbank = '/bank/nettbank-privat/oversikt';
+                                    nettBankButton.href = toNettbank;
+                                    setGotoNettbankConf(toNettbank);
+
+                                    //DIG-116242 Skjule "Til nettbank" for SB1 forvaltning
+                                    if (window.location.href && window.location.href.indexOf('sb1-forvaltning') == -1) {
+                                        showButton(nettBankButton);
+                                    }
+                                }else if (realms.includes('nettbank-bm')){
+                                //NETTBANK-BM
+                                    var nettbankUrl = '/' + result.bank + '/nettbank-bedrift/forside';
+                                    var isMobilBank = nettBankButton.id === 'mobilbank-button';
+                                    if (isMobilBank) {
+                                        nettbankUrl = nettBankButton.href;
+                                    } else {
+                                        nettBankButton.href = nettbankUrl;
+                                    }
+                                    setGotoNettbankConf(nettbankUrl);
+                                    showButton(nettBankButton);
+                                }else if (realms.includes('forsikring-pm')) {
+                                //FORSIKRING-PM
+                                    showButton(document.getElementById('forsikring-button'));
+                                }                              
+                            }
+                            window.SB1.config.user.authenticated = true;
+                        } else {
+                            setGotoNettbankConf(loginButton.href);
+                            window.SB1.config.user.authenticated = false;
+                        }
+                    } else {
+                        setGotoNettbankConf(loginButton.href);
+                        window.SB1.config.user.authenticated = false;
+                    }
+                }
+            };
+            xhttp.send();
+
+            function showButton(btn) {
+                addClass(btn, 'login-buttons__show');
+            }
+
+            function setGotoNettbankConf(sUrl) {
+                window.SB1.config.urls.gotoNettbank = sUrl;
+            }
+
+            function addClass(obj, name) {
+                var arr;
+                arr = obj.className.split(' ');
+                if (arr.indexOf(name) == -1) {
+                    obj.className += ' ' + name;
+                }
+            }
+        } catch (exception) {
+            document.getElementById('login-button').style.display = 'flex';
+        }
+    })();
+</script>
+
+                    
+                </div>
+            </div>
+
+            <nav id="main-menu" class="header__main-nav " aria-label="Hovedmeny" tabindex="-1">
+                <ul>
+                    <li>
+                        <a class=" js-nav-link" href="/nb/bank/om-oss/om-banken.html">Om SpareBank 1</a>
+                    </li>
+                
+                    <li>
+                        <a class=" js-nav-link" href="/nb/bank/om-oss/presse.html">Presse</a>
+                    </li>
+                
+                    <li>
+                        <a class=" js-nav-link" href="/nb/bank/om-oss/investor.html">Investor</a>
+                    </li>
+                
+                    <li>
+                        <a class=" js-nav-link" href="/nb/bank/om-oss/jobb-og-karriere.html">Jobb og karriere</a>
+                    </li>
+                
+                    <li>
+                        <a class=" js-nav-link" href="/nb/bank/om-oss/samfunnsansvar.html">Samfunnsansvar</a>
+                    </li>
+                
+                    <li>
+                        <a class=" js-nav-link" href="/nb/bank/om-oss/nyheter.html">Nyheter</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</header>
+
+
+    
+    <div id="search-area" class="search-overlay hide " aria-expanded="false" aria-live="polite" role="search">
+        <div class="full-width-wrap">
+            <div class="aem-main-container search-overlay__close">
+                <button tabindex="0" class="search-overlay__close-btn js-search-close">
+                    <span class="ffe-strong-text">Lukk</span>
+                    
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+        <path fill="currentColor" d="M480-433.33 274.67-228q-9.67 9.67-23.34 9.67-13.66 0-23.33-9.67-9.67-9.67-9.67-23.33 0-13.67 9.67-23.34L433.33-480 228-685.33q-9.67-9.67-9.67-23.34 0-13.66 9.67-23.33 9.67-9.67 23.33-9.67 13.67 0 23.34 9.67L480-526.67 685.33-732q9.67-9.67 23.34-9.67 13.66 0 23.33 9.67 9.67 9.67 9.67 23.33 0 13.67-9.67 23.34L526.67-480 732-274.67q9.67 9.67 9.67 23.34 0 13.66-9.67 23.33-9.67 9.67-23.33 9.67-13.67 0-23.34-9.67L480-433.33Z"/>
+    </svg>
+
+                </button>
+            </div>
+        </div>  
+        
+        <div id="search-app" data-no-personal-info="Ikke skriv personlig informasjon i søkefeltet." data-no-result-text="Ingen treff på" data-facet-label="Vis resultater fra" data-try-again-text="Fant du ikke svar? Prøv igjen" data-searching-text="Søker" data-search-title="Hva lurer du på?" data-customer-service-text="Eller prøv kundeservice" data-market="Om oss"></div>
+    </div>
+
+
+
+            <main id="main-content" class="main" tabindex="-1">
+    
+    <div class="aem-main-container to-parent">
+        <a class="ffe-link-text to-parent__link  " href="/nb/bank/om-oss/selskaper/sparebank-1-portefolje.html">
+            
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="to-parent__link-icon ">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+            Kredinor AS
+        </a>
+    </div>
+
+
+
+    
+    
+    
+    <div class="title parbase">
+
+<div class="aem-component-container">
+    <H1 class="ffe-h1">
+        Slik ivaretar vi ditt personvern og vår taushetsplikt
+    </H1>
+    
+</div>
+</div>
+
+
+    
+    
+    
+    <div class="text">
+
+
+
+
+<div class="aem-component-container text-container">
+    
+    
+        
+        
+        
+            <div class="text-wrapper  ">
+                
+                    <p><span class="main-lead">Vi i Modhi Finance AS har taushetsplikt og vi sørger for at dine personopplysninger blir behandlet på en sikker måte etter personopplysningsloven og EUs personvernforordning General Data Protection Regulation 2016/679 (GDPR).</span></p>
+<p>Det skal være lett for deg å få informasjon og nærmere forklaring om taushetsplikten og personvernet. Her kan du lese mer om hva det innebærer for deg som Skyldner hos oss. Vår personverninformasjon er i tråd med anbefalingene i bransjenorm fra Finans Norge. Modhi Finance AS kjøper pengekrav knyttet til betaling av gjeld som ikke er betalt på avtalt forfallsdato. Du kan fremdeles fremsette reklamasjoner overfor den opprinnelige kreditoren, men det er til oss via våre samarbeidende inkassobyrå at du skal betale.</p>
+<h2>Behandlingsansvarlig</h2>
+<p>Det er Modhi Finance AS, som du har et Skyldnerforhold til, som er ansvarlige for å behandle dine personopplysninger. Har du behov for å komme i kontakt med oss om personvern, kan du sende <a href="mailto:post.sparebank1portefolje&#64;sparebank1.no" target="_blank" rel="noopener noreferrer">e-post til vårt personvernombud, Agnete N. Enger</a>.</p>
+<p> <br />
+</p>
+
+                
+            </div>
+        
+
+        
+
+        
+    
+</div>
+</div>
+
+
+    
+    
+    
+    <div class="accordion-list-container">
+
+<div class="aem-component-container">
+    
+
+    
+
+
+    
+    
+        <div class="accordion-list-wrapper">
+            <span class="anchor" id="Personvern"></span>
+            
+            
+            
+            
+            <ul>
+    
+    
+    <li class="accordion-list ">
+        
+        <span class="anchor" id="Dette bruker vi personopplysninger til"></span>
+        <button class="accordion-title" aria-controls="tabext-comp-1319" aria-expanded="false">
+            <span>Dette bruker vi personopplysninger til</span>
+            
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="arrow-down">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+        </button>
+        <div id="tabext-comp-1319" class="accordion-content ">
+    <table>
+        <colgroup>
+            <col width="70%"/>
+            <col width="30%"/>
+        </colgroup>
+        <tbody>
+
+        
+
+        <tr class="par-layout">
+            <td colspan="2">
+                
+                <div>
+    
+    
+    
+    <div class="text">
+
+
+
+
+<div class="aem-component-container text-container">
+    
+    
+        
+        
+        
+            <div class="text-wrapper  ">
+                
+                    <p>For at vi skal kunne levere våre produkter og tjenester til deg, trenger vi dine personopplysninger. <a href="/nb/bank/om-oss/selskaper/sparebank-1-portefolje/slik-ivaretar-vi-ditt-personvern-og-var-taushetsplikt/dette-bruker-sparebank-1-portefolje-personopplysninger-til.html">Les mer om hva personopplysninger er og hva vi bruker de til her. </a></p>
+
+                
+            </div>
+        
+
+        
+
+        
+    
+</div>
+</div>
+
+</div>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </li>
+
+    
+    
+    <li class="accordion-list ">
+        
+        <span class="anchor" id="Personopplysninger som hentes inn, registreres og utleveres av oss"></span>
+        <button class="accordion-title" aria-controls="tabext-comp-1331" aria-expanded="false">
+            <span>Personopplysninger som hentes inn, registreres og utleveres av oss</span>
+            
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="arrow-down">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+        </button>
+        <div id="tabext-comp-1331" class="accordion-content ">
+    <table>
+        <colgroup>
+            <col width="70%"/>
+            <col width="30%"/>
+        </colgroup>
+        <tbody>
+
+        
+
+        <tr class="par-layout">
+            <td colspan="2">
+                
+                <div>
+    
+    
+    
+    <div class="text">
+
+
+
+
+<div class="aem-component-container text-container">
+    
+    
+        
+        
+        
+            <div class="text-wrapper  ">
+                
+                    <p>For at vi skal kunne levere våre produkter og tjenester til deg, trenger vi dine personopplysninger. <a href="/nb/bank/om-oss/selskaper/sparebank-1-portefolje/slik-ivaretar-vi-ditt-personvern-og-var-taushetsplikt/personopplysninger-som-hentes-inn--registreres-og-utleveres-av-s.html">Les mer om hva personopplysninger er og hva vi bruker de til her. </a></p>
+
+                
+            </div>
+        
+
+        
+
+        
+    
+</div>
+</div>
+
+</div>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </li>
+
+    
+    
+    <li class="accordion-list ">
+        
+        <span class="anchor" id="Slik sikrer vi personopplysninger"></span>
+        <button class="accordion-title" aria-controls="tabext-comp-1343" aria-expanded="false">
+            <span>Slik sikrer vi personopplysninger</span>
+            
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="arrow-down">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+        </button>
+        <div id="tabext-comp-1343" class="accordion-content ">
+    <table>
+        <colgroup>
+            <col width="70%"/>
+            <col width="30%"/>
+        </colgroup>
+        <tbody>
+
+        
+
+        <tr class="par-layout">
+            <td colspan="2">
+                
+                <div>
+    
+    
+    
+    <div class="text">
+
+
+
+
+<div class="aem-component-container text-container">
+    
+    
+        
+        
+        
+            <div class="text-wrapper  ">
+                
+                    <p>Det er viktig at du føler deg trygg på at dine personopplysninger er sikre hos oss. <a href="/nb/bank/om-oss/selskaper/sparebank-1-portefolje/slik-ivaretar-vi-ditt-personvern-og-var-taushetsplikt/slik-sikrer-sparebank-1-portefolje-personopplysninger.html">Her kan du lese mer om hvordan vi sikrer personopplysninger</a>.</p>
+
+                
+            </div>
+        
+
+        
+
+        
+    
+</div>
+</div>
+
+</div>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </li>
+
+    
+    
+    <li class="accordion-list ">
+        
+        <span class="anchor" id="Dine rettigheter"></span>
+        <button class="accordion-title" aria-controls="tabext-comp-1355" aria-expanded="false">
+            <span>Dine rettigheter</span>
+            
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="arrow-down">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+        </button>
+        <div id="tabext-comp-1355" class="accordion-content ">
+    <table>
+        <colgroup>
+            <col width="70%"/>
+            <col width="30%"/>
+        </colgroup>
+        <tbody>
+
+        
+
+        <tr class="par-layout">
+            <td colspan="2">
+                
+                <div>
+    
+    
+    
+    <div class="text">
+
+
+
+
+<div class="aem-component-container text-container">
+    
+    
+        
+        
+        
+            <div class="text-wrapper  ">
+                
+                    <p>Er du kunde av Modhi Finance AS behandler vi personopplysninger om deg. <a href="/nb/bank/om-oss/selskaper/sparebank-1-portefolje/slik-ivaretar-vi-ditt-personvern-og-var-taushetsplikt/dine-rettigheter.html">Her finner du informasjon om dine rettigheter.</a></p>
+
+                
+            </div>
+        
+
+        
+
+        
+    
+</div>
+</div>
+
+</div>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </li>
+
+    
+    
+    <li class="accordion-list ">
+        
+        <span class="anchor" id="Risikoklassifisering av Skyldnere og kredittporteføljer"></span>
+        <button class="accordion-title" aria-controls="tabext-comp-1367" aria-expanded="false">
+            <span>Risikoklassifisering av Skyldnere og kredittporteføljer</span>
+            
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="arrow-down">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+        </button>
+        <div id="tabext-comp-1367" class="accordion-content ">
+    <table>
+        <colgroup>
+            <col width="70%"/>
+            <col width="30%"/>
+        </colgroup>
+        <tbody>
+
+        
+
+        <tr class="par-layout">
+            <td colspan="2">
+                
+                <div>
+    
+    
+    
+    <div class="text">
+
+
+
+
+<div class="aem-component-container text-container">
+    
+    
+        
+        
+        
+            <div class="text-wrapper  ">
+                
+                    <p>Vi bruker enkelte personopplysninger for å vurdere risiko ved våre produkter og tjenester. Dette gir deg som skyldner trygghet for at dine verdier blir tatt godt vare på.</p>
+<p>Etter reglene i Finansforetaksloven bruker vi kredittopplysninger og andre personopplysninger for beregning av kapitalkrav for kredittrisiko.</p>
+<p>Beregningene gjøres med egne modeller, arbeids- og beslutningsprosesser for kredittgivning og kredittstyring, kontrollmekanismer, IT-systemer og interne retningslinjer som er knyttet til klassifisering og kvantifisering av institusjonens kredittrisiko og annen relevant risiko. Personopplysninger kan i forbindelse med dette innhentes fra kredittopplysningsforetak. </p>
+
+                
+            </div>
+        
+
+        
+
+        
+    
+</div>
+</div>
+
+</div>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </li>
+
+    
+    
+    <li class="accordion-list ">
+        
+        <span class="anchor" id="Forebygging og avdekking av svindel og kriminalitet"></span>
+        <button class="accordion-title" aria-controls="tabext-comp-1379" aria-expanded="false">
+            <span>Forebygging og avdekking av svindel og kriminalitet</span>
+            
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="arrow-down">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+        </button>
+        <div id="tabext-comp-1379" class="accordion-content ">
+    <table>
+        <colgroup>
+            <col width="70%"/>
+            <col width="30%"/>
+        </colgroup>
+        <tbody>
+
+        
+
+        <tr class="par-layout">
+            <td colspan="2">
+                
+                <div>
+    
+    
+    
+    <div class="text">
+
+
+
+
+<div class="aem-component-container text-container">
+    
+    
+        
+        
+        
+            <div class="text-wrapper  ">
+                
+                    <p>Vi har et stort samfunnsansvar og forvalter store verdier. Slik forebygger og avdekker vi mulighet for svindel, kriminalitet og terrorhandlinger. Personopplysninger kan brukes for å forebygge, avdekke og oppklare bedrageri og andre straffbare handlinger.</p>
+<p>Opplysningene kan innhentes fra og utleveres til andre banker og finansinstitusjoner, politiet og andre offentlige myndigheter. Oppbevaringstiden vil være minst fem år etter registreringen.</p>
+<p>Vi er også pålagt å rapportere mistenkelige opplysninger og transaksjoner etter hvitvaskingsloven til Økokrim og Enheten for finansiell etterretning (EFE).</p>
+
+                
+            </div>
+        
+
+        
+
+        
+    
+</div>
+</div>
+
+</div>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </li>
+
+    
+    
+    <li class="accordion-list ">
+        
+        <span class="anchor" id="Lydopptak av telefonsamtaler og lagring av annen kommunikasjon "></span>
+        <button class="accordion-title" aria-controls="tabext-comp-1391" aria-expanded="false">
+            <span>Lydopptak av telefonsamtaler og lagring av annen kommunikasjon </span>
+            
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="arrow-down">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+        </button>
+        <div id="tabext-comp-1391" class="accordion-content ">
+    <table>
+        <colgroup>
+            <col width="70%"/>
+            <col width="30%"/>
+        </colgroup>
+        <tbody>
+
+        
+
+        <tr class="par-layout">
+            <td colspan="2">
+                
+                <div>
+    
+    
+    
+    <div class="text">
+
+
+
+
+<div class="aem-component-container text-container">
+    
+    
+        
+        
+        
+            <div class="text-wrapper  ">
+                
+                    <p>Modhi Finance AS gjør i noen tilfeller gjennom våre samarbeidende inkassoselskap lydopptak av telefonsamtaler med Skyldnere. Dette gjør vi enten for sikkerhet, dokumentasjon eller for å gjennomføre intern opplæring. I noen tilfeller er vi pålagt å gjøre opptak av samtaler.</p>
+<p>Som hovedregel ber vi Skyldner om samtykke når vi ønsker å gjøre opptak av telefonsamtaler. Dette får skyldneren informasjon om i begynnelsen av samtalen.</p>
+<p>Vi kan finne tilbake til lydopptak ved hjelp av telefonnummer, samtaletidspunktet, og hvem som utførte samtalen. Annen kommunikasjon kan også finnes ved hjelp av din identitet.</p>
+<p>Banken kan bli lovpålagt til å utlevere informasjon til offentlige myndigheter, og andre som ifølge loven kan kreve det. Informasjon kan også bli utlevert til Finansklagenemnda – blant annet i forbindelse med behandling av klagesaker.</p>
+<p><a href="mailto:post.sparebank1portefølje&#64;sparebank1.no">Ta kontakt med oss</a> hvis du ønsker innsyn i opptak som er lagret. Du må oppgi telefonnummer og tidspunkt for samtalen.</p>
+
+                
+            </div>
+        
+
+        
+
+        
+    
+</div>
+</div>
+
+</div>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </li>
+
+    
+    
+    <li class="accordion-list ">
+        
+        <span class="anchor" id="Slik bruker vi informasjonskapsler og analyseverktøy "></span>
+        <button class="accordion-title" aria-controls="tabext-comp-1403" aria-expanded="false">
+            <span>Slik bruker vi informasjonskapsler og analyseverktøy </span>
+            
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="arrow-down">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+        </button>
+        <div id="tabext-comp-1403" class="accordion-content ">
+    <table>
+        <colgroup>
+            <col width="70%"/>
+            <col width="30%"/>
+        </colgroup>
+        <tbody>
+
+        
+
+        <tr class="par-layout">
+            <td colspan="2">
+                
+                <div>
+    
+    
+    
+    <div class="text">
+
+
+
+
+<div class="aem-component-container text-container">
+    
+    
+        
+        
+        
+            <div class="text-wrapper  ">
+                
+                    <p>Det er viktig for oss at du føler deg trygg når du besøker nettsiden vår, samtidig som vi kan yte vårt beste for å gi deg det du trenger.  <a href="/nb/bank/om-oss/selskaper/sparebank-1-portefolje/slik-ivaretar-vi-ditt-personvern-og-var-taushetsplikt/sparebank-1-portefolje-informasjonskapsler-analyseverktoy.html">Les mer om hvordan vi bruker informasjonskapsler og analyseverktøy</a>.</p>
+
+                
+            </div>
+        
+
+        
+
+        
+    
+</div>
+</div>
+
+</div>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </li>
+</ul>
+        </div>
+    
+</div></div>
+
+
+</main>
+
+
+    
+    
+        <script type="text/javascript">
+            let hasOpenCookie = false;
+            const matchOpen = document.cookie.match(new RegExp(`sb1-optin-v3=(.*?)`));
+            hasOpenCookie = (matchOpen) ? true : false;
+                       
+            if (!hasOpenCookie) {                 
+                // js fil
+                const scriptEle = document.createElement("script");
+                const JS_URL = "/sb1-nettsider-optin/bank/static/opt-in.js";
+                scriptEle.setAttribute("src", JS_URL);
+                scriptEle.setAttribute("type", "text/javascript");
+                scriptEle.setAttribute("async", true);
+                scriptEle.setAttribute("onerror", "optinScriptError=true;");
+
+                //css fil
+                const CSS_URL = "/sb1-nettsider-optin/bank/static/opt-in.css";
+                const cssEle = document.createElement('link');                
+                cssEle.setAttribute('rel', 'stylesheet');
+                cssEle.setAttribute('onerror', 'optinScriptError=true;');
+                cssEle.setAttribute('property', 'stylesheet');
+                cssEle.setAttribute('media', 'screen,print');
+                cssEle.setAttribute('type', 'text/css');
+                cssEle.setAttribute('href', CSS_URL);
+
+                // div element
+                const divEle = document.createElement('div');
+                divEle.setAttribute('id', 'opt-in');
+                divEle.setAttribute('data-trigger-modal', 'true');
+
+                document.body.appendChild(divEle);
+                document.body.appendChild(cssEle);
+                document.body.appendChild(scriptEle);
+            }
+        </script>
+        
+    
+
+
+            
+
+<footer class="footer-wrapper">
+    <div class="footer-top container-fluid">
+        
+        <a href="#/" class="to-top" tabindex="-1" aria-hidden="true">
+    <span class="visually-hidden">Til toppen</span>
+    <span class="icon-holder">
+        
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="arrow-up">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+    </span>
+</a>
+
+    </div>
+    <div class="footer-bottom">
+        <div class="bottom-content container-fluid">
+            
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-bottom__columns ">
+
+        <div class="footer-bottom__column">
+            <div class="footer-bottom__column-links">
+                <h2 class="ffe-h4">Privat</h2>
+                
+                <ul>
+                    <li><a class="js-nav-link" href="/nb/bank/privat/kundeservice/bestill/bli-kunde.html">Bli kunde</a></li>
+                
+                    <li><a class="js-nav-link" href="/nb/bank/privat/kundeservice/verktoy/sperre-kort.html">Sperre kort</a></li>
+                
+                    <li><a class="js-nav-link" href="/nb/bank/privat/forsikring/meld-skade.html">Meld skade</a></li>
+                
+                    <li><a class="js-nav-link" href="/nb/bank/privat/kundeservice/bestill/prisliste.html">Prisliste</a></li>
+                
+                    <li><a class="js-nav-link" href="/nb/bank/privat/kundeservice.html">Kundeservice</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom__column-links">
+                <h2 class="ffe-h4">Logg inn</h2>
+                <ul>
+                    <li><a class="js-nav-link" href="/nb/bank/privat/innlogging.html">Nettbank privat</a></li>
+                
+                    <li><a class="js-nav-link" href="/nb/bank/bedrift/innlogging.html">Nettbank bedrift</a></li>
+                
+                    <li><a class="js-nav-link" href="https://kundeforsikring.sparebank1.no">Forsikring</a></li>
+                
+                    <li><a class="js-nav-link" href="https://kundeforsikring.sparebank1.no/privat/sparing">Pensjon</a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+        <div class="footer-bottom__column footer-bottom__column-right">
+            <div class="footer-bottom__column-links footer-bottom__social-links">
+                <h2 class="ffe-h4">Sosiale medier</h2>
+                <ul>
+                    <li>
+                        <a class="social-logo" href="https://no.linkedin.com/company/sparebank-1" target="_blank" rel="noopener" title="Linkedin">
+                            
+
+<div class="aem-component-container image--all-rounded-small">
+      
+            
+    
+    
+
+    
+        
+    
+    
+        
+    <div class="image-wrapper">
+        <noscript class="lazyload lazyload--image">
+            <img aria-hidden="true" src="/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg" class="inline-svg responsive  " style="width:100%;" data-lazy-smallsrc="/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg" data-lazy-largesrc="/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg" data-lazy-breakpoint="768px"/>
+        </noscript>
+    </div>
+    <link rel="image_src" itemprop="image" href="/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg.thumb.1280.1280.jpg"/>
+
+        
+    
+
+        
+    
+    
+    
+    
+
+      
+</div>
+                            <span class="visually-hidden">Linkedin</span>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="social-logo" href="https://www.youtube.com/channel/UCdfZfi4HC6bK0-OfRcDJSzg" target="_blank" rel="noopener" title="YouTube">
+                            
+
+<div class="aem-component-container image--all-rounded-small">
+      
+            
+    
+    
+
+    
+        
+    
+    
+        
+    <div class="image-wrapper">
+        <noscript class="lazyload lazyload--image">
+            <img aria-hidden="true" src="/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg" class="inline-svg responsive  " style="width:100%;" data-lazy-smallsrc="/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg" data-lazy-largesrc="/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg" data-lazy-breakpoint="768px"/>
+        </noscript>
+    </div>
+    <link rel="image_src" itemprop="image" href="/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg.thumb.1280.1280.jpg"/>
+
+        
+    
+
+        
+    
+    
+    
+    
+
+      
+</div>
+                            <span class="visually-hidden">YouTube</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+    </div>
+
+    <div class="footer-bottom__column-links footer-bottom__small-links ">
+        <ul>
+            <li><a class="ffe-link-text" href="/nb/bank/om-oss/om-banken/selskapsinformasjon.html">Om SpareBank 1</a></li>
+        
+            <li><a class="ffe-link-text" href="/nb/bank/om-oss/personvern/generelle-vilkar.html">Vilkår for bruk av nettsiden</a></li>
+        
+            <li><a class="ffe-link-text" href="/nb/bank/om-oss/personvern.html">Personvern</a></li>
+        
+            <li><a class="ffe-link-text" href="/nb/bank/om-oss/personvern.html#cookies">Informasjonskapsler</a></li>
+        
+            <li><a class="ffe-link-text" href="/nb/bank/bedrift/open-api.html">For utviklere</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-bottom__address">
+        <p>SpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo</p>
+        
+    </div>
+
+        </div>
+    </div>
+</footer>
+        </div>
+
+        <div class="hide" id="translated-text">
+
+	{
+		"EMAIL_FIELD_ERROR": "Skriv inn en gyldig e-postadresse.",
+		"CHECKBOX_ERROR": "",
+		"CHECKBOX_GROUP_ERROR": "Velg minst et av alternativene",
+		"DROPDOWN_ERROR": "Gjør et valg i nedtrekkslisten.",
+		"DATE_TO_FROM_ERROR": "Ugyldig dato (eksempel på gyldig dato 31.12.2016).",
+		"RADIO_ERROR": "Velg et alternativ.",
+		"POSTAL_CODE_ERROR": "Skriv inn et gyldig postnummer (4 siffer).",
+		"TEXT_FIELD_ERROR": "Feltet må fylles ut.",
+		"TEXT_FIELD_CONTENTS_ERROR": "Ugyldig verdi.",
+		"ACCOUNT_FIELD_ERROR": "Skriv inn et gyldig kontonummer (11 siffer).",
+		"ORGANISATION_FIELD_ERROR": "Skriv inn et gyldig organisasjonsnummer (9 siffer).",
+		"SSN_ERROR": "Skriv inn et gyldig fødselsnummer (11 siffer).",
+		"PHONE_ERROR": "Skriv inn et gyldig telefonnummer (8 siffer).",
+		"MOBILE_PHONE_NO_ERROR": "Skriv inn et gyldig norsk mobilnummer (8 siffer)",
+		"SEARCH_ALLE": "Alle",
+		"MORE_INFO": "Vis mer informasjon",
+		"RESULT_TYPE_BANK": "Bankkontor",
+		"RESULT_TYPE_ADVISOR": "Rådgiver",
+		"VIEW_IN_MAP": "Vis i kart",
+		"BEFORE_COUNT_TEXT": "Du har",
+		"AFTER_COUNT_TEXT": "oppgave som venter på deg",
+		"AFTER_COUNT_TEXT_PLURAL": "oppgaver som venter på deg",
+		"MINE_OPPGAVER_LINK_TEXT": "Relevant for deg",
+		"MINE_OPPGAVER_CLOSE_TEXT": "Ikke nå",
+        "MINE_OPPGAVER_COUNT_TEXT": "en",
+		"FORM_ERROR_LABEL":"Feil i skjema
+",
+		"FORM_SUCCESS_LABEL":"Takk for din henvendelse",
+		"TEXT_FIELD_LENGTH_ERROR":"TEXT_FIELD_LENGTH_ERROR",
+		"TEXTAREA_FIELD_LENGTH_ERROR":"Maks 2000 tegn",
+		"NUMBER_ERROR": "Du kan kun skrive inn tall.",
+		"SEC_BLOCKER_DROPDOWN_DEFAULT": "Velg land",
+		"GLOBAL_SEARCH_NO_RESULT_TEXT": "Ingen treff på",
+		"GLOBAL_SEARCH_FACET_LABEL": "Vis resultater fra",
+		"MODAL_CLOSE": "Lukk",
+		"SEND_TO_BANK_BEFORE_INFO_TEXT": "Vil du komme rett til",
+		"SEND_TO_BANK_AFTER_INFO_TEXT": "neste gang?",
+		"SEND_TO_BANK_NEXT_BUTTON_TEXT": "Ja, husk banken min",
+		"SEND_TO_BANK_CANCEL_BUTTON_TEXT": "Nei, ikke nå",
+		"SEND_TO_BANK_NEXT_DISCLAMER_TEXT": "For at du skal slippe å velge bank hver gang, bruker vi funksjonelle informasjonskapsler som lagrer hvordan du bruker nettsidene og hvilke innstillinger du har gjort."      
+	}
+
+</div>
+
+        
+
+<script type="text/javascript" src="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/vendors_bundle.1156912316.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.js"></script>
+
+
+        <script>
+            try {
+                [].slice.call(document.getElementsByClassName('ghost')).forEach(function (element) {
+                    element.parentNode.removeChild(element);
+                });
+            } catch (e) {}
+        </script>
+        
+
+        
+            
+        
+
+        <!-- Remove header and footer inside Mobilbank app, Remove data-sly-test config when tested ok in mobile app in prod -->
+        <script>
+            (function () { // Wrap in IIFE to avoid leaking variables to global scope
+                // Detect Mobilbank user agent
+                const isMobilbank = /mobilbank\//i.test(navigator.userAgent);
+                if (!isMobilbank) return;
+
+                document.documentElement.classList.add('in-mobilbank');
+                try {
+                    if (!document.getElementById('in-mobilbank-style')) {
+                        const style = document.createElement('style');
+                        style.id = 'in-mobilbank-style';
+                        style.textContent = `
+                            html.in-mobilbank .footer-wrapper,
+                            html.in-mobilbank #outer-main-wrap header.header,
+                            html.in-mobilbank #outer-main-wrap .market-nav,
+                            html.in-mobilbank #outer-main-wrap .global-message,
+                            html.in-mobilbank #outer-main-wrap > .main > .to-parent,
+                            html.in-mobilbank #dialoghub-iframe {
+                              display: none !important;
+                            }
+                        `;
+                        (document.head || document.documentElement).appendChild(style);
+                    }
+                } catch (e) {
+                    console.error('Failed to remove Nettsider header for User Agent Mobilbank: ', e);
+                }
+            })();
+        </script>
+    
+</body>
+
+</html>

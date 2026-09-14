@@ -1,0 +1,3092 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract (Phase 4 sidecar; design-json.mjs)",
+    "writtenAt": "2026-09-14T15:11:06.396Z",
+    "readArtifacts": [
+      "stardust/current/DESIGN.md (frontmatter)",
+      "stardust/current/_brand-extraction.json",
+      "stardust/current/_modules.json",
+      "stardust/current/_page-types.json",
+      "stardust/current/pages/index.json"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.20.0",
+    "mode": "descriptive-current-state"
+  },
+  "name": "SpareBank 1 — sparebank1.no (current state)",
+  "description": "Vi er flere banker i hele Norge — SpareBank1 title face, Fjell/Vann blues, Sand/Frost tinted bands, flat spot illustrations, pill buttons, 96px rounded imagery",
+  "colors": {
+    "fjell": "#002776",
+    "vann": "#005aa4",
+    "natt": "#001032",
+    "frost": "#7eb5d2",
+    "frost-30": "#d8e9f2",
+    "sand": "#f8e9dd",
+    "sand-30": "#fdf8f5",
+    "sand-70": "#faf0e7",
+    "myrull": "#fae4e0",
+    "multe": "#f8b181",
+    "lyng": "#873953",
+    "baer": "#e44244",
+    "nordlys": "#33af85",
+    "action-green": "#00754e",
+    "text": "#020a0a",
+    "koksgraa": "#323232",
+    "moerkgraa": "#676767",
+    "graa": "#adadad",
+    "lysgraa": "#d8d8d8",
+    "white": "#ffffff",
+    "focus-orange": "#dc8000"
+  },
+  "typography": {
+    "display": {
+      "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+      "fontSize": "46px",
+      "fontWeight": 400,
+      "lineHeight": "56px",
+      "letterSpacing": "normal"
+    },
+    "headline": {
+      "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+      "fontSize": "36px",
+      "fontWeight": 400,
+      "lineHeight": "44px",
+      "letterSpacing": "normal"
+    },
+    "title": {
+      "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+      "fontSize": "28px",
+      "fontWeight": 400,
+      "lineHeight": "36px",
+      "letterSpacing": "normal"
+    },
+    "subtitle": {
+      "fontFamily": "SpareBank1-medium, arial, sans-serif",
+      "fontSize": "22px",
+      "fontWeight": 400,
+      "lineHeight": "28px",
+      "letterSpacing": "normal"
+    },
+    "lead": {
+      "fontFamily": "SpareBank1-regular, arial, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": 400,
+      "lineHeight": "28px",
+      "letterSpacing": "normal"
+    },
+    "body": {
+      "fontFamily": "SpareBank1-regular, arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": 400,
+      "lineHeight": "24px",
+      "letterSpacing": "normal"
+    },
+    "small": {
+      "fontFamily": "SpareBank1-regular, arial, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": 400,
+      "lineHeight": "20px",
+      "letterSpacing": "normal"
+    },
+    "micro": {
+      "fontFamily": "SpareBank1-regular, arial, sans-serif",
+      "fontSize": "12px",
+      "fontWeight": 400,
+      "lineHeight": "20px",
+      "letterSpacing": "normal"
+    }
+  },
+  "rounded": {
+    "xs": "4px",
+    "sm": "5px",
+    "md": "16px",
+    "lg": "30px",
+    "image": "96px",
+    "pill": "6em",
+    "circle": "50%"
+  },
+  "spacing": {
+    "2xs": "4px",
+    "xs": "8px",
+    "sm": "16px",
+    "md": "24px",
+    "lg": "32px",
+    "xl": "40px",
+    "2xl": "48px",
+    "3xl": "64px",
+    "4xl": "80px",
+    "section": "75px",
+    "5xl": "160px"
+  },
+  "components": {
+    "button-primary": {
+      "backgroundColor": "{colors.vann}",
+      "textColor": "{colors.white}",
+      "rounded": "{rounded.pill}",
+      "padding": "8px 24px"
+    },
+    "button-primary-hover": {
+      "backgroundColor": "{colors.fjell}",
+      "textColor": "{colors.white}"
+    },
+    "button-secondary": {
+      "backgroundColor": "{colors.white}",
+      "textColor": "{colors.vann}",
+      "rounded": "{rounded.pill}",
+      "padding": "8px 24px"
+    },
+    "button-action": {
+      "backgroundColor": "{colors.action-green}",
+      "textColor": "{colors.white}",
+      "rounded": "{rounded.pill}",
+      "padding": "8px 24px"
+    },
+    "button-inline": {
+      "backgroundColor": "transparent",
+      "textColor": "{colors.vann}",
+      "rounded": "{rounded.lg}",
+      "padding": "8px 17px"
+    },
+    "card": {
+      "backgroundColor": "{colors.white}",
+      "textColor": "{colors.text}",
+      "rounded": "{rounded.sm}",
+      "padding": "16px 32px"
+    },
+    "input": {
+      "backgroundColor": "{colors.white}",
+      "textColor": "{colors.text}",
+      "rounded": "{rounded.xs}",
+      "padding": "8px 16px"
+    },
+    "band-sand": {
+      "backgroundColor": "{colors.sand-30}",
+      "textColor": "{colors.text}"
+    },
+    "band-frost": {
+      "backgroundColor": "{colors.frost-30}",
+      "textColor": "{colors.text}"
+    },
+    "band-brand": {
+      "backgroundColor": "{colors.vann}",
+      "textColor": "{colors.white}"
+    }
+  },
+  "extensions": {
+    "componentStyle": {
+      "buttons": {
+        "primary": {
+          "background": "#ffffff",
+          "color": "#005aa4",
+          "borderRadius": "96px",
+          "padding": "8px 24px",
+          "fontWeight": 400,
+          "fontSize": "16px",
+          "fontFamily": "SpareBank1-regular, arial, sans-serif",
+          "border": "2px solid rgb(0, 90, 164)",
+          "shadow": null,
+          "textTransform": "none",
+          "letterSpacing": "normal",
+          "occurrences": 357,
+          "pages": 90,
+          "sampleLabels": [
+            "Forsikring for deg i leilighet",
+            "Jeg har hatt skade/uhell",
+            "Hvordan avslutter jeg forsikringen?",
+            "Bruk min posisjon",
+            "iPhone"
+          ],
+          "hoverDelta": null
+        },
+        "secondary": {
+          "background": "#005aa4",
+          "color": "#ffffff",
+          "borderRadius": "96px",
+          "padding": "8px 24px",
+          "fontWeight": 400,
+          "fontSize": "16px",
+          "fontFamily": "SpareBank1-regular, arial, sans-serif",
+          "border": "2px solid rgba(0, 0, 0, 0)",
+          "shadow": null,
+          "textTransform": "none",
+          "letterSpacing": "normal",
+          "occurrences": 124,
+          "pages": 54,
+          "sampleLabels": [
+            "Hva skjer ved skade?",
+            "Se skadeforebyggende råd",
+            "Gå til kundeservice",
+            "Generelle vilkår (pdf engelsk)",
+            "AirPlus firmaansvar (pdf engelsk)"
+          ],
+          "hoverDelta": null
+        },
+        "ghost": {
+          "background": "#00754e",
+          "color": "#ffffff",
+          "borderRadius": "96px",
+          "padding": "8px 24px",
+          "fontWeight": 400,
+          "fontSize": "16px",
+          "fontFamily": "SpareBank1-regular, arial, sans-serif",
+          "border": "2px solid rgba(0, 0, 0, 0)",
+          "shadow": null,
+          "textTransform": "none",
+          "letterSpacing": "normal",
+          "occurrences": 92,
+          "pages": 42,
+          "sampleLabels": [
+            "Få veiledning og meld skade",
+            "Logg inn til mine bedriftsforsikringer",
+            "Kontakt meg om bedriftsforsikring",
+            "Jeg vil bli kontaktet om bedriftsforsikring",
+            "Logg inn til mine fakturaer"
+          ],
+          "hoverDelta": null
+        },
+        "allVariants": [
+          {
+            "key": "#ffffff|#005aa4|96px|2px solid",
+            "background": "#ffffff",
+            "color": "#005aa4",
+            "borderRadius": "96px",
+            "padding": "8px 24px",
+            "fontWeight": 400,
+            "fontSize": "16px",
+            "fontFamily": "SpareBank1-regular, arial, sans-serif",
+            "border": "2px solid rgb(0, 90, 164)",
+            "shadow": null,
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "occurrences": 357,
+            "pages": 90,
+            "sampleLabels": [
+              "Forsikring for deg i leilighet",
+              "Jeg har hatt skade/uhell",
+              "Hvordan avslutter jeg forsikringen?",
+              "Bruk min posisjon",
+              "iPhone"
+            ],
+            "hoverDelta": null
+          },
+          {
+            "key": "#005aa4|#ffffff|96px|2px solid",
+            "background": "#005aa4",
+            "color": "#ffffff",
+            "borderRadius": "96px",
+            "padding": "8px 24px",
+            "fontWeight": 400,
+            "fontSize": "16px",
+            "fontFamily": "SpareBank1-regular, arial, sans-serif",
+            "border": "2px solid rgba(0, 0, 0, 0)",
+            "shadow": null,
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "occurrences": 124,
+            "pages": 54,
+            "sampleLabels": [
+              "Hva skjer ved skade?",
+              "Se skadeforebyggende råd",
+              "Gå til kundeservice",
+              "Generelle vilkår (pdf engelsk)",
+              "AirPlus firmaansvar (pdf engelsk)"
+            ],
+            "hoverDelta": null
+          },
+          {
+            "key": "#00754e|#ffffff|96px|2px solid",
+            "background": "#00754e",
+            "color": "#ffffff",
+            "borderRadius": "96px",
+            "padding": "8px 24px",
+            "fontWeight": 400,
+            "fontSize": "16px",
+            "fontFamily": "SpareBank1-regular, arial, sans-serif",
+            "border": "2px solid rgba(0, 0, 0, 0)",
+            "shadow": null,
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "occurrences": 92,
+            "pages": 42,
+            "sampleLabels": [
+              "Få veiledning og meld skade",
+              "Logg inn til mine bedriftsforsikringer",
+              "Kontakt meg om bedriftsforsikring",
+              "Jeg vil bli kontaktet om bedriftsforsikring",
+              "Logg inn til mine fakturaer"
+            ],
+            "hoverDelta": null
+          },
+          {
+            "key": "transparent|#ffffff|22px|2px solid",
+            "background": "transparent",
+            "color": "#ffffff",
+            "borderRadius": "22px",
+            "padding": "8px 17px",
+            "fontWeight": 400,
+            "fontSize": "16px",
+            "fontFamily": "SpareBank1-regular, arial, sans-serif",
+            "border": "2px solid rgba(0, 0, 0, 0)",
+            "shadow": null,
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "occurrences": 70,
+            "pages": 70,
+            "sampleLabels": [
+              "Se alle banker"
+            ],
+            "hoverDelta": null
+          },
+          {
+            "key": "#ffffff|#005aa4|34px|2px solid",
+            "background": "#ffffff",
+            "color": "#005aa4",
+            "borderRadius": "34px",
+            "padding": "8px 24px",
+            "fontWeight": 400,
+            "fontSize": "16px",
+            "fontFamily": "SpareBank1-regular, arial, sans-serif",
+            "border": "2px solid rgb(0, 90, 164)",
+            "shadow": null,
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "occurrences": 47,
+            "pages": 23,
+            "sampleLabels": [
+              "Se flere spørsmål",
+              "Se flere svar",
+              "Se flere spørsmål og svar",
+              "Se dine fordeler her",
+              "Se dine LOfavør-fordeler her"
+            ],
+            "hoverDelta": null
+          },
+          {
+            "key": "transparent|#005aa4|22px|2px solid",
+            "background": "transparent",
+            "color": "#005aa4",
+            "borderRadius": "22px",
+            "padding": "8px 17px",
+            "fontWeight": 400,
+            "fontSize": "16px",
+            "fontFamily": "SpareBank1-regular, arial, sans-serif",
+            "border": "2px solid rgba(0, 0, 0, 0)",
+            "shadow": null,
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "occurrences": 37,
+            "pages": 19,
+            "sampleLabels": [
+              "Få tilbud på boligbyggforsikring",
+              "Slik kobler du nettbank med regnskapsprogram",
+              "Les mer om svindel mot bedrifter",
+              "Flere historier fra kundene våre",
+              "Se priser for alle produkter og tjenester"
+            ],
+            "hoverDelta": null
+          },
+          {
+            "key": "#002776|#ffffff|3px|none",
+            "background": "#002776",
+            "color": "#ffffff",
+            "borderRadius": "3px",
+            "padding": "20px 45px 20px 25px",
+            "fontWeight": 400,
+            "fontSize": "18px",
+            "fontFamily": "SpareBank1-regular, arial, sans-serif",
+            "border": "0px none rgb(255, 255, 255)",
+            "shadow": null,
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "occurrences": 14,
+            "pages": 2,
+            "sampleLabels": [
+              "2026",
+              "2025",
+              "2024",
+              "2023",
+              "2022"
+            ],
+            "hoverDelta": null
+          },
+          {
+            "key": "#ffffff|#002776|100px|2px solid",
+            "background": "#ffffff",
+            "color": "#002776",
+            "borderRadius": "100px",
+            "padding": "8px 32px",
+            "fontWeight": 400,
+            "fontSize": "16px",
+            "fontFamily": "SpareBank1-regular, MuseoSans-500, arial, sans-serif",
+            "border": "2px solid rgb(0, 39, 118)",
+            "shadow": null,
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "occurrences": 4,
+            "pages": 1,
+            "sampleLabels": [
+              "Fremtind Forsikring",
+              "SpareBank 1 Forsikring",
+              "SpareBank 1 Factoring",
+              "Other companies"
+            ],
+            "hoverDelta": null
+          }
+        ]
+      },
+      "dualCTAPattern": "observed: hero carries primary filled CTA; secondary CTAs appear as outlined/white variants on dark bands",
+      "cards": {
+        "borderRadius": "96px",
+        "shadow": "rgba(38, 38, 38, 0.3) 0px 2px 3px 2px",
+        "note": "card padding/border not captured per element by the style pass; radius/shadow are cross-page modes"
+      },
+      "inputs": {
+        "note": "input styles not captured (search field in header only on most pages); lift from source CSS at recreation time"
+      }
+    },
+    "motifs": {
+      "borderRadius": {
+        "primary": "96px",
+        "secondary": "30px",
+        "pill": "50%",
+        "primarySources": [
+          "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+          "nb-bank-bedrift-bedriftsforsikring-html",
+          "nb-bank-bedrift-bedriftskort-html"
+        ],
+        "occurrences": {
+          "96px": 785,
+          "30px": 261,
+          "22px": 134,
+          "16px": 130,
+          "8px": 111,
+          "35px": 88,
+          "32px": 80,
+          "34px": 61
+        }
+      },
+      "shadows": [
+        {
+          "value": "rgba(38, 38, 38, 0.3) 0px 2px 3px 2px",
+          "occurrences": 81,
+          "uses": "cards/buttons (observed on CTAs and section descendants)"
+        },
+        {
+          "value": "rgba(38, 38, 38, 0.3) 0px 1px 4px 0px",
+          "occurrences": 35,
+          "uses": "cards/buttons (observed on CTAs and section descendants)"
+        },
+        {
+          "value": "rgb(0, 0, 238) 0px 0px 0px 0px",
+          "occurrences": 32,
+          "uses": "cards/buttons (observed on CTAs and section descendants)"
+        }
+      ],
+      "gradients": [
+        {
+          "value": "linear-gradient(rgba(0, 0, 0, 0)",
+          "occurrences": 1,
+          "uses": "section background layer"
+        }
+      ],
+      "patterns": [
+        {
+          "name": "hero-with-illustration",
+          "evidence": "22/100 pages open with a full-width colored hero carrying imagery (perSectionStyle[0].background.hasImage)"
+        },
+        {
+          "name": "card-grid",
+          "evidence": "66/100 pages contain ≥1 equal-width grid/flex-wrap group (components.grids)"
+        },
+        {
+          "name": "faq-accordion",
+          "evidence": "5/100 pages carry an accordion (components.accordions)"
+        },
+        {
+          "name": "cta-band",
+          "evidence": "66/100 pages contain a heading+CTA-dominated band (landmarks purpose=cta-band)"
+        },
+        {
+          "name": "nav-mega",
+          "evidence": "home header exposes 15 internal links (mega-menu under 6 top-level items)"
+        },
+        {
+          "name": "footer-mega",
+          "evidence": "home footer exposes 43 internal links in 2 column groups"
+        }
+      ]
+    },
+    "voice": {
+      "heroHeadline": "Se hva du kan spare!",
+      "heroSubcopy": "Refinansier forbrukslån og kredittkortgjeld.",
+      "heroImage": null,
+      "heroMedium": null,
+      "primaryCTALabel": "Bruk min posisjon",
+      "ctaSamples": [
+        "Logg inn",
+        "Søk",
+        "Bruk min posisjon",
+        "Se alle banker",
+        "Bli kunde",
+        "Bli bedriftskunde"
+      ],
+      "navItems": [
+        "Søk",
+        "Logg inn"
+      ],
+      "footerHeadings": [
+        "Kontakt oss",
+        "Privat",
+        "Logg inn",
+        "Sosiale medier"
+      ],
+      "firstParagraph": "Refinansier forbrukslån og kredittkortgjeld.",
+      "tone": {
+        "guess": "professional-warm",
+        "evidence": "inferred: second-person address (\"Se hva du kan spare!\", \"Har du tenkt på…\"), short imperative CTAs (\"Bli kunde\", \"Bruk min posisjon\", \"Søk boliglån\"), plain-language explainers with check-lists; Norwegian bokmål; friendly flat illustrations",
+        "_provenance": "inferred"
+      }
+    },
+    "voiceTable": {
+      "ctaFrequency": [
+        {
+          "label": "Logg inn",
+          "total": 101,
+          "pageCount": 100,
+          "pages": [
+            "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+            "nb-bank-bedrift-bedriftsforsikring-html",
+            "nb-bank-bedrift-bedriftskort-html",
+            "nb-bank-bedrift-bedriftskort-kredittkort-html",
+            "nb-bank-bedrift-betaling-html",
+            "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+          ]
+        },
+        {
+          "label": "Søk",
+          "total": 100,
+          "pageCount": 100,
+          "pages": [
+            "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+            "nb-bank-bedrift-bedriftsforsikring-html",
+            "nb-bank-bedrift-bedriftskort-html",
+            "nb-bank-bedrift-bedriftskort-kredittkort-html",
+            "nb-bank-bedrift-betaling-html",
+            "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+          ]
+        },
+        {
+          "label": "Bruk min posisjon",
+          "total": 70,
+          "pageCount": 70,
+          "pages": [
+            "nb-bank-bedrift-bedriftskort-html",
+            "nb-bank-bedrift-bedriftskort-kredittkort-html",
+            "nb-bank-bedrift-betaling-html",
+            "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+            "nb-bank-bedrift-daglig-drift-html",
+            "nb-bank-bedrift-html"
+          ]
+        },
+        {
+          "label": "Se alle banker",
+          "total": 70,
+          "pageCount": 70,
+          "pages": [
+            "nb-bank-bedrift-bedriftskort-html",
+            "nb-bank-bedrift-bedriftskort-kredittkort-html",
+            "nb-bank-bedrift-betaling-html",
+            "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+            "nb-bank-bedrift-daglig-drift-html",
+            "nb-bank-bedrift-html"
+          ]
+        },
+        {
+          "label": "Bli kunde",
+          "total": 67,
+          "pageCount": 66,
+          "pages": [
+            "nb-bank-om-oss-hjemme-html",
+            "nb-bank-om-oss-html",
+            "nb-bank-om-oss-investor-html",
+            "nb-bank-om-oss-jobb-og-karriere-html",
+            "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+            "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html"
+          ]
+        },
+        {
+          "label": "Bli bedriftskunde",
+          "total": 35,
+          "pageCount": 35,
+          "pages": [
+            "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+            "nb-bank-bedrift-bedriftsforsikring-html",
+            "nb-bank-bedrift-bedriftskort-html",
+            "nb-bank-bedrift-bedriftskort-kredittkort-html",
+            "nb-bank-bedrift-betaling-html",
+            "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+          ]
+        },
+        {
+          "label": "Se flere svar",
+          "total": 9,
+          "pageCount": 9,
+          "pages": [
+            "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+            "nb-bank-privat-forsikring-barneforsikring-html",
+            "nb-bank-privat-forsikring-bilforsikring-html",
+            "nb-bank-privat-forsikring-html",
+            "nb-bank-privat-forsikring-innboforsikring-html",
+            "nb-bank-privat-forsikring-reiseforsikring-html"
+          ]
+        },
+        {
+          "label": "Se flere spørsmål og svar",
+          "total": 8,
+          "pageCount": 8,
+          "pages": [
+            "nb-bank-privat-daglig-bruk-bankid-html",
+            "nb-bank-privat-daglig-bruk-bankkort-html",
+            "nb-bank-privat-daglig-bruk-kredittkort-html",
+            "nb-bank-privat-daglig-bruk-mobilbank-html",
+            "nb-bank-privat-lan-billan-html",
+            "nb-bank-privat-lan-boliglan-html"
+          ]
+        }
+      ],
+      "headingFrequency": [
+        {
+          "text": "Logg inn",
+          "total": 100,
+          "pageCount": 100,
+          "level": 2
+        },
+        {
+          "text": "Sosiale medier",
+          "total": 100,
+          "pageCount": 100,
+          "level": 2
+        },
+        {
+          "text": "Bruk av informasjonskapsler",
+          "total": 100,
+          "pageCount": 100,
+          "level": 2
+        },
+        {
+          "text": "Teknisk",
+          "total": 100,
+          "pageCount": 100,
+          "level": 3
+        },
+        {
+          "text": "Kontakt oss",
+          "total": 85,
+          "pageCount": 84,
+          "level": 2
+        },
+        {
+          "text": "Hva synes du om denne siden?",
+          "total": 58,
+          "pageCount": 58,
+          "level": 2
+        },
+        {
+          "text": "Privat",
+          "total": 55,
+          "pageCount": 54,
+          "level": 2
+        },
+        {
+          "text": "Bedrift",
+          "total": 35,
+          "pageCount": 34,
+          "level": 2
+        },
+        {
+          "text": "Snarveier",
+          "total": 24,
+          "pageCount": 24,
+          "level": 2
+        },
+        {
+          "text": "Hva lurer andre på?",
+          "total": 21,
+          "pageCount": 21,
+          "level": 2
+        },
+        {
+          "text": "Se også",
+          "total": 20,
+          "pageCount": 20,
+          "level": 2
+        },
+        {
+          "text": "Sammenlign priser",
+          "total": 20,
+          "pageCount": 20,
+          "level": 2
+        },
+        {
+          "text": "Tips og råd",
+          "total": 10,
+          "pageCount": 10,
+          "level": 1
+        },
+        {
+          "text": "RELATERTE ARTIKLER",
+          "total": 7,
+          "pageCount": 7,
+          "level": 2
+        },
+        {
+          "text": "RELATERTE TEMA",
+          "total": 7,
+          "pageCount": 7,
+          "level": 2
+        },
+        {
+          "text": "Forsikringsselskapet vårt er Fremtind",
+          "total": 6,
+          "pageCount": 6,
+          "level": 2
+        },
+        {
+          "text": "Vilkår",
+          "total": 5,
+          "pageCount": 5,
+          "level": 4
+        },
+        {
+          "text": "Er du medlem i et LO-forbund?",
+          "total": 5,
+          "pageCount": 5,
+          "level": 2
+        },
+        {
+          "text": "Synes du pensjon er vanskelig?",
+          "total": 4,
+          "pageCount": 4,
+          "level": 3
+        },
+        {
+          "text": "Nyttige råd",
+          "total": 4,
+          "pageCount": 4,
+          "level": 2
+        }
+      ],
+      "toneMetrics": {
+        "headingsTotal": 1652,
+        "headingsUppercasePercent": 1,
+        "distinctHeadings": 817,
+        "distinctCtaLabels": 502
+      }
+    },
+    "systemComponents": [
+      {
+        "name": "site-header",
+        "kind": "header",
+        "occurrences": 44,
+        "headingSequence": [
+          "PRIVAT",
+          "BEDRIFT",
+          "OM OSS",
+          "Bli kunde",
+          "Daglig bruk",
+          "Låne",
+          "Spare",
+          "Pensjon",
+          "Forsikring",
+          "Eiendom",
+          "Tips og råd",
+          "Kundeservice"
+        ],
+        "ctaLabels": [
+          "Søk",
+          "Bli kunde",
+          "Logg inn"
+        ],
+        "exampleSlug": "nb-bank-privat-html",
+        "exampleSelector": "header",
+        "examplePages": [
+          "nb-bank-privat-daglig-bruk-bankid-html",
+          "nb-bank-privat-daglig-bruk-bankkonto-html",
+          "nb-bank-privat-daglig-bruk-bankkort-html",
+          "nb-bank-privat-daglig-bruk-html",
+          "nb-bank-privat-daglig-bruk-kredittkort-html",
+          "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html"
+        ],
+        "linkCount": 13
+      },
+      {
+        "name": "site-header-variant-2",
+        "kind": "header",
+        "occurrences": 34,
+        "headingSequence": [
+          "PRIVAT",
+          "BEDRIFT",
+          "OM OSS",
+          "Bli bedriftskunde",
+          "Logg inn",
+          "Daglig drift",
+          "Regnskap",
+          "Finansiering",
+          "Forsikring",
+          "Pensjon",
+          "Sparing og investering",
+          "Starte bedrift"
+        ],
+        "ctaLabels": [
+          "Søk",
+          "Bli bedriftskunde",
+          "Logg inn"
+        ],
+        "exampleSlug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "exampleSelector": "header",
+        "examplePages": [
+          "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+          "nb-bank-bedrift-bedriftsforsikring-html",
+          "nb-bank-bedrift-bedriftskort-html",
+          "nb-bank-bedrift-bedriftskort-kredittkort-html",
+          "nb-bank-bedrift-betaling-html",
+          "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        ],
+        "linkCount": 13
+      },
+      {
+        "name": "site-header-variant-3",
+        "kind": "header",
+        "occurrences": 10,
+        "headingSequence": [
+          "PRIVAT",
+          "BEDRIFT",
+          "OM OSS",
+          "Bli kunde",
+          "Om SpareBank 1",
+          "Presse",
+          "Investor",
+          "Jobb og karriere",
+          "Samfunnsansvar",
+          "Nyheter"
+        ],
+        "ctaLabels": [
+          "Søk",
+          "Bli kunde",
+          "Logg inn"
+        ],
+        "exampleSlug": "nb-bank-om-oss-html",
+        "exampleSelector": "header",
+        "examplePages": [
+          "nb-bank-om-oss-html",
+          "nb-bank-om-oss-investor-html",
+          "nb-bank-om-oss-jobb-og-karriere-html",
+          "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+          "nb-bank-om-oss-personvern-generelle-vilkar-html",
+          "nb-bank-om-oss-personvern-html"
+        ],
+        "linkCount": 10
+      },
+      {
+        "name": "site-header-variant-4",
+        "kind": "header",
+        "occurrences": 6,
+        "headingSequence": [
+          "PRIVAT",
+          "BEDRIFT",
+          "OM OSS",
+          "Om SpareBank 1",
+          "Presse",
+          "Investor",
+          "Jobb og karriere",
+          "Samfunnsansvar",
+          "Nyheter"
+        ],
+        "ctaLabels": [
+          "Søk",
+          "Bli kunde",
+          "Logg inn"
+        ],
+        "exampleSlug": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+        "exampleSelector": "header",
+        "examplePages": [
+          "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+          "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+          "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+          "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+          "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+          "nb-bank-om-oss-nyheter-html"
+        ],
+        "linkCount": 9
+      },
+      {
+        "name": "site-header-variant-5",
+        "kind": "header",
+        "occurrences": 4,
+        "headingSequence": [
+          "PRIVAT",
+          "BEDRIFT",
+          "OM OSS"
+        ],
+        "ctaLabels": [
+          "Søk",
+          "Bli kunde",
+          "Logg inn"
+        ],
+        "exampleSlug": "nb-bank-om-oss-hjemme-html",
+        "exampleSelector": "header",
+        "examplePages": [
+          "nb-bank-om-oss-hjemme-html",
+          "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+          "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+          "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html"
+        ],
+        "linkCount": 3
+      },
+      {
+        "name": "site-footer",
+        "kind": "footer",
+        "occurrences": 35,
+        "headingSequence": [
+          "Gå til kundeservice",
+          "SpareBank 1 Gudbrandsdal",
+          "SpareBank 1 Hallingdal Valdres",
+          "SpareBank 1 Helgeland",
+          "SpareBank 1 Lom og Skjåk",
+          "SpareBank 1 Nord-Norge",
+          "SpareBank 1 Nordmøre",
+          "SpareBank 1 Ringerike Hadeland",
+          "SpareBank 1 SMN",
+          "SpareBank 1 Sogn og Fjordane",
+          "SpareBank 1 Sør-Norge",
+          "SpareBank 1 Østfold Akershus"
+        ],
+        "ctaLabels": [],
+        "exampleSlug": "nb-bank-privat-daglig-bruk-bankkonto-html",
+        "exampleSelector": "footer",
+        "examplePages": [
+          "nb-bank-privat-daglig-bruk-bankkonto-html",
+          "nb-bank-privat-daglig-bruk-kredittkort-html",
+          "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+          "nb-bank-privat-daglig-bruk-mobilbank-html",
+          "nb-bank-privat-eiendom-html",
+          "nb-bank-privat-forsikring-barneforsikring-html"
+        ],
+        "linkCount": 38
+      },
+      {
+        "name": "site-footer-variant-2",
+        "kind": "footer",
+        "occurrences": 34,
+        "headingSequence": [
+          "SpareBank 1 Gudbrandsdal",
+          "SpareBank 1 Hallingdal Valdres",
+          "SpareBank 1 Helgeland",
+          "SpareBank 1 Lom og Skjåk",
+          "SpareBank 1 Nord-Norge",
+          "SpareBank 1 Nordmøre",
+          "SpareBank 1 Ringerike Hadeland",
+          "SpareBank 1 SMN",
+          "SpareBank 1 Sogn og Fjordane",
+          "SpareBank 1 Sør-Norge",
+          "SpareBank 1 Østfold Akershus",
+          "SpareBank 1 Østlandet"
+        ],
+        "ctaLabels": [],
+        "exampleSlug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "exampleSelector": "footer",
+        "examplePages": [
+          "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+          "nb-bank-bedrift-bedriftsforsikring-html",
+          "nb-bank-bedrift-bedriftskort-html",
+          "nb-bank-bedrift-bedriftskort-kredittkort-html",
+          "nb-bank-bedrift-betaling-html",
+          "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        ],
+        "linkCount": 37
+      },
+      {
+        "name": "site-footer-variant-3",
+        "kind": "footer",
+        "occurrences": 8,
+        "headingSequence": [
+          "Bli kunde",
+          "Sperre kort",
+          "Meld skade",
+          "Prisliste",
+          "Kundeservice",
+          "Nettbank privat",
+          "Nettbank bedrift",
+          "Om SpareBank 1",
+          "Vilkår for bruk av nettsiden",
+          "Personvern",
+          "Informasjonskapsler",
+          "For utviklere"
+        ],
+        "ctaLabels": [],
+        "exampleSlug": "nb-bank-om-oss-hjemme-html",
+        "exampleSelector": "footer",
+        "examplePages": [
+          "nb-bank-om-oss-hjemme-html",
+          "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+          "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+          "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+          "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+          "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html"
+        ],
+        "linkCount": 12
+      },
+      {
+        "name": "site-footer-variant-4",
+        "kind": "footer",
+        "occurrences": 8,
+        "headingSequence": [
+          "Gå til kundeservice",
+          "SpareBank 1 Gudbrandsdal",
+          "SpareBank 1 Hallingdal Valdres",
+          "SpareBank 1 Helgeland",
+          "SpareBank 1 Lom og Skjåk",
+          "SpareBank 1 Nord-Norge",
+          "SpareBank 1 Nordmøre",
+          "SpareBank 1 Ringerike Hadeland",
+          "SpareBank 1 SMN",
+          "SpareBank 1 Sogn og Fjordane",
+          "SpareBank 1 Sør-Norge",
+          "SpareBank 1 Østfold Akershus"
+        ],
+        "ctaLabels": [],
+        "exampleSlug": "nb-bank-om-oss-html",
+        "exampleSelector": "footer",
+        "examplePages": [
+          "nb-bank-om-oss-html",
+          "nb-bank-om-oss-jobb-og-karriere-html",
+          "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+          "nb-bank-om-oss-personvern-generelle-vilkar-html",
+          "nb-bank-om-oss-personvern-html",
+          "nb-bank-om-oss-samfunnsansvar-html"
+        ],
+        "linkCount": 36
+      },
+      {
+        "name": "site-footer-variant-5",
+        "kind": "footer",
+        "occurrences": 4,
+        "headingSequence": [
+          "Bli kunde",
+          "Sperre kort",
+          "Meld skade",
+          "Prisliste",
+          "Kundeservice",
+          "Klage",
+          "Svindel",
+          "Nettbank privat",
+          "Nettbank bedrift",
+          "Selskapsinformasjon",
+          "Vilkår for bruk av nettsiden",
+          "Personvern"
+        ],
+        "ctaLabels": [],
+        "exampleSlug": "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+        "exampleSelector": "footer",
+        "examplePages": [
+          "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+          "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+          "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+          "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html"
+        ],
+        "linkCount": 14
+      },
+      {
+        "name": "site-footer-variant-6",
+        "kind": "footer",
+        "occurrences": 3,
+        "headingSequence": [
+          "Gå til kundeservice",
+          "SpareBank 1 Gudbrandsdal",
+          "SpareBank 1 Hallingdal Valdres",
+          "SpareBank 1 Helgeland",
+          "SpareBank 1 Lom og Skjåk",
+          "SpareBank 1 Nord-Norge",
+          "SpareBank 1 Nordmøre",
+          "SpareBank 1 Ringerike Hadeland",
+          "SpareBank 1 SMN",
+          "SpareBank 1 Sogn og Fjordane",
+          "SpareBank 1 Sør-Norge",
+          "SpareBank 1 Østfold Akershus"
+        ],
+        "ctaLabels": [],
+        "exampleSlug": "nb-bank-privat-daglig-bruk-bankid-html",
+        "exampleSelector": "footer",
+        "examplePages": [
+          "nb-bank-privat-daglig-bruk-bankid-html",
+          "nb-bank-privat-daglig-bruk-bankkort-html",
+          "nb-bank-privat-daglig-bruk-html"
+        ],
+        "linkCount": 37
+      },
+      {
+        "name": "background-motif:ja-vi-smiler-til-kamera-to-menn-pa-jobb.jpg.thumb.768.768.jpg",
+        "kind": "background-motif",
+        "occurrences": 2,
+        "url": "https://www.sparebank1.no/content/dam/SB1/foto/eksterne/ja-vi-smiler-til-kamera-to-menn-pa-jobb.jpg.thumb.768.768.jpg",
+        "exampleBlock": {
+          "domPath": "main#main-content > div.visual-nav.parbase:nth-child(6) > div.component-root > div.nav.nav__hover > a.nav--wrapper > div.nav--big:nth-child(1)",
+          "boundingClientRect": {
+            "x": 312,
+            "y": 1197,
+            "width": 400,
+            "height": 260
+          },
+          "backgroundSize": "cover",
+          "backgroundPosition": "50% 50%"
+        },
+        "examplePages": [
+          "nb-bank-bedrift-konto-html",
+          "nb-bank-bedrift-sparing-investering-html"
+        ]
+      }
+    ],
+    "iconFont": null,
+    "scaleAudit": {
+      "kind": "ad-hoc",
+      "ratios": [
+        1.278,
+        1.286,
+        1.273,
+        1.222,
+        1.125
+      ],
+      "matchedScale": null
+    },
+    "typePerLevel": [
+      {
+        "level": 1,
+        "fontSize": "46px",
+        "fontWeight": 400,
+        "lineHeight": "56px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "count": 93,
+        "pages": [
+          "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+          "nb-bank-bedrift-bedriftsforsikring-html",
+          "nb-bank-bedrift-bedriftskort-html"
+        ],
+        "variants": 5
+      },
+      {
+        "level": 2,
+        "fontSize": "36px",
+        "fontWeight": 400,
+        "lineHeight": "44px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "count": 446,
+        "pages": [
+          "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+          "nb-bank-bedrift-bedriftsforsikring-html",
+          "nb-bank-bedrift-bedriftskort-html"
+        ],
+        "variants": 9
+      },
+      {
+        "level": 3,
+        "fontSize": "28px",
+        "fontWeight": 400,
+        "lineHeight": "36px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "count": 139,
+        "pages": [
+          "nb-bank-bedrift-bedriftsforsikring-html",
+          "nb-bank-bedrift-bedriftskort-kredittkort-html",
+          "nb-bank-bedrift-betaling-utenlandsbetaling-html"
+        ],
+        "variants": 5
+      },
+      {
+        "level": 4,
+        "fontSize": "22px",
+        "fontWeight": 400,
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "count": 34,
+        "pages": [
+          "nb-bank-bedrift-bedriftskort-kredittkort-html",
+          "nb-bank-bedrift-kundeservice-html",
+          "nb-bank-bedrift-starte-bedrift-html"
+        ],
+        "variants": 3
+      },
+      {
+        "level": 5,
+        "fontSize": "18px",
+        "fontWeight": 400,
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "count": 5,
+        "pages": [
+          "nb-bank-privat-daglig-bruk-bankid-html",
+          "nb-bank-privat-pensjon-egen-pensjonskonto-html"
+        ],
+        "variants": 1
+      },
+      {
+        "level": 6,
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": "16px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "count": 1,
+        "pages": [
+          "nb-bank-privat-pensjon-html"
+        ],
+        "variants": 1
+      }
+    ],
+    "textRendering": {
+      "tr": "auto",
+      "sm": "auto",
+      "syn": "weight style small-caps",
+      "kern": "auto",
+      "html": "16px"
+    },
+    "fontFiles": [
+      {
+        "url": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2",
+        "family": "SpareBank1-medium",
+        "weight": 400,
+        "style": "normal",
+        "unicodeRange": null,
+        "localPath": "stardust/current/assets/fonts/SpareBank1-Medium-Web.woff2",
+        "bytes": 35052,
+        "sourceCssRule": "@font-face { font-family: SpareBank1-medium; font-display: fallback; src: url(\"clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff\") format(\"woff\"); }",
+        "licensingFlag": "private"
+      },
+      {
+        "url": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2",
+        "family": "SpareBank1-regular",
+        "weight": 400,
+        "style": "normal",
+        "unicodeRange": null,
+        "localPath": "stardust/current/assets/fonts/SpareBank1-Regular-Web.woff2",
+        "bytes": 37372,
+        "sourceCssRule": "@font-face { font-family: SpareBank1-regular; font-display: fallback; src: url(\"clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff\") format(\"woff\"); }",
+        "licensingFlag": "private"
+      },
+      {
+        "url": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2",
+        "family": "SpareBank1-title-medium",
+        "weight": 400,
+        "style": "normal",
+        "unicodeRange": null,
+        "localPath": "stardust/current/assets/fonts/SpareBank1-Title-Medium-Web.woff2",
+        "bytes": 32268,
+        "sourceCssRule": "@font-face { font-family: SpareBank1-title-medium; font-display: fallback; src: url(\"clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff\") format(\"woff\"); }",
+        "licensingFlag": "private"
+      }
+    ],
+    "layout": {
+      "containerMaxWidth": "1280px",
+      "breakpoints": [
+        {
+          "name": "sm",
+          "value": "480px"
+        },
+        {
+          "name": "md",
+          "value": "768px"
+        },
+        {
+          "name": "lg",
+          "value": "1024px"
+        },
+        {
+          "name": "xl",
+          "value": "1280px"
+        }
+      ],
+      "sectionPadding": {
+        "base": "75px",
+        "small": "20px"
+      },
+      "gridGap": "8px",
+      "baseUnit": null
+    },
+    "shadows": [
+      {
+        "name": "card-hover",
+        "value": "rgba(38, 38, 38, 0.3) 0px 2px 3px 2px",
+        "occurrences": 81
+      },
+      {
+        "name": "card-rest",
+        "value": "rgba(38, 38, 38, 0.3) 0px 1px 4px 0px",
+        "occurrences": 35
+      },
+      {
+        "name": "focus-ring",
+        "value": "rgb(0, 0, 238) 0px 0px 0px 0px",
+        "occurrences": 32
+      }
+    ],
+    "patterns": {
+      "illustrations": "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/** (flat spot illustrations, lazy-loaded via data-lazy-src)"
+    },
+    "declaredTokens": {
+      "--ffe-farge-fjell": "#002776",
+      "--ffe-farge-fjell-70": "#4d689f",
+      "--ffe-farge-fjell-30": "#b3bed6",
+      "--ffe-farge-vann": "#005aa4",
+      "--ffe-farge-vann-70": "#4d8cbf",
+      "--ffe-farge-vann-30": "#b3cee4",
+      "--ffe-farge-sand": "#f8e9dd",
+      "--ffe-farge-sand-70": "#faf0e7",
+      "--ffe-farge-sand-30": "#fdf8f5",
+      "--ffe-farge-frost": "#7eb5d2",
+      "--ffe-farge-frost-70": "#a5cbe0",
+      "--ffe-farge-frost-30": "#d8e9f2",
+      "--ffe-farge-syrin": "#d3d3ea",
+      "--ffe-farge-syrin-70": "#e0e0f0",
+      "--ffe-farge-syrin-30": "#f2f2f9",
+      "--ffe-farge-myrull": "#fae4e0",
+      "--ffe-farge-myrull-70": "#fcece9",
+      "--ffe-farge-myrull-30": "#fef7f6",
+      "--ffe-farge-villblomst": "#ee8d9c",
+      "--ffe-farge-villblomst-70": "#f3afba",
+      "--ffe-farge-villblomst-30": "#fadde1",
+      "--ffe-farge-nordlys": "#33af85",
+      "--ffe-farge-nordlys-70": "#70c7aa",
+      "--ffe-farge-nordlys-30": "#c2e7da",
+      "--ffe-farge-lyng": "#873953",
+      "--ffe-farge-lyng-70": "#ab7487",
+      "--ffe-farge-lyng-30": "#dbc4cb",
+      "--ffe-farge-baer": "#e44244",
+      "--ffe-farge-baer-70": "#ec7b7c",
+      "--ffe-farge-baer-30": "#f7c6c7",
+      "--ffe-farge-skog": "#00754e",
+      "--ffe-farge-skog-70": "#4d9e83",
+      "--ffe-farge-skog-30": "#b3d6ca",
+      "--ffe-farge-multe": "#f8b181",
+      "--ffe-farge-multe-70": "#fac8a7",
+      "--ffe-farge-multe-30": "#fde8d9",
+      "--ffe-farge-sol": "#dc8000",
+      "--ffe-farge-sol-70": "#e7a64d",
+      "--ffe-farge-sol-30": "#f5d9b3",
+      "--ffe-farge-natt": "#001032",
+      "--ffe-farge-svart": "#020a0a",
+      "--ffe-farge-koksgraa": "#323232",
+      "--ffe-farge-moerkgraa": "#676767",
+      "--ffe-farge-graa": "#adadad",
+      "--ffe-farge-lysgraa": "#d8d8d8",
+      "--ffe-farge-moerkvarmgraa": "#848383",
+      "--ffe-farge-varmgraa": "#9b9797",
+      "--ffe-farge-lysvarmgraa": "#d7d2cb",
+      "--ffe-farge-hvit": "#fff",
+      "--ffe-fontsize-body-text": "1rem",
+      "--ffe-fontsize-small-text": "0.875rem",
+      "--ffe-fontsize-micro-text": "0.75rem",
+      "--ffe-fontsize-lead-paragraph": "1.5rem",
+      "--ffe-fontsize-sub-lead-paragraph": "1.125rem",
+      "--ffe-fontsize-h1": "2.875rem",
+      "--ffe-fontsize-h2": "2.25rem",
+      "--ffe-fontsize-h3": "1.75rem",
+      "--ffe-fontsize-h4": "1.375rem",
+      "--ffe-fontsize-h5": "1.125rem",
+      "--ffe-fontsize-h6": "1rem",
+      "--ffe-fontsize-form-input": "1rem",
+      "--ffe-fontsize-form-dropdown": "1rem",
+      "--ffe-fontsize-button": "1rem",
+      "--breakpoint-sm": "480px",
+      "--breakpoint-md": "768px",
+      "--breakpoint-lg": "1024px",
+      "--breakpoint-xl": "1280px",
+      "--app-width": "1280px",
+      "--app-width-min": "320px",
+      "--app-margin": "20px",
+      "--ffe-ease-in-out-back": "cubic-bezier(0.46, -0.265, 0.48, 1.38)",
+      "--ffe-ease": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+      "--ffe-transition-duration": "0.2s",
+      "--ffe-spacing": "8px",
+      "--ffe-spacing-2xs": "4px",
+      "--ffe-spacing-xs": "8px",
+      "--ffe-spacing-sm": "16px",
+      "--ffe-spacing-md": "24px",
+      "--ffe-spacing-lg": "32px",
+      "--ffe-spacing-xl": "40px",
+      "--ffe-spacing-2xl": "48px",
+      "--ffe-spacing-3xl": "64px",
+      "--ffe-spacing-4xl": "80px",
+      "--ffe-spacing-5xl": "160px",
+      "--ffe-g-primary-color": "#005aa4",
+      "--ffe-g-secondary-color": "#002776",
+      "--ffe-g-error-color": "#e44244",
+      "--ffe-g-border-color": "#9b9797",
+      "--ffe-g-border-radius": "4px",
+      "--ffe-g-font": "'SpareBank1-regular',arial,sans-serif",
+      "--ffe-g-font-heading": "'SpareBank1-title-medium',arial,sans-serif",
+      "--ffe-g-font-heading-small": "'SpareBank1-medium',arial,sans-serif",
+      "--ffe-g-font-strong": "'SpareBank1-medium',arial,sans-serif",
+      "--ffe-g-font-italic": "'SpareBank1-italic',arial,sans-serif",
+      "--ffe-g-text-color": "#020a0a",
+      "--ffe-g-lead-color": "#002776",
+      "--ffe-g-heading-color": "#002776",
+      "--ffe-g-link-color": "#005aa4",
+      "--ffe-g-link-color-hover": "#002776",
+      "--ffe-g-link-color-visited": "#873953",
+      "--ffe-g-link-icon-color-hover": "#001032",
+      "--ffe-g-link-icon-color-focus": "#005aa4",
+      "--ffe-v-icons-size-sm": "20px",
+      "--ffe-v-icons-size-md": "24px",
+      "--ffe-v-icons-size-lg": "40px",
+      "--ffe-v-icons-size-xl": "48px",
+      "--ffe-v-icons-default-color": "#005aa4",
+      "--ffe-v-button-text-color": "#fff",
+      "--ffe-v-buttons-border-radius": "6em",
+      "--ffe-v-button-action-color": "#00754e",
+      "--ffe-v-button-action-color-hover": "#095139",
+      "--ffe-v-button-action-color-text": "#fff",
+      "--ffe-v-button-primary-color": "#005aa4",
+      "--ffe-v-button-primary-color-hover": "#002776",
+      "--ffe-v-button-primary-color-text": "#fff",
+      "--ffe-v-button-secondary-color": "#005aa4",
+      "--ffe-v-button-secondary-border-color": "#005aa4",
+      "--ffe-v-button-secondary-color-hover": "#002776",
+      "--ffe-v-button-secondary-color-bg": "#fff",
+      "--ffe-v-button-tertiary-color": "#005aa4",
+      "--ffe-v-button-tertiary-color-hover": "#002776",
+      "--ffe-v-button-tertiary-color-text": "#fff",
+      "--ffe-v-button-task-primary-color": "#005aa4",
+      "--ffe-v-button-task-text-color-hover": "#002776",
+      "--ffe-v-button-task-border-focus": "#005aa4",
+      "--ffe-v-input-color": "#020a0a",
+      "--ffe-v-input-bg-color": "#fff",
+      "--ffe-v-input-placeholder-color": "#676767",
+      "--ffe-v-info-message-icon-color": "#002776",
+      "--ffe-v-info-message-icon-fill": "#fff",
+      "--ffe-v-success-message-icon-color": "#00754e",
+      "--ffe-v-success-message-icon-fill": "#fff",
+      "--ffe-v-error-message-icon-color": "#e44244",
+      "--ffe-v-error-message-icon-fill": "#fff",
+      "--ffe-v-checkbox-color": "#9b9797",
+      "--ffe-v-checkbox-selected-color": "#005aa4",
+      "--ffe-v-checkbox-marker-color": "#005aa4",
+      "--ffe-v-checkbox-focus-outline-color": "#005aa4",
+      "--ffe-v-radio-button-label-color": "#005aa4",
+      "--ffe-v-tooltip-icon-color": "#005aa4",
+      "--ffe-v-tooltip-border-color": "#9b9797",
+      "--ffe-v-message-box-icon-bg-color": "#fff",
+      "--ffe-v-message-box-variant-bg-color": "#fff",
+      "--ffe-v-message-box-tips-bg-color": "#f8e9dd",
+      "--ffe-v-message-box-tips-icon-color": "#dc8000",
+      "--ffe-v-message-box-info-bg-color": "#d8e9f2",
+      "--ffe-v-message-box-info-icon-color": "#005aa4",
+      "--ffe-v-message-box-success-bg-color": "#c2e7da",
+      "--ffe-v-message-box-success-icon-color": "#00754e",
+      "--ffe-v-message-box-error-bg-color": "#f7c6c7",
+      "--ffe-v-message-box-error-icon-color": "#e44244",
+      "--ffe-v-message-box-link-color": "#005aa4",
+      "--ffe-v-message-box-link-color-hover": "#002776",
+      "--ffe-v-message-box-link-color-visited": "#873953",
+      "--ffe-v-message-box-link-color-focus": "#fff",
+      "--ffe-v-lists-title-color": "#002776",
+      "--ffe-v-lists-description-description-color": "#020a0a",
+      "--ffe-v-lists-check-list-check-icon-color": "var(--ffe-farge-nordlys-wcag)",
+      "--ffe-v-lists-check-list-cross-icon-color": "#e44244",
+      "--ffe-v-context-message-close-button-color": "#676767",
+      "--ffe-v-context-message-close-button-color-hover": "#020a0a",
+      "--ffe-v-context-message-close-button-border-color-focus": "#005aa4",
+      "--ffe-v-context-message-variant-bg-color": "#fff",
+      "--ffe-v-context-message-icon-bg-color": "#fff",
+      "--ffe-v-context-message-info-bg-color": "#d8e9f2",
+      "--ffe-v-context-message-info-icon-color": "#005aa4",
+      "--ffe-v-context-message-info-icon-compact-color": "#005aa4",
+      "--ffe-v-context-message-tips-bg-color": "#f8e9dd",
+      "--ffe-v-context-message-tips-icon-color": "#dc8000",
+      "--ffe-v-context-message-success-bg-color": "#c2e7da",
+      "--ffe-v-context-message-success-compact-color": "#00754e",
+      "--ffe-v-context-message-success-icon-color": "#00754e",
+      "--ffe-v-context-message-error-bg-color": "#f7c6c7",
+      "--ffe-v-context-message-error-icon-color": "#e44244",
+      "--ffe-v-context-message-link-color": "#005aa4",
+      "--ffe-v-context-message-link-color-hover": "#002776",
+      "--ffe-v-context-message-link-color-visited": "#873953",
+      "--ffe-v-context-message-link-color-focus": "#fff",
+      "--ffe-v-accordion-primary-color": "#005aa4",
+      "--ffe-v-accordion-secondary-color": "#fff",
+      "--ffe-v-accordion-body-text-color": "#020a0a",
+      "--ffe-v-accordion-focus-border-color": "#005aa4",
+      "--animate-duration": "1s",
+      "--animate-delay": "1s",
+      "--animate-repeat": "1"
+    },
+    "modules": [
+      {
+        "id": "columns-grid",
+        "kind": "content-columns",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+            "selector": "main > div.columns-grid"
+          },
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-html",
+            "selector": "main > div.columns-grid"
+          },
+          {
+            "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+            "selector": "main > div.columns-grid"
+          },
+          {
+            "slug": "nb-bank-bedrift-betaling-html",
+            "selector": "main > div.columns-grid"
+          },
+          {
+            "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+            "selector": "main > div.columns-grid"
+          },
+          {
+            "slug": "nb-bank-bedrift-daglig-drift-html",
+            "selector": "main > div.columns-grid"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "FFE grid text+image columns; the workhorse content module"
+      },
+      {
+        "id": "background-band",
+        "kind": "hero/feature-band",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+            "selector": "main > div.background-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-html",
+            "selector": "main > div.background-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-bedriftskort-html",
+            "selector": "main > div.background-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-betaling-html",
+            "selector": "main > div.background-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+            "selector": "main > div.background-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-daglig-drift-html",
+            "selector": "main > div.background-container"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "Tinted or white band with rounded (96px) illustration/photo + text; the hero on product pages and the feature bands below"
+      },
+      {
+        "id": "breadcrumb-row",
+        "kind": "navigation",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+            "selector": "main > div.aem-main-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-bedriftskort-html",
+            "selector": "main > div.aem-main-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-betaling-html",
+            "selector": "main > div.aem-main-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+            "selector": "main > div.aem-main-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-daglig-drift-html",
+            "selector": "main > div.aem-main-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-konto-bedriftskonto-html",
+            "selector": "main > div.aem-main-container"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "Back-link / breadcrumb row (\"‹ Låne\")"
+      },
+      {
+        "id": "visual-nav",
+        "kind": "card-grid",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-betaling-html",
+            "selector": "main > div.visual-nav"
+          },
+          {
+            "slug": "nb-bank-bedrift-daglig-drift-html",
+            "selector": "main > div.visual-nav"
+          },
+          {
+            "slug": "nb-bank-bedrift-konto-html",
+            "selector": "main > div.visual-nav"
+          },
+          {
+            "slug": "nb-bank-bedrift-lan-finansiering-html",
+            "selector": "main > div.visual-nav"
+          },
+          {
+            "slug": "nb-bank-bedrift-pensjon-html",
+            "selector": "main > div.visual-nav"
+          },
+          {
+            "slug": "nb-bank-bedrift-sparing-investering-html",
+            "selector": "main > div.visual-nav"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "Image card navigation grid (category hubs)"
+      },
+      {
+        "id": "feedback",
+        "kind": "utility",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+            "selector": "main > div.feedback"
+          },
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-html",
+            "selector": "main > div.feedback"
+          },
+          {
+            "slug": "nb-bank-bedrift-bedriftskort-html",
+            "selector": "main > div.feedback"
+          },
+          {
+            "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+            "selector": "main > div.feedback"
+          },
+          {
+            "slug": "nb-bank-bedrift-betaling-html",
+            "selector": "main > div.feedback"
+          },
+          {
+            "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+            "selector": "main > div.feedback"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "\"Hva synes du om denne siden?\" thumbs (dynamic: LogServlet)"
+      },
+      {
+        "id": "text",
+        "kind": "rich-text",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+            "selector": "main > div.text"
+          },
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-html",
+            "selector": "main > div.text"
+          },
+          {
+            "slug": "nb-bank-bedrift-bedriftskort-html",
+            "selector": "main > div.text"
+          },
+          {
+            "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+            "selector": "main > div.text"
+          },
+          {
+            "slug": "nb-bank-bedrift-daglig-drift-html",
+            "selector": "main > div.text"
+          },
+          {
+            "slug": "nb-bank-bedrift-konto-html",
+            "selector": "main > div.text"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "Rich text"
+      },
+      {
+        "id": "reference-cta",
+        "kind": "cta-band",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+            "selector": "main > div.referance"
+          },
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-html",
+            "selector": "main > div.referance"
+          },
+          {
+            "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+            "selector": "main > div.referance"
+          },
+          {
+            "slug": "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+            "selector": "main > div.referance"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-bankid-html",
+            "selector": "main > div.referance"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-bankkonto-html",
+            "selector": "main > div.referance"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "\"Sammenlign priser\" referenced CTA band"
+      },
+      {
+        "id": "hr",
+        "kind": "divider",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-betaling-html",
+            "selector": "main > div.hr"
+          },
+          {
+            "slug": "nb-bank-bedrift-konto-html",
+            "selector": "main > div.hr"
+          },
+          {
+            "slug": "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+            "selector": "main > div.hr"
+          },
+          {
+            "slug": "nb-bank-bedrift-sparing-investering-html",
+            "selector": "main > div.hr"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-bankkonto-html",
+            "selector": "main > div.hr"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-bilforsikring-html",
+            "selector": "main > div.hr"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "Rule"
+      },
+      {
+        "id": "related-products",
+        "kind": "card-grid",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+            "selector": "main > div.related-products"
+          },
+          {
+            "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+            "selector": "main > div.related-products"
+          },
+          {
+            "slug": "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+            "selector": "main > div.related-products"
+          },
+          {
+            "slug": "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+            "selector": "main > div.related-products"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-bankkort-html",
+            "selector": "main > div.related-products"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+            "selector": "main > div.related-products"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "\"Se også\" related products"
+      },
+      {
+        "id": "faq-accordion",
+        "kind": "faq",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-html",
+            "selector": "main > div.faq"
+          },
+          {
+            "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+            "selector": "main > div.faq"
+          },
+          {
+            "slug": "nb-bank-bedrift-lan-finansiering-leasing-html",
+            "selector": "main > div.faq"
+          },
+          {
+            "slug": "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+            "selector": "main > div.faq"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-kredittkort-html",
+            "selector": "main > div.faq"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+            "selector": "main > div.faq"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "\"Hva lurer andre på?\" FFE accordion + \"Se flere spørsmål\" link"
+      },
+      {
+        "id": "static-cards",
+        "kind": "card-grid",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-html",
+            "selector": "main > div.static-cards"
+          },
+          {
+            "slug": "nb-bank-bedrift-konto-bedriftskonto-html",
+            "selector": "main > div.static-cards"
+          },
+          {
+            "slug": "nb-bank-om-oss-html",
+            "selector": "main > div.static-cards"
+          },
+          {
+            "slug": "nb-bank-om-oss-samfunnsansvar-html",
+            "selector": "main > div.static-cards"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-kredittkort-html",
+            "selector": "main > div.static-cards"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+            "selector": "main > div.static-cards"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "Illustrated card row"
+      },
+      {
+        "id": "tip",
+        "kind": "callout",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+            "selector": "main > div.tip"
+          },
+          {
+            "slug": "nb-bank-bedrift-bedriftskort-html",
+            "selector": "main > div.tip"
+          },
+          {
+            "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+            "selector": "main > div.tip"
+          },
+          {
+            "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+            "selector": "main > div.tip"
+          },
+          {
+            "slug": "nb-bank-bedrift-konto-bedriftskonto-html",
+            "selector": "main > div.tip"
+          },
+          {
+            "slug": "nb-bank-bedrift-kundeservice-html",
+            "selector": "main > div.tip"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "Tinted tip callout with icon"
+      },
+      {
+        "id": "button",
+        "kind": "buttons",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+            "selector": "main > div.button"
+          },
+          {
+            "slug": "nb-bank-bedrift-bedriftskort-html",
+            "selector": "main > div.button"
+          },
+          {
+            "slug": "nb-bank-bedrift-daglig-drift-html",
+            "selector": "main > div.button"
+          },
+          {
+            "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+            "selector": "main > div.button"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-barneforsikring-html",
+            "selector": "main > div.button"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-bilforsikring-html",
+            "selector": "main > div.button"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "Single button"
+      },
+      {
+        "id": "title",
+        "kind": "heading",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-lan-finansiering-html",
+            "selector": "main > div.title"
+          },
+          {
+            "slug": "nb-bank-bedrift-regnskap-html",
+            "selector": "main > div.title"
+          },
+          {
+            "slug": "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+            "selector": "main > div.title"
+          },
+          {
+            "slug": "nb-bank-om-oss-personvern-generelle-vilkar-html",
+            "selector": "main > div.title"
+          },
+          {
+            "slug": "nb-bank-om-oss-vare-eksperter-html",
+            "selector": "main > div.title"
+          },
+          {
+            "slug": "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+            "selector": "main > div.title"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "Standalone heading"
+      },
+      {
+        "id": "banner-small",
+        "kind": "cta-band",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-html",
+            "selector": "main > div.banner-small"
+          },
+          {
+            "slug": "nb-bank-bedrift-html",
+            "selector": "main > div.banner-small"
+          },
+          {
+            "slug": "nb-bank-bedrift-kundeservice-html",
+            "selector": "main > div.banner-small"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-bankid-html",
+            "selector": "main > div.banner-small"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+            "selector": "main > div.banner-small"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-html",
+            "selector": "main > div.banner-small"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "Small tinted banner (LOfavør, finansieringsbevis)"
+      },
+      {
+        "id": "question-page__question-container",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+            "selector": "main > div.question-page__question-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+            "selector": "main > div.question-page__question-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+            "selector": "main > div.question-page__question-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+            "selector": "main > div.question-page__question-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+            "selector": "main > div.question-page__question-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+            "selector": "main > div.question-page__question-container"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component question-page__question-container"
+      },
+      {
+        "id": "footer",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-om-oss-hjemme-html",
+            "selector": "main > div.footer"
+          },
+          {
+            "slug": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+            "selector": "main > div.footer"
+          },
+          {
+            "slug": "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+            "selector": "main > div.footer"
+          },
+          {
+            "slug": "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+            "selector": "main > div.footer"
+          },
+          {
+            "slug": "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+            "selector": "main > div.footer"
+          },
+          {
+            "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+            "selector": "main > div.footer"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component footer"
+      },
+      {
+        "id": "shortcuts",
+        "kind": "link-list",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-betaling-html",
+            "selector": "main > div.shortcuts"
+          },
+          {
+            "slug": "nb-bank-bedrift-daglig-drift-html",
+            "selector": "main > div.shortcuts"
+          },
+          {
+            "slug": "nb-bank-bedrift-sparing-investering-html",
+            "selector": "main > div.shortcuts"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-bankkonto-html",
+            "selector": "main > div.shortcuts"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-bankkort-html",
+            "selector": "main > div.shortcuts"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-html",
+            "selector": "main > div.shortcuts"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "\"Snarveier\" pill links"
+      },
+      {
+        "id": "related-topics",
+        "kind": "card-grid",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-privat-daglig-bruk-bankid-html",
+            "selector": "main > div.related-topics"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html",
+            "selector": "main > div.related-topics"
+          },
+          {
+            "slug": "nb-bank-privat-html",
+            "selector": "main > div.related-topics"
+          },
+          {
+            "slug": "nb-bank-privat-lan-billan-html",
+            "selector": "main > div.related-topics"
+          },
+          {
+            "slug": "nb-bank-privat-lan-boliglan-html",
+            "selector": "main > div.related-topics"
+          },
+          {
+            "slug": "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+            "selector": "main > div.related-topics"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "\"Tips og råd\" related articles"
+      },
+      {
+        "id": "usp-row",
+        "kind": "feature-list",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+            "selector": "main > div.usp"
+          },
+          {
+            "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+            "selector": "main > div.usp"
+          },
+          {
+            "slug": "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+            "selector": "main > div.usp"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-kredittkort-html",
+            "selector": "main > div.usp"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-barneforsikring-html",
+            "selector": "main > div.usp"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-bilforsikring-html",
+            "selector": "main > div.usp"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "3-up icon+text USP row"
+      },
+      {
+        "id": "progressive-disclosure",
+        "kind": "accordion",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+            "selector": "main > div.progressive-disclosure"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-bankkort-html",
+            "selector": "main > div.progressive-disclosure"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-barneforsikring-html",
+            "selector": "main > div.progressive-disclosure"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-bilforsikring-html",
+            "selector": "main > div.progressive-disclosure"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-html",
+            "selector": "main > div.progressive-disclosure"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-innboforsikring-html",
+            "selector": "main > div.progressive-disclosure"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "Expandable terms"
+      },
+      {
+        "id": "header",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+            "selector": "main > div.header"
+          },
+          {
+            "slug": "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+            "selector": "main > div.header"
+          },
+          {
+            "slug": "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+            "selector": "main > div.header"
+          },
+          {
+            "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+            "selector": "main > div.header"
+          },
+          {
+            "slug": "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+            "selector": "main > div.header"
+          },
+          {
+            "slug": "nb-bank-om-oss-nyheter-html",
+            "selector": "main > div.header"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component header"
+      },
+      {
+        "id": "image",
+        "kind": "media",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+            "selector": "main > div.image"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-barneforsikring-html",
+            "selector": "main > div.image"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-bilforsikring-html",
+            "selector": "main > div.image"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-html",
+            "selector": "main > div.image"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-reiseforsikring-html",
+            "selector": "main > div.image"
+          },
+          {
+            "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
+            "selector": "main > div.image"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "Image"
+      },
+      {
+        "id": "sb1-article",
+        "kind": "article",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+            "selector": "main > div.sb1-article"
+          },
+          {
+            "slug": "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+            "selector": "main > div.sb1-article"
+          },
+          {
+            "slug": "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+            "selector": "main > div.sb1-article"
+          },
+          {
+            "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+            "selector": "main > div.sb1-article"
+          },
+          {
+            "slug": "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+            "selector": "main > div.sb1-article"
+          },
+          {
+            "slug": "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+            "selector": "main > div.sb1-article"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "News article template (nettsider-frontend)"
+      },
+      {
+        "id": "cobranding",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-privat-daglig-bruk-bankkort-html",
+            "selector": "main > div.cobranding"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-reiseforsikring-html",
+            "selector": "main > div.cobranding"
+          },
+          {
+            "slug": "nb-bank-privat-lan-billan-html",
+            "selector": "main > div.cobranding"
+          },
+          {
+            "slug": "nb-bank-privat-lan-html",
+            "selector": "main > div.cobranding"
+          },
+          {
+            "slug": "nb-bank-privat-pensjon-html",
+            "selector": "main > div.cobranding"
+          },
+          {
+            "slug": "nb-bank-privat-sparing-spare-pa-konto-html",
+            "selector": "main > div.cobranding"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component cobranding"
+      },
+      {
+        "id": "button-list",
+        "kind": "buttons",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-bedriftsforsikring-html",
+            "selector": "main > div.button-list-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-konto-html",
+            "selector": "main > div.button-list-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-pensjon-html",
+            "selector": "main > div.button-list-container"
+          },
+          {
+            "slug": "nb-bank-bedrift-regnskap-html",
+            "selector": "main > div.button-list-container"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-html",
+            "selector": "main > div.button-list-container"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "Button row"
+      },
+      {
+        "id": "price-and-terms",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+            "selector": "main > div.price-and-terms"
+          },
+          {
+            "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+            "selector": "main > div.price-and-terms"
+          },
+          {
+            "slug": "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+            "selector": "main > div.price-and-terms"
+          },
+          {
+            "slug": "nb-bank-bedrift-lan-finansiering-leasing-html",
+            "selector": "main > div.price-and-terms"
+          },
+          {
+            "slug": "nb-bank-privat-lan-forbrukslan-html",
+            "selector": "main > div.price-and-terms"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component price-and-terms"
+      },
+      {
+        "id": "campaign",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-om-oss-html",
+            "selector": "main > div.campaign"
+          },
+          {
+            "slug": "nb-bank-om-oss-investor-html",
+            "selector": "main > div.campaign"
+          },
+          {
+            "slug": "nb-bank-om-oss-jobb-og-karriere-html",
+            "selector": "main > div.campaign"
+          },
+          {
+            "slug": "nb-bank-om-oss-presse-html",
+            "selector": "main > div.campaign"
+          },
+          {
+            "slug": "nb-bank-om-oss-samfunnsansvar-html",
+            "selector": "main > div.campaign"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component campaign"
+      },
+      {
+        "id": "header--disable-bottom-links",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-om-oss-hjemme-html",
+            "selector": "main > div.header--disable-bottom-links"
+          },
+          {
+            "slug": "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+            "selector": "main > div.header--disable-bottom-links"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+            "selector": "main > div.header--disable-bottom-links"
+          },
+          {
+            "slug": "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html",
+            "selector": "main > div.header--disable-bottom-links"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component header--disable-bottom-links"
+      },
+      {
+        "id": "sb1-story__body",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-om-oss-hjemme-html",
+            "selector": "main > div.sb1-story__body"
+          },
+          {
+            "slug": "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+            "selector": "main > div.sb1-story__body"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+            "selector": "main > div.sb1-story__body"
+          },
+          {
+            "slug": "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html",
+            "selector": "main > div.sb1-story__body"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component sb1-story__body"
+      },
+      {
+        "id": "color-fillable",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-om-oss-personvern-html",
+            "selector": "main > div.color-fillable"
+          },
+          {
+            "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+            "selector": "main > div.color-fillable"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-barneforsikring-html",
+            "selector": "main > div.color-fillable"
+          },
+          {
+            "slug": "nb-bank-privat-lan-forbrukslan-html",
+            "selector": "main > div.color-fillable"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component color-fillable"
+      },
+      {
+        "id": "visually-hidden",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-html",
+            "selector": "main > div.visually-hidden"
+          },
+          {
+            "slug": "nb-bank-om-oss-html",
+            "selector": "main > div.visually-hidden"
+          },
+          {
+            "slug": "nb-bank-privat-html",
+            "selector": "main > div.visually-hidden"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component visually-hidden"
+      },
+      {
+        "id": "campaign-carousel",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-html",
+            "selector": "main > div.campaign-carousel"
+          },
+          {
+            "slug": "nb-bank-privat-html",
+            "selector": "main > div.campaign-carousel"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component campaign-carousel"
+      },
+      {
+        "id": "accordion",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+            "selector": "main > div.accordion"
+          },
+          {
+            "slug": "nb-bank-privat-forsikring-meld-skade-html",
+            "selector": "main > div.accordion"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component accordion"
+      },
+      {
+        "id": "calculator-loan",
+        "kind": "widget",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-privat-lan-boliglan-html",
+            "selector": "main > div.calculator-loan"
+          },
+          {
+            "slug": "nb-bank-privat-lan-lanekalkulator-html",
+            "selector": "main > div.calculator-loan"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "Loan calculator React widget (client-rendered)"
+      },
+      {
+        "id": "tabs-component",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-om-oss-investor-html",
+            "selector": "main > div.tabs-component"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component tabs-component"
+      },
+      {
+        "id": "sb1-articles__content",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-om-oss-nyheter-html",
+            "selector": "main > div.sb1-articles__content"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component sb1-articles__content"
+      },
+      {
+        "id": "table",
+        "kind": "table",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+            "selector": "main > div.table"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "Data table"
+      },
+      {
+        "id": "contentfragmentlist",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-om-oss-vare-eksperter-html",
+            "selector": "main > div.contentfragmentlist"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component contentfragmentlist"
+      },
+      {
+        "id": "guide-carousel",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+            "selector": "main > div.guide-carousel"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component guide-carousel"
+      },
+      {
+        "id": "step-by-step",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-privat-kundeservice-verktoy-klager-html",
+            "selector": "main > div.step-by-step"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component step-by-step"
+      },
+      {
+        "id": "accordion-list-container",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-privat-kundeservice-verktoy-klager-html",
+            "selector": "main > div.accordion-list-container"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component accordion-list-container"
+      },
+      {
+        "id": "currency-converter",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html",
+            "selector": "main > div.currency-converter"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component currency-converter"
+      },
+      {
+        "id": "prices",
+        "kind": "price-cards",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-privat-lan-boliglan-html",
+            "selector": "main > div.prices"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "Rate/price card list (rate service values)"
+      },
+      {
+        "id": "text-and-image",
+        "kind": "unknown",
+        "slots": [],
+        "instances": [
+          {
+            "slug": "nb-bank-privat-tips-og-rad-html",
+            "selector": "main > div.text-and-image"
+          }
+        ],
+        "signals": [
+          "landmark-child-class-repeat",
+          "section-class-repeat"
+        ],
+        "status": "candidate",
+        "note": "AEM component text-and-image"
+      }
+    ],
+    "pageTypes": {
+      "theme": {
+        "type": "program",
+        "pages": [
+          "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+          "nb-bank-bedrift-bedriftsforsikring-html",
+          "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+          "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html"
+        ],
+        "archetype": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html"
+      },
+      "category-hub": {
+        "type": "landing",
+        "pages": [
+          "nb-bank-bedrift-bedriftskort-html",
+          "nb-bank-bedrift-betaling-html",
+          "nb-bank-bedrift-daglig-drift-html",
+          "nb-bank-bedrift-konto-html",
+          "nb-bank-bedrift-lan-finansiering-html",
+          "nb-bank-bedrift-pensjon-html",
+          "nb-bank-bedrift-regnskap-html",
+          "nb-bank-bedrift-sparing-investering-html",
+          "nb-bank-bedrift-starte-bedrift-html",
+          "nb-bank-bedrift-tips-og-rad-html",
+          "nb-bank-privat-daglig-bruk-html",
+          "nb-bank-privat-eiendom-html",
+          "nb-bank-privat-forsikring-html",
+          "nb-bank-privat-lan-html",
+          "nb-bank-privat-lofavor-html",
+          "nb-bank-privat-pensjon-html",
+          "nb-bank-privat-private-banking-html",
+          "nb-bank-privat-sparing-html",
+          "nb-bank-privat-svindel-html",
+          "nb-bank-privat-tips-og-rad-html"
+        ],
+        "archetype": "nb-bank-privat-lan-html"
+      },
+      "product": {
+        "type": "program",
+        "pages": [
+          "nb-bank-bedrift-bedriftskort-kredittkort-html",
+          "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+          "nb-bank-bedrift-konto-bedriftskonto-html",
+          "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+          "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+          "nb-bank-bedrift-lan-finansiering-leasing-html",
+          "nb-bank-bedrift-open-api-html",
+          "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+          "nb-bank-om-oss-vare-eksperter-html",
+          "nb-bank-privat-daglig-bruk-bankid-html",
+          "nb-bank-privat-daglig-bruk-bankkonto-html",
+          "nb-bank-privat-daglig-bruk-bankkort-html",
+          "nb-bank-privat-daglig-bruk-kredittkort-html",
+          "nb-bank-privat-daglig-bruk-mobilbank-html",
+          "nb-bank-privat-forsikring-barneforsikring-html",
+          "nb-bank-privat-forsikring-bilforsikring-html",
+          "nb-bank-privat-forsikring-innboforsikring-html",
+          "nb-bank-privat-forsikring-kundehistorier-html",
+          "nb-bank-privat-forsikring-reiseforsikring-html",
+          "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+          "nb-bank-privat-lan-billan-html",
+          "nb-bank-privat-lan-boliglan-html",
+          "nb-bank-privat-lan-forbrukslan-html",
+          "nb-bank-privat-lan-gronne-lan-html",
+          "nb-bank-privat-lan-lanekalkulator-html",
+          "nb-bank-privat-lan-refinansiering-html",
+          "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+          "nb-bank-privat-sparing-spare-i-fond-html",
+          "nb-bank-privat-sparing-spare-pa-konto-html",
+          "nb-bank-privat-sparing-spare-til-barn-html"
+        ],
+        "archetype": "nb-bank-privat-lan-boliglan-html"
+      },
+      "market-landing": {
+        "type": "landing",
+        "pages": [
+          "nb-bank-bedrift-html",
+          "nb-bank-om-oss-html",
+          "nb-bank-privat-html"
+        ],
+        "archetype": "nb-bank-privat-html"
+      },
+      "faq": {
+        "type": "article",
+        "pages": [
+          "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+          "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+          "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+          "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+          "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+          "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+          "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+          "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+          "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+          "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+          "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+          "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html"
+        ],
+        "archetype": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html"
+      },
+      "kundeservice-hub": {
+        "type": "landing",
+        "pages": [
+          "nb-bank-bedrift-kundeservice-html",
+          "nb-bank-privat-kundeservice-html"
+        ],
+        "archetype": "nb-bank-privat-kundeservice-html"
+      },
+      "campaign-landing": {
+        "type": "landing",
+        "pages": [
+          "nb-bank-om-oss-hjemme-html"
+        ],
+        "archetype": "nb-bank-om-oss-hjemme-html"
+      },
+      "om-oss": {
+        "type": "static",
+        "pages": [
+          "nb-bank-om-oss-investor-html",
+          "nb-bank-om-oss-jobb-og-karriere-html",
+          "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+          "nb-bank-om-oss-personvern-generelle-vilkar-html",
+          "nb-bank-om-oss-personvern-html",
+          "nb-bank-om-oss-presse-html",
+          "nb-bank-om-oss-samfunnsansvar-html",
+          "nb-bank-om-oss-selskaper-html"
+        ],
+        "archetype": "nb-bank-om-oss-presse-html"
+      },
+      "news-article": {
+        "type": "article",
+        "pages": [
+          "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+          "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+          "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+          "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+          "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+          "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+          "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+          "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+          "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+          "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html"
+        ],
+        "archetype": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html"
+      },
+      "news-listing": {
+        "type": "listing",
+        "pages": [
+          "nb-bank-om-oss-nyheter-html"
+        ],
+        "archetype": "nb-bank-om-oss-nyheter-html"
+      },
+      "tool": {
+        "type": "form",
+        "pages": [
+          "nb-bank-privat-forsikring-meld-skade-html",
+          "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+          "nb-bank-privat-kundeservice-verktoy-klager-html",
+          "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
+          "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+          "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html"
+        ],
+        "archetype": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html"
+      },
+      "utility": {
+        "type": "static",
+        "pages": [
+          "nb-bank-privat-kundeservice-bestill-prisliste-html",
+          "nb-bank-privat-kundeservice-kontakt-html"
+        ],
+        "archetype": "nb-bank-privat-kundeservice-kontakt-html"
+      },
+      "markedsnytt-listing": {
+        "type": "listing",
+        "pages": [
+          "nb-bank-privat-sparing-markedsnytt-html"
+        ],
+        "archetype": "nb-bank-privat-sparing-markedsnytt-html"
+      }
+    },
+    "metadata": {
+      "siteName": "SpareBank 1",
+      "defaultOgImage": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg",
+      "themeColor": "#ffffff",
+      "locale": "nb-NO",
+      "organizationJsonLd": {
+        "@type": "Organization",
+        "name": "SpareBank 1",
+        "url": "https://www.sparebank1.no/",
+        "logo": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg"
+      }
+    },
+    "embedDominatedPages": [],
+    "register": "brand"
+  }
+}

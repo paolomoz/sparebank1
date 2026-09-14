@@ -1,0 +1,5131 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-09-14T14:58:08.650Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200,
+    "stylePass": {
+      "fetchedAt": "2026-09-14T15:00:25.098Z",
+      "waitMs": 4288,
+      "httpStatus": 200,
+      "viewport": "1440x900@2x",
+      "script": "stardust/scripts/capture-styles.mjs"
+    }
+  },
+  "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/betaling/utenlandsbetaling.html",
+  "finalUrl": "https://www.sparebank1.no/nb/bank/bedrift/betaling/utenlandsbetaling.html",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-09-14T14:58:08.650Z",
+  "title": "Utenlandsbetaling bedrift | SpareBank 1",
+  "metaDescription": "Sende og motta betalinger internasjonalt? Slik gjør du det enkelt og trygt.",
+  "canonical": "https://www.sparebank1.no/nb/bank/bedrift/betaling/utenlandsbetaling.html",
+  "og": {
+    "title": "Utenlandsbetaling bedrift",
+    "description": "Sende og motta betalinger internasjonalt? Slik gjør du det enkelt og trygt.",
+    "image": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg",
+    "type": "article",
+    "siteName": null
+  },
+  "themeColor": {},
+  "language": "nb",
+  "generator": null,
+  "heroHeadline": "Handel med utlandet",
+  "heroLede": "Har du kunder eller leverandører i utlandet? Hos oss kan du sende og motta penger fra utlandet, trygt og enkelt.",
+  "heroSource": "dom",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Handel med utlandet",
+      "id": null,
+      "domPath": "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(1) > div.columns-grid__content.columns-grid__content--middle > div.text > div.aem-component-container.text-container > div.text-wrapper > h1",
+      "top": 693,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "46px",
+        "lineHeight": "56px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Slik sender du penger til utlandet",
+      "id": null,
+      "domPath": "div.step__wrap.step__wrap-sand > div.ffe-grid.ffe-grid--gap-none > div.ffe-grid__row:nth-child(1) > div.columns-grid__column.ffe-grid__col--sm-12 > header.step__header.columns-grid__content > h2.ffe-h3",
+      "top": 1491,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "28px",
+        "lineHeight": "36px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Land uten IBAN-nummer",
+      "id": null,
+      "domPath": "main#main-content > div.accordion.parbase:nth-child(8) > div.accordion-wrap > div.accordion-container > h3",
+      "top": 2552,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "28px",
+        "lineHeight": "36px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "USA",
+      "id": null,
+      "domPath": "div#ext-comp-2661 > h3.ffe-h6.ffe-accordion-item__heading",
+      "top": 2689,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Canada",
+      "id": null,
+      "domPath": "div#ext-comp-2676 > h3.ffe-h6.ffe-accordion-item__heading",
+      "top": 3016,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Australia",
+      "id": null,
+      "domPath": "div#ext-comp-2691 > h3.ffe-h6.ffe-accordion-item__heading",
+      "top": 3343,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Sør-Afrika",
+      "id": null,
+      "domPath": "div#ext-comp-2706 > h3.ffe-h6.ffe-accordion-item__heading",
+      "top": 3678,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Motta penger fra utlandet",
+      "id": null,
+      "domPath": "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(2) > div.columns-grid__content.columns-grid__content--start > div.text:nth-child(1) > div.aem-component-container.text-container > div.text-wrapper > h2",
+      "top": 4068,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "36px",
+        "lineHeight": "44px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Valutakalkulator",
+      "id": null,
+      "domPath": "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(2) > div.columns-grid__content.columns-grid__content--start > div.text > div.aem-component-container.text-container > div.text-wrapper > h3",
+      "top": 4452,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "28px",
+        "lineHeight": "36px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Større betalinger",
+      "id": null,
+      "domPath": "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(2) > div.columns-grid__content.columns-grid__content--start > div.text > div.aem-component-container.text-container > div.text-wrapper > h3",
+      "top": 4452,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "28px",
+        "lineHeight": "36px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Har du faste inn- eller utbetalinger til utlandet?",
+      "id": null,
+      "domPath": "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(2) > div.columns-grid__content.columns-grid__content--start > div.text:nth-child(1) > div.aem-component-container.text-container > div.text-wrapper > h2",
+      "top": 4808,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "36px",
+        "lineHeight": "44px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Hva lurer andre på?",
+      "id": null,
+      "domPath": "main#main-content > div.faq.parbase:nth-child(13) > div > div.title:nth-child(1) > div.aem-component-container > h2.ffe-h2",
+      "top": 5259,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "36px",
+        "lineHeight": "44px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Hvor finner jeg bilag på betalinger til utlandet?",
+      "id": null,
+      "domPath": "main#main-content > div.faq.parbase:nth-child(13) > div > div.ffe-accordion:nth-child(2) > div.ffe-accordion-item.faq-item:nth-child(1) > h3.ffe-h6.faq-item__heading",
+      "top": 5330,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Hvor lang tid tar det før en i utlandet får pengene sine?",
+      "id": null,
+      "domPath": "main#main-content > div.faq.parbase:nth-child(13) > div > div.ffe-accordion:nth-child(2) > div.ffe-accordion-item.faq-item:nth-child(2) > h3.ffe-h6.faq-item__heading",
+      "top": 5639,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Kan jeg sende og motta penger fra alle land?",
+      "id": null,
+      "domPath": "main#main-content > div.faq.parbase:nth-child(13) > div > div.ffe-accordion:nth-child(2) > div.ffe-accordion-item.faq-item:nth-child(3) > h3.ffe-h6.faq-item__heading",
+      "top": 6116,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Kan jeg stoppe eller tilbakekalle en betaling til utlandet?",
+      "id": null,
+      "domPath": "main#main-content > div.faq.parbase:nth-child(13) > div > div.ffe-accordion:nth-child(2) > div.ffe-accordion-item.faq-item:nth-child(4) > h3.ffe-h6.faq-item__heading",
+      "top": 6737,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Hva gjør jeg hvis en betaling til utlandet ikke er mottatt, eller har kommet i retur?",
+      "id": null,
+      "domPath": "main#main-content > div.faq.parbase:nth-child(13) > div > div.ffe-accordion:nth-child(2) > div.ffe-accordion-item.faq-item:nth-child(5) > h3.ffe-h6.faq-item__heading",
+      "top": 7086,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Har du spørsmål om utenlandsbetalinger?",
+      "id": null,
+      "domPath": "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(1) > div.columns-grid__content.columns-grid__content--start > div.text:nth-child(1) > div.aem-component-container.text-container > div.text-wrapper > h3",
+      "top": 7935,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "28px",
+        "lineHeight": "36px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Se også",
+      "id": null,
+      "domPath": "div.columns-grid__wrap > div.ffe-grid.ffe-grid--gap-none > div.ffe-grid__row.columns-grid__row:nth-child(1) > div.columns-grid__column.ffe-grid__col--sm-12 > div.columns-grid__content.columns-grid__content--left > h2",
+      "top": 8379,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "36px",
+        "lineHeight": "44px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Hva synes du om denne siden?",
+      "id": "question-mcmzi",
+      "domPath": "h2#question-mcmzi",
+      "top": 8885,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "28px",
+        "lineHeight": "36px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Kontakt oss",
+      "id": null,
+      "domPath": "div#contact-us > div.contact-section > h2",
+      "top": 9090,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "36px",
+        "lineHeight": "44px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Bedrift",
+      "id": null,
+      "domPath": "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(1) > h2.ffe-h4",
+      "top": 9551,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Logg inn",
+      "id": null,
+      "domPath": "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(2) > h2.ffe-h4",
+      "top": 9551,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Sosiale medier",
+      "id": null,
+      "domPath": "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column.footer-bottom__column-right:nth-child(2) > div.footer-bottom__column-links.footer-bottom__social-links > h2.ffe-h4",
+      "top": 9551,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Bruk av informasjonskapsler",
+      "id": null,
+      "domPath": "section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(2) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > span.optin-header-wrapper > h2.ffe-h3.optin-settings-header",
+      "top": 120,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "24px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Teknisk",
+      "id": null,
+      "domPath": "div.optin__pages.optin__pages--settings-page:nth-child(2) > section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(3) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > h3.ffe-h5.optin-settings__header",
+      "top": 176,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    }
+  ],
+  "headingsCrawl": [
+    {
+      "tag": "h1",
+      "text": "Handel med utlandet"
+    },
+    {
+      "tag": "h2",
+      "text": "Slik sender du penger til utlandet"
+    },
+    {
+      "tag": "h3",
+      "text": "Land uten IBAN-nummer"
+    },
+    {
+      "tag": "h3",
+      "text": "USA"
+    },
+    {
+      "tag": "h3",
+      "text": "Canada"
+    },
+    {
+      "tag": "h3",
+      "text": "Australia"
+    },
+    {
+      "tag": "h3",
+      "text": "Sør-Afrika"
+    },
+    {
+      "tag": "h2",
+      "text": "Motta penger fra utlandet"
+    },
+    {
+      "tag": "h3",
+      "text": "Valutakalkulator"
+    },
+    {
+      "tag": "h3",
+      "text": "Større betalinger"
+    },
+    {
+      "tag": "h2",
+      "text": "Har du faste inn- eller utbetalinger til utlandet?"
+    },
+    {
+      "tag": "h2",
+      "text": "Hva lurer andre på?"
+    },
+    {
+      "tag": "h3",
+      "text": "Hvor finner jeg bilag på betalinger til utlandet?"
+    },
+    {
+      "tag": "h3",
+      "text": "Hvor lang tid tar det før en i utlandet får pengene sine?"
+    },
+    {
+      "tag": "h3",
+      "text": "Kan jeg sende og motta penger fra alle land?"
+    },
+    {
+      "tag": "h3",
+      "text": "Kan jeg stoppe eller tilbakekalle en betaling til utlandet?"
+    },
+    {
+      "tag": "h3",
+      "text": "Hva gjør jeg hvis en betaling til utlandet ikke er mottatt, eller har kommet i retur?"
+    },
+    {
+      "tag": "h3",
+      "text": "Har du spørsmål om utenlandsbetalinger?"
+    },
+    {
+      "tag": "h2",
+      "text": "Se også"
+    },
+    {
+      "tag": "h2",
+      "text": "Hva synes du om denne siden?"
+    },
+    {
+      "tag": "h2",
+      "text": "Kontakt oss"
+    },
+    {
+      "tag": "h2",
+      "text": "Bedrift"
+    },
+    {
+      "tag": "h2",
+      "text": "Logg inn"
+    },
+    {
+      "tag": "h2",
+      "text": "Sosiale medier"
+    }
+  ],
+  "body": [
+    "Har du kunder eller leverandører i utlandet? Hos oss kan du sende og motta penger fra utlandet, trygt og enkelt.",
+    "IBAN",
+    "BIC/SWIFT",
+    "Navn og adresse til mottaker",
+    "Er du usikker på noen av disse, så sjekk med mottaker at du har riktig informasjon. Legger du inn en betaling med feil i for eksempel, navn eller adresse til mottaker, kan betalingen komme i retur.",
+    "Slik betaler du til land uten IBAN.",
+    "Får du ikke opp ønsket valuta i nettbanken, så ta kontakt med mottaker for å sjekke om du kan sende i en annen valuta. Vi anbefaler EUR til land som benytter Euro. Til andre land anbefaler vi US dollar (USD).",
+    "Vi anbefaler ikke å sende i norske kroner NOK, med mindre mottaker ber om det. Overføring i NOK tar lenger tid og er dyrere, da det må veksles i flere omganger.",
+    "Enkelte land har ikke IBAN-nummer. Betalingen registreres på samme måte som med IBAN betaling, men med kontonummer og bankkode. Dette trenger du:",
+    "Skal du sende faktura til en utenlandsleverandør, må fakturaen inneholde ditt IBAN-nummer og din adresse. I tillegg trenger leverandøren bankens BIC/SWIFT-kode, som er: forskjellig for våre banker. Gå til din bank for å finne BIC.",
+    "Betalinger til og fra utlandet veksles til gjeldende markedskurs når betalingen behandles. Du finner veiledende kurser i valutakalkulatoren vår.",
+    "For betalinger over 100 000 kroner må du oppgi betalingsart og hva betalingen gjelder, i tråd med Valutaregisterloven.",
+    "Med valutakonto slipper du å veksle hver gang, og kan selv velge når det passer. Det gir bedre oversikt, mindre valutarisiko og en enklere hverdag.",
+    "Vi er her for å hjelpe deg! Sammen finner vi løsningen som er best for bedriften din.",
+    "Vi har også andre produkter for handel med utlandet.",
+    "En avtale der vi som bank garanterer at varen blir betalt. Remburs er vanlig for kjøp og salg over 20.000 kroner.",
+    "Brukes når kjøper og selger kjenner til hverandre fra før.",
+    "Velg om du vil bruke den avtalte valutakursen eller kursen i markedet når du skal betale for varen.",
+    "Med terminforretning slipper du å bekymre deg for endringer i valutakursen - fra du kjøper et produkt til du skal betale for det."
+  ],
+  "codeBlocks": [],
+  "landmarks": [
+    {
+      "tag": "nav",
+      "role": "navigation",
+      "id": null,
+      "classes": [
+        "page-nav"
+      ],
+      "childElementCount": 2,
+      "innerText": "Til hovedmeny\nTil hovedinnhold",
+      "children": [
+        {
+          "tag": "a",
+          "role": null,
+          "id": null,
+          "classes": [
+            "visually-hidden",
+            "focusable"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Til hovedmeny",
+          "wordCount": 2,
+          "rect": {
+            "top": -1,
+            "height": 1,
+            "width": 1
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "a",
+          "role": null,
+          "id": null,
+          "classes": [
+            "visually-hidden",
+            "focusable"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Til hovedinnhold",
+          "wordCount": 2,
+          "rect": {
+            "top": -1,
+            "height": 1,
+            "width": 1
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "aside",
+      "role": "complementary",
+      "id": null,
+      "classes": [],
+      "childElementCount": 1,
+      "innerText": "",
+      "children": []
+    },
+    {
+      "tag": "header",
+      "role": "banner",
+      "id": null,
+      "classes": [
+        "header"
+      ],
+      "childElementCount": 1,
+      "innerText": "PRIVAT\nBEDRIFT\nOM OSS\nSøk\nBli bedriftskunde\nLogg inn\nDaglig drift\nRegnskap\nFinansiering\nForsikring\nPensjon\nSparing og investering\nStarte bedrift\nKundeservice",
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "header__wrap"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "PRIVAT\nBEDRIFT\nOM OSS\nSøk\nBli bedriftskunde\nLogg inn\nDaglig drift\nRegnskap\nFinansiering\nForsikring\nPensjon\nSparing og investering\nStarte bedrift\nKundeservice",
+          "wordCount": 21,
+          "rect": {
+            "top": 0,
+            "height": 129,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": "navigation",
+      "id": "main-menu",
+      "classes": [
+        "header__main-nav"
+      ],
+      "childElementCount": 1,
+      "innerText": "Daglig drift\nRegnskap\nFinansiering\nForsikring\nPensjon\nSparing og investering\nStarte bedrift\nKundeservice",
+      "children": [
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Daglig drift",
+          "wordCount": 2,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 88
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Regnskap",
+          "wordCount": 1,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 76
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Finansiering",
+          "wordCount": 1,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 92
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Forsikring",
+          "wordCount": 1,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 76
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Pensjon",
+          "wordCount": 1,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 60
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Sparing og investering",
+          "wordCount": 3,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 175
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Starte bedrift",
+          "wordCount": 2,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 105
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Kundeservice",
+          "wordCount": 1,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 104
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "role": "complementary",
+      "id": null,
+      "classes": [
+        "bank-choice"
+      ],
+      "childElementCount": 1,
+      "innerText": "Vi er flere banker i hele Norge\nVelg en bank for å se betingelser\nDitt postnummer\nBruk min posisjon\nSe alle banker",
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "component-root"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Vi er flere banker i hele Norge\nVelg en bank for å se betingelser\nDitt postnummer\nBruk min posisjon\nSe alle banker",
+          "wordCount": 22,
+          "rect": {
+            "top": 129,
+            "height": 400,
+            "width": 1440
+          },
+          "body": [
+            "Vi er flere banker i hele Norge"
+          ],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "role": "main",
+      "id": "main-content",
+      "classes": [
+        "main"
+      ],
+      "childElementCount": 16,
+      "innerText": "Betaling\nHandel med utlandet\nHar du kunder eller leverandører i utlandet? Hos oss kan du sende og motta penger fra utlandet, trygt og enkelt.\nBetale til utlandet\nMotta penger fra utlandet\nSlik sender du penger til utlandet\n1\nDette trenger du\n2\nAktivere utlandsbetaling\n3\nRegistrere betalingen\nIBAN\nBIC/SWIFT\nNavn og adresse til mottaker\nEr du usikker på noen av disse, så sjekk med mottaker at du har riktig informasjon. Legger du inn en betaling med feil i for eksempel, navn eller adresse til mottaker, kan betalingen komme i retur.\nSlik betaler du til land uten IBAN.\nFår du ikke opp ønsket valuta i nettbanken, så ta kontakt med mottaker for å sjekke om du kan sende i en annen valuta. Vi anbefaler EUR til land som benytter Euro. Til andre land anbefaler vi US dollar (USD).\nVi anbefaler ikke å sende i norske kroner NOK, med mindre mottaker ber om det. Overføring i NOK tar lenger tid og er dyrere, da det må veksles i flere omganger.\nLand uten IBAN-nummer\nEnkelte land har ikke IBAN-nummer. Betalingen registreres på samme måte som med IBAN betaling, men med kontonummer og bankkode. Dette trenger du:\nUSA\nKontonummer\nBankkode eller BIC/SWIFT\nNavn og adresse til mottaker\nBetalinger til USA kan man benytte bankkode eller BIC/SWIFT. Bankkode oppgis som ABA routing no, eller Fedwire. På faktura kan den være oppgitt som FW + 9 siffer. Du oppgir de 9 siffrene i feltet for bankkode.\nCanada\nKontonummer, inneholder som regel 7 - 12 tegn\nBankkode eller BIC/SWIFT\nNavn og adresse. Dette må være riktig, ellers kan betalingen komme i retur.\nBetalinger til Canada kan man benytte bankkode eller BIC/SWIFT. Bankkode oppgis som Bank Identifier eller Transit no. På faktura står det gjerne  CC + 9 siffer. Du oppgir de 9 sifrene i feltet for bankkode.\nAustralia\nKontonummer\nBIC/SWIFT til mottaker bank\nBankkode\nNavn og adresse til mottaker\nBankkode oppgis som BSB (Bank State Branch). På faktura står det gjerne AU + 6 siffer. Du oppgir de 6 sifrene i feltet for bankkode.\nSør-Afrika\nKontonummer\nBIC/SWIFT til mottaker bank\nBankkode\nBankkoden oppgis ofte i fakutra som ZA + 6 siffer. Du oppgir de 6 sifrene i feltet for bankkode.\nMotta penger fra utlandet\nSkal du sende faktura til en utenlandsleverandør, må fakturaen inneholde ditt IBAN-nummer og din adresse. I tillegg trenger leverandøren bankens BIC/SWIFT-kode, som er: forskjellig for våre banker. Gå til din bank for å finne BIC.\nFinn ditt IBAN\nValutakalkulator\nBetalinger til og fra utlandet veksles til gjeldende markedskurs når betalingen behandles. Du finner veiledende kurser i valutakalkulatoren vår.\nStørre betalinger\nFor betalinger over 100 000 kroner må du oppgi betalingsart og hva betalingen gjelder, i tråd med Valutaregisterloven.\nHar du faste inn- eller utbetalinger til utlandet?\nMed valutakonto slipper du å veksle hver gang, og kan selv velge når det passer. Det gir bedre oversikt, mindre valutarisiko og en enklere hverdag.\nLes mer om valutakonto\nHva lurer andre på?\nHvor finner jeg bilag på betalinger til utlandet?\nDette finner du i nettbanken klikk på Transaksjoner og Utbetalinger, her kan du søke på dato, konto, beløp og mottaker. Klikk på Kvittering for å laste ned, eller huk av for flere transaksjoner til venstre og klikk deretter Last ned valgte.\nVar dette nyttig?\nHvor finner jeg bilag på betalinger til utlandet?\nHvor lang tid tar det før en i utlandet får pengene sine?\nEuropa\nVanlig betaling: Kan ta inntil 1–5 virkedager\nHastebetaling: Normalt samme virkedag\nMed Vipps (innad i Norden) går det like raskt som vippsing innenlands.\nAndre land\nVanlig betaling: Kan ta inntil 1–5 virkedager\nHastebetaling: 1–2 virkedager (kan ta lenger tid avhengig av landet du skal betale til)\nVar dette nyttig?\nHvor lang tid tar det før en i utlandet får pengene sine?\nKan jeg sende og motta penger fra alle land?\nInternasjonale sanksjoner kan påvirke betalinger til og fra enkelte land. Som bank er vi pålagt å følge gjeldende regler for sanksjoner, noe som betyr at enkelte betalinger kan bli forsinket, stoppet eller returnert. Sanksjonene kan gjelde personer, selskaper, varer, tjenester, bestemte sektorer eller geografiske områder.\nDet er viktig at du som kunde er oppmerksom på sanksjonsrisikoen knyttet til din virksomhet, og setter deg inn i gjeldende regler for sanksjoner og eksportkontroll. Dersom du er usikker, anbefaler vi at du kontakter juridisk rådgiver eller Utenriksdepartementet for veiledning. Du finner mer informasjon om det norske regelverket på nettsidene til Regjeringen.\nVær også oppmerksom på at norske virksomheter og banker må forholde seg til internasjonale sanksjonsregler gitt av for eksempel amerikanske myndigheter, EU og FN og internasjonale bankers regelverk.\nEn oversikt over amerikanske sanksjonsregler og søkesider finner du på Sanctions Programs and Country Information og Sanctions List Search.\nVar dette nyttig?\nKan jeg sende og motta penger fra alle land?\nKan jeg stoppe eller tilbakekalle en betaling til utlandet?\nEr betalingen allerede belastet konto og sendt kan vi sende en anmodning om retur til mottaker bank mot et gebyr og eventuelt kurstap. Det er ingen garanti for at betalingen vil komme i retur.\nHvis betalingen nylig er lagt inn, ta umiddelbart kontakt med oss.\nVar dette nyttig?\nKan jeg stoppe eller tilbakekalle en betaling til utlandet?\nHva gjør jeg hvis en betaling til utlandet ikke er mottatt, eller har kommet i retur?\nHvis mottakeren ikke har fått betalingen, anbefaler vi at mottakeren først tar kontakt med sin bank for mer informasjon. Når betalingen er tilgjengelig hos mottaker, avhenger blant annet av mottakerland, tidspunkt for når betalingen ble sendt og hvilken valuta betalingen er gjort i.\nDersom betalingen har kommet i retur, skyldes det ofte mangelfull eller feil informasjon. Før du sender betalingen på nytt, anbefaler vi at du sjekker følgende:\nHar du fått riktige opplysninger fra mottakeren, navn og adresse må være korrekt.\nEr mottakerkontoen fortsatt i bruk.\nBle alle opplysninger lagt inn riktig da du sendte betalingen.\nHar du valgt riktig valuta. Det er ikke alle land man kan sende lokal valuta til, og da anbefaler vi å sende i US dollar (USD).\nSjekk også hva som eventuelt står i returmeldingen. Du finner den i nettbanken under Transaksjoner og Dokumenter og bilag.\nVar dette nyttig?\nHva gjør jeg hvis en betaling til utlandet ikke er mottatt, eller har kommet i retur?\nSe flere svar\nHar du spørsmål om utenlandsbetalinger?\nVi er her for å hjelpe deg! Sammen finner vi løsningen som er best for bedriften din.\nJeg vil ha kontakt med rådgiver\nSe også\nVi har også andre produkter for handel med utlandet.\nRemburs\nEn avtale der vi som bank garanterer at varen blir betalt. Remburs er vanlig for kjøp og salg over 20.000 kroner.\nDokumentinkasso\nBrukes når kjøper og selger kjenner til hverandre fra før.\nValutaopsjon\nVelg om du vil bruke den avtalte valutakursen eller kursen i markedet når du skal betale for varen.\nTerminforretning\nMed terminforretning slipper du å bekymre deg for endringer i valutakursen - fra du kjøper et produkt til du skal betale for det.\nHva synes du om denne siden?",
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "aem-main-container",
+            "to-parent"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Betaling",
+          "wordCount": 1,
+          "rect": {
+            "top": 539,
+            "height": 24,
+            "width": 1280
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "background-container",
+            "parbase",
+            "color-fillable"
+          ],
+          "purpose": "feature-list",
+          "headlineRef": 0,
+          "innerTextSummary": "Handel med utlandet\nHar du kunder eller leverandører i utlandet? Hos oss kan du sende og motta penger fra utlandet, trygt og enkelt.\nBetale til utlandet\nMotta penger fra utlandet",
+          "wordCount": 30,
+          "rect": {
+            "top": 527,
+            "height": 820,
+            "width": 1440
+          },
+          "body": [
+            "Har du kunder eller leverandører i utlandet? Hos oss kan du sende og motta penger fra utlandet, trygt og enkelt."
+          ],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "background-container",
+            "parbase",
+            "color-fillable"
+          ],
+          "purpose": "cta-band",
+          "headlineRef": 1,
+          "innerTextSummary": "Slik sender du penger til utlandet\n1\nDette trenger du\n2\nAktivere utlandsbetaling\n3\nRegistrere betalingen\nIBAN\nBIC/SWIFT\nNavn og adresse til mottaker\nEr du usikker på noen av disse, så sjekk med mottaker at du har riktig informasjon. Legger ",
+          "wordCount": 66,
+          "rect": {
+            "top": 1347,
+            "height": 674,
+            "width": 1440
+          },
+          "body": [
+            "Er du usikker på noen av disse, så sjekk med mottaker at du har riktig informasjon. Legger du inn en betaling med feil i for eksempel, navn eller adresse til mottaker, kan betalingen komme i retur.",
+            "Slik betaler du til land uten IBAN."
+          ],
+          "lists": [
+            {
+              "ordered": false,
+              "items": [
+                "IBAN",
+                "BIC/SWIFT",
+                "Navn og adresse til mottaker"
+              ]
+            }
+          ],
+          "qa": [
+            {
+              "q": "1\nDette trenger du",
+              "a": "IBANBIC/SWIFTNavn og adresse til mottaker Er du usikker på noen av disse, så sjekk med mottaker at du har riktig informasjon. Legger du inn en betaling med feil i for eksempel, navn eller adresse til mottaker, kan betalingen komme i retur. Slik betaler du til land uten IBAN."
+            }
+          ],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "tip",
+            "parbase"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Får du ikke opp ønsket valuta i nettbanken, så ta kontakt med mottaker for å sjekke om du kan sende i en annen valuta. Vi anbefaler EUR til land som benytter Euro. Til andre land anbefaler vi US dollar (USD).\nVi anbefaler ikke å sende i nor",
+          "wordCount": 71,
+          "rect": {
+            "top": 2093,
+            "height": 315,
+            "width": 1440
+          },
+          "body": [
+            "Får du ikke opp ønsket valuta i nettbanken, så ta kontakt med mottaker for å sjekke om du kan sende i en annen valuta. Vi anbefaler EUR til land som benytter Euro. Til andre land anbefaler vi US dollar (USD).",
+            "Vi anbefaler ikke å sende i norske kroner NOK, med mindre mottaker ber om det. Overføring i NOK tar lenger tid og er dyrere, da det må veksles i flere omganger."
+          ],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "accordion",
+            "parbase",
+            "color-fillable"
+          ],
+          "purpose": "faq",
+          "headlineRef": 2,
+          "innerTextSummary": "Land uten IBAN-nummer\nEnkelte land har ikke IBAN-nummer. Betalingen registreres på samme måte som med IBAN betaling, men med kontonummer og bankkode. Dette trenger du:\nUSA\nKontonummer\nBankkode eller BIC/SWIFT\nNavn og adresse til mottaker\nBe",
+          "wordCount": 195,
+          "rect": {
+            "top": 2480,
+            "height": 1516,
+            "width": 1440
+          },
+          "body": [
+            "Enkelte land har ikke IBAN-nummer. Betalingen registreres på samme måte som med IBAN betaling, men med kontonummer og bankkode. Dette trenger du:",
+            "Betalinger til USA kan man benytte bankkode eller BIC/SWIFT. Bankkode oppgis som ABA routing no, eller Fedwire. På faktura kan den være oppgitt som FW + 9 siffer. Du oppgir de 9 siffrene i feltet for bankkode.",
+            "Betalinger til Canada kan man benytte bankkode eller BIC/SWIFT. Bankkode oppgis som Bank Identifier eller Transit no. På faktura står det gjerne  CC + 9 siffer. Du oppgir de 9 sifrene i feltet for bankkode.",
+            "Bankkode oppgis som BSB (Bank State Branch). På faktura står det gjerne AU + 6 siffer. Du oppgir de 6 sifrene i feltet for bankkode.",
+            "Bankkoden oppgis ofte i fakutra som ZA + 6 siffer. Du oppgir de 6 sifrene i feltet for bankkode."
+          ],
+          "lists": [
+            {
+              "ordered": false,
+              "items": [
+                "Kontonummer",
+                "Bankkode eller BIC/SWIFT",
+                "Navn og adresse til mottaker"
+              ]
+            },
+            {
+              "ordered": false,
+              "items": [
+                "Kontonummer, inneholder som regel 7 - 12 tegn",
+                "Bankkode eller BIC/SWIFT",
+                "Navn og adresse. Dette må være riktig, ellers kan betalingen komme i retur."
+              ]
+            },
+            {
+              "ordered": false,
+              "items": [
+                "Kontonummer",
+                "BIC/SWIFT til mottaker bank",
+                "Bankkode",
+                "Navn og adresse til mottaker"
+              ]
+            },
+            {
+              "ordered": false,
+              "items": [
+                "Kontonummer",
+                "BIC/SWIFT til mottaker bank",
+                "Bankkode"
+              ]
+            }
+          ],
+          "qa": [
+            {
+              "q": "USA",
+              "a": "KontonummerBankkode eller BIC/SWIFTNavn og adresse til mottaker Betalinger til USA kan man benytte bankkode eller BIC/SWIFT. Bankkode oppgis som ABA routing no, eller Fedwire. På faktura kan den være oppgitt som FW + 9 siffer. Du oppgir de 9 siffrene i feltet for bankkode."
+            },
+            {
+              "q": "Canada",
+              "a": "Kontonummer, inneholder som regel 7 - 12 tegnBankkode eller BIC/SWIFTNavn og adresse. Dette må være riktig, ellers kan betalingen komme i retur. Betalinger til Canada kan man benytte bankkode eller BIC/SWIFT. Bankkode oppgis som Bank Identifier eller Transit no. På faktura står det gjerne CC + 9 siffer. Du oppgir de 9 sifrene i feltet for bankkode."
+            },
+            {
+              "q": "Australia",
+              "a": "KontonummerBIC/SWIFT til mottaker bankBankkodeNavn og adresse til mottaker Bankkode oppgis som BSB (Bank State Branch). På faktura står det gjerne AU + 6 siffer. Du oppgir de 6 sifrene i feltet for bankkode."
+            },
+            {
+              "q": "Sør-Afrika",
+              "a": "KontonummerBIC/SWIFT til mottaker bankBankkode Bankkoden oppgis ofte i fakutra som ZA + 6 siffer. Du oppgir de 6 sifrene i feltet for bankkode."
+            }
+          ],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "columns-grid",
+            "parbase",
+            "color-fillable"
+          ],
+          "purpose": "unknown",
+          "headlineRef": 7,
+          "innerTextSummary": "Motta penger fra utlandet\nSkal du sende faktura til en utenlandsleverandør, må fakturaen inneholde ditt IBAN-nummer og din adresse. I tillegg trenger leverandøren bankens BIC/SWIFT-kode, som er: forskjellig for våre banker. Gå til din bank ",
+          "wordCount": 42,
+          "rect": {
+            "top": 3996,
+            "height": 384,
+            "width": 1440
+          },
+          "body": [
+            "Skal du sende faktura til en utenlandsleverandør, må fakturaen inneholde ditt IBAN-nummer og din adresse. I tillegg trenger leverandøren bankens BIC/SWIFT-kode, som er: forskjellig for våre banker. Gå til din bank for å finne BIC."
+          ],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "columns-grid",
+            "parbase",
+            "color-fillable"
+          ],
+          "purpose": "unknown",
+          "headlineRef": 8,
+          "innerTextSummary": "Valutakalkulator\nBetalinger til og fra utlandet veksles til gjeldende markedskurs når betalingen behandles. Du finner veiledende kurser i valutakalkulatoren vår.\nStørre betalinger\nFor betalinger over 100 000 kroner må du oppgi betalingsart ",
+          "wordCount": 40,
+          "rect": {
+            "top": 4380,
+            "height": 356,
+            "width": 1440
+          },
+          "body": [
+            "Betalinger til og fra utlandet veksles til gjeldende markedskurs når betalingen behandles. Du finner veiledende kurser i valutakalkulatoren vår.",
+            "For betalinger over 100 000 kroner må du oppgi betalingsart og hva betalingen gjelder, i tråd med Valutaregisterloven."
+          ],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "columns-grid",
+            "parbase",
+            "color-fillable"
+          ],
+          "purpose": "unknown",
+          "headlineRef": 10,
+          "innerTextSummary": "Har du faste inn- eller utbetalinger til utlandet?\nMed valutakonto slipper du å veksle hver gang, og kan selv velge når det passer. Det gir bedre oversikt, mindre valutarisiko og en enklere hverdag.\nLes mer om valutakonto",
+          "wordCount": 37,
+          "rect": {
+            "top": 4736,
+            "height": 451,
+            "width": 1440
+          },
+          "body": [
+            "Med valutakonto slipper du å veksle hver gang, og kan selv velge når det passer. Det gir bedre oversikt, mindre valutarisiko og en enklere hverdag."
+          ],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "faq",
+            "parbase"
+          ],
+          "purpose": "faq",
+          "headlineRef": 11,
+          "innerTextSummary": "Hva lurer andre på?\nHvor finner jeg bilag på betalinger til utlandet?\nDette finner du i nettbanken klikk på Transaksjoner og Utbetalinger, her kan du søke på dato, konto, beløp og mottaker. Klikk på Kvittering for å laste ned, eller huk av ",
+          "wordCount": 549,
+          "rect": {
+            "top": 5259,
+            "height": 2532,
+            "width": 768
+          },
+          "body": [
+            "Dette finner du i nettbanken klikk på Transaksjoner og Utbetalinger, her kan du søke på dato, konto, beløp og mottaker. Klikk på Kvittering for å laste ned, eller huk av for flere transaksjoner til venstre og klikk deretter Last ned valgte.",
+            "Europa",
+            "Vanlig betaling: Kan ta inntil 1–5 virkedager\nHastebetaling: Normalt samme virkedag",
+            "Med Vipps (innad i Norden) går det like raskt som vippsing innenlands.",
+            "Andre land",
+            "Vanlig betaling: Kan ta inntil 1–5 virkedager\nHastebetaling: 1–2 virkedager (kan ta lenger tid avhengig av landet du skal betale til)",
+            "Internasjonale sanksjoner kan påvirke betalinger til og fra enkelte land. Som bank er vi pålagt å følge gjeldende regler for sanksjoner, noe som betyr at enkelte betalinger kan bli forsinket, stoppet eller returnert. Sanksjonene kan gjelde personer, selskaper, varer, tjenester, bestemte sektorer eller geografiske områder.",
+            "Det er viktig at du som kunde er oppmerksom på sanksjonsrisikoen knyttet til din virksomhet, og setter deg inn i gjeldende regler for sanksjoner og eksportkontroll. Dersom du er usikker, anbefaler vi at du kontakter juridisk rådgiver eller Utenriksdepartementet for veiledning. Du finner mer informasjon om det norske regelverket på nettsidene til Regjeringen.",
+            "Vær også oppmerksom på at norske virksomheter og banker må forholde seg til internasjonale sanksjonsregler gitt av for eksempel amerikanske myndigheter, EU og FN og internasjonale bankers regelverk.",
+            "En oversikt over amerikanske sanksjonsregler og søkesider finner du på Sanctions Programs and Country Information og Sanctions List Search.",
+            "Er betalingen allerede belastet konto og sendt kan vi sende en anmodning om retur til mottaker bank mot et gebyr og eventuelt kurstap. Det er ingen garanti for at betalingen vil komme i retur.",
+            "Hvis betalingen nylig er lagt inn, ta umiddelbart kontakt med oss.",
+            "Hvis mottakeren ikke har fått betalingen, anbefaler vi at mottakeren først tar kontakt med sin bank for mer informasjon. Når betalingen er tilgjengelig hos mottaker, avhenger blant annet av mottakerland, tidspunkt for når betalingen ble sendt og hvilken valuta betalingen er gjort i.",
+            "Dersom betalingen har kommet i retur, skyldes det ofte mangelfull eller feil informasjon. Før du sender betalingen på nytt, anbefaler vi at du sjekker følgende:"
+          ],
+          "lists": [
+            {
+              "ordered": false,
+              "items": [
+                "Har du fått riktige opplysninger fra mottakeren, navn og adresse må være korrekt.",
+                "Er mottakerkontoen fortsatt i bruk.",
+                "Ble alle opplysninger lagt inn riktig da du sendte betalingen.",
+                "Har du valgt riktig valuta. Det er ikke alle land man kan sende lokal valuta til, og da anbefaler vi å sende i US dollar (USD).",
+                "Sjekk også hva som eventuelt står i returmeldingen. Du finner den i nettbanken under Transaksjoner og Dokumenter og bilag."
+              ]
+            }
+          ],
+          "qa": [
+            {
+              "q": "Hvor finner jeg bilag på betalinger til utlandet?",
+              "a": "Dette finner du i nettbanken klikk på Transaksjoner og Utbetalinger, her kan du søke på dato, konto, beløp og mottaker. Klikk på Kvittering for å laste ned, eller huk av for flere transaksjoner til venstre og klikk deretter Last ned valgte. Var dette nyttig?JaNei Hvor finner jeg bilag på betalinger til utlandet?"
+            },
+            {
+              "q": "Hvor lang tid tar det før en i utlandet får pengene sine?",
+              "a": "Europa Vanlig betaling: Kan ta inntil 1–5 virkedager Hastebetaling: Normalt samme virkedag Med Vipps (innad i Norden) går det like raskt som vippsing innenlands. Andre land Vanlig betaling: Kan ta inntil 1–5 virkedager Hastebetaling: 1–2 virkedager (kan ta lenger tid avhengig av landet du skal betale til) Var dette nyttig?JaNei Hvor lang tid tar det før en i utlandet får pengene sine?"
+            },
+            {
+              "q": "Kan jeg sende og motta penger fra alle land?",
+              "a": "Internasjonale sanksjoner kan påvirke betalinger til og fra enkelte land. Som bank er vi pålagt å følge gjeldende regler for sanksjoner, noe som betyr at enkelte betalinger kan bli forsinket, stoppet eller returnert. Sanksjonene kan gjelde personer, selskaper, varer, tjenester, bestemte sektorer eller geografiske områder. Det er viktig at du som kunde er oppmerksom på sanksjonsrisikoen knyttet til din virksomhet, og setter deg inn i gjeldende regler for sanksjoner og eksportkontroll. Dersom du er usikker, anbefaler vi at du kontakter juridisk rådgiver eller Utenriksdepartementet for veiledning. Du finner mer informasjon om det norske regelverket på nettsidene til Regjeringen. Vær også oppmerksom på at norske virksomheter og banker må forholde seg til internasjonale sanksjonsregler gitt av for eksempel amerikanske myndigheter, EU og FN og internasjonale bankers regelverk. En oversikt over amerikanske sanksjonsregler og søkesider finner du på Sanctions Programs and Country Information og Sanctions List Search. Var dette nyttig?JaNei Kan jeg sende og motta penger fra alle land?"
+            },
+            {
+              "q": "Kan jeg stoppe eller tilbakekalle en betaling til utlandet?",
+              "a": "Er betalingen allerede belastet konto og sendt kan vi sende en anmodning om retur til mottaker bank mot et gebyr og eventuelt kurstap. Det er ingen garanti for at betalingen vil komme i retur. Hvis betalingen nylig er lagt inn, ta umiddelbart kontakt med oss. Var dette nyttig?JaNei Kan jeg stoppe eller tilbakekalle en betaling til utlandet?"
+            },
+            {
+              "q": "Hva gjør jeg hvis en betaling til utlandet ikke er mottatt, eller har kommet i retur?",
+              "a": "Hvis mottakeren ikke har fått betalingen, anbefaler vi at mottakeren først tar kontakt med sin bank for mer informasjon. Når betalingen er tilgjengelig hos mottaker, avhenger blant annet av mottakerland, tidspunkt for når betalingen ble sendt og hvilken valuta betalingen er gjort i. Dersom betalingen har kommet i retur, skyldes det ofte mangelfull eller feil informasjon. Før du sender betalingen på nytt, anbefaler vi at du sjekker følgende: Har du fått riktige opplysninger fra mottakeren, navn og adresse må være korrekt.Er mottakerkontoen fortsatt i bruk.Ble alle opplysninger lagt inn riktig da du sendte betalingen.Har du valgt riktig valuta. Det er ikke alle land man kan sende lokal valuta til, og da anbefaler vi å sende i US dollar (USD).Sjekk også hva som eventuelt står i returmeldingen. Du finner den i nettbanken under Transaksjoner og Dokumenter og bilag. Var dette nyttig?JaNei Hva gjør jeg hvis en betaling til utlandet ikke er mottatt, eller har kommet i retur?"
+            },
+            {
+              "q": "Hva er SEPA og ISO 20022 XML?",
+              "a": "SEPA står for Single Euro Payments Area, og er et felles betalingsområde for euro som skal gjøre det lettere å handle på tvers av land tilhørende EU/EØS, Sveits, Monaco, Andorra, San Marino og Vatikanet. En SEPA betaling er basert på bruk av det internasjonale kontonummeret IBAN. I praksis betyr det at du må bruke IBAN dersom du skal betale til et euroland. For SEPA betalinger deles gebyrer mellom avsender og mottaker. Raskeste og rimeligste måte er å betale i EUR og dele gebyrene. ISO 20022 XML er det formatet for innsending av betalingsfiler som benyttes for betalinger i euro innen SEPA, om du betaler fra et ERP/regnskapsprogram. Sjekk med leverandøren av regnskapsprogrammet om du har problemer med å betale til Europa fra regnskapsprogrammet. Les mer om filoverføringer Var dette nyttig?JaNei Hva er SEPA og ISO 20022 XML?"
+            },
+            {
+              "q": "Hva er routingnummer, ABA eller FedWire?",
+              "a": "Amerikanske banker bruker Routingnumber, ABA eller FedWire som bankkode. Det skrives alltid som FW+9 tall i feltet for bankkode. Eksempel: FW123456789. Var dette nyttig?JaNei Hva er routingnummer, ABA eller FedWire?"
+            },
+            {
+              "q": "Hva er bankkode?",
+              "a": "Bankkode brukes i noen land som ikke har IBAN. Koden er forskjellig fra land til land, og bør brukes sammen med BIC (SWIFT). Her ser du hvilke land det gjelder og hvilken bankkode du skal bruke: USA har bankkode: FW + 9 tall (kalles Routingnumber, ABA eller Fedwire) Canada har bankkode: CC + 9 tall (kalles Clearing code) Sør-Afrika har bankkode: ZA + 6 tall Australia har bankkode: AU + 6 tall New Zealand har bankkode: NZ + 6 tall Hong Kong har bankkode: HK + 3 tall Var dette nyttig?JaNei Hva er bankkode?"
+            },
+            {
+              "q": "Hva er IBAN og BIC/SWIFT, og hvor finner jeg det?",
+              "a": "IBAN står for International Bank Account Number. Det er kontonummeret du skal bruke når bedriften skal betale eller få betalt fra utlandet. Finn bedriftskontoens IBAN i nettbanken: Gå til kontoer - klikk på en konto - finn IBAN under kontoinformasjon.Finn IBAN uten å logge inn i nettbanken (men du må huske kontonummeret).Oversikt over land som bruker IBAN. BIC/SWIFT er bankens internasjonale kode eller adresse. BIC/SWIFT-koden er ulikt fra bank til bank. Gå til banken din for å finne riktig bic/swift. Andre bedrifters BIC/SWIFT kan du finne her. Var dette nyttig?JaNei Hva er IBAN og BIC/SWIFT, og hvor finner jeg det?"
+            }
+          ],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "columns-grid",
+            "parbase",
+            "color-fillable"
+          ],
+          "purpose": "unknown",
+          "headlineRef": 17,
+          "innerTextSummary": "Har du spørsmål om utenlandsbetalinger?\nVi er her for å hjelpe deg! Sammen finner vi løsningen som er best for bedriften din.\nJeg vil ha kontakt med rådgiver",
+          "wordCount": 28,
+          "rect": {
+            "top": 7863,
+            "height": 444,
+            "width": 1440
+          },
+          "body": [
+            "Vi er her for å hjelpe deg! Sammen finner vi løsningen som er best for bedriften din."
+          ],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "background-container",
+            "parbase",
+            "color-fillable"
+          ],
+          "purpose": "feature-list",
+          "headlineRef": 18,
+          "innerTextSummary": "Se også\nVi har også andre produkter for handel med utlandet.\nRemburs\nEn avtale der vi som bank garanterer at varen blir betalt. Remburs er vanlig for kjøp og salg over 20.000 kroner.\nDokumentinkasso\nBrukes når kjøper og selger kjenner til h",
+          "wordCount": 87,
+          "rect": {
+            "top": 8307,
+            "height": 506,
+            "width": 1440
+          },
+          "body": [
+            "Vi har også andre produkter for handel med utlandet.",
+            "En avtale der vi som bank garanterer at varen blir betalt. Remburs er vanlig for kjøp og salg over 20.000 kroner.",
+            "Brukes når kjøper og selger kjenner til hverandre fra før.",
+            "Velg om du vil bruke den avtalte valutakursen eller kursen i markedet når du skal betale for varen.",
+            "Med terminforretning slipper du å bekymre deg for endringer i valutakursen - fra du kjøper et produkt til du skal betale for det."
+          ],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "feedback",
+            "parbase"
+          ],
+          "purpose": "cta-band",
+          "headlineRef": 19,
+          "innerTextSummary": "Hva synes du om denne siden?",
+          "wordCount": 6,
+          "rect": {
+            "top": 8885,
+            "height": 100,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "header",
+      "role": "banner",
+      "id": null,
+      "classes": [
+        "step__header",
+        "columns-grid__content"
+      ],
+      "childElementCount": 1,
+      "innerText": "Slik sender du penger til utlandet",
+      "children": [
+        {
+          "tag": "h2",
+          "role": null,
+          "id": null,
+          "classes": [
+            "ffe-h3"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Slik sender du penger til utlandet",
+          "wordCount": 6,
+          "rect": {
+            "top": 1491,
+            "height": 36,
+            "width": 1141
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "footer",
+      "role": "contentinfo",
+      "id": null,
+      "classes": [
+        "footer-wrapper"
+      ],
+      "childElementCount": 2,
+      "innerText": "Kontakt oss\n Ring oss\n7-18\n Avtal møte\nmed en rådgiver\n Skriv til oss\n Finn kontor\n Chat\nTil toppen\nBedrift\nBli kunde\nSperre kort\nMeld skade\nPrisliste\nKundeservice\nKlage\nSvindel\nLogg inn\nNettbank privat\nNettbank bedrift\nForsikring\nPensjon\nSosiale medier\nLinkedin\nYouTube\nSelskapsinformasjon Vilkår for bruk av nettsiden Personvern Informasjonskapsler For utviklere\nSpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo",
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "footer-top",
+            "container-fluid"
+          ],
+          "purpose": "footer-nav",
+          "headlineRef": 20,
+          "innerTextSummary": "Kontakt oss\n Ring oss\n7-18\n Avtal møte\nmed en rådgiver\n Skriv til oss\n Finn kontor\n Chat\nTil toppen",
+          "wordCount": 18,
+          "rect": {
+            "top": 9049,
+            "height": 427,
+            "width": 1280
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "footer-bottom"
+          ],
+          "purpose": "footer-nav",
+          "headlineRef": 21,
+          "innerTextSummary": "Bedrift\nBli kunde\nSperre kort\nMeld skade\nPrisliste\nKundeservice\nKlage\nSvindel\nLogg inn\nNettbank privat\nNettbank bedrift\nForsikring\nPensjon\nSosiale medier\nLinkedin\nYouTube\nSelskapsinformasjon Vilkår for bruk av nettsiden Personvern Informasj",
+          "wordCount": 40,
+          "rect": {
+            "top": 9476,
+            "height": 527,
+            "width": 1440
+          },
+          "body": [
+            "SpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo"
+          ],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    }
+  ],
+  "ctas": [
+    {
+      "label": "Søk",
+      "href": null,
+      "tag": "button",
+      "domPath": "div#outer-main-wrap > header.header > div.header__wrap > div.header__content.aem-main-container > div.header__user-content:nth-child(2) > button.header__search-desktop.search-toggle",
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(103, 103, 103)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "35px",
+        "padding": "8px 15px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(103, 103, 103)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "label": "Bli bedriftskunde",
+      "href": "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+      "tag": "a",
+      "domPath": "div#header-bli-kunde > div.button-wrapper > a.ffe-button.ffe-button--action",
+      "style": {
+        "backgroundColor": "rgb(0, 117, 78)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "30px",
+        "padding": "8px 16px",
+        "boxShadow": "none",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "label": "Logg inn",
+      "href": "/nb/bank/bedrift/innlogging.html",
+      "tag": "a",
+      "domPath": "a#login-button",
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 117, 78)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "30px",
+        "padding": "8px 16px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(0, 117, 78)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "label": "Bruk min posisjon",
+      "href": null,
+      "tag": "button",
+      "domPath": "div.bank-choice__container > div.bank-choice-wrap > div.bank-choice-wrap__search:nth-child(3) > div.bank-choice__input:nth-child(1) > div.bank-choice__myposition:nth-child(2) > button.ffe-button.ffe-button--secondary",
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 90, 164)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "96px",
+        "padding": "4px 24px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(0, 90, 164)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Se alle banker",
+      "href": null,
+      "tag": "button",
+      "domPath": "div.bank-choice--inline-wrap:nth-child(1) > div.bank-choice__container > div.bank-choice-wrap > div.bank-choice-wrap__search:nth-child(3) > div.bank-choice__all.bank-choice__all--default:nth-child(2) > button.ffe-inline-button.ffe-inline-button--tertiary",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "22px",
+        "padding": "8px 17px",
+        "boxShadow": "none",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "USA",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#ext-comp-2661-button",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 90, 164)",
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "16px",
+        "boxShadow": "none",
+        "border": "0px none rgb(0, 90, 164)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Canada",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#ext-comp-2676-button",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 90, 164)",
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "16px",
+        "boxShadow": "none",
+        "border": "0px none rgb(0, 90, 164)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Australia",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#ext-comp-2691-button",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 90, 164)",
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "16px",
+        "boxShadow": "none",
+        "border": "0px none rgb(0, 90, 164)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Sør-Afrika",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#ext-comp-2706-button",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 90, 164)",
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "16px",
+        "boxShadow": "none",
+        "border": "0px none rgb(0, 90, 164)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Finn ditt IBAN",
+      "href": "/nb/bank/bedrift/kundeservice/verktoy/iban-og-swift.html",
+      "tag": "a",
+      "domPath": "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(2) > div.columns-grid__content.columns-grid__content--start > div.button.parbase:nth-child(2) > div.aem-component-container > div.button-wrapper.left > a.primary-btn.ffe-button",
+      "style": {
+        "backgroundColor": "rgb(0, 90, 164)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "96px",
+        "padding": "8px 24px",
+        "boxShadow": "none",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Les mer om valutakonto",
+      "href": "/nb/bank/bedrift/betaling/utenlandsbetaling/valutakonto.html",
+      "tag": "a",
+      "domPath": "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(2) > div.columns-grid__content.columns-grid__content--start > div.button.parbase:nth-child(2) > div.aem-component-container > div.button-wrapper.left > a.secondary-btn.ffe-button",
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 90, 164)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "96px",
+        "padding": "8px 24px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(0, 90, 164)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Hvor finner jeg bilag på betalinger til utlandet?",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#hvor-finne-bilag-betalinger-utland-1",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 90, 164)",
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "16px",
+        "boxShadow": "none",
+        "border": "0px none rgb(0, 90, 164)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "",
+      "href": null,
+      "tag": "button",
+      "domPath": "div.feedback > div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link:nth-child(1)",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(2, 10, 10)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "boxShadow": "none",
+        "border": "0px none rgb(2, 10, 10)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "",
+      "href": null,
+      "tag": "button",
+      "domPath": "div.feedback > div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link.feedback-thumbs__link--down:nth-child(2)",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(2, 10, 10)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "boxShadow": "none",
+        "border": "0px none rgb(2, 10, 10)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Hvor lang tid tar det før en i utlandet får pengene sine?",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#hvor-lang-tid-for-mottaker-utland-far-penger-1",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 90, 164)",
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "16px",
+        "boxShadow": "none",
+        "border": "0px none rgb(0, 90, 164)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "",
+      "href": null,
+      "tag": "button",
+      "domPath": "div.feedback > div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link:nth-child(1)",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(2, 10, 10)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "boxShadow": "none",
+        "border": "0px none rgb(2, 10, 10)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "",
+      "href": null,
+      "tag": "button",
+      "domPath": "div.feedback > div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link.feedback-thumbs__link--down:nth-child(2)",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(2, 10, 10)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "boxShadow": "none",
+        "border": "0px none rgb(2, 10, 10)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Kan jeg sende og motta penger fra alle land?",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#kan-jeg-sende-motta-penger-alle-land-1",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 90, 164)",
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "16px",
+        "boxShadow": "none",
+        "border": "0px none rgb(0, 90, 164)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "",
+      "href": null,
+      "tag": "button",
+      "domPath": "div.feedback > div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link:nth-child(1)",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(2, 10, 10)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "boxShadow": "none",
+        "border": "0px none rgb(2, 10, 10)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "",
+      "href": null,
+      "tag": "button",
+      "domPath": "div.feedback > div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link.feedback-thumbs__link--down:nth-child(2)",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(2, 10, 10)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "boxShadow": "none",
+        "border": "0px none rgb(2, 10, 10)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Kan jeg stoppe eller tilbakekalle en betaling til utlandet?",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#stopp-betaling-til-utlandet-1",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 90, 164)",
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "16px",
+        "boxShadow": "none",
+        "border": "0px none rgb(0, 90, 164)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "",
+      "href": null,
+      "tag": "button",
+      "domPath": "div.feedback > div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link:nth-child(1)",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(2, 10, 10)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "boxShadow": "none",
+        "border": "0px none rgb(2, 10, 10)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "",
+      "href": null,
+      "tag": "button",
+      "domPath": "div.feedback > div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link.feedback-thumbs__link--down:nth-child(2)",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(2, 10, 10)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "boxShadow": "none",
+        "border": "0px none rgb(2, 10, 10)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Hva gjør jeg hvis en betaling til utlandet ikke er mottatt, eller har kommet i r",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#betaling-til-utlandet-ikke-mottatt-eller-kommet-retur-1",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 90, 164)",
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "16px",
+        "boxShadow": "none",
+        "border": "0px none rgb(0, 90, 164)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "",
+      "href": null,
+      "tag": "button",
+      "domPath": "div.feedback > div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link:nth-child(1)",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(2, 10, 10)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "boxShadow": "none",
+        "border": "0px none rgb(2, 10, 10)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "",
+      "href": null,
+      "tag": "button",
+      "domPath": "div.feedback > div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link.feedback-thumbs__link--down:nth-child(2)",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(2, 10, 10)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "0px",
+        "boxShadow": "none",
+        "border": "0px none rgb(2, 10, 10)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Se flere svar",
+      "href": null,
+      "tag": "button",
+      "domPath": "main#main-content > div.faq.parbase:nth-child(13) > div > button.js-faq-toggle.faq-button--more",
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 90, 164)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "34px",
+        "padding": "8px 24px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(0, 90, 164)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Jeg vil ha kontakt med rådgiver",
+      "href": "/nb/bank/bedrift/kundeservice/bestill/bestill-mote-med-radgiver.html",
+      "tag": "a",
+      "domPath": "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(1) > div.columns-grid__content.columns-grid__content--start > div.button.parbase:nth-child(2) > div.aem-component-container > div.button-wrapper.left:nth-child(1) > a.primary-btn.ffe-button",
+      "style": {
+        "backgroundColor": "rgb(0, 90, 164)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "96px",
+        "padding": "8px 24px",
+        "boxShadow": "none",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "",
+      "href": null,
+      "tag": "button",
+      "domPath": "div.feedback.parbase:nth-child(16) > div.aem-component-container > div.component-root.feedback--layout1 > div.feedback-wrapper > div.feedback-btn__wrapper > button.ffe-button.ffe-button--secondary:nth-child(1)",
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 90, 164)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "96px",
+        "padding": "8px 24px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(0, 90, 164)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "",
+      "href": null,
+      "tag": "button",
+      "domPath": "div.feedback.parbase:nth-child(16) > div.aem-component-container > div.component-root.feedback--layout1 > div.feedback-wrapper > div.feedback-btn__wrapper > button.ffe-button.ffe-button--secondary:nth-child(2)",
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 90, 164)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "96px",
+        "padding": "8px 24px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(0, 90, 164)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    }
+  ],
+  "ctasCrawl": [
+    {
+      "label": "Privat",
+      "href": "/nb/bank/privat.html"
+    },
+    {
+      "label": "Bedrift",
+      "href": "/nb/bank/bedrift.html"
+    },
+    {
+      "label": "Om oss",
+      "href": "/nb/bank/om-oss.html"
+    },
+    {
+      "label": "Søk",
+      "href": null
+    },
+    {
+      "label": "Bli bedriftskunde",
+      "href": "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html"
+    },
+    {
+      "label": "Logg inn",
+      "href": "/nb/bank/bedrift/innlogging.html"
+    },
+    {
+      "label": "Daglig drift",
+      "href": "/nb/bank/bedrift/daglig-drift.html"
+    },
+    {
+      "label": "Regnskap",
+      "href": "/nb/bank/bedrift/regnskap.html"
+    },
+    {
+      "label": "Finansiering",
+      "href": "/nb/bank/bedrift/lan-finansiering.html"
+    },
+    {
+      "label": "Forsikring",
+      "href": "/nb/bank/bedrift/bedriftsforsikring.html"
+    },
+    {
+      "label": "Pensjon",
+      "href": "/nb/bank/bedrift/pensjon.html"
+    },
+    {
+      "label": "Sparing og investering",
+      "href": "/nb/bank/bedrift/sparing-investering.html"
+    },
+    {
+      "label": "Starte bedrift",
+      "href": "/nb/bank/bedrift/starte-bedrift.html"
+    },
+    {
+      "label": "Kundeservice",
+      "href": "/nb/bank/bedrift/kundeservice.html"
+    },
+    {
+      "label": "PinBruk min posisjon",
+      "href": null
+    },
+    {
+      "label": "Se alle banker",
+      "href": null
+    },
+    {
+      "label": "Betaling",
+      "href": "/nb/bank/bedrift/betaling.html"
+    },
+    {
+      "label": "Betale til utlandet",
+      "href": "#mediban"
+    },
+    {
+      "label": "Motta penger fra utlandet",
+      "href": "#motta"
+    },
+    {
+      "label": "Dette trenger du",
+      "href": "#sbs-dette-trenger-du"
+    },
+    {
+      "label": "Aktivere utlandsbetaling",
+      "href": "#sbs-aktivere-utlandsbetaling"
+    },
+    {
+      "label": "Registrere betalingen",
+      "href": "#sbs-registrere-betalingen"
+    },
+    {
+      "label": "Slik betaler du til land uten IBAN.",
+      "href": "#uteniban"
+    },
+    {
+      "label": "USA",
+      "href": null
+    },
+    {
+      "label": "Canada",
+      "href": null
+    },
+    {
+      "label": "Australia",
+      "href": null
+    },
+    {
+      "label": "Sør-Afrika",
+      "href": null
+    },
+    {
+      "label": "Finn ditt IBAN",
+      "href": "/nb/bank/bedrift/kundeservice/verktoy/iban-og-swift.html"
+    },
+    {
+      "label": "valutakalkulatoren",
+      "href": "/nb/bank/bedrift/kundeservice/verktoy/valutakalkulator.html"
+    },
+    {
+      "label": "Valutaregisterloven",
+      "href": "https://lovdata.no/dokument/NL/lov/2004-05-28-29"
+    },
+    {
+      "label": "Les mer om valutakonto",
+      "href": "/nb/bank/bedrift/betaling/utenlandsbetaling/valutakonto.html"
+    },
+    {
+      "label": "Hvor finner jeg bilag på betalinger til utlandet?",
+      "href": null
+    },
+    {
+      "label": "Hvor lang tid tar det før en i utlandet får pengene sine?",
+      "href": null
+    },
+    {
+      "label": "Kan jeg sende og motta penger fra alle land?",
+      "href": null
+    },
+    {
+      "label": "Kan jeg stoppe eller tilbakekalle en betaling til utlandet?",
+      "href": null
+    },
+    {
+      "label": "Hva gjør jeg hvis en betaling til utlandet ikke er mottatt, eller har kommet i retur?",
+      "href": null
+    },
+    {
+      "label": "Se flere svar",
+      "href": null
+    },
+    {
+      "label": "Jeg vil ha kontakt med rådgiver",
+      "href": "/nb/bank/bedrift/kundeservice/bestill/bestill-mote-med-radgiver.html"
+    },
+    {
+      "label": "Remburs",
+      "href": "/nb/bank/bedrift/betaling/utenlandsbetaling/remburs.html"
+    },
+    {
+      "label": "Dokumentinkasso",
+      "href": "/nb/bank/bedrift/betaling/utenlandsbetaling/dokumentinkasso.html"
+    },
+    {
+      "label": "Valutaopsjon",
+      "href": "/nb/bank/bedrift/betaling/utenlandsbetaling/valutaopsjon.html"
+    },
+    {
+      "label": "Terminforretning",
+      "href": "/nb/bank/bedrift/betaling/utenlandsbetaling/terminforretning.html"
+    },
+    {
+      "label": "Ja",
+      "href": null
+    },
+    {
+      "label": "Nei",
+      "href": null
+    },
+    {
+      "label": "Ring oss 7-18",
+      "href": "#/"
+    },
+    {
+      "label": "Avtal møte med en rådgiver",
+      "href": "#/"
+    },
+    {
+      "label": "Skriv til oss",
+      "href": "#/"
+    },
+    {
+      "label": "Finn kontor",
+      "href": "#/"
+    },
+    {
+      "label": "Chat",
+      "href": "#/"
+    },
+    {
+      "label": "Bli kunde",
+      "href": "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html"
+    },
+    {
+      "label": "Sperre kort",
+      "href": "/nb/bank/privat/kundeservice/verktoy/sperre-kort.html"
+    },
+    {
+      "label": "Meld skade",
+      "href": "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html"
+    },
+    {
+      "label": "Prisliste",
+      "href": "/nb/bank/bedrift/kundeservice/bestill/prisliste.html"
+    },
+    {
+      "label": "Kundeservice",
+      "href": "/nb/bank/bedrift/kundeservice.html"
+    },
+    {
+      "label": "Klage",
+      "href": "/nb/bank/privat/kundeservice/verktoy/klager.html"
+    },
+    {
+      "label": "Svindel",
+      "href": "/nb/bank/bedrift/svindel.html"
+    },
+    {
+      "label": "Nettbank privat",
+      "href": "/nb/bank/privat/innlogging.html"
+    },
+    {
+      "label": "Nettbank bedrift",
+      "href": "/nb/bank/bedrift/innlogging.html"
+    },
+    {
+      "label": "Forsikring",
+      "href": "https://forsikring-bedrift.sparebank1.no/"
+    },
+    {
+      "label": "Pensjon",
+      "href": "https://kfb.sparebank1.no/"
+    },
+    {
+      "label": "Linkedin",
+      "href": "https://no.linkedin.com/company/sparebank-1"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/channel/UCdfZfi4HC6bK0-OfRcDJSzg"
+    },
+    {
+      "label": "Selskapsinformasjon",
+      "href": "/nb/bank/om-oss/om-banken/selskapsinformasjon.html"
+    },
+    {
+      "label": "Vilkår for bruk av nettsiden",
+      "href": "/nb/bank/om-oss/personvern/generelle-vilkar.html"
+    },
+    {
+      "label": "Personvern",
+      "href": "/nb/bank/om-oss/personvern.html"
+    },
+    {
+      "label": "Informasjonskapsler",
+      "href": "/nb/bank/om-oss/personvern.html#cookies"
+    },
+    {
+      "label": "For utviklere",
+      "href": "/nb/bank/bedrift/open-api.html"
+    }
+  ],
+  "links": {
+    "internal": [
+      {
+        "href": "/nb/bank/bedrift/betaling/utenlandsbetaling.html?search=",
+        "text": "",
+        "domPath": "div#outer-main-wrap > header.header > div.header__wrap > div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > a.header__search-mobile.search-toggle",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/bedrift.html",
+        "text": "",
+        "domPath": "header.header > div.header__wrap > div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__logo:nth-child(2) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat.html",
+        "text": "PRIVAT",
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__top-nav:nth-child(4) > ul > li:nth-child(1) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/bedrift.html",
+        "text": "BEDRIFT",
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__top-nav:nth-child(4) > ul > li:nth-child(2) > a.js-nav-link.active",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss.html",
+        "text": "OM OSS",
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__top-nav:nth-child(4) > ul > li:nth-child(3) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+        "text": "Bli bedriftskunde",
+        "domPath": "div#header-bli-kunde > div.button-wrapper > a.ffe-button.ffe-button--action",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/bedrift/innlogging.html",
+        "text": "Logg inn",
+        "domPath": "a#login-button",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/bedrift/daglig-drift.html",
+        "text": "Daglig drift",
+        "domPath": "nav#main-menu > ul > li:nth-child(1) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/bedrift/regnskap.html",
+        "text": "Regnskap",
+        "domPath": "nav#main-menu > ul > li:nth-child(2) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/bedrift/lan-finansiering.html",
+        "text": "Finansiering",
+        "domPath": "nav#main-menu > ul > li:nth-child(3) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/bedrift/bedriftsforsikring.html",
+        "text": "Forsikring",
+        "domPath": "nav#main-menu > ul > li:nth-child(4) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/bedrift/pensjon.html",
+        "text": "Pensjon",
+        "domPath": "nav#main-menu > ul > li:nth-child(5) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/bedrift/sparing-investering.html",
+        "text": "Sparing og investering",
+        "domPath": "nav#main-menu > ul > li:nth-child(6) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/bedrift/starte-bedrift.html",
+        "text": "Starte bedrift",
+        "domPath": "nav#main-menu > ul > li:nth-child(7) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice.html",
+        "text": "Kundeservice",
+        "domPath": "nav#main-menu > ul > li:nth-child(8) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/gudbrandsdal/bedrift/betaling/utenlandsbetaling.html",
+        "text": "",
+        "domPath": "div.ffe-collapse.ffe-collapse--hidden > div.ffe-collapse__inner > ol.bank-choice__all-list > li.bank-choice__all-list--item:nth-child(1) > div.bank-choice__all-list--wrap > a.bank-choice__all-list--link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/hallingdal/bedrift/betaling/utenlandsbetaling.html",
+        "text": "",
+        "domPath": "div.ffe-collapse.ffe-collapse--hidden > div.ffe-collapse__inner > ol.bank-choice__all-list > li.bank-choice__all-list--item:nth-child(2) > div.bank-choice__all-list--wrap > a.bank-choice__all-list--link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/helgeland/bedrift/betaling/utenlandsbetaling.html",
+        "text": "",
+        "domPath": "div.ffe-collapse.ffe-collapse--hidden > div.ffe-collapse__inner > ol.bank-choice__all-list > li.bank-choice__all-list--item:nth-child(3) > div.bank-choice__all-list--wrap > a.bank-choice__all-list--link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/lom-skjaak/bedrift/betaling/utenlandsbetaling.html",
+        "text": "",
+        "domPath": "div.ffe-collapse.ffe-collapse--hidden > div.ffe-collapse__inner > ol.bank-choice__all-list > li.bank-choice__all-list--item:nth-child(4) > div.bank-choice__all-list--wrap > a.bank-choice__all-list--link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/nord-norge/bedrift/betaling/utenlandsbetaling.html",
+        "text": "",
+        "domPath": "div.ffe-collapse.ffe-collapse--hidden > div.ffe-collapse__inner > ol.bank-choice__all-list > li.bank-choice__all-list--item:nth-child(5) > div.bank-choice__all-list--wrap > a.bank-choice__all-list--link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/nordmore/bedrift/betaling/utenlandsbetaling.html",
+        "text": "",
+        "domPath": "div.ffe-collapse.ffe-collapse--hidden > div.ffe-collapse__inner > ol.bank-choice__all-list > li.bank-choice__all-list--item:nth-child(6) > div.bank-choice__all-list--wrap > a.bank-choice__all-list--link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/ringerike-hadeland/bedrift/betaling/utenlandsbetaling.html",
+        "text": "",
+        "domPath": "div.ffe-collapse.ffe-collapse--hidden > div.ffe-collapse__inner > ol.bank-choice__all-list > li.bank-choice__all-list--item:nth-child(7) > div.bank-choice__all-list--wrap > a.bank-choice__all-list--link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/smn/bedrift/betaling/utenlandsbetaling.html",
+        "text": "",
+        "domPath": "div.ffe-collapse.ffe-collapse--hidden > div.ffe-collapse__inner > ol.bank-choice__all-list > li.bank-choice__all-list--item:nth-child(8) > div.bank-choice__all-list--wrap > a.bank-choice__all-list--link",
+        "region": "main"
+      },
+      {
+        "href": "/nn/sogn-fjordane/bedrift/betaling/utenlandsbetaling.html",
+        "text": "",
+        "domPath": "div.ffe-collapse.ffe-collapse--hidden > div.ffe-collapse__inner > ol.bank-choice__all-list > li.bank-choice__all-list--item:nth-child(9) > div.bank-choice__all-list--wrap > a.bank-choice__all-list--link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/sor-norge/bedrift/betaling/utenlandsbetaling.html",
+        "text": "",
+        "domPath": "div.ffe-collapse.ffe-collapse--hidden > div.ffe-collapse__inner > ol.bank-choice__all-list > li.bank-choice__all-list--item:nth-child(10) > div.bank-choice__all-list--wrap > a.bank-choice__all-list--link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/ostfold-akershus/bedrift/betaling/utenlandsbetaling.html",
+        "text": "",
+        "domPath": "div.ffe-collapse.ffe-collapse--hidden > div.ffe-collapse__inner > ol.bank-choice__all-list > li.bank-choice__all-list--item:nth-child(11) > div.bank-choice__all-list--wrap > a.bank-choice__all-list--link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/ostlandet/bedrift/betaling/utenlandsbetaling.html",
+        "text": "",
+        "domPath": "div.ffe-collapse.ffe-collapse--hidden > div.ffe-collapse__inner > ol.bank-choice__all-list > li.bank-choice__all-list--item:nth-child(12) > div.bank-choice__all-list--wrap > a.bank-choice__all-list--link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/betaling.html",
+        "text": "Betaling",
+        "domPath": "main#main-content > div.aem-main-container.to-parent:nth-child(1) > a.ffe-link-text.to-parent__link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice/verktoy/iban-og-swift.html",
+        "text": "Finn ditt IBAN",
+        "domPath": "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(2) > div.columns-grid__content.columns-grid__content--start > div.button.parbase:nth-child(2) > div.aem-component-container > div.button-wrapper.left > a.primary-btn.ffe-button",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice/verktoy/valutakalkulator.html",
+        "text": "valutakalkulatoren",
+        "domPath": "div.columns-grid__content.columns-grid__content--start > div.text > div.aem-component-container.text-container > div.text-wrapper > p > a",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/betaling/utenlandsbetaling/valutakonto.html",
+        "text": "Les mer om valutakonto",
+        "domPath": "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(2) > div.columns-grid__content.columns-grid__content--start > div.button.parbase:nth-child(2) > div.aem-component-container > div.button-wrapper.left > a.secondary-btn.ffe-button",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hvor-finne-bilag-betalinger-utland.html",
+        "text": "Hvor finner jeg bilag på betalinger til utlandet?",
+        "domPath": "div#hvor-finne-bilag-betalinger-utland > div.ffe-accordion-item__body > a.faq-link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hvor-lang-tid-for-mottaker-utland-far-penger.html",
+        "text": "Hvor lang tid tar det før en i utlandet får pengene sine?",
+        "domPath": "div#hvor-lang-tid-for-mottaker-utland-far-penger > div.ffe-accordion-item__body > a.faq-link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/kan-jeg-sende-motta-penger-alle-land.html",
+        "text": "Kan jeg sende og motta penger fra alle land?",
+        "domPath": "div#kan-jeg-sende-motta-penger-alle-land > div.ffe-accordion-item__body > a.faq-link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/stopp-betaling-til-utlandet.html",
+        "text": "Kan jeg stoppe eller tilbakekalle en betaling til utlandet?",
+        "domPath": "div#stopp-betaling-til-utlandet > div.ffe-accordion-item__body > a.faq-link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/betaling-til-utlandet-ikke-mottatt-eller-kommet-retur.html",
+        "text": "Hva gjør jeg hvis en betaling til utlandet ikke er mottatt, eller har kommet i retur?",
+        "domPath": "div#betaling-til-utlandet-ikke-mottatt-eller-kommet-retur > div.ffe-accordion-item__body > a.faq-link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hjelpesider-filoverforing.html",
+        "text": "Les mer om filoverføringer",
+        "domPath": "div.ffe-accordion-item__body > div.text:nth-child(1) > div.aem-component-container.text-container > div.text-wrapper > p:nth-child(4) > a",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hva-er-sepa-og-iso-20022-xml.html",
+        "text": "Hva er SEPA og ISO 20022 XML?",
+        "domPath": "div#hva-er-sepa-og-iso-20022-xml > div.ffe-accordion-item__body > a.faq-link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-routingnummer-aba-fedwire.html",
+        "text": "Hva er routingnummer, ABA eller FedWire?",
+        "domPath": "div#hva-er-routingnummer-aba-fedwire > div.ffe-accordion-item__body > a.faq-link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode.html",
+        "text": "Hva er bankkode?",
+        "domPath": "div#hva-er-bankkode > div.ffe-accordion-item__body > a.faq-link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice/verktoy/iban-og-swift.html",
+        "text": "IBAN uten å logge inn",
+        "domPath": "div.text:nth-child(1) > div.aem-component-container.text-container > div.text-wrapper > ul > li:nth-child(2) > a",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice/verktoy/iban-og-swift.html",
+        "text": "land som bruker IBAN",
+        "domPath": "div.text:nth-child(1) > div.aem-component-container.text-container > div.text-wrapper > ul > li:nth-child(3) > a",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hvor-finner-jeg-bic-swift.html",
+        "text": "Hva er IBAN og BIC/SWIFT, og hvor finner jeg det?",
+        "domPath": "div#hvor-finner-jeg-bic-swift > div.ffe-accordion-item__body > a.faq-link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice/bestill/bestill-mote-med-radgiver.html",
+        "text": "Jeg vil ha kontakt med rådgiver",
+        "domPath": "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(1) > div.columns-grid__content.columns-grid__content--start > div.button.parbase:nth-child(2) > div.aem-component-container > div.button-wrapper.left:nth-child(1) > a.primary-btn.ffe-button",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/betaling/utenlandsbetaling/remburs.html",
+        "text": "Remburs",
+        "domPath": "div.columns-grid__content.columns-grid__content--start > div.card > div.card__container.card__container--medium > div.card__container-content:nth-child(2) > div.card__container-content-wrapper:nth-child(1) > a.ffe-h5.ffe-text-link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/betaling/utenlandsbetaling/dokumentinkasso.html",
+        "text": "Dokumentinkasso",
+        "domPath": "div.columns-grid__content.columns-grid__content--start > div.card > div.card__container.card__container--medium > div.card__container-content:nth-child(2) > div.card__container-content-wrapper:nth-child(1) > a.ffe-h5.ffe-text-link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/betaling/utenlandsbetaling/valutaopsjon.html",
+        "text": "Valutaopsjon",
+        "domPath": "div.columns-grid__content.columns-grid__content--start > div.card > div.card__container.card__container--medium > div.card__container-content:nth-child(2) > div.card__container-content-wrapper:nth-child(1) > a.ffe-h5.ffe-text-link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/bedrift/betaling/utenlandsbetaling/terminforretning.html",
+        "text": "Terminforretning",
+        "domPath": "div.columns-grid__content.columns-grid__content--start > div.card > div.card__container.card__container--medium > div.card__container-content:nth-child(2) > div.card__container-content-wrapper:nth-child(1) > a.ffe-h5.ffe-text-link",
+        "region": "main"
+      },
+      {
+        "href": "/nb/gudbrandsdal/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1 Gudbrandsdal",
+        "domPath": "div.call-banks__col1:nth-child(2) > div.contact-bankpicker__banksinfo:nth-child(4) > div.js-contact-bankpicker__bankInfo.call-banks__bankInfo:nth-child(1) > div.call-banks__bankname:nth-child(1) > h3 > a.contact-bankpicker__bankname.ffe-h4",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/hallingdal/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1 Hallingdal Valdres",
+        "domPath": "div.call-banks__col1:nth-child(2) > div.contact-bankpicker__banksinfo:nth-child(4) > div.js-contact-bankpicker__bankInfo.call-banks__bankInfo:nth-child(2) > div.call-banks__bankname:nth-child(1) > h3 > a.contact-bankpicker__bankname.ffe-h4",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/helgeland/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1 Helgeland",
+        "domPath": "div.call-banks__col1:nth-child(2) > div.contact-bankpicker__banksinfo:nth-child(4) > div.js-contact-bankpicker__bankInfo.call-banks__bankInfo:nth-child(3) > div.call-banks__bankname:nth-child(1) > h3 > a.contact-bankpicker__bankname.ffe-h4",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/lom-skjaak/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1 Lom og Skjåk",
+        "domPath": "div.call-banks__col1:nth-child(2) > div.contact-bankpicker__banksinfo:nth-child(4) > div.js-contact-bankpicker__bankInfo.call-banks__bankInfo:nth-child(4) > div.call-banks__bankname:nth-child(1) > h3 > a.contact-bankpicker__bankname.ffe-h4",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/nord-norge/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1 Nord-Norge",
+        "domPath": "div.call-banks__col1:nth-child(2) > div.contact-bankpicker__banksinfo:nth-child(4) > div.js-contact-bankpicker__bankInfo.call-banks__bankInfo:nth-child(5) > div.call-banks__bankname:nth-child(1) > h3 > a.contact-bankpicker__bankname.ffe-h4",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/nordmore/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1 Nordmøre",
+        "domPath": "div.call-banks__col1:nth-child(2) > div.contact-bankpicker__banksinfo:nth-child(4) > div.js-contact-bankpicker__bankInfo.call-banks__bankInfo:nth-child(6) > div.call-banks__bankname:nth-child(1) > h3 > a.contact-bankpicker__bankname.ffe-h4",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/ringerike-hadeland/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1 Ringerike Hadeland",
+        "domPath": "div.call-banks__col1:nth-child(2) > div.contact-bankpicker__banksinfo:nth-child(4) > div.js-contact-bankpicker__bankInfo.call-banks__bankInfo:nth-child(7) > div.call-banks__bankname:nth-child(1) > h3 > a.contact-bankpicker__bankname.ffe-h4",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/smn/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1 SMN",
+        "domPath": "div.call-banks__col1:nth-child(2) > div.contact-bankpicker__banksinfo:nth-child(4) > div.js-contact-bankpicker__bankInfo.call-banks__bankInfo:nth-child(8) > div.call-banks__bankname:nth-child(1) > h3 > a.contact-bankpicker__bankname.ffe-h4",
+        "region": "footer"
+      },
+      {
+        "href": "/nn/sogn-fjordane/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1 Sogn og Fjordane",
+        "domPath": "div.call-banks__col1:nth-child(2) > div.contact-bankpicker__banksinfo:nth-child(4) > div.js-contact-bankpicker__bankInfo.call-banks__bankInfo:nth-child(9) > div.call-banks__bankname:nth-child(1) > h3 > a.contact-bankpicker__bankname.ffe-h4",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/sor-norge/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1 Sør-Norge",
+        "domPath": "div.call-banks__col1:nth-child(2) > div.contact-bankpicker__banksinfo:nth-child(4) > div.js-contact-bankpicker__bankInfo.call-banks__bankInfo:nth-child(10) > div.call-banks__bankname:nth-child(1) > h3 > a.contact-bankpicker__bankname.ffe-h4",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/ostfold-akershus/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1 Østfold Akershus",
+        "domPath": "div.call-banks__col1:nth-child(2) > div.contact-bankpicker__banksinfo:nth-child(4) > div.js-contact-bankpicker__bankInfo.call-banks__bankInfo:nth-child(11) > div.call-banks__bankname:nth-child(1) > h3 > a.contact-bankpicker__bankname.ffe-h4",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/ostlandet/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1 Østlandet",
+        "domPath": "div.call-banks__col1:nth-child(2) > div.contact-bankpicker__banksinfo:nth-child(4) > div.js-contact-bankpicker__bankInfo.call-banks__bankInfo:nth-child(12) > div.call-banks__bankname:nth-child(1) > h3 > a.contact-bankpicker__bankname.ffe-h4",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+        "text": "SpareBank 1 Nord-Norge",
+        "domPath": "div > div.appointment-banks > div.contact-bankpicker__banksinfo:nth-child(4) > div.contact-bankpicker__banksinfo-list > div.js-contact-bankpicker__bankInfo.appointment-banks__bankInfo:nth-child(5) > a.contact-bankpicker__bankname.ffe-link-text",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/sor-norge/bedrift/kundeservice.html",
+        "text": "SpareBank 1 Sør-Norge",
+        "domPath": "div > div.appointment-banks > div.contact-bankpicker__banksinfo:nth-child(4) > div.contact-bankpicker__banksinfo-list > div.js-contact-bankpicker__bankInfo.appointment-banks__bankInfo:nth-child(10) > a.contact-bankpicker__bankname.ffe-link-text",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/gudbrandsdal/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1\n Gudbrandsdal",
+        "domPath": "div#banks__expand-region-appointment > div.contact-bankpicker__bankList:nth-child(2) > div.contact-bankpicker__bankList-list > div.contact-bankpicker__bankList-list-item:nth-child(1) > a.contact-bankpicker__bankBtn.ffe-inline-button",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/hallingdal/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1\n Hallingdal Valdres",
+        "domPath": "div#banks__expand-region-appointment > div.contact-bankpicker__bankList:nth-child(2) > div.contact-bankpicker__bankList-list > div.contact-bankpicker__bankList-list-item:nth-child(2) > a.contact-bankpicker__bankBtn.ffe-inline-button",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/helgeland/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1\n Helgeland",
+        "domPath": "div#banks__expand-region-appointment > div.contact-bankpicker__bankList:nth-child(2) > div.contact-bankpicker__bankList-list > div.contact-bankpicker__bankList-list-item:nth-child(3) > a.contact-bankpicker__bankBtn.ffe-inline-button",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/lom-skjaak/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1\n Lom og Skjåk",
+        "domPath": "div#banks__expand-region-appointment > div.contact-bankpicker__bankList:nth-child(2) > div.contact-bankpicker__bankList-list > div.contact-bankpicker__bankList-list-item:nth-child(4) > a.contact-bankpicker__bankBtn.ffe-inline-button",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+        "text": "SpareBank 1\n Nord-Norge",
+        "domPath": "div#banks__expand-region-appointment > div.contact-bankpicker__bankList:nth-child(2) > div.contact-bankpicker__bankList-list > div.contact-bankpicker__bankList-list-item:nth-child(5) > a.contact-bankpicker__bankBtn.ffe-inline-button",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/nordmore/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1\n Nordmøre",
+        "domPath": "div#banks__expand-region-appointment > div.contact-bankpicker__bankList:nth-child(2) > div.contact-bankpicker__bankList-list > div.contact-bankpicker__bankList-list-item:nth-child(6) > a.contact-bankpicker__bankBtn.ffe-inline-button",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/ringerike-hadeland/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1\n Ringerike Hadeland",
+        "domPath": "div#banks__expand-region-appointment > div.contact-bankpicker__bankList:nth-child(2) > div.contact-bankpicker__bankList-list > div.contact-bankpicker__bankList-list-item:nth-child(7) > a.contact-bankpicker__bankBtn.ffe-inline-button",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/smn/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1\n SMN",
+        "domPath": "div#banks__expand-region-appointment > div.contact-bankpicker__bankList:nth-child(2) > div.contact-bankpicker__bankList-list > div.contact-bankpicker__bankList-list-item:nth-child(8) > a.contact-bankpicker__bankBtn.ffe-inline-button",
+        "region": "footer"
+      },
+      {
+        "href": "/nn/sogn-fjordane/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1\n Sogn og Fjordane",
+        "domPath": "div#banks__expand-region-appointment > div.contact-bankpicker__bankList:nth-child(2) > div.contact-bankpicker__bankList-list > div.contact-bankpicker__bankList-list-item:nth-child(9) > a.contact-bankpicker__bankBtn.ffe-inline-button",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/sor-norge/bedrift/kundeservice.html",
+        "text": "SpareBank 1\n Sør-Norge",
+        "domPath": "div#banks__expand-region-appointment > div.contact-bankpicker__bankList:nth-child(2) > div.contact-bankpicker__bankList-list > div.contact-bankpicker__bankList-list-item:nth-child(10) > a.contact-bankpicker__bankBtn.ffe-inline-button",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/ostfold-akershus/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1\n Østfold Akershus",
+        "domPath": "div#banks__expand-region-appointment > div.contact-bankpicker__bankList:nth-child(2) > div.contact-bankpicker__bankList-list > div.contact-bankpicker__bankList-list-item:nth-child(11) > a.contact-bankpicker__bankBtn.ffe-inline-button",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/ostlandet/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1\n Østlandet",
+        "domPath": "div#banks__expand-region-appointment > div.contact-bankpicker__bankList:nth-child(2) > div.contact-bankpicker__bankList-list > div.contact-bankpicker__bankList-list-item:nth-child(12) > a.contact-bankpicker__bankBtn.ffe-inline-button",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/nord-norge/privat/kundeservice/kontakt.html",
+        "text": "SpareBank 1 Nord-Norge",
+        "domPath": "section.contact-box.message-section > div.message-banks > div.contact-bankpicker__banksinfo:nth-child(4) > div.contact-bankpicker__banksinfo-list > div.js-contact-bankpicker__bankInfo.message-banks__bankInfo:nth-child(5) > a.contact-bankpicker__bankname.ffe-link-text",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/ostlandet/bedrift/kundeservice.html",
+        "text": "SpareBank 1 Østlandet",
+        "domPath": "section.contact-box.message-section > div.message-banks > div.contact-bankpicker__banksinfo:nth-child(4) > div.contact-bankpicker__banksinfo-list > div.js-contact-bankpicker__bankInfo.message-banks__bankInfo:nth-child(12) > a.contact-bankpicker__bankname.ffe-link-text",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/nord-norge/privat/kundeservice/kontakt.html",
+        "text": "SpareBank 1\n Nord-Norge",
+        "domPath": "div#banks__expand-region-message > div.contact-bankpicker__bankList:nth-child(2) > div.contact-bankpicker__bankList-list > div.contact-bankpicker__bankList-list-item:nth-child(5) > a.contact-bankpicker__bankBtn.ffe-inline-button",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/ostlandet/bedrift/kundeservice.html",
+        "text": "SpareBank 1\n Østlandet",
+        "domPath": "div#banks__expand-region-message > div.contact-bankpicker__bankList:nth-child(2) > div.contact-bankpicker__bankList-list > div.contact-bankpicker__bankList-list-item:nth-child(12) > a.contact-bankpicker__bankBtn.ffe-inline-button",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/nord-norge/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1\n Nord-Norge",
+        "domPath": "div#banks__expand-region- > div.contact-bankpicker__bankList:nth-child(2) > div.contact-bankpicker__bankList-list > div.contact-bankpicker__bankList-list-item:nth-child(5) > a.contact-bankpicker__bankBtn.ffe-inline-button",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/sor-norge/bedrift/betaling/utenlandsbetaling.html",
+        "text": "SpareBank 1\n Sør-Norge",
+        "domPath": "div#banks__expand-region- > div.contact-bankpicker__bankList:nth-child(2) > div.contact-bankpicker__bankList-list > div.contact-bankpicker__bankList-list-item:nth-child(10) > a.contact-bankpicker__bankBtn.ffe-inline-button",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/bedrift/tips-og-rad/bli-bedriftskunde.html",
+        "text": "Bli kunde",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(1) > ul > li:nth-child(1) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/privat/kundeservice/verktoy/sperre-kort.html",
+        "text": "Sperre kort",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(1) > ul > li:nth-child(2) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/bedrift/bedriftsforsikring/meld-skade.html",
+        "text": "Meld skade",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(1) > ul > li:nth-child(3) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/bedrift/kundeservice/bestill/prisliste.html",
+        "text": "Prisliste",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(1) > ul > li:nth-child(4) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/privat/kundeservice/verktoy/klager.html",
+        "text": "Klage",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(1) > ul > li:nth-child(6) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/bedrift/svindel.html",
+        "text": "Svindel",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(1) > ul > li:nth-child(7) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/privat/innlogging.html",
+        "text": "Nettbank privat",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(2) > ul > li:nth-child(1) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/bedrift/innlogging.html",
+        "text": "Nettbank bedrift",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(2) > ul > li:nth-child(2) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/om-oss/om-banken/selskapsinformasjon.html",
+        "text": "Selskapsinformasjon",
+        "domPath": "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__column-links.footer-bottom__small-links:nth-child(2) > ul > li:nth-child(1) > a.ffe-link-text",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/om-oss/personvern/generelle-vilkar.html",
+        "text": "Vilkår for bruk av nettsiden",
+        "domPath": "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__column-links.footer-bottom__small-links:nth-child(2) > ul > li:nth-child(2) > a.ffe-link-text",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/om-oss/personvern.html",
+        "text": "Personvern",
+        "domPath": "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__column-links.footer-bottom__small-links:nth-child(2) > ul > li:nth-child(3) > a.ffe-link-text",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/om-oss/personvern.html",
+        "text": "Informasjonskapsler",
+        "domPath": "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__column-links.footer-bottom__small-links:nth-child(2) > ul > li:nth-child(4) > a.ffe-link-text",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/bedrift/open-api.html",
+        "text": "For utviklere",
+        "domPath": "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__column-links.footer-bottom__small-links:nth-child(2) > ul > li:nth-child(5) > a.ffe-link-text",
+        "region": "footer"
+      }
+    ],
+    "external": [
+      {
+        "href": "https://kundeforsikring.sparebank1.no/",
+        "text": "Til forsikring",
+        "domPath": "a#forsikring-button",
+        "region": "header"
+      },
+      {
+        "href": "https://lovdata.no/dokument/NL/lov/2004-05-28-29",
+        "text": "Valutaregisterloven",
+        "domPath": "div.columns-grid__content.columns-grid__content--start > div.text > div.aem-component-container.text-container > div.text-wrapper > p > a",
+        "region": "main"
+      },
+      {
+        "href": "http://www.regjeringen.no/",
+        "text": "Regjeringen",
+        "domPath": "div.ffe-accordion-item__body > div.text:nth-child(1) > div.aem-component-container.text-container > div.text-wrapper > p:nth-child(2) > a",
+        "region": "main"
+      },
+      {
+        "href": "https://ofac.treasury.gov/sanctions-programs-and-country-information",
+        "text": "Sanctions Programs and Country Information",
+        "domPath": "div.ffe-accordion-item__body > div.text:nth-child(1) > div.aem-component-container.text-container > div.text-wrapper > p:nth-child(4) > a:nth-child(1)",
+        "region": "main"
+      },
+      {
+        "href": "https://sanctionssearch.ofac.treas.gov/",
+        "text": "Sanctions List Search",
+        "domPath": "div.ffe-accordion-item__body > div.text:nth-child(1) > div.aem-component-container.text-container > div.text-wrapper > p:nth-child(4) > a:nth-child(2)",
+        "region": "main"
+      },
+      {
+        "href": "https://www2.swift.com/bsl/",
+        "text": "kan du finne her.",
+        "domPath": "div.text:nth-child(5) > div.aem-component-container.text-container > div.text-wrapper > ul > li > a",
+        "region": "main"
+      },
+      {
+        "href": "https://forsikring-bedrift.sparebank1.no/",
+        "text": "Forsikring",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(2) > ul > li:nth-child(3) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "https://kfb.sparebank1.no/",
+        "text": "Pensjon",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(2) > ul > li:nth-child(4) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "https://no.linkedin.com/company/sparebank-1",
+        "text": "Linkedin",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column.footer-bottom__column-right:nth-child(2) > div.footer-bottom__column-links.footer-bottom__social-links > ul > li:nth-child(1) > a.social-logo",
+        "region": "footer"
+      },
+      {
+        "href": "https://www.youtube.com/channel/UCdfZfi4HC6bK0-OfRcDJSzg",
+        "text": "YouTube",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column.footer-bottom__column-right:nth-child(2) > div.footer-bottom__column-links.footer-bottom__social-links > ul > li:nth-child(2) > a.social-logo",
+        "region": "footer"
+      }
+    ]
+  },
+  "media": {
+    "images": [
+      {
+        "src": "/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "Tilbake til forsiden for bedrift - SpareBank 1",
+        "naturalWidth": 300,
+        "naturalHeight": 86,
+        "rect": {
+          "top": 10,
+          "width": 180,
+          "height": 50
+        },
+        "loading": null,
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__logo:nth-child(2) > a > picture > img.inline-svg.responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/bankchoice_bg.svg",
+        "currentSrc": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/bankchoice_bg.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 1250,
+        "naturalHeight": 368,
+        "rect": {
+          "top": 193,
+          "width": 1250,
+          "height": 368
+        },
+        "loading": null,
+        "domPath": "div > div.component-root > div.bank-choice--inline > div.bank-choice--inline-wrap:nth-child(1) > div.bank-choice__container > img.bank-choice__background--desktop",
+        "visible": false
+      },
+      {
+        "src": "/content/dam/SB1/foto/profilbilder-liggende/kontormiljo-mann-tenker-pa-jobb-pc-kontor.jpg.thumb.1280.1280.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/kontormiljo-mann-tenker-pa-jobb-pc-kontor.jpg.thumb.1280.1280.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 1200,
+        "naturalHeight": 800,
+        "rect": {
+          "top": 599,
+          "width": 715,
+          "height": 476
+        },
+        "loading": null,
+        "domPath": "div.image.parbase > div.aem-component-container.image--all-rounded-small > div.image-center.image-ratio > div.image-wrapper.image-padding > picture > img.responsive.lazyload--triggered",
+        "visible": false
+      },
+      {
+        "src": "/content/dam/SB1/ikoner/kr-globus-ikon.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/kr-globus-ikon.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": null,
+        "naturalWidth": 180,
+        "naturalHeight": 180,
+        "rect": {
+          "top": 1164,
+          "width": 70,
+          "height": 70
+        },
+        "loading": null,
+        "domPath": "div.columns-grid__content.columns-grid__content--start > div.card > div.card__container.card__container--small > div.card__container-image.card__container-image--left:nth-child(1) > picture > img.inline-svg.responsive",
+        "visible": false
+      },
+      {
+        "src": "/content/dam/SB1/ikoner/kr-globus-ikon-motsatt.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/kr-globus-ikon-motsatt.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": null,
+        "naturalWidth": 150,
+        "naturalHeight": 150,
+        "rect": {
+          "top": 1164,
+          "width": 70,
+          "height": 70
+        },
+        "loading": null,
+        "domPath": "div.columns-grid__content.columns-grid__content--start > div.card > div.card__container.card__container--small > div.card__container-image.card__container-image--left:nth-child(1) > picture > img.inline-svg.responsive",
+        "visible": false
+      },
+      {
+        "src": null,
+        "currentSrc": null,
+        "srcset": null,
+        "sizes": null,
+        "alt": null,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "rect": {
+          "top": 4085,
+          "width": 0,
+          "height": 0
+        },
+        "loading": null,
+        "domPath": "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(1) > div.columns-grid__content.columns-grid__content--start > div.image.parbase > div.aem-component-container.image--all-rounded-small > div.image-wrapper > img.inline-svg.responsive",
+        "visible": false
+      },
+      {
+        "src": "/content/dam/SB1/ikoner/kr-globus-ikon.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/kr-globus-ikon.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 180,
+        "naturalHeight": 180,
+        "rect": {
+          "top": 4452,
+          "width": 93,
+          "height": 93
+        },
+        "loading": null,
+        "domPath": "div.columns-grid__content.columns-grid__content--start > div.image.parbase > div.aem-component-container.image--all-rounded-small > div.image-wrapper.image-padding > picture > img.inline-svg.responsive",
+        "visible": false
+      },
+      {
+        "src": "/content/dam/SB1/ikoner/lyspare-ikon.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/lyspare-ikon.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 180,
+        "naturalHeight": 180,
+        "rect": {
+          "top": 4452,
+          "width": 93,
+          "height": 93
+        },
+        "loading": null,
+        "domPath": "div.columns-grid__content.columns-grid__content--start > div.image.parbase > div.aem-component-container.image--all-rounded-small > div.image-wrapper.image-padding > picture > img.inline-svg.responsive",
+        "visible": false
+      },
+      {
+        "src": "/content/dam/SB1/illustrasjoner/radgiver.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/radgiver.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "radgiver",
+        "naturalWidth": 618,
+        "naturalHeight": 622,
+        "rect": {
+          "top": 4808,
+          "width": 501,
+          "height": 300
+        },
+        "loading": null,
+        "domPath": "div.image.parbase > div.aem-component-container.image--all-rounded-small > div > div.image-wrapper.image-padding > picture > img.inline-svg.responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/profilbilder-liggende/kvinne-laptop.jpg.thumb.1280.1280.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/kvinne-laptop.jpg.thumb.1280.1280.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "Kvinnelig rådgiver på kontor, bilde",
+        "naturalWidth": 656,
+        "naturalHeight": 656,
+        "rect": {
+          "top": 7935,
+          "width": 300,
+          "height": 300
+        },
+        "loading": null,
+        "domPath": "div.image.parbase > div.aem-component-container.image--all-rounded-small > div.image-ratio > div.image-wrapper.image-padding > picture > img.responsive.lazyload--triggered",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 30,
+        "naturalHeight": 30,
+        "rect": {
+          "top": 9594,
+          "width": 30,
+          "height": 30
+        },
+        "loading": null,
+        "domPath": "li:nth-child(1) > a.social-logo > div.aem-component-container.image--all-rounded-small > div.image-wrapper.image-padding > picture > img.inline-svg.responsive",
+        "visible": false
+      },
+      {
+        "src": "/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 37,
+        "naturalHeight": 30,
+        "rect": {
+          "top": 9594,
+          "width": 35,
+          "height": 30
+        },
+        "loading": null,
+        "domPath": "li:nth-child(2) > a.social-logo > div.aem-component-container.image--all-rounded-small > div.image-wrapper.image-padding > picture > img.inline-svg.responsive",
+        "visible": false
+      }
+    ],
+    "inlineSvgs": [
+      {
+        "viewBox": "0 -960 960 960",
+        "domPath": "header.header > div.header__wrap > div.header__content.aem-main-container > div.header__user-content:nth-child(2) > button.header__search-desktop.search-toggle > svg",
+        "width": 24,
+        "height": 24,
+        "ariaLabel": null,
+        "markupLength": 629,
+        "inHeader": true
+      },
+      {
+        "viewBox": "0 0 40 40",
+        "domPath": "div.bank-choice-wrap__search:nth-child(3) > div.bank-choice__input:nth-child(1) > div.bank-choice__myposition:nth-child(2) > button.ffe-button.ffe-button--secondary > span.ffe-button__label > svg.ffe-button__icon.ffe-button__icon--left",
+        "width": 40,
+        "height": 40,
+        "ariaLabel": null,
+        "markupLength": 1589,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "div.bank-choice__container > div.bank-choice-wrap > div.bank-choice-wrap__search:nth-child(3) > div.bank-choice__all.bank-choice__all--default:nth-child(2) > button.ffe-inline-button.ffe-inline-button--tertiary > svg.ffe-inline-button__icon.ffe-inline-button__icon--right",
+        "width": 16,
+        "height": 16,
+        "ariaLabel": null,
+        "markupLength": 510,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "button#hvor-finne-bilag-betalinger-utland-1 > span > span > svg.ffe-accordion-item__heading-icon",
+        "width": 11,
+        "height": 11,
+        "ariaLabel": null,
+        "markupLength": 550,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link:nth-child(1) > svg.feedback-thumbs__icon",
+        "width": 20,
+        "height": 20,
+        "ariaLabel": null,
+        "markupLength": 872,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link.feedback-thumbs__link--down:nth-child(2) > svg.feedback-thumbs__icon.feedback-thumbs__icon--down",
+        "width": 20,
+        "height": 20,
+        "ariaLabel": null,
+        "markupLength": 901,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 -960 960 960",
+        "domPath": "div#hvor-finne-bilag-betalinger-utland > div.ffe-accordion-item__body > a.faq-link > svg.faq__new-window",
+        "width": 24,
+        "height": 24,
+        "ariaLabel": null,
+        "markupLength": 796,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "button#hvor-lang-tid-for-mottaker-utland-far-penger-1 > span > span > svg.ffe-accordion-item__heading-icon",
+        "width": 11,
+        "height": 11,
+        "ariaLabel": null,
+        "markupLength": 550,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link:nth-child(1) > svg.feedback-thumbs__icon",
+        "width": 20,
+        "height": 20,
+        "ariaLabel": null,
+        "markupLength": 872,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link.feedback-thumbs__link--down:nth-child(2) > svg.feedback-thumbs__icon.feedback-thumbs__icon--down",
+        "width": 20,
+        "height": 20,
+        "ariaLabel": null,
+        "markupLength": 901,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 -960 960 960",
+        "domPath": "div#hvor-lang-tid-for-mottaker-utland-far-penger > div.ffe-accordion-item__body > a.faq-link > svg.faq__new-window",
+        "width": 24,
+        "height": 24,
+        "ariaLabel": null,
+        "markupLength": 796,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "button#kan-jeg-sende-motta-penger-alle-land-1 > span > span > svg.ffe-accordion-item__heading-icon",
+        "width": 11,
+        "height": 11,
+        "ariaLabel": null,
+        "markupLength": 550,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link:nth-child(1) > svg.feedback-thumbs__icon",
+        "width": 20,
+        "height": 20,
+        "ariaLabel": null,
+        "markupLength": 872,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link.feedback-thumbs__link--down:nth-child(2) > svg.feedback-thumbs__icon.feedback-thumbs__icon--down",
+        "width": 20,
+        "height": 20,
+        "ariaLabel": null,
+        "markupLength": 901,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 -960 960 960",
+        "domPath": "div#kan-jeg-sende-motta-penger-alle-land > div.ffe-accordion-item__body > a.faq-link > svg.faq__new-window",
+        "width": 24,
+        "height": 24,
+        "ariaLabel": null,
+        "markupLength": 796,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "button#stopp-betaling-til-utlandet-1 > span > span > svg.ffe-accordion-item__heading-icon",
+        "width": 11,
+        "height": 11,
+        "ariaLabel": null,
+        "markupLength": 550,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link:nth-child(1) > svg.feedback-thumbs__icon",
+        "width": 20,
+        "height": 20,
+        "ariaLabel": null,
+        "markupLength": 872,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link.feedback-thumbs__link--down:nth-child(2) > svg.feedback-thumbs__icon.feedback-thumbs__icon--down",
+        "width": 20,
+        "height": 20,
+        "ariaLabel": null,
+        "markupLength": 901,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 -960 960 960",
+        "domPath": "div#stopp-betaling-til-utlandet > div.ffe-accordion-item__body > a.faq-link > svg.faq__new-window",
+        "width": 24,
+        "height": 24,
+        "ariaLabel": null,
+        "markupLength": 796,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "button#betaling-til-utlandet-ikke-mottatt-eller-kommet-retur-1 > span > span > svg.ffe-accordion-item__heading-icon",
+        "width": 11,
+        "height": 11,
+        "ariaLabel": null,
+        "markupLength": 550,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link:nth-child(1) > svg.feedback-thumbs__icon",
+        "width": 20,
+        "height": 20,
+        "ariaLabel": null,
+        "markupLength": 872,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "div.aem-component-container > div.component-root.feedback--layoutfaq > div.feedback-wrapper > div.feedback-btn__wrapper > button.feedback-thumbs__link.feedback-thumbs__link--down:nth-child(2) > svg.feedback-thumbs__icon.feedback-thumbs__icon--down",
+        "width": 20,
+        "height": 20,
+        "ariaLabel": null,
+        "markupLength": 901,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 -960 960 960",
+        "domPath": "div#betaling-til-utlandet-ikke-mottatt-eller-kommet-retur > div.ffe-accordion-item__body > a.faq-link > svg.faq__new-window",
+        "width": 24,
+        "height": 24,
+        "ariaLabel": null,
+        "markupLength": 796,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "div.component-root.feedback--layout1 > div.feedback-wrapper > div.feedback-btn__wrapper > button.ffe-button.ffe-button--secondary:nth-child(1) > span.ffe-button__label > svg.feedback-thumbs__icon",
+        "width": 20,
+        "height": 20,
+        "ariaLabel": null,
+        "markupLength": 872,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 200 200",
+        "domPath": "div.component-root.feedback--layout1 > div.feedback-wrapper > div.feedback-btn__wrapper > button.ffe-button.ffe-button--secondary:nth-child(2) > span.ffe-button__label > svg.feedback-thumbs__icon.feedback-thumbs__icon--down",
+        "width": 20,
+        "height": 20,
+        "ariaLabel": null,
+        "markupLength": 901,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 -960 960 960",
+        "domPath": "li#contact-tab1 > a.cs-action.tab-section > div.icon-circle > svg",
+        "width": 50,
+        "height": 104,
+        "ariaLabel": null,
+        "markupLength": 747,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 -960 960 960",
+        "domPath": "a#meeting > div.icon-circle > svg",
+        "width": 50,
+        "height": 104,
+        "ariaLabel": null,
+        "markupLength": 312,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 -960 960 960",
+        "domPath": "a#message > div.icon-circle > svg",
+        "width": 50,
+        "height": 104,
+        "ariaLabel": null,
+        "markupLength": 315,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 -960 960 960",
+        "domPath": "li#contact-tab4 > a.cs-action.tab-section > div.icon-circle > svg",
+        "width": 50,
+        "height": 104,
+        "ariaLabel": null,
+        "markupLength": 432,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 -960 960 960",
+        "domPath": "a#contact-chat > div.icon-circle > svg",
+        "width": 50,
+        "height": 104,
+        "ariaLabel": null,
+        "markupLength": 259,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 281.633 78.197",
+        "domPath": "svg#SpareBank_1",
+        "width": 132,
+        "height": 32,
+        "ariaLabel": null,
+        "markupLength": 6544,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 40 41",
+        "domPath": "section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(2) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > span.optin-header-wrapper > svg.optin-icon__svg",
+        "width": 40,
+        "height": 40,
+        "ariaLabel": null,
+        "markupLength": 4116,
+        "inHeader": false
+      }
+    ],
+    "cssBackgrounds": [],
+    "videos": [],
+    "iframes": [],
+    "imgsCrawl": [
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg",
+        "alt": "Tilbake til forsiden for bedrift - SpareBank 1",
+        "w": 300,
+        "h": 86
+      },
+      {
+        "src": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/images/bankchoice_bg.svg",
+        "alt": "",
+        "w": 1250,
+        "h": 368
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/kontormiljo-mann-tenker-pa-jobb-pc-kontor.jpg.thumb.1280.1280.jpg",
+        "alt": "",
+        "w": 1200,
+        "h": 800
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/ikoner/kr-globus-ikon.svg",
+        "alt": "",
+        "w": 180,
+        "h": 180
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/ikoner/kr-globus-ikon-motsatt.svg",
+        "alt": "",
+        "w": 150,
+        "h": 150
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2025/verdenskart-verden-lys-bakgrunn.svg",
+        "alt": "",
+        "w": 537,
+        "h": 255
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/kvinne-laptop.jpg.thumb.1280.1280.jpg",
+        "alt": "Kvinnelig rådgiver på kontor, bilde",
+        "w": 656,
+        "h": 656
+      }
+    ],
+    "allImgCount": 12,
+    "modals": []
+  },
+  "forms": [],
+  "widgets": {
+    "modals": [
+      {
+        "domPath": "div#outer-main-wrap > div.bank-choice:nth-child(5) > div > div.component-root > div.bank-choice--inline > div.aem-optin-wrapper:nth-child(2)",
+        "open": false,
+        "label": null
+      },
+      {
+        "domPath": "div#-bankchoice",
+        "open": false,
+        "label": null
+      },
+      {
+        "domPath": "div#509128661-bankchoice",
+        "open": false,
+        "label": null
+      },
+      {
+        "domPath": "div#opt-in > div.optin__wrapper > div.optin",
+        "open": true,
+        "label": null
+      }
+    ],
+    "accordions": [],
+    "tabs": [
+      {
+        "domPath": "div#contact-us > div.contact-section > div.customer-action-wrap.clearfix:nth-child(3) > ul.customer-action__list",
+        "tabCount": 5
+      }
+    ]
+  },
+  "components": {
+    "cards": {
+      "count": 42,
+      "examples": [
+        "div.columns-grid__wrap > div.ffe-grid.ffe-grid--gap-none > div.ffe-grid__row.columns-grid__row > div.columns-grid__column.ffe-grid__col--sm-12:nth-child(1) > div.columns-grid__content.columns-grid__content--start > div.card",
+        "div.ffe-grid.ffe-grid--gap-none > div.ffe-grid__row.columns-grid__row > div.columns-grid__column.ffe-grid__col--sm-12:nth-child(1) > div.columns-grid__content.columns-grid__content--start > div.card > div.card__container.card__container--small"
+      ]
+    },
+    "grids": {
+      "count": 2,
+      "examples": [
+        "div.background-container__wrap > div.background-container__content > div.columns-grid.parbase:nth-child(1) > div.columns-grid__wrap > div.ffe-grid.ffe-grid--gap-none > div.ffe-grid__row.columns-grid__row:nth-child(2)",
+        "div.background-container__wrap > div.background-container__content > div.columns-grid.parbase:nth-child(2) > div.columns-grid__wrap > div.ffe-grid.ffe-grid--gap-none > div.ffe-grid__row.columns-grid__row"
+      ]
+    },
+    "accordions": {
+      "count": 0,
+      "examples": []
+    },
+    "tabs": {
+      "count": 1,
+      "examples": [
+        "div#contact-us > div.contact-section > div.customer-action-wrap.clearfix:nth-child(3) > ul.customer-action__list"
+      ]
+    },
+    "tables": {
+      "count": 0,
+      "examples": []
+    },
+    "modals": {
+      "count": 4,
+      "examples": [
+        "div#outer-main-wrap > div.bank-choice:nth-child(5) > div > div.component-root > div.bank-choice--inline > div.aem-optin-wrapper:nth-child(2)",
+        "div#-bankchoice"
+      ]
+    },
+    "carousels": {
+      "count": 0,
+      "examples": []
+    },
+    "videos": {
+      "count": 0,
+      "examples": []
+    },
+    "iframes": {
+      "count": 0,
+      "examples": []
+    },
+    "dataVizEmbeds": {
+      "count": 0,
+      "examples": []
+    },
+    "teamTiles": {
+      "count": 0,
+      "examples": []
+    },
+    "pricingTiles": {
+      "count": 0,
+      "examples": []
+    },
+    "testimonialCards": {
+      "count": 0,
+      "examples": []
+    },
+    "logoStrip": {
+      "count": 0,
+      "examples": []
+    },
+    "timeline": {
+      "count": 0,
+      "examples": []
+    },
+    "breadcrumbs": {
+      "count": 0,
+      "examples": []
+    },
+    "statRow": {
+      "count": 0,
+      "examples": []
+    },
+    "ctaBand": {
+      "count": 2,
+      "examples": []
+    },
+    "formFields": {
+      "count": 0,
+      "examples": []
+    },
+    "other": []
+  },
+  "perSectionStyle": [
+    {
+      "sectionRef": "main#main-content > div.aem-main-container.to-parent:nth-child(1)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(103, 103, 103)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "20px 20px",
+        "gap": null,
+        "marginBlock": "10px 0px"
+      },
+      "borderRadius": null,
+      "fontFamilies": [
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 539,
+        "height": 24
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.background-container.parbase:nth-child(2)",
+      "purpose": "feature-list",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": true,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(0, 39, 118)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": null,
+        "marginBlock": "-36px 0px"
+      },
+      "borderRadius": "16px",
+      "fontFamilies": [
+        "SpareBank1-title-medium",
+        "SpareBank1-regular",
+        "SpareBank1-medium"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 527,
+        "height": 820
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.background-container.parbase:nth-child(4)",
+      "purpose": "rich-text",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(0, 39, 118)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": null,
+        "marginBlock": "0px 0px"
+      },
+      "borderRadius": "50%",
+      "fontFamilies": [
+        "SpareBank1-medium",
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 1347,
+        "height": 674
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.tip.parbase:nth-child(6)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(2, 10, 10)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "20px 20px",
+        "gap": null,
+        "marginBlock": "72px 0px"
+      },
+      "borderRadius": "50%",
+      "fontFamilies": [
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 2093,
+        "height": 315
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.accordion.parbase:nth-child(8)",
+      "purpose": "faq",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(2, 10, 10)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": "8px",
+        "marginBlock": "72px 0px"
+      },
+      "borderRadius": "16px",
+      "fontFamilies": [
+        "SpareBank1-medium",
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [
+        "rgba(38, 38, 38, 0.3) 0px 1px 4px 0px"
+      ],
+      "rect": {
+        "top": 2480,
+        "height": 1516
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.columns-grid.parbase:nth-child(10)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": true,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(0, 39, 118)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": "8px",
+        "marginBlock": "0px 0px"
+      },
+      "borderRadius": "96px",
+      "fontFamilies": [
+        "SpareBank1-title-medium",
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 3996,
+        "height": 384
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.columns-grid.parbase:nth-child(11)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": true,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(0, 39, 118)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": null,
+        "marginBlock": "0px 0px"
+      },
+      "borderRadius": null,
+      "fontFamilies": [
+        "SpareBank1-medium",
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 4380,
+        "height": 356
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.columns-grid.parbase:nth-child(12)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": true,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(0, 39, 118)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": "8px",
+        "marginBlock": "0px 0px"
+      },
+      "borderRadius": "30px",
+      "fontFamilies": [
+        "SpareBank1-title-medium",
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 4736,
+        "height": 451
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.faq.parbase:nth-child(13)",
+      "purpose": "faq",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(2, 10, 10)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "8px 8px",
+        "gap": "8px",
+        "marginBlock": "72px 0px"
+      },
+      "borderRadius": "16px",
+      "fontFamilies": [
+        "SpareBank1-title-medium",
+        "SpareBank1-medium",
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [
+        "rgba(38, 38, 38, 0.3) 0px 1px 4px 0px"
+      ],
+      "rect": {
+        "top": 5259,
+        "height": 2532
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.columns-grid.parbase:nth-child(14)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": true,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(0, 39, 118)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": "8px",
+        "marginBlock": "72px 0px"
+      },
+      "borderRadius": "96px",
+      "fontFamilies": [
+        "SpareBank1-medium",
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 7863,
+        "height": 444
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.background-container.parbase:nth-child(15)",
+      "purpose": "feature-list",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(0, 39, 118)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": null,
+        "marginBlock": "0px 0px"
+      },
+      "borderRadius": "16px",
+      "fontFamilies": [
+        "SpareBank1-title-medium",
+        "SpareBank1-regular",
+        "SpareBank1-medium"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 8307,
+        "height": 506
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.feedback.parbase:nth-child(16)",
+      "purpose": "cta-band",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(0, 39, 118)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": "8px",
+        "marginBlock": "72px 0px"
+      },
+      "borderRadius": "96px",
+      "fontFamilies": [
+        "SpareBank1-medium"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 8885,
+        "height": 100
+      }
+    }
+  ],
+  "embedDominance": {
+    "dominated": false,
+    "iframeSrc": null,
+    "viewportCoveragePct": null,
+    "mainHeightCoveragePct": null
+  },
+  "cssCustomProperties": [
+    {
+      "name": "--ffe-farge-fjell",
+      "value": "#002776"
+    },
+    {
+      "name": "--ffe-farge-fjell-70",
+      "value": "#4d689f"
+    },
+    {
+      "name": "--ffe-farge-fjell-30",
+      "value": "#b3bed6"
+    },
+    {
+      "name": "--ffe-farge-vann",
+      "value": "#005aa4"
+    },
+    {
+      "name": "--ffe-farge-vann-70",
+      "value": "#4d8cbf"
+    },
+    {
+      "name": "--ffe-farge-vann-30",
+      "value": "#b3cee4"
+    },
+    {
+      "name": "--ffe-farge-sand",
+      "value": "#f8e9dd"
+    },
+    {
+      "name": "--ffe-farge-sand-70",
+      "value": "#faf0e7"
+    },
+    {
+      "name": "--ffe-farge-sand-30",
+      "value": "#fdf8f5"
+    },
+    {
+      "name": "--ffe-farge-frost",
+      "value": "#7eb5d2"
+    },
+    {
+      "name": "--ffe-farge-frost-70",
+      "value": "#a5cbe0"
+    },
+    {
+      "name": "--ffe-farge-frost-30",
+      "value": "#d8e9f2"
+    },
+    {
+      "name": "--ffe-farge-syrin",
+      "value": "#d3d3ea"
+    },
+    {
+      "name": "--ffe-farge-syrin-70",
+      "value": "#e0e0f0"
+    },
+    {
+      "name": "--ffe-farge-syrin-30",
+      "value": "#f2f2f9"
+    },
+    {
+      "name": "--ffe-farge-myrull",
+      "value": "#fae4e0"
+    },
+    {
+      "name": "--ffe-farge-myrull-70",
+      "value": "#fcece9"
+    },
+    {
+      "name": "--ffe-farge-myrull-30",
+      "value": "#fef7f6"
+    },
+    {
+      "name": "--ffe-farge-villblomst",
+      "value": "#ee8d9c"
+    },
+    {
+      "name": "--ffe-farge-villblomst-70",
+      "value": "#f3afba"
+    },
+    {
+      "name": "--ffe-farge-villblomst-30",
+      "value": "#fadde1"
+    },
+    {
+      "name": "--ffe-farge-nordlys",
+      "value": "#33af85"
+    },
+    {
+      "name": "--ffe-farge-nordlys-70",
+      "value": "#70c7aa"
+    },
+    {
+      "name": "--ffe-farge-nordlys-30",
+      "value": "#c2e7da"
+    },
+    {
+      "name": "--ffe-farge-lyng",
+      "value": "#873953"
+    },
+    {
+      "name": "--ffe-farge-lyng-70",
+      "value": "#ab7487"
+    },
+    {
+      "name": "--ffe-farge-lyng-30",
+      "value": "#dbc4cb"
+    },
+    {
+      "name": "--ffe-farge-baer",
+      "value": "#e44244"
+    },
+    {
+      "name": "--ffe-farge-baer-70",
+      "value": "#ec7b7c"
+    },
+    {
+      "name": "--ffe-farge-baer-30",
+      "value": "#f7c6c7"
+    },
+    {
+      "name": "--ffe-farge-skog",
+      "value": "#00754e"
+    },
+    {
+      "name": "--ffe-farge-skog-70",
+      "value": "#4d9e83"
+    },
+    {
+      "name": "--ffe-farge-skog-30",
+      "value": "#b3d6ca"
+    },
+    {
+      "name": "--ffe-farge-multe",
+      "value": "#f8b181"
+    },
+    {
+      "name": "--ffe-farge-multe-70",
+      "value": "#fac8a7"
+    },
+    {
+      "name": "--ffe-farge-multe-30",
+      "value": "#fde8d9"
+    },
+    {
+      "name": "--ffe-farge-sol",
+      "value": "#dc8000"
+    },
+    {
+      "name": "--ffe-farge-sol-70",
+      "value": "#e7a64d"
+    },
+    {
+      "name": "--ffe-farge-sol-30",
+      "value": "#f5d9b3"
+    },
+    {
+      "name": "--ffe-farge-natt",
+      "value": "#001032"
+    },
+    {
+      "name": "--ffe-farge-svart",
+      "value": "#020a0a"
+    },
+    {
+      "name": "--ffe-farge-koksgraa",
+      "value": "#323232"
+    },
+    {
+      "name": "--ffe-farge-moerkgraa",
+      "value": "#676767"
+    },
+    {
+      "name": "--ffe-farge-graa",
+      "value": "#adadad"
+    },
+    {
+      "name": "--ffe-farge-lysgraa",
+      "value": "#d8d8d8"
+    },
+    {
+      "name": "--ffe-farge-moerkvarmgraa",
+      "value": "#848383"
+    },
+    {
+      "name": "--ffe-farge-varmgraa",
+      "value": "#9b9797"
+    },
+    {
+      "name": "--ffe-farge-lysvarmgraa",
+      "value": "#d7d2cb"
+    },
+    {
+      "name": "--ffe-farge-hvit",
+      "value": "#fff"
+    },
+    {
+      "name": "--ffe-fontsize-body-text",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-small-text",
+      "value": "0.875rem"
+    },
+    {
+      "name": "--ffe-fontsize-micro-text",
+      "value": "0.75rem"
+    },
+    {
+      "name": "--ffe-fontsize-lead-paragraph",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-sub-lead-paragraph",
+      "value": "1.063rem"
+    },
+    {
+      "name": "--ffe-fontsize-h1",
+      "value": "1.75rem"
+    },
+    {
+      "name": "--ffe-fontsize-h2",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--ffe-fontsize-h3",
+      "value": "1.25rem"
+    },
+    {
+      "name": "--ffe-fontsize-h4",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-h5",
+      "value": "1.0625rem"
+    },
+    {
+      "name": "--ffe-fontsize-h6",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-form-input",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-form-dropdown",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-button",
+      "value": "1rem"
+    },
+    {
+      "name": "--breakpoint-sm",
+      "value": "480px"
+    },
+    {
+      "name": "--breakpoint-md",
+      "value": "768px"
+    },
+    {
+      "name": "--breakpoint-lg",
+      "value": "1024px"
+    },
+    {
+      "name": "--breakpoint-xl",
+      "value": "1280px"
+    },
+    {
+      "name": "--app-width",
+      "value": "1280px"
+    },
+    {
+      "name": "--app-width-min",
+      "value": "320px"
+    },
+    {
+      "name": "--app-margin",
+      "value": "20px"
+    },
+    {
+      "name": "--ffe-ease-in-out-back",
+      "value": "cubic-bezier(0.46, -0.265, 0.48, 1.38)"
+    },
+    {
+      "name": "--ffe-ease",
+      "value": "cubic-bezier(0.25, 0.1, 0.25, 1)"
+    },
+    {
+      "name": "--ffe-transition-duration",
+      "value": "0.2s"
+    },
+    {
+      "name": "--ffe-spacing",
+      "value": "8px"
+    },
+    {
+      "name": "--ffe-spacing-2xs",
+      "value": "4px"
+    },
+    {
+      "name": "--ffe-spacing-xs",
+      "value": "8px"
+    },
+    {
+      "name": "--ffe-spacing-sm",
+      "value": "16px"
+    },
+    {
+      "name": "--ffe-spacing-md",
+      "value": "24px"
+    },
+    {
+      "name": "--ffe-spacing-lg",
+      "value": "32px"
+    },
+    {
+      "name": "--ffe-spacing-xl",
+      "value": "40px"
+    },
+    {
+      "name": "--ffe-spacing-2xl",
+      "value": "48px"
+    },
+    {
+      "name": "--ffe-spacing-3xl",
+      "value": "64px"
+    },
+    {
+      "name": "--ffe-spacing-4xl",
+      "value": "80px"
+    },
+    {
+      "name": "--ffe-spacing-5xl",
+      "value": "160px"
+    },
+    {
+      "name": "--ffe-g-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-g-secondary-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-error-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-g-border-color",
+      "value": "var(--ffe-farge-varmgraa)"
+    },
+    {
+      "name": "--ffe-g-border-radius",
+      "value": "4px"
+    },
+    {
+      "name": "--ffe-g-font",
+      "value": "'SpareBank1-regular',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-heading",
+      "value": "'SpareBank1-title-medium',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-heading-small",
+      "value": "'SpareBank1-medium',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-strong",
+      "value": "'SpareBank1-medium',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-italic",
+      "value": "'SpareBank1-italic',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-text-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-g-lead-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-heading-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-link-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-g-link-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-link-color-visited",
+      "value": "var(--ffe-farge-lyng)"
+    },
+    {
+      "name": "--ffe-g-link-icon-color-hover",
+      "value": "var(--ffe-farge-natt)"
+    },
+    {
+      "name": "--ffe-g-link-icon-color-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-fontsize-lead-paragraph",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--ffe-fontsize-sub-lead-paragraph",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-h1",
+      "value": "2.5rem"
+    },
+    {
+      "name": "--ffe-fontsize-h2",
+      "value": "2rem"
+    },
+    {
+      "name": "--ffe-fontsize-h3",
+      "value": "1.688rem"
+    },
+    {
+      "name": "--ffe-fontsize-h4",
+      "value": "1.375rem"
+    },
+    {
+      "name": "--ffe-fontsize-h5",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-h1",
+      "value": "2.875rem"
+    },
+    {
+      "name": "--ffe-fontsize-h2",
+      "value": "2.25rem"
+    },
+    {
+      "name": "--ffe-fontsize-h3",
+      "value": "1.75rem"
+    },
+    {
+      "name": "--ffe-v-icons-size-sm",
+      "value": "20px"
+    },
+    {
+      "name": "--ffe-v-icons-size-md",
+      "value": "24px"
+    },
+    {
+      "name": "--ffe-v-icons-size-lg",
+      "value": "40px"
+    },
+    {
+      "name": "--ffe-v-icons-size-xl",
+      "value": "48px"
+    },
+    {
+      "name": "--ffe-v-icons-default-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-text-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-buttons-border-radius",
+      "value": "6em"
+    },
+    {
+      "name": "--ffe-v-button-action-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-button-action-color-hover",
+      "value": "#095139"
+    },
+    {
+      "name": "--ffe-v-button-action-color-text",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-primary-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-primary-color-text",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-border-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color-bg",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-tertiary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-tertiary-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-tertiary-color-text",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-task-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-task-text-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-task-border-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-input-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-input-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-input-placeholder-color",
+      "value": "var(--ffe-farge-moerkgraa)"
+    },
+    {
+      "name": "--ffe-v-info-message-icon-color",
+      "value": "var(--ffe-g-secondary-color)"
+    },
+    {
+      "name": "--ffe-v-info-message-icon-fill",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-success-message-icon-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-success-message-icon-fill",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-error-message-icon-color",
+      "value": "var(--ffe-g-error-color)"
+    },
+    {
+      "name": "--ffe-v-error-message-icon-fill",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-checkbox-color",
+      "value": "var(--ffe-g-border-color)"
+    },
+    {
+      "name": "--ffe-v-checkbox-selected-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-checkbox-marker-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-checkbox-focus-outline-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-radio-button-label-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-tooltip-icon-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-tooltip-border-color",
+      "value": "var(--ffe-g-border-color)"
+    },
+    {
+      "name": "--ffe-v-message-box-icon-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-message-box-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-message-box-tips-bg-color",
+      "value": "var(--ffe-farge-sand)"
+    },
+    {
+      "name": "--ffe-v-message-box-tips-icon-color",
+      "value": "var(--ffe-farge-sol)"
+    },
+    {
+      "name": "--ffe-v-message-box-info-bg-color",
+      "value": "var(--ffe-farge-frost-30)"
+    },
+    {
+      "name": "--ffe-v-message-box-info-icon-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-message-box-success-bg-color",
+      "value": "var(--ffe-farge-nordlys-30)"
+    },
+    {
+      "name": "--ffe-v-message-box-success-icon-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-message-box-error-bg-color",
+      "value": "var(--ffe-farge-baer-30)"
+    },
+    {
+      "name": "--ffe-v-message-box-error-icon-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-v-message-box-link-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-message-box-link-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-message-box-link-color-visited",
+      "value": "var(--ffe-farge-lyng)"
+    },
+    {
+      "name": "--ffe-v-message-box-link-color-focus",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-lists-title-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-lists-description-description-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-lists-check-list-check-icon-color",
+      "value": "var(--ffe-farge-nordlys-wcag)"
+    },
+    {
+      "name": "--ffe-v-lists-check-list-cross-icon-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-v-context-message-close-button-color",
+      "value": "var(--ffe-farge-moerkgraa)"
+    },
+    {
+      "name": "--ffe-v-context-message-close-button-color-hover",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-context-message-close-button-border-color-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-context-message-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-context-message-icon-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-context-message-info-bg-color",
+      "value": "var(--ffe-farge-frost-30)"
+    },
+    {
+      "name": "--ffe-v-context-message-info-icon-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-context-message-info-icon-compact-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-context-message-tips-bg-color",
+      "value": "var(--ffe-farge-sand)"
+    },
+    {
+      "name": "--ffe-v-context-message-tips-icon-color",
+      "value": "var(--ffe-farge-sol)"
+    },
+    {
+      "name": "--ffe-v-context-message-success-bg-color",
+      "value": "var(--ffe-farge-nordlys-30)"
+    },
+    {
+      "name": "--ffe-v-context-message-success-compact-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-context-message-success-icon-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-context-message-error-bg-color",
+      "value": "var(--ffe-farge-baer-30)"
+    },
+    {
+      "name": "--ffe-v-context-message-error-icon-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-v-context-message-link-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-context-message-link-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-context-message-link-color-visited",
+      "value": "var(--ffe-farge-lyng)"
+    },
+    {
+      "name": "--ffe-v-context-message-link-color-focus",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-accordion-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-accordion-secondary-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-accordion-body-text-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-accordion-focus-border-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--animate-duration",
+      "value": "1s"
+    },
+    {
+      "name": "--animate-delay",
+      "value": "1s"
+    },
+    {
+      "name": "--animate-repeat",
+      "value": "1"
+    }
+  ],
+  "customProps": {
+    "--ffe-farge-fjell": "#002776",
+    "--ffe-farge-fjell-70": "#4d689f",
+    "--ffe-farge-fjell-30": "#b3bed6",
+    "--ffe-farge-vann": "#005aa4",
+    "--ffe-farge-vann-70": "#4d8cbf",
+    "--ffe-farge-vann-30": "#b3cee4",
+    "--ffe-farge-sand": "#f8e9dd",
+    "--ffe-farge-sand-70": "#faf0e7",
+    "--ffe-farge-sand-30": "#fdf8f5",
+    "--ffe-farge-frost": "#7eb5d2",
+    "--ffe-farge-frost-70": "#a5cbe0",
+    "--ffe-farge-frost-30": "#d8e9f2",
+    "--ffe-farge-syrin": "#d3d3ea",
+    "--ffe-farge-syrin-70": "#e0e0f0",
+    "--ffe-farge-syrin-30": "#f2f2f9",
+    "--ffe-farge-myrull": "#fae4e0",
+    "--ffe-farge-myrull-70": "#fcece9",
+    "--ffe-farge-myrull-30": "#fef7f6",
+    "--ffe-farge-villblomst": "#ee8d9c",
+    "--ffe-farge-villblomst-70": "#f3afba",
+    "--ffe-farge-villblomst-30": "#fadde1",
+    "--ffe-farge-nordlys": "#33af85",
+    "--ffe-farge-nordlys-70": "#70c7aa",
+    "--ffe-farge-nordlys-30": "#c2e7da",
+    "--ffe-farge-lyng": "#873953",
+    "--ffe-farge-lyng-70": "#ab7487",
+    "--ffe-farge-lyng-30": "#dbc4cb",
+    "--ffe-farge-baer": "#e44244",
+    "--ffe-farge-baer-70": "#ec7b7c",
+    "--ffe-farge-baer-30": "#f7c6c7",
+    "--ffe-farge-skog": "#00754e",
+    "--ffe-farge-skog-70": "#4d9e83",
+    "--ffe-farge-skog-30": "#b3d6ca",
+    "--ffe-farge-multe": "#f8b181",
+    "--ffe-farge-multe-70": "#fac8a7",
+    "--ffe-farge-multe-30": "#fde8d9",
+    "--ffe-farge-sol": "#dc8000",
+    "--ffe-farge-sol-70": "#e7a64d",
+    "--ffe-farge-sol-30": "#f5d9b3",
+    "--ffe-farge-natt": "#001032",
+    "--ffe-farge-svart": "#020a0a",
+    "--ffe-farge-koksgraa": "#323232",
+    "--ffe-farge-moerkgraa": "#676767",
+    "--ffe-farge-graa": "#adadad",
+    "--ffe-farge-lysgraa": "#d8d8d8",
+    "--ffe-farge-moerkvarmgraa": "#848383",
+    "--ffe-farge-varmgraa": "#9b9797",
+    "--ffe-farge-lysvarmgraa": "#d7d2cb",
+    "--ffe-farge-hvit": "#fff",
+    "--ffe-fontsize-body-text": "1rem",
+    "--ffe-fontsize-small-text": "0.875rem",
+    "--ffe-fontsize-micro-text": "0.75rem",
+    "--ffe-fontsize-lead-paragraph": "1.5rem",
+    "--ffe-fontsize-sub-lead-paragraph": "1.125rem",
+    "--ffe-fontsize-h1": "2.875rem",
+    "--ffe-fontsize-h2": "2.25rem",
+    "--ffe-fontsize-h3": "1.75rem",
+    "--ffe-fontsize-h4": "1.375rem",
+    "--ffe-fontsize-h5": "1.125rem",
+    "--ffe-fontsize-h6": "1rem",
+    "--ffe-fontsize-form-input": "1rem",
+    "--ffe-fontsize-form-dropdown": "1rem",
+    "--ffe-fontsize-button": "1rem",
+    "--breakpoint-sm": "480px",
+    "--breakpoint-md": "768px",
+    "--breakpoint-lg": "1024px",
+    "--breakpoint-xl": "1280px",
+    "--app-width": "1280px",
+    "--app-width-min": "320px",
+    "--app-margin": "20px",
+    "--ffe-ease-in-out-back": "cubic-bezier(0.46, -0.265, 0.48, 1.38)",
+    "--ffe-ease": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+    "--ffe-transition-duration": "0.2s",
+    "--ffe-spacing": "8px",
+    "--ffe-spacing-2xs": "4px",
+    "--ffe-spacing-xs": "8px",
+    "--ffe-spacing-sm": "16px",
+    "--ffe-spacing-md": "24px",
+    "--ffe-spacing-lg": "32px",
+    "--ffe-spacing-xl": "40px",
+    "--ffe-spacing-2xl": "48px",
+    "--ffe-spacing-3xl": "64px",
+    "--ffe-spacing-4xl": "80px",
+    "--ffe-spacing-5xl": "160px",
+    "--ffe-g-primary-color": "#005aa4",
+    "--ffe-g-secondary-color": "#002776",
+    "--ffe-g-error-color": "#e44244",
+    "--ffe-g-border-color": "#9b9797",
+    "--ffe-g-border-radius": "4px",
+    "--ffe-g-font": "'SpareBank1-regular',arial,sans-serif",
+    "--ffe-g-font-heading": "'SpareBank1-title-medium',arial,sans-serif",
+    "--ffe-g-font-heading-small": "'SpareBank1-medium',arial,sans-serif",
+    "--ffe-g-font-strong": "'SpareBank1-medium',arial,sans-serif",
+    "--ffe-g-font-italic": "'SpareBank1-italic',arial,sans-serif",
+    "--ffe-g-text-color": "#020a0a",
+    "--ffe-g-lead-color": "#002776",
+    "--ffe-g-heading-color": "#002776",
+    "--ffe-g-link-color": "#005aa4",
+    "--ffe-g-link-color-hover": "#002776",
+    "--ffe-g-link-color-visited": "#873953",
+    "--ffe-g-link-icon-color-hover": "#001032",
+    "--ffe-g-link-icon-color-focus": "#005aa4",
+    "--ffe-v-icons-size-sm": "20px",
+    "--ffe-v-icons-size-md": "24px",
+    "--ffe-v-icons-size-lg": "40px",
+    "--ffe-v-icons-size-xl": "48px",
+    "--ffe-v-icons-default-color": "#005aa4",
+    "--ffe-v-button-text-color": "#fff",
+    "--ffe-v-buttons-border-radius": "6em",
+    "--ffe-v-button-action-color": "#00754e",
+    "--ffe-v-button-action-color-hover": "#095139",
+    "--ffe-v-button-action-color-text": "#fff",
+    "--ffe-v-button-primary-color": "#005aa4",
+    "--ffe-v-button-primary-color-hover": "#002776",
+    "--ffe-v-button-primary-color-text": "#fff",
+    "--ffe-v-button-secondary-color": "#005aa4",
+    "--ffe-v-button-secondary-border-color": "#005aa4",
+    "--ffe-v-button-secondary-color-hover": "#002776",
+    "--ffe-v-button-secondary-color-bg": "#fff",
+    "--ffe-v-button-tertiary-color": "#005aa4",
+    "--ffe-v-button-tertiary-color-hover": "#002776",
+    "--ffe-v-button-tertiary-color-text": "#fff",
+    "--ffe-v-button-task-primary-color": "#005aa4",
+    "--ffe-v-button-task-text-color-hover": "#002776",
+    "--ffe-v-button-task-border-focus": "#005aa4",
+    "--ffe-v-input-color": "#020a0a",
+    "--ffe-v-input-bg-color": "#fff",
+    "--ffe-v-input-placeholder-color": "#676767",
+    "--ffe-v-info-message-icon-color": "#002776",
+    "--ffe-v-info-message-icon-fill": "#fff",
+    "--ffe-v-success-message-icon-color": "#00754e",
+    "--ffe-v-success-message-icon-fill": "#fff",
+    "--ffe-v-error-message-icon-color": "#e44244",
+    "--ffe-v-error-message-icon-fill": "#fff",
+    "--ffe-v-checkbox-color": "#9b9797",
+    "--ffe-v-checkbox-selected-color": "#005aa4",
+    "--ffe-v-checkbox-marker-color": "#005aa4",
+    "--ffe-v-checkbox-focus-outline-color": "#005aa4",
+    "--ffe-v-radio-button-label-color": "#005aa4",
+    "--ffe-v-tooltip-icon-color": "#005aa4",
+    "--ffe-v-tooltip-border-color": "#9b9797",
+    "--ffe-v-message-box-icon-bg-color": "#fff",
+    "--ffe-v-message-box-variant-bg-color": "#fff",
+    "--ffe-v-message-box-tips-bg-color": "#f8e9dd",
+    "--ffe-v-message-box-tips-icon-color": "#dc8000",
+    "--ffe-v-message-box-info-bg-color": "#d8e9f2",
+    "--ffe-v-message-box-info-icon-color": "#005aa4",
+    "--ffe-v-message-box-success-bg-color": "#c2e7da",
+    "--ffe-v-message-box-success-icon-color": "#00754e",
+    "--ffe-v-message-box-error-bg-color": "#f7c6c7",
+    "--ffe-v-message-box-error-icon-color": "#e44244",
+    "--ffe-v-message-box-link-color": "#005aa4",
+    "--ffe-v-message-box-link-color-hover": "#002776",
+    "--ffe-v-message-box-link-color-visited": "#873953",
+    "--ffe-v-message-box-link-color-focus": "#fff",
+    "--ffe-v-lists-title-color": "#002776",
+    "--ffe-v-lists-description-description-color": "#020a0a",
+    "--ffe-v-lists-check-list-check-icon-color": "var(--ffe-farge-nordlys-wcag)",
+    "--ffe-v-lists-check-list-cross-icon-color": "#e44244",
+    "--ffe-v-context-message-close-button-color": "#676767",
+    "--ffe-v-context-message-close-button-color-hover": "#020a0a",
+    "--ffe-v-context-message-close-button-border-color-focus": "#005aa4",
+    "--ffe-v-context-message-variant-bg-color": "#fff",
+    "--ffe-v-context-message-icon-bg-color": "#fff",
+    "--ffe-v-context-message-info-bg-color": "#d8e9f2",
+    "--ffe-v-context-message-info-icon-color": "#005aa4",
+    "--ffe-v-context-message-info-icon-compact-color": "#005aa4",
+    "--ffe-v-context-message-tips-bg-color": "#f8e9dd",
+    "--ffe-v-context-message-tips-icon-color": "#dc8000",
+    "--ffe-v-context-message-success-bg-color": "#c2e7da",
+    "--ffe-v-context-message-success-compact-color": "#00754e",
+    "--ffe-v-context-message-success-icon-color": "#00754e",
+    "--ffe-v-context-message-error-bg-color": "#f7c6c7",
+    "--ffe-v-context-message-error-icon-color": "#e44244",
+    "--ffe-v-context-message-link-color": "#005aa4",
+    "--ffe-v-context-message-link-color-hover": "#002776",
+    "--ffe-v-context-message-link-color-visited": "#873953",
+    "--ffe-v-context-message-link-color-focus": "#fff",
+    "--ffe-v-accordion-primary-color": "#005aa4",
+    "--ffe-v-accordion-secondary-color": "#fff",
+    "--ffe-v-accordion-body-text-color": "#020a0a",
+    "--ffe-v-accordion-focus-border-color": "#005aa4",
+    "--animate-duration": "1s",
+    "--animate-delay": "1s",
+    "--animate-repeat": "1"
+  },
+  "fontFaces": [
+    {
+      "family": "SpareBank1-medium",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff\") format(\"woff\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-medium; font-display: fallback; src: url(\"clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff\") format(\"woff\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.css"
+    },
+    {
+      "family": "SpareBank1-regular",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff\") format(\"woff\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-regular; font-display: fallback; src: url(\"clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff\") format(\"woff\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.css"
+    },
+    {
+      "family": "SpareBank1-title-medium",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff\") format(\"woff\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-title-medium; font-display: fallback; src: url(\"clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff\") format(\"woff\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.css"
+    }
+  ],
+  "iconFont": null,
+  "textRendering": {
+    "textRendering": "auto",
+    "webkitFontSmoothing": "auto",
+    "fontSynthesis": "weight style small-caps",
+    "fontKerning": "auto",
+    "fontVariantNumeric": "tabular-nums",
+    "bodyFontFamily": "SpareBank1-regular, arial, sans-serif",
+    "bodyFontSize": "16px",
+    "bodyLineHeight": "24px",
+    "bodyColor": "rgb(2, 10, 10)",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "htmlFontSize": "16px"
+  },
+  "containerModel": {
+    "maxWidthMode": "1280px",
+    "sample": [
+      {
+        "domPath": "main#main-content > div.aem-main-container.to-parent:nth-child(1)",
+        "renderedWidth": 1280,
+        "marginLeft": "80px",
+        "marginRight": "80px"
+      },
+      {
+        "domPath": "main#main-content > div.background-container.parbase:nth-child(2) > div.background-container__wrap > div.background-container__content",
+        "renderedWidth": 1280,
+        "marginLeft": "0px",
+        "marginRight": "0px"
+      }
+    ],
+    "documentHeight": 10003,
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    }
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 24,
+    "mainTextLen": 10438,
+    "realImageCount": 7,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/nb-bank-bedrift-betaling-utenlandsbetaling-html.png",
+  "stats": {
+    "wordCount": 1439,
+    "ctaCount": 30,
+    "internalLinkCount": 93,
+    "externalLinkCount": 10,
+    "imageCount": 12,
+    "headingCount": 26
+  },
+  "slots": {
+    "pageType": "program",
+    "archetypeFamily": "product",
+    "headline": "Handel med utlandet",
+    "deck": "Har du kunder eller leverandører i utlandet? Hos oss kan du sende og motta penger fra utlandet, trygt og enkelt.",
+    "meta": {
+      "title": "Utenlandsbetaling bedrift | SpareBank 1",
+      "description": "Sende og motta betalinger internasjonalt? Slik gjør du det enkelt og trygt.",
+      "canonical": "https://www.sparebank1.no/nb/bank/bedrift/betaling/utenlandsbetaling.html",
+      "og": {
+        "title": "Utenlandsbetaling bedrift",
+        "description": "Sende og motta betalinger internasjonalt? Slik gjør du det enkelt og trygt.",
+        "image": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.1280.jpg",
+        "type": "article",
+        "siteName": null
+      }
+    },
+    "breadcrumb": null,
+    "sections": [
+      "Slik sender du penger til utlandet",
+      "Motta penger fra utlandet",
+      "Har du faste inn- eller utbetalinger til utlandet?",
+      "Hva lurer andre på?",
+      "Se også",
+      "Hva synes du om denne siden?",
+      "Kontakt oss"
+    ],
+    "h3": [
+      "Land uten IBAN-nummer",
+      "USA",
+      "Canada",
+      "Australia",
+      "Sør-Afrika",
+      "Valutakalkulator",
+      "Større betalinger",
+      "Hvor finner jeg bilag på betalinger til utlandet?",
+      "Hvor lang tid tar det før en i utlandet får pengene sine?",
+      "Kan jeg sende og motta penger fra alle land?",
+      "Kan jeg stoppe eller tilbakekalle en betaling til utlandet?",
+      "Hva gjør jeg hvis en betaling til utlandet ikke er mottatt, eller har kommet i retur?",
+      "Har du spørsmål om utenlandsbetalinger?"
+    ],
+    "paragraphs": 15,
+    "primaryCtas": [
+      {
+        "label": "USA",
+        "href": null
+      },
+      {
+        "label": "Canada",
+        "href": null
+      },
+      {
+        "label": "Australia",
+        "href": null
+      },
+      {
+        "label": "Sør-Afrika",
+        "href": null
+      },
+      {
+        "label": "Finn ditt IBAN",
+        "href": "/nb/bank/bedrift/kundeservice/verktoy/iban-og-swift.html"
+      },
+      {
+        "label": "Les mer om valutakonto",
+        "href": "/nb/bank/bedrift/betaling/utenlandsbetaling/valutakonto.html"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/radgiver.svg",
+        "alt": "radgiver",
+        "w": 501,
+        "h": 300
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/kvinne-laptop.jpg.thumb.1280.1280.jpg",
+        "alt": "Kvinnelig rådgiver på kontor, bilde",
+        "w": 300,
+        "h": 300
+      }
+    ],
+    "faqItems": [
+      "Hvor finner jeg bilag på betalinger til utlandet?",
+      "Hvor lang tid tar det før en i utlandet får pengene sine?",
+      "Kan jeg sende og motta penger fra alle land?",
+      "Kan jeg stoppe eller tilbakekalle en betaling til utlandet?",
+      "Hva gjør jeg hvis en betaling til utlandet ikke er mottatt, eller har kommet i retur?"
+    ],
+    "hasFeedback": true,
+    "hasContactRow": true,
+    "hasBankChoice": true
+  }
+}

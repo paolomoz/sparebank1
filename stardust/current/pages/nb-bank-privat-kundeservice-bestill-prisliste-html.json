@@ -1,0 +1,2501 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-09-14T14:56:53.088Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200,
+    "stylePass": {
+      "fetchedAt": "2026-09-14T15:01:32.933Z",
+      "waitMs": 3474,
+      "httpStatus": 200,
+      "viewport": "1440x900@2x",
+      "script": "stardust/scripts/capture-styles.mjs"
+    }
+  },
+  "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/prisliste.html",
+  "finalUrl": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/prisliste.html",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-09-14T14:56:53.088Z",
+  "title": "Prisliste | SpareBank 1",
+  "metaDescription": null,
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/prisliste.html",
+  "og": {
+    "title": "Prisliste",
+    "description": null,
+    "image": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg",
+    "type": "article",
+    "siteName": null
+  },
+  "themeColor": {},
+  "language": "nb",
+  "generator": null,
+  "heroHeadline": "Prisliste",
+  "heroLede": "Vi er flere banker som samarbeider. Priser og betingelser på produkter og tjenester er forskjellig fra bank til bank.",
+  "heroSource": "dom",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Prisliste",
+      "id": null,
+      "domPath": "main#main-content > div.title:nth-child(1) > h1.ffe-h1",
+      "top": 145,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "46px",
+        "lineHeight": "56px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Privat",
+      "id": null,
+      "domPath": "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(1) > h2.ffe-h4",
+      "top": 942,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Logg inn",
+      "id": null,
+      "domPath": "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(2) > h2.ffe-h4",
+      "top": 942,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Sosiale medier",
+      "id": null,
+      "domPath": "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column.footer-bottom__column-right:nth-child(2) > div.footer-bottom__column-links.footer-bottom__social-links > h2.ffe-h4",
+      "top": 942,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Bruk av informasjonskapsler",
+      "id": null,
+      "domPath": "section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(2) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > span.optin-header-wrapper > h2.ffe-h3.optin-settings-header",
+      "top": 111,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "24px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Teknisk",
+      "id": null,
+      "domPath": "div.optin__pages.optin__pages--settings-page:nth-child(2) > section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(3) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > h3.ffe-h5.optin-settings__header",
+      "top": 167,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    }
+  ],
+  "headingsCrawl": [
+    {
+      "tag": "h1",
+      "text": "Prisliste"
+    },
+    {
+      "tag": "h2",
+      "text": "Privat"
+    },
+    {
+      "tag": "h2",
+      "text": "Logg inn"
+    },
+    {
+      "tag": "h2",
+      "text": "Sosiale medier"
+    }
+  ],
+  "body": [
+    "Vi er flere banker som samarbeider. Priser og betingelser på produkter og tjenester er forskjellig fra bank til bank."
+  ],
+  "codeBlocks": [],
+  "landmarks": [
+    {
+      "tag": "nav",
+      "role": "navigation",
+      "id": null,
+      "classes": [
+        "page-nav"
+      ],
+      "childElementCount": 2,
+      "innerText": "Til hovedmeny\nTil hovedinnhold",
+      "children": [
+        {
+          "tag": "a",
+          "role": null,
+          "id": null,
+          "classes": [
+            "visually-hidden",
+            "focusable"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Til hovedmeny",
+          "wordCount": 2,
+          "rect": {
+            "top": -1,
+            "height": 1,
+            "width": 1
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "a",
+          "role": null,
+          "id": null,
+          "classes": [
+            "visually-hidden",
+            "focusable"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Til hovedinnhold",
+          "wordCount": 2,
+          "rect": {
+            "top": -1,
+            "height": 1,
+            "width": 1
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "aside",
+      "role": "complementary",
+      "id": null,
+      "classes": [],
+      "childElementCount": 1,
+      "innerText": "",
+      "children": []
+    },
+    {
+      "tag": "header",
+      "role": "banner",
+      "id": null,
+      "classes": [
+        "header"
+      ],
+      "childElementCount": 1,
+      "innerText": "PRIVAT\nBEDRIFT\nOM OSS\nSøk\nBli kunde\nLogg inn\nDaglig bruk\nLåne\nSpare\nPensjon\nForsikring\nEiendom\nTips og råd\nKundeservice\nLOfavør-fordeler",
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "header__wrap"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "PRIVAT\nBEDRIFT\nOM OSS\nSøk\nBli kunde\nLogg inn\nDaglig bruk\nLåne\nSpare\nPensjon\nForsikring\nEiendom\nTips og råd\nKundeservice\nLOfavør-fordeler",
+          "wordCount": 21,
+          "rect": {
+            "top": 0,
+            "height": 129,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": "navigation",
+      "id": "main-menu",
+      "classes": [
+        "header__main-nav"
+      ],
+      "childElementCount": 1,
+      "innerText": "Daglig bruk\nLåne\nSpare\nPensjon\nForsikring\nEiendom\nTips og råd\nKundeservice\nLOfavør-fordeler",
+      "children": [
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Daglig bruk",
+          "wordCount": 2,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 90
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Låne",
+          "wordCount": 1,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 37
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Spare",
+          "wordCount": 1,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 45
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Pensjon",
+          "wordCount": 1,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 60
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Forsikring",
+          "wordCount": 1,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 76
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Eiendom",
+          "wordCount": 1,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 68
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Tips og råd",
+          "wordCount": 3,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 89
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Kundeservice",
+          "wordCount": 1,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 104
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "LOfavør-fordeler",
+          "wordCount": 1,
+          "rect": {
+            "top": 67,
+            "height": 62,
+            "width": 129
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "role": "main",
+      "id": "main-content",
+      "classes": [
+        "main"
+      ],
+      "childElementCount": 7,
+      "innerText": "Prisliste\nVi er flere banker som samarbeider. Priser og betingelser på produkter og tjenester er forskjellig fra bank til bank.\nVelg bank for å se pris og betingelser",
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "title"
+          ],
+          "purpose": "unknown",
+          "headlineRef": 0,
+          "innerTextSummary": "Prisliste",
+          "wordCount": 1,
+          "rect": {
+            "top": 145,
+            "height": 56,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "text"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Vi er flere banker som samarbeider. Priser og betingelser på produkter og tjenester er forskjellig fra bank til bank.",
+          "wordCount": 19,
+          "rect": {
+            "top": 225,
+            "height": 136,
+            "width": 1440
+          },
+          "body": [
+            "Vi er flere banker som samarbeider. Priser og betingelser på produkter og tjenester er forskjellig fra bank til bank."
+          ],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "button",
+            "parbase",
+            "button--initialized"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Velg bank for å se pris og betingelser",
+          "wordCount": 8,
+          "rect": {
+            "top": 369,
+            "height": 44,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "image",
+            "parbase"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "",
+          "wordCount": 0,
+          "rect": {
+            "top": 485,
+            "height": 222,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "text"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "",
+          "wordCount": 0,
+          "rect": {
+            "top": 707,
+            "height": 96,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "footer",
+      "role": "contentinfo",
+      "id": null,
+      "classes": [
+        "footer-wrapper"
+      ],
+      "childElementCount": 2,
+      "innerText": "Til toppen\nPrivat\nBli kunde\nSperre kort\nMeld skade\nPrisliste\nKundeservice\nKlage\nSvindel\nLogg inn\nNettbank privat\nNettbank bedrift\nForsikring\nPensjon\nSosiale medier\nLinkedin\nYouTube\nSelskapsinformasjon Vilkår for bruk av nettsiden Personvern Informasjonskapsler For utviklere\nSpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo",
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "footer-bottom"
+          ],
+          "purpose": "footer-nav",
+          "headlineRef": 1,
+          "innerTextSummary": "Privat\nBli kunde\nSperre kort\nMeld skade\nPrisliste\nKundeservice\nKlage\nSvindel\nLogg inn\nNettbank privat\nNettbank bedrift\nForsikring\nPensjon\nSosiale medier\nLinkedin\nYouTube\nSelskapsinformasjon Vilkår for bruk av nettsiden Personvern Informasjo",
+          "wordCount": 40,
+          "rect": {
+            "top": 867,
+            "height": 527,
+            "width": 1440
+          },
+          "body": [
+            "SpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo"
+          ],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    }
+  ],
+  "ctas": [
+    {
+      "label": "Søk",
+      "href": null,
+      "tag": "button",
+      "domPath": "div#outer-main-wrap > header.header > div.header__wrap > div.header__content.aem-main-container > div.header__user-content:nth-child(2) > button.header__search-desktop.search-toggle",
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(103, 103, 103)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "35px",
+        "padding": "8px 15px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(103, 103, 103)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "label": "Bli kunde",
+      "href": "/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat",
+      "tag": "a",
+      "domPath": "div#header-bli-kunde > div.button-wrapper:nth-child(1) > a.ffe-button.ffe-button--action",
+      "style": {
+        "backgroundColor": "rgb(0, 117, 78)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "30px",
+        "padding": "8px 16px",
+        "boxShadow": "none",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "label": "Logg inn",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#login-button",
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 117, 78)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "30px",
+        "padding": "8px 16px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(0, 117, 78)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "label": "Velg bank for å se pris og betingelser",
+      "href": "/nb/bank/privat/kundeservice/bestill/prisliste.html",
+      "tag": "a",
+      "domPath": "main#main-content > div.button.parbase:nth-child(4) > div.aem-component-container > div.button-wrapper.center:nth-child(1) > a.primary-btn.ffe-button",
+      "style": {
+        "backgroundColor": "rgb(0, 90, 164)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "96px",
+        "padding": "8px 24px",
+        "boxShadow": "none",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": false,
+      "inFooter": false
+    }
+  ],
+  "ctasCrawl": [
+    {
+      "label": "Privat",
+      "href": "/nb/bank/privat.html"
+    },
+    {
+      "label": "Bedrift",
+      "href": "/nb/bank/bedrift.html"
+    },
+    {
+      "label": "Om oss",
+      "href": "/nb/bank/om-oss.html"
+    },
+    {
+      "label": "Søk",
+      "href": null
+    },
+    {
+      "label": "Bli kunde",
+      "href": "/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat"
+    },
+    {
+      "label": "Logg inn",
+      "href": null
+    },
+    {
+      "label": "Daglig bruk",
+      "href": "/nb/bank/privat/daglig-bruk.html"
+    },
+    {
+      "label": "Låne",
+      "href": "/nb/bank/privat/lan.html"
+    },
+    {
+      "label": "Spare",
+      "href": "/nb/bank/privat/sparing.html"
+    },
+    {
+      "label": "Pensjon",
+      "href": "/nb/bank/privat/pensjon.html"
+    },
+    {
+      "label": "Forsikring",
+      "href": "/nb/bank/privat/forsikring.html"
+    },
+    {
+      "label": "Eiendom",
+      "href": "/nb/bank/privat/eiendom.html"
+    },
+    {
+      "label": "Tips og råd",
+      "href": "/nb/bank/privat/tips-og-rad.html"
+    },
+    {
+      "label": "Kundeservice",
+      "href": "/nb/bank/privat/kundeservice.html"
+    },
+    {
+      "label": "LOfavør-fordeler",
+      "href": "/nb/bank/privat/lofavor.html"
+    },
+    {
+      "label": "Velg bank for å se pris og betingelser",
+      "href": "/nb/bank/privat/kundeservice/bestill/prisliste.html"
+    },
+    {
+      "label": "Bli kunde",
+      "href": "/nb/bank/privat/kundeservice/bestill/bli-kunde.html"
+    },
+    {
+      "label": "Sperre kort",
+      "href": "/nb/bank/privat/kundeservice/verktoy/sperre-kort.html"
+    },
+    {
+      "label": "Meld skade",
+      "href": "/nb/bank/privat/forsikring/meld-skade.html"
+    },
+    {
+      "label": "Prisliste",
+      "href": "/nb/bank/privat/kundeservice/bestill/prisliste.html"
+    },
+    {
+      "label": "Kundeservice",
+      "href": "/nb/bank/privat/kundeservice.html"
+    },
+    {
+      "label": "Klage",
+      "href": "/nb/bank/privat/kundeservice/verktoy/klager.html"
+    },
+    {
+      "label": "Svindel",
+      "href": "/nb/bank/privat/svindel.html"
+    },
+    {
+      "label": "Nettbank privat",
+      "href": "/nb/bank/privat/innlogging.html"
+    },
+    {
+      "label": "Nettbank bedrift",
+      "href": "/nb/bank/bedrift/innlogging.html"
+    },
+    {
+      "label": "Forsikring",
+      "href": "https://kundeforsikring.sparebank1.no"
+    },
+    {
+      "label": "Pensjon",
+      "href": "https://kundeforsikring.sparebank1.no/privat/sparing"
+    },
+    {
+      "label": "Linkedin",
+      "href": "https://no.linkedin.com/company/sparebank-1"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/channel/UCdfZfi4HC6bK0-OfRcDJSzg"
+    },
+    {
+      "label": "Selskapsinformasjon",
+      "href": "/nb/bank/om-oss/om-banken/selskapsinformasjon.html"
+    },
+    {
+      "label": "Vilkår for bruk av nettsiden",
+      "href": "/nb/bank/om-oss/personvern/generelle-vilkar.html"
+    },
+    {
+      "label": "Personvern",
+      "href": "/nb/bank/om-oss/personvern.html"
+    },
+    {
+      "label": "Informasjonskapsler",
+      "href": "/nb/bank/om-oss/personvern.html#cookies"
+    },
+    {
+      "label": "For utviklere",
+      "href": "/nb/bank/bedrift/open-api.html"
+    }
+  ],
+  "links": {
+    "internal": [
+      {
+        "href": "/nb/bank/privat/kundeservice/bestill/prisliste.html?search=",
+        "text": "",
+        "domPath": "div#outer-main-wrap > header.header > div.header__wrap > div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > a.header__search-mobile.search-toggle",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat.html",
+        "text": "",
+        "domPath": "header.header > div.header__wrap > div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__logo:nth-child(2) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat.html",
+        "text": "PRIVAT",
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__top-nav:nth-child(4) > ul > li:nth-child(1) > a.js-nav-link.active",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/bedrift.html",
+        "text": "BEDRIFT",
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__top-nav:nth-child(4) > ul > li:nth-child(2) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss.html",
+        "text": "OM OSS",
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__top-nav:nth-child(4) > ul > li:nth-child(3) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat",
+        "text": "Bli kunde",
+        "domPath": "div#header-bli-kunde > div.button-wrapper:nth-child(1) > a.ffe-button.ffe-button--action",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/daglig-bruk.html",
+        "text": "Daglig bruk",
+        "domPath": "nav#main-menu > ul > li:nth-child(1) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/lan.html",
+        "text": "Låne",
+        "domPath": "nav#main-menu > ul > li:nth-child(2) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/sparing.html",
+        "text": "Spare",
+        "domPath": "nav#main-menu > ul > li:nth-child(3) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/pensjon.html",
+        "text": "Pensjon",
+        "domPath": "nav#main-menu > ul > li:nth-child(4) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/forsikring.html",
+        "text": "Forsikring",
+        "domPath": "nav#main-menu > ul > li:nth-child(5) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/eiendom.html",
+        "text": "Eiendom",
+        "domPath": "nav#main-menu > ul > li:nth-child(6) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/tips-og-rad.html",
+        "text": "Tips og råd",
+        "domPath": "nav#main-menu > ul > li:nth-child(7) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/kundeservice.html",
+        "text": "Kundeservice",
+        "domPath": "nav#main-menu > ul > li:nth-child(8) > a.active.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/lofavor.html",
+        "text": "LOfavør-fordeler",
+        "domPath": "nav#main-menu > ul > li:nth-child(9) > a.js-nav-link",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/kundeservice/bestill/prisliste.html",
+        "text": "Velg bank for å se pris og betingelser",
+        "domPath": "main#main-content > div.button.parbase:nth-child(4) > div.aem-component-container > div.button-wrapper.center:nth-child(1) > a.primary-btn.ffe-button",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+        "text": "Bli kunde",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(1) > ul > li:nth-child(1) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/privat/kundeservice/verktoy/sperre-kort.html",
+        "text": "Sperre kort",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(1) > ul > li:nth-child(2) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/privat/forsikring/meld-skade.html",
+        "text": "Meld skade",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(1) > ul > li:nth-child(3) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/privat/kundeservice/bestill/prisliste.html",
+        "text": "Prisliste",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(1) > ul > li:nth-child(4) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/privat/kundeservice/verktoy/klager.html",
+        "text": "Klage",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(1) > ul > li:nth-child(6) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/privat/svindel.html",
+        "text": "Svindel",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(1) > ul > li:nth-child(7) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/privat/innlogging.html",
+        "text": "Nettbank privat",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(2) > ul > li:nth-child(1) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/bedrift/innlogging.html",
+        "text": "Nettbank bedrift",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(2) > ul > li:nth-child(2) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/om-oss/om-banken/selskapsinformasjon.html",
+        "text": "Selskapsinformasjon",
+        "domPath": "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__column-links.footer-bottom__small-links:nth-child(2) > ul > li:nth-child(1) > a.ffe-link-text",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/om-oss/personvern/generelle-vilkar.html",
+        "text": "Vilkår for bruk av nettsiden",
+        "domPath": "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__column-links.footer-bottom__small-links:nth-child(2) > ul > li:nth-child(2) > a.ffe-link-text",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/om-oss/personvern.html",
+        "text": "Personvern",
+        "domPath": "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__column-links.footer-bottom__small-links:nth-child(2) > ul > li:nth-child(3) > a.ffe-link-text",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/om-oss/personvern.html",
+        "text": "Informasjonskapsler",
+        "domPath": "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__column-links.footer-bottom__small-links:nth-child(2) > ul > li:nth-child(4) > a.ffe-link-text",
+        "region": "footer"
+      },
+      {
+        "href": "/nb/bank/bedrift/open-api.html",
+        "text": "For utviklere",
+        "domPath": "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__column-links.footer-bottom__small-links:nth-child(2) > ul > li:nth-child(5) > a.ffe-link-text",
+        "region": "footer"
+      }
+    ],
+    "external": [
+      {
+        "href": "https://kundeforsikring.sparebank1.no/",
+        "text": "Til forsikring",
+        "domPath": "a#forsikring-button",
+        "region": "header"
+      },
+      {
+        "href": "https://kundeforsikring.sparebank1.no/",
+        "text": "Forsikring",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(2) > ul > li:nth-child(3) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "https://kundeforsikring.sparebank1.no/privat/sparing",
+        "text": "Pensjon",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(2) > ul > li:nth-child(4) > a.js-nav-link",
+        "region": "footer"
+      },
+      {
+        "href": "https://no.linkedin.com/company/sparebank-1",
+        "text": "Linkedin",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column.footer-bottom__column-right:nth-child(2) > div.footer-bottom__column-links.footer-bottom__social-links > ul > li:nth-child(1) > a.social-logo",
+        "region": "footer"
+      },
+      {
+        "href": "https://www.youtube.com/channel/UCdfZfi4HC6bK0-OfRcDJSzg",
+        "text": "YouTube",
+        "domPath": "div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column.footer-bottom__column-right:nth-child(2) > div.footer-bottom__column-links.footer-bottom__social-links > ul > li:nth-child(2) > a.social-logo",
+        "region": "footer"
+      }
+    ]
+  },
+  "media": {
+    "images": [
+      {
+        "src": "/content/dam/SB1/nettsider/logo.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "Tilbake til forsiden for privat for - SpareBank 1",
+        "naturalWidth": 282,
+        "naturalHeight": 78,
+        "rect": {
+          "top": 10,
+          "width": 180,
+          "height": 50
+        },
+        "loading": null,
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__logo:nth-child(2) > a > picture > img.inline-svg.responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/illustrasjoner/elementer/2024/hender-pengeseddel-lys-bakgrunn.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2024/hender-pengeseddel-lys-bakgrunn.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": null,
+        "naturalWidth": 300,
+        "naturalHeight": 108,
+        "rect": {
+          "top": 485,
+          "width": 600,
+          "height": 215
+        },
+        "loading": null,
+        "domPath": "main#main-content > div.image.parbase:nth-child(6) > div.aem-component-container.image--all-rounded-small > div.image-center > picture > img.inline-svg.responsive",
+        "visible": false
+      },
+      {
+        "src": "/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "Sjekk ut Linkedin-profilen vår",
+        "naturalWidth": 30,
+        "naturalHeight": 30,
+        "rect": {
+          "top": 985,
+          "width": 30,
+          "height": 30
+        },
+        "loading": null,
+        "domPath": "li:nth-child(1) > a.social-logo > div.aem-component-container.image--all-rounded-small > div.image-wrapper.image-padding > picture > img.inline-svg.responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "Gå til Youtube-kanalen vår",
+        "naturalWidth": 37,
+        "naturalHeight": 30,
+        "rect": {
+          "top": 985,
+          "width": 35,
+          "height": 30
+        },
+        "loading": null,
+        "domPath": "li:nth-child(2) > a.social-logo > div.aem-component-container.image--all-rounded-small > div.image-wrapper.image-padding > picture > img.inline-svg.responsive",
+        "visible": true,
+        "resolves": true
+      }
+    ],
+    "inlineSvgs": [
+      {
+        "viewBox": "0 -960 960 960",
+        "domPath": "header.header > div.header__wrap > div.header__content.aem-main-container > div.header__user-content:nth-child(2) > button.header__search-desktop.search-toggle > svg",
+        "width": 24,
+        "height": 24,
+        "ariaLabel": null,
+        "markupLength": 629,
+        "inHeader": true
+      },
+      {
+        "viewBox": "0 0 281.633 78.197",
+        "domPath": "svg#SpareBank_1",
+        "width": 132,
+        "height": 32,
+        "ariaLabel": null,
+        "markupLength": 6544,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 40 41",
+        "domPath": "section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(2) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > span.optin-header-wrapper > svg.optin-icon__svg",
+        "width": 40,
+        "height": 40,
+        "ariaLabel": null,
+        "markupLength": 4116,
+        "inHeader": false
+      }
+    ],
+    "cssBackgrounds": [],
+    "videos": [],
+    "iframes": [],
+    "imgsCrawl": [
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg",
+        "alt": "Tilbake til forsiden for privat for - SpareBank 1",
+        "w": 282,
+        "h": 78
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2024/hender-pengeseddel-lys-bakgrunn.svg",
+        "alt": "",
+        "w": 300,
+        "h": 108
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg",
+        "alt": "Sjekk ut Linkedin-profilen vår",
+        "w": 30,
+        "h": 30
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg",
+        "alt": "Gå til Youtube-kanalen vår",
+        "w": 37,
+        "h": 30
+      }
+    ],
+    "allImgCount": 4,
+    "modals": []
+  },
+  "forms": [],
+  "widgets": {
+    "modals": [
+      {
+        "domPath": "div#-bankchoice",
+        "open": false,
+        "label": null
+      },
+      {
+        "domPath": "div#827128946-bankchoice",
+        "open": false,
+        "label": null
+      },
+      {
+        "domPath": "div#opt-in > div.optin__wrapper > div.optin",
+        "open": true,
+        "label": null
+      }
+    ],
+    "accordions": [],
+    "tabs": []
+  },
+  "components": {
+    "cards": {
+      "count": 0,
+      "examples": []
+    },
+    "grids": {
+      "count": 0,
+      "examples": []
+    },
+    "accordions": {
+      "count": 0,
+      "examples": []
+    },
+    "tabs": {
+      "count": 0,
+      "examples": []
+    },
+    "tables": {
+      "count": 0,
+      "examples": []
+    },
+    "modals": {
+      "count": 3,
+      "examples": [
+        "div#-bankchoice",
+        "div#827128946-bankchoice"
+      ]
+    },
+    "carousels": {
+      "count": 0,
+      "examples": []
+    },
+    "videos": {
+      "count": 0,
+      "examples": []
+    },
+    "iframes": {
+      "count": 0,
+      "examples": []
+    },
+    "dataVizEmbeds": {
+      "count": 0,
+      "examples": []
+    },
+    "teamTiles": {
+      "count": 0,
+      "examples": []
+    },
+    "pricingTiles": {
+      "count": 0,
+      "examples": []
+    },
+    "testimonialCards": {
+      "count": 0,
+      "examples": []
+    },
+    "logoStrip": {
+      "count": 0,
+      "examples": []
+    },
+    "timeline": {
+      "count": 0,
+      "examples": []
+    },
+    "breadcrumbs": {
+      "count": 0,
+      "examples": []
+    },
+    "statRow": {
+      "count": 0,
+      "examples": []
+    },
+    "ctaBand": {
+      "count": 0,
+      "examples": []
+    },
+    "formFields": {
+      "count": 0,
+      "examples": []
+    },
+    "other": []
+  },
+  "perSectionStyle": [
+    {
+      "sectionRef": "main#main-content > div.title:nth-child(1)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(0, 39, 118)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": null,
+        "marginBlock": "0px 0px"
+      },
+      "borderRadius": null,
+      "fontFamilies": [
+        "SpareBank1-title-medium"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 145,
+        "height": 56
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.text:nth-child(2)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(0, 39, 118)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": null,
+        "marginBlock": "0px 0px"
+      },
+      "borderRadius": null,
+      "fontFamilies": [
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 225,
+        "height": 136
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.button.parbase:nth-child(4)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(255, 255, 255)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": "8px",
+        "marginBlock": "0px 0px"
+      },
+      "borderRadius": "96px",
+      "fontFamilies": [
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 369,
+        "height": 44
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.image.parbase:nth-child(6)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": true,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": null
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": null,
+        "marginBlock": "72px 0px"
+      },
+      "borderRadius": null,
+      "fontFamilies": [],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 485,
+        "height": 222
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.text:nth-child(7)",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": false,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": null
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": null,
+        "marginBlock": "0px 0px"
+      },
+      "borderRadius": null,
+      "fontFamilies": [],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 707,
+        "height": 96
+      }
+    }
+  ],
+  "embedDominance": {
+    "dominated": false,
+    "iframeSrc": null,
+    "viewportCoveragePct": null,
+    "mainHeightCoveragePct": null
+  },
+  "cssCustomProperties": [
+    {
+      "name": "--ffe-farge-fjell",
+      "value": "#002776"
+    },
+    {
+      "name": "--ffe-farge-fjell-70",
+      "value": "#4d689f"
+    },
+    {
+      "name": "--ffe-farge-fjell-30",
+      "value": "#b3bed6"
+    },
+    {
+      "name": "--ffe-farge-vann",
+      "value": "#005aa4"
+    },
+    {
+      "name": "--ffe-farge-vann-70",
+      "value": "#4d8cbf"
+    },
+    {
+      "name": "--ffe-farge-vann-30",
+      "value": "#b3cee4"
+    },
+    {
+      "name": "--ffe-farge-sand",
+      "value": "#f8e9dd"
+    },
+    {
+      "name": "--ffe-farge-sand-70",
+      "value": "#faf0e7"
+    },
+    {
+      "name": "--ffe-farge-sand-30",
+      "value": "#fdf8f5"
+    },
+    {
+      "name": "--ffe-farge-frost",
+      "value": "#7eb5d2"
+    },
+    {
+      "name": "--ffe-farge-frost-70",
+      "value": "#a5cbe0"
+    },
+    {
+      "name": "--ffe-farge-frost-30",
+      "value": "#d8e9f2"
+    },
+    {
+      "name": "--ffe-farge-syrin",
+      "value": "#d3d3ea"
+    },
+    {
+      "name": "--ffe-farge-syrin-70",
+      "value": "#e0e0f0"
+    },
+    {
+      "name": "--ffe-farge-syrin-30",
+      "value": "#f2f2f9"
+    },
+    {
+      "name": "--ffe-farge-myrull",
+      "value": "#fae4e0"
+    },
+    {
+      "name": "--ffe-farge-myrull-70",
+      "value": "#fcece9"
+    },
+    {
+      "name": "--ffe-farge-myrull-30",
+      "value": "#fef7f6"
+    },
+    {
+      "name": "--ffe-farge-villblomst",
+      "value": "#ee8d9c"
+    },
+    {
+      "name": "--ffe-farge-villblomst-70",
+      "value": "#f3afba"
+    },
+    {
+      "name": "--ffe-farge-villblomst-30",
+      "value": "#fadde1"
+    },
+    {
+      "name": "--ffe-farge-nordlys",
+      "value": "#33af85"
+    },
+    {
+      "name": "--ffe-farge-nordlys-70",
+      "value": "#70c7aa"
+    },
+    {
+      "name": "--ffe-farge-nordlys-30",
+      "value": "#c2e7da"
+    },
+    {
+      "name": "--ffe-farge-lyng",
+      "value": "#873953"
+    },
+    {
+      "name": "--ffe-farge-lyng-70",
+      "value": "#ab7487"
+    },
+    {
+      "name": "--ffe-farge-lyng-30",
+      "value": "#dbc4cb"
+    },
+    {
+      "name": "--ffe-farge-baer",
+      "value": "#e44244"
+    },
+    {
+      "name": "--ffe-farge-baer-70",
+      "value": "#ec7b7c"
+    },
+    {
+      "name": "--ffe-farge-baer-30",
+      "value": "#f7c6c7"
+    },
+    {
+      "name": "--ffe-farge-skog",
+      "value": "#00754e"
+    },
+    {
+      "name": "--ffe-farge-skog-70",
+      "value": "#4d9e83"
+    },
+    {
+      "name": "--ffe-farge-skog-30",
+      "value": "#b3d6ca"
+    },
+    {
+      "name": "--ffe-farge-multe",
+      "value": "#f8b181"
+    },
+    {
+      "name": "--ffe-farge-multe-70",
+      "value": "#fac8a7"
+    },
+    {
+      "name": "--ffe-farge-multe-30",
+      "value": "#fde8d9"
+    },
+    {
+      "name": "--ffe-farge-sol",
+      "value": "#dc8000"
+    },
+    {
+      "name": "--ffe-farge-sol-70",
+      "value": "#e7a64d"
+    },
+    {
+      "name": "--ffe-farge-sol-30",
+      "value": "#f5d9b3"
+    },
+    {
+      "name": "--ffe-farge-natt",
+      "value": "#001032"
+    },
+    {
+      "name": "--ffe-farge-svart",
+      "value": "#020a0a"
+    },
+    {
+      "name": "--ffe-farge-koksgraa",
+      "value": "#323232"
+    },
+    {
+      "name": "--ffe-farge-moerkgraa",
+      "value": "#676767"
+    },
+    {
+      "name": "--ffe-farge-graa",
+      "value": "#adadad"
+    },
+    {
+      "name": "--ffe-farge-lysgraa",
+      "value": "#d8d8d8"
+    },
+    {
+      "name": "--ffe-farge-moerkvarmgraa",
+      "value": "#848383"
+    },
+    {
+      "name": "--ffe-farge-varmgraa",
+      "value": "#9b9797"
+    },
+    {
+      "name": "--ffe-farge-lysvarmgraa",
+      "value": "#d7d2cb"
+    },
+    {
+      "name": "--ffe-farge-hvit",
+      "value": "#fff"
+    },
+    {
+      "name": "--ffe-fontsize-body-text",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-small-text",
+      "value": "0.875rem"
+    },
+    {
+      "name": "--ffe-fontsize-micro-text",
+      "value": "0.75rem"
+    },
+    {
+      "name": "--ffe-fontsize-lead-paragraph",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-sub-lead-paragraph",
+      "value": "1.063rem"
+    },
+    {
+      "name": "--ffe-fontsize-h1",
+      "value": "1.75rem"
+    },
+    {
+      "name": "--ffe-fontsize-h2",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--ffe-fontsize-h3",
+      "value": "1.25rem"
+    },
+    {
+      "name": "--ffe-fontsize-h4",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-h5",
+      "value": "1.0625rem"
+    },
+    {
+      "name": "--ffe-fontsize-h6",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-form-input",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-form-dropdown",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-button",
+      "value": "1rem"
+    },
+    {
+      "name": "--breakpoint-sm",
+      "value": "480px"
+    },
+    {
+      "name": "--breakpoint-md",
+      "value": "768px"
+    },
+    {
+      "name": "--breakpoint-lg",
+      "value": "1024px"
+    },
+    {
+      "name": "--breakpoint-xl",
+      "value": "1280px"
+    },
+    {
+      "name": "--app-width",
+      "value": "1280px"
+    },
+    {
+      "name": "--app-width-min",
+      "value": "320px"
+    },
+    {
+      "name": "--app-margin",
+      "value": "20px"
+    },
+    {
+      "name": "--ffe-ease-in-out-back",
+      "value": "cubic-bezier(0.46, -0.265, 0.48, 1.38)"
+    },
+    {
+      "name": "--ffe-ease",
+      "value": "cubic-bezier(0.25, 0.1, 0.25, 1)"
+    },
+    {
+      "name": "--ffe-transition-duration",
+      "value": "0.2s"
+    },
+    {
+      "name": "--ffe-spacing",
+      "value": "8px"
+    },
+    {
+      "name": "--ffe-spacing-2xs",
+      "value": "4px"
+    },
+    {
+      "name": "--ffe-spacing-xs",
+      "value": "8px"
+    },
+    {
+      "name": "--ffe-spacing-sm",
+      "value": "16px"
+    },
+    {
+      "name": "--ffe-spacing-md",
+      "value": "24px"
+    },
+    {
+      "name": "--ffe-spacing-lg",
+      "value": "32px"
+    },
+    {
+      "name": "--ffe-spacing-xl",
+      "value": "40px"
+    },
+    {
+      "name": "--ffe-spacing-2xl",
+      "value": "48px"
+    },
+    {
+      "name": "--ffe-spacing-3xl",
+      "value": "64px"
+    },
+    {
+      "name": "--ffe-spacing-4xl",
+      "value": "80px"
+    },
+    {
+      "name": "--ffe-spacing-5xl",
+      "value": "160px"
+    },
+    {
+      "name": "--ffe-g-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-g-secondary-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-error-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-g-border-color",
+      "value": "var(--ffe-farge-varmgraa)"
+    },
+    {
+      "name": "--ffe-g-border-radius",
+      "value": "4px"
+    },
+    {
+      "name": "--ffe-g-font",
+      "value": "'SpareBank1-regular',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-heading",
+      "value": "'SpareBank1-title-medium',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-heading-small",
+      "value": "'SpareBank1-medium',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-strong",
+      "value": "'SpareBank1-medium',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-italic",
+      "value": "'SpareBank1-italic',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-text-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-g-lead-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-heading-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-link-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-g-link-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-link-color-visited",
+      "value": "var(--ffe-farge-lyng)"
+    },
+    {
+      "name": "--ffe-g-link-icon-color-hover",
+      "value": "var(--ffe-farge-natt)"
+    },
+    {
+      "name": "--ffe-g-link-icon-color-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-fontsize-lead-paragraph",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--ffe-fontsize-sub-lead-paragraph",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-h1",
+      "value": "2.5rem"
+    },
+    {
+      "name": "--ffe-fontsize-h2",
+      "value": "2rem"
+    },
+    {
+      "name": "--ffe-fontsize-h3",
+      "value": "1.688rem"
+    },
+    {
+      "name": "--ffe-fontsize-h4",
+      "value": "1.375rem"
+    },
+    {
+      "name": "--ffe-fontsize-h5",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-h1",
+      "value": "2.875rem"
+    },
+    {
+      "name": "--ffe-fontsize-h2",
+      "value": "2.25rem"
+    },
+    {
+      "name": "--ffe-fontsize-h3",
+      "value": "1.75rem"
+    },
+    {
+      "name": "--ffe-v-icons-size-sm",
+      "value": "20px"
+    },
+    {
+      "name": "--ffe-v-icons-size-md",
+      "value": "24px"
+    },
+    {
+      "name": "--ffe-v-icons-size-lg",
+      "value": "40px"
+    },
+    {
+      "name": "--ffe-v-icons-size-xl",
+      "value": "48px"
+    },
+    {
+      "name": "--ffe-v-icons-default-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-text-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-buttons-border-radius",
+      "value": "6em"
+    },
+    {
+      "name": "--ffe-v-button-action-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-button-action-color-hover",
+      "value": "#095139"
+    },
+    {
+      "name": "--ffe-v-button-action-color-text",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-primary-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-primary-color-text",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-border-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color-bg",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-tertiary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-tertiary-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-tertiary-color-text",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-task-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-task-text-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-task-border-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-input-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-input-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-input-placeholder-color",
+      "value": "var(--ffe-farge-moerkgraa)"
+    },
+    {
+      "name": "--ffe-v-info-message-icon-color",
+      "value": "var(--ffe-g-secondary-color)"
+    },
+    {
+      "name": "--ffe-v-info-message-icon-fill",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-success-message-icon-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-success-message-icon-fill",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-error-message-icon-color",
+      "value": "var(--ffe-g-error-color)"
+    },
+    {
+      "name": "--ffe-v-error-message-icon-fill",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-checkbox-color",
+      "value": "var(--ffe-g-border-color)"
+    },
+    {
+      "name": "--ffe-v-checkbox-selected-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-checkbox-marker-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-checkbox-focus-outline-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-radio-button-label-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-tooltip-icon-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-tooltip-border-color",
+      "value": "var(--ffe-g-border-color)"
+    },
+    {
+      "name": "--ffe-v-message-box-icon-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-message-box-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-message-box-tips-bg-color",
+      "value": "var(--ffe-farge-sand)"
+    },
+    {
+      "name": "--ffe-v-message-box-tips-icon-color",
+      "value": "var(--ffe-farge-sol)"
+    },
+    {
+      "name": "--ffe-v-message-box-info-bg-color",
+      "value": "var(--ffe-farge-frost-30)"
+    },
+    {
+      "name": "--ffe-v-message-box-info-icon-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-message-box-success-bg-color",
+      "value": "var(--ffe-farge-nordlys-30)"
+    },
+    {
+      "name": "--ffe-v-message-box-success-icon-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-message-box-error-bg-color",
+      "value": "var(--ffe-farge-baer-30)"
+    },
+    {
+      "name": "--ffe-v-message-box-error-icon-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-v-message-box-link-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-message-box-link-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-message-box-link-color-visited",
+      "value": "var(--ffe-farge-lyng)"
+    },
+    {
+      "name": "--ffe-v-message-box-link-color-focus",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-lists-title-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-lists-description-description-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-lists-check-list-check-icon-color",
+      "value": "var(--ffe-farge-nordlys-wcag)"
+    },
+    {
+      "name": "--ffe-v-lists-check-list-cross-icon-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-v-context-message-close-button-color",
+      "value": "var(--ffe-farge-moerkgraa)"
+    },
+    {
+      "name": "--ffe-v-context-message-close-button-color-hover",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-context-message-close-button-border-color-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-context-message-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-context-message-icon-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-context-message-info-bg-color",
+      "value": "var(--ffe-farge-frost-30)"
+    },
+    {
+      "name": "--ffe-v-context-message-info-icon-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-context-message-info-icon-compact-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-context-message-tips-bg-color",
+      "value": "var(--ffe-farge-sand)"
+    },
+    {
+      "name": "--ffe-v-context-message-tips-icon-color",
+      "value": "var(--ffe-farge-sol)"
+    },
+    {
+      "name": "--ffe-v-context-message-success-bg-color",
+      "value": "var(--ffe-farge-nordlys-30)"
+    },
+    {
+      "name": "--ffe-v-context-message-success-compact-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-context-message-success-icon-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-context-message-error-bg-color",
+      "value": "var(--ffe-farge-baer-30)"
+    },
+    {
+      "name": "--ffe-v-context-message-error-icon-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-v-context-message-link-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-context-message-link-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-context-message-link-color-visited",
+      "value": "var(--ffe-farge-lyng)"
+    },
+    {
+      "name": "--ffe-v-context-message-link-color-focus",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-accordion-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-accordion-secondary-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-accordion-body-text-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-accordion-focus-border-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--animate-duration",
+      "value": "1s"
+    },
+    {
+      "name": "--animate-delay",
+      "value": "1s"
+    },
+    {
+      "name": "--animate-repeat",
+      "value": "1"
+    }
+  ],
+  "customProps": {
+    "--ffe-farge-fjell": "#002776",
+    "--ffe-farge-fjell-70": "#4d689f",
+    "--ffe-farge-fjell-30": "#b3bed6",
+    "--ffe-farge-vann": "#005aa4",
+    "--ffe-farge-vann-70": "#4d8cbf",
+    "--ffe-farge-vann-30": "#b3cee4",
+    "--ffe-farge-sand": "#f8e9dd",
+    "--ffe-farge-sand-70": "#faf0e7",
+    "--ffe-farge-sand-30": "#fdf8f5",
+    "--ffe-farge-frost": "#7eb5d2",
+    "--ffe-farge-frost-70": "#a5cbe0",
+    "--ffe-farge-frost-30": "#d8e9f2",
+    "--ffe-farge-syrin": "#d3d3ea",
+    "--ffe-farge-syrin-70": "#e0e0f0",
+    "--ffe-farge-syrin-30": "#f2f2f9",
+    "--ffe-farge-myrull": "#fae4e0",
+    "--ffe-farge-myrull-70": "#fcece9",
+    "--ffe-farge-myrull-30": "#fef7f6",
+    "--ffe-farge-villblomst": "#ee8d9c",
+    "--ffe-farge-villblomst-70": "#f3afba",
+    "--ffe-farge-villblomst-30": "#fadde1",
+    "--ffe-farge-nordlys": "#33af85",
+    "--ffe-farge-nordlys-70": "#70c7aa",
+    "--ffe-farge-nordlys-30": "#c2e7da",
+    "--ffe-farge-lyng": "#873953",
+    "--ffe-farge-lyng-70": "#ab7487",
+    "--ffe-farge-lyng-30": "#dbc4cb",
+    "--ffe-farge-baer": "#e44244",
+    "--ffe-farge-baer-70": "#ec7b7c",
+    "--ffe-farge-baer-30": "#f7c6c7",
+    "--ffe-farge-skog": "#00754e",
+    "--ffe-farge-skog-70": "#4d9e83",
+    "--ffe-farge-skog-30": "#b3d6ca",
+    "--ffe-farge-multe": "#f8b181",
+    "--ffe-farge-multe-70": "#fac8a7",
+    "--ffe-farge-multe-30": "#fde8d9",
+    "--ffe-farge-sol": "#dc8000",
+    "--ffe-farge-sol-70": "#e7a64d",
+    "--ffe-farge-sol-30": "#f5d9b3",
+    "--ffe-farge-natt": "#001032",
+    "--ffe-farge-svart": "#020a0a",
+    "--ffe-farge-koksgraa": "#323232",
+    "--ffe-farge-moerkgraa": "#676767",
+    "--ffe-farge-graa": "#adadad",
+    "--ffe-farge-lysgraa": "#d8d8d8",
+    "--ffe-farge-moerkvarmgraa": "#848383",
+    "--ffe-farge-varmgraa": "#9b9797",
+    "--ffe-farge-lysvarmgraa": "#d7d2cb",
+    "--ffe-farge-hvit": "#fff",
+    "--ffe-fontsize-body-text": "1rem",
+    "--ffe-fontsize-small-text": "0.875rem",
+    "--ffe-fontsize-micro-text": "0.75rem",
+    "--ffe-fontsize-lead-paragraph": "1.5rem",
+    "--ffe-fontsize-sub-lead-paragraph": "1.125rem",
+    "--ffe-fontsize-h1": "2.875rem",
+    "--ffe-fontsize-h2": "2.25rem",
+    "--ffe-fontsize-h3": "1.75rem",
+    "--ffe-fontsize-h4": "1.375rem",
+    "--ffe-fontsize-h5": "1.125rem",
+    "--ffe-fontsize-h6": "1rem",
+    "--ffe-fontsize-form-input": "1rem",
+    "--ffe-fontsize-form-dropdown": "1rem",
+    "--ffe-fontsize-button": "1rem",
+    "--breakpoint-sm": "480px",
+    "--breakpoint-md": "768px",
+    "--breakpoint-lg": "1024px",
+    "--breakpoint-xl": "1280px",
+    "--app-width": "1280px",
+    "--app-width-min": "320px",
+    "--app-margin": "20px",
+    "--ffe-ease-in-out-back": "cubic-bezier(0.46, -0.265, 0.48, 1.38)",
+    "--ffe-ease": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+    "--ffe-transition-duration": "0.2s",
+    "--ffe-spacing": "8px",
+    "--ffe-spacing-2xs": "4px",
+    "--ffe-spacing-xs": "8px",
+    "--ffe-spacing-sm": "16px",
+    "--ffe-spacing-md": "24px",
+    "--ffe-spacing-lg": "32px",
+    "--ffe-spacing-xl": "40px",
+    "--ffe-spacing-2xl": "48px",
+    "--ffe-spacing-3xl": "64px",
+    "--ffe-spacing-4xl": "80px",
+    "--ffe-spacing-5xl": "160px",
+    "--ffe-g-primary-color": "#005aa4",
+    "--ffe-g-secondary-color": "#002776",
+    "--ffe-g-error-color": "#e44244",
+    "--ffe-g-border-color": "#9b9797",
+    "--ffe-g-border-radius": "4px",
+    "--ffe-g-font": "'SpareBank1-regular',arial,sans-serif",
+    "--ffe-g-font-heading": "'SpareBank1-title-medium',arial,sans-serif",
+    "--ffe-g-font-heading-small": "'SpareBank1-medium',arial,sans-serif",
+    "--ffe-g-font-strong": "'SpareBank1-medium',arial,sans-serif",
+    "--ffe-g-font-italic": "'SpareBank1-italic',arial,sans-serif",
+    "--ffe-g-text-color": "#020a0a",
+    "--ffe-g-lead-color": "#002776",
+    "--ffe-g-heading-color": "#002776",
+    "--ffe-g-link-color": "#005aa4",
+    "--ffe-g-link-color-hover": "#002776",
+    "--ffe-g-link-color-visited": "#873953",
+    "--ffe-g-link-icon-color-hover": "#001032",
+    "--ffe-g-link-icon-color-focus": "#005aa4",
+    "--ffe-v-icons-size-sm": "20px",
+    "--ffe-v-icons-size-md": "24px",
+    "--ffe-v-icons-size-lg": "40px",
+    "--ffe-v-icons-size-xl": "48px",
+    "--ffe-v-icons-default-color": "#005aa4",
+    "--ffe-v-button-text-color": "#fff",
+    "--ffe-v-buttons-border-radius": "6em",
+    "--ffe-v-button-action-color": "#00754e",
+    "--ffe-v-button-action-color-hover": "#095139",
+    "--ffe-v-button-action-color-text": "#fff",
+    "--ffe-v-button-primary-color": "#005aa4",
+    "--ffe-v-button-primary-color-hover": "#002776",
+    "--ffe-v-button-primary-color-text": "#fff",
+    "--ffe-v-button-secondary-color": "#005aa4",
+    "--ffe-v-button-secondary-border-color": "#005aa4",
+    "--ffe-v-button-secondary-color-hover": "#002776",
+    "--ffe-v-button-secondary-color-bg": "#fff",
+    "--ffe-v-button-tertiary-color": "#005aa4",
+    "--ffe-v-button-tertiary-color-hover": "#002776",
+    "--ffe-v-button-tertiary-color-text": "#fff",
+    "--ffe-v-button-task-primary-color": "#005aa4",
+    "--ffe-v-button-task-text-color-hover": "#002776",
+    "--ffe-v-button-task-border-focus": "#005aa4",
+    "--ffe-v-input-color": "#020a0a",
+    "--ffe-v-input-bg-color": "#fff",
+    "--ffe-v-input-placeholder-color": "#676767",
+    "--ffe-v-info-message-icon-color": "#002776",
+    "--ffe-v-info-message-icon-fill": "#fff",
+    "--ffe-v-success-message-icon-color": "#00754e",
+    "--ffe-v-success-message-icon-fill": "#fff",
+    "--ffe-v-error-message-icon-color": "#e44244",
+    "--ffe-v-error-message-icon-fill": "#fff",
+    "--ffe-v-checkbox-color": "#9b9797",
+    "--ffe-v-checkbox-selected-color": "#005aa4",
+    "--ffe-v-checkbox-marker-color": "#005aa4",
+    "--ffe-v-checkbox-focus-outline-color": "#005aa4",
+    "--ffe-v-radio-button-label-color": "#005aa4",
+    "--ffe-v-tooltip-icon-color": "#005aa4",
+    "--ffe-v-tooltip-border-color": "#9b9797",
+    "--ffe-v-message-box-icon-bg-color": "#fff",
+    "--ffe-v-message-box-variant-bg-color": "#fff",
+    "--ffe-v-message-box-tips-bg-color": "#f8e9dd",
+    "--ffe-v-message-box-tips-icon-color": "#dc8000",
+    "--ffe-v-message-box-info-bg-color": "#d8e9f2",
+    "--ffe-v-message-box-info-icon-color": "#005aa4",
+    "--ffe-v-message-box-success-bg-color": "#c2e7da",
+    "--ffe-v-message-box-success-icon-color": "#00754e",
+    "--ffe-v-message-box-error-bg-color": "#f7c6c7",
+    "--ffe-v-message-box-error-icon-color": "#e44244",
+    "--ffe-v-message-box-link-color": "#005aa4",
+    "--ffe-v-message-box-link-color-hover": "#002776",
+    "--ffe-v-message-box-link-color-visited": "#873953",
+    "--ffe-v-message-box-link-color-focus": "#fff",
+    "--ffe-v-lists-title-color": "#002776",
+    "--ffe-v-lists-description-description-color": "#020a0a",
+    "--ffe-v-lists-check-list-check-icon-color": "var(--ffe-farge-nordlys-wcag)",
+    "--ffe-v-lists-check-list-cross-icon-color": "#e44244",
+    "--ffe-v-context-message-close-button-color": "#676767",
+    "--ffe-v-context-message-close-button-color-hover": "#020a0a",
+    "--ffe-v-context-message-close-button-border-color-focus": "#005aa4",
+    "--ffe-v-context-message-variant-bg-color": "#fff",
+    "--ffe-v-context-message-icon-bg-color": "#fff",
+    "--ffe-v-context-message-info-bg-color": "#d8e9f2",
+    "--ffe-v-context-message-info-icon-color": "#005aa4",
+    "--ffe-v-context-message-info-icon-compact-color": "#005aa4",
+    "--ffe-v-context-message-tips-bg-color": "#f8e9dd",
+    "--ffe-v-context-message-tips-icon-color": "#dc8000",
+    "--ffe-v-context-message-success-bg-color": "#c2e7da",
+    "--ffe-v-context-message-success-compact-color": "#00754e",
+    "--ffe-v-context-message-success-icon-color": "#00754e",
+    "--ffe-v-context-message-error-bg-color": "#f7c6c7",
+    "--ffe-v-context-message-error-icon-color": "#e44244",
+    "--ffe-v-context-message-link-color": "#005aa4",
+    "--ffe-v-context-message-link-color-hover": "#002776",
+    "--ffe-v-context-message-link-color-visited": "#873953",
+    "--ffe-v-context-message-link-color-focus": "#fff",
+    "--ffe-v-accordion-primary-color": "#005aa4",
+    "--ffe-v-accordion-secondary-color": "#fff",
+    "--ffe-v-accordion-body-text-color": "#020a0a",
+    "--ffe-v-accordion-focus-border-color": "#005aa4",
+    "--animate-duration": "1s",
+    "--animate-delay": "1s",
+    "--animate-repeat": "1"
+  },
+  "fontFaces": [
+    {
+      "family": "SpareBank1-medium",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff\") format(\"woff\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-medium; font-display: fallback; src: url(\"clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff\") format(\"woff\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.css"
+    },
+    {
+      "family": "SpareBank1-regular",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff\") format(\"woff\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-regular; font-display: fallback; src: url(\"clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff\") format(\"woff\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.css"
+    },
+    {
+      "family": "SpareBank1-title-medium",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff\") format(\"woff\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-title-medium; font-display: fallback; src: url(\"clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2\") format(\"woff2\"), url(\"clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff\") format(\"woff\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.css"
+    }
+  ],
+  "iconFont": null,
+  "textRendering": {
+    "textRendering": "auto",
+    "webkitFontSmoothing": "auto",
+    "fontSynthesis": "weight style small-caps",
+    "fontKerning": "auto",
+    "fontVariantNumeric": "tabular-nums",
+    "bodyFontFamily": "SpareBank1-regular, arial, sans-serif",
+    "bodyFontSize": "16px",
+    "bodyLineHeight": "24px",
+    "bodyColor": "rgb(2, 10, 10)",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "htmlFontSize": "16px"
+  },
+  "containerModel": {
+    "maxWidthMode": "1280px",
+    "sample": [
+      {
+        "domPath": "main#main-content > div.text:nth-child(2) > div.aem-component-container.text-container",
+        "renderedWidth": 1280,
+        "marginLeft": "80px",
+        "marginRight": "80px"
+      },
+      {
+        "domPath": "main#main-content > div.button.parbase:nth-child(4) > div.aem-component-container",
+        "renderedWidth": 1280,
+        "marginLeft": "80px",
+        "marginRight": "80px"
+      }
+    ],
+    "documentHeight": 1394,
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    }
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 4,
+    "mainTextLen": 166,
+    "realImageCount": 4,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/nb-bank-privat-kundeservice-bestill-prisliste-html.png",
+  "stats": {
+    "wordCount": 277,
+    "ctaCount": 4,
+    "internalLinkCount": 29,
+    "externalLinkCount": 5,
+    "imageCount": 4,
+    "headingCount": 6
+  },
+  "slots": {
+    "pageType": "static",
+    "archetypeFamily": "utility",
+    "headline": "Prisliste",
+    "deck": "Vi er flere banker som samarbeider. Priser og betingelser på produkter og tjenester er forskjellig fra bank til bank.",
+    "meta": {
+      "title": "Prisliste | SpareBank 1",
+      "description": null,
+      "canonical": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/prisliste.html",
+      "og": {
+        "title": "Prisliste",
+        "description": null,
+        "image": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg",
+        "type": "article",
+        "siteName": null
+      }
+    },
+    "breadcrumb": null,
+    "sections": [],
+    "h3": [],
+    "paragraphs": 1,
+    "primaryCtas": [
+      {
+        "label": "Velg bank for å se pris og betingelser",
+        "href": "/nb/bank/privat/kundeservice/bestill/prisliste.html"
+      }
+    ],
+    "images": [],
+    "faqItems": [],
+    "hasFeedback": false,
+    "hasContactRow": false,
+    "hasBankChoice": false
+  }
+}

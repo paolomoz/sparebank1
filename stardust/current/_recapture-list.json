@@ -1,0 +1,42 @@
+[
+ {
+  "slug": "nb-bank-bedrift-html",
+  "ph": 0,
+  "broken": 0,
+  "inv": 15,
+  "consent": true,
+  "url": "https://www.sparebank1.no/nb/bank/bedrift.html"
+ },
+ {
+  "slug": "nb-bank-privat-daglig-bruk-bankid-html",
+  "ph": 1,
+  "broken": 0,
+  "inv": 15,
+  "consent": false,
+  "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/bankid.html"
+ },
+ {
+  "slug": "nb-bank-privat-daglig-bruk-kredittkort-html",
+  "ph": 1,
+  "broken": 0,
+  "inv": 23,
+  "consent": false,
+  "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/kredittkort.html"
+ },
+ {
+  "slug": "nb-bank-privat-lan-forbrukslan-html",
+  "ph": 1,
+  "broken": 0,
+  "inv": 5,
+  "consent": false,
+  "url": "https://www.sparebank1.no/nb/bank/privat/lan/forbrukslan.html"
+ },
+ {
+  "slug": "nb-bank-privat-sparing-markedsnytt-html",
+  "ph": 3,
+  "broken": 0,
+  "inv": 11,
+  "consent": false,
+  "url": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt.html"
+ }
+]

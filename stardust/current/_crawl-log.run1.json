@@ -1,0 +1,546 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 100,
+    "concurrency": 4
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": {
+    "url": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/favicon.png",
+    "file": "assets/favicon.png"
+  },
+  "crawl": {
+    "failures": []
+  },
+  "dynamicSurface": {
+    "pages": 100,
+    "pagesWithSameSiteData": 100,
+    "pagesWithSearchForm": 0,
+    "pagesHydrated": 0,
+    "truncatedPages": 0,
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/nettsider/ressurser/bank/user",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user",
+        "pages": 100,
+        "examples": [
+          "nb-bank-bedrift-html",
+          "nb-bank-privat-html",
+          "nb-bank-privat-daglig-bruk-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/bin/sb1/components/footer",
+        "query": [
+          "bank",
+          "lang",
+          "market"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/bin/sb1/components/footer",
+        "pages": 12,
+        "examples": [
+          "nb-bank-om-oss-nyheter-html",
+          "nb-bank-om-oss-hjemme-html",
+          "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+        "query": [
+          "limit",
+          "offset",
+          "temaFilter"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+        "pages": 6,
+        "examples": [
+          "nb-bank-privat-html",
+          "nb-bank-privat-sparing-html",
+          "nb-bank-privat-pensjon-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/personal/banking/consent/cookies/identity",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity",
+        "pages": 4,
+        "examples": [
+          "nb-bank-bedrift-html",
+          "nb-bank-privat-html",
+          "nb-bank-privat-daglig-bruk-html"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/nettsider/opt-in",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+        "pages": 4,
+        "examples": [
+          "nb-bank-privat-html",
+          "nb-bank-privat-daglig-bruk-html",
+          "nb-bank-om-oss-html"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "adobedc.demdex.net",
+        "path": "/ee/v1/interact",
+        "query": [
+          "configId",
+          "requestId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://adobedc.demdex.net/ee/v1/interact",
+        "pages": 3,
+        "examples": [
+          "nb-bank-privat-html",
+          "nb-bank-om-oss-html",
+          "nb-bank-privat-lan-boliglan-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/nyheter.export.json",
+        "query": [
+          "limit",
+          "offset",
+          "temaFilter"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.export.json",
+        "pages": 3,
+        "examples": [
+          "nb-bank-om-oss-html",
+          "nb-bank-privat-svindel-html",
+          "nb-bank-om-oss-nyheter-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/bank/nettsider-privat/fond/toggles",
+        "query": [
+          "bankShortName"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/bank/nettsider-privat/fond/toggles",
+        "pages": 2,
+        "examples": [
+          "nb-bank-privat-sparing-html",
+          "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/personal/banking/savingscalculator/expected-performance",
+        "query": [
+          "initialValue",
+          "periodicInvestment",
+          "risk",
+          "years"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/expected-performance",
+        "pages": 2,
+        "examples": [
+          "nb-bank-privat-sparing-html",
+          "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/personal/banking/savingscalculator/suggested-savings-product",
+        "query": [
+          "risk",
+          "years"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/suggested-savings-product",
+        "pages": 2,
+        "examples": [
+          "nb-bank-privat-sparing-html",
+          "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/personal/banking/fund/products/available",
+        "query": [
+          "fid"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v3+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/personal/banking/fund/products/available",
+        "pages": 2,
+        "examples": [
+          "nb-bank-privat-sparing-html",
+          "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.sparebank1.no",
+        "path": "/api/personal/banking/boliglan-kalkulator/economy",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/economy",
+        "pages": 2,
+        "examples": [
+          "nb-bank-privat-lan-boliglan-html",
+          "nb-bank-privat-lan-lanekalkulator-html"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.sparebank1.no",
+        "path": "/api/personal/banking/boliglan-kalkulator/annuity-loan",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/annuity-loan",
+        "pages": 2,
+        "examples": [
+          "nb-bank-privat-lan-boliglan-html",
+          "nb-bank-privat-lan-lanekalkulator-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/hjemme.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/hjemme.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-om-oss-hjemme-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/personal/banking/consent/cookies",
+        "query": [
+          "withIdentity"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/personal/banking/consent/cookies",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-lan-forbrukslan-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/personal/banking/credit/calculator/consumerloan/estimate",
+        "query": [
+          "durationInYears",
+          "nominalInterest",
+          "principal"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/personal/banking/credit/calculator/consumerloan/estimate",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-lan-forbrukslan-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/nettsider/ressurser/bank/valutakurser",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/valutakurser",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "googleads.g.doubleclick.net",
+        "path": "/pagead/id",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/html",
+        "sameSite": false,
+        "example": "https://googleads.g.doubleclick.net/pagead/id",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-sparing-markedsnytt-html"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "jnn-pa.googleapis.com",
+        "path": "/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json+protobuf",
+        "sameSite": false,
+        "example": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-sparing-markedsnytt-html"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.youtube.com",
+        "pages": 4,
+        "examples": [
+          "nb-bank-privat-lan-forbrukslan-html",
+          "nb-bank-privat-daglig-bruk-kredittkort-html",
+          "nb-bank-privat-daglig-bruk-bankid-html"
+        ]
+      },
+      {
+        "host": "static.doubleclick.net",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-sparing-markedsnytt-html"
+        ]
+      },
+      {
+        "host": "www.google.com",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-sparing-markedsnytt-html"
+        ]
+      }
+    ],
+    "frameworkHints": [],
+    "globalState": [],
+    "formTargets": []
+  }
+}

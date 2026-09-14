@@ -1,0 +1,311 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics plan",
+  "writtenAt": "2026-09-14T15:16:32.167Z",
+  "input": "stardust/current/_dynamics.json",
+  "target": "https://main--sparebank1--paolomoz.aem.page",
+  "migrated": null
+ },
+ "rows": [
+  {
+   "id": "a-cms-app-settings-object-digitaldata",
+   "class": "A",
+   "feature": "CMS / app settings object digitalData",
+   "pages": 5,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "read-settings",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "— (keys name endpoints, ids, vendors)"
+  },
+  {
+   "id": "a-first-party-api-get-bin-sb1-components-footer",
+   "class": "A",
+   "feature": "first-party API GET /bin/sb1/components/footer",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "GET /bin/sb1/components/footer?bank,lang,market → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "cr-client-rendered-slot-tab-js-tab-content-default",
+   "class": "CR",
+   "feature": "client-rendered slot tab js-tab-content default",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "SpareBank 1 Gruppen 2026 2. kvartal Kvartalsrapport (PDF) 1."
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-tab-js-tab-content",
+   "class": "CR",
+   "feature": "client-rendered slot tab js-tab-content ",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "Fremtind Forsikring 2026 2. kvartal Kvartalsrapport Fremtind",
+    "SpareBank 1 Forsikring 2026 2. kvartal Kvartalsrapport (PDF)",
+    "SpareBank 1 Factoring 2026 2. kvartal Kvartalsrapport (PDF) ",
+    "Other companies Kredittbanken (tidl. SpareBank 1 Kreditt) Fi"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-main-empty-at-load-filled-after-client-rendered-page",
+   "class": "CR",
+   "feature": "main empty at load, filled after (client-rendered page)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "text at load 0 → settled 2798"
+   ],
+   "pattern": "client-rendered-page",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "human-browser capture; never migrate blank"
+  },
+  {
+   "id": "d-first-party-data-file-get-nb-bank-om-oss-nyheter-export-js",
+   "class": "D",
+   "feature": "first-party data file GET /nb/bank/om-oss/nyheter.export.json",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "GET /nb/bank/om-oss/nyheter.export.json?limit,offset → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "i18n-locale-variants-nn-nn-nn-nn-nn",
+   "class": "I18N",
+   "feature": "locale variants nn,nn,nn,nn,nn",
+   "pages": 3,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+    "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html#meeting",
+    "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftskort.html",
+    "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftskort.html#meeting"
+   ],
+   "pattern": "locale-tree",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "locale wave",
+   "decision": "scope of the locale trees"
+  },
+  {
+   "id": "i18n-locale-variants-no",
+   "class": "I18N",
+   "feature": "locale variants no",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "https://publish.mynewsdesk.com/no/analyze/materials/pressrelease/2710291"
+   ],
+   "pattern": "locale-tree",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "locale wave",
+   "decision": "scope of the locale trees"
+  },
+  {
+   "id": "l-listing-candidate-tabs-content-aem-main-container-5-cards",
+   "class": "L",
+   "feature": "listing candidate tabs__content aem-main-container (5 cards)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "l-listing-candidate-ul-12-cards",
+   "class": "L",
+   "feature": "listing candidate ul (12 cards)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "l-listing-candidate-text-wrapper-4-cards",
+   "class": "L",
+   "feature": "listing candidate text-wrapper  (4 cards)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "l-listing-candidate-text-wrapper-5-cards",
+   "class": "L",
+   "feature": "listing candidate text-wrapper  (5 cards)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "l-listing-candidate-text-wrapper-9-cards",
+   "class": "L",
+   "feature": "listing candidate text-wrapper  (9 cards)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "l-listing-candidate-text-wrapper-3-cards",
+   "class": "L",
+   "feature": "listing candidate text-wrapper  (3 cards)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "l-listing-candidate-newscards-32-cards",
+   "class": "L",
+   "feature": "listing candidate newscards (32 cards)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "m-modal-trigger-overlay-btn-target-outside-dom-at-capture",
+   "class": "M",
+   "feature": "modal trigger overlay-btn → target outside DOM at capture",
+   "pages": 2,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "https://www.sparebank1.no/nb/bank/bedrift/bedriftskort.html#",
+    "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+    "https://www.sparebank1.no/nb/bank/om-oss/investor.html"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none"
+  },
+  {
+   "id": "m-modal-trigger-overlay-btn-chrome-only-target-outside-dom-a",
+   "class": "M",
+   "feature": "modal trigger overlay-btn (chrome only) → target outside DOM at capture",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat"
+   ],
+   "pattern": "chrome-interaction",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none (motion-observe evidence)"
+  },
+  {
+   "id": "x-sign-in-account-links",
+   "class": "X",
+   "feature": "sign-in / account links",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "https://www.sparebank1.no/content/sites/sb1/nb/bank/om-oss/nyheter/faerre-deler-passord-til-nettbank--fortsatt-for-mange--mener-svi.html"
+   ],
+   "pattern": "decided-out",
+   "disposition": "decided-out",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "register",
+   "decision": "auth / commerce on the new host?"
+  }
+ ]
+}

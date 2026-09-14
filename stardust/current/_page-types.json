@@ -1,0 +1,895 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:extract --prep § 2 page typing (replica Phase 1) — LLM judgment over AEM pageType (SB1.config.page.pageType in rendered HTML), clientlib variant, roster family and the contact-sheet vision check",
+  "writtenAt": "2026-09-14T15:20:00Z",
+  "readArtifacts": [
+   "stardust/current/pages/*.html",
+   "stardust/current/_aem-typing-draft.json",
+   "stardust/validation/extract-contact-sheets/sheet-01..09.png"
+  ]
+ },
+ "catalog": "landing | article | listing | program | form | static | unique (stardust) — archetypeFamily is the replica archetype grouping (one gated prototype per family)",
+ "types": {
+  "theme": {
+   "type": "program",
+   "pages": [
+    "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+    "nb-bank-bedrift-bedriftsforsikring-html",
+    "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+    "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html"
+   ],
+   "archetype": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html"
+  },
+  "category-hub": {
+   "type": "landing",
+   "pages": [
+    "nb-bank-bedrift-bedriftskort-html",
+    "nb-bank-bedrift-betaling-html",
+    "nb-bank-bedrift-daglig-drift-html",
+    "nb-bank-bedrift-konto-html",
+    "nb-bank-bedrift-lan-finansiering-html",
+    "nb-bank-bedrift-pensjon-html",
+    "nb-bank-bedrift-regnskap-html",
+    "nb-bank-bedrift-sparing-investering-html",
+    "nb-bank-bedrift-starte-bedrift-html",
+    "nb-bank-bedrift-tips-og-rad-html",
+    "nb-bank-privat-daglig-bruk-html",
+    "nb-bank-privat-eiendom-html",
+    "nb-bank-privat-forsikring-html",
+    "nb-bank-privat-lan-html",
+    "nb-bank-privat-lofavor-html",
+    "nb-bank-privat-pensjon-html",
+    "nb-bank-privat-private-banking-html",
+    "nb-bank-privat-sparing-html",
+    "nb-bank-privat-svindel-html",
+    "nb-bank-privat-tips-og-rad-html"
+   ],
+   "archetype": "nb-bank-privat-lan-html"
+  },
+  "product": {
+   "type": "program",
+   "pages": [
+    "nb-bank-bedrift-bedriftskort-kredittkort-html",
+    "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+    "nb-bank-bedrift-konto-bedriftskonto-html",
+    "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+    "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+    "nb-bank-bedrift-lan-finansiering-leasing-html",
+    "nb-bank-bedrift-open-api-html",
+    "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+    "nb-bank-om-oss-vare-eksperter-html",
+    "nb-bank-privat-daglig-bruk-bankid-html",
+    "nb-bank-privat-daglig-bruk-bankkonto-html",
+    "nb-bank-privat-daglig-bruk-bankkort-html",
+    "nb-bank-privat-daglig-bruk-kredittkort-html",
+    "nb-bank-privat-daglig-bruk-mobilbank-html",
+    "nb-bank-privat-forsikring-barneforsikring-html",
+    "nb-bank-privat-forsikring-bilforsikring-html",
+    "nb-bank-privat-forsikring-innboforsikring-html",
+    "nb-bank-privat-forsikring-kundehistorier-html",
+    "nb-bank-privat-forsikring-reiseforsikring-html",
+    "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+    "nb-bank-privat-lan-billan-html",
+    "nb-bank-privat-lan-boliglan-html",
+    "nb-bank-privat-lan-forbrukslan-html",
+    "nb-bank-privat-lan-gronne-lan-html",
+    "nb-bank-privat-lan-lanekalkulator-html",
+    "nb-bank-privat-lan-refinansiering-html",
+    "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+    "nb-bank-privat-sparing-spare-i-fond-html",
+    "nb-bank-privat-sparing-spare-pa-konto-html",
+    "nb-bank-privat-sparing-spare-til-barn-html"
+   ],
+   "archetype": "nb-bank-privat-lan-boliglan-html"
+  },
+  "market-landing": {
+   "type": "landing",
+   "pages": [
+    "nb-bank-bedrift-html",
+    "nb-bank-om-oss-html",
+    "nb-bank-privat-html"
+   ],
+   "archetype": "nb-bank-privat-html"
+  },
+  "faq": {
+   "type": "article",
+   "pages": [
+    "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+    "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+    "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+    "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+    "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+    "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+    "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+    "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+    "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+    "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+    "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+    "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html"
+   ],
+   "archetype": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html"
+  },
+  "kundeservice-hub": {
+   "type": "landing",
+   "pages": [
+    "nb-bank-bedrift-kundeservice-html",
+    "nb-bank-privat-kundeservice-html"
+   ],
+   "archetype": "nb-bank-privat-kundeservice-html"
+  },
+  "campaign-landing": {
+   "type": "landing",
+   "pages": [
+    "nb-bank-om-oss-hjemme-html"
+   ],
+   "archetype": "nb-bank-om-oss-hjemme-html"
+  },
+  "om-oss": {
+   "type": "static",
+   "pages": [
+    "nb-bank-om-oss-investor-html",
+    "nb-bank-om-oss-jobb-og-karriere-html",
+    "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+    "nb-bank-om-oss-personvern-generelle-vilkar-html",
+    "nb-bank-om-oss-personvern-html",
+    "nb-bank-om-oss-presse-html",
+    "nb-bank-om-oss-samfunnsansvar-html",
+    "nb-bank-om-oss-selskaper-html"
+   ],
+   "archetype": "nb-bank-om-oss-presse-html"
+  },
+  "news-article": {
+   "type": "article",
+   "pages": [
+    "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+    "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+    "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+    "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+    "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+    "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+    "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+    "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+    "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+    "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html"
+   ],
+   "archetype": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html"
+  },
+  "news-listing": {
+   "type": "listing",
+   "pages": [
+    "nb-bank-om-oss-nyheter-html"
+   ],
+   "archetype": "nb-bank-om-oss-nyheter-html"
+  },
+  "tool": {
+   "type": "form",
+   "pages": [
+    "nb-bank-privat-forsikring-meld-skade-html",
+    "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+    "nb-bank-privat-kundeservice-verktoy-klager-html",
+    "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
+    "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+    "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html"
+   ],
+   "archetype": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html"
+  },
+  "utility": {
+   "type": "static",
+   "pages": [
+    "nb-bank-privat-kundeservice-bestill-prisliste-html",
+    "nb-bank-privat-kundeservice-kontakt-html"
+   ],
+   "archetype": "nb-bank-privat-kundeservice-kontakt-html"
+  },
+  "markedsnytt-listing": {
+   "type": "listing",
+   "pages": [
+    "nb-bank-privat-sparing-markedsnytt-html"
+   ],
+   "archetype": "nb-bank-privat-sparing-markedsnytt-html"
+  }
+ },
+ "pages": {
+  "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html": {
+   "type": "program",
+   "archetypeFamily": "theme",
+   "aemPageType": "Tema",
+   "clientlib": "base",
+   "rosterFamily": "theme"
+  },
+  "nb-bank-bedrift-bedriftsforsikring-html": {
+   "type": "program",
+   "archetypeFamily": "theme",
+   "aemPageType": "Tema",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-bedrift-bedriftskort-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Kategori",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-bedrift-bedriftskort-kredittkort-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product-b2b"
+  },
+  "nb-bank-bedrift-betaling-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Kategori",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-bedrift-betaling-utenlandsbetaling-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Underkategori",
+   "clientlib": "base",
+   "rosterFamily": "product-b2b"
+  },
+  "nb-bank-bedrift-daglig-drift-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Kategori",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-bedrift-html": {
+   "type": "landing",
+   "archetypeFamily": "market-landing",
+   "aemPageType": "Marked",
+   "clientlib": "base",
+   "rosterFamily": "market-landing"
+  },
+  "nb-bank-bedrift-konto-bedriftskonto-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-bedrift-konto-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Kategori",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html": {
+   "type": "article",
+   "archetypeFamily": "faq",
+   "aemPageType": "Spørsmål",
+   "clientlib": "base",
+   "rosterFamily": "faq"
+  },
+  "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html": {
+   "type": "article",
+   "archetypeFamily": "faq",
+   "aemPageType": "Spørsmål",
+   "clientlib": "base",
+   "rosterFamily": "faq"
+  },
+  "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html": {
+   "type": "article",
+   "archetypeFamily": "faq",
+   "aemPageType": "Spørsmål",
+   "clientlib": "base",
+   "rosterFamily": "faq"
+  },
+  "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html": {
+   "type": "article",
+   "archetypeFamily": "faq",
+   "aemPageType": "Spørsmål",
+   "clientlib": "base",
+   "rosterFamily": "faq"
+  },
+  "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html": {
+   "type": "article",
+   "archetypeFamily": "faq",
+   "aemPageType": "Spørsmål",
+   "clientlib": "base",
+   "rosterFamily": "faq"
+  },
+  "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html": {
+   "type": "article",
+   "archetypeFamily": "faq",
+   "aemPageType": "Spørsmål",
+   "clientlib": "base",
+   "rosterFamily": "faq"
+  },
+  "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html": {
+   "type": "article",
+   "archetypeFamily": "faq",
+   "aemPageType": "Spørsmål",
+   "clientlib": "base",
+   "rosterFamily": "faq"
+  },
+  "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html": {
+   "type": "article",
+   "archetypeFamily": "faq",
+   "aemPageType": "Spørsmål",
+   "clientlib": "base",
+   "rosterFamily": "faq"
+  },
+  "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html": {
+   "type": "article",
+   "archetypeFamily": "faq",
+   "aemPageType": "Spørsmål",
+   "clientlib": "base",
+   "rosterFamily": "faq"
+  },
+  "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html": {
+   "type": "article",
+   "archetypeFamily": "faq",
+   "aemPageType": "Spørsmål",
+   "clientlib": "base",
+   "rosterFamily": "faq"
+  },
+  "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html": {
+   "type": "article",
+   "archetypeFamily": "faq",
+   "aemPageType": "Spørsmål",
+   "clientlib": "base",
+   "rosterFamily": "faq"
+  },
+  "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html": {
+   "type": "article",
+   "archetypeFamily": "faq",
+   "aemPageType": "Spørsmål",
+   "clientlib": "base",
+   "rosterFamily": "faq"
+  },
+  "nb-bank-bedrift-kundeservice-html": {
+   "type": "landing",
+   "archetypeFamily": "kundeservice-hub",
+   "aemPageType": "Kundeservice",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-bedrift-lan-finansiering-bedriftslan-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product-b2b"
+  },
+  "nb-bank-bedrift-lan-finansiering-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-bedrift-lan-finansiering-kassekreditt-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-bedrift-lan-finansiering-leasing-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product-b2b"
+  },
+  "nb-bank-bedrift-open-api-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "footer-utility"
+  },
+  "nb-bank-bedrift-pensjon-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Kategori",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-bedrift-regnskap-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-bedrift-sparing-investering-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Kategori",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-bedrift-starte-bedrift-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "static-story"
+  },
+  "nb-bank-bedrift-tips-og-rad-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Oversikt side",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-om-oss-hjemme-html": {
+   "type": "landing",
+   "archetypeFamily": "campaign-landing",
+   "aemPageType": "",
+   "clientlib": "frontend",
+   "rosterFamily": "om-oss"
+  },
+  "nb-bank-om-oss-html": {
+   "type": "landing",
+   "archetypeFamily": "market-landing",
+   "aemPageType": "Marked",
+   "clientlib": "base",
+   "rosterFamily": "market-landing"
+  },
+  "nb-bank-om-oss-investor-html": {
+   "type": "static",
+   "archetypeFamily": "om-oss",
+   "aemPageType": "Om oss",
+   "clientlib": "base",
+   "rosterFamily": "om-oss"
+  },
+  "nb-bank-om-oss-jobb-og-karriere-html": {
+   "type": "static",
+   "archetypeFamily": "om-oss",
+   "aemPageType": "Om oss",
+   "clientlib": "base",
+   "rosterFamily": "om-oss"
+  },
+  "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html": {
+   "type": "article",
+   "archetypeFamily": "news-article",
+   "aemPageType": "",
+   "clientlib": "frontend",
+   "rosterFamily": "news-article"
+  },
+  "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html": {
+   "type": "article",
+   "archetypeFamily": "news-article",
+   "aemPageType": "",
+   "clientlib": "frontend",
+   "rosterFamily": "news-article"
+  },
+  "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html": {
+   "type": "article",
+   "archetypeFamily": "news-article",
+   "aemPageType": "",
+   "clientlib": "frontend",
+   "rosterFamily": "news-article"
+  },
+  "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html": {
+   "type": "article",
+   "archetypeFamily": "news-article",
+   "aemPageType": "",
+   "clientlib": "frontend",
+   "rosterFamily": "news-article"
+  },
+  "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html": {
+   "type": "article",
+   "archetypeFamily": "news-article",
+   "aemPageType": "",
+   "clientlib": "frontend",
+   "rosterFamily": "news-article"
+  },
+  "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html": {
+   "type": "article",
+   "archetypeFamily": "news-article",
+   "aemPageType": "",
+   "clientlib": "frontend",
+   "rosterFamily": "news-article"
+  },
+  "nb-bank-om-oss-nyheter-html": {
+   "type": "listing",
+   "archetypeFamily": "news-listing",
+   "aemPageType": "",
+   "clientlib": "frontend",
+   "rosterFamily": "om-oss"
+  },
+  "nb-bank-om-oss-om-banken-selskapsinformasjon-html": {
+   "type": "static",
+   "archetypeFamily": "om-oss",
+   "aemPageType": "Om oss",
+   "clientlib": "base",
+   "rosterFamily": "footer-utility"
+  },
+  "nb-bank-om-oss-personvern-generelle-vilkar-html": {
+   "type": "static",
+   "archetypeFamily": "om-oss",
+   "aemPageType": "Om oss",
+   "clientlib": "base",
+   "rosterFamily": "footer-utility"
+  },
+  "nb-bank-om-oss-personvern-html": {
+   "type": "static",
+   "archetypeFamily": "om-oss",
+   "aemPageType": "Om oss",
+   "clientlib": "base",
+   "rosterFamily": "footer-utility"
+  },
+  "nb-bank-om-oss-presse-html": {
+   "type": "static",
+   "archetypeFamily": "om-oss",
+   "aemPageType": "Om oss",
+   "clientlib": "base",
+   "rosterFamily": "om-oss"
+  },
+  "nb-bank-om-oss-samfunnsansvar-html": {
+   "type": "static",
+   "archetypeFamily": "om-oss",
+   "aemPageType": "Om oss",
+   "clientlib": "base",
+   "rosterFamily": "om-oss"
+  },
+  "nb-bank-om-oss-selskaper-html": {
+   "type": "static",
+   "archetypeFamily": "om-oss",
+   "aemPageType": "Om oss",
+   "clientlib": "base",
+   "rosterFamily": "om-oss"
+  },
+  "nb-bank-om-oss-vare-eksperter-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "om-oss"
+  },
+  "nb-bank-privat-daglig-bruk-bankid-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-daglig-bruk-bankkonto-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Underkategori",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-daglig-bruk-bankkort-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-daglig-bruk-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Kategori",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-privat-daglig-bruk-kredittkort-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html": {
+   "type": "program",
+   "archetypeFamily": "theme",
+   "aemPageType": "Tema",
+   "clientlib": "base",
+   "rosterFamily": "theme"
+  },
+  "nb-bank-privat-daglig-bruk-mobilbank-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-eiendom-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Kategori",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-privat-forsikring-barneforsikring-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-forsikring-bilforsikring-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-forsikring-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Kategori",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html": {
+   "type": "program",
+   "archetypeFamily": "theme",
+   "aemPageType": "Tema",
+   "clientlib": "base",
+   "rosterFamily": "theme"
+  },
+  "nb-bank-privat-forsikring-innboforsikring-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-forsikring-kundehistorier-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "static-story"
+  },
+  "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html": {
+   "type": "article",
+   "archetypeFamily": "news-article",
+   "aemPageType": "",
+   "clientlib": "frontend",
+   "rosterFamily": "static-story"
+  },
+  "nb-bank-privat-forsikring-meld-skade-html": {
+   "type": "form",
+   "archetypeFamily": "tool",
+   "aemPageType": "Verktoy",
+   "clientlib": "base",
+   "rosterFamily": "footer-utility"
+  },
+  "nb-bank-privat-forsikring-reiseforsikring-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-html": {
+   "type": "landing",
+   "archetypeFamily": "market-landing",
+   "aemPageType": "Marked",
+   "clientlib": "base",
+   "rosterFamily": "market-landing"
+  },
+  "nb-bank-privat-kundeservice-bestill-bli-kunde-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "footer-utility"
+  },
+  "nb-bank-privat-kundeservice-bestill-prisliste-html": {
+   "type": "static",
+   "archetypeFamily": "utility",
+   "aemPageType": "Pristliste",
+   "clientlib": "base",
+   "rosterFamily": "footer-utility"
+  },
+  "nb-bank-privat-kundeservice-html": {
+   "type": "landing",
+   "archetypeFamily": "kundeservice-hub",
+   "aemPageType": "Kundeservice",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-privat-kundeservice-kontakt-html": {
+   "type": "static",
+   "archetypeFamily": "utility",
+   "aemPageType": "Basepage",
+   "clientlib": "base",
+   "rosterFamily": "static-story"
+  },
+  "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html": {
+   "type": "form",
+   "archetypeFamily": "tool",
+   "aemPageType": "Verktoy",
+   "clientlib": "base",
+   "rosterFamily": "tool"
+  },
+  "nb-bank-privat-kundeservice-verktoy-klager-html": {
+   "type": "form",
+   "archetypeFamily": "tool",
+   "aemPageType": "Verktoy",
+   "clientlib": "base",
+   "rosterFamily": "footer-utility"
+  },
+  "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html": {
+   "type": "form",
+   "archetypeFamily": "tool",
+   "aemPageType": "Verktoy",
+   "clientlib": "base",
+   "rosterFamily": "tool"
+  },
+  "nb-bank-privat-kundeservice-verktoy-sperre-kort-html": {
+   "type": "form",
+   "archetypeFamily": "tool",
+   "aemPageType": "Verktoy",
+   "clientlib": "base",
+   "rosterFamily": "footer-utility"
+  },
+  "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html": {
+   "type": "form",
+   "archetypeFamily": "tool",
+   "aemPageType": "Verktoy",
+   "clientlib": "base",
+   "rosterFamily": "tool"
+  },
+  "nb-bank-privat-lan-billan-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-lan-boliglan-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-lan-forbrukslan-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-lan-gronne-lan-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Underkategori",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-lan-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Kategori",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-privat-lan-lanekalkulator-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Underkategori",
+   "clientlib": "base",
+   "rosterFamily": "tool"
+  },
+  "nb-bank-privat-lan-refinansiering-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-lofavor-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-privat-pensjon-egen-pensjonskonto-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-pensjon-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html": {
+   "type": "article",
+   "archetypeFamily": "news-article",
+   "aemPageType": "",
+   "clientlib": "frontend",
+   "rosterFamily": "theme"
+  },
+  "nb-bank-privat-private-banking-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-privat-sparing-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Kategori",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  },
+  "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html": {
+   "type": "article",
+   "archetypeFamily": "news-article",
+   "aemPageType": "",
+   "clientlib": "frontend",
+   "rosterFamily": "news-article"
+  },
+  "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html": {
+   "type": "article",
+   "archetypeFamily": "news-article",
+   "aemPageType": "",
+   "clientlib": "frontend",
+   "rosterFamily": "news-article"
+  },
+  "nb-bank-privat-sparing-markedsnytt-html": {
+   "type": "listing",
+   "archetypeFamily": "markedsnytt-listing",
+   "aemPageType": "Produkt",
+   "clientlib": "base",
+   "rosterFamily": "listing"
+  },
+  "nb-bank-privat-sparing-spare-i-fond-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Underkategori",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-sparing-spare-pa-konto-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Underkategori",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-sparing-spare-til-barn-html": {
+   "type": "program",
+   "archetypeFamily": "product",
+   "aemPageType": "Underkategori",
+   "clientlib": "base",
+   "rosterFamily": "product"
+  },
+  "nb-bank-privat-svindel-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Kategori",
+   "clientlib": "base",
+   "rosterFamily": "footer-utility"
+  },
+  "nb-bank-privat-tips-og-rad-html": {
+   "type": "landing",
+   "archetypeFamily": "category-hub",
+   "aemPageType": "Oversikt side",
+   "clientlib": "base",
+   "rosterFamily": "category-hub"
+  }
+ },
+ "contentGaps": {}
+}

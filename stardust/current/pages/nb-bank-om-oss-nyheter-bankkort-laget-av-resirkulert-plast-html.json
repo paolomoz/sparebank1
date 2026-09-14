@@ -1,0 +1,2895 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-09-14T14:58:54.553Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200,
+    "stylePass": {
+      "fetchedAt": "2026-09-14T15:01:02.808Z",
+      "waitMs": 4277,
+      "httpStatus": 200,
+      "viewport": "1440x900@2x",
+      "script": "stardust/scripts/capture-styles.mjs"
+    }
+  },
+  "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+  "finalUrl": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-09-14T14:58:54.553Z",
+  "title": "Ditt neste bankkort er laget av resirkulert plast | SpareBank 1",
+  "metaDescription": "Det produseres om lag 10 millioner debet- og kredittkort i Norge hvert år, og alle kortene bruker nyprodusert plast. Ny teknologi åpner nå for bruk av resirkulert plast. SpareBank 1 har allerede sendt ut de første, resirkulerte kortene til våre kunder.&nbsp;\n",
+  "canonical": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+  "og": {
+    "title": "Ditt neste bankkort er laget av resirkulert plast",
+    "description": "Det produseres om lag 10 millioner debet- og kredittkort i Norge hvert år, og alle kortene bruker nyprodusert plast. Ny teknologi åpner nå for bruk av resirkulert plast. SpareBank 1 har allerede sendt ut de første, resirkulerte kortene til våre kunder.&nbsp;\n",
+    "image": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Betaling_med_bankkort.jpg.thumb.1280.2276.jpg",
+    "type": "article",
+    "siteName": null
+  },
+  "themeColor": {},
+  "language": "nb",
+  "generator": null,
+  "heroHeadline": "Bruk av informasjonskapsler",
+  "heroLede": "Det produseres om lag 10 millioner debet- og kredittkort i Norge hvert år, og alle kortene bruker nyprodusert plast. Ny teknologi åpner nå for bruk av resirkulert plast. SpareBank 1 har allerede sendt ut de første, resirkulerte kortene til våre kunder.",
+  "heroSource": "dom",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Ditt neste bankkort er laget av resirkulert plast",
+      "id": null,
+      "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__header.responsive-grid:nth-child(1) > div.title:nth-child(3) > h1.ffe-h1",
+      "top": 825,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "64px",
+        "lineHeight": "70px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Like trygt med like lang holdbarhet",
+      "id": null,
+      "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__content.responsive-grid:nth-child(2) > div.text:nth-child(4) > div.text-content:nth-child(1) > h2",
+      "top": 1546,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Retur av gamle kort",
+      "id": null,
+      "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__content.responsive-grid:nth-child(2) > div.text:nth-child(5) > div.text-content:nth-child(1) > h2",
+      "top": 2267,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "KORT OM KORT:",
+      "id": null,
+      "domPath": "div.sb1-article__content.responsive-grid:nth-child(2) > div.infoBox__fullWidth.infoBox:nth-child(6) > div.infoBox__content.sb1-bgcolor__sand-70:nth-child(2) > div.text > div.text-content:nth-child(1) > h2",
+      "top": 2763,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "uppercase"
+      }
+    },
+    {
+      "level": 2,
+      "text": "RELATERTE ARTIKLER",
+      "id": null,
+      "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1) > div.related-list > h2.ffe-h5.related-list__header",
+      "top": 1214,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "18px",
+        "lineHeight": "24px",
+        "letterSpacing": "2.6px",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "uppercase"
+      }
+    },
+    {
+      "level": 2,
+      "text": "RELATERTE TEMA",
+      "id": null,
+      "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.tags:nth-child(2) > h2.ffe-h5.related-list__header",
+      "top": 2405,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "18px",
+        "lineHeight": "24px",
+        "letterSpacing": "2.6px",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "uppercase"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Snarveier",
+      "id": null,
+      "domPath": "div.ffe-grid__col.ffe-grid__col--sm-12 > div.ffe-grid > div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > h2.ffe-h2.ffe-h4",
+      "top": 3279,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Logg inn",
+      "id": null,
+      "domPath": "div.ffe-grid__col.ffe-grid__col--sm-12 > div.ffe-grid > div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(2) > h2.ffe-h2.ffe-h4",
+      "top": 3279,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Sosiale medier",
+      "id": null,
+      "domPath": "div.ffe-grid__col.ffe-grid__col--sm-12 > div.ffe-grid > div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column.footer-columns__column--social-media:nth-child(3) > h2.ffe-h2.ffe-h4",
+      "top": 3279,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Bruk av informasjonskapsler",
+      "id": null,
+      "domPath": "section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(2) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > span.optin-header-wrapper > h2.ffe-h3.optin-settings-header",
+      "top": 111,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "24px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Teknisk",
+      "id": null,
+      "domPath": "div.optin__pages.optin__pages--settings-page:nth-child(2) > section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(3) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > h3.ffe-h5.optin-settings__header",
+      "top": 167,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    }
+  ],
+  "headingsCrawl": [
+    {
+      "tag": "h1",
+      "text": "Ditt neste bankkort er laget av resirkulert plast"
+    },
+    {
+      "tag": "h2",
+      "text": "Like trygt med like lang holdbarhet"
+    },
+    {
+      "tag": "h2",
+      "text": "Retur av gamle kort"
+    },
+    {
+      "tag": "h2",
+      "text": "KORT OM KORT:"
+    },
+    {
+      "tag": "h2",
+      "text": "Relaterte artikler"
+    },
+    {
+      "tag": "h2",
+      "text": "Relaterte tema"
+    },
+    {
+      "tag": "h2",
+      "text": "Snarveier"
+    },
+    {
+      "tag": "h2",
+      "text": "Logg inn"
+    },
+    {
+      "tag": "h2",
+      "text": "Sosiale medier"
+    }
+  ],
+  "body": [
+    "Privat",
+    "Bedrift",
+    "Om oss",
+    "Om SpareBank 1",
+    "Presse",
+    "Investor",
+    "Jobb og karriere",
+    "Samfunnsansvar",
+    "Nyheter",
+    "Det produseres om lag 10 millioner debet- og kredittkort i Norge hvert år, og alle kortene bruker nyprodusert plast. Ny teknologi åpner nå for bruk av resirkulert plast. SpareBank 1 har allerede sendt ut de første, resirkulerte kortene til våre kunder.",
+    "– Vi i SpareBank 1 ønsker å gå i bresjen og levere kort med en tydeligere bærekraftprofil til våre kunder, forteller Kristian Woll, fagspesialist betalingskort i SpareBank 1 Utvikling.",
+    "SpareBank 1 har en stund samarbeidet med TietoEVRY om å lage neste generasjon bankkort, som en del av vårt pågående arbeid med grønn omstilling. Nå er kortene satt i produksjon og sendes ut til kunder.",
+    "– I første omgang kan overgangen til resirkulerte plastkort gi vel 75 prosent reduksjon i CO2 -utslipp fra selve plastproduksjonen. Et slikt teknologisk kvantesprang alene kan spare miljøet for 500 tonn nyprodusert plast, tilsvarende en reduksjon i utslipp på 1 500 tonn CO2 , i løpet av en tiårsperiode, fortsetter Woll.",
+    "Det er strenge tekniske og sikkerhetsmessige krav i produksjonen av nye bankkort. De nye, resirkulerte bankkortene består derfor av plast som tidligere har blitt brukt til medisinske formål. Denne typen plast gjør at kortene er like hardføre, er like trygge, og har vel så lang holdbarhet som bankkort laget av nyprodusert plast.",
+    "– Medisinsk plast innfrir våre strenge krav til holdbarhet og sikkerhet, og er dermed ypperlig til denne typen bruk. I tillegg ser vi at vi tæpper kortet mer enn før, noe som bidrar til mindre slitasje – og dermed kort som lever lenger. 75 prosent av de nye kortene vil nå bestå av resirkulert plast, forteller Woll.",
+    "Teknologien går imidlertid fremover, og SpareBank 1s neste opprykk av kort vil bli produsert av 95 prosent resirkulert plast.",
+    "– Vi gir oss ikke før vi er på 100 prosent, sier Woll, og legger til at ett av sporene som ses på, er om vi kan gjenbruke havplast for å redusere CO2-utslippene ytterligere, SpareBank 1 har SINTEF med på laget – for å sikre at det vi gjør er det rette.",
+    "Når de nye, resirkulerte kortene sendes ut til kundene, ligger det også ved en returkonvolutt til det gamle kortet.",
+    "– Vi ser en økende interesse for bærekraft blant våre kunder, og vi tror at de vil bidra i alle ledd de kan på veien mot et mer bærekraftig samfunn. Derfor gir vi kundene mulighet til å returnere utløpte kort, slik at plast og metaller i det gamle kortet kan bli resirkulert.",
+    "De gamle kortene vil bli sendt til selskapet Boliden i Sverige, som har spesialisert seg på å utvinne metaller fra blant annet kretskort i PC-er.",
+    "– Boliden skal nå se på hva de kan få til å gjenvinne fra våre kort. Det er viktig å påpeke at dette foreløpig er en pilot for å forske på hvilken effekt vi kan få av dette. Dersom vi finner at prosjektet med innsamling av kort vil medføre bærekraftig verdi, vil vi ta dette inn som standard ved kortfornyelse. Vi er ikke i mål, men vi er i gang med å gå opp veien for endra mindre fotavtrykk, sier Kristian Woll.",
+    "Det produseres om lag 10 millioner debet- og kredittkort av nyprodusert plast i Norge per år.",
+    "Kort av resirkulert plast kan gi vel 75 % reduksjon i CO2-utslipp fra selve plastproduksjonen, og kan spare miljøet for 500 tonn nyprodusert plast.",
+    "… dette tilsvarer en reduksjon i utslipp på 1 500 tonn CO2 i løpet av en tiårsperiode. 1 500 tonn tilsvarer anslagsvis over 750.000 kjørte mil med bensinbil eller matsvinnet til 1 500 norske gjennomsnittshusholdninger i et år.",
+    "Kilde: Fremtiden i våre hender",
+    "Bli kunde",
+    "Sperre kort",
+    "Meld skade",
+    "Prisliste",
+    "Kundeservice",
+    "Nettbank privat",
+    "Nettbank bedrift",
+    "Forsikring",
+    "Pensjon",
+    "Om SpareBank 1",
+    "Vilkår for bruk av nettsiden",
+    "Personvern",
+    "Informasjonskapsler",
+    "For utviklere"
+  ],
+  "codeBlocks": [],
+  "landmarks": [
+    {
+      "tag": "main",
+      "role": "main",
+      "id": "main-content",
+      "classes": [
+        "main"
+      ],
+      "childElementCount": 3,
+      "innerText": "PRIVAT\nBEDRIFT\nOM OSS\nSøk\nBli kunde\nLogg inn\nOm SpareBank 1\nPresse\nInvestor\nJobb og karriere\nSamfunnsansvar\nNyheter\nSpareBank 1 går for mer klimavennlige bankkort.\nBÆREKRAFT\nDitt neste bankkort er laget av resirkulert plast\n9. FEBRUAR 2022\nDet produseres om lag 10 millioner debet- og kredittkort i Norge hvert år, og alle kortene bruker nyprodusert plast. Ny teknologi åpner nå for bruk av resirkulert plast. SpareBank 1 har allerede sendt ut de første, resirkulerte kortene til våre kunder.\n– Vi i SpareBank 1 ønsker å gå i bresjen og levere kort med en tydeligere bærekraftprofil til våre kunder, forteller Kristian Woll, fagspesialist betalingskort i SpareBank 1 Utvikling.\nSpareBank 1 har en stund samarbeidet med TietoEVRY om å lage neste generasjon bankkort, som en del av vårt pågående arbeid med grønn omstilling. Nå er kortene satt i produksjon og sendes ut til kunder.\n– I første omgang kan overgangen til resirkulerte plastkort gi vel 75 prosent reduksjon i CO2 -utslipp fra selve plastproduksjonen. Et slikt teknologisk kvantesprang alene kan spare miljøet for 500 tonn nyprodusert plast, tilsvarende en reduksjon i utslipp på 1 500 tonn CO2 , i løpet av en tiårsperiode, fortsetter Woll.\nKristian Woll, fagspesialist betalingskort i SpareBank 1 Utvikling.\nLike trygt med like lang holdbarhet\nDet er strenge tekniske og sikkerhetsmessige krav i produksjonen av nye bankkort. De nye, resirkulerte bankkortene består derfor av plast som tidligere har blitt brukt til medisinske formål. Denne typen plast gjør at kortene er like hardføre, er like trygge, og har vel så lang holdbarhet som bankkort laget av nyprodusert plast.\n– Medisinsk plast innfrir våre strenge krav til holdbarhet og sikkerhet, og er dermed ypperlig til denne typen bruk. I tillegg ser vi at vi tæpper kortet mer enn før, noe som bidrar til mindre slitasje – og dermed kort som lever lenger. 75 prosent av de nye kortene vil nå bestå av resirkulert plast, forteller Woll.\nTeknologien går imidlertid fremover, og SpareBank 1s neste opprykk av kort vil bli produsert av 95 prosent resirkulert plast.\n– Vi gir oss ikke før vi er på 100 prosent, sier Woll, og legger til at ett av sporene som ses på, er om vi kan gjenbruke havplast for å redusere CO2-utslippene ytterligere, SpareBank 1 har SINTEF med på laget – for å sikre at det vi gjør er det rette.\nRetur av gamle kort\nNår de nye, resirkulerte kortene sendes ut til kundene, ligger det også ved en returkonvolutt til det gamle kortet.\n– Vi ser en økende interesse for bærekraft blant våre kunder, og vi tror at de vil bidra i alle ledd de kan på veien mot et mer bærekraftig samfunn. Derfor gir vi kundene mulighet til å returnere utløpte kort, slik at plast og metaller i det gamle kortet kan bli resirkulert.\nDe gamle kortene vil bli sendt til selskapet Boliden i Sverige, som har spesialisert seg på å utvinne metaller fra blant annet kretskort i PC-er.\n– Boliden skal nå se på hva de kan få til å gjenvinne fra våre kort. Det er viktig å påpeke at dette foreløpig er en pilot for å forske på hvilken effekt vi kan få av dette. Dersom vi finner at prosjektet med innsamling av kort vil medføre bærekraftig verdi, vil vi ta dette inn som standard ved kortfornyelse. Vi er ikke i mål, men vi er i gang med å gå opp veien for endra mindre fotavtrykk, sier Kristian Woll.\nKORT OM KORT:\nDet produseres om lag 10 millioner debet- og kredittkort av nyprodusert plast i Norge per år.\nKort av resirkulert plast kan gi vel 75 % reduksjon i CO2-utslipp fra selve plastproduksjonen, og kan spare miljøet for 500 tonn nyprodusert plast.\n… dette tilsvarer en reduksjon i utslipp på 1 500 tonn CO2 i løpet av en tiårsperiode. 1 500 tonn tilsvarer anslagsvis over 750.000 kjørte mil med bensinbil eller matsvinnet til 1 500 norske gjennomsnittshusholdninger i et år.\nKilde: Fremtiden i våre hender\nRELATERTE ARTIKLER\nSpareBank 1 troner på bransjetoppen\nDette er vi villig til å gjøre for å leve mer bærekraftig\nFem tips til en grønnere skolestart\nNår vi reparerer tar vi bedre vare på miljøet\nBest i bransjen på bærekraft\nRELATERTE TEMA\n#Bærekraft#Bærekraft\nSnarveier\nBli kunde\nSperre kort\nMeld skade\nPrisliste\nKundeservice\nLogg inn\nNettbank privat\nNettbank bedrift\nForsikring\nPensjon\nSosiale medier\nOm SpareBank 1\nVilkår for bruk av nettsiden\nPersonvern\nInformasjonskapsler\nFor utviklere\nSpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo",
+      "children": [
+        {
+          "tag": "header",
+          "role": null,
+          "id": null,
+          "classes": [
+            "header",
+            "undefined"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "PRIVAT\nBEDRIFT\nOM OSS\nSøk\nBli kunde\nLogg inn\nOm SpareBank 1\nPresse\nInvestor\nJobb og karriere\nSamfunnsansvar\nNyheter",
+          "wordCount": 19,
+          "rect": {
+            "top": 0,
+            "height": 124,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "sb1-article",
+            "responsive-grid"
+          ],
+          "purpose": "rich-text",
+          "headlineRef": 0,
+          "innerTextSummary": "SpareBank 1 går for mer klimavennlige bankkort.\nBÆREKRAFT\nDitt neste bankkort er laget av resirkulert plast\n9. FEBRUAR 2022\nDet produseres om lag 10 millioner debet- og kredittkort i Norge hvert år, og alle kortene bruker nyprodusert plast.",
+          "wordCount": 679,
+          "rect": {
+            "top": 164,
+            "height": 3000,
+            "width": 1144
+          },
+          "body": [
+            "Det produseres om lag 10 millioner debet- og kredittkort i Norge hvert år, og alle kortene bruker nyprodusert plast. Ny teknologi åpner nå for bruk av resirkulert plast. SpareBank 1 har allerede sendt ut de første, resirkulerte kortene til våre kunder.",
+            "– Vi i SpareBank 1 ønsker å gå i bresjen og levere kort med en tydeligere bærekraftprofil til våre kunder, forteller Kristian Woll, fagspesialist betalingskort i SpareBank 1 Utvikling.",
+            "SpareBank 1 har en stund samarbeidet med TietoEVRY om å lage neste generasjon bankkort, som en del av vårt pågående arbeid med grønn omstilling. Nå er kortene satt i produksjon og sendes ut til kunder.",
+            "– I første omgang kan overgangen til resirkulerte plastkort gi vel 75 prosent reduksjon i CO2 -utslipp fra selve plastproduksjonen. Et slikt teknologisk kvantesprang alene kan spare miljøet for 500 tonn nyprodusert plast, tilsvarende en reduksjon i utslipp på 1 500 tonn CO2 , i løpet av en tiårsperiode, fortsetter Woll.",
+            "Det er strenge tekniske og sikkerhetsmessige krav i produksjonen av nye bankkort. De nye, resirkulerte bankkortene består derfor av plast som tidligere har blitt brukt til medisinske formål. Denne typen plast gjør at kortene er like hardføre, er like trygge, og har vel så lang holdbarhet som bankkort laget av nyprodusert plast.",
+            "– Medisinsk plast innfrir våre strenge krav til holdbarhet og sikkerhet, og er dermed ypperlig til denne typen bruk. I tillegg ser vi at vi tæpper kortet mer enn før, noe som bidrar til mindre slitasje – og dermed kort som lever lenger. 75 prosent av de nye kortene vil nå bestå av resirkulert plast, forteller Woll.",
+            "Teknologien går imidlertid fremover, og SpareBank 1s neste opprykk av kort vil bli produsert av 95 prosent resirkulert plast.",
+            "– Vi gir oss ikke før vi er på 100 prosent, sier Woll, og legger til at ett av sporene som ses på, er om vi kan gjenbruke havplast for å redusere CO2-utslippene ytterligere, SpareBank 1 har SINTEF med på laget – for å sikre at det vi gjør er det rette.",
+            "Når de nye, resirkulerte kortene sendes ut til kundene, ligger det også ved en returkonvolutt til det gamle kortet.",
+            "– Vi ser en økende interesse for bærekraft blant våre kunder, og vi tror at de vil bidra i alle ledd de kan på veien mot et mer bærekraftig samfunn. Derfor gir vi kundene mulighet til å returnere utløpte kort, slik at plast og metaller i det gamle kortet kan bli resirkulert.",
+            "De gamle kortene vil bli sendt til selskapet Boliden i Sverige, som har spesialisert seg på å utvinne metaller fra blant annet kretskort i PC-er.",
+            "– Boliden skal nå se på hva de kan få til å gjenvinne fra våre kort. Det er viktig å påpeke at dette foreløpig er en pilot for å forske på hvilken effekt vi kan få av dette. Dersom vi finner at prosjektet med innsamling av kort vil medføre bærekraftig verdi, vil vi ta dette inn som standard ved kortfornyelse. Vi er ikke i mål, men vi er i gang med å gå opp veien for endra mindre fotavtrykk, sier Kristian Woll."
+          ],
+          "lists": [
+            {
+              "ordered": false,
+              "items": [
+                "Det produseres om lag 10 millioner debet- og kredittkort av nyprodusert plast i Norge per år.",
+                "Kort av resirkulert plast kan gi vel 75 % reduksjon i CO2-utslipp fra selve plastproduksjonen, og kan spare miljøet for 500 tonn nyprodusert plast.",
+                "… dette tilsvarer en reduksjon i utslipp på 1 500 tonn CO2 i løpet av en tiårsperiode. 1 500 tonn tilsvarer anslagsvis over 750.000 kjørte mil med bensinbil eller matsvinnet til 1 500 norske gjennomsnittshusholdninger i et år.",
+                "Kilde: Fremtiden i våre hender"
+              ]
+            }
+          ],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "footer",
+          "role": null,
+          "id": null,
+          "classes": [
+            "footer"
+          ],
+          "purpose": "footer-nav",
+          "headlineRef": 6,
+          "innerTextSummary": "Snarveier\nBli kunde\nSperre kort\nMeld skade\nPrisliste\nKundeservice\nLogg inn\nNettbank privat\nNettbank bedrift\nForsikring\nPensjon\nSosiale medier\nOm SpareBank 1\nVilkår for bruk av nettsiden\nPersonvern\nInformasjonskapsler\nFor utviklere\nSpareBank",
+          "wordCount": 38,
+          "rect": {
+            "top": 3204,
+            "height": 488,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "header",
+      "role": "banner",
+      "id": null,
+      "classes": [
+        "header",
+        "undefined"
+      ],
+      "childElementCount": 2,
+      "innerText": "PRIVAT\nBEDRIFT\nOM OSS\nSøk\nBli kunde\nLogg inn\nOm SpareBank 1\nPresse\nInvestor\nJobb og karriere\nSamfunnsansvar\nNyheter",
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "header__wrap"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "PRIVAT\nBEDRIFT\nOM OSS\nSøk\nBli kunde\nLogg inn\nOm SpareBank 1\nPresse\nInvestor\nJobb og karriere\nSamfunnsansvar\nNyheter",
+          "wordCount": 19,
+          "rect": {
+            "top": 0,
+            "height": 121,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": "navigation",
+      "id": "main-menu",
+      "classes": [
+        "header__main-nav"
+      ],
+      "childElementCount": 1,
+      "innerText": "Om SpareBank 1\nPresse\nInvestor\nJobb og karriere\nSamfunnsansvar\nNyheter",
+      "children": [
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Om SpareBank 1",
+          "wordCount": 3,
+          "rect": {
+            "top": 59,
+            "height": 62,
+            "width": 127
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Presse",
+          "wordCount": 1,
+          "rect": {
+            "top": 59,
+            "height": 62,
+            "width": 51
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Investor",
+          "wordCount": 1,
+          "rect": {
+            "top": 59,
+            "height": 62,
+            "width": 63
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Jobb og karriere",
+          "wordCount": 3,
+          "rect": {
+            "top": 59,
+            "height": 62,
+            "width": 131
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Samfunnsansvar",
+          "wordCount": 1,
+          "rect": {
+            "top": 59,
+            "height": 62,
+            "width": 124
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Nyheter",
+          "wordCount": 1,
+          "rect": {
+            "top": 59,
+            "height": 62,
+            "width": 62
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "footer",
+      "role": "contentinfo",
+      "id": null,
+      "classes": [
+        "footer"
+      ],
+      "childElementCount": 2,
+      "innerText": "Snarveier\nBli kunde\nSperre kort\nMeld skade\nPrisliste\nKundeservice\nLogg inn\nNettbank privat\nNettbank bedrift\nForsikring\nPensjon\nSosiale medier\nOm SpareBank 1\nVilkår for bruk av nettsiden\nPersonvern\nInformasjonskapsler\nFor utviklere\nSpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo",
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "ffe-grid"
+          ],
+          "purpose": "unknown",
+          "headlineRef": 6,
+          "innerTextSummary": "Snarveier\nBli kunde\nSperre kort\nMeld skade\nPrisliste\nKundeservice\nLogg inn\nNettbank privat\nNettbank bedrift\nForsikring\nPensjon\nSosiale medier\nOm SpareBank 1\nVilkår for bruk av nettsiden\nPersonvern\nInformasjonskapsler\nFor utviklere",
+          "wordCount": 31,
+          "rect": {
+            "top": 3279,
+            "height": 314,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "footer-info"
+          ],
+          "purpose": "footer-nav",
+          "headlineRef": null,
+          "innerTextSummary": "SpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo",
+          "wordCount": 7,
+          "rect": {
+            "top": 3593,
+            "height": 24,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    }
+  ],
+  "ctas": [
+    {
+      "label": "Søk",
+      "href": null,
+      "tag": "button",
+      "domPath": "main#main-content > header.header.undefined > div.header__wrap:nth-child(1) > div.header__content.aem-main-container > div.header__user-content:nth-child(2) > button.header-search-button",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(50, 50, 50)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "30px",
+        "padding": "8px 15px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(50, 50, 50)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "label": "Bli kunde",
+      "href": null,
+      "tag": "button",
+      "domPath": "div#login > button.ffe-button.ffe-button--action:nth-child(1)",
+      "style": {
+        "backgroundColor": "rgb(0, 117, 78)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "30px",
+        "padding": "8px 16px",
+        "boxShadow": "none",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "label": "Logg inn",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#login-button",
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 117, 78)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "30px",
+        "padding": "8px 16px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(0, 117, 78)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "label": "Del på Facebook",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#facebook-share",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "5px",
+        "boxShadow": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Del på LinkedIn",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#linkedin-share",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "5px",
+        "boxShadow": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Del på Twitter",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#twitter-share",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "5px",
+        "boxShadow": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    }
+  ],
+  "ctasCrawl": [
+    {
+      "label": "Privat",
+      "href": "/nb/bank/privat.html"
+    },
+    {
+      "label": "Bedrift",
+      "href": "/nb/bank/bedrift.html"
+    },
+    {
+      "label": "Om oss",
+      "href": "/nb/bank/om-oss.html"
+    },
+    {
+      "label": "Søk",
+      "href": null
+    },
+    {
+      "label": "Bli kunde",
+      "href": null
+    },
+    {
+      "label": "Logg inn",
+      "href": null
+    },
+    {
+      "label": "Om SpareBank 1",
+      "href": "/nb/bank/om-oss/om-banken.html"
+    },
+    {
+      "label": "Presse",
+      "href": "/nb/bank/om-oss/presse.html"
+    },
+    {
+      "label": "Investor",
+      "href": "/nb/bank/om-oss/investor.html"
+    },
+    {
+      "label": "Jobb og karriere",
+      "href": "/nb/bank/om-oss/jobb-og-karriere.html"
+    },
+    {
+      "label": "Samfunnsansvar",
+      "href": "/nb/bank/om-oss/samfunnsansvar.html"
+    },
+    {
+      "label": "Nyheter",
+      "href": "/nb/bank/om-oss/nyheter.html"
+    },
+    {
+      "label": "SpareBank 1 troner på bransjetoppen",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/sparebank-1-troner-pa-bransjetoppen-.html"
+    },
+    {
+      "label": "Dette er vi villig til å gjøre for å leve mer bærekraftig",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/dette-vil-vi-gjore-for-a-leve-mer-barekraftig.html"
+    },
+    {
+      "label": "Fem tips til en grønnere skolestart",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/fem-tips-til-en-gronnere-skolestart.html"
+    },
+    {
+      "label": "Når vi reparerer tar vi bedre vare på miljøet",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/nar-vi-reparerer-tar-vi-bedre-vare-pa-miljoet.html"
+    },
+    {
+      "label": "Best i bransjen på bærekraft",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/best-i-bransjen-pa-baerekraft.html"
+    },
+    {
+      "label": "#Bærekraft",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter.html?tema=sb1:nyheter/b-rekraft"
+    },
+    {
+      "label": "#Bærekraft",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter.html?tema=sb1:nyheter/tema/b-rekraft"
+    },
+    {
+      "label": "Bli kunde",
+      "href": "/content/sites/sb1/nb/bank/privat/kundeservice/bestill/bli-kunde.html"
+    },
+    {
+      "label": "Sperre kort",
+      "href": "/content/sites/sb1/nb/bank/privat/kundeservice/verktoy/sperre-kort.html"
+    },
+    {
+      "label": "Meld skade",
+      "href": "/content/sites/sb1/nb/bank/privat/forsikring/meld-skade.html"
+    },
+    {
+      "label": "Prisliste",
+      "href": "/content/sites/sb1/nb/bank/privat/kundeservice/bestill/prisliste.html"
+    },
+    {
+      "label": "Kundeservice",
+      "href": "/content/sites/sb1/nb/bank/privat/kundeservice.html"
+    },
+    {
+      "label": "Nettbank privat",
+      "href": "/content/sites/sb1/nb/bank/privat/innlogging.html"
+    },
+    {
+      "label": "Nettbank bedrift",
+      "href": "/content/sites/sb1/nb/bank/bedrift/innlogging.html"
+    },
+    {
+      "label": "Forsikring",
+      "href": "https://kundeforsikring.sparebank1.no"
+    },
+    {
+      "label": "Pensjon",
+      "href": "https://kundeforsikring.sparebank1.no/privat/sparing"
+    },
+    {
+      "label": "Om SpareBank 1",
+      "href": "/content/sites/sb1/nb/bank/om-oss/om-banken/selskapsinformasjon.html"
+    },
+    {
+      "label": "Vilkår for bruk av nettsiden",
+      "href": "/content/sites/sb1/nb/bank/om-oss/personvern/generelle-vilkar.html"
+    },
+    {
+      "label": "Personvern",
+      "href": "/content/sites/sb1/nb/bank/om-oss/personvern.html"
+    },
+    {
+      "label": "Informasjonskapsler",
+      "href": "/content/sites/sb1/nb/bank/om-oss/personvern.html#cookies"
+    },
+    {
+      "label": "For utviklere",
+      "href": "/content/sites/sb1/nb/bank/bedrift/open-api.html"
+    }
+  ],
+  "links": {
+    "internal": [
+      {
+        "href": "/content/sites/sb1/nb/bank/privat.html",
+        "text": "",
+        "domPath": "header.header.undefined > div.header__wrap:nth-child(1) > div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__logo:nth-child(1) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat.html",
+        "text": "PRIVAT",
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__top-nav:nth-child(3) > ul > li:nth-child(1) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/bedrift.html",
+        "text": "BEDRIFT",
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__top-nav:nth-child(3) > ul > li:nth-child(2) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss.html",
+        "text": "OM OSS",
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__top-nav:nth-child(3) > ul > li:nth-child(3) > a.active",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss/om-banken.html",
+        "text": "Om SpareBank 1",
+        "domPath": "nav#main-menu > ul > li:nth-child(1) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss/presse.html",
+        "text": "Presse",
+        "domPath": "nav#main-menu > ul > li:nth-child(2) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss/investor.html",
+        "text": "Investor",
+        "domPath": "nav#main-menu > ul > li:nth-child(3) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss/jobb-og-karriere.html",
+        "text": "Jobb og karriere",
+        "domPath": "nav#main-menu > ul > li:nth-child(4) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss/samfunnsansvar.html",
+        "text": "Samfunnsansvar",
+        "domPath": "nav#main-menu > ul > li:nth-child(5) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss/nyheter.html",
+        "text": "Nyheter",
+        "domPath": "nav#main-menu > ul > li:nth-child(6) > a.active",
+        "region": "header"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/sparebank-1-troner-pa-bransjetoppen-.html",
+        "text": "SpareBank 1 troner på bransjetoppen",
+        "domPath": "div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1) > div.related-list > article.related-list__item:nth-child(2) > a",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/dette-vil-vi-gjore-for-a-leve-mer-barekraftig.html",
+        "text": "Dette er vi villig til å gjøre for å leve mer bærekraftig",
+        "domPath": "div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1) > div.related-list > article.related-list__item:nth-child(3) > a",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/fem-tips-til-en-gronnere-skolestart.html",
+        "text": "Fem tips til en grønnere skolestart",
+        "domPath": "div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1) > div.related-list > article.related-list__item:nth-child(4) > a",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/nar-vi-reparerer-tar-vi-bedre-vare-pa-miljoet.html",
+        "text": "Når vi reparerer tar vi bedre vare på miljøet",
+        "domPath": "div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1) > div.related-list > article.related-list__item:nth-child(5) > a",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/best-i-bransjen-pa-baerekraft.html",
+        "text": "Best i bransjen på bærekraft",
+        "domPath": "div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1) > div.related-list > article.related-list__item:nth-child(6) > a",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter.html?tema=sb1:nyheter/b-rekraft",
+        "text": "#Bærekraft",
+        "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.tags:nth-child(2) > a:nth-child(2)",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter.html?tema=sb1:nyheter/tema/b-rekraft",
+        "text": "#Bærekraft",
+        "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.tags:nth-child(2) > a:nth-child(3)",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+        "text": "Bli kunde",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(1) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/kundeservice/verktoy/sperre-kort.html",
+        "text": "Sperre kort",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(2) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/forsikring/meld-skade.html",
+        "text": "Meld skade",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(3) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/kundeservice/bestill/prisliste.html",
+        "text": "Prisliste",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(4) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/kundeservice.html",
+        "text": "Kundeservice",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(5) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/innlogging.html",
+        "text": "Nettbank privat",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(2) > ul.footer-columns__link-list > li:nth-child(1) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/bedrift/innlogging.html",
+        "text": "Nettbank bedrift",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(2) > ul.footer-columns__link-list > li:nth-child(2) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/om-banken/selskapsinformasjon.html",
+        "text": "Om SpareBank 1",
+        "domPath": "div.footer-columns__bottom.ffe-grid__row:nth-child(3) > div.ffe-grid__col.ffe-grid__col--sm-10 > div.footer-columns__column > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(1) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/personvern/generelle-vilkar.html",
+        "text": "Vilkår for bruk av nettsiden",
+        "domPath": "div.footer-columns__bottom.ffe-grid__row:nth-child(3) > div.ffe-grid__col.ffe-grid__col--sm-10 > div.footer-columns__column > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(2) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/personvern.html",
+        "text": "Personvern",
+        "domPath": "div.footer-columns__bottom.ffe-grid__row:nth-child(3) > div.ffe-grid__col.ffe-grid__col--sm-10 > div.footer-columns__column > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(3) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/personvern.html",
+        "text": "Informasjonskapsler",
+        "domPath": "div.footer-columns__bottom.ffe-grid__row:nth-child(3) > div.ffe-grid__col.ffe-grid__col--sm-10 > div.footer-columns__column > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(4) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/bedrift/open-api.html",
+        "text": "For utviklere",
+        "domPath": "div.footer-columns__bottom.ffe-grid__row:nth-child(3) > div.ffe-grid__col.ffe-grid__col--sm-10 > div.footer-columns__column > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(5) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      }
+    ],
+    "external": [
+      {
+        "href": "https://kundeforsikring.sparebank1.no/",
+        "text": "Forsikring",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(2) > ul.footer-columns__link-list > li:nth-child(3) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "https://kundeforsikring.sparebank1.no/privat/sparing",
+        "text": "Pensjon",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(2) > ul.footer-columns__link-list > li:nth-child(4) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "https://no.linkedin.com/company/sparebank-1",
+        "text": "",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column.footer-columns__column--social-media:nth-child(3) > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(1) > a",
+        "region": "footer"
+      },
+      {
+        "href": "https://www.youtube.com/channel/UCdfZfi4HC6bK0-OfRcDJSzg",
+        "text": "",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column.footer-columns__column--social-media:nth-child(3) > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(2) > a",
+        "region": "footer"
+      }
+    ]
+  },
+  "media": {
+    "images": [
+      {
+        "src": "/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "Tilbake til forsiden for om oss - SpareBank 1",
+        "naturalWidth": 300,
+        "naturalHeight": 86,
+        "rect": {
+          "top": 10,
+          "width": 170,
+          "height": 49
+        },
+        "loading": null,
+        "domPath": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.inline-svg.responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/Betaling_med_bankkort.jpg.thumb.1280.2276.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Betaling_med_bankkort.jpg.thumb.1280.2276.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 1200,
+        "naturalHeight": 800,
+        "rect": {
+          "top": 205,
+          "width": 1062,
+          "height": 488
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header.responsive-grid:nth-child(1) > div.sb1-article__header-image.image--hero:nth-child(1) > div.image__wrap > figure > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/ansatte/Kristian_Woll_fagspesialist_bankkort_SpareBank11.jpg.thumb.1280.1280.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/ansatte/Kristian_Woll_fagspesialist_bankkort_SpareBank11.jpg.thumb.1280.1280.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 389,
+        "naturalHeight": 514,
+        "rect": {
+          "top": 1546,
+          "width": 344,
+          "height": 455
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__content--right-adjust.image:nth-child(3) > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/nyhetssenter-bransjevinner-2023.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/nyhetssenter-bransjevinner-2023.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 352,
+        "rect": {
+          "top": 1262,
+          "width": 294,
+          "height": 139
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Byttehelgen-kjop-brukt.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Byttehelgen-kjop-brukt.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 1481,
+          "width": 294,
+          "height": 139
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Jentepaasykkel.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Jentepaasykkel.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 576,
+        "rect": {
+          "top": 1724,
+          "width": 294,
+          "height": 139
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/mobilttelefon-fremtind.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/mobilttelefon-fremtind.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 1943,
+          "width": 294,
+          "height": 139
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/SBI-2020-Interiorbutikk-skilt.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/SBI-2020-Interiorbutikk-skilt.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 431,
+        "rect": {
+          "top": 2186,
+          "width": 294,
+          "height": 139
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 30,
+        "naturalHeight": 30,
+        "rect": {
+          "top": 3331,
+          "width": 30,
+          "height": 30
+        },
+        "loading": null,
+        "domPath": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 37,
+        "naturalHeight": 30,
+        "rect": {
+          "top": 3331,
+          "width": 35,
+          "height": 30
+        },
+        "loading": null,
+        "domPath": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      }
+    ],
+    "inlineSvgs": [
+      {
+        "viewBox": "0 0 32 32",
+        "domPath": "button#facebook-share > svg.svg-icon",
+        "width": 32,
+        "height": 32,
+        "ariaLabel": null,
+        "markupLength": 1905,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 32 32",
+        "domPath": "button#linkedin-share > svg.svg-icon",
+        "width": 32,
+        "height": 32,
+        "ariaLabel": null,
+        "markupLength": 2518,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 32 32",
+        "domPath": "button#twitter-share > svg.svg-icon",
+        "width": 32,
+        "height": 32,
+        "ariaLabel": null,
+        "markupLength": 644,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 281.633 78.197",
+        "domPath": "svg#SpareBank_1",
+        "width": 132,
+        "height": 32,
+        "ariaLabel": null,
+        "markupLength": 6544,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 40 41",
+        "domPath": "section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(2) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > span.optin-header-wrapper > svg.optin-icon__svg",
+        "width": 40,
+        "height": 40,
+        "ariaLabel": null,
+        "markupLength": 4116,
+        "inHeader": false
+      }
+    ],
+    "cssBackgrounds": [],
+    "videos": [],
+    "iframes": [],
+    "imgsCrawl": [
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg",
+        "alt": "Tilbake til forsiden for om oss - SpareBank 1",
+        "w": 300,
+        "h": 86
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Betaling_med_bankkort.jpg.thumb.1280.2276.jpg",
+        "alt": "",
+        "w": 1200,
+        "h": 800
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/ansatte/Kristian_Woll_fagspesialist_bankkort_SpareBank11.jpg.thumb.1280.1280.jpg",
+        "alt": "",
+        "w": 389,
+        "h": 514
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/nyhetssenter-bransjevinner-2023.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 352
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Byttehelgen-kjop-brukt.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 512
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Jentepaasykkel.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 576
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/mobilttelefon-fremtind.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 512
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/SBI-2020-Interiorbutikk-skilt.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 431
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg",
+        "alt": "",
+        "w": 30,
+        "h": 30
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg",
+        "alt": "",
+        "w": 37,
+        "h": 30
+      }
+    ],
+    "allImgCount": 10,
+    "modals": []
+  },
+  "forms": [],
+  "widgets": {
+    "modals": [
+      {
+        "domPath": "div#opt-in > div.optin__wrapper > div.optin",
+        "open": true,
+        "label": null
+      }
+    ],
+    "accordions": [],
+    "tabs": []
+  },
+  "components": {
+    "cards": {
+      "count": 1,
+      "examples": [
+        "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1)"
+      ]
+    },
+    "grids": {
+      "count": 1,
+      "examples": [
+        "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1) > div.related-list"
+      ]
+    },
+    "accordions": {
+      "count": 0,
+      "examples": []
+    },
+    "tabs": {
+      "count": 0,
+      "examples": []
+    },
+    "tables": {
+      "count": 0,
+      "examples": []
+    },
+    "modals": {
+      "count": 1,
+      "examples": [
+        "div#opt-in > div.optin__wrapper > div.optin"
+      ]
+    },
+    "carousels": {
+      "count": 0,
+      "examples": []
+    },
+    "videos": {
+      "count": 0,
+      "examples": []
+    },
+    "iframes": {
+      "count": 0,
+      "examples": []
+    },
+    "dataVizEmbeds": {
+      "count": 0,
+      "examples": []
+    },
+    "teamTiles": {
+      "count": 0,
+      "examples": []
+    },
+    "pricingTiles": {
+      "count": 0,
+      "examples": []
+    },
+    "testimonialCards": {
+      "count": 0,
+      "examples": []
+    },
+    "logoStrip": {
+      "count": 0,
+      "examples": []
+    },
+    "timeline": {
+      "count": 0,
+      "examples": []
+    },
+    "breadcrumbs": {
+      "count": 0,
+      "examples": []
+    },
+    "statRow": {
+      "count": 0,
+      "examples": []
+    },
+    "ctaBand": {
+      "count": 0,
+      "examples": []
+    },
+    "formFields": {
+      "count": 0,
+      "examples": []
+    },
+    "other": []
+  },
+  "perSectionStyle": [
+    {
+      "sectionRef": "main#main-content > header.header.undefined",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": true,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(50, 50, 50)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": "8px",
+        "marginBlock": "0px 0px"
+      },
+      "borderRadius": "30px",
+      "fontFamilies": [
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 0,
+        "height": 124
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.sb1-article.responsive-grid",
+      "purpose": "rich-text",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": true,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(2, 10, 10)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": null,
+        "marginBlock": "40px 40px"
+      },
+      "borderRadius": "4px",
+      "fontFamilies": [
+        "SpareBank1-regular",
+        "SpareBank1-title-medium",
+        "SpareBank1-medium"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 164,
+        "height": 3000
+      }
+    },
+    {
+      "sectionRef": "main#main-content > footer.footer",
+      "purpose": "footer-nav",
+      "background": {
+        "color": "rgb(0, 39, 118)",
+        "hasImage": true,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(255, 255, 255)"
+      },
+      "spacing": {
+        "paddingBlock": "75px 75px",
+        "paddingInline": "0px 0px",
+        "gap": "16px",
+        "marginBlock": "0px 0px"
+      },
+      "borderRadius": null,
+      "fontFamilies": [
+        "SpareBank1-medium",
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 3204,
+        "height": 488
+      }
+    }
+  ],
+  "embedDominance": {
+    "dominated": false,
+    "iframeSrc": null,
+    "viewportCoveragePct": null,
+    "mainHeightCoveragePct": null
+  },
+  "cssCustomProperties": [
+    {
+      "name": "--ffe-farge-fjell",
+      "value": "#002776"
+    },
+    {
+      "name": "--ffe-farge-fjell-70",
+      "value": "#4d689f"
+    },
+    {
+      "name": "--ffe-farge-fjell-30",
+      "value": "#b3bed6"
+    },
+    {
+      "name": "--ffe-farge-vann",
+      "value": "#005aa4"
+    },
+    {
+      "name": "--ffe-farge-vann-70",
+      "value": "#4d8cbf"
+    },
+    {
+      "name": "--ffe-farge-vann-30",
+      "value": "#b3cee4"
+    },
+    {
+      "name": "--ffe-farge-sand",
+      "value": "#f8e9dd"
+    },
+    {
+      "name": "--ffe-farge-sand-70",
+      "value": "#faf0e7"
+    },
+    {
+      "name": "--ffe-farge-sand-30",
+      "value": "#fdf8f5"
+    },
+    {
+      "name": "--ffe-farge-frost",
+      "value": "#7eb5d2"
+    },
+    {
+      "name": "--ffe-farge-frost-70",
+      "value": "#a5cbe0"
+    },
+    {
+      "name": "--ffe-farge-frost-30",
+      "value": "#d8e9f2"
+    },
+    {
+      "name": "--ffe-farge-syrin",
+      "value": "#d3d3ea"
+    },
+    {
+      "name": "--ffe-farge-syrin-70",
+      "value": "#e0e0f0"
+    },
+    {
+      "name": "--ffe-farge-syrin-30",
+      "value": "#f2f2f9"
+    },
+    {
+      "name": "--ffe-farge-myrull",
+      "value": "#fae4e0"
+    },
+    {
+      "name": "--ffe-farge-myrull-70",
+      "value": "#fcece9"
+    },
+    {
+      "name": "--ffe-farge-myrull-30",
+      "value": "#fef7f6"
+    },
+    {
+      "name": "--ffe-farge-villblomst",
+      "value": "#ee8d9c"
+    },
+    {
+      "name": "--ffe-farge-villblomst-70",
+      "value": "#f3afba"
+    },
+    {
+      "name": "--ffe-farge-villblomst-30",
+      "value": "#fadde1"
+    },
+    {
+      "name": "--ffe-farge-nordlys",
+      "value": "#33af85"
+    },
+    {
+      "name": "--ffe-farge-nordlys-70",
+      "value": "#70c7aa"
+    },
+    {
+      "name": "--ffe-farge-nordlys-30",
+      "value": "#c2e7da"
+    },
+    {
+      "name": "--ffe-farge-lyng",
+      "value": "#873953"
+    },
+    {
+      "name": "--ffe-farge-lyng-70",
+      "value": "#ab7487"
+    },
+    {
+      "name": "--ffe-farge-lyng-30",
+      "value": "#dbc4cb"
+    },
+    {
+      "name": "--ffe-farge-baer",
+      "value": "#e44244"
+    },
+    {
+      "name": "--ffe-farge-baer-70",
+      "value": "#ec7b7c"
+    },
+    {
+      "name": "--ffe-farge-baer-30",
+      "value": "#f7c6c7"
+    },
+    {
+      "name": "--ffe-farge-skog",
+      "value": "#00754e"
+    },
+    {
+      "name": "--ffe-farge-skog-70",
+      "value": "#4d9e83"
+    },
+    {
+      "name": "--ffe-farge-skog-30",
+      "value": "#b3d6ca"
+    },
+    {
+      "name": "--ffe-farge-multe",
+      "value": "#f8b181"
+    },
+    {
+      "name": "--ffe-farge-multe-70",
+      "value": "#fac8a7"
+    },
+    {
+      "name": "--ffe-farge-multe-30",
+      "value": "#fde8d9"
+    },
+    {
+      "name": "--ffe-farge-sol",
+      "value": "#dc8000"
+    },
+    {
+      "name": "--ffe-farge-sol-70",
+      "value": "#e7a64d"
+    },
+    {
+      "name": "--ffe-farge-sol-30",
+      "value": "#f5d9b3"
+    },
+    {
+      "name": "--ffe-farge-natt",
+      "value": "#001032"
+    },
+    {
+      "name": "--ffe-farge-svart",
+      "value": "#020a0a"
+    },
+    {
+      "name": "--ffe-farge-koksgraa",
+      "value": "#323232"
+    },
+    {
+      "name": "--ffe-farge-moerkgraa",
+      "value": "#676767"
+    },
+    {
+      "name": "--ffe-farge-graa",
+      "value": "#adadad"
+    },
+    {
+      "name": "--ffe-farge-lysgraa",
+      "value": "#d8d8d8"
+    },
+    {
+      "name": "--ffe-farge-moerkvarmgraa",
+      "value": "#848383"
+    },
+    {
+      "name": "--ffe-farge-varmgraa",
+      "value": "#9b9797"
+    },
+    {
+      "name": "--ffe-farge-lysvarmgraa",
+      "value": "#d7d2cb"
+    },
+    {
+      "name": "--ffe-farge-hvit",
+      "value": "#fff"
+    },
+    {
+      "name": "--ffe-fontsize-body-text",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-small-text",
+      "value": "0.875rem"
+    },
+    {
+      "name": "--ffe-fontsize-micro-text",
+      "value": "0.75rem"
+    },
+    {
+      "name": "--ffe-fontsize-lead-paragraph",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-sub-lead-paragraph",
+      "value": "1.063rem"
+    },
+    {
+      "name": "--ffe-fontsize-h1",
+      "value": "1.75rem"
+    },
+    {
+      "name": "--ffe-fontsize-h2",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--ffe-fontsize-h3",
+      "value": "1.25rem"
+    },
+    {
+      "name": "--ffe-fontsize-h4",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-h5",
+      "value": "1.0625rem"
+    },
+    {
+      "name": "--ffe-fontsize-h6",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-form-input",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-form-dropdown",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-button",
+      "value": "1rem"
+    },
+    {
+      "name": "--breakpoint-sm",
+      "value": "480px"
+    },
+    {
+      "name": "--breakpoint-md",
+      "value": "768px"
+    },
+    {
+      "name": "--breakpoint-lg",
+      "value": "1024px"
+    },
+    {
+      "name": "--breakpoint-xl",
+      "value": "1280px"
+    },
+    {
+      "name": "--app-width",
+      "value": "1280px"
+    },
+    {
+      "name": "--app-width-min",
+      "value": "320px"
+    },
+    {
+      "name": "--app-margin",
+      "value": "20px"
+    },
+    {
+      "name": "--ffe-ease-in-out-back",
+      "value": "cubic-bezier(0.46, -0.265, 0.48, 1.38)"
+    },
+    {
+      "name": "--ffe-ease",
+      "value": "cubic-bezier(0.25, 0.1, 0.25, 1)"
+    },
+    {
+      "name": "--ffe-transition-duration",
+      "value": "0.2s"
+    },
+    {
+      "name": "--ffe-spacing",
+      "value": "8px"
+    },
+    {
+      "name": "--ffe-spacing-2xs",
+      "value": "4px"
+    },
+    {
+      "name": "--ffe-spacing-xs",
+      "value": "8px"
+    },
+    {
+      "name": "--ffe-spacing-sm",
+      "value": "16px"
+    },
+    {
+      "name": "--ffe-spacing-md",
+      "value": "24px"
+    },
+    {
+      "name": "--ffe-spacing-lg",
+      "value": "32px"
+    },
+    {
+      "name": "--ffe-spacing-xl",
+      "value": "40px"
+    },
+    {
+      "name": "--ffe-spacing-2xl",
+      "value": "48px"
+    },
+    {
+      "name": "--ffe-spacing-3xl",
+      "value": "64px"
+    },
+    {
+      "name": "--ffe-spacing-4xl",
+      "value": "80px"
+    },
+    {
+      "name": "--ffe-spacing-5xl",
+      "value": "160px"
+    },
+    {
+      "name": "--ffe-g-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-g-secondary-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-error-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-g-border-color",
+      "value": "var(--ffe-farge-varmgraa)"
+    },
+    {
+      "name": "--ffe-g-border-radius",
+      "value": "4px"
+    },
+    {
+      "name": "--ffe-g-font",
+      "value": "'SpareBank1-regular',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-heading",
+      "value": "'SpareBank1-title-medium',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-heading-small",
+      "value": "'SpareBank1-medium',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-strong",
+      "value": "'SpareBank1-medium',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-italic",
+      "value": "'SpareBank1-italic',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-text-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-g-lead-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-heading-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-link-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-g-link-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-link-color-visited",
+      "value": "var(--ffe-farge-lyng)"
+    },
+    {
+      "name": "--ffe-g-link-icon-color-hover",
+      "value": "var(--ffe-farge-natt)"
+    },
+    {
+      "name": "--ffe-g-link-icon-color-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-fontsize-lead-paragraph",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--ffe-fontsize-sub-lead-paragraph",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-h1",
+      "value": "2.5rem"
+    },
+    {
+      "name": "--ffe-fontsize-h2",
+      "value": "2rem"
+    },
+    {
+      "name": "--ffe-fontsize-h3",
+      "value": "1.688rem"
+    },
+    {
+      "name": "--ffe-fontsize-h4",
+      "value": "1.375rem"
+    },
+    {
+      "name": "--ffe-fontsize-h5",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-h1",
+      "value": "2.875rem"
+    },
+    {
+      "name": "--ffe-fontsize-h2",
+      "value": "2.25rem"
+    },
+    {
+      "name": "--ffe-fontsize-h3",
+      "value": "1.75rem"
+    },
+    {
+      "name": "--ffe-v-lists-title-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-lists-description-description-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-lists-check-list-check-icon-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-lists-check-list-cross-icon-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-v-detail-list-card-background-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-detail-list-card-border-color",
+      "value": "var(--ffe-farge-lysgraa)"
+    },
+    {
+      "name": "--ffe-v-detail-list-card-border-radius",
+      "value": "16px"
+    },
+    {
+      "name": "--ffe-v-input-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-input-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-input-placeholder-color",
+      "value": "var(--ffe-farge-moerkgraa)"
+    },
+    {
+      "name": "--ffe-v-info-message-icon-color",
+      "value": "var(--ffe-g-secondary-color)"
+    },
+    {
+      "name": "--ffe-v-info-message-icon-fill",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-dropdown-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-success-message-icon-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-success-message-icon-fill",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-error-message-icon-color",
+      "value": "var(--ffe-g-error-color)"
+    },
+    {
+      "name": "--ffe-v-error-message-icon-fill",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-text-on-colored-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-checkbox-color",
+      "value": "var(--ffe-g-border-color)"
+    },
+    {
+      "name": "--ffe-v-checkbox-selected-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-checkbox-marker-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-checkbox-focus-outline-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-radio-button-label-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-toggle-switch-box-shadow",
+      "value": "0 0 0 3px var(--ffe-farge-hvit),0 0 0 5px var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-toggle-switch-hover-color",
+      "value": "var(--ffe-farge-moerkgraa)"
+    },
+    {
+      "name": "--ffe-v-tooltip-icon-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-tooltip-border-color",
+      "value": "var(--ffe-g-border-color)"
+    },
+    {
+      "name": "--ffe-v-button-text-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-buttons-border-radius",
+      "value": "6em"
+    },
+    {
+      "name": "--ffe-v-button-shadow-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-action-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-button-action-color-hover",
+      "value": "#095139"
+    },
+    {
+      "name": "--ffe-v-button-action-color-text",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-primary-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-primary-color-text",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-border-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color-text-hover",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color-bg-hover",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color-text",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-tertiary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-tertiary-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-tertiary-color-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-task-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-task-color-border",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-task-color-text",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-task-color-text-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-task-color-icon",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-task-color-icon-hover",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-task-border-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-cards-common-card-background-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-cards-common-card-box-shadow-color",
+      "value": "var(--ffe-farge-graa)"
+    },
+    {
+      "name": "--ffe-v-cards-common-card-box-shadow",
+      "value": "0 1px 4px 0 var(--ffe-v-cards-common-card-box-shadow-color)"
+    },
+    {
+      "name": "--ffe-v-cards-common-card-border-radius",
+      "value": "16px"
+    },
+    {
+      "name": "--ffe-v-cards-text-color",
+      "value": "var(--ffe-farge-moerkgraa)"
+    },
+    {
+      "name": "--ffe-v-cards-border-hover-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-cards-stippled-border-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-cards-icon-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-cards-common-group-card-separation-border-color",
+      "value": "var(--ffe-farge-lysgraa)"
+    },
+    {
+      "name": "--ffe-v-cards-common-group-card-separation-border-color-dm",
+      "value": "var(--ffe-farge-koksgraa)"
+    },
+    {
+      "name": "--ffe-v-group-card-footer-background-color",
+      "value": "var(--ffe-farge-syrin-30)"
+    },
+    {
+      "name": "--ffe-v-group-card-footer-background-color-dm",
+      "value": "var(--ffe-farge-koksgraa)"
+    },
+    {
+      "name": "--ffe-v-accordion-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-accordion-secondary-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-accordion-body-text-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-accordion-focus-border-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-icons-size-sm",
+      "value": "20px"
+    },
+    {
+      "name": "--ffe-v-icons-size-md",
+      "value": "24px"
+    },
+    {
+      "name": "--ffe-v-icons-size-lg",
+      "value": "40px"
+    },
+    {
+      "name": "--ffe-v-icons-size-xl",
+      "value": "48px"
+    },
+    {
+      "name": "--ffe-v-icons-default-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-messages-tips-bg-color",
+      "value": "var(--ffe-farge-sol-30)"
+    },
+    {
+      "name": "--ffe-v-messages-tips-icon-bg-color",
+      "value": "var(--ffe-farge-sol)"
+    },
+    {
+      "name": "--ffe-v-messages-tips-icon-color",
+      "value": "var(--ffe-farge-sol-30)"
+    },
+    {
+      "name": "--ffe-v-messages-tips-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-messages-tips-icon-variant-bg-color",
+      "value": "var(--ffe-farge-sol)"
+    },
+    {
+      "name": "--ffe-v-messages-info-bg-color",
+      "value": "var(--ffe-farge-vann-30)"
+    },
+    {
+      "name": "--ffe-v-messages-info-icon-bg-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-messages-info-icon-color",
+      "value": "var(--ffe-farge-vann-30)"
+    },
+    {
+      "name": "--ffe-v-messages-info-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-messages-info-icon-variant-bg-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-messages-success-bg-color",
+      "value": "var(--ffe-farge-skog-30)"
+    },
+    {
+      "name": "--ffe-v-messages-success-icon-bg-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-messages-success-icon-color",
+      "value": "var(--ffe-farge-skog-30)"
+    },
+    {
+      "name": "--ffe-v-messages-success-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-messages-success-icon-variant-bg-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-messages-error-bg-color",
+      "value": "var(--ffe-farge-baer-30)"
+    },
+    {
+      "name": "--ffe-v-messages-error-icon-bg-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-v-messages-error-icon-color",
+      "value": "var(--ffe-farge-baer-30)"
+    },
+    {
+      "name": "--ffe-v-messages-error-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-messages-error-icon-variant-bg-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-v-messages-news-bg-color",
+      "value": "var(--ffe-farge-lysgraa)"
+    },
+    {
+      "name": "--ffe-v-messages-news-icon-bg-color",
+      "value": "var(--ffe-farge-koksgraa)"
+    },
+    {
+      "name": "--ffe-v-messages-news-icon-color",
+      "value": "var(--ffe-farge-lysgraa)"
+    },
+    {
+      "name": "--ffe-v-messages-news-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-messages-news-icon-variant-bg-color",
+      "value": "var(--ffe-farge-koksgraa)"
+    },
+    {
+      "name": "--ffe-v-messages-close-button-color",
+      "value": "var(--ffe-farge-moerkgraa)"
+    },
+    {
+      "name": "--ffe-v-messages-close-button-color-hover",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-messages-close-button-border-color-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-messages-text-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-messages-link-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-messages-link-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-messages-link-color-visited",
+      "value": "var(--ffe-farge-lyng)"
+    },
+    {
+      "name": "--ffe-v-messages-link-color-focus",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-table-heading-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-table-heading-color-sortable",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-table-row-bordercolor",
+      "value": "var(--ffe-farge-varmgraa)"
+    },
+    {
+      "name": "--ffe-v-table-expand-icon-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-table-expanded-content-bg",
+      "value": "var(--ffe-farge-syrin-30)"
+    },
+    {
+      "name": "--ffe-v-table-expanded-row-bg",
+      "value": "var(--ffe-farge-syrin-70)"
+    },
+    {
+      "name": "--ffe-v-table-sortable-header-hover-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-table-button-focus-outline",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-table-content-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-table-sortable-header-active-color",
+      "value": "var(--ffe-farge-syrin-70)"
+    }
+  ],
+  "customProps": {
+    "--ffe-farge-fjell": "#002776",
+    "--ffe-farge-fjell-70": "#4d689f",
+    "--ffe-farge-fjell-30": "#b3bed6",
+    "--ffe-farge-vann": "#005aa4",
+    "--ffe-farge-vann-70": "#4d8cbf",
+    "--ffe-farge-vann-30": "#b3cee4",
+    "--ffe-farge-sand": "#f8e9dd",
+    "--ffe-farge-sand-70": "#faf0e7",
+    "--ffe-farge-sand-30": "#fdf8f5",
+    "--ffe-farge-frost": "#7eb5d2",
+    "--ffe-farge-frost-70": "#a5cbe0",
+    "--ffe-farge-frost-30": "#d8e9f2",
+    "--ffe-farge-syrin": "#d3d3ea",
+    "--ffe-farge-syrin-70": "#e0e0f0",
+    "--ffe-farge-syrin-30": "#f2f2f9",
+    "--ffe-farge-myrull": "#fae4e0",
+    "--ffe-farge-myrull-70": "#fcece9",
+    "--ffe-farge-myrull-30": "#fef7f6",
+    "--ffe-farge-villblomst": "#ee8d9c",
+    "--ffe-farge-villblomst-70": "#f3afba",
+    "--ffe-farge-villblomst-30": "#fadde1",
+    "--ffe-farge-nordlys": "#33af85",
+    "--ffe-farge-nordlys-70": "#70c7aa",
+    "--ffe-farge-nordlys-30": "#c2e7da",
+    "--ffe-farge-lyng": "#873953",
+    "--ffe-farge-lyng-70": "#ab7487",
+    "--ffe-farge-lyng-30": "#dbc4cb",
+    "--ffe-farge-baer": "#e44244",
+    "--ffe-farge-baer-70": "#ec7b7c",
+    "--ffe-farge-baer-30": "#f7c6c7",
+    "--ffe-farge-skog": "#00754e",
+    "--ffe-farge-skog-70": "#4d9e83",
+    "--ffe-farge-skog-30": "#b3d6ca",
+    "--ffe-farge-multe": "#f8b181",
+    "--ffe-farge-multe-70": "#fac8a7",
+    "--ffe-farge-multe-30": "#fde8d9",
+    "--ffe-farge-sol": "#dc8000",
+    "--ffe-farge-sol-70": "#e7a64d",
+    "--ffe-farge-sol-30": "#f5d9b3",
+    "--ffe-farge-natt": "#001032",
+    "--ffe-farge-svart": "#020a0a",
+    "--ffe-farge-koksgraa": "#323232",
+    "--ffe-farge-moerkgraa": "#676767",
+    "--ffe-farge-graa": "#adadad",
+    "--ffe-farge-lysgraa": "#d8d8d8",
+    "--ffe-farge-moerkvarmgraa": "#848383",
+    "--ffe-farge-varmgraa": "#9b9797",
+    "--ffe-farge-lysvarmgraa": "#d7d2cb",
+    "--ffe-farge-hvit": "#fff",
+    "--ffe-fontsize-body-text": "1rem",
+    "--ffe-fontsize-small-text": "0.875rem",
+    "--ffe-fontsize-micro-text": "0.75rem",
+    "--ffe-fontsize-lead-paragraph": "1.5rem",
+    "--ffe-fontsize-sub-lead-paragraph": "1.125rem",
+    "--ffe-fontsize-h1": "2.875rem",
+    "--ffe-fontsize-h2": "2.25rem",
+    "--ffe-fontsize-h3": "1.75rem",
+    "--ffe-fontsize-h4": "1.375rem",
+    "--ffe-fontsize-h5": "1.125rem",
+    "--ffe-fontsize-h6": "1rem",
+    "--ffe-fontsize-form-input": "1rem",
+    "--ffe-fontsize-form-dropdown": "1rem",
+    "--ffe-fontsize-button": "1rem",
+    "--breakpoint-sm": "480px",
+    "--breakpoint-md": "768px",
+    "--breakpoint-lg": "1024px",
+    "--breakpoint-xl": "1280px",
+    "--app-width": "1280px",
+    "--app-width-min": "320px",
+    "--app-margin": "20px",
+    "--ffe-ease-in-out-back": "cubic-bezier(0.46, -0.265, 0.48, 1.38)",
+    "--ffe-ease": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+    "--ffe-transition-duration": "0.2s",
+    "--ffe-spacing": "8px",
+    "--ffe-spacing-2xs": "4px",
+    "--ffe-spacing-xs": "8px",
+    "--ffe-spacing-sm": "16px",
+    "--ffe-spacing-md": "24px",
+    "--ffe-spacing-lg": "32px",
+    "--ffe-spacing-xl": "40px",
+    "--ffe-spacing-2xl": "48px",
+    "--ffe-spacing-3xl": "64px",
+    "--ffe-spacing-4xl": "80px",
+    "--ffe-spacing-5xl": "160px",
+    "--ffe-g-primary-color": "#005aa4",
+    "--ffe-g-secondary-color": "#002776",
+    "--ffe-g-error-color": "#e44244",
+    "--ffe-g-border-color": "#9b9797",
+    "--ffe-g-border-radius": "4px",
+    "--ffe-g-font": "'SpareBank1-regular',arial,sans-serif",
+    "--ffe-g-font-heading": "'SpareBank1-title-medium',arial,sans-serif",
+    "--ffe-g-font-heading-small": "'SpareBank1-medium',arial,sans-serif",
+    "--ffe-g-font-strong": "'SpareBank1-medium',arial,sans-serif",
+    "--ffe-g-font-italic": "'SpareBank1-italic',arial,sans-serif",
+    "--ffe-g-text-color": "#020a0a",
+    "--ffe-g-lead-color": "#002776",
+    "--ffe-g-heading-color": "#002776",
+    "--ffe-g-link-color": "#005aa4",
+    "--ffe-g-link-color-hover": "#002776",
+    "--ffe-g-link-color-visited": "#873953",
+    "--ffe-g-link-icon-color-hover": "#001032",
+    "--ffe-g-link-icon-color-focus": "#005aa4",
+    "--ffe-v-lists-title-color": "#002776",
+    "--ffe-v-lists-description-description-color": "#020a0a",
+    "--ffe-v-lists-check-list-check-icon-color": "#00754e",
+    "--ffe-v-lists-check-list-cross-icon-color": "#e44244",
+    "--ffe-v-detail-list-card-background-color": "#fff",
+    "--ffe-v-detail-list-card-border-color": "#d8d8d8",
+    "--ffe-v-detail-list-card-border-radius": "16px",
+    "--ffe-v-input-color": "#020a0a",
+    "--ffe-v-input-bg-color": "#fff",
+    "--ffe-v-input-placeholder-color": "#676767",
+    "--ffe-v-info-message-icon-color": "#002776",
+    "--ffe-v-info-message-icon-fill": "#fff",
+    "--ffe-v-dropdown-bg-color": "#fff",
+    "--ffe-v-success-message-icon-color": "#00754e",
+    "--ffe-v-success-message-icon-fill": "#fff",
+    "--ffe-v-error-message-icon-color": "#e44244",
+    "--ffe-v-error-message-icon-fill": "#fff",
+    "--ffe-v-text-on-colored-bg-color": "#fff",
+    "--ffe-v-checkbox-color": "#9b9797",
+    "--ffe-v-checkbox-selected-color": "#005aa4",
+    "--ffe-v-checkbox-marker-color": "#005aa4",
+    "--ffe-v-checkbox-focus-outline-color": "#005aa4",
+    "--ffe-v-radio-button-label-color": "#005aa4",
+    "--ffe-v-toggle-switch-box-shadow": "0 0 0 3px #fff,0 0 0 5px #005aa4",
+    "--ffe-v-toggle-switch-hover-color": "#676767",
+    "--ffe-v-tooltip-icon-color": "#005aa4",
+    "--ffe-v-tooltip-border-color": "#9b9797",
+    "--ffe-v-button-text-color": "#fff",
+    "--ffe-v-buttons-border-radius": "6em",
+    "--ffe-v-button-shadow-color": "#005aa4",
+    "--ffe-v-button-action-color": "#00754e",
+    "--ffe-v-button-action-color-hover": "#095139",
+    "--ffe-v-button-action-color-text": "#fff",
+    "--ffe-v-button-primary-color": "#005aa4",
+    "--ffe-v-button-primary-color-hover": "#002776",
+    "--ffe-v-button-primary-color-text": "#fff",
+    "--ffe-v-button-secondary-color": "#fff",
+    "--ffe-v-button-secondary-border-color": "#005aa4",
+    "--ffe-v-button-secondary-color-text-hover": "#fff",
+    "--ffe-v-button-secondary-color-bg-hover": "#005aa4",
+    "--ffe-v-button-secondary-color-text": "#005aa4",
+    "--ffe-v-button-tertiary-color": "#005aa4",
+    "--ffe-v-button-tertiary-color-hover": "#002776",
+    "--ffe-v-button-tertiary-color-focus": "#005aa4",
+    "--ffe-v-button-task-color": "#fff",
+    "--ffe-v-button-task-color-border": "#005aa4",
+    "--ffe-v-button-task-color-text": "#005aa4",
+    "--ffe-v-button-task-color-text-hover": "#002776",
+    "--ffe-v-button-task-color-icon": "#005aa4",
+    "--ffe-v-button-task-color-icon-hover": "#fff",
+    "--ffe-v-button-task-border-focus": "#005aa4",
+    "--ffe-v-cards-common-card-background-color": "#fff",
+    "--ffe-v-cards-common-card-box-shadow-color": "#adadad",
+    "--ffe-v-cards-common-card-box-shadow": "0 1px 4px 0 #adadad",
+    "--ffe-v-cards-common-card-border-radius": "16px",
+    "--ffe-v-cards-text-color": "#676767",
+    "--ffe-v-cards-border-hover-color": "#005aa4",
+    "--ffe-v-cards-stippled-border-color": "#005aa4",
+    "--ffe-v-cards-icon-color": "#002776",
+    "--ffe-v-cards-common-group-card-separation-border-color": "#d8d8d8",
+    "--ffe-v-cards-common-group-card-separation-border-color-dm": "#323232",
+    "--ffe-v-group-card-footer-background-color": "#f2f2f9",
+    "--ffe-v-group-card-footer-background-color-dm": "#323232",
+    "--ffe-v-accordion-primary-color": "#005aa4",
+    "--ffe-v-accordion-secondary-color": "#fff",
+    "--ffe-v-accordion-body-text-color": "#020a0a",
+    "--ffe-v-accordion-focus-border-color": "#005aa4",
+    "--ffe-v-icons-size-sm": "20px",
+    "--ffe-v-icons-size-md": "24px",
+    "--ffe-v-icons-size-lg": "40px",
+    "--ffe-v-icons-size-xl": "48px",
+    "--ffe-v-icons-default-color": "#005aa4",
+    "--ffe-v-messages-tips-bg-color": "#f5d9b3",
+    "--ffe-v-messages-tips-icon-bg-color": "#dc8000",
+    "--ffe-v-messages-tips-icon-color": "#f5d9b3",
+    "--ffe-v-messages-tips-variant-bg-color": "#fff",
+    "--ffe-v-messages-tips-icon-variant-bg-color": "#dc8000",
+    "--ffe-v-messages-info-bg-color": "#b3cee4",
+    "--ffe-v-messages-info-icon-bg-color": "#005aa4",
+    "--ffe-v-messages-info-icon-color": "#b3cee4",
+    "--ffe-v-messages-info-variant-bg-color": "#fff",
+    "--ffe-v-messages-info-icon-variant-bg-color": "#002776",
+    "--ffe-v-messages-success-bg-color": "#b3d6ca",
+    "--ffe-v-messages-success-icon-bg-color": "#00754e",
+    "--ffe-v-messages-success-icon-color": "#b3d6ca",
+    "--ffe-v-messages-success-variant-bg-color": "#fff",
+    "--ffe-v-messages-success-icon-variant-bg-color": "#00754e",
+    "--ffe-v-messages-error-bg-color": "#f7c6c7",
+    "--ffe-v-messages-error-icon-bg-color": "#e44244",
+    "--ffe-v-messages-error-icon-color": "#f7c6c7",
+    "--ffe-v-messages-error-variant-bg-color": "#fff",
+    "--ffe-v-messages-error-icon-variant-bg-color": "#e44244",
+    "--ffe-v-messages-news-bg-color": "#d8d8d8",
+    "--ffe-v-messages-news-icon-bg-color": "#323232",
+    "--ffe-v-messages-news-icon-color": "#d8d8d8",
+    "--ffe-v-messages-news-variant-bg-color": "#fff",
+    "--ffe-v-messages-news-icon-variant-bg-color": "#323232",
+    "--ffe-v-messages-close-button-color": "#676767",
+    "--ffe-v-messages-close-button-color-hover": "#020a0a",
+    "--ffe-v-messages-close-button-border-color-focus": "#005aa4",
+    "--ffe-v-messages-text-color": "#020a0a",
+    "--ffe-v-messages-link-color": "#005aa4",
+    "--ffe-v-messages-link-color-hover": "#002776",
+    "--ffe-v-messages-link-color-visited": "#873953",
+    "--ffe-v-messages-link-color-focus": "#fff",
+    "--ffe-v-table-heading-color": "#020a0a",
+    "--ffe-v-table-heading-color-sortable": "#002776",
+    "--ffe-v-table-row-bordercolor": "#9b9797",
+    "--ffe-v-table-expand-icon-color": "#005aa4",
+    "--ffe-v-table-expanded-content-bg": "#f2f2f9",
+    "--ffe-v-table-expanded-row-bg": "#e0e0f0",
+    "--ffe-v-table-sortable-header-hover-color": "#002776",
+    "--ffe-v-table-button-focus-outline": "#005aa4",
+    "--ffe-v-table-content-color": "#020a0a",
+    "--ffe-v-table-sortable-header-active-color": "#e0e0f0"
+  },
+  "fontFaces": [
+    {
+      "family": "SpareBank1-medium",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2\") format(\"woff2\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-medium; font-display: fallback; src: url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2\") format(\"woff2\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.css"
+    },
+    {
+      "family": "SpareBank1-regular",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2\") format(\"woff2\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-regular; font-display: fallback; src: url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2\") format(\"woff2\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.css"
+    },
+    {
+      "family": "SpareBank1-italic",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-It-Web.woff2\") format(\"woff2\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-italic; font-display: fallback; src: url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-It-Web.woff2\") format(\"woff2\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.css"
+    },
+    {
+      "family": "SpareBank1-title-medium",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2\") format(\"woff2\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-title-medium; font-display: fallback; src: url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2\") format(\"woff2\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.css"
+    }
+  ],
+  "iconFont": null,
+  "textRendering": {
+    "textRendering": "auto",
+    "webkitFontSmoothing": "auto",
+    "fontSynthesis": "weight style small-caps",
+    "fontKerning": "auto",
+    "fontVariantNumeric": "tabular-nums",
+    "bodyFontFamily": "SpareBank1-regular, arial, sans-serif",
+    "bodyFontSize": "16px",
+    "bodyLineHeight": "24px",
+    "bodyColor": "rgb(2, 10, 10)",
+    "bodyBackground": "rgba(216, 216, 216, 0.3)",
+    "htmlFontSize": "16px"
+  },
+  "containerModel": {
+    "maxWidthMode": "100%",
+    "sample": [
+      {
+        "domPath": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.inline-svg.responsive",
+        "renderedWidth": 170,
+        "marginLeft": "0px",
+        "marginRight": "0px"
+      },
+      {
+        "domPath": "div.sb1-article__header.responsive-grid:nth-child(1) > div.sb1-article__header-image.image--hero:nth-child(1) > div.image__wrap > figure > div.image__container > img.image--responsive",
+        "renderedWidth": 1062,
+        "marginLeft": "0px",
+        "marginRight": "0px"
+      }
+    ],
+    "documentHeight": 3692,
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    }
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 9,
+    "mainTextLen": 4342,
+    "realImageCount": 10,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html.png",
+  "stats": {
+    "wordCount": 918,
+    "ctaCount": 6,
+    "internalLinkCount": 29,
+    "externalLinkCount": 4,
+    "imageCount": 10,
+    "headingCount": 11
+  },
+  "slots": {
+    "pageType": "article",
+    "archetypeFamily": "news-article",
+    "headline": "Ditt neste bankkort er laget av resirkulert plast",
+    "deck": "Det produseres om lag 10 millioner debet- og kredittkort i Norge hvert år, og alle kortene bruker nyprodusert plast. Ny teknologi åpner nå for bruk av resirkulert plast. SpareBank 1 har allerede sendt ut de første, resirkulerte kortene til våre kunder.",
+    "meta": {
+      "title": "Ditt neste bankkort er laget av resirkulert plast | SpareBank 1",
+      "description": "Det produseres om lag 10 millioner debet- og kredittkort i Norge hvert år, og alle kortene bruker nyprodusert plast. Ny teknologi åpner nå for bruk av resirkulert plast. SpareBank 1 har allerede sendt ut de første, resirkulerte kortene til våre kunder.&nbsp;\n",
+      "canonical": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+      "og": {
+        "title": "Ditt neste bankkort er laget av resirkulert plast",
+        "description": "Det produseres om lag 10 millioner debet- og kredittkort i Norge hvert år, og alle kortene bruker nyprodusert plast. Ny teknologi åpner nå for bruk av resirkulert plast. SpareBank 1 har allerede sendt ut de første, resirkulerte kortene til våre kunder.&nbsp;\n",
+        "image": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Betaling_med_bankkort.jpg.thumb.1280.2276.jpg",
+        "type": "article",
+        "siteName": null
+      }
+    },
+    "breadcrumb": null,
+    "sections": [
+      "Like trygt med like lang holdbarhet",
+      "Retur av gamle kort",
+      "KORT OM KORT:",
+      "RELATERTE ARTIKLER",
+      "RELATERTE TEMA"
+    ],
+    "h3": [],
+    "paragraphs": 15,
+    "primaryCtas": [
+      {
+        "label": "Del på Facebook",
+        "href": null
+      },
+      {
+        "label": "Del på LinkedIn",
+        "href": null
+      },
+      {
+        "label": "Del på Twitter",
+        "href": null
+      }
+    ],
+    "images": [
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Betaling_med_bankkort.jpg.thumb.1280.2276.jpg",
+        "alt": "",
+        "w": 1062,
+        "h": 488
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/ansatte/Kristian_Woll_fagspesialist_bankkort_SpareBank11.jpg.thumb.1280.1280.jpg",
+        "alt": "",
+        "w": 344,
+        "h": 455
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/nyhetssenter-bransjevinner-2023.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 294,
+        "h": 139
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Byttehelgen-kjop-brukt.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 294,
+        "h": 139
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Jentepaasykkel.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 294,
+        "h": 139
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/mobilttelefon-fremtind.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 294,
+        "h": 139
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/SBI-2020-Interiorbutikk-skilt.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 294,
+        "h": 139
+      }
+    ],
+    "faqItems": [],
+    "hasFeedback": false,
+    "hasContactRow": false,
+    "hasBankChoice": false,
+    "kicker": "KORT OM KORT:",
+    "share": [
+      "Del på Facebook",
+      "Del på LinkedIn",
+      "Del på Twitter"
+    ],
+    "related": [
+      "RELATERTE ARTIKLER",
+      "RELATERTE TEMA"
+    ]
+  }
+}

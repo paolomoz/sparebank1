@@ -1,0 +1,977 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-09-14T15:13:51.309Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://www.sparebank1.no/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+   "https://www.sparebank1.no/nb/bank/bedrift/bedriftskort.html",
+   "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+   "https://www.sparebank1.no/nb/bank/om-oss/investor.html",
+   "https://www.sparebank1.no/nb/bank/om-oss/nyheter.html",
+   "https://www.sparebank1.no/nb/bank/privat/forsikring/meld-skade.html"
+  ],
+  "reachSource": "stardust/current/pages"
+ },
+ "pages": {
+  "/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html": {
+   "url": "https://www.sparebank1.no/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+   "status": 200,
+   "host": "www.sparebank1.no",
+   "title": "Borettslag og sameie | Forsikringer | SpareBank 1",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "nb",
+    "hreflang": [],
+    "switcher": [
+     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html#meeting",
+     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html#meeting",
+     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html#message",
+     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html#message"
+    ]
+   },
+   "cms": {
+    "digitalData": [
+     "content"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "_satellite"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "ul",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    },
+    {
+     "cls": "ul",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    },
+    {
+     "cls": "ffe-grid__row columns-grid__row",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    }
+   ],
+   "inlineScripts": 8,
+   "inlineFetch": true,
+   "mainText": 2946,
+   "domAddedAfterLoad": 40,
+   "hosts": {
+    "www.sparebank1.no": 27
+   },
+   "thirdPartyHosts": [],
+   "scripts": [
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/vendors_bundle.1156912316.js",
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.js",
+    "https://www.sparebank1.no/sb1-nettsider-optin/bank/static/opt-in.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/ressurser/bank/user",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/personal/banking/consent/cookies/identity",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity"
+    },
+    {
+     "method": "POST",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/opt-in",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/opt-in"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [
+    {
+     "url": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+     "body": "{\"optinTypes\":[\"F\",\"S\",\"M\"]}"
+    }
+   ],
+   "textAtLoad": 2946,
+   "mainEmptyAtLoad": false
+  },
+  "/nb/bank/bedrift/bedriftskort.html": {
+   "url": "https://www.sparebank1.no/nb/bank/bedrift/bedriftskort.html",
+   "status": 200,
+   "host": "www.sparebank1.no",
+   "title": "Bedriftskort | Bankkort og kredittkort bedrift | SpareBank 1",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Bestill bankkort",
+     "href": "https://www.sparebank1.no/nb/bank/bedrift/bedriftskort.html#",
+     "marker": "overlay-btn",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 2,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "nb",
+    "hreflang": [],
+    "switcher": [
+     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftskort.html",
+     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftskort.html",
+     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftskort.html#meeting",
+     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftskort.html#meeting",
+     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftskort.html#message"
+    ]
+   },
+   "cms": {
+    "digitalData": [
+     "content"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "_satellite"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "ffe-grid__row columns-grid__row",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    }
+   ],
+   "inlineScripts": 21,
+   "inlineFetch": true,
+   "mainText": 1076,
+   "domAddedAfterLoad": 20,
+   "hosts": {
+    "www.sparebank1.no": 24
+   },
+   "thirdPartyHosts": [],
+   "scripts": [
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/vendors_bundle.1156912316.js",
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.js",
+    "https://www.sparebank1.no/sb1-nettsider-optin/bank/static/opt-in.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/ressurser/bank/user",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/personal/banking/consent/cookies/identity",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity"
+    },
+    {
+     "method": "POST",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/opt-in",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/opt-in"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [
+    {
+     "url": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+     "body": "{\"optinTypes\":[\"F\",\"S\",\"M\"]}"
+    }
+   ],
+   "textAtLoad": 1076,
+   "mainEmptyAtLoad": false
+  },
+  "/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html": {
+   "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+   "status": 200,
+   "host": "www.sparebank1.no",
+   "title": "Administrere prisavtaler i SpareBank 1 Regnskap | SpareBank 1",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [],
+   "dialogCount": 1,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "nb",
+    "hreflang": [],
+    "switcher": [
+     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/kundeservice.html",
+     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/kundeservice.html",
+     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/kundeservice.html#meeting",
+     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/kundeservice.html#meeting",
+     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/kundeservice.html#message"
+    ]
+   },
+   "cms": {
+    "digitalData": [
+     "content"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "_satellite"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 21,
+   "inlineFetch": true,
+   "mainText": 923,
+   "domAddedAfterLoad": 15,
+   "hosts": {
+    "www.sparebank1.no": 23
+   },
+   "thirdPartyHosts": [],
+   "scripts": [
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.js",
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/vendors_bundle.1156912316.js",
+    "https://www.sparebank1.no/sb1-nettsider-optin/bank/static/opt-in.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/ressurser/bank/user",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/personal/banking/consent/cookies/identity",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity"
+    },
+    {
+     "method": "POST",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/opt-in",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/opt-in"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [
+    {
+     "url": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+     "body": "{\"optinTypes\":[\"F\",\"S\",\"M\"]}"
+    }
+   ],
+   "textAtLoad": 923,
+   "mainEmptyAtLoad": false
+  },
+  "/nb/bank/om-oss/investor.html": {
+   "url": "https://www.sparebank1.no/nb/bank/om-oss/investor.html",
+   "status": 200,
+   "host": "www.sparebank1.no",
+   "title": "Investor | SpareBank 1",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Bli kunde",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+     "marker": "overlay-btn",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Select bank to read more",
+     "href": "https://www.sparebank1.no/nb/bank/om-oss/investor.html",
+     "marker": "overlay-btn",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 2,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "nb",
+    "hreflang": [],
+    "switcher": [
+     "https://publish.mynewsdesk.com/no/analyze/materials/pressrelease/2710291"
+    ]
+   },
+   "cms": {
+    "digitalData": [
+     "content"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "_satellite"
+   ],
+   "clientRendered": [
+    {
+     "cls": "tab js-tab-content default",
+     "attrs": [],
+     "text": "SpareBank 1 Gruppen 2026 2. kvartal Kvartalsrapport (PDF) 1."
+    },
+    {
+     "cls": "tab js-tab-content ",
+     "attrs": [],
+     "text": "Fremtind Forsikring 2026 2. kvartal Kvartalsrapport Fremtind"
+    },
+    {
+     "cls": "tab js-tab-content ",
+     "attrs": [],
+     "text": "SpareBank 1 Forsikring 2026 2. kvartal Kvartalsrapport (PDF)"
+    },
+    {
+     "cls": "tab js-tab-content ",
+     "attrs": [],
+     "text": "SpareBank 1 Factoring 2026 2. kvartal Kvartalsrapport (PDF) "
+    },
+    {
+     "cls": "tab js-tab-content ",
+     "attrs": [],
+     "text": "Other companies Kredittbanken (tidl. SpareBank 1 Kreditt) Fi"
+    }
+   ],
+   "listingCandidates": [
+    {
+     "cls": "tabs__content aem-main-container",
+     "cards": 5,
+     "sameSite": 4,
+     "hasDate": true
+    },
+    {
+     "cls": "ul",
+     "cards": 12,
+     "sameSite": 12,
+     "hasDate": true
+    },
+    {
+     "cls": "text-wrapper ",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": true
+    },
+    {
+     "cls": "text-wrapper ",
+     "cards": 5,
+     "sameSite": 5,
+     "hasDate": true
+    },
+    {
+     "cls": "text-wrapper ",
+     "cards": 5,
+     "sameSite": 5,
+     "hasDate": true
+    },
+    {
+     "cls": "text-wrapper ",
+     "cards": 9,
+     "sameSite": 9,
+     "hasDate": true
+    },
+    {
+     "cls": "ul",
+     "cards": 12,
+     "sameSite": 12,
+     "hasDate": true
+    },
+    {
+     "cls": "text-wrapper ",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": true
+    },
+    {
+     "cls": "text-wrapper ",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": true
+    },
+    {
+     "cls": "text-wrapper ",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": true
+    }
+   ],
+   "inlineScripts": 8,
+   "inlineFetch": true,
+   "mainText": 572,
+   "domAddedAfterLoad": 20,
+   "hosts": {
+    "www.sparebank1.no": 22
+   },
+   "thirdPartyHosts": [],
+   "scripts": [
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/vendors_bundle.1156912316.js",
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.js",
+    "https://www.sparebank1.no/sb1-nettsider-optin/bank/static/opt-in.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/ressurser/bank/user",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/personal/banking/consent/cookies/identity",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity"
+    },
+    {
+     "method": "POST",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/opt-in",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/opt-in"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [
+    {
+     "url": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+     "body": "{\"optinTypes\":[\"F\",\"S\",\"M\"]}"
+    }
+   ],
+   "textAtLoad": 572,
+   "mainEmptyAtLoad": false
+  },
+  "/nb/bank/om-oss/nyheter.html": {
+   "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.html",
+   "status": 200,
+   "host": "www.sparebank1.no",
+   "title": "Nyheter | SpareBank 1",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [
+    {
+     "role": "dialog",
+     "heading": "Bruk av informasjonskapsler",
+     "textLen": 1174,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    }
+   ],
+   "dialogCount": 1,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [
+    "https://www.sparebank1.no/content/sites/sb1/nb/bank/om-oss/nyheter/faerre-deler-passord-til-nettbank--fortsatt-for-mange--mener-svi.html"
+   ],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "nb",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {},
+   "framework": null,
+   "globals": [
+    "_satellite"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "newscards",
+     "cards": 32,
+     "sameSite": 32,
+     "hasDate": true
+    }
+   ],
+   "inlineScripts": 6,
+   "inlineFetch": true,
+   "mainText": 2798,
+   "domAddedAfterLoad": 23,
+   "hosts": {
+    "www.sparebank1.no": 52
+   },
+   "thirdPartyHosts": [],
+   "scripts": [
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.js",
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/vendors_bundle.1156912316.js",
+    "https://www.sparebank1.no/sb1-nettsider-optin/bank/static/opt-in.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/ressurser/bank/user",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/personal/banking/consent/cookies/identity",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity"
+    },
+    {
+     "method": "POST",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/opt-in",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/opt-in"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/nb/bank/om-oss/nyheter.export.json",
+     "query": [
+      "limit",
+      "offset"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.export.json"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/bin/sb1/components/footer",
+     "query": [
+      "bank",
+      "lang",
+      "market"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.sparebank1.no/bin/sb1/components/footer"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [
+    {
+     "url": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+     "body": "{\"optinTypes\":[\"F\",\"S\",\"M\"]}"
+    }
+   ],
+   "textAtLoad": 0,
+   "mainEmptyAtLoad": true
+  },
+  "/nb/bank/privat/forsikring/meld-skade.html": {
+   "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/meld-skade.html",
+   "status": 200,
+   "host": "www.sparebank1.no",
+   "title": "Meld skade, tap eller sykdom | SpareBank 1",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Bli kunde",
+     "href": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat",
+     "marker": "overlay-btn",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 1,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "nb",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {
+    "digitalData": [
+     "content"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "_satellite"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 8,
+   "inlineFetch": true,
+   "mainText": 1998,
+   "domAddedAfterLoad": 15,
+   "hosts": {
+    "www.sparebank1.no": 22
+   },
+   "thirdPartyHosts": [],
+   "scripts": [
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/vendors_bundle.1156912316.js",
+    "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.js",
+    "https://www.sparebank1.no/sb1-nettsider-optin/bank/static/opt-in.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/ressurser/bank/user",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user"
+    },
+    {
+     "method": "GET",
+     "host": "www.sparebank1.no",
+     "path": "/personal/banking/consent/cookies/identity",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity"
+    },
+    {
+     "method": "POST",
+     "host": "www.sparebank1.no",
+     "path": "/openapi/nettsider/opt-in",
+     "query": [],
+     "status": 200,
+     "contentType": "application/vnd.sparebank1.v1+json",
+     "example": "https://www.sparebank1.no/openapi/nettsider/opt-in"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [
+    {
+     "url": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+     "body": "{\"optinTypes\":[\"F\",\"S\",\"M\"]}"
+    }
+   ],
+   "textAtLoad": 1998,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [
+  {
+   "id": "a-cms-app-settings-object-digitaldata",
+   "class": "A",
+   "feature": "CMS / app settings object digitalData",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+    "/nb/bank/bedrift/bedriftskort.html",
+    "/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+    "/nb/bank/om-oss/investor.html",
+    "/nb/bank/privat/forsikring/meld-skade.html"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-bin-sb1-components-footer",
+   "class": "A",
+   "feature": "first-party API GET /bin/sb1/components/footer",
+   "api": {
+    "method": "GET",
+    "path": "/bin/sb1/components/footer"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /bin/sb1/components/footer?bank,lang,market → 200"
+   ],
+   "pages": [
+    "/nb/bank/om-oss/nyheter.html"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-tab-js-tab-content-default",
+   "class": "CR",
+   "feature": "client-rendered slot tab js-tab-content default",
+   "hint": "client-rendered",
+   "evidence": [
+    "SpareBank 1 Gruppen 2026 2. kvartal Kvartalsrapport (PDF) 1."
+   ],
+   "pages": [
+    "/nb/bank/om-oss/investor.html"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-tab-js-tab-content",
+   "class": "CR",
+   "feature": "client-rendered slot tab js-tab-content ",
+   "hint": "client-rendered",
+   "evidence": [
+    "Fremtind Forsikring 2026 2. kvartal Kvartalsrapport Fremtind",
+    "SpareBank 1 Forsikring 2026 2. kvartal Kvartalsrapport (PDF)",
+    "SpareBank 1 Factoring 2026 2. kvartal Kvartalsrapport (PDF) ",
+    "Other companies Kredittbanken (tidl. SpareBank 1 Kreditt) Fi"
+   ],
+   "pages": [
+    "/nb/bank/om-oss/investor.html"
+   ]
+  },
+  {
+   "id": "cr-main-empty-at-load-filled-after-client-rendered-page",
+   "class": "CR",
+   "feature": "main empty at load, filled after (client-rendered page)",
+   "hint": "client-rendered-page",
+   "evidence": [
+    "text at load 0 → settled 2798"
+   ],
+   "pages": [
+    "/nb/bank/om-oss/nyheter.html"
+   ]
+  },
+  {
+   "id": "d-first-party-data-file-get-nb-bank-om-oss-nyheter-export-js",
+   "class": "D",
+   "feature": "first-party data file GET /nb/bank/om-oss/nyheter.export.json",
+   "api": {
+    "method": "GET",
+    "path": "/nb/bank/om-oss/nyheter.export.json"
+   },
+   "hint": "data",
+   "evidence": [
+    "GET /nb/bank/om-oss/nyheter.export.json?limit,offset → 200"
+   ],
+   "pages": [
+    "/nb/bank/om-oss/nyheter.html"
+   ]
+  },
+  {
+   "id": "i18n-locale-variants-nn-nn-nn-nn-nn",
+   "class": "I18N",
+   "feature": "locale variants nn,nn,nn,nn,nn",
+   "hint": "locale",
+   "evidence": [
+    "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+    "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html#meeting",
+    "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftskort.html",
+    "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftskort.html#meeting",
+    "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/kundeservice.html",
+    "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/kundeservice.html#meeting"
+   ],
+   "pages": [
+    "/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+    "/nb/bank/bedrift/bedriftskort.html",
+    "/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html"
+   ]
+  },
+  {
+   "id": "i18n-locale-variants-no",
+   "class": "I18N",
+   "feature": "locale variants no",
+   "hint": "locale",
+   "evidence": [
+    "https://publish.mynewsdesk.com/no/analyze/materials/pressrelease/2710291"
+   ],
+   "pages": [
+    "/nb/bank/om-oss/investor.html"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-tabs-content-aem-main-container-5-cards",
+   "class": "L",
+   "feature": "listing candidate tabs__content aem-main-container (5 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/nb/bank/om-oss/investor.html"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-ul-12-cards",
+   "class": "L",
+   "feature": "listing candidate ul (12 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/nb/bank/om-oss/investor.html"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-text-wrapper-4-cards",
+   "class": "L",
+   "feature": "listing candidate text-wrapper  (4 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/nb/bank/om-oss/investor.html"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-text-wrapper-5-cards",
+   "class": "L",
+   "feature": "listing candidate text-wrapper  (5 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/nb/bank/om-oss/investor.html"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-text-wrapper-9-cards",
+   "class": "L",
+   "feature": "listing candidate text-wrapper  (9 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/nb/bank/om-oss/investor.html"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-text-wrapper-3-cards",
+   "class": "L",
+   "feature": "listing candidate text-wrapper  (3 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/nb/bank/om-oss/investor.html"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-newscards-32-cards",
+   "class": "L",
+   "feature": "listing candidate newscards (32 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/nb/bank/om-oss/nyheter.html"
+   ]
+  },
+  {
+   "id": "m-modal-trigger-overlay-btn-target-outside-dom-at-capture",
+   "class": "M",
+   "feature": "modal trigger overlay-btn → target outside DOM at capture",
+   "hint": "modal",
+   "evidence": [
+    "https://www.sparebank1.no/nb/bank/bedrift/bedriftskort.html#",
+    "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+    "https://www.sparebank1.no/nb/bank/om-oss/investor.html"
+   ],
+   "pages": [
+    "/nb/bank/bedrift/bedriftskort.html",
+    "/nb/bank/om-oss/investor.html"
+   ]
+  },
+  {
+   "id": "m-modal-trigger-overlay-btn-chrome-only-target-outside-dom-a",
+   "class": "M",
+   "feature": "modal trigger overlay-btn (chrome only) → target outside DOM at capture",
+   "hint": "chrome-interaction",
+   "evidence": [
+    "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat"
+   ],
+   "pages": [
+    "/nb/bank/privat/forsikring/meld-skade.html"
+   ]
+  },
+  {
+   "id": "x-sign-in-account-links",
+   "class": "X",
+   "feature": "sign-in / account links",
+   "hint": "decided-out",
+   "evidence": [
+    "https://www.sparebank1.no/content/sites/sb1/nb/bank/om-oss/nyheter/faerre-deler-passord-til-nettbank--fortsatt-for-mange--mener-svi.html"
+   ],
+   "pages": [
+    "/nb/bank/om-oss/nyheter.html"
+   ]
+  }
+ ],
+ "reach": {
+  "pagesWithEvidence": 0,
+  "of": 100,
+  "endpoints": {},
+  "searchFormPages": 0,
+  "formPages": 0,
+  "triggerPages": {}
+ }
+}

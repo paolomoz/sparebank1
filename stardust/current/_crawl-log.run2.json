@@ -1,0 +1,200 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 6,
+    "concurrency": 3
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": {
+    "url": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/favicon.png",
+    "file": "assets/favicon.png"
+  },
+  "crawl": {
+    "failures": []
+  },
+  "dynamicSurface": {
+    "pages": 6,
+    "pagesWithSameSiteData": 6,
+    "pagesWithSearchForm": 0,
+    "pagesHydrated": 0,
+    "truncatedPages": 0,
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/nettsider/ressurser/bank/user",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user",
+        "pages": 6,
+        "examples": [
+          "nb-bank-privat-daglig-bruk-bankid-html",
+          "nb-bank-bedrift-html",
+          "nb-bank-privat-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/personal/banking/consent/cookies/identity",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity",
+        "pages": 3,
+        "examples": [
+          "nb-bank-privat-daglig-bruk-bankid-html",
+          "nb-bank-bedrift-html",
+          "nb-bank-privat-html"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/nettsider/opt-in",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+        "pages": 3,
+        "examples": [
+          "nb-bank-privat-html",
+          "nb-bank-privat-lan-forbrukslan-html",
+          "nb-bank-privat-daglig-bruk-kredittkort-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+        "query": [
+          "limit",
+          "offset",
+          "temaFilter"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+        "pages": 2,
+        "examples": [
+          "nb-bank-privat-html",
+          "nb-bank-privat-sparing-markedsnytt-html"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "adobedc.demdex.net",
+        "path": "/ee/v1/interact",
+        "query": [
+          "configId",
+          "requestId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://adobedc.demdex.net/ee/v1/interact",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "googleads.g.doubleclick.net",
+        "path": "/pagead/id",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/html",
+        "sameSite": false,
+        "example": "https://googleads.g.doubleclick.net/pagead/id",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-sparing-markedsnytt-html"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "jnn-pa.googleapis.com",
+        "path": "/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json+protobuf",
+        "sameSite": false,
+        "example": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-sparing-markedsnytt-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/personal/banking/consent/cookies",
+        "query": [
+          "withIdentity"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/personal/banking/consent/cookies",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-lan-forbrukslan-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/personal/banking/credit/calculator/consumerloan/estimate",
+        "query": [
+          "durationInYears",
+          "nominalInterest",
+          "principal"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/personal/banking/credit/calculator/consumerloan/estimate",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-lan-forbrukslan-html"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.youtube.com",
+        "pages": 4,
+        "examples": [
+          "nb-bank-privat-daglig-bruk-bankid-html",
+          "nb-bank-privat-sparing-markedsnytt-html",
+          "nb-bank-privat-lan-forbrukslan-html"
+        ]
+      },
+      {
+        "host": "static.doubleclick.net",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-sparing-markedsnytt-html"
+        ]
+      },
+      {
+        "host": "www.google.com",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-sparing-markedsnytt-html"
+        ]
+      }
+    ],
+    "frameworkHints": [],
+    "globalState": [],
+    "formTargets": []
+  }
+}

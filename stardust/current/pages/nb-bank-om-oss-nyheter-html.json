@@ -1,0 +1,4134 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-09-14T14:57:32.228Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200,
+    "stylePass": {
+      "fetchedAt": "2026-09-14T15:01:06.459Z",
+      "waitMs": 4413,
+      "httpStatus": 200,
+      "viewport": "1440x900@2x",
+      "script": "stardust/scripts/capture-styles.mjs"
+    }
+  },
+  "slug": "nb-bank-om-oss-nyheter-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.html",
+  "finalUrl": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.html",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-09-14T14:57:32.228Z",
+  "title": "Nyheter | SpareBank 1",
+  "metaDescription": null,
+  "canonical": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.html",
+  "og": {
+    "title": "Nyheter",
+    "description": null,
+    "image": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.2276.jpg",
+    "type": "article",
+    "siteName": null
+  },
+  "themeColor": {},
+  "language": "nb",
+  "generator": null,
+  "heroHeadline": "Nyheter",
+  "heroLede": "For at nettsidene skal fungere, må vi bruke tekniske informasjonskapsler. Denne kan derfor ikke slås av",
+  "heroSource": "dom",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Nyheter",
+      "id": null,
+      "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.title:nth-child(1) > h1.ffe-h1",
+      "top": 144,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "46px",
+        "lineHeight": "56px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Advarer bedrifter mot ny svindelmetode: Falsk faktura først – falsk banktelefon etterpå",
+      "id": null,
+      "domPath": "article.newscard__headline.newscard:nth-child(1) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 841,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 100,
+        "fontSize": "62px",
+        "lineHeight": "64px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Sånn får du bedre oversikt over boligutgiftene dine",
+      "id": null,
+      "domPath": "article.newscard:nth-child(2) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 1396,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Investeringssvindel: Lokker deg med drømmer",
+      "id": null,
+      "domPath": "article.newscard:nth-child(3) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 1396,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "La humla suse i sommer – men ikke glem sikkerheten",
+      "id": null,
+      "domPath": "article.newscard:nth-child(4) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 1396,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Skal du på reise i sommer? Dette bør tenke på før du drar",
+      "id": null,
+      "domPath": "article.newscard:nth-child(5) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 1762,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Advarer mot ny svindelbølge: – Eldre og enslige kvinner særlig utsatt",
+      "id": null,
+      "domPath": "article.newscard:nth-child(6) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 1762,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Klar for (å unngå) årets bulkebonanza?",
+      "id": null,
+      "domPath": "article.newscard:nth-child(7) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 1762,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Slik tar du vare på dyrene på nyttårsaften",
+      "id": null,
+      "domPath": "article.newscard:nth-child(8) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 2162,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Skal du fly hjem til jul? Her er noen råd til reisen",
+      "id": null,
+      "domPath": "article.newscard:nth-child(9) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 2162,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Fyrverkeri – er det verdt risikoen?",
+      "id": null,
+      "domPath": "article.newscard:nth-child(10) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 2162,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Hva gjør du om hunden eller katten din blir syk i ferien?",
+      "id": null,
+      "domPath": "article.newscard:nth-child(11) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 2528,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Foreldre vil vente med bankkort til barna – eksperten anbefaler tidlig økonomisk læring",
+      "id": null,
+      "domPath": "article.newscard:nth-child(12) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 2528,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Færre deler passord til nettbank. Fortsatt for mange, mener svindelekspert.",
+      "id": null,
+      "domPath": "article.newscard:nth-child(13) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 2528,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Slik håndterer du økonomiske bekymringer",
+      "id": null,
+      "domPath": "article.newscard:nth-child(14) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 2962,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Sunt bondevett for hodet",
+      "id": null,
+      "domPath": "article.newscard:nth-child(15) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 2962,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Høstdugnad: Sett inn støtet før vinteren kommer",
+      "id": null,
+      "domPath": "article.newscard:nth-child(16) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 2962,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Barneforsikring som trygghet når livet tar en ny vending",
+      "id": null,
+      "domPath": "article.newscard:nth-child(17) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 3328,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Morten Søberg inn i ny rolle i SpareBank 1 Forvaltning",
+      "id": null,
+      "domPath": "article.newscard:nth-child(18) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 3328,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Hva skjer med felles forsikringer i samlivsbrudd?",
+      "id": null,
+      "domPath": "article.newscard:nth-child(19) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 3328,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Slik sørger du for at barna får en trygg skolevei",
+      "id": null,
+      "domPath": "article.newscard:nth-child(20) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 3728,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Første gang du flytter hjemmefra? Her er det du bør vite om forsikringer og økonomi",
+      "id": null,
+      "domPath": "article.newscard:nth-child(21) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 3728,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Nyansatt i hus? Dette må du ha på plass som arbeidsgiver",
+      "id": null,
+      "domPath": "article.newscard:nth-child(22) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 3728,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Rammer spesielt de eldre: SpareBank 1 advarer mot gavekortsvindel",
+      "id": null,
+      "domPath": "article.newscard:nth-child(23) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 4162,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "– Ikke bare de «godtroende» som blir lurt lenger",
+      "id": null,
+      "domPath": "article.newscard:nth-child(24) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 4162,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "– Mange føler det er deres egen feil at de blir svindlet",
+      "id": null,
+      "domPath": "article.newscard:nth-child(25) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 4162,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Unngå skadedyr i borettslag og sameier",
+      "id": null,
+      "domPath": "article.newscard:nth-child(26) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 4562,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Redd for å miste høreapparatet? Slik bør du forsikre det hvis noe skjer",
+      "id": null,
+      "domPath": "article.newscard:nth-child(27) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 4562,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Det viktigste du har med deg i bilen er oppmerksomheten",
+      "id": null,
+      "domPath": "article.newscard:nth-child(28) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 4562,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Alle kan bruke hjertestarter – slik finner du en nær deg",
+      "id": null,
+      "domPath": "article.newscard:nth-child(29) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 4962,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Hva gjør du når bedriften din er under dataangrep?",
+      "id": null,
+      "domPath": "article.newscard:nth-child(30) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 4962,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "“Det kunne gått mye verre” – Bamses historie fra traktorulykken",
+      "id": null,
+      "domPath": "article.newscard:nth-child(31) > a.newscard__click-area > div.newscard__wrap.newscard__withimage > div.newscard__content:nth-child(2) > div.newscard__text > h2.ffe-h2.newscard__title",
+      "top": 4962,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "26px",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Snarveier",
+      "id": null,
+      "domPath": "div.ffe-grid__col.ffe-grid__col--sm-12 > div.ffe-grid > div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > h2.ffe-h2.ffe-h4",
+      "top": 5412,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Logg inn",
+      "id": null,
+      "domPath": "div.ffe-grid__col.ffe-grid__col--sm-12 > div.ffe-grid > div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(2) > h2.ffe-h2.ffe-h4",
+      "top": 5412,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Sosiale medier",
+      "id": null,
+      "domPath": "div.ffe-grid__col.ffe-grid__col--sm-12 > div.ffe-grid > div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column.footer-columns__column--social-media:nth-child(3) > h2.ffe-h2.ffe-h4",
+      "top": 5412,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Bruk av informasjonskapsler",
+      "id": null,
+      "domPath": "section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(2) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > span.optin-header-wrapper > h2.ffe-h3.optin-settings-header",
+      "top": 111,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "24px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Teknisk",
+      "id": null,
+      "domPath": "div.optin__pages.optin__pages--settings-page:nth-child(2) > section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(3) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > h3.ffe-h5.optin-settings__header",
+      "top": 167,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    }
+  ],
+  "headingsCrawl": [
+    {
+      "tag": "h1",
+      "text": "Nyheter"
+    },
+    {
+      "tag": "h2",
+      "text": "Advarer bedrifter mot ny svindelmetode: Falsk faktura først – falsk banktelefon etterpå"
+    },
+    {
+      "tag": "h2",
+      "text": "Sånn får du bedre oversikt over boligutgiftene dine"
+    },
+    {
+      "tag": "h2",
+      "text": "Investeringssvindel: Lokker deg med drømmer"
+    },
+    {
+      "tag": "h2",
+      "text": "La humla suse i sommer – men ikke glem sikkerheten"
+    },
+    {
+      "tag": "h2",
+      "text": "Skal du på reise i sommer? Dette bør tenke på før du drar"
+    },
+    {
+      "tag": "h2",
+      "text": "Advarer mot ny svindelbølge: – Eldre og enslige kvinner særlig utsatt"
+    },
+    {
+      "tag": "h2",
+      "text": "Klar for (å unngå) årets bulkebonanza?"
+    },
+    {
+      "tag": "h2",
+      "text": "Slik tar du vare på dyrene på nyttårsaften"
+    },
+    {
+      "tag": "h2",
+      "text": "Skal du fly hjem til jul? Her er noen råd til reisen"
+    },
+    {
+      "tag": "h2",
+      "text": "Fyrverkeri – er det verdt risikoen?"
+    },
+    {
+      "tag": "h2",
+      "text": "Hva gjør du om hunden eller katten din blir syk i ferien?"
+    },
+    {
+      "tag": "h2",
+      "text": "Foreldre vil vente med bankkort til barna – eksperten anbefaler tidlig økonomisk læring"
+    },
+    {
+      "tag": "h2",
+      "text": "Færre deler passord til nettbank. Fortsatt for mange, mener svindelekspert."
+    },
+    {
+      "tag": "h2",
+      "text": "Slik håndterer du økonomiske bekymringer"
+    },
+    {
+      "tag": "h2",
+      "text": "Sunt bondevett for hodet"
+    },
+    {
+      "tag": "h2",
+      "text": "Høstdugnad: Sett inn støtet før vinteren kommer"
+    },
+    {
+      "tag": "h2",
+      "text": "Barneforsikring som trygghet når livet tar en ny vending"
+    },
+    {
+      "tag": "h2",
+      "text": "Morten Søberg inn i ny rolle i SpareBank 1 Forvaltning"
+    },
+    {
+      "tag": "h2",
+      "text": "Hva skjer med felles forsikringer i samlivsbrudd?"
+    },
+    {
+      "tag": "h2",
+      "text": "Slik sørger du for at barna får en trygg skolevei"
+    },
+    {
+      "tag": "h2",
+      "text": "Første gang du flytter hjemmefra? Her er det du bør vite om forsikringer og økonomi"
+    },
+    {
+      "tag": "h2",
+      "text": "Nyansatt i hus? Dette må du ha på plass som arbeidsgiver"
+    },
+    {
+      "tag": "h2",
+      "text": "Rammer spesielt de eldre: SpareBank 1 advarer mot gavekortsvindel"
+    },
+    {
+      "tag": "h2",
+      "text": "– Ikke bare de «godtroende» som blir lurt lenger"
+    },
+    {
+      "tag": "h2",
+      "text": "– Mange føler det er deres egen feil at de blir svindlet"
+    },
+    {
+      "tag": "h2",
+      "text": "Unngå skadedyr i borettslag og sameier"
+    },
+    {
+      "tag": "h2",
+      "text": "Redd for å miste høreapparatet? Slik bør du forsikre det hvis noe skjer"
+    },
+    {
+      "tag": "h2",
+      "text": "Det viktigste du har med deg i bilen er oppmerksomheten"
+    },
+    {
+      "tag": "h2",
+      "text": "Alle kan bruke hjertestarter – slik finner du en nær deg"
+    },
+    {
+      "tag": "h2",
+      "text": "Hva gjør du når bedriften din er under dataangrep?"
+    },
+    {
+      "tag": "h2",
+      "text": "“Det kunne gått mye verre” – Bamses historie fra traktorulykken"
+    },
+    {
+      "tag": "h2",
+      "text": "Snarveier"
+    },
+    {
+      "tag": "h2",
+      "text": "Logg inn"
+    },
+    {
+      "tag": "h2",
+      "text": "Sosiale medier"
+    }
+  ],
+  "body": [
+    "Privat",
+    "Bedrift",
+    "Om oss",
+    "Om SpareBank 1",
+    "Presse",
+    "Investor",
+    "Jobb og karriere",
+    "Samfunnsansvar",
+    "Nyheter",
+    "Bli kunde",
+    "Sperre kort",
+    "Meld skade",
+    "Prisliste",
+    "Kundeservice",
+    "Nettbank privat",
+    "Nettbank bedrift",
+    "Forsikring",
+    "Pensjon",
+    "Om SpareBank 1",
+    "Vilkår for bruk av nettsiden",
+    "Personvern",
+    "Informasjonskapsler",
+    "For utviklere"
+  ],
+  "codeBlocks": [],
+  "landmarks": [
+    {
+      "tag": "main",
+      "role": "main",
+      "id": "main-content",
+      "classes": [
+        "main"
+      ],
+      "childElementCount": 3,
+      "innerText": "PRIVAT\nBEDRIFT\nOM OSS\nSøk\nBli kunde\nLogg inn\nOm SpareBank 1\nPresse\nInvestor\nJobb og karriere\nSamfunnsansvar\nNyheter\nNyheter\nSVINDEL\nAdvarer bedrifter mot ny svindelmetode: Falsk faktura først – falsk banktelefon etterpå\n7/8/2026\nBOLIG\nSånn får du bedre oversikt over boligutgiftene dine\n6/7/2026\nSVINDEL\nInvesteringssvindel: Lokker deg med drømmer\n16/6/2026\nSVINDEL\nLa humla suse i sommer – men ikke glem sikkerheten\n12/6/2026\nFORBRUKERØKONOMI\nSkal du på reise i sommer? Dette bør tenke på før du drar\n19/5/2026\nSVINDEL\nAdvarer mot ny svindelbølge: – Eldre og enslige kvinner særlig utsatt\n27/2/2026\nFORSIKRING\nKlar for (å unngå) årets bulkebonanza?\n28/11/2025\nFORSIKRING\nSlik tar du vare på dyrene på nyttårsaften\n28/11/2025\nFORSIKRING\nSkal du fly hjem til jul? Her er noen råd til reisen\n28/11/2025\nFORSIKRING\nFyrverkeri – er det verdt risikoen?\n28/11/2025\nFORSIKRING\nHva gjør du om hunden eller katten din blir syk i ferien?\n28/11/2025\nFORBRUKERØKONOMI\nForeldre vil vente med bankkort til barna – eksperten anbefaler tidlig økonomisk læring\n17/11/2025\nSVINDEL\nFærre deler passord til nettbank. Fortsatt for mange, mener svindelekspert.\n23/10/2025\nFORBRUKERØKONOMI\nSlik håndterer du økonomiske bekymringer\n6/10/2025\nFORSIKRING\nSunt bondevett for hodet\n1/10/2025\nFORSIKRING\nHøstdugnad: Sett inn støtet før vinteren kommer\n29/8/2025\nFORSIKRING\nBarneforsikring som trygghet når livet tar en ny vending\n29/8/2025\nNYHETER\nMorten Søberg inn i ny rolle i SpareBank 1 Forvaltning\n5/8/2025\nFORSIKRING\nHva skjer med felles forsikringer i samlivsbrudd?\n30/6/2025\nFORSIKRING\nSlik sørger du for at barna får en trygg skolevei\n30/6/2025\nFORSIKRING\nFørste gang du flytter hjemmefra? Her er det du bør vite om forsikringer og økonomi\n30/6/2025\nFORSIKRING\nNyansatt i hus? Dette må du ha på plass som arbeidsgiver\n30/6/2025\nSVINDEL\nRammer spesielt de eldre: SpareBank 1 advarer mot gavekortsvindel\n20/6/2025\nSVINDEL\n– Ikke bare de «godtroende» som blir lurt lenger\n17/6/2025\nSVINDEL\n– Mange føler det er deres egen feil at de blir svindlet\n17/6/2025\nFORSIKRING\nUnngå skadedyr i borettslag og sameier\n28/5/2025\nFORSIKRING\nRedd for å miste høreapparatet? Slik bør du forsikre det hvis noe skjer\n28/5/2025\nFORSIKRING\nDet viktigste du har med deg i bilen er oppmerksomheten\n28/5/2025\nFORSIKRING\nAlle kan bruke hjertestarter – slik finner du en nær deg\n28/5/2025\nFORSIKRING\nHva gjør du når bedriften din er under dataangrep?\n28/5/2025\nFORSIKRING\n“Det kunne gått mye verre” – Bamses historie fra traktorulykken\n30/4/2025\nSe flere artikler\nSnarveier\nBli kunde\nSperre kort\nMeld skade\nPrisliste\nKundeservice\nLogg inn\nNettbank privat\nNettbank bedrift\nForsikring\nPensjon\nSosiale medier\nOm SpareBank 1\nVilkår for bruk av nettsiden\nPersonvern\nInformasjonskapsler\nFor utviklere\nSpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo",
+      "children": [
+        {
+          "tag": "header",
+          "role": null,
+          "id": null,
+          "classes": [
+            "header",
+            "undefined"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "PRIVAT\nBEDRIFT\nOM OSS\nSøk\nBli kunde\nLogg inn\nOm SpareBank 1\nPresse\nInvestor\nJobb og karriere\nSamfunnsansvar\nNyheter",
+          "wordCount": 19,
+          "rect": {
+            "top": 0,
+            "height": 124,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "sb1-articles__content",
+            "responsive-grid"
+          ],
+          "purpose": "feature-list",
+          "headlineRef": 0,
+          "innerTextSummary": "Nyheter\nSVINDEL\nAdvarer bedrifter mot ny svindelmetode: Falsk faktura først – falsk banktelefon etterpå\n7/8/2026\nBOLIG\nSånn får du bedre oversikt over boligutgiftene dine\n6/7/2026\nSVINDEL\nInvesteringssvindel: Lokker deg med drømmer\n16/6/202",
+          "wordCount": 359,
+          "rect": {
+            "top": 144,
+            "height": 5153,
+            "width": 1144
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "footer",
+          "role": null,
+          "id": null,
+          "classes": [
+            "footer"
+          ],
+          "purpose": "footer-nav",
+          "headlineRef": 32,
+          "innerTextSummary": "Snarveier\nBli kunde\nSperre kort\nMeld skade\nPrisliste\nKundeservice\nLogg inn\nNettbank privat\nNettbank bedrift\nForsikring\nPensjon\nSosiale medier\nOm SpareBank 1\nVilkår for bruk av nettsiden\nPersonvern\nInformasjonskapsler\nFor utviklere\nSpareBank",
+          "wordCount": 38,
+          "rect": {
+            "top": 5337,
+            "height": 488,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "header",
+      "role": "banner",
+      "id": null,
+      "classes": [
+        "header",
+        "undefined"
+      ],
+      "childElementCount": 2,
+      "innerText": "PRIVAT\nBEDRIFT\nOM OSS\nSøk\nBli kunde\nLogg inn\nOm SpareBank 1\nPresse\nInvestor\nJobb og karriere\nSamfunnsansvar\nNyheter",
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "header__wrap"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "PRIVAT\nBEDRIFT\nOM OSS\nSøk\nBli kunde\nLogg inn\nOm SpareBank 1\nPresse\nInvestor\nJobb og karriere\nSamfunnsansvar\nNyheter",
+          "wordCount": 19,
+          "rect": {
+            "top": 0,
+            "height": 121,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": "navigation",
+      "id": "main-menu",
+      "classes": [
+        "header__main-nav"
+      ],
+      "childElementCount": 1,
+      "innerText": "Om SpareBank 1\nPresse\nInvestor\nJobb og karriere\nSamfunnsansvar\nNyheter",
+      "children": [
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Om SpareBank 1",
+          "wordCount": 3,
+          "rect": {
+            "top": 59,
+            "height": 62,
+            "width": 127
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Presse",
+          "wordCount": 1,
+          "rect": {
+            "top": 59,
+            "height": 62,
+            "width": 51
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Investor",
+          "wordCount": 1,
+          "rect": {
+            "top": 59,
+            "height": 62,
+            "width": 63
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Jobb og karriere",
+          "wordCount": 3,
+          "rect": {
+            "top": 59,
+            "height": 62,
+            "width": 131
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Samfunnsansvar",
+          "wordCount": 1,
+          "rect": {
+            "top": 59,
+            "height": 62,
+            "width": 124
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Nyheter",
+          "wordCount": 1,
+          "rect": {
+            "top": 59,
+            "height": 62,
+            "width": 62
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "footer",
+      "role": "contentinfo",
+      "id": null,
+      "classes": [
+        "footer"
+      ],
+      "childElementCount": 2,
+      "innerText": "Snarveier\nBli kunde\nSperre kort\nMeld skade\nPrisliste\nKundeservice\nLogg inn\nNettbank privat\nNettbank bedrift\nForsikring\nPensjon\nSosiale medier\nOm SpareBank 1\nVilkår for bruk av nettsiden\nPersonvern\nInformasjonskapsler\nFor utviklere\nSpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo",
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "ffe-grid"
+          ],
+          "purpose": "unknown",
+          "headlineRef": 32,
+          "innerTextSummary": "Snarveier\nBli kunde\nSperre kort\nMeld skade\nPrisliste\nKundeservice\nLogg inn\nNettbank privat\nNettbank bedrift\nForsikring\nPensjon\nSosiale medier\nOm SpareBank 1\nVilkår for bruk av nettsiden\nPersonvern\nInformasjonskapsler\nFor utviklere",
+          "wordCount": 31,
+          "rect": {
+            "top": 5412,
+            "height": 314,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "footer-info"
+          ],
+          "purpose": "footer-nav",
+          "headlineRef": null,
+          "innerTextSummary": "SpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo",
+          "wordCount": 7,
+          "rect": {
+            "top": 5726,
+            "height": 24,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    }
+  ],
+  "ctas": [
+    {
+      "label": "Søk",
+      "href": null,
+      "tag": "button",
+      "domPath": "main#main-content > header.header.undefined > div.header__wrap:nth-child(1) > div.header__content.aem-main-container > div.header__user-content:nth-child(2) > button.header-search-button",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(50, 50, 50)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "30px",
+        "padding": "8px 15px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(50, 50, 50)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "label": "Bli kunde",
+      "href": null,
+      "tag": "button",
+      "domPath": "div#login > button.ffe-button.ffe-button--action:nth-child(1)",
+      "style": {
+        "backgroundColor": "rgb(0, 117, 78)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "30px",
+        "padding": "8px 16px",
+        "boxShadow": "none",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "label": "Logg inn",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#login-button",
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 117, 78)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "30px",
+        "padding": "8px 16px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(0, 117, 78)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "label": "Se flere artikler",
+      "href": "?limit=31&offset=31",
+      "tag": "a",
+      "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > div.newscards-footer > div.ffe-button-group > a.ffe-button.ffe-button--shortcut",
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 90, 164)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "96px",
+        "padding": "10px 24px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(0, 90, 164)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    }
+  ],
+  "ctasCrawl": [
+    {
+      "label": "Privat",
+      "href": "/nb/bank/privat.html"
+    },
+    {
+      "label": "Bedrift",
+      "href": "/nb/bank/bedrift.html"
+    },
+    {
+      "label": "Om oss",
+      "href": "/nb/bank/om-oss.html"
+    },
+    {
+      "label": "Søk",
+      "href": null
+    },
+    {
+      "label": "Bli kunde",
+      "href": null
+    },
+    {
+      "label": "Logg inn",
+      "href": null
+    },
+    {
+      "label": "Om SpareBank 1",
+      "href": "/nb/bank/om-oss/om-banken.html"
+    },
+    {
+      "label": "Presse",
+      "href": "/nb/bank/om-oss/presse.html"
+    },
+    {
+      "label": "Investor",
+      "href": "/nb/bank/om-oss/investor.html"
+    },
+    {
+      "label": "Jobb og karriere",
+      "href": "/nb/bank/om-oss/jobb-og-karriere.html"
+    },
+    {
+      "label": "Samfunnsansvar",
+      "href": "/nb/bank/om-oss/samfunnsansvar.html"
+    },
+    {
+      "label": "Nyheter",
+      "href": "/nb/bank/om-oss/nyheter.html"
+    },
+    {
+      "label": "SvindelAdvarer bedrifter mot ny svindelmetode: Falsk faktura først – falsk banktelefon etterpå7/8/2026",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/advarer-bedrifter-mot-ny-svindelmetode--falsk-faktura-forst---fa.html"
+    },
+    {
+      "label": "BoligSånn får du bedre oversikt over boligutgiftene dine6/7/2026",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/sann-far-du-bedre-oversikt-over-boligutgiftene-dine.html"
+    },
+    {
+      "label": "SvindelInvesteringssvindel: Lokker deg med drømmer16/6/2026",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/investeringssvindel--lokker-deg-med-drommer.html"
+    },
+    {
+      "label": "SvindelLa humla suse i sommer – men ikke glem sikkerheten 12/6/2026",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/ikke-glem-sikkerheten.html"
+    },
+    {
+      "label": "ForbrukerøkonomiSkal du på reise i sommer? Dette bør tenke på før du drar 19/5/2026",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/skal-du-pa-reise-i-sommer--dette-bor-tenke-pa-for-du-drar-.html"
+    },
+    {
+      "label": "SvindelAdvarer mot ny svindelbølge: – Eldre og enslige kvinner særlig utsatt27/2/2026",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.html"
+    },
+    {
+      "label": "ForsikringKlar for (å unngå) årets bulkebonanza?28/11/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/unngaa-bulkedagen.html"
+    },
+    {
+      "label": "ForsikringSlik tar du vare på dyrene på nyttårsaften28/11/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/ta-vare-dyra-nyttaarsaften.html"
+    },
+    {
+      "label": "ForsikringSkal du fly hjem til jul? Her er noen råd til reisen 28/11/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/fly-julen-raad-reisen.html"
+    },
+    {
+      "label": "ForsikringFyrverkeri – er det verdt risikoen?28/11/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/fyrverkeri-risiko.html"
+    },
+    {
+      "label": "ForsikringHva gjør du om hunden eller katten din blir syk i ferien?28/11/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/hund-katt-syk-ferien.html"
+    },
+    {
+      "label": "ForbrukerøkonomiForeldre vil vente med bankkort til barna – eksperten anbefaler tidlig økonomisk læring17/11/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/foreldre-vil-vente-med-bankkort-til-barna---eksperten-anbefaler-.html"
+    },
+    {
+      "label": "SvindelFærre deler passord til nettbank. Fortsatt for mange, mener svindelekspert. 23/10/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/faerre-deler-passord-til-nettbank--fortsatt-for-mange--mener-svi.html"
+    },
+    {
+      "label": "ForbrukerøkonomiSlik håndterer du økonomiske bekymringer6/10/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/slik-handterer-du-okonomiske-bekymringer.html"
+    },
+    {
+      "label": "ForsikringSunt bondevett for hodet1/10/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/sunt-bondevett-hodet.html"
+    },
+    {
+      "label": "ForsikringHøstdugnad: Sett inn støtet før vinteren kommer 29/8/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/host-dugnad-vinterklart.html"
+    },
+    {
+      "label": "ForsikringBarneforsikring som trygghet når livet tar en ny vending29/8/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/barneforsikring-okonomisk-trygghet-firebarnsfamilien.html"
+    },
+    {
+      "label": "NyheterMorten Søberg inn i ny rolle i SpareBank 1 Forvaltning5/8/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/morten-soberg-inn-i-ny-rolle-i-sparebank1-forvaltning.html"
+    },
+    {
+      "label": "ForsikringHva skjer med felles forsikringer i samlivsbrudd?30/6/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/felles-forsikringer-samlivsbrudd.html"
+    },
+    {
+      "label": "ForsikringSlik sørger du for at barna får en trygg skolevei30/6/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/barna-trygg-skolevei.html"
+    },
+    {
+      "label": "ForsikringFørste gang du flytter hjemmefra? Her er det du bør vite om forsikringer og økonomi30/6/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/flytte-hjemmefra-forsikringer-okonomi.html"
+    },
+    {
+      "label": "ForsikringNyansatt i hus? Dette må du ha på plass som arbeidsgiver 30/6/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/nyansatt-dette-maa-paa-plass-arbeidsgiver.html"
+    },
+    {
+      "label": "SvindelRammer spesielt de eldre: SpareBank 1 advarer mot gavekortsvindel 20/6/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/rammer-spesielt-de-eldre--sparebank-1-advarer-mot-gavekortsvinde.html"
+    },
+    {
+      "label": "Svindel– Ikke bare de «godtroende» som blir lurt lenger17/6/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/--ikke-bare-de--godtroende--som-blir-lurt-lenger.html"
+    },
+    {
+      "label": "Svindel– Mange føler det er deres egen feil at de blir svindlet17/6/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/--mange-foler-det-er-deres-egen-feil-at-de-blir-svindlet.html"
+    },
+    {
+      "label": "ForsikringUnngå skadedyr i borettslag og sameier28/5/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/unngaa-skadedyr-borettslag-sameier.html"
+    },
+    {
+      "label": "ForsikringRedd for å miste høreapparatet? Slik bør du forsikre det hvis noe skjer28/5/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/redd-miste-horeapparatet-forsikre-det.html"
+    },
+    {
+      "label": "ForsikringDet viktigste du har med deg i bilen er oppmerksomheten28/5/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/oppmerksomhet-bilen.html"
+    },
+    {
+      "label": "ForsikringAlle kan bruke hjertestarter – slik finner du en nær deg 28/5/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/finn-hjertestopp-nar-deg.html"
+    },
+    {
+      "label": "ForsikringHva gjør du når bedriften din er under dataangrep?28/5/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/hva-naar-bedriften-dataangrep.html"
+    },
+    {
+      "label": "Forsikring“Det kunne gått mye verre” – Bamses historie fra traktorulykken30/4/2025",
+      "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html"
+    },
+    {
+      "label": "Se flere artikler",
+      "href": "?limit=31&offset=31"
+    },
+    {
+      "label": "Bli kunde",
+      "href": "/content/sites/sb1/nb/bank/privat/kundeservice/bestill/bli-kunde.html"
+    },
+    {
+      "label": "Sperre kort",
+      "href": "/content/sites/sb1/nb/bank/privat/kundeservice/verktoy/sperre-kort.html"
+    },
+    {
+      "label": "Meld skade",
+      "href": "/content/sites/sb1/nb/bank/privat/forsikring/meld-skade.html"
+    },
+    {
+      "label": "Prisliste",
+      "href": "/content/sites/sb1/nb/bank/privat/kundeservice/bestill/prisliste.html"
+    },
+    {
+      "label": "Kundeservice",
+      "href": "/content/sites/sb1/nb/bank/privat/kundeservice.html"
+    },
+    {
+      "label": "Nettbank privat",
+      "href": "/content/sites/sb1/nb/bank/privat/innlogging.html"
+    },
+    {
+      "label": "Nettbank bedrift",
+      "href": "/content/sites/sb1/nb/bank/bedrift/innlogging.html"
+    },
+    {
+      "label": "Forsikring",
+      "href": "https://kundeforsikring.sparebank1.no"
+    },
+    {
+      "label": "Pensjon",
+      "href": "https://kundeforsikring.sparebank1.no/privat/sparing"
+    },
+    {
+      "label": "Om SpareBank 1",
+      "href": "/content/sites/sb1/nb/bank/om-oss/om-banken/selskapsinformasjon.html"
+    },
+    {
+      "label": "Vilkår for bruk av nettsiden",
+      "href": "/content/sites/sb1/nb/bank/om-oss/personvern/generelle-vilkar.html"
+    },
+    {
+      "label": "Personvern",
+      "href": "/content/sites/sb1/nb/bank/om-oss/personvern.html"
+    },
+    {
+      "label": "Informasjonskapsler",
+      "href": "/content/sites/sb1/nb/bank/om-oss/personvern.html#cookies"
+    },
+    {
+      "label": "For utviklere",
+      "href": "/content/sites/sb1/nb/bank/bedrift/open-api.html"
+    }
+  ],
+  "links": {
+    "internal": [
+      {
+        "href": "/content/sites/sb1/nb/bank/privat.html",
+        "text": "",
+        "domPath": "header.header.undefined > div.header__wrap:nth-child(1) > div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__logo:nth-child(1) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat.html",
+        "text": "PRIVAT",
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__top-nav:nth-child(3) > ul > li:nth-child(1) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/bedrift.html",
+        "text": "BEDRIFT",
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__top-nav:nth-child(3) > ul > li:nth-child(2) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss.html",
+        "text": "OM OSS",
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__top-nav:nth-child(3) > ul > li:nth-child(3) > a.active",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss/om-banken.html",
+        "text": "Om SpareBank 1",
+        "domPath": "nav#main-menu > ul > li:nth-child(1) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss/presse.html",
+        "text": "Presse",
+        "domPath": "nav#main-menu > ul > li:nth-child(2) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss/investor.html",
+        "text": "Investor",
+        "domPath": "nav#main-menu > ul > li:nth-child(3) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss/jobb-og-karriere.html",
+        "text": "Jobb og karriere",
+        "domPath": "nav#main-menu > ul > li:nth-child(4) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss/samfunnsansvar.html",
+        "text": "Samfunnsansvar",
+        "domPath": "nav#main-menu > ul > li:nth-child(5) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss/nyheter.html",
+        "text": "Nyheter",
+        "domPath": "nav#main-menu > ul > li:nth-child(6) > a.active",
+        "region": "header"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/advarer-bedrifter-mot-ny-svindelmetode--falsk-faktura-forst---fa.html",
+        "text": "SVINDEL\nAdvarer bedrifter mot ny svindelmetode: Falsk faktura først – falsk banktelefon etterpå\n7/8/2026",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard__headline.newscard:nth-child(1) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/sann-far-du-bedre-oversikt-over-boligutgiftene-dine.html",
+        "text": "BOLIG\nSånn får du bedre oversikt over boligutgiftene dine\n6/7/2026",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(2) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/investeringssvindel--lokker-deg-med-drommer.html",
+        "text": "SVINDEL\nInvesteringssvindel: Lokker deg med drømmer\n16/6/2026",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(3) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/ikke-glem-sikkerheten.html",
+        "text": "SVINDEL\nLa humla suse i sommer – men ikke glem sikkerheten\n12/6/2026",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(4) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/skal-du-pa-reise-i-sommer--dette-bor-tenke-pa-for-du-drar-.html",
+        "text": "FORBRUKERØKONOMI\nSkal du på reise i sommer? Dette bør tenke på før du drar\n19/5/2026",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(5) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.html",
+        "text": "SVINDEL\nAdvarer mot ny svindelbølge: – Eldre og enslige kvinner særlig utsatt\n27/2/2026",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(6) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/unngaa-bulkedagen.html",
+        "text": "FORSIKRING\nKlar for (å unngå) årets bulkebonanza?\n28/11/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(7) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/ta-vare-dyra-nyttaarsaften.html",
+        "text": "FORSIKRING\nSlik tar du vare på dyrene på nyttårsaften\n28/11/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(8) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/fly-julen-raad-reisen.html",
+        "text": "FORSIKRING\nSkal du fly hjem til jul? Her er noen råd til reisen\n28/11/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(9) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/fyrverkeri-risiko.html",
+        "text": "FORSIKRING\nFyrverkeri – er det verdt risikoen?\n28/11/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(10) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/hund-katt-syk-ferien.html",
+        "text": "FORSIKRING\nHva gjør du om hunden eller katten din blir syk i ferien?\n28/11/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(11) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/foreldre-vil-vente-med-bankkort-til-barna---eksperten-anbefaler-.html",
+        "text": "FORBRUKERØKONOMI\nForeldre vil vente med bankkort til barna – eksperten anbefaler tidlig økonomisk læring\n17/11/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(12) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/faerre-deler-passord-til-nettbank--fortsatt-for-mange--mener-svi.html",
+        "text": "SVINDEL\nFærre deler passord til nettbank. Fortsatt for mange, mener svindelekspert.\n23/10/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(13) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/slik-handterer-du-okonomiske-bekymringer.html",
+        "text": "FORBRUKERØKONOMI\nSlik håndterer du økonomiske bekymringer\n6/10/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(14) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/sunt-bondevett-hodet.html",
+        "text": "FORSIKRING\nSunt bondevett for hodet\n1/10/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(15) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/host-dugnad-vinterklart.html",
+        "text": "FORSIKRING\nHøstdugnad: Sett inn støtet før vinteren kommer\n29/8/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(16) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/barneforsikring-okonomisk-trygghet-firebarnsfamilien.html",
+        "text": "FORSIKRING\nBarneforsikring som trygghet når livet tar en ny vending\n29/8/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(17) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/morten-soberg-inn-i-ny-rolle-i-sparebank1-forvaltning.html",
+        "text": "NYHETER\nMorten Søberg inn i ny rolle i SpareBank 1 Forvaltning\n5/8/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(18) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/felles-forsikringer-samlivsbrudd.html",
+        "text": "FORSIKRING\nHva skjer med felles forsikringer i samlivsbrudd?\n30/6/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(19) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/barna-trygg-skolevei.html",
+        "text": "FORSIKRING\nSlik sørger du for at barna får en trygg skolevei\n30/6/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(20) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/flytte-hjemmefra-forsikringer-okonomi.html",
+        "text": "FORSIKRING\nFørste gang du flytter hjemmefra? Her er det du bør vite om forsikringer og økonomi\n30/6/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(21) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/nyansatt-dette-maa-paa-plass-arbeidsgiver.html",
+        "text": "FORSIKRING\nNyansatt i hus? Dette må du ha på plass som arbeidsgiver\n30/6/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(22) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/rammer-spesielt-de-eldre--sparebank-1-advarer-mot-gavekortsvinde.html",
+        "text": "SVINDEL\nRammer spesielt de eldre: SpareBank 1 advarer mot gavekortsvindel\n20/6/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(23) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/--ikke-bare-de--godtroende--som-blir-lurt-lenger.html",
+        "text": "SVINDEL\n– Ikke bare de «godtroende» som blir lurt lenger\n17/6/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(24) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/--mange-foler-det-er-deres-egen-feil-at-de-blir-svindlet.html",
+        "text": "SVINDEL\n– Mange føler det er deres egen feil at de blir svindlet\n17/6/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(25) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/unngaa-skadedyr-borettslag-sameier.html",
+        "text": "FORSIKRING\nUnngå skadedyr i borettslag og sameier\n28/5/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(26) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/redd-miste-horeapparatet-forsikre-det.html",
+        "text": "FORSIKRING\nRedd for å miste høreapparatet? Slik bør du forsikre det hvis noe skjer\n28/5/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(27) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/oppmerksomhet-bilen.html",
+        "text": "FORSIKRING\nDet viktigste du har med deg i bilen er oppmerksomheten\n28/5/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(28) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/finn-hjertestopp-nar-deg.html",
+        "text": "FORSIKRING\nAlle kan bruke hjertestarter – slik finner du en nær deg\n28/5/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(29) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/hva-naar-bedriften-dataangrep.html",
+        "text": "FORSIKRING\nHva gjør du når bedriften din er under dataangrep?\n28/5/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(30) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html",
+        "text": "FORSIKRING\n“Det kunne gått mye verre” – Bamses historie fra traktorulykken\n30/4/2025",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard:nth-child(31) > a.newscard__click-area",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/om-oss/nyheter.html?limit=31&offset=31",
+        "text": "Se flere artikler",
+        "domPath": "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > div.newscards-footer > div.ffe-button-group > a.ffe-button.ffe-button--shortcut",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+        "text": "Bli kunde",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(1) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/kundeservice/verktoy/sperre-kort.html",
+        "text": "Sperre kort",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(2) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/forsikring/meld-skade.html",
+        "text": "Meld skade",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(3) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/kundeservice/bestill/prisliste.html",
+        "text": "Prisliste",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(4) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/kundeservice.html",
+        "text": "Kundeservice",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(5) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/innlogging.html",
+        "text": "Nettbank privat",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(2) > ul.footer-columns__link-list > li:nth-child(1) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/bedrift/innlogging.html",
+        "text": "Nettbank bedrift",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(2) > ul.footer-columns__link-list > li:nth-child(2) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/om-banken/selskapsinformasjon.html",
+        "text": "Om SpareBank 1",
+        "domPath": "div.footer-columns__bottom.ffe-grid__row:nth-child(3) > div.ffe-grid__col.ffe-grid__col--sm-10 > div.footer-columns__column > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(1) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/personvern/generelle-vilkar.html",
+        "text": "Vilkår for bruk av nettsiden",
+        "domPath": "div.footer-columns__bottom.ffe-grid__row:nth-child(3) > div.ffe-grid__col.ffe-grid__col--sm-10 > div.footer-columns__column > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(2) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/personvern.html",
+        "text": "Personvern",
+        "domPath": "div.footer-columns__bottom.ffe-grid__row:nth-child(3) > div.ffe-grid__col.ffe-grid__col--sm-10 > div.footer-columns__column > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(3) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/personvern.html",
+        "text": "Informasjonskapsler",
+        "domPath": "div.footer-columns__bottom.ffe-grid__row:nth-child(3) > div.ffe-grid__col.ffe-grid__col--sm-10 > div.footer-columns__column > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(4) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/bedrift/open-api.html",
+        "text": "For utviklere",
+        "domPath": "div.footer-columns__bottom.ffe-grid__row:nth-child(3) > div.ffe-grid__col.ffe-grid__col--sm-10 > div.footer-columns__column > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(5) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      }
+    ],
+    "external": [
+      {
+        "href": "https://kundeforsikring.sparebank1.no/",
+        "text": "Forsikring",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(2) > ul.footer-columns__link-list > li:nth-child(3) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "https://kundeforsikring.sparebank1.no/privat/sparing",
+        "text": "Pensjon",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(2) > ul.footer-columns__link-list > li:nth-child(4) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "https://no.linkedin.com/company/sparebank-1",
+        "text": "",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column.footer-columns__column--social-media:nth-child(3) > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(1) > a",
+        "region": "footer"
+      },
+      {
+        "href": "https://www.youtube.com/channel/UCdfZfi4HC6bK0-OfRcDJSzg",
+        "text": "",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column.footer-columns__column--social-media:nth-child(3) > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(2) > a",
+        "region": "footer"
+      }
+    ]
+  },
+  "media": {
+    "images": [
+      {
+        "src": "/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "Tilbake til forsiden for om oss - SpareBank 1",
+        "naturalWidth": 300,
+        "naturalHeight": 86,
+        "rect": {
+          "top": 10,
+          "width": 170,
+          "height": 49
+        },
+        "loading": null,
+        "domPath": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.inline-svg.responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/bm_startup_enk275.jpg.thumb.1280.2276.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/bm_startup_enk275.jpg.thumb.1280.2276.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 1080,
+        "naturalHeight": 720,
+        "rect": {
+          "top": 281,
+          "width": 1060,
+          "height": 488
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Min_bolig_forside.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Min_bolig_forside.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 431,
+        "rect": {
+          "top": 1158,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/mann-pa-pc.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/mann-pa-pc.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 576,
+        "rect": {
+          "top": 1158,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/Dame_snakker_i_telefon.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Dame_snakker_i_telefon.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 576,
+        "rect": {
+          "top": 1158,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/profilbilder-liggende/par-pa-reise.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/par-pa-reise.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 1524,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/kj%C3%B8pte-bilder/pixabay-eldre-dame.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/kj%C3%B8pte-bilder/pixabay-eldre-dame.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 1524,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/JULESTRESS_BIL.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/JULESTRESS_BIL.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 432,
+        "rect": {
+          "top": 1524,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/hund-og-barn.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/hund-og-barn.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 576,
+        "naturalHeight": 768,
+        "rect": {
+          "top": 1924,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Flyplasslounge.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Flyplasslounge.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 509,
+        "rect": {
+          "top": 1924,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/fyrverkeri-unsplash.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/fyrverkeri-unsplash.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 561,
+        "rect": {
+          "top": 1924,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Syk-katt.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Syk-katt.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 510,
+        "rect": {
+          "top": 2290,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/Familie.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Familie.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 575,
+        "rect": {
+          "top": 2290,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/Ta-deg-sammen.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Ta-deg-sammen.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 576,
+        "rect": {
+          "top": 2290,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/profilbilder-liggende/stuekontor-dame-jobber-hjemme-pa-spisebordet.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/stuekontor-dame-jobber-hjemme-pa-spisebordet.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 2724,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/bonde-i-traktor2.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/bonde-i-traktor2.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 2724,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Det-sludder-i-borettslaget.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Det-sludder-i-borettslaget.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 2724,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/dame-og-barn.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/dame-og-barn.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 3090,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/Forvaltning/Forvaltning_Morten_Soberg_Bitcoinpolitiskinstitutt_FotoJensEmilAsp.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/Forvaltning_Morten_Soberg_Bitcoinpolitiskinstitutt_FotoJensEmilAsp.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 353,
+        "rect": {
+          "top": 3090,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Dame-paa-PC.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Dame-paa-PC.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 3090,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Gutt-paa-vei-til-skolen.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Gutt-paa-vei-til-skolen.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 3490,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/innbo-flytte.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/innbo-flytte.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 3490,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/nyansatt-kontor.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/nyansatt-kontor.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 3490,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/Bestemor-pa-pc.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Bestemor-pa-pc.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 3924,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/Jeg-tenker-litt.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Jeg-tenker-litt.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 576,
+        "rect": {
+          "top": 3924,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/sitte-pa-trapp.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/sitte-pa-trapp.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 576,
+        "rect": {
+          "top": 3924,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/profilbilder-liggende/skadedyr-veggedyr.jpeg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/skadedyr-veggedyr.jpeg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 768,
+        "rect": {
+          "top": 4324,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Untitled_Session43192.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Untitled_Session43192.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 4324,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Skjerm-i-bil.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Skjerm-i-bil.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 4324,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/hjertestarter.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/hjertestarter.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 575,
+        "rect": {
+          "top": 4724,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/cyberattack.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/cyberattack.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 432,
+        "rect": {
+          "top": 4724,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Bamse7.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Bamse7.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 4724,
+          "width": 339,
+          "height": 190
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 30,
+        "naturalHeight": 30,
+        "rect": {
+          "top": 5464,
+          "width": 30,
+          "height": 30
+        },
+        "loading": null,
+        "domPath": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 37,
+        "naturalHeight": 30,
+        "rect": {
+          "top": 5464,
+          "width": 35,
+          "height": 30
+        },
+        "loading": null,
+        "domPath": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      }
+    ],
+    "inlineSvgs": [
+      {
+        "viewBox": "0 0 281.633 78.197",
+        "domPath": "svg#SpareBank_1",
+        "width": 132,
+        "height": 32,
+        "ariaLabel": null,
+        "markupLength": 6544,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 40 41",
+        "domPath": "section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(2) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > span.optin-header-wrapper > svg.optin-icon__svg",
+        "width": 40,
+        "height": 40,
+        "ariaLabel": null,
+        "markupLength": 4116,
+        "inHeader": false
+      }
+    ],
+    "cssBackgrounds": [],
+    "videos": [],
+    "iframes": [],
+    "imgsCrawl": [
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg",
+        "alt": "Tilbake til forsiden for om oss - SpareBank 1",
+        "w": 300,
+        "h": 86
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/bm_startup_enk275.jpg.thumb.1280.2276.jpg",
+        "alt": "",
+        "w": 1080,
+        "h": 720
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Min_bolig_forside.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 431
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/mann-pa-pc.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 576
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Dame_snakker_i_telefon.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 576
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/par-pa-reise.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 512
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/kj%C3%B8pte-bilder/pixabay-eldre-dame.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 512
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/JULESTRESS_BIL.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 432
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/hund-og-barn.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 576,
+        "h": 768
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Flyplasslounge.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 509
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/fyrverkeri-unsplash.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 561
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Syk-katt.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 510
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Familie.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 575
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Ta-deg-sammen.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 576
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/stuekontor-dame-jobber-hjemme-pa-spisebordet.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 512
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/bonde-i-traktor2.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 512
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Det-sludder-i-borettslaget.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 512
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Gutt-paa-vei-til-skolen.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 512
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/innbo-flytte.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 512
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/nyansatt-kontor.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 512
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Bestemor-pa-pc.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 512
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Jeg-tenker-litt.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 576
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/sitte-pa-trapp.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 576
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/skadedyr-veggedyr.jpeg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 768
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Untitled_Session43192.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 512
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Skjerm-i-bil.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 512
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/hjertestarter.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 575
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/cyberattack.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 432
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Bamse7.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 512
+      }
+    ],
+    "allImgCount": 29,
+    "modals": []
+  },
+  "forms": [],
+  "widgets": {
+    "modals": [
+      {
+        "domPath": "div#opt-in > div.optin__wrapper > div.optin",
+        "open": true,
+        "label": null
+      }
+    ],
+    "accordions": [],
+    "tabs": []
+  },
+  "components": {
+    "cards": {
+      "count": 248,
+      "examples": [
+        "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard__headline.newscard:nth-child(1)",
+        "main#main-content > div.sb1-articles__content.responsive-grid > div.newscards:nth-child(2) > article.newscard__headline.newscard:nth-child(1) > a.newscard__click-area"
+      ]
+    },
+    "grids": {
+      "count": 0,
+      "examples": []
+    },
+    "accordions": {
+      "count": 0,
+      "examples": []
+    },
+    "tabs": {
+      "count": 0,
+      "examples": []
+    },
+    "tables": {
+      "count": 0,
+      "examples": []
+    },
+    "modals": {
+      "count": 1,
+      "examples": [
+        "div#opt-in > div.optin__wrapper > div.optin"
+      ]
+    },
+    "carousels": {
+      "count": 0,
+      "examples": []
+    },
+    "videos": {
+      "count": 0,
+      "examples": []
+    },
+    "iframes": {
+      "count": 0,
+      "examples": []
+    },
+    "dataVizEmbeds": {
+      "count": 0,
+      "examples": []
+    },
+    "teamTiles": {
+      "count": 0,
+      "examples": []
+    },
+    "pricingTiles": {
+      "count": 0,
+      "examples": []
+    },
+    "testimonialCards": {
+      "count": 0,
+      "examples": []
+    },
+    "logoStrip": {
+      "count": 0,
+      "examples": []
+    },
+    "timeline": {
+      "count": 0,
+      "examples": []
+    },
+    "breadcrumbs": {
+      "count": 0,
+      "examples": []
+    },
+    "statRow": {
+      "count": 0,
+      "examples": []
+    },
+    "ctaBand": {
+      "count": 0,
+      "examples": []
+    },
+    "formFields": {
+      "count": 0,
+      "examples": []
+    },
+    "other": []
+  },
+  "perSectionStyle": [
+    {
+      "sectionRef": "main#main-content > header.header.undefined",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": true,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(50, 50, 50)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": "8px",
+        "marginBlock": "0px 0px"
+      },
+      "borderRadius": "30px",
+      "fontFamilies": [
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 0,
+        "height": 124
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.sb1-articles__content.responsive-grid",
+      "purpose": "feature-list",
+      "background": {
+        "color": "rgba(216, 216, 216, 0.3)",
+        "hasImage": true,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(0, 90, 164)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": null,
+        "marginBlock": "0px 0px"
+      },
+      "borderRadius": "0px 4px 4px",
+      "fontFamilies": [
+        "SpareBank1-title-medium",
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [
+        "rgb(170, 170, 170) 0px 0px 3px 0px"
+      ],
+      "rect": {
+        "top": 144,
+        "height": 5153
+      }
+    },
+    {
+      "sectionRef": "main#main-content > footer.footer",
+      "purpose": "footer-nav",
+      "background": {
+        "color": "rgb(0, 39, 118)",
+        "hasImage": true,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(255, 255, 255)"
+      },
+      "spacing": {
+        "paddingBlock": "75px 75px",
+        "paddingInline": "0px 0px",
+        "gap": "16px",
+        "marginBlock": "0px 0px"
+      },
+      "borderRadius": null,
+      "fontFamilies": [
+        "SpareBank1-medium",
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 5337,
+        "height": 488
+      }
+    }
+  ],
+  "embedDominance": {
+    "dominated": false,
+    "iframeSrc": null,
+    "viewportCoveragePct": null,
+    "mainHeightCoveragePct": null
+  },
+  "cssCustomProperties": [
+    {
+      "name": "--ffe-farge-fjell",
+      "value": "#002776"
+    },
+    {
+      "name": "--ffe-farge-fjell-70",
+      "value": "#4d689f"
+    },
+    {
+      "name": "--ffe-farge-fjell-30",
+      "value": "#b3bed6"
+    },
+    {
+      "name": "--ffe-farge-vann",
+      "value": "#005aa4"
+    },
+    {
+      "name": "--ffe-farge-vann-70",
+      "value": "#4d8cbf"
+    },
+    {
+      "name": "--ffe-farge-vann-30",
+      "value": "#b3cee4"
+    },
+    {
+      "name": "--ffe-farge-sand",
+      "value": "#f8e9dd"
+    },
+    {
+      "name": "--ffe-farge-sand-70",
+      "value": "#faf0e7"
+    },
+    {
+      "name": "--ffe-farge-sand-30",
+      "value": "#fdf8f5"
+    },
+    {
+      "name": "--ffe-farge-frost",
+      "value": "#7eb5d2"
+    },
+    {
+      "name": "--ffe-farge-frost-70",
+      "value": "#a5cbe0"
+    },
+    {
+      "name": "--ffe-farge-frost-30",
+      "value": "#d8e9f2"
+    },
+    {
+      "name": "--ffe-farge-syrin",
+      "value": "#d3d3ea"
+    },
+    {
+      "name": "--ffe-farge-syrin-70",
+      "value": "#e0e0f0"
+    },
+    {
+      "name": "--ffe-farge-syrin-30",
+      "value": "#f2f2f9"
+    },
+    {
+      "name": "--ffe-farge-myrull",
+      "value": "#fae4e0"
+    },
+    {
+      "name": "--ffe-farge-myrull-70",
+      "value": "#fcece9"
+    },
+    {
+      "name": "--ffe-farge-myrull-30",
+      "value": "#fef7f6"
+    },
+    {
+      "name": "--ffe-farge-villblomst",
+      "value": "#ee8d9c"
+    },
+    {
+      "name": "--ffe-farge-villblomst-70",
+      "value": "#f3afba"
+    },
+    {
+      "name": "--ffe-farge-villblomst-30",
+      "value": "#fadde1"
+    },
+    {
+      "name": "--ffe-farge-nordlys",
+      "value": "#33af85"
+    },
+    {
+      "name": "--ffe-farge-nordlys-70",
+      "value": "#70c7aa"
+    },
+    {
+      "name": "--ffe-farge-nordlys-30",
+      "value": "#c2e7da"
+    },
+    {
+      "name": "--ffe-farge-lyng",
+      "value": "#873953"
+    },
+    {
+      "name": "--ffe-farge-lyng-70",
+      "value": "#ab7487"
+    },
+    {
+      "name": "--ffe-farge-lyng-30",
+      "value": "#dbc4cb"
+    },
+    {
+      "name": "--ffe-farge-baer",
+      "value": "#e44244"
+    },
+    {
+      "name": "--ffe-farge-baer-70",
+      "value": "#ec7b7c"
+    },
+    {
+      "name": "--ffe-farge-baer-30",
+      "value": "#f7c6c7"
+    },
+    {
+      "name": "--ffe-farge-skog",
+      "value": "#00754e"
+    },
+    {
+      "name": "--ffe-farge-skog-70",
+      "value": "#4d9e83"
+    },
+    {
+      "name": "--ffe-farge-skog-30",
+      "value": "#b3d6ca"
+    },
+    {
+      "name": "--ffe-farge-multe",
+      "value": "#f8b181"
+    },
+    {
+      "name": "--ffe-farge-multe-70",
+      "value": "#fac8a7"
+    },
+    {
+      "name": "--ffe-farge-multe-30",
+      "value": "#fde8d9"
+    },
+    {
+      "name": "--ffe-farge-sol",
+      "value": "#dc8000"
+    },
+    {
+      "name": "--ffe-farge-sol-70",
+      "value": "#e7a64d"
+    },
+    {
+      "name": "--ffe-farge-sol-30",
+      "value": "#f5d9b3"
+    },
+    {
+      "name": "--ffe-farge-natt",
+      "value": "#001032"
+    },
+    {
+      "name": "--ffe-farge-svart",
+      "value": "#020a0a"
+    },
+    {
+      "name": "--ffe-farge-koksgraa",
+      "value": "#323232"
+    },
+    {
+      "name": "--ffe-farge-moerkgraa",
+      "value": "#676767"
+    },
+    {
+      "name": "--ffe-farge-graa",
+      "value": "#adadad"
+    },
+    {
+      "name": "--ffe-farge-lysgraa",
+      "value": "#d8d8d8"
+    },
+    {
+      "name": "--ffe-farge-moerkvarmgraa",
+      "value": "#848383"
+    },
+    {
+      "name": "--ffe-farge-varmgraa",
+      "value": "#9b9797"
+    },
+    {
+      "name": "--ffe-farge-lysvarmgraa",
+      "value": "#d7d2cb"
+    },
+    {
+      "name": "--ffe-farge-hvit",
+      "value": "#fff"
+    },
+    {
+      "name": "--ffe-fontsize-body-text",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-small-text",
+      "value": "0.875rem"
+    },
+    {
+      "name": "--ffe-fontsize-micro-text",
+      "value": "0.75rem"
+    },
+    {
+      "name": "--ffe-fontsize-lead-paragraph",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-sub-lead-paragraph",
+      "value": "1.063rem"
+    },
+    {
+      "name": "--ffe-fontsize-h1",
+      "value": "1.75rem"
+    },
+    {
+      "name": "--ffe-fontsize-h2",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--ffe-fontsize-h3",
+      "value": "1.25rem"
+    },
+    {
+      "name": "--ffe-fontsize-h4",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-h5",
+      "value": "1.0625rem"
+    },
+    {
+      "name": "--ffe-fontsize-h6",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-form-input",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-form-dropdown",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-button",
+      "value": "1rem"
+    },
+    {
+      "name": "--breakpoint-sm",
+      "value": "480px"
+    },
+    {
+      "name": "--breakpoint-md",
+      "value": "768px"
+    },
+    {
+      "name": "--breakpoint-lg",
+      "value": "1024px"
+    },
+    {
+      "name": "--breakpoint-xl",
+      "value": "1280px"
+    },
+    {
+      "name": "--app-width",
+      "value": "1280px"
+    },
+    {
+      "name": "--app-width-min",
+      "value": "320px"
+    },
+    {
+      "name": "--app-margin",
+      "value": "20px"
+    },
+    {
+      "name": "--ffe-ease-in-out-back",
+      "value": "cubic-bezier(0.46, -0.265, 0.48, 1.38)"
+    },
+    {
+      "name": "--ffe-ease",
+      "value": "cubic-bezier(0.25, 0.1, 0.25, 1)"
+    },
+    {
+      "name": "--ffe-transition-duration",
+      "value": "0.2s"
+    },
+    {
+      "name": "--ffe-spacing",
+      "value": "8px"
+    },
+    {
+      "name": "--ffe-spacing-2xs",
+      "value": "4px"
+    },
+    {
+      "name": "--ffe-spacing-xs",
+      "value": "8px"
+    },
+    {
+      "name": "--ffe-spacing-sm",
+      "value": "16px"
+    },
+    {
+      "name": "--ffe-spacing-md",
+      "value": "24px"
+    },
+    {
+      "name": "--ffe-spacing-lg",
+      "value": "32px"
+    },
+    {
+      "name": "--ffe-spacing-xl",
+      "value": "40px"
+    },
+    {
+      "name": "--ffe-spacing-2xl",
+      "value": "48px"
+    },
+    {
+      "name": "--ffe-spacing-3xl",
+      "value": "64px"
+    },
+    {
+      "name": "--ffe-spacing-4xl",
+      "value": "80px"
+    },
+    {
+      "name": "--ffe-spacing-5xl",
+      "value": "160px"
+    },
+    {
+      "name": "--ffe-g-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-g-secondary-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-error-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-g-border-color",
+      "value": "var(--ffe-farge-varmgraa)"
+    },
+    {
+      "name": "--ffe-g-border-radius",
+      "value": "4px"
+    },
+    {
+      "name": "--ffe-g-font",
+      "value": "'SpareBank1-regular',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-heading",
+      "value": "'SpareBank1-title-medium',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-heading-small",
+      "value": "'SpareBank1-medium',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-strong",
+      "value": "'SpareBank1-medium',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-italic",
+      "value": "'SpareBank1-italic',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-text-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-g-lead-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-heading-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-link-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-g-link-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-link-color-visited",
+      "value": "var(--ffe-farge-lyng)"
+    },
+    {
+      "name": "--ffe-g-link-icon-color-hover",
+      "value": "var(--ffe-farge-natt)"
+    },
+    {
+      "name": "--ffe-g-link-icon-color-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-fontsize-lead-paragraph",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--ffe-fontsize-sub-lead-paragraph",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-h1",
+      "value": "2.5rem"
+    },
+    {
+      "name": "--ffe-fontsize-h2",
+      "value": "2rem"
+    },
+    {
+      "name": "--ffe-fontsize-h3",
+      "value": "1.688rem"
+    },
+    {
+      "name": "--ffe-fontsize-h4",
+      "value": "1.375rem"
+    },
+    {
+      "name": "--ffe-fontsize-h5",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-h1",
+      "value": "2.875rem"
+    },
+    {
+      "name": "--ffe-fontsize-h2",
+      "value": "2.25rem"
+    },
+    {
+      "name": "--ffe-fontsize-h3",
+      "value": "1.75rem"
+    },
+    {
+      "name": "--ffe-v-lists-title-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-lists-description-description-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-lists-check-list-check-icon-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-lists-check-list-cross-icon-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-v-detail-list-card-background-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-detail-list-card-border-color",
+      "value": "var(--ffe-farge-lysgraa)"
+    },
+    {
+      "name": "--ffe-v-detail-list-card-border-radius",
+      "value": "16px"
+    },
+    {
+      "name": "--ffe-v-input-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-input-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-input-placeholder-color",
+      "value": "var(--ffe-farge-moerkgraa)"
+    },
+    {
+      "name": "--ffe-v-info-message-icon-color",
+      "value": "var(--ffe-g-secondary-color)"
+    },
+    {
+      "name": "--ffe-v-info-message-icon-fill",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-dropdown-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-success-message-icon-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-success-message-icon-fill",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-error-message-icon-color",
+      "value": "var(--ffe-g-error-color)"
+    },
+    {
+      "name": "--ffe-v-error-message-icon-fill",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-text-on-colored-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-checkbox-color",
+      "value": "var(--ffe-g-border-color)"
+    },
+    {
+      "name": "--ffe-v-checkbox-selected-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-checkbox-marker-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-checkbox-focus-outline-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-radio-button-label-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-toggle-switch-box-shadow",
+      "value": "0 0 0 3px var(--ffe-farge-hvit),0 0 0 5px var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-toggle-switch-hover-color",
+      "value": "var(--ffe-farge-moerkgraa)"
+    },
+    {
+      "name": "--ffe-v-tooltip-icon-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-tooltip-border-color",
+      "value": "var(--ffe-g-border-color)"
+    },
+    {
+      "name": "--ffe-v-button-text-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-buttons-border-radius",
+      "value": "6em"
+    },
+    {
+      "name": "--ffe-v-button-shadow-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-action-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-button-action-color-hover",
+      "value": "#095139"
+    },
+    {
+      "name": "--ffe-v-button-action-color-text",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-primary-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-primary-color-text",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-border-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color-text-hover",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color-bg-hover",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color-text",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-tertiary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-tertiary-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-tertiary-color-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-task-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-task-color-border",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-task-color-text",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-task-color-text-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-task-color-icon",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-task-color-icon-hover",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-task-border-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-cards-common-card-background-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-cards-common-card-box-shadow-color",
+      "value": "var(--ffe-farge-graa)"
+    },
+    {
+      "name": "--ffe-v-cards-common-card-box-shadow",
+      "value": "0 1px 4px 0 var(--ffe-v-cards-common-card-box-shadow-color)"
+    },
+    {
+      "name": "--ffe-v-cards-common-card-border-radius",
+      "value": "16px"
+    },
+    {
+      "name": "--ffe-v-cards-text-color",
+      "value": "var(--ffe-farge-moerkgraa)"
+    },
+    {
+      "name": "--ffe-v-cards-border-hover-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-cards-stippled-border-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-cards-icon-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-cards-common-group-card-separation-border-color",
+      "value": "var(--ffe-farge-lysgraa)"
+    },
+    {
+      "name": "--ffe-v-cards-common-group-card-separation-border-color-dm",
+      "value": "var(--ffe-farge-koksgraa)"
+    },
+    {
+      "name": "--ffe-v-group-card-footer-background-color",
+      "value": "var(--ffe-farge-syrin-30)"
+    },
+    {
+      "name": "--ffe-v-group-card-footer-background-color-dm",
+      "value": "var(--ffe-farge-koksgraa)"
+    },
+    {
+      "name": "--ffe-v-accordion-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-accordion-secondary-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-accordion-body-text-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-accordion-focus-border-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-icons-size-sm",
+      "value": "20px"
+    },
+    {
+      "name": "--ffe-v-icons-size-md",
+      "value": "24px"
+    },
+    {
+      "name": "--ffe-v-icons-size-lg",
+      "value": "40px"
+    },
+    {
+      "name": "--ffe-v-icons-size-xl",
+      "value": "48px"
+    },
+    {
+      "name": "--ffe-v-icons-default-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-messages-tips-bg-color",
+      "value": "var(--ffe-farge-sol-30)"
+    },
+    {
+      "name": "--ffe-v-messages-tips-icon-bg-color",
+      "value": "var(--ffe-farge-sol)"
+    },
+    {
+      "name": "--ffe-v-messages-tips-icon-color",
+      "value": "var(--ffe-farge-sol-30)"
+    },
+    {
+      "name": "--ffe-v-messages-tips-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-messages-tips-icon-variant-bg-color",
+      "value": "var(--ffe-farge-sol)"
+    },
+    {
+      "name": "--ffe-v-messages-info-bg-color",
+      "value": "var(--ffe-farge-vann-30)"
+    },
+    {
+      "name": "--ffe-v-messages-info-icon-bg-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-messages-info-icon-color",
+      "value": "var(--ffe-farge-vann-30)"
+    },
+    {
+      "name": "--ffe-v-messages-info-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-messages-info-icon-variant-bg-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-messages-success-bg-color",
+      "value": "var(--ffe-farge-skog-30)"
+    },
+    {
+      "name": "--ffe-v-messages-success-icon-bg-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-messages-success-icon-color",
+      "value": "var(--ffe-farge-skog-30)"
+    },
+    {
+      "name": "--ffe-v-messages-success-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-messages-success-icon-variant-bg-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-messages-error-bg-color",
+      "value": "var(--ffe-farge-baer-30)"
+    },
+    {
+      "name": "--ffe-v-messages-error-icon-bg-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-v-messages-error-icon-color",
+      "value": "var(--ffe-farge-baer-30)"
+    },
+    {
+      "name": "--ffe-v-messages-error-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-messages-error-icon-variant-bg-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-v-messages-news-bg-color",
+      "value": "var(--ffe-farge-lysgraa)"
+    },
+    {
+      "name": "--ffe-v-messages-news-icon-bg-color",
+      "value": "var(--ffe-farge-koksgraa)"
+    },
+    {
+      "name": "--ffe-v-messages-news-icon-color",
+      "value": "var(--ffe-farge-lysgraa)"
+    },
+    {
+      "name": "--ffe-v-messages-news-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-messages-news-icon-variant-bg-color",
+      "value": "var(--ffe-farge-koksgraa)"
+    },
+    {
+      "name": "--ffe-v-messages-close-button-color",
+      "value": "var(--ffe-farge-moerkgraa)"
+    },
+    {
+      "name": "--ffe-v-messages-close-button-color-hover",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-messages-close-button-border-color-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-messages-text-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-messages-link-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-messages-link-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-messages-link-color-visited",
+      "value": "var(--ffe-farge-lyng)"
+    },
+    {
+      "name": "--ffe-v-messages-link-color-focus",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-table-heading-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-table-heading-color-sortable",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-table-row-bordercolor",
+      "value": "var(--ffe-farge-varmgraa)"
+    },
+    {
+      "name": "--ffe-v-table-expand-icon-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-table-expanded-content-bg",
+      "value": "var(--ffe-farge-syrin-30)"
+    },
+    {
+      "name": "--ffe-v-table-expanded-row-bg",
+      "value": "var(--ffe-farge-syrin-70)"
+    },
+    {
+      "name": "--ffe-v-table-sortable-header-hover-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-table-button-focus-outline",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-table-content-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-table-sortable-header-active-color",
+      "value": "var(--ffe-farge-syrin-70)"
+    }
+  ],
+  "customProps": {
+    "--ffe-farge-fjell": "#002776",
+    "--ffe-farge-fjell-70": "#4d689f",
+    "--ffe-farge-fjell-30": "#b3bed6",
+    "--ffe-farge-vann": "#005aa4",
+    "--ffe-farge-vann-70": "#4d8cbf",
+    "--ffe-farge-vann-30": "#b3cee4",
+    "--ffe-farge-sand": "#f8e9dd",
+    "--ffe-farge-sand-70": "#faf0e7",
+    "--ffe-farge-sand-30": "#fdf8f5",
+    "--ffe-farge-frost": "#7eb5d2",
+    "--ffe-farge-frost-70": "#a5cbe0",
+    "--ffe-farge-frost-30": "#d8e9f2",
+    "--ffe-farge-syrin": "#d3d3ea",
+    "--ffe-farge-syrin-70": "#e0e0f0",
+    "--ffe-farge-syrin-30": "#f2f2f9",
+    "--ffe-farge-myrull": "#fae4e0",
+    "--ffe-farge-myrull-70": "#fcece9",
+    "--ffe-farge-myrull-30": "#fef7f6",
+    "--ffe-farge-villblomst": "#ee8d9c",
+    "--ffe-farge-villblomst-70": "#f3afba",
+    "--ffe-farge-villblomst-30": "#fadde1",
+    "--ffe-farge-nordlys": "#33af85",
+    "--ffe-farge-nordlys-70": "#70c7aa",
+    "--ffe-farge-nordlys-30": "#c2e7da",
+    "--ffe-farge-lyng": "#873953",
+    "--ffe-farge-lyng-70": "#ab7487",
+    "--ffe-farge-lyng-30": "#dbc4cb",
+    "--ffe-farge-baer": "#e44244",
+    "--ffe-farge-baer-70": "#ec7b7c",
+    "--ffe-farge-baer-30": "#f7c6c7",
+    "--ffe-farge-skog": "#00754e",
+    "--ffe-farge-skog-70": "#4d9e83",
+    "--ffe-farge-skog-30": "#b3d6ca",
+    "--ffe-farge-multe": "#f8b181",
+    "--ffe-farge-multe-70": "#fac8a7",
+    "--ffe-farge-multe-30": "#fde8d9",
+    "--ffe-farge-sol": "#dc8000",
+    "--ffe-farge-sol-70": "#e7a64d",
+    "--ffe-farge-sol-30": "#f5d9b3",
+    "--ffe-farge-natt": "#001032",
+    "--ffe-farge-svart": "#020a0a",
+    "--ffe-farge-koksgraa": "#323232",
+    "--ffe-farge-moerkgraa": "#676767",
+    "--ffe-farge-graa": "#adadad",
+    "--ffe-farge-lysgraa": "#d8d8d8",
+    "--ffe-farge-moerkvarmgraa": "#848383",
+    "--ffe-farge-varmgraa": "#9b9797",
+    "--ffe-farge-lysvarmgraa": "#d7d2cb",
+    "--ffe-farge-hvit": "#fff",
+    "--ffe-fontsize-body-text": "1rem",
+    "--ffe-fontsize-small-text": "0.875rem",
+    "--ffe-fontsize-micro-text": "0.75rem",
+    "--ffe-fontsize-lead-paragraph": "1.5rem",
+    "--ffe-fontsize-sub-lead-paragraph": "1.125rem",
+    "--ffe-fontsize-h1": "2.875rem",
+    "--ffe-fontsize-h2": "2.25rem",
+    "--ffe-fontsize-h3": "1.75rem",
+    "--ffe-fontsize-h4": "1.375rem",
+    "--ffe-fontsize-h5": "1.125rem",
+    "--ffe-fontsize-h6": "1rem",
+    "--ffe-fontsize-form-input": "1rem",
+    "--ffe-fontsize-form-dropdown": "1rem",
+    "--ffe-fontsize-button": "1rem",
+    "--breakpoint-sm": "480px",
+    "--breakpoint-md": "768px",
+    "--breakpoint-lg": "1024px",
+    "--breakpoint-xl": "1280px",
+    "--app-width": "1280px",
+    "--app-width-min": "320px",
+    "--app-margin": "20px",
+    "--ffe-ease-in-out-back": "cubic-bezier(0.46, -0.265, 0.48, 1.38)",
+    "--ffe-ease": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+    "--ffe-transition-duration": "0.2s",
+    "--ffe-spacing": "8px",
+    "--ffe-spacing-2xs": "4px",
+    "--ffe-spacing-xs": "8px",
+    "--ffe-spacing-sm": "16px",
+    "--ffe-spacing-md": "24px",
+    "--ffe-spacing-lg": "32px",
+    "--ffe-spacing-xl": "40px",
+    "--ffe-spacing-2xl": "48px",
+    "--ffe-spacing-3xl": "64px",
+    "--ffe-spacing-4xl": "80px",
+    "--ffe-spacing-5xl": "160px",
+    "--ffe-g-primary-color": "#005aa4",
+    "--ffe-g-secondary-color": "#002776",
+    "--ffe-g-error-color": "#e44244",
+    "--ffe-g-border-color": "#9b9797",
+    "--ffe-g-border-radius": "4px",
+    "--ffe-g-font": "'SpareBank1-regular',arial,sans-serif",
+    "--ffe-g-font-heading": "'SpareBank1-title-medium',arial,sans-serif",
+    "--ffe-g-font-heading-small": "'SpareBank1-medium',arial,sans-serif",
+    "--ffe-g-font-strong": "'SpareBank1-medium',arial,sans-serif",
+    "--ffe-g-font-italic": "'SpareBank1-italic',arial,sans-serif",
+    "--ffe-g-text-color": "#020a0a",
+    "--ffe-g-lead-color": "#002776",
+    "--ffe-g-heading-color": "#002776",
+    "--ffe-g-link-color": "#005aa4",
+    "--ffe-g-link-color-hover": "#002776",
+    "--ffe-g-link-color-visited": "#873953",
+    "--ffe-g-link-icon-color-hover": "#001032",
+    "--ffe-g-link-icon-color-focus": "#005aa4",
+    "--ffe-v-lists-title-color": "#002776",
+    "--ffe-v-lists-description-description-color": "#020a0a",
+    "--ffe-v-lists-check-list-check-icon-color": "#00754e",
+    "--ffe-v-lists-check-list-cross-icon-color": "#e44244",
+    "--ffe-v-detail-list-card-background-color": "#fff",
+    "--ffe-v-detail-list-card-border-color": "#d8d8d8",
+    "--ffe-v-detail-list-card-border-radius": "16px",
+    "--ffe-v-input-color": "#020a0a",
+    "--ffe-v-input-bg-color": "#fff",
+    "--ffe-v-input-placeholder-color": "#676767",
+    "--ffe-v-info-message-icon-color": "#002776",
+    "--ffe-v-info-message-icon-fill": "#fff",
+    "--ffe-v-dropdown-bg-color": "#fff",
+    "--ffe-v-success-message-icon-color": "#00754e",
+    "--ffe-v-success-message-icon-fill": "#fff",
+    "--ffe-v-error-message-icon-color": "#e44244",
+    "--ffe-v-error-message-icon-fill": "#fff",
+    "--ffe-v-text-on-colored-bg-color": "#fff",
+    "--ffe-v-checkbox-color": "#9b9797",
+    "--ffe-v-checkbox-selected-color": "#005aa4",
+    "--ffe-v-checkbox-marker-color": "#005aa4",
+    "--ffe-v-checkbox-focus-outline-color": "#005aa4",
+    "--ffe-v-radio-button-label-color": "#005aa4",
+    "--ffe-v-toggle-switch-box-shadow": "0 0 0 3px #fff,0 0 0 5px #005aa4",
+    "--ffe-v-toggle-switch-hover-color": "#676767",
+    "--ffe-v-tooltip-icon-color": "#005aa4",
+    "--ffe-v-tooltip-border-color": "#9b9797",
+    "--ffe-v-button-text-color": "#fff",
+    "--ffe-v-buttons-border-radius": "6em",
+    "--ffe-v-button-shadow-color": "#005aa4",
+    "--ffe-v-button-action-color": "#00754e",
+    "--ffe-v-button-action-color-hover": "#095139",
+    "--ffe-v-button-action-color-text": "#fff",
+    "--ffe-v-button-primary-color": "#005aa4",
+    "--ffe-v-button-primary-color-hover": "#002776",
+    "--ffe-v-button-primary-color-text": "#fff",
+    "--ffe-v-button-secondary-color": "#fff",
+    "--ffe-v-button-secondary-border-color": "#005aa4",
+    "--ffe-v-button-secondary-color-text-hover": "#fff",
+    "--ffe-v-button-secondary-color-bg-hover": "#005aa4",
+    "--ffe-v-button-secondary-color-text": "#005aa4",
+    "--ffe-v-button-tertiary-color": "#005aa4",
+    "--ffe-v-button-tertiary-color-hover": "#002776",
+    "--ffe-v-button-tertiary-color-focus": "#005aa4",
+    "--ffe-v-button-task-color": "#fff",
+    "--ffe-v-button-task-color-border": "#005aa4",
+    "--ffe-v-button-task-color-text": "#005aa4",
+    "--ffe-v-button-task-color-text-hover": "#002776",
+    "--ffe-v-button-task-color-icon": "#005aa4",
+    "--ffe-v-button-task-color-icon-hover": "#fff",
+    "--ffe-v-button-task-border-focus": "#005aa4",
+    "--ffe-v-cards-common-card-background-color": "#fff",
+    "--ffe-v-cards-common-card-box-shadow-color": "#adadad",
+    "--ffe-v-cards-common-card-box-shadow": "0 1px 4px 0 #adadad",
+    "--ffe-v-cards-common-card-border-radius": "16px",
+    "--ffe-v-cards-text-color": "#676767",
+    "--ffe-v-cards-border-hover-color": "#005aa4",
+    "--ffe-v-cards-stippled-border-color": "#005aa4",
+    "--ffe-v-cards-icon-color": "#002776",
+    "--ffe-v-cards-common-group-card-separation-border-color": "#d8d8d8",
+    "--ffe-v-cards-common-group-card-separation-border-color-dm": "#323232",
+    "--ffe-v-group-card-footer-background-color": "#f2f2f9",
+    "--ffe-v-group-card-footer-background-color-dm": "#323232",
+    "--ffe-v-accordion-primary-color": "#005aa4",
+    "--ffe-v-accordion-secondary-color": "#fff",
+    "--ffe-v-accordion-body-text-color": "#020a0a",
+    "--ffe-v-accordion-focus-border-color": "#005aa4",
+    "--ffe-v-icons-size-sm": "20px",
+    "--ffe-v-icons-size-md": "24px",
+    "--ffe-v-icons-size-lg": "40px",
+    "--ffe-v-icons-size-xl": "48px",
+    "--ffe-v-icons-default-color": "#005aa4",
+    "--ffe-v-messages-tips-bg-color": "#f5d9b3",
+    "--ffe-v-messages-tips-icon-bg-color": "#dc8000",
+    "--ffe-v-messages-tips-icon-color": "#f5d9b3",
+    "--ffe-v-messages-tips-variant-bg-color": "#fff",
+    "--ffe-v-messages-tips-icon-variant-bg-color": "#dc8000",
+    "--ffe-v-messages-info-bg-color": "#b3cee4",
+    "--ffe-v-messages-info-icon-bg-color": "#005aa4",
+    "--ffe-v-messages-info-icon-color": "#b3cee4",
+    "--ffe-v-messages-info-variant-bg-color": "#fff",
+    "--ffe-v-messages-info-icon-variant-bg-color": "#002776",
+    "--ffe-v-messages-success-bg-color": "#b3d6ca",
+    "--ffe-v-messages-success-icon-bg-color": "#00754e",
+    "--ffe-v-messages-success-icon-color": "#b3d6ca",
+    "--ffe-v-messages-success-variant-bg-color": "#fff",
+    "--ffe-v-messages-success-icon-variant-bg-color": "#00754e",
+    "--ffe-v-messages-error-bg-color": "#f7c6c7",
+    "--ffe-v-messages-error-icon-bg-color": "#e44244",
+    "--ffe-v-messages-error-icon-color": "#f7c6c7",
+    "--ffe-v-messages-error-variant-bg-color": "#fff",
+    "--ffe-v-messages-error-icon-variant-bg-color": "#e44244",
+    "--ffe-v-messages-news-bg-color": "#d8d8d8",
+    "--ffe-v-messages-news-icon-bg-color": "#323232",
+    "--ffe-v-messages-news-icon-color": "#d8d8d8",
+    "--ffe-v-messages-news-variant-bg-color": "#fff",
+    "--ffe-v-messages-news-icon-variant-bg-color": "#323232",
+    "--ffe-v-messages-close-button-color": "#676767",
+    "--ffe-v-messages-close-button-color-hover": "#020a0a",
+    "--ffe-v-messages-close-button-border-color-focus": "#005aa4",
+    "--ffe-v-messages-text-color": "#020a0a",
+    "--ffe-v-messages-link-color": "#005aa4",
+    "--ffe-v-messages-link-color-hover": "#002776",
+    "--ffe-v-messages-link-color-visited": "#873953",
+    "--ffe-v-messages-link-color-focus": "#fff",
+    "--ffe-v-table-heading-color": "#020a0a",
+    "--ffe-v-table-heading-color-sortable": "#002776",
+    "--ffe-v-table-row-bordercolor": "#9b9797",
+    "--ffe-v-table-expand-icon-color": "#005aa4",
+    "--ffe-v-table-expanded-content-bg": "#f2f2f9",
+    "--ffe-v-table-expanded-row-bg": "#e0e0f0",
+    "--ffe-v-table-sortable-header-hover-color": "#002776",
+    "--ffe-v-table-button-focus-outline": "#005aa4",
+    "--ffe-v-table-content-color": "#020a0a",
+    "--ffe-v-table-sortable-header-active-color": "#e0e0f0"
+  },
+  "fontFaces": [
+    {
+      "family": "SpareBank1-medium",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2\") format(\"woff2\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-medium; font-display: fallback; src: url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2\") format(\"woff2\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.css"
+    },
+    {
+      "family": "SpareBank1-regular",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2\") format(\"woff2\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-regular; font-display: fallback; src: url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2\") format(\"woff2\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.css"
+    },
+    {
+      "family": "SpareBank1-italic",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-It-Web.woff2\") format(\"woff2\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-italic; font-display: fallback; src: url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-It-Web.woff2\") format(\"woff2\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.css"
+    },
+    {
+      "family": "SpareBank1-title-medium",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2\") format(\"woff2\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-title-medium; font-display: fallback; src: url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2\") format(\"woff2\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.css"
+    }
+  ],
+  "iconFont": null,
+  "textRendering": {
+    "textRendering": "auto",
+    "webkitFontSmoothing": "auto",
+    "fontSynthesis": "weight style small-caps",
+    "fontKerning": "auto",
+    "fontVariantNumeric": "tabular-nums",
+    "bodyFontFamily": "SpareBank1-regular, arial, sans-serif",
+    "bodyFontSize": "16px",
+    "bodyLineHeight": "24px",
+    "bodyColor": "rgb(2, 10, 10)",
+    "bodyBackground": "rgba(216, 216, 216, 0.3)",
+    "htmlFontSize": "16px"
+  },
+  "containerModel": {
+    "maxWidthMode": "1280px",
+    "sample": [
+      {
+        "domPath": "main#main-content > header.header.undefined > div.header__wrap:nth-child(1) > div.header__content.aem-main-container",
+        "renderedWidth": 1280,
+        "marginLeft": "80px",
+        "marginRight": "80px"
+      },
+      {
+        "domPath": "main#main-content > footer.footer > div.ffe-grid:nth-child(1) > div.footer-columns__top.ffe-grid__row:nth-child(1)",
+        "renderedWidth": 1280,
+        "marginLeft": "80px",
+        "marginRight": "80px"
+      }
+    ],
+    "documentHeight": 5825,
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    }
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 35,
+    "mainTextLen": 2735,
+    "realImageCount": 29,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/nb-bank-om-oss-nyheter-html.png",
+  "stats": {
+    "wordCount": 598,
+    "ctaCount": 4,
+    "internalLinkCount": 54,
+    "externalLinkCount": 4,
+    "imageCount": 34,
+    "headingCount": 37
+  },
+  "slots": {
+    "pageType": "listing",
+    "archetypeFamily": "news-listing",
+    "headline": "Nyheter",
+    "deck": "For at nettsidene skal fungere, må vi bruke tekniske informasjonskapsler. Denne kan derfor ikke slås av",
+    "meta": {
+      "title": "Nyheter | SpareBank 1",
+      "description": null,
+      "canonical": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.html",
+      "og": {
+        "title": "Nyheter",
+        "description": null,
+        "image": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.2276.jpg",
+        "type": "article",
+        "siteName": null
+      }
+    },
+    "breadcrumb": null,
+    "sections": [
+      "Advarer bedrifter mot ny svindelmetode: Falsk faktura først – falsk banktelefon etterpå",
+      "Sånn får du bedre oversikt over boligutgiftene dine",
+      "Investeringssvindel: Lokker deg med drømmer",
+      "La humla suse i sommer – men ikke glem sikkerheten",
+      "Skal du på reise i sommer? Dette bør tenke på før du drar",
+      "Advarer mot ny svindelbølge: – Eldre og enslige kvinner særlig utsatt",
+      "Klar for (å unngå) årets bulkebonanza?",
+      "Slik tar du vare på dyrene på nyttårsaften",
+      "Skal du fly hjem til jul? Her er noen råd til reisen",
+      "Fyrverkeri – er det verdt risikoen?",
+      "Hva gjør du om hunden eller katten din blir syk i ferien?",
+      "Foreldre vil vente med bankkort til barna – eksperten anbefaler tidlig økonomisk læring",
+      "Færre deler passord til nettbank. Fortsatt for mange, mener svindelekspert.",
+      "Slik håndterer du økonomiske bekymringer",
+      "Sunt bondevett for hodet",
+      "Høstdugnad: Sett inn støtet før vinteren kommer",
+      "Barneforsikring som trygghet når livet tar en ny vending",
+      "Morten Søberg inn i ny rolle i SpareBank 1 Forvaltning",
+      "Hva skjer med felles forsikringer i samlivsbrudd?",
+      "Slik sørger du for at barna får en trygg skolevei",
+      "Første gang du flytter hjemmefra? Her er det du bør vite om forsikringer og økonomi",
+      "Nyansatt i hus? Dette må du ha på plass som arbeidsgiver",
+      "Rammer spesielt de eldre: SpareBank 1 advarer mot gavekortsvindel",
+      "– Ikke bare de «godtroende» som blir lurt lenger",
+      "– Mange føler det er deres egen feil at de blir svindlet",
+      "Unngå skadedyr i borettslag og sameier",
+      "Redd for å miste høreapparatet? Slik bør du forsikre det hvis noe skjer",
+      "Det viktigste du har med deg i bilen er oppmerksomheten",
+      "Alle kan bruke hjertestarter – slik finner du en nær deg",
+      "Hva gjør du når bedriften din er under dataangrep?",
+      "“Det kunne gått mye verre” – Bamses historie fra traktorulykken"
+    ],
+    "h3": [],
+    "paragraphs": 0,
+    "primaryCtas": [],
+    "images": [
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/bm_startup_enk275.jpg.thumb.1280.2276.jpg",
+        "alt": "",
+        "w": 1060,
+        "h": 488
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Min_bolig_forside.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 339,
+        "h": 190
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/mann-pa-pc.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 339,
+        "h": 190
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Dame_snakker_i_telefon.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 339,
+        "h": 190
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/par-pa-reise.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 339,
+        "h": 190
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/kj%C3%B8pte-bilder/pixabay-eldre-dame.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 339,
+        "h": 190
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/JULESTRESS_BIL.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 339,
+        "h": 190
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/hund-og-barn.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 339,
+        "h": 190
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Flyplasslounge.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 339,
+        "h": 190
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/fyrverkeri-unsplash.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 339,
+        "h": 190
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Syk-katt.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 339,
+        "h": 190
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Familie.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 339,
+        "h": 190
+      }
+    ],
+    "faqItems": [],
+    "hasFeedback": false,
+    "hasContactRow": false,
+    "hasBankChoice": false
+  }
+}

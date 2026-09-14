@@ -1,0 +1,324 @@
+<!DOCTYPE html><html lang="nb"><head>
+<meta charset="UTF-8">
+<meta name="keywords" content="Fondssparing">
+<meta name="template" content="story">
+
+
+    
+        <script>
+            try{!function(){var e="Expected a function",t=NaN,n="[object Symbol]",r=/^\s+|\s+$/g,i=/^[-+]0x[0-9a-f]+$/i,o=/^0b[01]+$/i,a=/^0o[0-7]+$/i,c=parseInt,u="object"==typeof global&&global&&global.Object===Object&&global,s="object"==typeof self&&self&&self.Object===Object&&self,f=u||s||Function("return this")(),l=Object.prototype.toString,p=Math.max,v=Math.min,g=function(){return f.Date.now()};function m(t,n,r){var i,o,a,c,u,s,f=0,l=!1,m=!1,b=!0;if("function"!=typeof t)throw new TypeError(e);function O(e){var n=i,r=o;return i=o=void 0,f=e,c=t.apply(r,n)}function y(e){var t=e-s;return void 0===s||t>=n||t<0||m&&e-f>=a}function N(){var e,t,r=g();if(y(r))return w(r);u=setTimeout(N,(t=n-((e=r)-s),m?v(t,a-(e-f)):t))}function w(e){return u=void 0,b&&i?O(e):(i=o=void 0,c)}function x(){var e,t=g(),r=y(t);if(i=arguments,o=this,s=t,r){if(void 0===u)return f=e=s,u=setTimeout(N,n),l?O(e):c;if(m)return u=setTimeout(N,n),O(s)}return void 0===u&&(u=setTimeout(N,n)),c}return n=d(n)||0,h(r)&&(l=!!r.leading,a=(m="maxWait"in r)?p(d(r.maxWait)||0,n):a,b="trailing"in r?!!r.trailing:b),x.cancel=function(){void 0!==u&&clearTimeout(u),f=0,i=s=o=u=void 0},x.flush=function(){return void 0===u?c:w(g())},x}function h(e){var t=typeof e;return!!e&&("object"==t||"function"==t)}function d(e){if("number"==typeof e)return e;if("symbol"==typeof(u=e)||(s=u)&&"object"==typeof s&&l.call(u)==n)return t;var u,s;if(h(e)){var f="function"==typeof e.valueOf?e.valueOf():e;e=h(f)?f+"":f}if("string"!=typeof e)return 0===e?e:+e;e=e.replace(r,"");var p=o.test(e);return p||a.test(e)?c(e.slice(2),p?2:8):i.test(e)?t:+e}var b,O,y,N,w=(b=function(){function e(e){return!isNaN(parseFloat(e))&&isFinite(e)}function t(e){return e.charAt(0).toUpperCase()+e.substring(1)}function n(e){return function(){return this[e]}}var r=["isConstructor","isEval","isNative","isToplevel"],i=["columnNumber","lineNumber"],o=["fileName","functionName","source"],a=r.concat(i,o,["args"]);function c(e){if(e instanceof Object)for(var n=0;n<a.length;n++)e.hasOwnProperty(a[n])&&void 0!==e[a[n]]&&this["set"+t(a[n])](e[a[n]])}c.prototype={getArgs:function(){return this.args},setArgs:function(e){if("[object Array]"!==Object.prototype.toString.call(e))throw new TypeError("Args must be an Array");this.args=e},getEvalOrigin:function(){return this.evalOrigin},setEvalOrigin:function(e){if(e instanceof c)this.evalOrigin=e;else{if(!(e instanceof Object))throw new TypeError("Eval Origin must be an Object or StackFrame");this.evalOrigin=new c(e)}},toString:function(){return(this.getFunctionName()||"{anonymous}")+"("+(this.getArgs()||[]).join(",")+")"+(this.getFileName()?"@"+this.getFileName():"")+(e(this.getLineNumber())?":"+this.getLineNumber():"")+(e(this.getColumnNumber())?":"+this.getColumnNumber():"")}};for(var u=0;u<r.length;u++)c.prototype["get"+t(r[u])]=n(r[u]),c.prototype["set"+t(r[u])]=function(e){return function(t){this[e]=Boolean(t)}}(r[u]);for(var s=0;s<i.length;s++)c.prototype["get"+t(i[s])]=n(i[s]),c.prototype["set"+t(i[s])]=function(t){return function(n){if(!e(n))throw new TypeError(t+" must be a Number");this[t]=Number(n)}}(i[s]);for(var f=0;f<o.length;f++)c.prototype["get"+t(o[f])]=n(o[f]),c.prototype["set"+t(o[f])]=function(e){return function(t){this[e]=String(t)}}(o[f]);return c}(),O=/(^|@)\S+\:\d+/,y=/^\s*at .*(\S+\:\d+|\(native\))/m,N=/^(eval@)?(\[native code\])?$/,{parse:function(e){if(void 0!==e.stacktrace||void 0!==e["opera#sourceloc"])return this.parseOpera(e);if(e.stack&&e.stack.match(y))return this.parseV8OrIE(e);if(e.stack)return this.parseFFOrSafari(e);throw new Error("Cannot parse given Error object")},extractLocation:function(e){if(-1===e.indexOf(":"))return[e];var t=/(.+?)(?:\:(\d+))?(?:\:(\d+))?$/.exec(e.replace(/[\(\)]/g,""));return[t[1],t[2]||void 0,t[3]||void 0]},parseV8OrIE:function(e){return e.stack.split("\n").filter(function(e){return!!e.match(y)},this).map(function(e){e.indexOf("(eval ")>-1&&(e=e.replace(/eval code/g,"eval").replace(/(\(eval at [^\()]*)|(\)\,.*$)/g,""));var t=e.replace(/^\s+/,"").replace(/\(eval code/g,"(").split(/\s+/).slice(1),n=this.extractLocation(t.pop()),r=t.join(" ")||void 0,i=["eval","<anonymous>"].indexOf(n[0])>-1?void 0:n[0];return new b({functionName:r,fileName:i,lineNumber:n[1],columnNumber:n[2],source:e})},this)},parseFFOrSafari:function(e){return e.stack.split("\n").filter(function(e){return!e.match(N)},this).map(function(e){if(e.indexOf(" > eval")>-1&&(e=e.replace(/ line (\d+)(?: > eval line \d+)* > eval\:\d+\:\d+/g,":$1")),-1===e.indexOf("@")&&-1===e.indexOf(":"))return new b({functionName:e});var t=/((.*".+"[^@]*)?[^@]*)(?:@)/,n=e.match(t),r=n&&n[1]?n[1]:void 0,i=this.extractLocation(e.replace(t,""));return new b({functionName:r,fileName:i[0],lineNumber:i[1],columnNumber:i[2],source:e})},this)},parseOpera:function(e){return!e.stacktrace||e.message.indexOf("\n")>-1&&e.message.split("\n").length>e.stacktrace.split("\n").length?this.parseOpera9(e):e.stack?this.parseOpera11(e):this.parseOpera10(e)},parseOpera9:function(e){for(var t=/Line (\d+).*script (?:in )?(\S+)/i,n=e.message.split("\n"),r=[],i=2,o=n.length;i<o;i+=2){var a=t.exec(n[i]);a&&r.push(new b({fileName:a[2],lineNumber:a[1],source:n[i]}))}return r},parseOpera10:function(e){for(var t=/Line (\d+).*script (?:in )?(\S+)(?:: In function (\S+))?$/i,n=e.stacktrace.split("\n"),r=[],i=0,o=n.length;i<o;i+=2){var a=t.exec(n[i]);a&&r.push(new b({functionName:a[3]||void 0,fileName:a[2],lineNumber:a[1],source:n[i]}))}return r},parseOpera11:function(e){return e.stack.split("\n").filter(function(e){return!!e.match(O)&&!e.match(/^Error created at/)},this).map(function(e){var t,n=e.split("@"),r=this.extractLocation(n.pop()),i=n.shift()||"",o=i.replace(/<anonymous function(: (\w+))?>/,"$2").replace(/\([^\)]*\)/g,"")||void 0;i.match(/\(([^\)]*)\)/)&&(t=i.replace(/^[^\(]+\(([^\)]*)\)$/,"$1"));var a=void 0===t||"[arguments not available]"===t?void 0:t.split(",");return new b({functionName:o,args:a,fileName:r[0],lineNumber:r[1],columnNumber:r[2],source:e})},this)}});window.onerror=function(t,n,r){var i=!0,o=!0;if("function"!=typeof t)throw new TypeError(e);return h(r)&&(i="leading"in r?!!r.leading:i,o="trailing"in r?!!r.trailing:o),m(t,n,{leading:i,maxWait:n,trailing:o})}(function(e,t,n,r,i){var o,a;i&&(o=w.parse(i)),window.location&&window.location.href&&(a=window.location.href),function(e){try{var t=new XMLHttpRequest;t.open("POST","/LogServlet",!0),t.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8"),t.send("javascriptError="+encodeURI(e))}catch(e){}}(JSON.stringify({userAgent:navigator.userAgent,url:a,logger:"apne_nettsider",message:e,source:t,lineno:n,colno:r,stacktrace:o}))},200)}()}catch(e){}
+        </script>
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes">
+    <meta name="description" content="Teknologifond har levert skyhøy avkastning til mange sparere de siste årene – og mulighet til å investere i selskaper som former fremtiden vår. Kan utviklingen fortsette i samme tempo?&amp;nbsp;
+">
+    
+    
+
+    
+
+    
+        <meta itemprop="category" content="sb1:nyheter">
+    
+        <meta itemprop="category" content="fondssparing">
+    
+
+    <!-- Open Graph General (Facebook & Pinterest) -->
+    <meta property="og:url" content="https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.html">
+    <meta property="og:title" content="Teknologifond: Kan festen fortsette?">
+    <meta property="og:description" content="Teknologifond har levert skyhøy avkastning til mange sparere de siste årene – og mulighet til å investere i selskaper som former fremtiden vår. Kan utviklingen fortsette i samme tempo?&amp;nbsp;
+">
+    
+    
+
+    <meta property="og:image" content="https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/Student.jpg.thumb.1280.2276.jpg">
+    <meta property="og:type" content="article">
+
+    <!-- Open Graph Article (Facebook & Pinterest) -->
+    <meta property="article:published_time" content="2025-12-30T12:11:24+01:00">
+    <meta property="article:modified_time" content="2025-12-30T12:11:24+01:00">
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Teknologifond: Kan festen fortsette?">
+    <meta name="twitter:description" content="Teknologifond har levert skyhøy avkastning til mange sparere de siste årene – og mulighet til å investere i selskaper som former fremtiden vår. Kan utviklingen fortsette i samme tempo?&amp;nbsp;
+">
+    
+    
+
+    <meta name="twitter:image:src" content="https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/Student.jpg.thumb.1280.2276.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Data mode - this is required for author gui to work with SPA -->
+    
+    <meta property="cq:pagemodel_root_url" content="/conf/sb1/settings/wcm/templates/bank-page/structure.model.json">
+    
+
+    <link rel="preconnect" href="https://adobedc.demdex.net" crossorigin="">
+    <link rel="preconnect" href="https://edge.adobedc.net" crossorigin="">
+    <link rel="shortcut icon" type="image/png" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/favicon.png">
+    <link rel="apple-touch-icon" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/apple-touch-icon.png">
+    <link rel="canonical" href="https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.html">
+    <link rel="stylesheet" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.css" type="text/css">
+    <title>Teknologifond: Kan festen fortsette? | SpareBank 1 </title>
+    
+    <!--#config errmsg="" -->
+    
+    <!-- aem01-02 - 5.168.0 -->
+    <script type="text/javascript">
+        var _satellite = {
+            track: function() {}
+        }
+    </script>
+
+    
+
+
+    
+    
+
+
+
+    
+    
+
+    
+
+    
+    
+    
+
+
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","headline":"Teknologifond: Kan festen fortsette?","description":"Teknologifond har levert skyhøy avkastning til mange sparere de siste årene – og mulighet til å investere i selskaper som former fremtiden vår. Kan utviklingen fortsette i samme tempo?&amp;nbsp;","image":"https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/Student.jpg.thumb.1280.2276.jpg","url":"https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.html","datePublished":"2025-11-14T14:25:08+01:00","dateModified":"2025-12-30T12:11:24+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.html"},"publisher":{"@type":"Organization","name":"SpareBank 1 ","logo":{"@type":"ImageObject","url":"https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg"}},"keywords":"Fondssparing","about":[{"@type":"Thing","name":"Fondssparing"}]}</script></head>
+    <body class="basepage page basicpage" id="basepage-56e19d59c1">
+        
+        
+        
+            
+
+
+
+
+            
+
+
+
+            
+
+
+<script>
+    window.SB1 = {
+        config: {
+            app: {
+                logServlet: '/LogServlet',
+                param1: "",
+                param2: "all",
+                param3: '',
+                sendToBank: "true",
+                sendToBankList: "",
+                sendToBankClose: "3",
+                sendToBankDelay: "4",
+                loggedInRedirectEnabled: "true",
+                urlList: "LogServlet,/bin/logservlet,/bin,/content/dam,/dynres,/restportal,static,/innhold,services.cicero.no,/kjopsprosess,/api/common/banking/skjema,/nettmote,.boost.ai/,https://publish.ne.cision.com/Subscription/Subscribe,dpm.demdex.net,sparebank1.d3.sc.omtrdc.net,/solr,/sb1-dialoghub,/openapi,edge.adobedc.net,/api/tracking/webbehavior,/pm-boliglan/,/api/personal/",
+                loginRedirectTimeout: "300000",
+                isLoginIframeCheckEnabled: "true",
+                enableWebTracker: "true",
+                enableAdobeTargetCurrentPage: "",
+                adobeEdgeIdBank: "c9ffe15c-d455-425b-877f-81f1a83db1c3",
+                version: "5.168.0",
+                pmLoginMergeBanks: "sr-bank,sorost",
+            },
+            user: {
+                language: "nb",
+            },
+            urls: {
+                marketPage: "/content/sites/sb1/nb/bank/privat.html",
+                gotoNettbank: '',
+            },
+            server: {},
+            sites: {},
+            page: {
+                tagVariables: "sb1:nyheter\/fondssparing",
+                pageType: "",
+                market: "Privat",
+                marketName: "privat",
+                brand: "sb1",
+                products: [
+                    {
+                        name: "",
+                        category: "",
+                    },
+                ],
+            },
+            bank: {
+                bankSemanticUrl: "bank",
+                bankShortName: "bank",
+                bankName: "SpareBank 1 ",
+                defaultLanguage: "nb",
+                financialInstitutionId: "fid-ostlandet"
+            },
+        },
+    };
+</script>
+
+
+
+
+<noscript>
+    <div>For at du skal kunne se innhold på SpareBank 1s nettsider optimalt, må du aktivere javascript i din nettleser.</div>
+</noscript>
+<div id="outer-main-wrap" class="main-wrap">
+    
+    
+
+    <main id="main-content" class="main" tabindex="-1" role="main" aria-hidden="false"> <header class="header--disable-bottom-links header sb1-story__header"><div class="header__wrap "><div class="header__content aem-main-container"><div class="header__top-wrap"><div class="header__logo"><a href="/content/sites/sb1/nb/bank/privat.html"><div class="image "><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/nettsider/logo.svg" alt="Tilbake til forsiden for privat for - SpareBank 1" class="inline-svg responsive" style="max-width: 100%;"></div></div></figure></div></div><link rel="image_src" href="/content/dam/SB1/nettsider/logo.svg.thumb.768.768.jpg"></a></div><button class="hamburger-wrapper " aria-hidden="false" aria-expanded="false" aria-label="Meny"><div class="inner-wrapper"><div class="hamburger"></div></div></button><div class="header__top-nav"><ul><li><a href="/nb/bank/privat.html" class="active">Privat</a></li><li><a href="/nb/bank/bedrift.html" class="">Bedrift</a></li><li><a href="/nb/bank/om-oss.html" class="">Om oss</a></li></ul></div></div><div class="header__user-content"><button class="header-search-button" aria-controls="header-searcharea" aria-expanded="false" aria-label="Utvid søkefelt"><span role="img" aria-hidden="true" class="ffe-icons ffe-icons--md header-search-button__icon header-search-button__icon--cross" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik00ODAtNDM3Ljg0NyAyNzcuMDc2LTIzNC45MjRxLTguMzA3IDguMzA4LTIwLjg4NCA4LjUtMTIuNTc2LjE5My0yMS4yNjgtOC41LTguNjkzLTguNjkyLTguNjkzLTIxLjA3NnQ4LjY5My0yMS4wNzZMNDM3Ljg0Ny00ODAgMjM0LjkyNC02ODIuOTI0cS04LjMwOC04LjMwNy04LjUtMjAuODg0LS4xOTMtMTIuNTc2IDguNS0yMS4yNjggOC42OTItOC42OTMgMjEuMDc2LTguNjkzdDIxLjA3NiA4LjY5M0w0ODAtNTIyLjE1M2wyMDIuOTI0LTIwMi45MjNxOC4zMDctOC4zMDggMjAuODg0LTguNSAxMi41NzYtLjE5MyAyMS4yNjggOC41IDguNjkzIDguNjkyIDguNjkzIDIxLjA3NnQtOC42OTMgMjEuMDc2TDUyMi4xNTMtNDgwbDIwMi45MjMgMjAyLjkyNHE4LjMwOCA4LjMwNyA4LjUgMjAuODg0LjE5MyAxMi41NzYtOC41IDIxLjI2OC04LjY5MiA4LjY5My0yMS4wNzYgOC42OTN0LTIxLjA3Ni04LjY5M0w0ODAtNDM3Ljg0N1oiLz48L3N2Zz4=&quot;);"></span><span role="img" aria-hidden="true" class="ffe-icons ffe-icons--md header-search-button__icon header-search-button__icon--glass" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIGhlaWdodD0nMjQnIHZpZXdCb3g9JzAgLTk2MCA5NjAgOTYwJyB3aWR0aD0nMjQnPjxwYXRoIGQ9J00zODAuNzY5LTMzNS4zODZxLTEwMi40NjEgMC0xNzMuNTM3LTcxLjA3NlExMzYuMTU1LTQ3Ny41MzkgMTM2LjE1NS01ODBxMC0xMDIuNDYxIDcxLjA3Ny0xNzMuNTM4IDcxLjA3Ni03MS4wNzYgMTczLjUzNy03MS4wNzYgMTAyLjQ2MSAwIDE3My41MzggNzEuMDc2UTYyNS4zODQtNjgyLjQ2MSA2MjUuMzg0LTU4MHEwIDQyLjg0Ni0xNC4zODUgODEuODQ2LTE0LjM4NSAzOS0zOC4zODUgNjcuODQ2bDIzMC4xNTUgMjMwLjE1NHE4LjMwNyA4LjMwOCA4LjQ5OSAyMC44ODUuMTkzIDEyLjU3Ni04LjQ5OSAyMS4yNjgtOC42OTMgOC42OTItMjEuMDc3IDguNjkyLTEyLjM4NCAwLTIxLjA3Ni04LjY5Mkw1MzAuNDYxLTM4OC4xNTVxLTMwIDI0Ljc2OS02OSAzOC43Njl0LTgwLjY5MiAxNFptMC01OS45OThxNzcuMzA4IDAgMTMwLjk2Mi01My42NTRRNTY1LjM4NS01MDIuNjkyIDU2NS4zODUtNTgwcTAtNzcuMzA4LTUzLjY1NC0xMzAuOTYyLTUzLjY1NC01My42NTQtMTMwLjk2Mi01My42NTQtNzcuMzA4IDAtMTMwLjk2MiA1My42NTRRMTk2LjE1NC02NTcuMzA4IDE5Ni4xNTQtNTgwcTAgNzcuMzA4IDUzLjY1MyAxMzAuOTYyIDUzLjY1NCA1My42NTQgMTMwLjk2MiA1My42NTRaJy8+PC9zdmc+&quot;);"></span><span class="header-search-button__text">Søk</span></button><div id="login" class="bank-buttons" data-gotourl=""><button class="ffe-button ffe-button--action bank-buttons__button bank-buttons__button--customer"><span class="ffe-button__label">Bli kunde</span></button><button id="login-button" class="bank-buttons__button bank-buttons__button--login" aria-expanded="false" aria-controls="login-choices" aria-label="Logg inn"><span>Logg inn</span></button><section id="login-choices" aria-labelledby="login-button" role="region"></section></div></div></div></div><div id="header-searcharea"></div></header><div class="sb1-story__body responsive-grid sb1-story__body"><div class="block--full block"><div class="block-media block-media--visible  "><div class="block-media__image  "><div class="image "><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container 
+                        image__background 
+                        " style="background-image: url(&quot;/content/dam/SB1/foto/profilbilder-liggende/Student.jpg.thumb.1280.2276.jpg&quot;);"></div></div></figure></div></div></div><div class="block-media__overlay block-media__overlay-50"></div></div><div class="block-content block-content--center 
+                                     
+                                    
+                                     "><div class="responsive-grid"><div class="text"><div class="text-content " data-rte-editelement="true"><h1>Teknologifond: Kan festen fortsette?</h1>
+</div><div class="glossary-backdrop " style="display: none;"></div><div class="glossary-modal" style="display: none; position: absolute; top: 0px; left: 0px;"><div class="glossary-modal__header"><p class="glossary-modal__title"></p><button aria-label="Lukk ordforklaring" class="glossary-modal__close"><span role="img" aria-label="Lukk" aria-hidden="true" class="ffe-icons ffe-icons--md" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik00ODAtNDM3Ljg0NyAyNzcuMDc2LTIzNC45MjRxLTguMzA3IDguMzA4LTIwLjg4NCA4LjUtMTIuNTc2LjE5My0yMS4yNjgtOC41LTguNjkzLTguNjkyLTguNjkzLTIxLjA3NnQ4LjY5My0yMS4wNzZMNDM3Ljg0Ny00ODAgMjM0LjkyNC02ODIuOTI0cS04LjMwOC04LjMwNy04LjUtMjAuODg0LS4xOTMtMTIuNTc2IDguNS0yMS4yNjggOC42OTItOC42OTMgMjEuMDc2LTguNjkzdDIxLjA3NiA4LjY5M0w0ODAtNTIyLjE1M2wyMDIuOTI0LTIwMi45MjNxOC4zMDctOC4zMDggMjAuODg0LTguNSAxMi41NzYtLjE5MyAyMS4yNjggOC41IDguNjkzIDguNjkyIDguNjkzIDIxLjA3NnQtOC42OTMgMjEuMDc2TDUyMi4xNTMtNDgwbDIwMi45MjMgMjAyLjkyNHE4LjMwOCA4LjMwNyA4LjUgMjAuODg0LjE5MyAxMi41NzYtOC41IDIxLjI2OC04LjY5MiA4LjY5My0yMS4wNzYgOC42OTN0LTIxLjA3Ni04LjY5M0w0ODAtNDM3Ljg0N1oiLz48L3N2Zz4=&quot;);"></span></button></div><p class="glossary-modal__description"></p></div></div></div></div></div><div class="text"><div class="text-content " data-rte-editelement="true"><p><span class="main-lead">Teknologifond har levert skyhøy avkastning til mange sparere de siste årene – og mulighet til å investere i selskaper som former fremtiden vår. Kan utviklingen fortsette i samme tempo?&nbsp;</span></p>
+</div><div class="glossary-backdrop " style="display: none;"></div><div class="glossary-modal" style="display: none; position: absolute; top: 0px; left: 0px;"><div class="glossary-modal__header"><p class="glossary-modal__title"></p><button aria-label="Lukk ordforklaring" class="glossary-modal__close"><span role="img" aria-label="Lukk" aria-hidden="true" class="ffe-icons ffe-icons--md" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik00ODAtNDM3Ljg0NyAyNzcuMDc2LTIzNC45MjRxLTguMzA3IDguMzA4LTIwLjg4NCA4LjUtMTIuNTc2LjE5My0yMS4yNjgtOC41LTguNjkzLTguNjkyLTguNjkzLTIxLjA3NnQ4LjY5My0yMS4wNzZMNDM3Ljg0Ny00ODAgMjM0LjkyNC02ODIuOTI0cS04LjMwOC04LjMwNy04LjUtMjAuODg0LS4xOTMtMTIuNTc2IDguNS0yMS4yNjggOC42OTItOC42OTMgMjEuMDc2LTguNjkzdDIxLjA3NiA4LjY5M0w0ODAtNTIyLjE1M2wyMDIuOTI0LTIwMi45MjNxOC4zMDctOC4zMDggMjAuODg0LTguNSAxMi41NzYtLjE5MyAyMS4yNjggOC41IDguNjkzIDguNjkyIDguNjkzIDIxLjA3NnQtOC42OTMgMjEuMDc2TDUyMi4xNTMtNDgwbDIwMi45MjMgMjAyLjkyNHE4LjMwOCA4LjMwNyA4LjUgMjAuODg0LjE5MyAxMi41NzYtOC41IDIxLjI2OC04LjY5MiA4LjY5My0yMS4wNzYgOC42OTN0LTIxLjA3Ni04LjY5M0w0ODAtNDM3Ljg0N1oiLz48L3N2Zz4=&quot;);"></span></button></div><p class="glossary-modal__description"></p></div></div><div class="text"><div class="text-content " data-rte-editelement="true"><p>For ti år siden utgjorde teknologiselskaper nesten 20 prosent av <span class="glossary-word"><button class="glossary-word__button" aria-label="Åpne ordforklaring for S&amp;P 500-indeksen">S&amp;P 500-indeksen</button></span>.&nbsp;I dag er andelen over 35 prosent – noe som forteller hvor mye raskere «teknologibransjen» har vokst enn resten av markedet.</p>
+<p>– Teknologisektoren har vært motoren i aksjemarkedet de siste årene. De største selskapene har stått for en stor del av verdiskapingen globalt, og driver mye av utviklingen vi ser i både økonomien og samfunnet, sier Eskil Angset, som er ansvarlig forvalter for indeksfond i SpareBank 1.</p>
+</div><div class="glossary-backdrop " style="display: none;"></div><div class="glossary-modal" style="display: none; position: absolute; top: 0px; left: 0px;"><div class="glossary-modal__header"><p class="glossary-modal__title">S&amp;P 500-indeksen</p><button aria-label="Lukk ordforklaring" class="glossary-modal__close"><span role="img" aria-label="Lukk" aria-hidden="true" class="ffe-icons ffe-icons--md" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik00ODAtNDM3Ljg0NyAyNzcuMDc2LTIzNC45MjRxLTguMzA3IDguMzA4LTIwLjg4NCA4LjUtMTIuNTc2LjE5My0yMS4yNjgtOC41LTguNjkzLTguNjkyLTguNjkzLTIxLjA3NnQ4LjY5My0yMS4wNzZMNDM3Ljg0Ny00ODAgMjM0LjkyNC02ODIuOTI0cS04LjMwOC04LjMwNy04LjUtMjAuODg0LS4xOTMtMTIuNTc2IDguNS0yMS4yNjggOC42OTItOC42OTMgMjEuMDc2LTguNjkzdDIxLjA3NiA4LjY5M0w0ODAtNTIyLjE1M2wyMDIuOTI0LTIwMi45MjNxOC4zMDctOC4zMDggMjAuODg0LTguNSAxMi41NzYtLjE5MyAyMS4yNjggOC41IDguNjkzIDguNjkyIDguNjkzIDIxLjA3NnQtOC42OTMgMjEuMDc2TDUyMi4xNTMtNDgwbDIwMi45MjMgMjAyLjkyNHE4LjMwOCA4LjMwNyA4LjUgMjAuODg0LjE5MyAxMi41NzYtOC41IDIxLjI2OC04LjY5MiA4LjY5My0yMS4wNzYgOC42OTN0LTIxLjA3Ni04LjY5M0w0ODAtNDM3Ljg0N1oiLz48L3N2Zz4=&quot;);"></span></button></div><p class="glossary-modal__description">S&amp;P 500 er en amerikansk aksjeindeks som viser samlet kursutvikling for 500 store og sentrale børsnoterte selskaper i USA. Den brukes til å gi et bilde av hvordan det amerikanske aksjemarkedet utvikler seg.</p></div></div><div class="image image--center" style="max-width: 350px;"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/Forvaltning/Forvaltning_Eskil_Angset_Usymetrisk.png" alt="" class="image--responsive " style="max-width: 350px;"></div></div></figure></div></div><div class="button center"><a class="ffe-button ffe-button--primary  id-182483085" href="/nb/bank/privat/sparing/spare-i-fond/indeksfond.html" rel="" target=""><span class="ffe-button__label">Her kan du lese mer om indeksfond</span></a></div><div class="text"><div class="text-content " data-rte-editelement="true"><h2>Fra nisjefond til allemannseie</h2>
+<p>Å sette en andel av sparingen sin i teknologifond har blitt et naturlig valg for mange som skal spare langsiktig. Forrige måned var to av de ti mest populære fondene blant SpareBank 1s kunder teknologifond.<i></i></p>
+<p>– Teknologifond har levert svært høy avkastning over tid, og det er nok den viktigste årsaken til at de har blitt så populære. Samtidig investerer fondene i kjente selskaper mange kjenner fra hverdagen – som Apple og Microsoft.</p>
+<p>– I tillegg oppleves teknologi som fremtidsrettet: sparepengene dine blir investert i innovasjon, digitalisering og de selskapene som driver utviklingen fremover. Det er det mange som synes er spennende, sier Eskil.</p>
+</div><div class="glossary-backdrop " style="display: none;"></div><div class="glossary-modal" style="display: none; position: absolute; top: 0px; left: 0px;"><div class="glossary-modal__header"><p class="glossary-modal__title"></p><button aria-label="Lukk ordforklaring" class="glossary-modal__close"><span role="img" aria-label="Lukk" aria-hidden="true" class="ffe-icons ffe-icons--md" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik00ODAtNDM3Ljg0NyAyNzcuMDc2LTIzNC45MjRxLTguMzA3IDguMzA4LTIwLjg4NCA4LjUtMTIuNTc2LjE5My0yMS4yNjgtOC41LTguNjkzLTguNjkyLTguNjkzLTIxLjA3NnQ4LjY5My0yMS4wNzZMNDM3Ljg0Ny00ODAgMjM0LjkyNC02ODIuOTI0cS04LjMwOC04LjMwNy04LjUtMjAuODg0LS4xOTMtMTIuNTc2IDguNS0yMS4yNjggOC42OTItOC42OTMgMjEuMDc2LTguNjkzdDIxLjA3NiA4LjY5M0w0ODAtNTIyLjE1M2wyMDIuOTI0LTIwMi45MjNxOC4zMDctOC4zMDggMjAuODg0LTguNSAxMi41NzYtLjE5MyAyMS4yNjggOC41IDguNjkzIDguNjkyIDguNjkzIDIxLjA3NnQtOC42OTMgMjEuMDc2TDUyMi4xNTMtNDgwbDIwMi45MjMgMjAyLjkyNHE4LjMwOCA4LjMwNyA4LjUgMjAuODg0LjE5MyAxMi41NzYtOC41IDIxLjI2OC04LjY5MiA4LjY5My0yMS4wNzYgOC42OTN0LTIxLjA3Ni04LjY5M0w0ODAtNDM3Ljg0N1oiLz48L3N2Zz4=&quot;);"></span></button></div><p class="glossary-modal__description"></p></div></div><div class="image "><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/Forvaltning/graferogillustrasjoner/Forvaltning_Graf_Teknologisektoren.png" alt="" class="image--responsive image--squared" style="max-width: 100%;"></div></div><figcaption class="image__text">Teknologisektoren (MSCI ACWI Information Technology Index, i amerikanske dollar) har levert en gjennomsnittlig årlig avkastning på rundt 22,4 prosent de siste ti årene. Tilsvarende har verdensindeksen (MSCI ACWI Index, i amerikanske dollar) steget med rundt 12,1 prosent årlig i samme periode. Kilde: MSCI</figcaption></figure></div></div><div class="text"><div class="text-content " data-rte-editelement="true"><h2>Fremtidsutsiktene for teknologifondene</h2>
+<p>Etter flere år med sterk vekst og et rekorddyrt aksjemarked i USA, er det mye spekulasjoner om hvordan teknologisektoren vil utvikle seg videre.</p>
+<p>Teknologisektoren har fortsatt godt grunnlag for vekst, men også større risiko for svingninger. Derfor er det viktig å ha et langsiktig perspektiv når man sparer i teknologifond, påpeker Eskil:</p>
+<p>– Teknologisektoren har hatt en eksepsjonell utvikling, drevet av enorm verdiskaping hos de aller største amerikanske «tech-selskapene» – som fikk kallenavnet «<span class="glossary-word"><button class="glossary-word__button" aria-label="Åpne ordforklaring for Magnificent 7">Magnificent 7</button></span>».</p>
+<p>– Ingen vet nøyaktig hvordan avkastningen blir fremover, men sterke trender som kunstig intelligens og digital infrastruktur vil fortsatt drive sektoren. Teknologifond kan derfor være attraktive å spare i, så lenge man har realistiske forventninger og er forberedt på at utviklingen kan svinge mer enn tidligere.</p>
+</div><div class="glossary-backdrop " style="display: none;"></div><div class="glossary-modal" style="display: none; position: absolute; top: 0px; left: 0px;"><div class="glossary-modal__header"><p class="glossary-modal__title">Magnificent 7</p><button aria-label="Lukk ordforklaring" class="glossary-modal__close"><span role="img" aria-label="Lukk" aria-hidden="true" class="ffe-icons ffe-icons--md" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik00ODAtNDM3Ljg0NyAyNzcuMDc2LTIzNC45MjRxLTguMzA3IDguMzA4LTIwLjg4NCA4LjUtMTIuNTc2LjE5My0yMS4yNjgtOC41LTguNjkzLTguNjkyLTguNjkzLTIxLjA3NnQ4LjY5My0yMS4wNzZMNDM3Ljg0Ny00ODAgMjM0LjkyNC02ODIuOTI0cS04LjMwOC04LjMwNy04LjUtMjAuODg0LS4xOTMtMTIuNTc2IDguNS0yMS4yNjggOC42OTItOC42OTMgMjEuMDc2LTguNjkzdDIxLjA3NiA4LjY5M0w0ODAtNTIyLjE1M2wyMDIuOTI0LTIwMi45MjNxOC4zMDctOC4zMDggMjAuODg0LTguNSAxMi41NzYtLjE5MyAyMS4yNjggOC41IDguNjkzIDguNjkyIDguNjkzIDIxLjA3NnQtOC42OTMgMjEuMDc2TDUyMi4xNTMtNDgwbDIwMi45MjMgMjAyLjkyNHE4LjMwOCA4LjMwNyA4LjUgMjAuODg0LjE5MyAxMi41NzYtOC41IDIxLjI2OC04LjY5MiA4LjY5My0yMS4wNzYgOC42OTN0LTIxLjA3Ni04LjY5M0w0ODAtNDM3Ljg0N1oiLz48L3N2Zz4=&quot;);"></span></button></div><p class="glossary-modal__description">De syv største og mest innflytelsesrike teknologiselskapene i USA blir ofte kalt for Magnificent 7. Dette er Alphabet (Google), Amazon, Apple, Meta (Facebook), Microsoft, Nvidia og Tesla.</p></div></div><section class="quote" aria-label="Eskil Angset, ansvarlig forvalter for SpareBank 1s indeksfond quote"><blockquote class="bio-quote   quote__text--medium quote-image--right"><div class="quote__content"><div class="quote__text"><span>– Litt spissformulert bruker jeg å si at teknologi passer for deg som vil ha fart, spenning og innovasjon – men som også skjønner at veien frem kan by på litt mer svingninger og turbulens.</span></div><div class="quote__reference"><div class="quote__reference-person"><span class="quote__name">Eskil Angset, ansvarlig forvalter for SpareBank 1s indeksfond</span></div></div></div><button class="button--open-modal">Les mer om Eskil Angset, ansvarlig forvalter for SpareBank 1s indeksfond</button></blockquote></section><div class="text"><div class="text-content " data-rte-editelement="true"><p>Han understreker at teknologifond eventuelt bør inngå som en del av en bredere portefølje, sammen med fond som investerer i ulike sektorer og regioner.</p>
+</div><div class="glossary-backdrop " style="display: none;"></div><div class="glossary-modal" style="display: none; position: absolute; top: 0px; left: 0px;"><div class="glossary-modal__header"><p class="glossary-modal__title"></p><button aria-label="Lukk ordforklaring" class="glossary-modal__close"><span role="img" aria-label="Lukk" aria-hidden="true" class="ffe-icons ffe-icons--md" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik00ODAtNDM3Ljg0NyAyNzcuMDc2LTIzNC45MjRxLTguMzA3IDguMzA4LTIwLjg4NCA4LjUtMTIuNTc2LjE5My0yMS4yNjgtOC41LTguNjkzLTguNjkyLTguNjkzLTIxLjA3NnQ4LjY5My0yMS4wNzZMNDM3Ljg0Ny00ODAgMjM0LjkyNC02ODIuOTI0cS04LjMwOC04LjMwNy04LjUtMjAuODg0LS4xOTMtMTIuNTc2IDguNS0yMS4yNjggOC42OTItOC42OTMgMjEuMDc2LTguNjkzdDIxLjA3NiA4LjY5M0w0ODAtNTIyLjE1M2wyMDIuOTI0LTIwMi45MjNxOC4zMDctOC4zMDggMjAuODg0LTguNSAxMi41NzYtLjE5MyAyMS4yNjggOC41IDguNjkzIDguNjkyIDguNjkzIDIxLjA3NnQtOC42OTMgMjEuMDc2TDUyMi4xNTMtNDgwbDIwMi45MjMgMjAyLjkyNHE4LjMwOCA4LjMwNyA4LjUgMjAuODg0LjE5MyAxMi41NzYtOC41IDIxLjI2OC04LjY5MiA4LjY5My0yMS4wNzYgOC42OTN0LTIxLjA3Ni04LjY5M0w0ODAtNDM3Ljg0N1oiLz48L3N2Zz4=&quot;);"></span></button></div><p class="glossary-modal__description"></p></div></div><div class="button center"><a class="ffe-button ffe-button--primary  id-1388747216" href="/nb/bank/privat/sparing/spare-i-fond.html" rel="" target=""><span class="ffe-button__label">Kom raskt i gang med fondssparing her</span></a></div><div class="text"><div class="text-content " data-rte-editelement="true"><h2>Har du oppdaget SpareBank 1 Indeks Teknologi?</h2>
+<p>I høst ble det nye indeksfondet SpareBank 1 Indeks Teknologi lansert. </p>
+<p>Her får du muligheten til å investere bredt i noen av verdens mest innovative teknologiselskaper, og på en enkel måte ta del i utviklingen som former fremtiden, forteller Eskil:</p>
+<p>– SB1 Indeks Teknologi skiller seg litt ut fra mange andre teknologifond ved å være bredere sammensatt. Fondet inkluderer over 200 forskjellige teknologiselskaper fra hele verden – både i utviklede og fremvoksende markeder.</p>
+<p>– Da blir sparepengene dine fordelt bredere enn i mange andre teknologifond, som ofte er enda mer konsentrert mot et fåtall amerikanske selskaper, forteller Eskil.</p>
+</div><div class="glossary-backdrop " style="display: none;"></div><div class="glossary-modal" style="display: none; position: absolute; top: 0px; left: 0px;"><div class="glossary-modal__header"><p class="glossary-modal__title"></p><button aria-label="Lukk ordforklaring" class="glossary-modal__close"><span role="img" aria-label="Lukk" aria-hidden="true" class="ffe-icons ffe-icons--md" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik00ODAtNDM3Ljg0NyAyNzcuMDc2LTIzNC45MjRxLTguMzA3IDguMzA4LTIwLjg4NCA4LjUtMTIuNTc2LjE5My0yMS4yNjgtOC41LTguNjkzLTguNjkyLTguNjkzLTIxLjA3NnQ4LjY5My0yMS4wNzZMNDM3Ljg0Ny00ODAgMjM0LjkyNC02ODIuOTI0cS04LjMwOC04LjMwNy04LjUtMjAuODg0LS4xOTMtMTIuNTc2IDguNS0yMS4yNjggOC42OTItOC42OTMgMjEuMDc2LTguNjkzdDIxLjA3NiA4LjY5M0w0ODAtNTIyLjE1M2wyMDIuOTI0LTIwMi45MjNxOC4zMDctOC4zMDggMjAuODg0LTguNSAxMi41NzYtLjE5MyAyMS4yNjggOC41IDguNjkzIDguNjkyIDguNjkzIDIxLjA3NnQtOC42OTMgMjEuMDc2TDUyMi4xNTMtNDgwbDIwMi45MjMgMjAyLjkyNHE4LjMwOCA4LjMwNyA4LjUgMjAuODg0LjE5MyAxMi41NzYtOC41IDIxLjI2OC04LjY5MiA4LjY5My0yMS4wNzYgOC42OTN0LTIxLjA3Ni04LjY5M0w0ODAtNDM3Ljg0N1oiLz48L3N2Zz4=&quot;);"></span></button></div><p class="glossary-modal__description"></p></div></div><div class="image image--center" style="max-width: 535px;"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/Forvaltning/graferogillustrasjoner/Forvaltning_SB1TeknologiIndeks_topp10_17.11.25.png" alt="" class="image--responsive image--squared" style="max-width: 535px;"></div></div><figcaption class="image__text">Kilde: SpareBank 1 Forvaltning, 16. november 2025. Oppdatert liste, og mer informasjon om innhold, finner du alltid i fondsoversikten.</figcaption></figure></div></div><div class="button center"><a class="ffe-button ffe-button--primary  id-1100171972" href="/nb/bank/privat/sparing/spare-i-fond/fondsoversikt.html" rel="" target=""><span class="ffe-button__label">Du finner SpareBank 1 Indeks Teknologi her i fondsoversikten</span></a></div><div class="button center"><a class="ffe-button ffe-button--secondary  id-234504857" href="/nb/bank/privat/sparing/markedsnytt.html" rel="" target=""><span class="ffe-button__label">Les mer om sparing og investering på Markedsnytt</span></a></div><div class="text"><div class="text-content " data-rte-editelement="true"><p><i>Selv om aksjemarkedet har gått bra historisk er det ingen garanti for at det vil gjøre det i fremtiden. Avkastningen påvirkes av markedsutviklingen, risikoprofil på din investering, forvalters dyktighet og kostnader. Avkastningen kan bli negativ.</i></p>
+<p><i>Innholdet i denne artikkelen er verken ment som investeringsråd eller anbefalinger. Har du noen spørsmål om investeringer, bør du kontakte en finansrådgiver som kjenner deg og din situasjon.</i></p>
+</div><div class="glossary-backdrop " style="display: none;"></div><div class="glossary-modal" style="display: none; position: absolute; top: 0px; left: 0px;"><div class="glossary-modal__header"><p class="glossary-modal__title"></p><button aria-label="Lukk ordforklaring" class="glossary-modal__close"><span role="img" aria-label="Lukk" aria-hidden="true" class="ffe-icons ffe-icons--md" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik00ODAtNDM3Ljg0NyAyNzcuMDc2LTIzNC45MjRxLTguMzA3IDguMzA4LTIwLjg4NCA4LjUtMTIuNTc2LjE5My0yMS4yNjgtOC41LTguNjkzLTguNjkyLTguNjkzLTIxLjA3NnQ4LjY5My0yMS4wNzZMNDM3Ljg0Ny00ODAgMjM0LjkyNC02ODIuOTI0cS04LjMwOC04LjMwNy04LjUtMjAuODg0LS4xOTMtMTIuNTc2IDguNS0yMS4yNjggOC42OTItOC42OTMgMjEuMDc2LTguNjkzdDIxLjA3NiA4LjY5M0w0ODAtNTIyLjE1M2wyMDIuOTI0LTIwMi45MjNxOC4zMDctOC4zMDggMjAuODg0LTguNSAxMi41NzYtLjE5MyAyMS4yNjggOC41IDguNjkzIDguNjkyIDguNjkzIDIxLjA3NnQtOC42OTMgMjEuMDc2TDUyMi4xNTMtNDgwbDIwMi45MjMgMjAyLjkyNHE4LjMwOCA4LjMwNyA4LjUgMjAuODg0LjE5MyAxMi41NzYtOC41IDIxLjI2OC04LjY5MiA4LjY5My0yMS4wNzYgOC42OTN0LTIxLjA3Ni04LjY5M0w0ODAtNDM3Ljg0N1oiLz48L3N2Zz4=&quot;);"></span></button></div><p class="glossary-modal__description"></p></div></div></div><footer class="footer" aria-hidden="false"><div class="ffe-grid"><div class="footer-columns__top ffe-grid__row"><div class="ffe-grid__col ffe-grid__col--sm-12 ffe-grid__col--sm-offset-0"><div class="ffe-grid"><div class="ffe-grid__row"><div class="ffe-grid__col footer-columns__ffe-col ffe-grid__col--sm-12 ffe-grid__col--sm-offset-0"><div class="footer-columns__column"><h2 class="ffe-h2 ffe-h4 footer-columns__links-header">Snarveier</h2><ul class="footer-columns__link-list"><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/kundeservice/bestill/bli-kunde.html">Bli kunde </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/kundeservice/verktoy/sperre-kort.html">Sperre kort </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/forsikring/meld-skade.html">Meld skade </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/kundeservice/bestill/prisliste.html">Prisliste </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/kundeservice.html">Kundeservice </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/kundeservice/verktoy/klager.html">Klage </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/svindel.html">Svindel </a></li></ul></div><div class="footer-columns__column"><h2 class="ffe-h2 ffe-h4 footer-columns__links-header">Logg inn</h2><ul class="footer-columns__link-list"><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/innlogging.html">Nettbank privat </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/bedrift/innlogging.html">Nettbank bedrift </a></li><li><a class="ffe-link-text footer-columns__link" href="https://kundeforsikring.sparebank1.no">Forsikring </a></li><li><a class="ffe-link-text footer-columns__link" href="https://kundeforsikring.sparebank1.no/privat/sparing">Pensjon </a></li></ul></div><div class="footer-columns__column footer-columns__column--social-media"><h2 class="ffe-h2 ffe-h4 footer-columns__links-header">Sosiale medier</h2><ul class="footer-columns__link-list footer-columns__link-list--horizontal"><li><a href="https://no.linkedin.com/company/sparebank-1" target="_blank" rel="noopener" title="Linkedin"><div class="footer-columns__link-image"><div class="image "><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="lazyload-placeholder"></div></div></figure></div></div> </div></a></li><li><a href="https://www.youtube.com/channel/UCdfZfi4HC6bK0-OfRcDJSzg" target="_blank" rel="noopener" title="YouTube"><div class="footer-columns__link-image"><div class="image "><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="lazyload-placeholder"></div></div></figure></div></div> </div></a></li></ul></div></div></div></div></div></div><hr class="footer-columns__divider"><div class="footer-columns__bottom ffe-grid__row"><div class="ffe-grid__col ffe-grid__col--sm-10 ffe-grid__col--sm-offset-1 ffe-grid__col--center"><div class="footer-columns__column"><ul class="footer-columns__link-list footer-columns__link-list--horizontal footer-columns__link-list--wrap"><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/om-oss/om-banken/selskapsinformasjon.html">Selskapsinformasjon </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/om-oss/personvern/generelle-vilkar.html">Vilkår for bruk av nettsiden </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/om-oss/personvern.html">Personvern </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/om-oss/personvern.html#cookies">Informasjonskapsler </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/bedrift/open-api.html">For utviklere </a></li></ul></div></div></div></div><div class="footer-info">SpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo</div></footer> </main>
+    <script>
+    window.SB1.lang = {
+        BANK_PICKER_MODAL_HD: "For å gå videre - velg en bank",
+        BANK_PICKER_MODAL_HD_PREFILLED: "For å gå videre...",
+        CHOOSE_BANK: "Velg en av bankene som tilbyr produktet for å gå videre.",
+        'Our best choice': "Gå til banken du var hos sist",
+        'More choices': "Se alle banker",
+        HIDE_CHOICES: "Skjul bankene",
+        BANK_PICKER_POSTAL_LABEL: "Ditt postnummer",
+        BANK_CHOICE_PLACEHOLDER: "Postnummer",
+        BANK_CHOICE_PLACEHOLDER_POSITION: "Din posisjon",
+        BANK_CHOICE_FORTSETT: "Fortsett til",
+        BANK_CHOICE_FILTERED_LIST: "Se resten av bankene",
+        BANK_CHOICE_POSITION_ACCESS: "Tips! Tillatt nettleseren å hente din stedsinformasjon.",
+        BANK_CHOICE_POSITION_API_FAIL: "Vi finner ikke posisjonen din. Prøv å skriv et postnummer i stedet!",
+        BANK_CHOICE_POSITION_BTN: "Bruk min posisjon",
+        POSTAL_CODE_ERROR: "Skriv inn et gyldig postnummer (4 siffer).",
+        MORE_ABOUT: "Les mer om",
+        MODAL_CLOSE: "Lukk",
+        SUMMARY_EXPAND: "Utvid",
+        SUMMARY_HEADER: "Kort oppsummert",
+        SUMMARY_DISCLAIMER: "Denne oppsummeringen er generert av kunstig intelligens (KI) og kvalitetssikret av redaktørene våre."
+    };
+</script>
+
+</div>
+<script type="text/javascript" async="" src="/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.js"></script>
+<script type="text/javascript" async="" src="/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/vendors_bundle.1156912316.js"></script>
+
+
+
+
+
+<!-- Remove header and footer inside Mobilbank app, Remove data-sly-test config when tested ok in mobile app in prod -->
+<script>
+    (function () { // Wrap in IIFE to avoid leaking variables to global scope
+        // Detect Mobilbank user agent
+        const isMobilbank = /mobilbank\//i.test(navigator.userAgent);
+        if (!isMobilbank) return;
+
+        document.documentElement.classList.add('in-mobilbank');
+        try {
+            if (!document.getElementById('in-mobilbank-style')) {
+                const style = document.createElement('style');
+                style.id = 'in-mobilbank-style';
+                style.textContent = `
+                            html.in-mobilbank .footer,
+                            html.in-mobilbank #outer-main-wrap header.header,
+                            html.in-mobilbank #outer-main-wrap .market-nav,
+                            html.in-mobilbank #outer-main-wrap .global-message,
+                            html.in-mobilbank #outer-main-wrap > .main > .to-parent,
+                            html.in-mobilbank #dialoghub-iframe {
+                              display: none !important;
+                            }
+                        `;
+                (document.head || document.documentElement).appendChild(style);
+            }
+        } catch (e) {
+            console.error('Failed to remove Nettsider header for User Agent Mobilbank: ', e);
+        }
+    })();
+</script>
+            
+    
+    
+
+
+
+    <script type="text/javascript">
+        const matchV2 = document.cookie.match(new RegExp(`-v2=(.*?)`));
+        let hasOptinCookie = false;
+        if(matchV2) {
+            hasOptinCookie = true;
+        }else{
+            const match = document.cookie.match(new RegExp(`=(.*?)-v`));
+            hasOptinCookie = (match) ? true : false;
+        }
+
+        if (!hasOptinCookie){
+            // js fil
+            const scriptEle = document.createElement("script");
+            const JS_URL = "/sb1-nettsider-optin/bank/static/opt-in.js";
+            scriptEle.setAttribute("src", JS_URL);
+            scriptEle.setAttribute("type", "text/javascript");
+            scriptEle.setAttribute("async", true);
+            scriptEle.setAttribute("onerror", "optinScriptError=true;");
+
+            //css fil
+            const CSS_URL = "/sb1-nettsider-optin/bank/static/opt-in.css";
+            const cssEle = document.createElement('link');
+            cssEle.setAttribute('rel', 'stylesheet');
+            cssEle.setAttribute('onerror', 'optinScriptError=true;');
+            cssEle.setAttribute('property', 'stylesheet');
+            cssEle.setAttribute('media', 'screen,print');
+            cssEle.setAttribute('type', 'text/css');
+            cssEle.setAttribute('href', CSS_URL);
+
+            // div element
+            const divEle = document.createElement('div');
+            divEle.setAttribute('id', 'opt-in');
+            divEle.setAttribute('data-trigger-modal', 'true');
+
+            document.body.appendChild(divEle);
+            document.body.appendChild(cssEle);
+            document.body.appendChild(scriptEle);
+        }
+    </script>
+
+
+    
+
+    
+
+    
+    
+    
+
+            
+
+        
+    
+
+</body></html>

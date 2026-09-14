@@ -1,0 +1,13 @@
+https://www.sparebank1.no/nb/bank.sitemap.xml
+https://www.sparebank1.no/nb/hallingdal.sitemap.xml
+https://www.sparebank1.no/nb/ostlandet.sitemap.xml
+https://www.sparebank1.no/nb/nordmore.sitemap.xml
+https://www.sparebank1.no/nb/smn.sitemap.xml
+https://www.sparebank1.no/nb/sor-norge.sitemap.xml
+https://www.sparebank1.no/nb/ringerike-hadeland.sitemap.xml
+https://www.sparebank1.no/nb/ostfold-akershus.sitemap.xml
+https://www.sparebank1.no/nb/lom-skjaak.sitemap.xml
+https://www.sparebank1.no/nb/nord-norge.sitemap.xml
+https://www.sparebank1.no/nb/gudbrandsdal.sitemap.xml
+https://www.sparebank1.no/nb/helgeland.sitemap.xml
+https://www.sparebank1.no/nn/sogn-fjordane.sitemap.xml

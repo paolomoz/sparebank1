@@ -1,0 +1,1273 @@
+[
+ {
+  "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+  "pageType": "Tema",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "theme",
+  "h": 14,
+  "txt": 2947,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-bedriftsforsikring-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/bedriftsforsikring.html",
+  "pageType": "Tema",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 25,
+  "txt": 13912,
+  "comps": {
+   "feedback--layoutfaq": 11,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-bedriftskort-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/bedriftskort.html",
+  "pageType": "Kategori",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 12,
+  "txt": 1081,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/bedriftskort/kredittkort.html",
+  "pageType": "Produkt",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "product-b2b",
+  "h": 17,
+  "txt": 3254,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-betaling-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/betaling.html",
+  "pageType": "Kategori",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 19,
+  "txt": 1387,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/betaling/utenlandsbetaling.html",
+  "pageType": "Underkategori",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "product-b2b",
+  "h": 26,
+  "txt": 10438,
+  "comps": {
+   "feedback--layoutfaq": 9,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-daglig-drift-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/daglig-drift.html",
+  "pageType": "Kategori",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 19,
+  "txt": 1536,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift.html",
+  "pageType": "Marked",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "market-landing",
+  "h": 12,
+  "txt": 1192,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-bedrift-konto-bedriftskonto-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/konto/bedriftskonto.html",
+  "pageType": "Produkt",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "product",
+  "h": 11,
+  "txt": 1591,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-konto-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/konto.html",
+  "pageType": "Kategori",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 15,
+  "txt": 738,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+  "pageType": "Spørsmål",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "faq",
+  "h": 7,
+  "txt": 1698,
+  "comps": {
+   "feedback--layoutfaq": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+  "pageType": "Spørsmål",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "faq",
+  "h": 7,
+  "txt": 1490,
+  "comps": {
+   "feedback--layoutfaq": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+  "pageType": "Spørsmål",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "faq",
+  "h": 7,
+  "txt": 3516,
+  "comps": {
+   "feedback--layoutfaq": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+  "pageType": "Spørsmål",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "faq",
+  "h": 7,
+  "txt": 4050,
+  "comps": {
+   "feedback--layoutfaq": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-blir-jeg-bedriftskunde.html",
+  "pageType": "Spørsmål",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "faq",
+  "h": 7,
+  "txt": 81,
+  "comps": {
+   "feedback--layoutfaq": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
+  "pageType": "Spørsmål",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "faq",
+  "h": 7,
+  "txt": 685,
+  "comps": {
+   "feedback--layoutfaq": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankaxept.html",
+  "pageType": "Spørsmål",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "faq",
+  "h": 7,
+  "txt": 1723,
+  "comps": {
+   "feedback--layoutfaq": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode.html",
+  "pageType": "Spørsmål",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "faq",
+  "h": 7,
+  "txt": 522,
+  "comps": {
+   "feedback--layoutfaq": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan.html",
+  "pageType": "Spørsmål",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "faq",
+  "h": 7,
+  "txt": 3380,
+  "comps": {
+   "feedback--layoutfaq": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd.html",
+  "pageType": "Spørsmål",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "faq",
+  "h": 7,
+  "txt": 1385,
+  "comps": {
+   "feedback--layoutfaq": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift.html",
+  "pageType": "Spørsmål",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "faq",
+  "h": 7,
+  "txt": 1696,
+  "comps": {
+   "feedback--layoutfaq": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura.html",
+  "pageType": "Spørsmål",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "faq",
+  "h": 7,
+  "txt": 1869,
+  "comps": {
+   "feedback--layoutfaq": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice.html",
+  "pageType": "Kundeservice",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 22,
+  "txt": 4416,
+  "comps": {
+   "feedback--layoutfaq": 3
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering/bedriftslan.html",
+  "pageType": "Produkt",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "product-b2b",
+  "h": 20,
+  "txt": 5085,
+  "comps": {
+   "feedback--layoutfaq": 4,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-lan-finansiering-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering.html",
+  "pageType": "Produkt",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 21,
+  "txt": 1115,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering/kassekreditt.html",
+  "pageType": "Produkt",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "product",
+  "h": 18,
+  "txt": 3714,
+  "comps": {
+   "feedback--layoutfaq": 5,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-lan-finansiering-leasing-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering/leasing.html",
+  "pageType": "Produkt",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "product-b2b",
+  "h": 20,
+  "txt": 4482,
+  "comps": {
+   "feedback--layoutfaq": 5
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-open-api-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/open-api.html",
+  "pageType": "Produkt",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "footer-utility",
+  "h": 10,
+  "txt": 800,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-bedrift-pensjon-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/pensjon.html",
+  "pageType": "Kategori",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 24,
+  "txt": 2974,
+  "comps": {
+   "feedback--layoutfaq": 4,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-regnskap-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/regnskap.html",
+  "pageType": "Produkt",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 16,
+  "txt": 1581,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-sparing-investering-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/sparing-investering.html",
+  "pageType": "Kategori",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 13,
+  "txt": 555,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-starte-bedrift-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/starte-bedrift.html",
+  "pageType": "Produkt",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 12,
+  "txt": 1567,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+  "pageType": "Produkt",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "static-story",
+  "h": 26,
+  "txt": 6012,
+  "comps": {
+   "feedback--layoutfaq": 3,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-bedrift-tips-og-rad-html",
+  "url": "https://www.sparebank1.no/nb/bank/bedrift/tips-og-rad.html",
+  "pageType": "Oversikt side",
+  "market": "Bedrift",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 13,
+  "txt": 664,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-om-oss-hjemme-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/hjemme.html",
+  "pageType": "",
+  "market": "Om oss",
+  "fe": "frontend",
+  "fam": "om-oss",
+  "h": 12,
+  "txt": 2465,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-om-oss-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss.html",
+  "pageType": "Marked",
+  "market": "Om oss",
+  "fe": "base",
+  "fam": "market-landing",
+  "h": 11,
+  "txt": 937,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-om-oss-investor-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/investor.html",
+  "pageType": "Om oss",
+  "market": "Om oss",
+  "fe": "base",
+  "fam": "om-oss",
+  "h": 12,
+  "txt": 13132,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-om-oss-jobb-og-karriere-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/jobb-og-karriere.html",
+  "pageType": "Om oss",
+  "market": "Om oss",
+  "fe": "base",
+  "fam": "om-oss",
+  "h": 11,
+  "txt": 1230,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-.html",
+  "pageType": "",
+  "market": "Om oss",
+  "fe": "frontend",
+  "fam": "news-article",
+  "h": 13,
+  "txt": 3839,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.html",
+  "pageType": "",
+  "market": "Om oss",
+  "fe": "frontend",
+  "fam": "news-article",
+  "h": 12,
+  "txt": 4480,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html",
+  "pageType": "",
+  "market": "Om oss",
+  "fe": "frontend",
+  "fam": "news-article",
+  "h": 11,
+  "txt": 4313,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket.html",
+  "pageType": "",
+  "market": "Om oss",
+  "fe": "frontend",
+  "fam": "news-article",
+  "h": 5,
+  "txt": 6798,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+  "pageType": "",
+  "market": "Om oss",
+  "fe": "frontend",
+  "fam": "news-article",
+  "h": 9,
+  "txt": 4342,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.html",
+  "pageType": "",
+  "market": "Om oss",
+  "fe": "frontend",
+  "fam": "news-article",
+  "h": 8,
+  "txt": 4996,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-om-oss-nyheter-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.html",
+  "pageType": "",
+  "market": "Om oss",
+  "fe": "frontend",
+  "fam": "om-oss",
+  "h": 35,
+  "txt": 2735,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/om-banken/selskapsinformasjon.html",
+  "pageType": "Om oss",
+  "market": "Om oss",
+  "fe": "base",
+  "fam": "footer-utility",
+  "h": 5,
+  "txt": 1085,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-om-oss-personvern-generelle-vilkar-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/personvern/generelle-vilkar.html",
+  "pageType": "Om oss",
+  "market": "Om oss",
+  "fe": "base",
+  "fam": "footer-utility",
+  "h": 11,
+  "txt": 2121,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-om-oss-personvern-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/personvern.html",
+  "pageType": "Om oss",
+  "market": "Om oss",
+  "fe": "base",
+  "fam": "footer-utility",
+  "h": 42,
+  "txt": 20444,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-om-oss-presse-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/presse.html",
+  "pageType": "Om oss",
+  "market": "Om oss",
+  "fe": "base",
+  "fam": "om-oss",
+  "h": 8,
+  "txt": 983,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-om-oss-samfunnsansvar-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/samfunnsansvar.html",
+  "pageType": "Om oss",
+  "market": "Om oss",
+  "fe": "base",
+  "fam": "om-oss",
+  "h": 8,
+  "txt": 1263,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-om-oss-selskaper-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/selskaper.html",
+  "pageType": "Om oss",
+  "market": "Om oss",
+  "fe": "base",
+  "fam": "om-oss",
+  "h": 5,
+  "txt": 142,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-om-oss-vare-eksperter-html",
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/vare-eksperter.html",
+  "pageType": "Produkt",
+  "market": "Om oss",
+  "fe": "base",
+  "fam": "om-oss",
+  "h": 10,
+  "txt": 1476,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-privat-daglig-bruk-bankid-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/bankid.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 26,
+  "txt": 12450,
+  "comps": {
+   "feedback--layoutfaq": 12,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-daglig-bruk-bankkonto-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/bankkonto.html",
+  "pageType": "Underkategori",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 14,
+  "txt": 652,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-daglig-bruk-bankkort-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/bankkort.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 25,
+  "txt": 11577,
+  "comps": {
+   "feedback--layoutfaq": 14,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-daglig-bruk-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk.html",
+  "pageType": "Kategori",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 16,
+  "txt": 696,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-daglig-bruk-kredittkort-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/kredittkort.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 33,
+  "txt": 19494,
+  "comps": {
+   "feedback--layoutfaq": 17,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+  "pageType": "Tema",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "theme",
+  "h": 12,
+  "txt": 2646,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/mobilbank.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 19,
+  "txt": 9328,
+  "comps": {
+   "feedback--layoutfaq": 9,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-eiendom-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/eiendom.html",
+  "pageType": "Kategori",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 10,
+  "txt": 521,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-privat-forsikring-barneforsikring-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/barneforsikring.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 25,
+  "txt": 23376,
+  "comps": {
+   "feedback--layoutfaq": 11,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-forsikring-bilforsikring-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/bilforsikring.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 26,
+  "txt": 40195,
+  "comps": {
+   "feedback--layoutfaq": 20,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-forsikring-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/forsikring.html",
+  "pageType": "Kategori",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 36,
+  "txt": 26847,
+  "comps": {
+   "feedback--layoutfaq": 14,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+  "pageType": "Tema",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "theme",
+  "h": 13,
+  "txt": 1148,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-forsikring-innboforsikring-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/innboforsikring.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 24,
+  "txt": 29040,
+  "comps": {
+   "feedback--layoutfaq": 15,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-forsikring-kundehistorier-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/kundehistorier.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "static-story",
+  "h": 6,
+  "txt": 456,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade.html",
+  "pageType": "",
+  "market": "Privat",
+  "fe": "frontend",
+  "fam": "static-story",
+  "h": 9,
+  "txt": 4895,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-privat-forsikring-meld-skade-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/meld-skade.html",
+  "pageType": "Verktoy",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "footer-utility",
+  "h": 17,
+  "txt": 4574,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-forsikring-reiseforsikring-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/reiseforsikring.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 29,
+  "txt": 46854,
+  "comps": {
+   "feedback--layoutfaq": 26,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat.html",
+  "pageType": "Marked",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "market-landing",
+  "h": 15,
+  "txt": 1326,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "footer-utility",
+  "h": 9,
+  "txt": 865,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/prisliste.html",
+  "pageType": "Pristliste",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "footer-utility",
+  "h": 4,
+  "txt": 166,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-privat-kundeservice-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice.html",
+  "pageType": "Kundeservice",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 13,
+  "txt": 5340,
+  "comps": {
+   "feedback--layoutfaq": 3
+  }
+ },
+ {
+  "slug": "nb-bank-privat-kundeservice-kontakt-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/kontakt.html",
+  "pageType": "Basepage",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "static-story",
+  "h": 7,
+  "txt": 1358,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/iban-og-swift.html",
+  "pageType": "Verktoy",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "tool",
+  "h": 8,
+  "txt": 4688,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-kundeservice-verktoy-klager-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/klager.html",
+  "pageType": "Verktoy",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "footer-utility",
+  "h": 7,
+  "txt": 2267,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html",
+  "pageType": "Verktoy",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "tool",
+  "h": 8,
+  "txt": 393,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sperre-kort.html",
+  "pageType": "Verktoy",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "footer-utility",
+  "h": 10,
+  "txt": 1753,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/valutakalkulator.html",
+  "pageType": "Verktoy",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "tool",
+  "h": 9,
+  "txt": 3558,
+  "comps": {
+   "feedback--layoutfaq": 2,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-lan-billan-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/lan/billan.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 20,
+  "txt": 6572,
+  "comps": {
+   "feedback--layoutfaq": 7,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-lan-boliglan-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/lan/boliglan.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 21,
+  "txt": 17486,
+  "comps": {
+   "feedback--layoutfaq": 15,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-lan-forbrukslan-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/lan/forbrukslan.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 25,
+  "txt": 9511,
+  "comps": {
+   "feedback--layoutfaq": 7,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-lan-gronne-lan-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/lan/gronne-lan.html",
+  "pageType": "Underkategori",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 10,
+  "txt": 698,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-privat-lan-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/lan.html",
+  "pageType": "Kategori",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 21,
+  "txt": 2020,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-lan-lanekalkulator-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/lan/lanekalkulator.html",
+  "pageType": "Underkategori",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "tool",
+  "h": 10,
+  "txt": 2791,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-lan-refinansiering-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/lan/refinansiering.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 16,
+  "txt": 8433,
+  "comps": {
+   "feedback--layoutfaq": 10,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-lofavor-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/lofavor.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 22,
+  "txt": 4779,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/pensjon/egen-pensjonskonto.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 23,
+  "txt": 14139,
+  "comps": {
+   "feedback--layoutfaq": 8,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-pensjon-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/pensjon.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 25,
+  "txt": 20758,
+  "comps": {
+   "feedback--layoutfaq": 8,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.html",
+  "pageType": "",
+  "market": "Privat",
+  "fe": "frontend",
+  "fam": "theme",
+  "h": 10,
+  "txt": 3831,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-privat-private-banking-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/private-banking.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 15,
+  "txt": 6074,
+  "comps": {
+   "feedback--layoutfaq": 5
+  }
+ },
+ {
+  "slug": "nb-bank-privat-sparing-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/sparing.html",
+  "pageType": "Kategori",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 17,
+  "txt": 1324,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.html",
+  "pageType": "",
+  "market": "Privat",
+  "fe": "frontend",
+  "fam": "news-article",
+  "h": 10,
+  "txt": 7541,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.html",
+  "pageType": "",
+  "market": "Privat",
+  "fe": "frontend",
+  "fam": "news-article",
+  "h": 7,
+  "txt": 5234,
+  "comps": {}
+ },
+ {
+  "slug": "nb-bank-privat-sparing-markedsnytt-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt.html",
+  "pageType": "Produkt",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "listing",
+  "h": 21,
+  "txt": 3698,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-sparing-spare-i-fond-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/sparing/spare-i-fond.html",
+  "pageType": "Underkategori",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 28,
+  "txt": 15207,
+  "comps": {
+   "feedback--layoutfaq": 11,
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-sparing-spare-pa-konto-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/sparing/spare-pa-konto.html",
+  "pageType": "Underkategori",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 19,
+  "txt": 1725,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-sparing-spare-til-barn-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/sparing/spare-til-barn.html",
+  "pageType": "Underkategori",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "product",
+  "h": 14,
+  "txt": 789,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-svindel-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/svindel.html",
+  "pageType": "Kategori",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "footer-utility",
+  "h": 10,
+  "txt": 1278,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ },
+ {
+  "slug": "nb-bank-privat-tips-og-rad-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/tips-og-rad.html",
+  "pageType": "Oversikt side",
+  "market": "Privat",
+  "fe": "base",
+  "fam": "category-hub",
+  "h": 13,
+  "txt": 2619,
+  "comps": {
+   "feedback--layout1": 1
+  }
+ }
+]

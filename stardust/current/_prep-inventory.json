@@ -1,0 +1,872 @@
+{
+  "headingsRepeated": [
+    {
+      "level": 2,
+      "text": "Logg inn",
+      "pageCount": 100,
+      "pages": [
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "nb-bank-bedrift-bedriftsforsikring-html",
+        "nb-bank-bedrift-bedriftskort-html",
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-daglig-drift-html",
+        "nb-bank-bedrift-html"
+      ],
+      "domPaths": [
+        "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(2) > h2.ffe-h4",
+        "div.ffe-grid__col.ffe-grid__col--sm-12 > div.ffe-grid > div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(2) > h2.ffe-h2.ffe-h4"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "Sosiale medier",
+      "pageCount": 100,
+      "pages": [
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "nb-bank-bedrift-bedriftsforsikring-html",
+        "nb-bank-bedrift-bedriftskort-html",
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-daglig-drift-html",
+        "nb-bank-bedrift-html"
+      ],
+      "domPaths": [
+        "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column.footer-bottom__column-right:nth-child(2) > div.footer-bottom__column-links.footer-bottom__social-links > h2.ffe-h4",
+        "div.ffe-grid__col.ffe-grid__col--sm-12 > div.ffe-grid > div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column.footer-columns__column--social-media:nth-child(3) > h2.ffe-h2.ffe-h4"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "Bruk av informasjonskapsler",
+      "pageCount": 100,
+      "pages": [
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "nb-bank-bedrift-bedriftsforsikring-html",
+        "nb-bank-bedrift-bedriftskort-html",
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-daglig-drift-html",
+        "nb-bank-bedrift-html"
+      ],
+      "domPaths": [
+        "section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(2) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > span.optin-header-wrapper > h2.ffe-h3.optin-settings-header"
+      ]
+    },
+    {
+      "level": 3,
+      "text": "Teknisk",
+      "pageCount": 100,
+      "pages": [
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "nb-bank-bedrift-bedriftsforsikring-html",
+        "nb-bank-bedrift-bedriftskort-html",
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-daglig-drift-html",
+        "nb-bank-bedrift-html"
+      ],
+      "domPaths": [
+        "div.optin__pages.optin__pages--settings-page:nth-child(2) > section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(3) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > h3.ffe-h5.optin-settings__header"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "Kontakt oss",
+      "pageCount": 84,
+      "pages": [
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "nb-bank-bedrift-bedriftsforsikring-html",
+        "nb-bank-bedrift-bedriftskort-html",
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-daglig-drift-html",
+        "nb-bank-bedrift-html"
+      ],
+      "domPaths": [
+        "div#contact-us > div.contact-section > h2",
+        "div#outer-main-wrap > footer.footer-wrapper > div.footer-top.container-fluid:nth-child(1) > div.contact-section > h2"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "Hva synes du om denne siden?",
+      "pageCount": 58,
+      "pages": [
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "nb-bank-bedrift-bedriftsforsikring-html",
+        "nb-bank-bedrift-bedriftskort-html",
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-daglig-drift-html",
+        "nb-bank-bedrift-konto-bedriftskonto-html"
+      ],
+      "domPaths": [
+        "h2#question-kfewh",
+        "h2#question-dmjts",
+        "h2#question-hmjgh"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "Privat",
+      "pageCount": 54,
+      "pages": [
+        "nb-bank-om-oss-html",
+        "nb-bank-om-oss-investor-html",
+        "nb-bank-om-oss-jobb-og-karriere-html",
+        "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+        "nb-bank-om-oss-personvern-generelle-vilkar-html",
+        "nb-bank-om-oss-personvern-html",
+        "nb-bank-om-oss-presse-html",
+        "nb-bank-om-oss-samfunnsansvar-html"
+      ],
+      "domPaths": [
+        "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(1) > h2.ffe-h4"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "Bedrift",
+      "pageCount": 34,
+      "pages": [
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "nb-bank-bedrift-bedriftsforsikring-html",
+        "nb-bank-bedrift-bedriftskort-html",
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-daglig-drift-html",
+        "nb-bank-bedrift-html"
+      ],
+      "domPaths": [
+        "div.footer-bottom:nth-child(2) > div.bottom-content.container-fluid > div.footer-bottom__columns:nth-child(1) > div.footer-bottom__column:nth-child(1) > div.footer-bottom__column-links:nth-child(1) > h2.ffe-h4"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "Snarveier",
+      "pageCount": 24,
+      "pages": [
+        "nb-bank-bedrift-betaling-html",
+        "nb-bank-bedrift-daglig-drift-html",
+        "nb-bank-bedrift-html",
+        "nb-bank-bedrift-sparing-investering-html",
+        "nb-bank-om-oss-hjemme-html",
+        "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+        "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+        "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html"
+      ],
+      "domPaths": [
+        "main#main-content > div.shortcuts.parbase:nth-child(16) > div.aem-component-container > div.title.shortcuts-title:nth-child(1) > div.aem-component-container > h2.ffe-h2",
+        "main#main-content > div.shortcuts.parbase:nth-child(11) > div.aem-component-container > div.title.shortcuts-title:nth-child(1) > div.aem-component-container > h2.ffe-h2",
+        "div.columns-grid__wrap > div.ffe-grid.ffe-grid--gap-none > div.ffe-grid__row.columns-grid__row:nth-child(1) > div.columns-grid__column.ffe-grid__col--sm-12 > div.columns-grid__content.columns-grid__content--center > h2"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "Hva lurer andre på?",
+      "pageCount": 21,
+      "pages": [
+        "nb-bank-bedrift-bedriftsforsikring-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-lan-finansiering-leasing-html",
+        "nb-bank-bedrift-pensjon-html",
+        "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-daglig-bruk-kredittkort-html",
+        "nb-bank-privat-daglig-bruk-mobilbank-html"
+      ],
+      "domPaths": [
+        "main#main-content > div.faq.parbase:nth-child(11) > div > div.title:nth-child(1) > div.aem-component-container > h2.ffe-h2",
+        "main#main-content > div.faq.parbase:nth-child(13) > div > div.title:nth-child(1) > div.aem-component-container > h2.ffe-h2",
+        "main#main-content > div.faq.parbase:nth-child(8) > div > div.title:nth-child(1) > div.aem-component-container > h2.ffe-h2"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "Sammenlign priser",
+      "pageCount": 20,
+      "pages": [
+        "nb-bank-privat-daglig-bruk-bankid-html",
+        "nb-bank-privat-daglig-bruk-bankkonto-html",
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-daglig-bruk-kredittkort-html",
+        "nb-bank-privat-forsikring-bilforsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html",
+        "nb-bank-privat-html"
+      ],
+      "domPaths": [
+        "div.referance.reference:nth-child(19) > div.cq-dd-paragraph > div.text > div.aem-component-container.text-container > div.text-wrapper > h2",
+        "div.referance.reference:nth-child(13) > div.cq-dd-paragraph > div.text > div.aem-component-container.text-container > div.text-wrapper > h2",
+        "div.referance.reference:nth-child(22) > div.cq-dd-paragraph > div.text > div.aem-component-container.text-container > div.text-wrapper > h2"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "Se også",
+      "pageCount": 18,
+      "pages": [
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-daglig-drift-html",
+        "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+        "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+        "nb-bank-bedrift-lan-finansiering-leasing-html",
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-daglig-bruk-kredittkort-html"
+      ],
+      "domPaths": [
+        "div.related-products.parbase:nth-child(14) > div.related-products--wrapper.related-products--bgcolor > div.related-products__wrap > div.title:nth-child(1) > div.aem-component-container > h2.ffe-h2",
+        "div.columns-grid__wrap > div.ffe-grid.ffe-grid--gap-none > div.ffe-grid__row.columns-grid__row:nth-child(1) > div.columns-grid__column.ffe-grid__col--sm-12 > div.columns-grid__content.columns-grid__content--left > h2",
+        "div.columns-grid__wrap > div.ffe-grid.ffe-grid--gap-none > div.ffe-grid__row.columns-grid__row:nth-child(1) > div.columns-grid__column.ffe-grid__col--sm-12 > div.columns-grid__content.columns-grid__content--center > h2"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "Tips og råd",
+      "pageCount": 8,
+      "pages": [
+        "nb-bank-privat-eiendom-html",
+        "nb-bank-privat-lan-billan-html",
+        "nb-bank-privat-lan-boliglan-html",
+        "nb-bank-privat-lan-refinansiering-html",
+        "nb-bank-privat-sparing-html",
+        "nb-bank-privat-sparing-spare-i-fond-html",
+        "nb-bank-privat-sparing-spare-pa-konto-html",
+        "nb-bank-privat-sparing-spare-til-barn-html"
+      ],
+      "domPaths": [
+        "div.related-topics.parbase > div.related-topics__wrap > div.related-topics-container > div.title:nth-child(1) > div.aem-component-container > h2.ffe-h2",
+        "div.related-topics.parbase:nth-child(16) > div.related-topics__wrap > div.related-topics-container > div.title:nth-child(1) > div.aem-component-container > h2.ffe-h2",
+        "div.related-topics.parbase:nth-child(13) > div.related-topics__wrap > div.related-topics-container > div.title:nth-child(1) > div.aem-component-container > h2.ffe-h2"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "RELATERTE ARTIKLER",
+      "pageCount": 7,
+      "pages": [
+        "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+        "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+        "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+        "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+        "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+        "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+        "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html"
+      ],
+      "domPaths": [
+        "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1) > div.related-list > h2.ffe-h5.related-list__header"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "RELATERTE TEMA",
+      "pageCount": 7,
+      "pages": [
+        "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+        "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+        "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+        "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+        "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+        "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+        "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html"
+      ],
+      "domPaths": [
+        "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.tags:nth-child(2) > h2.ffe-h5.related-list__header"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "Forsikringsselskapet vårt er Fremtind",
+      "pageCount": 6,
+      "pages": [
+        "nb-bank-bedrift-bedriftsforsikring-html",
+        "nb-bank-privat-forsikring-barneforsikring-html",
+        "nb-bank-privat-forsikring-bilforsikring-html",
+        "nb-bank-privat-forsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html"
+      ],
+      "domPaths": [
+        "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(2) > div.columns-grid__content.columns-grid__content--middle > div.text > div.aem-component-container.text-container > div.text-wrapper > h2"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "Nyttige råd",
+      "pageCount": 4,
+      "pages": [
+        "nb-bank-privat-daglig-bruk-bankid-html",
+        "nb-bank-privat-daglig-bruk-bankkonto-html",
+        "nb-bank-privat-daglig-bruk-html",
+        "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html"
+      ],
+      "domPaths": [
+        "div.related-topics.parbase:nth-child(16) > div.related-topics__wrap > div.related-topics-container > div.title:nth-child(1) > div.aem-component-container > h2.ffe-h2",
+        "div.related-topics.parbase > div.related-topics__wrap > div.related-topics-container > div.title:nth-child(1) > div.aem-component-container > h2.ffe-h2",
+        "div.related-topics.parbase:nth-child(6) > div.related-topics__wrap > div.related-topics-container > div.title:nth-child(1) > div.aem-component-container > h2.ffe-h2"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "Blant Norges beste på skadeoppgjør",
+      "pageCount": 4,
+      "pages": [
+        "nb-bank-privat-forsikring-bilforsikring-html",
+        "nb-bank-privat-forsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html"
+      ],
+      "domPaths": [
+        "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(2) > div.columns-grid__content.columns-grid__content--start > div.text > div.aem-component-container.text-container > div.text-wrapper.max-width > h2"
+      ]
+    },
+    {
+      "level": 3,
+      "text": "Lurer du på hvilken type finansiering du skal velge?",
+      "pageCount": 3,
+      "pages": [
+        "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+        "nb-bank-bedrift-lan-finansiering-html",
+        "nb-bank-bedrift-lan-finansiering-kassekreditt-html"
+      ],
+      "domPaths": [
+        "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(2) > div.columns-grid__content.columns-grid__content--middle > div.text:nth-child(1) > div.aem-component-container.text-container > div.text-wrapper > h3"
+      ]
+    },
+    {
+      "level": 3,
+      "text": "Vilkår",
+      "pageCount": 3,
+      "pages": [
+        "nb-bank-privat-forsikring-barneforsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html"
+      ],
+      "domPaths": [
+        "div#progressive_disclosu_472938006 > div.aem-main-container > div.text:nth-child(1) > div.aem-component-container.text-container > div.text-wrapper.max-width > h3",
+        "div#progressive_disclosu > div.aem-main-container > div.text:nth-child(1) > div.aem-component-container.text-container > div.text-wrapper > h3"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "Er du medlem i et LO-forbund?",
+      "pageCount": 3,
+      "pages": [
+        "nb-bank-privat-forsikring-html",
+        "nb-bank-privat-html",
+        "nb-bank-privat-kundeservice-bestill-bli-kunde-html"
+      ],
+      "domPaths": [
+        "div.ffe-grid.banner-small__grid > div.ffe-grid__row > div.ffe-grid__col--sm-12.ffe-grid__col--md-8 > div.banner-small__content > div.banner-small__text.banner-small__columns--col2 > h2.banner-small__header.ffe-h3",
+        "div.ffe-grid.banner-small__grid > div.ffe-grid__row > div.ffe-grid__col--sm-12.ffe-grid__col--md-8 > div.banner-small__content > div.banner-small__text:nth-child(2) > h2.banner-small__header.ffe-h3"
+      ]
+    },
+    {
+      "level": 3,
+      "text": "Ung",
+      "pageCount": 3,
+      "pages": [
+        "nb-bank-privat-forsikring-html",
+        "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html",
+        "nb-bank-privat-tips-og-rad-html"
+      ],
+      "domPaths": [
+        "div.card__container-content:nth-child(2) > div.card__container-content-wrapper:nth-child(1) > div.text > div.aem-component-container.text-container > div.text-wrapper > h3",
+        "div.background-container__wrap > div.background-container__content > div.text:nth-child(2) > div.aem-component-container.text-container > div.text-wrapper > h3"
+      ]
+    },
+    {
+      "level": 2,
+      "text": "Synes du pensjon er vanskelig?",
+      "pageCount": 3,
+      "pages": [
+        "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+        "nb-bank-privat-pensjon-html",
+        "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html"
+      ],
+      "domPaths": [
+        "div.columns-grid__column.ffe-grid__col--sm-12:nth-child(2) > div.columns-grid__content.columns-grid__content--middle > div.text:nth-child(1) > div.aem-component-container.text-container > div.text-wrapper > h2",
+        "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__content.responsive-grid:nth-child(2) > div.text:nth-child(9) > div.text-content:nth-child(1) > h2"
+      ]
+    }
+  ],
+  "ctasRepeated": [
+    {
+      "label": "Bruk min posisjon",
+      "pageCount": 70,
+      "pages": [
+        "nb-bank-bedrift-bedriftskort-html",
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-daglig-drift-html",
+        "nb-bank-bedrift-html"
+      ],
+      "hrefs": []
+    },
+    {
+      "label": "Se alle banker",
+      "pageCount": 70,
+      "pages": [
+        "nb-bank-bedrift-bedriftskort-html",
+        "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "nb-bank-bedrift-betaling-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-daglig-drift-html",
+        "nb-bank-bedrift-html"
+      ],
+      "hrefs": []
+    },
+    {
+      "label": "Se flere svar",
+      "pageCount": 9,
+      "pages": [
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-privat-forsikring-barneforsikring-html",
+        "nb-bank-privat-forsikring-bilforsikring-html",
+        "nb-bank-privat-forsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html"
+      ],
+      "hrefs": []
+    },
+    {
+      "label": "Se flere spørsmål og svar",
+      "pageCount": 8,
+      "pages": [
+        "nb-bank-privat-daglig-bruk-bankid-html",
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-daglig-bruk-kredittkort-html",
+        "nb-bank-privat-daglig-bruk-mobilbank-html",
+        "nb-bank-privat-lan-billan-html",
+        "nb-bank-privat-lan-boliglan-html"
+      ],
+      "hrefs": []
+    },
+    {
+      "label": "Del på Facebook",
+      "pageCount": 7,
+      "pages": [
+        "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+        "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+        "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+        "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+        "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+        "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html"
+      ],
+      "hrefs": []
+    },
+    {
+      "label": "Del på LinkedIn",
+      "pageCount": 7,
+      "pages": [
+        "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+        "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+        "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+        "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+        "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+        "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html"
+      ],
+      "hrefs": []
+    },
+    {
+      "label": "Del på Twitter",
+      "pageCount": 7,
+      "pages": [
+        "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+        "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+        "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+        "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+        "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+        "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html"
+      ],
+      "hrefs": []
+    },
+    {
+      "label": "Se dine fordeler her",
+      "pageCount": 5,
+      "pages": [
+        "nb-bank-privat-daglig-bruk-bankkort-html",
+        "nb-bank-privat-lan-billan-html",
+        "nb-bank-privat-lan-html",
+        "nb-bank-privat-pensjon-html",
+        "nb-bank-privat-sparing-spare-pa-konto-html"
+      ],
+      "hrefs": []
+    },
+    {
+      "label": "Få veiledning og meld skade",
+      "pageCount": 3,
+      "pages": [
+        "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "nb-bank-privat-forsikring-bilforsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html"
+      ],
+      "hrefs": [
+        "/nb/bank/bedrift/bedriftsforsikring/meld-skade/borettslag-sameie.html",
+        "https://meldskade.fremtind.no/app/meldskade/kjoretoy",
+        "https://meldskade.fremtind.no/kategori/tingenedine"
+      ]
+    },
+    {
+      "label": "Jeg vil ha kontakt med rådgiver",
+      "pageCount": 3,
+      "pages": [
+        "nb-bank-bedrift-betaling-html",
+        "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "nb-bank-bedrift-pensjon-html"
+      ],
+      "hrefs": [
+        "/nb/bank/bedrift/kundeservice/bestill/bestill-mote-med-radgiver.html",
+        "/nb/bank/bedrift/kundeservice/bestill/kontakt-meg-om-pensjon.html"
+      ]
+    },
+    {
+      "label": "Avtal tid med rådgiver",
+      "pageCount": 3,
+      "pages": [
+        "nb-bank-bedrift-kundeservice-html",
+        "nb-bank-bedrift-starte-bedrift-html",
+        "nb-bank-privat-lan-boliglan-html"
+      ],
+      "hrefs": [
+        "/nb/bank/bedrift/kundeservice/bestill/bestill-mote-med-radgiver.html",
+        "/nb/bank/privat/kundeservice/bestill/bestill-mote-med-radgiver.html"
+      ]
+    },
+    {
+      "label": "Se pensjonsordlisten",
+      "pageCount": 3,
+      "pages": [
+        "nb-bank-bedrift-pensjon-html",
+        "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+        "nb-bank-privat-pensjon-html"
+      ],
+      "hrefs": [
+        "/nb/bank/privat/pensjon/pensjonsordliste.html"
+      ]
+    },
+    {
+      "label": "Se dine LOfavør-fordeler",
+      "pageCount": 3,
+      "pages": [
+        "nb-bank-privat-forsikring-bilforsikring-html",
+        "nb-bank-privat-forsikring-innboforsikring-html",
+        "nb-bank-privat-forsikring-reiseforsikring-html"
+      ],
+      "hrefs": []
+    }
+  ],
+  "backgroundsShared": [
+    {
+      "url": "https://www.sparebank1.no/content/dam/SB1/foto/eksterne/ja-vi-smiler-til-kamera-to-menn-pa-jobb.jpg.thumb.768.768.jpg",
+      "pageCount": 2,
+      "domPaths": [
+        "main#main-content > div.visual-nav.parbase:nth-child(6) > div.component-root > div.nav.nav__hover > a.nav--wrapper > div.nav--big:nth-child(1)",
+        "div.visual-nav.parbase:nth-child(3) > div.component-root > div.nav.nav__hover > a.nav--wrapper > div.nav--med:nth-child(1) > div.nav--med__background"
+      ]
+    }
+  ],
+  "formsShared": [],
+  "componentsByPage": {
+    "cards": {
+      "pages": 74,
+      "total": 3784
+    },
+    "grids": {
+      "pages": 66,
+      "total": 120
+    },
+    "tabs": {
+      "pages": 85,
+      "total": 88
+    },
+    "modals": {
+      "pages": 100,
+      "total": 382
+    },
+    "ctaBand": {
+      "pages": 66,
+      "total": 127
+    },
+    "statRow": {
+      "pages": 16,
+      "total": 36
+    },
+    "carousels": {
+      "pages": 4,
+      "total": 25
+    },
+    "videos": {
+      "pages": 4,
+      "total": 10
+    },
+    "accordions": {
+      "pages": 5,
+      "total": 8
+    },
+    "tables": {
+      "pages": 12,
+      "total": 30
+    },
+    "testimonialCards": {
+      "pages": 5,
+      "total": 8
+    },
+    "iframes": {
+      "pages": 5,
+      "total": 7
+    }
+  },
+  "sectionClassRepeats": [
+    {
+      "key": "div.aem-main-container.to-parent|unknown",
+      "pageCount": 65,
+      "instances": 65,
+      "medianHeight": 24
+    },
+    {
+      "key": "div.feedback.parbase|cta-band",
+      "pageCount": 58,
+      "instances": 58,
+      "medianHeight": 100
+    },
+    {
+      "key": "div.columns-grid.parbase|unknown",
+      "pageCount": 52,
+      "instances": 110,
+      "medianHeight": 518
+    },
+    {
+      "key": "div.background-container.parbase|feature-list",
+      "pageCount": 32,
+      "instances": 40,
+      "medianHeight": 780
+    },
+    {
+      "key": "div.text|unknown",
+      "pageCount": 27,
+      "instances": 45,
+      "medianHeight": 80
+    },
+    {
+      "key": "div.hr.parbase|unknown",
+      "pageCount": 22,
+      "instances": 26,
+      "medianHeight": 1
+    },
+    {
+      "key": "div.background-container.parbase|unknown",
+      "pageCount": 21,
+      "instances": 24,
+      "medianHeight": 636
+    },
+    {
+      "key": "div.background-container.parbase|rich-text",
+      "pageCount": 20,
+      "instances": 34,
+      "medianHeight": 1643
+    },
+    {
+      "key": "div.referance.reference|cta-band",
+      "pageCount": 19,
+      "instances": 19,
+      "medianHeight": 108
+    },
+    {
+      "key": "div.faq.parbase|faq",
+      "pageCount": 17,
+      "instances": 17,
+      "medianHeight": 3660
+    },
+    {
+      "key": "div.related-products.parbase|feature-list",
+      "pageCount": 17,
+      "instances": 17,
+      "medianHeight": 412
+    },
+    {
+      "key": "div.columns-grid.parbase|rich-text",
+      "pageCount": 14,
+      "instances": 20,
+      "medianHeight": 566
+    },
+    {
+      "key": "div.visual-nav.parbase|feature-list",
+      "pageCount": 14,
+      "instances": 76,
+      "medianHeight": 292
+    },
+    {
+      "key": "div.static-cards.parbase|feature-list",
+      "pageCount": 14,
+      "instances": 17,
+      "medianHeight": 460
+    },
+    {
+      "key": "div.aem-main-container|unknown",
+      "pageCount": 12,
+      "instances": 12,
+      "medianHeight": 184
+    },
+    {
+      "key": "div.columns-grid.parbase|feature-list",
+      "pageCount": 12,
+      "instances": 13,
+      "medianHeight": 496
+    },
+    {
+      "key": "div.banner-small.parbase|hero",
+      "pageCount": 12,
+      "instances": 12,
+      "medianHeight": 165
+    },
+    {
+      "key": "footer.footer|footer-nav",
+      "pageCount": 12,
+      "instances": 12,
+      "medianHeight": 488
+    },
+    {
+      "key": "div.button.parbase|unknown",
+      "pageCount": 11,
+      "instances": 14,
+      "medianHeight": 44
+    },
+    {
+      "key": "div.title.parbase|unknown",
+      "pageCount": 11,
+      "instances": 13,
+      "medianHeight": 56
+    },
+    {
+      "key": "div.referance.reference|unknown",
+      "pageCount": 10,
+      "instances": 14,
+      "medianHeight": 332
+    },
+    {
+      "key": "div.shortcuts.parbase|cta-band",
+      "pageCount": 10,
+      "instances": 10,
+      "medianHeight": 122
+    },
+    {
+      "key": "div.related-topics.parbase|feature-list",
+      "pageCount": 10,
+      "instances": 10,
+      "medianHeight": 569
+    },
+    {
+      "key": "div.tip.parbase|cta-band",
+      "pageCount": 9,
+      "instances": 9,
+      "medianHeight": 315
+    },
+    {
+      "key": "div.background-container.parbase|cta-band",
+      "pageCount": 9,
+      "instances": 9,
+      "medianHeight": 501
+    },
+    {
+      "key": "div.question-page__question-container|rich-text",
+      "pageCount": 9,
+      "instances": 9,
+      "medianHeight": 686
+    },
+    {
+      "key": "header.header.undefined|unknown",
+      "pageCount": 8,
+      "instances": 8,
+      "medianHeight": 124
+    },
+    {
+      "key": "div.sb1-article.responsive-grid|rich-text",
+      "pageCount": 7,
+      "instances": 7,
+      "medianHeight": 3461
+    },
+    {
+      "key": "div.image.parbase|unknown",
+      "pageCount": 6,
+      "instances": 7,
+      "medianHeight": 107
+    },
+    {
+      "key": "div.cobranding.parbase|unknown",
+      "pageCount": 6,
+      "instances": 6,
+      "medianHeight": 96
+    },
+    {
+      "key": "div.text|cta-band",
+      "pageCount": 5,
+      "instances": 5,
+      "medianHeight": 132
+    },
+    {
+      "key": "div.button-list-container.parbase|unknown",
+      "pageCount": 5,
+      "instances": 5,
+      "medianHeight": 52
+    },
+    {
+      "key": "div.usp.parbase|unknown",
+      "pageCount": 5,
+      "instances": 5,
+      "medianHeight": 132
+    },
+    {
+      "key": "div.price-and-terms.parbase|cta-band",
+      "pageCount": 5,
+      "instances": 5,
+      "medianHeight": 427
+    },
+    {
+      "key": "div.campaign.parbase|unknown",
+      "pageCount": 5,
+      "instances": 5,
+      "medianHeight": 400
+    },
+    {
+      "key": "div.referance.reference|rich-text",
+      "pageCount": 5,
+      "instances": 5,
+      "medianHeight": 5154
+    },
+    {
+      "key": "div.progressive-disclosure.parbase|rich-text",
+      "pageCount": 5,
+      "instances": 5,
+      "medianHeight": 833
+    },
+    {
+      "key": "div.tip.parbase|rich-text",
+      "pageCount": 4,
+      "instances": 4,
+      "medianHeight": 507
+    },
+    {
+      "key": "header.header--disable-bottom-links.header|unknown",
+      "pageCount": 4,
+      "instances": 4,
+      "medianHeight": 78
+    },
+    {
+      "key": "div.sb1-story__body.responsive-grid|rich-text",
+      "pageCount": 4,
+      "instances": 4,
+      "medianHeight": 10461
+    }
+  ]
+}

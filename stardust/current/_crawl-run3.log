@@ -1,0 +1,7 @@
+[crawl] favicon captured: assets/favicon.png (https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/favicon.png)
+[crawl] technique=headless pages=3
+[crawl] OK   nb-bank-privat-html  data-endpoints:4
+[crawl] OK   nb-bank-bedrift-html  data-endpoints:3
+[crawl] OK   nb-bank-privat-daglig-bruk-bankid-html  data-endpoints:1
+[crawl] dynamic surface (reach): 4 same-site data endpoints, 0 pages with a search form, 0 hydrated — depth + classification: stardust:dynamics
+[crawl] done. 3/3 captured, 0 failed. log: stardust/current/_crawl-log.json

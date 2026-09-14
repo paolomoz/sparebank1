@@ -1,0 +1,120 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 3,
+    "concurrency": 2
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": {
+    "url": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/favicon.png",
+    "file": "assets/favicon.png"
+  },
+  "crawl": {
+    "failures": []
+  },
+  "dynamicSurface": {
+    "pages": 3,
+    "pagesWithSameSiteData": 3,
+    "pagesWithSearchForm": 0,
+    "pagesHydrated": 0,
+    "truncatedPages": 0,
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/nettsider/ressurser/bank/user",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user",
+        "pages": 3,
+        "examples": [
+          "nb-bank-privat-html",
+          "nb-bank-bedrift-html",
+          "nb-bank-privat-daglig-bruk-bankid-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/personal/banking/consent/cookies/identity",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity",
+        "pages": 2,
+        "examples": [
+          "nb-bank-privat-html",
+          "nb-bank-bedrift-html"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/nettsider/opt-in",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+        "pages": 2,
+        "examples": [
+          "nb-bank-privat-html",
+          "nb-bank-bedrift-html"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "adobedc.demdex.net",
+        "path": "/ee/v1/interact",
+        "query": [
+          "configId",
+          "requestId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://adobedc.demdex.net/ee/v1/interact",
+        "pages": 2,
+        "examples": [
+          "nb-bank-privat-html",
+          "nb-bank-bedrift-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+        "query": [
+          "limit",
+          "offset",
+          "temaFilter"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-html"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.youtube.com",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-daglig-bruk-bankid-html"
+        ]
+      }
+    ],
+    "frameworkHints": [],
+    "globalState": [],
+    "formTargets": []
+  }
+}

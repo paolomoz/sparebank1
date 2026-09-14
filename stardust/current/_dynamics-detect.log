@@ -1,0 +1,7 @@
+[dynamics] 200 /nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html · 3rd-party hosts 0 · 1st-party api 3 · forms 0+0 · triggers 0 · media 0 · client-rendered 0
+[dynamics] 200 /nb/bank/bedrift/bedriftskort.html · 3rd-party hosts 0 · 1st-party api 3 · forms 0+0 · triggers 1 · media 0 · client-rendered 0
+[dynamics] 200 /nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html · 3rd-party hosts 0 · 1st-party api 3 · forms 0+0 · triggers 0 · media 0 · client-rendered 0
+[dynamics] 200 /nb/bank/om-oss/investor.html · 3rd-party hosts 0 · 1st-party api 3 · forms 0+0 · triggers 2 · media 0 · client-rendered 5
+[dynamics] 200 /nb/bank/om-oss/nyheter.html · 3rd-party hosts 0 · 1st-party api 5 · forms 0+0 · triggers 0 · media 0 · client-rendered 0 · MAIN-EMPTY-AT-LOAD
+[dynamics] 200 /nb/bank/privat/forsikring/meld-skade.html · 3rd-party hosts 0 · 1st-party api 3 · forms 0+0 · triggers 1 · media 0 · client-rendered 0
+[dynamics] 18 findings → stardust/current/_dynamics.json, dynamic-features.generated.md

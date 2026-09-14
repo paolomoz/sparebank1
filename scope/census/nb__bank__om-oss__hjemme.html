@@ -1,0 +1,314 @@
+
+<!DOCTYPE HTML>
+<html lang="nb">
+    <head>
+<meta charset="UTF-8"/>
+
+<meta name="template" content="story"/>
+
+
+    
+        <script>
+            try{!function(){var e="Expected a function",t=NaN,n="[object Symbol]",r=/^\s+|\s+$/g,i=/^[-+]0x[0-9a-f]+$/i,o=/^0b[01]+$/i,a=/^0o[0-7]+$/i,c=parseInt,u="object"==typeof global&&global&&global.Object===Object&&global,s="object"==typeof self&&self&&self.Object===Object&&self,f=u||s||Function("return this")(),l=Object.prototype.toString,p=Math.max,v=Math.min,g=function(){return f.Date.now()};function m(t,n,r){var i,o,a,c,u,s,f=0,l=!1,m=!1,b=!0;if("function"!=typeof t)throw new TypeError(e);function O(e){var n=i,r=o;return i=o=void 0,f=e,c=t.apply(r,n)}function y(e){var t=e-s;return void 0===s||t>=n||t<0||m&&e-f>=a}function N(){var e,t,r=g();if(y(r))return w(r);u=setTimeout(N,(t=n-((e=r)-s),m?v(t,a-(e-f)):t))}function w(e){return u=void 0,b&&i?O(e):(i=o=void 0,c)}function x(){var e,t=g(),r=y(t);if(i=arguments,o=this,s=t,r){if(void 0===u)return f=e=s,u=setTimeout(N,n),l?O(e):c;if(m)return u=setTimeout(N,n),O(s)}return void 0===u&&(u=setTimeout(N,n)),c}return n=d(n)||0,h(r)&&(l=!!r.leading,a=(m="maxWait"in r)?p(d(r.maxWait)||0,n):a,b="trailing"in r?!!r.trailing:b),x.cancel=function(){void 0!==u&&clearTimeout(u),f=0,i=s=o=u=void 0},x.flush=function(){return void 0===u?c:w(g())},x}function h(e){var t=typeof e;return!!e&&("object"==t||"function"==t)}function d(e){if("number"==typeof e)return e;if("symbol"==typeof(u=e)||(s=u)&&"object"==typeof s&&l.call(u)==n)return t;var u,s;if(h(e)){var f="function"==typeof e.valueOf?e.valueOf():e;e=h(f)?f+"":f}if("string"!=typeof e)return 0===e?e:+e;e=e.replace(r,"");var p=o.test(e);return p||a.test(e)?c(e.slice(2),p?2:8):i.test(e)?t:+e}var b,O,y,N,w=(b=function(){function e(e){return!isNaN(parseFloat(e))&&isFinite(e)}function t(e){return e.charAt(0).toUpperCase()+e.substring(1)}function n(e){return function(){return this[e]}}var r=["isConstructor","isEval","isNative","isToplevel"],i=["columnNumber","lineNumber"],o=["fileName","functionName","source"],a=r.concat(i,o,["args"]);function c(e){if(e instanceof Object)for(var n=0;n<a.length;n++)e.hasOwnProperty(a[n])&&void 0!==e[a[n]]&&this["set"+t(a[n])](e[a[n]])}c.prototype={getArgs:function(){return this.args},setArgs:function(e){if("[object Array]"!==Object.prototype.toString.call(e))throw new TypeError("Args must be an Array");this.args=e},getEvalOrigin:function(){return this.evalOrigin},setEvalOrigin:function(e){if(e instanceof c)this.evalOrigin=e;else{if(!(e instanceof Object))throw new TypeError("Eval Origin must be an Object or StackFrame");this.evalOrigin=new c(e)}},toString:function(){return(this.getFunctionName()||"{anonymous}")+"("+(this.getArgs()||[]).join(",")+")"+(this.getFileName()?"@"+this.getFileName():"")+(e(this.getLineNumber())?":"+this.getLineNumber():"")+(e(this.getColumnNumber())?":"+this.getColumnNumber():"")}};for(var u=0;u<r.length;u++)c.prototype["get"+t(r[u])]=n(r[u]),c.prototype["set"+t(r[u])]=function(e){return function(t){this[e]=Boolean(t)}}(r[u]);for(var s=0;s<i.length;s++)c.prototype["get"+t(i[s])]=n(i[s]),c.prototype["set"+t(i[s])]=function(t){return function(n){if(!e(n))throw new TypeError(t+" must be a Number");this[t]=Number(n)}}(i[s]);for(var f=0;f<o.length;f++)c.prototype["get"+t(o[f])]=n(o[f]),c.prototype["set"+t(o[f])]=function(e){return function(t){this[e]=String(t)}}(o[f]);return c}(),O=/(^|@)\S+\:\d+/,y=/^\s*at .*(\S+\:\d+|\(native\))/m,N=/^(eval@)?(\[native code\])?$/,{parse:function(e){if(void 0!==e.stacktrace||void 0!==e["opera#sourceloc"])return this.parseOpera(e);if(e.stack&&e.stack.match(y))return this.parseV8OrIE(e);if(e.stack)return this.parseFFOrSafari(e);throw new Error("Cannot parse given Error object")},extractLocation:function(e){if(-1===e.indexOf(":"))return[e];var t=/(.+?)(?:\:(\d+))?(?:\:(\d+))?$/.exec(e.replace(/[\(\)]/g,""));return[t[1],t[2]||void 0,t[3]||void 0]},parseV8OrIE:function(e){return e.stack.split("\n").filter(function(e){return!!e.match(y)},this).map(function(e){e.indexOf("(eval ")>-1&&(e=e.replace(/eval code/g,"eval").replace(/(\(eval at [^\()]*)|(\)\,.*$)/g,""));var t=e.replace(/^\s+/,"").replace(/\(eval code/g,"(").split(/\s+/).slice(1),n=this.extractLocation(t.pop()),r=t.join(" ")||void 0,i=["eval","<anonymous>"].indexOf(n[0])>-1?void 0:n[0];return new b({functionName:r,fileName:i,lineNumber:n[1],columnNumber:n[2],source:e})},this)},parseFFOrSafari:function(e){return e.stack.split("\n").filter(function(e){return!e.match(N)},this).map(function(e){if(e.indexOf(" > eval")>-1&&(e=e.replace(/ line (\d+)(?: > eval line \d+)* > eval\:\d+\:\d+/g,":$1")),-1===e.indexOf("@")&&-1===e.indexOf(":"))return new b({functionName:e});var t=/((.*".+"[^@]*)?[^@]*)(?:@)/,n=e.match(t),r=n&&n[1]?n[1]:void 0,i=this.extractLocation(e.replace(t,""));return new b({functionName:r,fileName:i[0],lineNumber:i[1],columnNumber:i[2],source:e})},this)},parseOpera:function(e){return!e.stacktrace||e.message.indexOf("\n")>-1&&e.message.split("\n").length>e.stacktrace.split("\n").length?this.parseOpera9(e):e.stack?this.parseOpera11(e):this.parseOpera10(e)},parseOpera9:function(e){for(var t=/Line (\d+).*script (?:in )?(\S+)/i,n=e.message.split("\n"),r=[],i=2,o=n.length;i<o;i+=2){var a=t.exec(n[i]);a&&r.push(new b({fileName:a[2],lineNumber:a[1],source:n[i]}))}return r},parseOpera10:function(e){for(var t=/Line (\d+).*script (?:in )?(\S+)(?:: In function (\S+))?$/i,n=e.stacktrace.split("\n"),r=[],i=0,o=n.length;i<o;i+=2){var a=t.exec(n[i]);a&&r.push(new b({functionName:a[3]||void 0,fileName:a[2],lineNumber:a[1],source:n[i]}))}return r},parseOpera11:function(e){return e.stack.split("\n").filter(function(e){return!!e.match(O)&&!e.match(/^Error created at/)},this).map(function(e){var t,n=e.split("@"),r=this.extractLocation(n.pop()),i=n.shift()||"",o=i.replace(/<anonymous function(: (\w+))?>/,"$2").replace(/\([^\)]*\)/g,"")||void 0;i.match(/\(([^\)]*)\)/)&&(t=i.replace(/^[^\(]+\(([^\)]*)\)$/,"$1"));var a=void 0===t||"[arguments not available]"===t?void 0:t.split(",");return new b({functionName:o,args:a,fileName:r[0],lineNumber:r[1],columnNumber:r[2],source:e})},this)}});window.onerror=function(t,n,r){var i=!0,o=!0;if("function"!=typeof t)throw new TypeError(e);return h(r)&&(i="leading"in r?!!r.leading:i,o="trailing"in r?!!r.trailing:o),m(t,n,{leading:i,maxWait:n,trailing:o})}(function(e,t,n,r,i){var o,a;i&&(o=w.parse(i)),window.location&&window.location.href&&(a=window.location.href),function(e){try{var t=new XMLHttpRequest;t.open("POST","/LogServlet",!0),t.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8"),t.send("javascriptError="+encodeURI(e))}catch(e){}}(JSON.stringify({userAgent:navigator.userAgent,url:a,logger:"apne_nettsider",message:e,source:t,lineno:n,colno:r,stacktrace:o}))},200)}()}catch(e){}
+        </script>
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes"/>
+    
+    
+    <meta name="description" content="Uansett hvor og hvordan du lever, kan du føle deg hjemme hos oss. "/>
+
+    
+
+    
+        <meta itemprop="category"/>
+    
+
+    <!-- Open Graph General (Facebook & Pinterest) -->
+    <meta property="og:url" content="https://www.sparebank1.no/nb/bank/om-oss/hjemme.html"/>
+    <meta property="og:title" content="Der du føler deg hjemme"/>
+    
+    
+    <meta property="og:description" content="Uansett hvor og hvordan du lever, kan du føle deg hjemme hos oss. "/>
+
+    <meta property="og:image" content="https://www.sparebank1.no/content/dam/SB1/kampanjer/Bedrift/bedriftsloftet-bestefar-pa-arbeidsplass.jpg.thumb.1280.2276.jpg"/>
+    <meta property="og:type" content="article"/>
+
+    <!-- Open Graph Article (Facebook & Pinterest) -->
+    <meta property="article:published_time" content="2026-02-12T12:29:17+01:00"/>
+    <meta property="article:modified_time" content="2026-02-12T12:29:17+01:00"/>
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Der du føler deg hjemme"/>
+    
+    
+    <meta name="twitter:description" content="Uansett hvor og hvordan du lever, kan du føle deg hjemme hos oss. "/>
+
+    <meta name="twitter:image:src" content="https://www.sparebank1.no/content/dam/SB1/kampanjer/Bedrift/bedriftsloftet-bestefar-pa-arbeidsplass.jpg.thumb.1280.2276.jpg"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+
+    <!-- Data mode - this is required for author gui to work with SPA -->
+    
+    <meta property="cq:pagemodel_root_url" content="/conf/sb1/settings/wcm/templates/bank-page/structure.model.json"/>
+    
+
+    <link rel="preconnect" href="https://adobedc.demdex.net" crossorigin/>
+    <link rel="preconnect" href="https://edge.adobedc.net" crossorigin/>
+    <link rel="shortcut icon" type="image/png" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/favicon.png"/>
+    <link rel="apple-touch-icon" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/apple-touch-icon.png"/>
+    <link rel="canonical" href="https://www.sparebank1.no/nb/bank/om-oss/hjemme.html"/>
+    <link rel="stylesheet" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.css" type="text/css"/>
+    <title>Der du føler deg hjemme | SpareBank 1 </title>
+    
+    <!--#config errmsg="" -->
+    
+    <!-- aem01-01 - 5.168.0 -->
+    <script type="text/javascript">
+        var _satellite = {
+            track: function() {}
+        }
+    </script>
+
+    
+
+
+    
+    
+<script type="application/ld+json">{
+"@context":"http://schema.org",
+"@type":"Article",
+"headline":"Der du føler deg hjemme",
+"description":"Uansett hvor og hvordan du lever, kan du føle deg hjemme hos oss. ",
+"image": "https://www.sparebank1.no/content/dam/SB1/kampanjer/Bedrift/bedriftsloftet-bestefar-pa-arbeidsplass.jpg.thumb.1280.2276.jpg",
+"url": "https://www.sparebank1.no/nb/bank/om-oss/hjemme.html",
+"datePublished": "2026-02-12T12:29:17+01:00",
+"dateModified": "2026-02-12T12:29:17+01:00",
+"mainEntityOfPage": 
+{
+"@type": "WebPage",
+"@id": "https://www.sparebank1.no/nb/bank/om-oss/hjemme.html"
+},
+"publisher": {
+"@type": "Organization",
+"name": "SpareBank 1 "
+}
+}
+</script>
+
+
+    
+    
+
+    
+
+    
+    
+    
+
+
+</head>
+    <body class="basepage page basicpage sb1-story" id="basepage-56ccb0502f">
+        
+        
+        
+            
+
+
+
+
+            
+
+
+
+            
+
+
+<script>
+    window.SB1 = {
+        config: {
+            app: {
+                logServlet: '/LogServlet',
+                param1: "",
+                param2: "all",
+                param3: '',
+                sendToBank: "true",
+                sendToBankList: "",
+                sendToBankClose: "3",
+                sendToBankDelay: "4",
+                loggedInRedirectEnabled: "true",
+                urlList: "LogServlet,/bin/logservlet,/bin,/content/dam,/dynres,/restportal,static,/innhold,services.cicero.no,/kjopsprosess,/api/common/banking/skjema,/nettmote,.boost.ai/,https://publish.ne.cision.com/Subscription/Subscribe,dpm.demdex.net,sparebank1.d3.sc.omtrdc.net,/solr,/sb1-dialoghub,/openapi,edge.adobedc.net,/api/tracking/webbehavior,/pm-boliglan/,/api/personal/",
+                loginRedirectTimeout: "300000",
+                isLoginIframeCheckEnabled: "true",
+                enableWebTracker: "true",
+                enableAdobeTargetCurrentPage: "",
+                adobeEdgeIdBank: "c9ffe15c-d455-425b-877f-81f1a83db1c3",
+                version: "5.168.0",
+                pmLoginMergeBanks: "sr-bank,sorost",
+            },
+            user: {
+                language: "nb",
+            },
+            urls: {
+                marketPage: "/content/sites/sb1/nb/bank/om-oss.html",
+                gotoNettbank: '',
+            },
+            server: {},
+            sites: {},
+            page: {
+                tagVariables: "",
+                pageType: "",
+                market: "Om oss",
+                marketName: "om-oss",
+                brand: "sb1",
+                products: [
+                    {
+                        name: "",
+                        category: "",
+                    },
+                ],
+            },
+            bank: {
+                bankSemanticUrl: "bank",
+                bankShortName: "bank",
+                bankName: "SpareBank 1 ",
+                defaultLanguage: "nb",
+                financialInstitutionId: "fid-ostlandet"
+            },
+        },
+    };
+</script>
+
+
+
+
+<noscript>
+    <div>For at du skal kunne se innhold på SpareBank 1s nettsider optimalt, må du aktivere javascript i din nettleser.</div>
+</noscript>
+<div id="outer-main-wrap" class="main-wrap">
+    
+    
+
+    <main id="main-content" class="main" tabindex="-1" role="main" aria-hidden="false"></main>
+    <script>
+    window.SB1.lang = {
+        BANK_PICKER_MODAL_HD: "For å gå videre - velg en bank",
+        BANK_PICKER_MODAL_HD_PREFILLED: "For å gå videre...",
+        CHOOSE_BANK: "Velg en av bankene som tilbyr produktet for å gå videre.",
+        'Our best choice': "Gå til banken du var hos sist",
+        'More choices': "Se alle banker",
+        HIDE_CHOICES: "Skjul bankene",
+        BANK_PICKER_POSTAL_LABEL: "Ditt postnummer",
+        BANK_CHOICE_PLACEHOLDER: "Postnummer",
+        BANK_CHOICE_PLACEHOLDER_POSITION: "Din posisjon",
+        BANK_CHOICE_FORTSETT: "Fortsett til",
+        BANK_CHOICE_FILTERED_LIST: "Se resten av bankene",
+        BANK_CHOICE_POSITION_ACCESS: "Tips! Tillatt nettleseren å hente din stedsinformasjon.",
+        BANK_CHOICE_POSITION_API_FAIL: "Vi finner ikke posisjonen din. Prøv å skriv et postnummer i stedet!",
+        BANK_CHOICE_POSITION_BTN: "Bruk min posisjon",
+        POSTAL_CODE_ERROR: "Skriv inn et gyldig postnummer (4 siffer).",
+        MORE_ABOUT: "Les mer om",
+        MODAL_CLOSE: "Lukk",
+        SUMMARY_EXPAND: "Utvid",
+        SUMMARY_HEADER: "Kort oppsummert",
+        SUMMARY_DISCLAIMER: "Denne oppsummeringen er generert av kunstig intelligens (KI) og kvalitetssikret av redaktørene våre."
+    };
+</script>
+
+</div>
+<script type="text/javascript" async src="/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.js"></script>
+<script type="text/javascript" async src="/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/vendors_bundle.1156912316.js"></script>
+
+
+
+
+
+<!-- Remove header and footer inside Mobilbank app, Remove data-sly-test config when tested ok in mobile app in prod -->
+<script>
+    (function () { // Wrap in IIFE to avoid leaking variables to global scope
+        // Detect Mobilbank user agent
+        const isMobilbank = /mobilbank\//i.test(navigator.userAgent);
+        if (!isMobilbank) return;
+
+        document.documentElement.classList.add('in-mobilbank');
+        try {
+            if (!document.getElementById('in-mobilbank-style')) {
+                const style = document.createElement('style');
+                style.id = 'in-mobilbank-style';
+                style.textContent = `
+                            html.in-mobilbank .footer,
+                            html.in-mobilbank #outer-main-wrap header.header,
+                            html.in-mobilbank #outer-main-wrap .market-nav,
+                            html.in-mobilbank #outer-main-wrap .global-message,
+                            html.in-mobilbank #outer-main-wrap > .main > .to-parent,
+                            html.in-mobilbank #dialoghub-iframe {
+                              display: none !important;
+                            }
+                        `;
+                (document.head || document.documentElement).appendChild(style);
+            }
+        } catch (e) {
+            console.error('Failed to remove Nettsider header for User Agent Mobilbank: ', e);
+        }
+    })();
+</script>
+            
+    
+    
+
+
+
+    <script type="text/javascript">
+        const matchV2 = document.cookie.match(new RegExp(`-v2=(.*?)`));
+        let hasOptinCookie = false;
+        if(matchV2) {
+            hasOptinCookie = true;
+        }else{
+            const match = document.cookie.match(new RegExp(`=(.*?)-v`));
+            hasOptinCookie = (match) ? true : false;
+        }
+
+        if (!hasOptinCookie){
+            // js fil
+            const scriptEle = document.createElement("script");
+            const JS_URL = "/sb1-nettsider-optin/bank/static/opt-in.js";
+            scriptEle.setAttribute("src", JS_URL);
+            scriptEle.setAttribute("type", "text/javascript");
+            scriptEle.setAttribute("async", true);
+            scriptEle.setAttribute("onerror", "optinScriptError=true;");
+
+            //css fil
+            const CSS_URL = "/sb1-nettsider-optin/bank/static/opt-in.css";
+            const cssEle = document.createElement('link');
+            cssEle.setAttribute('rel', 'stylesheet');
+            cssEle.setAttribute('onerror', 'optinScriptError=true;');
+            cssEle.setAttribute('property', 'stylesheet');
+            cssEle.setAttribute('media', 'screen,print');
+            cssEle.setAttribute('type', 'text/css');
+            cssEle.setAttribute('href', CSS_URL);
+
+            // div element
+            const divEle = document.createElement('div');
+            divEle.setAttribute('id', 'opt-in');
+            divEle.setAttribute('data-trigger-modal', 'true');
+
+            document.body.appendChild(divEle);
+            document.body.appendChild(cssEle);
+            document.body.appendChild(scriptEle);
+        }
+    </script>
+
+
+    
+
+    
+
+    
+    
+    
+
+            
+
+        
+    </body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html><html lang="nb"><head>
+<meta charset="UTF-8">
+
+<meta name="template" content="news-list-page">
+
+
+    
+        <script>
+            try{!function(){var e="Expected a function",t=NaN,n="[object Symbol]",r=/^\s+|\s+$/g,i=/^[-+]0x[0-9a-f]+$/i,o=/^0b[01]+$/i,a=/^0o[0-7]+$/i,c=parseInt,u="object"==typeof global&&global&&global.Object===Object&&global,s="object"==typeof self&&self&&self.Object===Object&&self,f=u||s||Function("return this")(),l=Object.prototype.toString,p=Math.max,v=Math.min,g=function(){return f.Date.now()};function m(t,n,r){var i,o,a,c,u,s,f=0,l=!1,m=!1,b=!0;if("function"!=typeof t)throw new TypeError(e);function O(e){var n=i,r=o;return i=o=void 0,f=e,c=t.apply(r,n)}function y(e){var t=e-s;return void 0===s||t>=n||t<0||m&&e-f>=a}function N(){var e,t,r=g();if(y(r))return w(r);u=setTimeout(N,(t=n-((e=r)-s),m?v(t,a-(e-f)):t))}function w(e){return u=void 0,b&&i?O(e):(i=o=void 0,c)}function x(){var e,t=g(),r=y(t);if(i=arguments,o=this,s=t,r){if(void 0===u)return f=e=s,u=setTimeout(N,n),l?O(e):c;if(m)return u=setTimeout(N,n),O(s)}return void 0===u&&(u=setTimeout(N,n)),c}return n=d(n)||0,h(r)&&(l=!!r.leading,a=(m="maxWait"in r)?p(d(r.maxWait)||0,n):a,b="trailing"in r?!!r.trailing:b),x.cancel=function(){void 0!==u&&clearTimeout(u),f=0,i=s=o=u=void 0},x.flush=function(){return void 0===u?c:w(g())},x}function h(e){var t=typeof e;return!!e&&("object"==t||"function"==t)}function d(e){if("number"==typeof e)return e;if("symbol"==typeof(u=e)||(s=u)&&"object"==typeof s&&l.call(u)==n)return t;var u,s;if(h(e)){var f="function"==typeof e.valueOf?e.valueOf():e;e=h(f)?f+"":f}if("string"!=typeof e)return 0===e?e:+e;e=e.replace(r,"");var p=o.test(e);return p||a.test(e)?c(e.slice(2),p?2:8):i.test(e)?t:+e}var b,O,y,N,w=(b=function(){function e(e){return!isNaN(parseFloat(e))&&isFinite(e)}function t(e){return e.charAt(0).toUpperCase()+e.substring(1)}function n(e){return function(){return this[e]}}var r=["isConstructor","isEval","isNative","isToplevel"],i=["columnNumber","lineNumber"],o=["fileName","functionName","source"],a=r.concat(i,o,["args"]);function c(e){if(e instanceof Object)for(var n=0;n<a.length;n++)e.hasOwnProperty(a[n])&&void 0!==e[a[n]]&&this["set"+t(a[n])](e[a[n]])}c.prototype={getArgs:function(){return this.args},setArgs:function(e){if("[object Array]"!==Object.prototype.toString.call(e))throw new TypeError("Args must be an Array");this.args=e},getEvalOrigin:function(){return this.evalOrigin},setEvalOrigin:function(e){if(e instanceof c)this.evalOrigin=e;else{if(!(e instanceof Object))throw new TypeError("Eval Origin must be an Object or StackFrame");this.evalOrigin=new c(e)}},toString:function(){return(this.getFunctionName()||"{anonymous}")+"("+(this.getArgs()||[]).join(",")+")"+(this.getFileName()?"@"+this.getFileName():"")+(e(this.getLineNumber())?":"+this.getLineNumber():"")+(e(this.getColumnNumber())?":"+this.getColumnNumber():"")}};for(var u=0;u<r.length;u++)c.prototype["get"+t(r[u])]=n(r[u]),c.prototype["set"+t(r[u])]=function(e){return function(t){this[e]=Boolean(t)}}(r[u]);for(var s=0;s<i.length;s++)c.prototype["get"+t(i[s])]=n(i[s]),c.prototype["set"+t(i[s])]=function(t){return function(n){if(!e(n))throw new TypeError(t+" must be a Number");this[t]=Number(n)}}(i[s]);for(var f=0;f<o.length;f++)c.prototype["get"+t(o[f])]=n(o[f]),c.prototype["set"+t(o[f])]=function(e){return function(t){this[e]=String(t)}}(o[f]);return c}(),O=/(^|@)\S+\:\d+/,y=/^\s*at .*(\S+\:\d+|\(native\))/m,N=/^(eval@)?(\[native code\])?$/,{parse:function(e){if(void 0!==e.stacktrace||void 0!==e["opera#sourceloc"])return this.parseOpera(e);if(e.stack&&e.stack.match(y))return this.parseV8OrIE(e);if(e.stack)return this.parseFFOrSafari(e);throw new Error("Cannot parse given Error object")},extractLocation:function(e){if(-1===e.indexOf(":"))return[e];var t=/(.+?)(?:\:(\d+))?(?:\:(\d+))?$/.exec(e.replace(/[\(\)]/g,""));return[t[1],t[2]||void 0,t[3]||void 0]},parseV8OrIE:function(e){return e.stack.split("\n").filter(function(e){return!!e.match(y)},this).map(function(e){e.indexOf("(eval ")>-1&&(e=e.replace(/eval code/g,"eval").replace(/(\(eval at [^\()]*)|(\)\,.*$)/g,""));var t=e.replace(/^\s+/,"").replace(/\(eval code/g,"(").split(/\s+/).slice(1),n=this.extractLocation(t.pop()),r=t.join(" ")||void 0,i=["eval","<anonymous>"].indexOf(n[0])>-1?void 0:n[0];return new b({functionName:r,fileName:i,lineNumber:n[1],columnNumber:n[2],source:e})},this)},parseFFOrSafari:function(e){return e.stack.split("\n").filter(function(e){return!e.match(N)},this).map(function(e){if(e.indexOf(" > eval")>-1&&(e=e.replace(/ line (\d+)(?: > eval line \d+)* > eval\:\d+\:\d+/g,":$1")),-1===e.indexOf("@")&&-1===e.indexOf(":"))return new b({functionName:e});var t=/((.*".+"[^@]*)?[^@]*)(?:@)/,n=e.match(t),r=n&&n[1]?n[1]:void 0,i=this.extractLocation(e.replace(t,""));return new b({functionName:r,fileName:i[0],lineNumber:i[1],columnNumber:i[2],source:e})},this)},parseOpera:function(e){return!e.stacktrace||e.message.indexOf("\n")>-1&&e.message.split("\n").length>e.stacktrace.split("\n").length?this.parseOpera9(e):e.stack?this.parseOpera11(e):this.parseOpera10(e)},parseOpera9:function(e){for(var t=/Line (\d+).*script (?:in )?(\S+)/i,n=e.message.split("\n"),r=[],i=2,o=n.length;i<o;i+=2){var a=t.exec(n[i]);a&&r.push(new b({fileName:a[2],lineNumber:a[1],source:n[i]}))}return r},parseOpera10:function(e){for(var t=/Line (\d+).*script (?:in )?(\S+)(?:: In function (\S+))?$/i,n=e.stacktrace.split("\n"),r=[],i=0,o=n.length;i<o;i+=2){var a=t.exec(n[i]);a&&r.push(new b({functionName:a[3]||void 0,fileName:a[2],lineNumber:a[1],source:n[i]}))}return r},parseOpera11:function(e){return e.stack.split("\n").filter(function(e){return!!e.match(O)&&!e.match(/^Error created at/)},this).map(function(e){var t,n=e.split("@"),r=this.extractLocation(n.pop()),i=n.shift()||"",o=i.replace(/<anonymous function(: (\w+))?>/,"$2").replace(/\([^\)]*\)/g,"")||void 0;i.match(/\(([^\)]*)\)/)&&(t=i.replace(/^[^\(]+\(([^\)]*)\)$/,"$1"));var a=void 0===t||"[arguments not available]"===t?void 0:t.split(",");return new b({functionName:o,args:a,fileName:r[0],lineNumber:r[1],columnNumber:r[2],source:e})},this)}});window.onerror=function(t,n,r){var i=!0,o=!0;if("function"!=typeof t)throw new TypeError(e);return h(r)&&(i="leading"in r?!!r.leading:i,o="trailing"in r?!!r.trailing:o),m(t,n,{leading:i,maxWait:n,trailing:o})}(function(e,t,n,r,i){var o,a;i&&(o=w.parse(i)),window.location&&window.location.href&&(a=window.location.href),function(e){try{var t=new XMLHttpRequest;t.open("POST","/LogServlet",!0),t.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8"),t.send("javascriptError="+encodeURI(e))}catch(e){}}(JSON.stringify({userAgent:navigator.userAgent,url:a,logger:"apne_nettsider",message:e,source:t,lineno:n,colno:r,stacktrace:o}))},200)}()}catch(e){}
+        </script>
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes">
+    
+    
+    
+
+    
+
+    
+        <meta itemprop="category">
+    
+
+    <!-- Open Graph General (Facebook & Pinterest) -->
+    <meta property="og:url" content="https://www.sparebank1.no/nb/bank/om-oss/nyheter.html">
+    <meta property="og:title" content="Nyheter">
+    
+    
+    
+
+    <meta property="og:image" content="https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.2276.jpg">
+    <meta property="og:type" content="article">
+
+    <!-- Open Graph Article (Facebook & Pinterest) -->
+    <meta property="article:published_time" content="2023-05-04T13:34:33+02:00">
+    <meta property="article:modified_time" content="2023-05-04T13:34:33+02:00">
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Nyheter">
+    
+    
+    
+
+    <meta name="twitter:image:src" content="https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.2276.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Data mode - this is required for author gui to work with SPA -->
+    
+    <meta property="cq:pagemodel_root_url" content="/conf/sb1/settings/wcm/templates/bank-page/structure.model.json">
+    
+
+    <link rel="preconnect" href="https://adobedc.demdex.net" crossorigin="">
+    <link rel="preconnect" href="https://edge.adobedc.net" crossorigin="">
+    <link rel="shortcut icon" type="image/png" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/favicon.png">
+    <link rel="apple-touch-icon" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/apple-touch-icon.png">
+    <link rel="canonical" href="https://www.sparebank1.no/nb/bank/om-oss/nyheter.html">
+    <link rel="stylesheet" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.css" type="text/css">
+    <title>Nyheter | SpareBank 1 </title>
+    
+    <!--#config errmsg="" -->
+    
+    <!-- aem01-01 - 5.168.0 -->
+    <script type="text/javascript">
+        var _satellite = {
+            track: function() {}
+        }
+    </script>
+
+    
+
+
+    
+    
+
+
+
+    
+    
+
+    
+
+    
+    
+    
+
+
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","headline":"Nyheter","description":"","image":"https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.1280.2276.jpg","url":"https://www.sparebank1.no/nb/bank/om-oss/nyheter.html","datePublished":"2023-05-04T13:34:33+01:00","dateModified":"2023-05-04T13:34:33+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.sparebank1.no/nb/bank/om-oss/nyheter.html"},"publisher":{"@type":"Organization","name":"SpareBank 1 ","logo":{"@type":"ImageObject","url":"https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg"}},"keywords":"","about":[]}</script></head>
+    <body class="basepage page basicpage sb1-articles" id="basepage-ba482f6bbb">
+        
+        
+        
+            
+
+
+
+
+            
+
+
+
+            
+
+
+<script>
+    window.SB1 = {
+        config: {
+            app: {
+                logServlet: '/LogServlet',
+                param1: "",
+                param2: "all",
+                param3: '',
+                sendToBank: "true",
+                sendToBankList: "",
+                sendToBankClose: "3",
+                sendToBankDelay: "4",
+                loggedInRedirectEnabled: "true",
+                urlList: "LogServlet,/bin/logservlet,/bin,/content/dam,/dynres,/restportal,static,/innhold,services.cicero.no,/kjopsprosess,/api/common/banking/skjema,/nettmote,.boost.ai/,https://publish.ne.cision.com/Subscription/Subscribe,dpm.demdex.net,sparebank1.d3.sc.omtrdc.net,/solr,/sb1-dialoghub,/openapi,edge.adobedc.net,/api/tracking/webbehavior,/pm-boliglan/,/api/personal/",
+                loginRedirectTimeout: "300000",
+                isLoginIframeCheckEnabled: "true",
+                enableWebTracker: "true",
+                enableAdobeTargetCurrentPage: "",
+                adobeEdgeIdBank: "c9ffe15c-d455-425b-877f-81f1a83db1c3",
+                version: "5.168.0",
+                pmLoginMergeBanks: "sr-bank,sorost",
+            },
+            user: {
+                language: "nb",
+            },
+            urls: {
+                marketPage: "/content/sites/sb1/nb/bank/om-oss.html",
+                gotoNettbank: '',
+            },
+            server: {},
+            sites: {},
+            page: {
+                tagVariables: "",
+                pageType: "",
+                market: "Om oss",
+                marketName: "om-oss",
+                brand: "sb1",
+                products: [
+                    {
+                        name: "",
+                        category: "",
+                    },
+                ],
+            },
+            bank: {
+                bankSemanticUrl: "bank",
+                bankShortName: "bank",
+                bankName: "SpareBank 1 ",
+                defaultLanguage: "nb",
+                financialInstitutionId: "fid-ostlandet"
+            },
+        },
+    };
+</script>
+
+
+
+
+<noscript>
+    <div>For at du skal kunne se innhold på SpareBank 1s nettsider optimalt, må du aktivere javascript i din nettleser.</div>
+</noscript>
+<div id="outer-main-wrap" class="main-wrap">
+    
+    
+
+    <main id="main-content" class="main" tabindex="-1" role="main" aria-hidden="false"> <header class="header undefined"><div class="header__wrap "><div class="header__content aem-main-container"><div class="header__top-wrap"><div class="header__logo"><a href="/content/sites/sb1/nb/bank/privat.html"><div class="image "><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg" alt="Tilbake til forsiden for om oss - SpareBank 1" class="inline-svg responsive" style="max-width: 100%;"></div></div></figure></div></div><link rel="image_src" href="/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1.svg.thumb.768.768.jpg"></a></div><button class="hamburger-wrapper " aria-hidden="false" aria-expanded="false" aria-label="Meny"><div class="inner-wrapper"><div class="hamburger"></div></div></button><div class="header__top-nav"><ul><li><a href="/nb/bank/privat.html" class="">Privat</a></li><li><a href="/nb/bank/bedrift.html" class="">Bedrift</a></li><li><a href="/nb/bank/om-oss.html" class="active">Om oss</a></li></ul></div></div><div class="header__user-content"><button class="header-search-button" aria-controls="header-searcharea" aria-expanded="false" aria-label="Utvid søkefelt"><span role="img" aria-hidden="true" class="ffe-icons ffe-icons--md header-search-button__icon header-search-button__icon--cross" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik00ODAtNDM3Ljg0NyAyNzcuMDc2LTIzNC45MjRxLTguMzA3IDguMzA4LTIwLjg4NCA4LjUtMTIuNTc2LjE5My0yMS4yNjgtOC41LTguNjkzLTguNjkyLTguNjkzLTIxLjA3NnQ4LjY5My0yMS4wNzZMNDM3Ljg0Ny00ODAgMjM0LjkyNC02ODIuOTI0cS04LjMwOC04LjMwNy04LjUtMjAuODg0LS4xOTMtMTIuNTc2IDguNS0yMS4yNjggOC42OTItOC42OTMgMjEuMDc2LTguNjkzdDIxLjA3NiA4LjY5M0w0ODAtNTIyLjE1M2wyMDIuOTI0LTIwMi45MjNxOC4zMDctOC4zMDggMjAuODg0LTguNSAxMi41NzYtLjE5MyAyMS4yNjggOC41IDguNjkzIDguNjkyIDguNjkzIDIxLjA3NnQtOC42OTMgMjEuMDc2TDUyMi4xNTMtNDgwbDIwMi45MjMgMjAyLjkyNHE4LjMwOCA4LjMwNyA4LjUgMjAuODg0LjE5MyAxMi41NzYtOC41IDIxLjI2OC04LjY5MiA4LjY5My0yMS4wNzYgOC42OTN0LTIxLjA3Ni04LjY5M0w0ODAtNDM3Ljg0N1oiLz48L3N2Zz4=&quot;);"></span><span role="img" aria-hidden="true" class="ffe-icons ffe-icons--md header-search-button__icon header-search-button__icon--glass" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIGhlaWdodD0nMjQnIHZpZXdCb3g9JzAgLTk2MCA5NjAgOTYwJyB3aWR0aD0nMjQnPjxwYXRoIGQ9J00zODAuNzY5LTMzNS4zODZxLTEwMi40NjEgMC0xNzMuNTM3LTcxLjA3NlExMzYuMTU1LTQ3Ny41MzkgMTM2LjE1NS01ODBxMC0xMDIuNDYxIDcxLjA3Ny0xNzMuNTM4IDcxLjA3Ni03MS4wNzYgMTczLjUzNy03MS4wNzYgMTAyLjQ2MSAwIDE3My41MzggNzEuMDc2UTYyNS4zODQtNjgyLjQ2MSA2MjUuMzg0LTU4MHEwIDQyLjg0Ni0xNC4zODUgODEuODQ2LTE0LjM4NSAzOS0zOC4zODUgNjcuODQ2bDIzMC4xNTUgMjMwLjE1NHE4LjMwNyA4LjMwOCA4LjQ5OSAyMC44ODUuMTkzIDEyLjU3Ni04LjQ5OSAyMS4yNjgtOC42OTMgOC42OTItMjEuMDc3IDguNjkyLTEyLjM4NCAwLTIxLjA3Ni04LjY5Mkw1MzAuNDYxLTM4OC4xNTVxLTMwIDI0Ljc2OS02OSAzOC43Njl0LTgwLjY5MiAxNFptMC01OS45OThxNzcuMzA4IDAgMTMwLjk2Mi01My42NTRRNTY1LjM4NS01MDIuNjkyIDU2NS4zODUtNTgwcTAtNzcuMzA4LTUzLjY1NC0xMzAuOTYyLTUzLjY1NC01My42NTQtMTMwLjk2Mi01My42NTQtNzcuMzA4IDAtMTMwLjk2MiA1My42NTRRMTk2LjE1NC02NTcuMzA4IDE5Ni4xNTQtNTgwcTAgNzcuMzA4IDUzLjY1MyAxMzAuOTYyIDUzLjY1NCA1My42NTQgMTMwLjk2MiA1My42NTRaJy8+PC9zdmc+&quot;);"></span><span class="header-search-button__text">Søk</span></button><div id="login" class="bank-buttons" data-gotourl=""><button class="ffe-button ffe-button--action bank-buttons__button bank-buttons__button--customer"><span class="ffe-button__label">Bli kunde</span></button><button id="login-button" class="bank-buttons__button bank-buttons__button--login" aria-expanded="false" aria-controls="login-choices" aria-label="Logg inn"><span>Logg inn</span></button><section id="login-choices" aria-labelledby="login-button" role="region"></section></div></div><nav id="main-menu" class="header__main-nav" aria-label="Hovedmeny" tabindex="-1" role="navigation"><ul><li><a href="/nb/bank/om-oss/om-banken.html" class=""> Om SpareBank 1 </a></li><li><a href="/nb/bank/om-oss/presse.html" class=""> Presse </a></li><li><a href="/nb/bank/om-oss/investor.html" class=""> Investor </a></li><li><a href="/nb/bank/om-oss/jobb-og-karriere.html" class=""> Jobb og karriere </a></li><li><a href="/nb/bank/om-oss/samfunnsansvar.html" class=""> Samfunnsansvar </a></li><li><a href="/nb/bank/om-oss/nyheter.html" class="active"> Nyheter </a></li></ul></nav></div></div><div id="header-searcharea"></div></header><div class="sb1-articles__content responsive-grid sb1-articles__content"><div class="title"><h1 class="ffe-h1">Nyheter</h1></div><div class="newscards"><article class="newscard__headline newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/advarer-bedrifter-mot-ny-svindelmetode--falsk-faktura-forst---fa.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/bm_startup_enk275.jpg.thumb.1280.2276.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Svindel</div></div><h2 class="ffe-h2 newscard__title">Advarer bedrifter mot ny svindelmetode: Falsk faktura først – falsk banktelefon etterpå</h2><div class="newscard__date">7/8/2026 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/sann-far-du-bedre-oversikt-over-boligutgiftene-dine.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Min_bolig_forside.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Bolig</div></div><h2 class="ffe-h2 newscard__title">Sånn får du bedre oversikt over boligutgiftene dine</h2><div class="newscard__date">6/7/2026 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/investeringssvindel--lokker-deg-med-drommer.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/mann-pa-pc.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Svindel</div></div><h2 class="ffe-h2 newscard__title">Investeringssvindel: Lokker deg med drømmer</h2><div class="newscard__date">16/6/2026 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/ikke-glem-sikkerheten.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero sb1-article__header-image--top-crop"><div class="sb1-article__header-image image--hero sb1-article__header-image--top-crop image  sb1-article__header-image image--hero sb1-article__header-image--top-crop"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/Dame_snakker_i_telefon.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Svindel</div></div><h2 class="ffe-h2 newscard__title">La humla suse i sommer – men ikke glem sikkerheten  </h2><div class="newscard__date">12/6/2026 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/skal-du-pa-reise-i-sommer--dette-bor-tenke-pa-for-du-drar-.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/profilbilder-liggende/par-pa-reise.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forbrukerøkonomi</div></div><h2 class="ffe-h2 newscard__title">Skal du på reise i sommer? Dette bør tenke på før du drar </h2><div class="newscard__date">19/5/2026 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero sb1-article__header-image--top-crop"><div class="sb1-article__header-image image--hero sb1-article__header-image--top-crop image  sb1-article__header-image image--hero sb1-article__header-image--top-crop"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/kj%C3%B8pte-bilder/pixabay-eldre-dame.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Svindel</div></div><h2 class="ffe-h2 newscard__title">Advarer mot ny svindelbølge: – Eldre og enslige kvinner særlig utsatt</h2><div class="newscard__date">27/2/2026 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/unngaa-bulkedagen.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/JULESTRESS_BIL.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Klar for (å unngå) årets bulkebonanza?</h2><div class="newscard__date">28/11/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/ta-vare-dyra-nyttaarsaften.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero sb1-article__header-image--center-crop"><div class="sb1-article__header-image image--hero sb1-article__header-image--center-crop image  sb1-article__header-image image--hero sb1-article__header-image--center-crop"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/hund-og-barn.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Slik tar du vare på dyrene på nyttårsaften</h2><div class="newscard__date">28/11/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/fly-julen-raad-reisen.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Flyplasslounge.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Skal du fly hjem til jul? Her er noen råd til reisen </h2><div class="newscard__date">28/11/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/fyrverkeri-risiko.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/fyrverkeri-unsplash.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Fyrverkeri – er det verdt risikoen?</h2><div class="newscard__date">28/11/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/hund-katt-syk-ferien.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Syk-katt.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Hva gjør du om hunden eller katten din blir syk i ferien?</h2><div class="newscard__date">28/11/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/foreldre-vil-vente-med-bankkort-til-barna---eksperten-anbefaler-.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero sb1-article__header-image--center-crop"><div class="sb1-article__header-image image--hero sb1-article__header-image--center-crop image  sb1-article__header-image image--hero sb1-article__header-image--center-crop"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/Familie.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forbrukerøkonomi</div></div><h2 class="ffe-h2 newscard__title">Foreldre vil vente med bankkort til barna – eksperten anbefaler tidlig økonomisk læring</h2><div class="newscard__date">17/11/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/faerre-deler-passord-til-nettbank--fortsatt-for-mange--mener-svi.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/Ta-deg-sammen.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Svindel</div></div><h2 class="ffe-h2 newscard__title">Færre deler passord til nettbank. Fortsatt for mange, mener svindelekspert. </h2><div class="newscard__date">23/10/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/slik-handterer-du-okonomiske-bekymringer.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/profilbilder-liggende/stuekontor-dame-jobber-hjemme-pa-spisebordet.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forbrukerøkonomi</div></div><h2 class="ffe-h2 newscard__title">Slik håndterer du økonomiske bekymringer</h2><div class="newscard__date">6/10/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/sunt-bondevett-hodet.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/bonde-i-traktor2.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Sunt bondevett for hodet</h2><div class="newscard__date">1/10/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/host-dugnad-vinterklart.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Det-sludder-i-borettslaget.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Høstdugnad: Sett inn støtet før vinteren kommer </h2><div class="newscard__date">29/8/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/barneforsikring-okonomisk-trygghet-firebarnsfamilien.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="lazyload-placeholder"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Barneforsikring som trygghet når livet tar en ny vending</h2><div class="newscard__date">29/8/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/morten-soberg-inn-i-ny-rolle-i-sparebank1-forvaltning.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="lazyload-placeholder"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Nyheter</div></div><h2 class="ffe-h2 newscard__title">Morten Søberg inn i ny rolle i SpareBank 1 Forvaltning</h2><div class="newscard__date">5/8/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/felles-forsikringer-samlivsbrudd.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="lazyload-placeholder"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Hva skjer med felles forsikringer i samlivsbrudd?</h2><div class="newscard__date">30/6/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/barna-trygg-skolevei.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Gutt-paa-vei-til-skolen.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Slik sørger du for at barna får en trygg skolevei</h2><div class="newscard__date">30/6/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/flytte-hjemmefra-forsikringer-okonomi.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/innbo-flytte.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Første gang du flytter hjemmefra? Her er det du bør vite om forsikringer og økonomi</h2><div class="newscard__date">30/6/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/nyansatt-dette-maa-paa-plass-arbeidsgiver.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/nyansatt-kontor.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Nyansatt i hus? Dette må du ha på plass som arbeidsgiver </h2><div class="newscard__date">30/6/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/rammer-spesielt-de-eldre--sparebank-1-advarer-mot-gavekortsvinde.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero sb1-article__header-image--center-crop"><div class="sb1-article__header-image image--hero sb1-article__header-image--center-crop image  sb1-article__header-image image--hero sb1-article__header-image--center-crop"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/Bestemor-pa-pc.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Svindel</div></div><h2 class="ffe-h2 newscard__title">Rammer spesielt de eldre: SpareBank 1 advarer mot gavekortsvindel </h2><div class="newscard__date">20/6/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/--ikke-bare-de--godtroende--som-blir-lurt-lenger.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/Jeg-tenker-litt.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Svindel</div></div><h2 class="ffe-h2 newscard__title">– Ikke bare de «godtroende» som blir lurt lenger</h2><div class="newscard__date">17/6/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/--mange-foler-det-er-deres-egen-feil-at-de-blir-svindlet.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero sb1-article__header-image--center-crop"><div class="sb1-article__header-image image--hero sb1-article__header-image--center-crop image  sb1-article__header-image image--hero sb1-article__header-image--center-crop"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/sitte-pa-trapp.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Svindel</div></div><h2 class="ffe-h2 newscard__title">– Mange føler det er deres egen feil at de blir svindlet</h2><div class="newscard__date">17/6/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/unngaa-skadedyr-borettslag-sameier.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero sb1-article__header-image--top-crop"><div class="sb1-article__header-image image--hero sb1-article__header-image--top-crop image  sb1-article__header-image image--hero sb1-article__header-image--top-crop"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/profilbilder-liggende/skadedyr-veggedyr.jpeg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation" style="max-width: 100%;"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Unngå skadedyr i borettslag og sameier</h2><div class="newscard__date">28/5/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/redd-miste-horeapparatet-forsikre-det.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Untitled_Session43192.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Redd for å miste høreapparatet? Slik bør du forsikre det hvis noe skjer</h2><div class="newscard__date">28/5/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/oppmerksomhet-bilen.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Skjerm-i-bil.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Det viktigste du har med deg i bilen er oppmerksomheten</h2><div class="newscard__date">28/5/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/finn-hjertestopp-nar-deg.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero sb1-article__header-image--center-crop"><div class="sb1-article__header-image image--hero sb1-article__header-image--center-crop image  sb1-article__header-image image--hero sb1-article__header-image--center-crop"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/hjertestarter.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Alle kan bruke hjertestarter – slik finner du en nær deg </h2><div class="newscard__date">28/5/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/hva-naar-bedriften-dataangrep.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero"><div class="sb1-article__header-image image--hero image  sb1-article__header-image image--hero"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/cyberattack.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">Hva gjør du når bedriften din er under dataangrep?</h2><div class="newscard__date">28/5/2025 </div></div></div></div></a></article><article class="newscard"><a class="newscard__click-area" href="/content/sites/sb1/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html"><div class="newscard__wrap newscard__withimage"><div class="newscard__image sb1-article__header-image image--hero sb1-article__header-image--top-crop"><div class="sb1-article__header-image image--hero sb1-article__header-image--top-crop image  sb1-article__header-image image--hero sb1-article__header-image--top-crop"><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="image__container"><img src="/content/dam/SB1/foto/Nyhetssenter/fremtind-(skal-kun-brukes-til-fremtind-artikler)-/Bamse7.jpg.thumb.768.768.jpg" alt="" class="image--responsive " role="presentation"></div></div></figure></div></div></div><div class="newscard__content"><div class="newscard__text"><div class="tag"><div class="tag__item">Forsikring</div></div><h2 class="ffe-h2 newscard__title">“Det kunne gått mye verre” – Bamses historie fra traktorulykken</h2><div class="newscard__date">30/4/2025 </div></div></div></div></a></article><div class="newscards-footer"><div class="ffe-button-group" role="group" aria-label="Flere artikler"><a class="ffe-button ffe-button--shortcut" href="?limit=31&amp;offset=31"><span class="ffe-button__label">Se flere artikler<span role="img" aria-hidden="true" class="ffe-icons ffe-icons--md ffe-button__icon ffe-button__icon--right" style="mask-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik01MTcuODQ3LTQ4MCAzNTQuOTI0LTY0Mi45MjRxLTguMzA4LTguMzA3LTguNS0yMC44ODQtLjE5My0xMi41NzYgOC41LTIxLjI2OCA4LjY5Mi04LjY5MyAyMS4wNzYtOC42OTN0MjEuMDc2IDguNjkzbDE3OS43NjkgMTc5Ljc2OXE1LjYxNiA1LjYxNSA3LjkyMyAxMS44NDYgMi4zMDggNi4yMyAyLjMwOCAxMy40NjF0LTIuMzA4IDEzLjQ2MXEtMi4zMDcgNi4yMzEtNy45MjMgMTEuODQ2TDM5Ny4wNzYtMjc0LjkyNHEtOC4zMDcgOC4zMDgtMjAuODg0IDguNS0xMi41NzYuMTkzLTIxLjI2OC04LjUtOC42OTMtOC42OTItOC42OTMtMjEuMDc2dDguNjkzLTIxLjA3Nkw1MTcuODQ3LTQ4MFoiLz48L3N2Zz4=&quot;);"></span></span></a></div></div></div></div><footer class="footer" aria-hidden="false"><div class="ffe-grid"><div class="footer-columns__top ffe-grid__row"><div class="ffe-grid__col ffe-grid__col--sm-12 ffe-grid__col--sm-offset-0"><div class="ffe-grid"><div class="ffe-grid__row"><div class="ffe-grid__col footer-columns__ffe-col ffe-grid__col--sm-12 ffe-grid__col--sm-offset-0"><div class="footer-columns__column"><h2 class="ffe-h2 ffe-h4 footer-columns__links-header">Snarveier</h2><ul class="footer-columns__link-list"><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/kundeservice/bestill/bli-kunde.html">Bli kunde </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/kundeservice/verktoy/sperre-kort.html">Sperre kort </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/forsikring/meld-skade.html">Meld skade </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/kundeservice/bestill/prisliste.html">Prisliste </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/kundeservice.html">Kundeservice </a></li></ul></div><div class="footer-columns__column"><h2 class="ffe-h2 ffe-h4 footer-columns__links-header">Logg inn</h2><ul class="footer-columns__link-list"><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/privat/innlogging.html">Nettbank privat </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/bedrift/innlogging.html">Nettbank bedrift </a></li><li><a class="ffe-link-text footer-columns__link" href="https://kundeforsikring.sparebank1.no">Forsikring </a></li><li><a class="ffe-link-text footer-columns__link" href="https://kundeforsikring.sparebank1.no/privat/sparing">Pensjon </a></li></ul></div><div class="footer-columns__column footer-columns__column--social-media"><h2 class="ffe-h2 ffe-h4 footer-columns__links-header">Sosiale medier</h2><ul class="footer-columns__link-list footer-columns__link-list--horizontal"><li><a href="https://no.linkedin.com/company/sparebank-1" target="_blank" rel="noopener" title="Linkedin"><div class="footer-columns__link-image"><div class="image "><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="lazyload-placeholder"></div></div></figure></div></div> </div></a></li><li><a href="https://www.youtube.com/channel/UCdfZfi4HC6bK0-OfRcDJSzg" target="_blank" rel="noopener" title="YouTube"><div class="footer-columns__link-image"><div class="image "><div class="image__wrap"><figure><div class="lazyload-wrapper "><div class="lazyload-placeholder"></div></div></figure></div></div> </div></a></li></ul></div></div></div></div></div></div><hr class="footer-columns__divider"><div class="footer-columns__bottom ffe-grid__row"><div class="ffe-grid__col ffe-grid__col--sm-10 ffe-grid__col--sm-offset-1 ffe-grid__col--center"><div class="footer-columns__column"><ul class="footer-columns__link-list footer-columns__link-list--horizontal footer-columns__link-list--wrap"><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/om-oss/om-banken/selskapsinformasjon.html">Om SpareBank 1 </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/om-oss/personvern/generelle-vilkar.html">Vilkår for bruk av nettsiden </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/om-oss/personvern.html">Personvern </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/om-oss/personvern.html#cookies">Informasjonskapsler </a></li><li><a class="ffe-link-text footer-columns__link" href="/content/sites/sb1/nb/bank/bedrift/open-api.html">For utviklere </a></li></ul></div></div></div></div><div class="footer-info">SpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo</div></footer> </main>
+    <script>
+    window.SB1.lang = {
+        BANK_PICKER_MODAL_HD: "For å gå videre - velg en bank",
+        BANK_PICKER_MODAL_HD_PREFILLED: "For å gå videre...",
+        CHOOSE_BANK: "Velg en av bankene som tilbyr produktet for å gå videre.",
+        'Our best choice': "Gå til banken du var hos sist",
+        'More choices': "Se alle banker",
+        HIDE_CHOICES: "Skjul bankene",
+        BANK_PICKER_POSTAL_LABEL: "Ditt postnummer",
+        BANK_CHOICE_PLACEHOLDER: "Postnummer",
+        BANK_CHOICE_PLACEHOLDER_POSITION: "Din posisjon",
+        BANK_CHOICE_FORTSETT: "Fortsett til",
+        BANK_CHOICE_FILTERED_LIST: "Se resten av bankene",
+        BANK_CHOICE_POSITION_ACCESS: "Tips! Tillatt nettleseren å hente din stedsinformasjon.",
+        BANK_CHOICE_POSITION_API_FAIL: "Vi finner ikke posisjonen din. Prøv å skriv et postnummer i stedet!",
+        BANK_CHOICE_POSITION_BTN: "Bruk min posisjon",
+        POSTAL_CODE_ERROR: "Skriv inn et gyldig postnummer (4 siffer).",
+        MORE_ABOUT: "Les mer om",
+        MODAL_CLOSE: "Lukk",
+        SUMMARY_EXPAND: "Utvid",
+        SUMMARY_HEADER: "Kort oppsummert",
+        SUMMARY_DISCLAIMER: "Denne oppsummeringen er generert av kunstig intelligens (KI) og kvalitetssikret av redaktørene våre."
+    };
+</script>
+
+</div>
+<script type="text/javascript" async="" src="/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.js"></script>
+<script type="text/javascript" async="" src="/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/vendors_bundle.1156912316.js"></script>
+
+
+
+
+
+<!-- Remove header and footer inside Mobilbank app, Remove data-sly-test config when tested ok in mobile app in prod -->
+<script>
+    (function () { // Wrap in IIFE to avoid leaking variables to global scope
+        // Detect Mobilbank user agent
+        const isMobilbank = /mobilbank\//i.test(navigator.userAgent);
+        if (!isMobilbank) return;
+
+        document.documentElement.classList.add('in-mobilbank');
+        try {
+            if (!document.getElementById('in-mobilbank-style')) {
+                const style = document.createElement('style');
+                style.id = 'in-mobilbank-style';
+                style.textContent = `
+                            html.in-mobilbank .footer,
+                            html.in-mobilbank #outer-main-wrap header.header,
+                            html.in-mobilbank #outer-main-wrap .market-nav,
+                            html.in-mobilbank #outer-main-wrap .global-message,
+                            html.in-mobilbank #outer-main-wrap > .main > .to-parent,
+                            html.in-mobilbank #dialoghub-iframe {
+                              display: none !important;
+                            }
+                        `;
+                (document.head || document.documentElement).appendChild(style);
+            }
+        } catch (e) {
+            console.error('Failed to remove Nettsider header for User Agent Mobilbank: ', e);
+        }
+    })();
+</script>
+            
+    
+    
+
+
+
+    <script type="text/javascript">
+        const matchV2 = document.cookie.match(new RegExp(`-v2=(.*?)`));
+        let hasOptinCookie = false;
+        if(matchV2) {
+            hasOptinCookie = true;
+        }else{
+            const match = document.cookie.match(new RegExp(`=(.*?)-v`));
+            hasOptinCookie = (match) ? true : false;
+        }
+
+        if (!hasOptinCookie){
+            // js fil
+            const scriptEle = document.createElement("script");
+            const JS_URL = "/sb1-nettsider-optin/bank/static/opt-in.js";
+            scriptEle.setAttribute("src", JS_URL);
+            scriptEle.setAttribute("type", "text/javascript");
+            scriptEle.setAttribute("async", true);
+            scriptEle.setAttribute("onerror", "optinScriptError=true;");
+
+            //css fil
+            const CSS_URL = "/sb1-nettsider-optin/bank/static/opt-in.css";
+            const cssEle = document.createElement('link');
+            cssEle.setAttribute('rel', 'stylesheet');
+            cssEle.setAttribute('onerror', 'optinScriptError=true;');
+            cssEle.setAttribute('property', 'stylesheet');
+            cssEle.setAttribute('media', 'screen,print');
+            cssEle.setAttribute('type', 'text/css');
+            cssEle.setAttribute('href', CSS_URL);
+
+            // div element
+            const divEle = document.createElement('div');
+            divEle.setAttribute('id', 'opt-in');
+            divEle.setAttribute('data-trigger-modal', 'true');
+
+            document.body.appendChild(divEle);
+            document.body.appendChild(cssEle);
+            document.body.appendChild(scriptEle);
+        }
+    </script>
+
+
+    
+
+    
+
+    
+    
+    
+
+            
+
+        
+    
+
+</body></html>

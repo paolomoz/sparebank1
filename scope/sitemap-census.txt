@@ -1,0 +1,13 @@
+bank 3124
+nord-norge 1044
+smn 930
+sor-norge 918
+sogn-fjordane 516
+ostlandet 506
+hallingdal 496
+helgeland 483
+nordmore 423
+ostfold-akershus 414
+ringerike-hadeland 349
+gudbrandsdal 335
+lom-skjaak 283

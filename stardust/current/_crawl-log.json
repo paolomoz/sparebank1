@@ -1,0 +1,2917 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract (state-and-log.mjs consolidation)",
+    "writtenAt": "2026-09-14T15:12:04.981Z",
+    "stardustVersion": "0.20.0",
+    "note": "crawl.mjs overwrites this file per run; per-run objects preserved under runs[]"
+  },
+  "discovery": {
+    "source": "sitemap.xml index → 13 sub-sitemaps + live header/footer link harvest (/nb/bank/privat.html) + 295-page AEM pageType census",
+    "sourceUrls": [
+      "https://www.sparebank1.no/robots.txt",
+      "https://www.sparebank1.no/sitemap.xml",
+      "https://www.sparebank1.no/nb/bank.sitemap.xml"
+    ],
+    "fetchedAt": "2026-09-14T14:48:00Z",
+    "discoveredCount": 9821,
+    "discoveredOnProperty": 3124,
+    "sitemapCounts": {
+      "bank": 3124,
+      "nord-norge": 1044,
+      "smn": 930,
+      "sor-norge": 918,
+      "sogn-fjordane": 516,
+      "ostlandet": 506,
+      "hallingdal": 496,
+      "helgeland": 483,
+      "nordmore": 423,
+      "ostfold-akershus": 414,
+      "ringerike-hadeland": 349,
+      "gudbrandsdal": 335,
+      "lom-skjaak": 283
+    },
+    "chromeLinksDiscovered": 45,
+    "filteredCount": 100,
+    "filteredAsJunk": [],
+    "filteredByDesignBoundary": [
+      "/nb/<regional-bank>/* (12 banks, 6,697 pages — later iterations)",
+      "/nb/bank/privat/innlogging.html + /nb/bank/bedrift/innlogging.html (authenticated apps, not in sitemap)",
+      "/nb/bank.html (JS bank-chooser shell)"
+    ],
+    "waitMode": "medium (slow on 8 recaptures)",
+    "cap": 100,
+    "capSource": "hands-off default (100 pages, 20 per template) — user: \"production ready 100 pages iteration first\"",
+    "rosterRules": [
+      "header+footer links first",
+      "section landings",
+      "representative detail pages per template (≤20)"
+    ],
+    "kept": [
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+        "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+        "type": "program",
+        "family": "theme",
+        "rosterFamily": "theme",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/bedriftsforsikring.html",
+        "slug": "nb-bank-bedrift-bedriftsforsikring-html",
+        "type": "program",
+        "family": "theme",
+        "rosterFamily": "category-hub",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/bedriftskort.html",
+        "slug": "nb-bank-bedrift-bedriftskort-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/bedriftskort/kredittkort.html",
+        "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product-b2b",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/betaling.html",
+        "slug": "nb-bank-bedrift-betaling-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/betaling/utenlandsbetaling.html",
+        "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product-b2b",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/daglig-drift.html",
+        "slug": "nb-bank-bedrift-daglig-drift-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift.html",
+        "slug": "nb-bank-bedrift-html",
+        "type": "landing",
+        "family": "market-landing",
+        "rosterFamily": "market-landing",
+        "priority": "header"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/konto/bedriftskonto.html",
+        "slug": "nb-bank-bedrift-konto-bedriftskonto-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/konto.html",
+        "slug": "nb-bank-bedrift-konto-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+        "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+        "type": "article",
+        "family": "faq",
+        "rosterFamily": "faq",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+        "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+        "type": "article",
+        "family": "faq",
+        "rosterFamily": "faq",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+        "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+        "type": "article",
+        "family": "faq",
+        "rosterFamily": "faq",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+        "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+        "type": "article",
+        "family": "faq",
+        "rosterFamily": "faq",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-blir-jeg-bedriftskunde.html",
+        "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+        "type": "article",
+        "family": "faq",
+        "rosterFamily": "faq",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
+        "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+        "type": "article",
+        "family": "faq",
+        "rosterFamily": "faq",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankaxept.html",
+        "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+        "type": "article",
+        "family": "faq",
+        "rosterFamily": "faq",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode.html",
+        "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+        "type": "article",
+        "family": "faq",
+        "rosterFamily": "faq",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan.html",
+        "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+        "type": "article",
+        "family": "faq",
+        "rosterFamily": "faq",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd.html",
+        "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+        "type": "article",
+        "family": "faq",
+        "rosterFamily": "faq",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift.html",
+        "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+        "type": "article",
+        "family": "faq",
+        "rosterFamily": "faq",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura.html",
+        "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html",
+        "type": "article",
+        "family": "faq",
+        "rosterFamily": "faq",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice.html",
+        "slug": "nb-bank-bedrift-kundeservice-html",
+        "type": "landing",
+        "family": "kundeservice-hub",
+        "rosterFamily": "category-hub",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering/bedriftslan.html",
+        "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product-b2b",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering.html",
+        "slug": "nb-bank-bedrift-lan-finansiering-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering/kassekreditt.html",
+        "slug": "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering/leasing.html",
+        "slug": "nb-bank-bedrift-lan-finansiering-leasing-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product-b2b",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/open-api.html",
+        "slug": "nb-bank-bedrift-open-api-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "footer-utility",
+        "priority": "footer"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/pensjon.html",
+        "slug": "nb-bank-bedrift-pensjon-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/regnskap.html",
+        "slug": "nb-bank-bedrift-regnskap-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/sparing-investering.html",
+        "slug": "nb-bank-bedrift-sparing-investering-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/starte-bedrift.html",
+        "slug": "nb-bank-bedrift-starte-bedrift-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+        "slug": "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "static-story",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/bedrift/tips-og-rad.html",
+        "slug": "nb-bank-bedrift-tips-og-rad-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/hjemme.html",
+        "slug": "nb-bank-om-oss-hjemme-html",
+        "type": "landing",
+        "family": "campaign-landing",
+        "rosterFamily": "om-oss",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss.html",
+        "slug": "nb-bank-om-oss-html",
+        "type": "landing",
+        "family": "market-landing",
+        "rosterFamily": "market-landing",
+        "priority": "header"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/investor.html",
+        "slug": "nb-bank-om-oss-investor-html",
+        "type": "static",
+        "family": "om-oss",
+        "rosterFamily": "om-oss",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/jobb-og-karriere.html",
+        "slug": "nb-bank-om-oss-jobb-og-karriere-html",
+        "type": "static",
+        "family": "om-oss",
+        "rosterFamily": "om-oss",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-.html",
+        "slug": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+        "type": "article",
+        "family": "news-article",
+        "rosterFamily": "news-article",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.html",
+        "slug": "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+        "type": "article",
+        "family": "news-article",
+        "rosterFamily": "news-article",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html",
+        "slug": "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+        "type": "article",
+        "family": "news-article",
+        "rosterFamily": "news-article",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket.html",
+        "slug": "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+        "type": "article",
+        "family": "news-article",
+        "rosterFamily": "news-article",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+        "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+        "type": "article",
+        "family": "news-article",
+        "rosterFamily": "news-article",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.html",
+        "slug": "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+        "type": "article",
+        "family": "news-article",
+        "rosterFamily": "news-article",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.html",
+        "slug": "nb-bank-om-oss-nyheter-html",
+        "type": "listing",
+        "family": "news-listing",
+        "rosterFamily": "om-oss",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/om-banken/selskapsinformasjon.html",
+        "slug": "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+        "type": "static",
+        "family": "om-oss",
+        "rosterFamily": "footer-utility",
+        "priority": "footer"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/personvern/generelle-vilkar.html",
+        "slug": "nb-bank-om-oss-personvern-generelle-vilkar-html",
+        "type": "static",
+        "family": "om-oss",
+        "rosterFamily": "footer-utility",
+        "priority": "footer"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/personvern.html",
+        "slug": "nb-bank-om-oss-personvern-html",
+        "type": "static",
+        "family": "om-oss",
+        "rosterFamily": "footer-utility",
+        "priority": "footer"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/presse.html",
+        "slug": "nb-bank-om-oss-presse-html",
+        "type": "static",
+        "family": "om-oss",
+        "rosterFamily": "om-oss",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/samfunnsansvar.html",
+        "slug": "nb-bank-om-oss-samfunnsansvar-html",
+        "type": "static",
+        "family": "om-oss",
+        "rosterFamily": "om-oss",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/selskaper.html",
+        "slug": "nb-bank-om-oss-selskaper-html",
+        "type": "static",
+        "family": "om-oss",
+        "rosterFamily": "om-oss",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/om-oss/vare-eksperter.html",
+        "slug": "nb-bank-om-oss-vare-eksperter-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "om-oss",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/bankid.html",
+        "slug": "nb-bank-privat-daglig-bruk-bankid-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/bankkonto.html",
+        "slug": "nb-bank-privat-daglig-bruk-bankkonto-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/bankkort.html",
+        "slug": "nb-bank-privat-daglig-bruk-bankkort-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk.html",
+        "slug": "nb-bank-privat-daglig-bruk-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "header"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/kredittkort.html",
+        "slug": "nb-bank-privat-daglig-bruk-kredittkort-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+        "slug": "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+        "type": "program",
+        "family": "theme",
+        "rosterFamily": "theme",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/mobilbank.html",
+        "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/eiendom.html",
+        "slug": "nb-bank-privat-eiendom-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "header"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/barneforsikring.html",
+        "slug": "nb-bank-privat-forsikring-barneforsikring-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/bilforsikring.html",
+        "slug": "nb-bank-privat-forsikring-bilforsikring-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/forsikring.html",
+        "slug": "nb-bank-privat-forsikring-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "header"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+        "slug": "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html",
+        "type": "program",
+        "family": "theme",
+        "rosterFamily": "theme",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/innboforsikring.html",
+        "slug": "nb-bank-privat-forsikring-innboforsikring-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/kundehistorier.html",
+        "slug": "nb-bank-privat-forsikring-kundehistorier-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "static-story",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade.html",
+        "slug": "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+        "type": "article",
+        "family": "news-article",
+        "rosterFamily": "static-story",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/meld-skade.html",
+        "slug": "nb-bank-privat-forsikring-meld-skade-html",
+        "type": "form",
+        "family": "tool",
+        "rosterFamily": "footer-utility",
+        "priority": "footer"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/forsikring/reiseforsikring.html",
+        "slug": "nb-bank-privat-forsikring-reiseforsikring-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat.html",
+        "slug": "nb-bank-privat-html",
+        "type": "landing",
+        "family": "market-landing",
+        "rosterFamily": "market-landing",
+        "priority": "header"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+        "slug": "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "footer-utility",
+        "priority": "footer"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/prisliste.html",
+        "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
+        "type": "static",
+        "family": "utility",
+        "rosterFamily": "footer-utility",
+        "priority": "footer"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice.html",
+        "slug": "nb-bank-privat-kundeservice-html",
+        "type": "landing",
+        "family": "kundeservice-hub",
+        "rosterFamily": "category-hub",
+        "priority": "header"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/kontakt.html",
+        "slug": "nb-bank-privat-kundeservice-kontakt-html",
+        "type": "static",
+        "family": "utility",
+        "rosterFamily": "static-story",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/iban-og-swift.html",
+        "slug": "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+        "type": "form",
+        "family": "tool",
+        "rosterFamily": "tool",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/klager.html",
+        "slug": "nb-bank-privat-kundeservice-verktoy-klager-html",
+        "type": "form",
+        "family": "tool",
+        "rosterFamily": "footer-utility",
+        "priority": "footer"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html",
+        "slug": "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
+        "type": "form",
+        "family": "tool",
+        "rosterFamily": "tool",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sperre-kort.html",
+        "slug": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+        "type": "form",
+        "family": "tool",
+        "rosterFamily": "footer-utility",
+        "priority": "footer"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/valutakalkulator.html",
+        "slug": "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html",
+        "type": "form",
+        "family": "tool",
+        "rosterFamily": "tool",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/lan/billan.html",
+        "slug": "nb-bank-privat-lan-billan-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/lan/boliglan.html",
+        "slug": "nb-bank-privat-lan-boliglan-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/lan/forbrukslan.html",
+        "slug": "nb-bank-privat-lan-forbrukslan-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/lan/gronne-lan.html",
+        "slug": "nb-bank-privat-lan-gronne-lan-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/lan.html",
+        "slug": "nb-bank-privat-lan-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "header"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/lan/lanekalkulator.html",
+        "slug": "nb-bank-privat-lan-lanekalkulator-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "tool",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/lan/refinansiering.html",
+        "slug": "nb-bank-privat-lan-refinansiering-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/lofavor.html",
+        "slug": "nb-bank-privat-lofavor-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "header"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/pensjon/egen-pensjonskonto.html",
+        "slug": "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/pensjon.html",
+        "slug": "nb-bank-privat-pensjon-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "header"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.html",
+        "slug": "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+        "type": "article",
+        "family": "news-article",
+        "rosterFamily": "theme",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/private-banking.html",
+        "slug": "nb-bank-privat-private-banking-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/sparing.html",
+        "slug": "nb-bank-privat-sparing-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "header"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.html",
+        "slug": "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+        "type": "article",
+        "family": "news-article",
+        "rosterFamily": "news-article",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.html",
+        "slug": "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html",
+        "type": "article",
+        "family": "news-article",
+        "rosterFamily": "news-article",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt.html",
+        "slug": "nb-bank-privat-sparing-markedsnytt-html",
+        "type": "listing",
+        "family": "markedsnytt-listing",
+        "rosterFamily": "listing",
+        "priority": "landing"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/sparing/spare-i-fond.html",
+        "slug": "nb-bank-privat-sparing-spare-i-fond-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/sparing/spare-pa-konto.html",
+        "slug": "nb-bank-privat-sparing-spare-pa-konto-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/sparing/spare-til-barn.html",
+        "slug": "nb-bank-privat-sparing-spare-til-barn-html",
+        "type": "program",
+        "family": "product",
+        "rosterFamily": "product",
+        "priority": "detail"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/svindel.html",
+        "slug": "nb-bank-privat-svindel-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "footer-utility",
+        "priority": "footer"
+      },
+      {
+        "url": "https://www.sparebank1.no/nb/bank/privat/tips-og-rad.html",
+        "slug": "nb-bank-privat-tips-og-rad-html",
+        "type": "landing",
+        "family": "category-hub",
+        "rosterFamily": "category-hub",
+        "priority": "header"
+      }
+    ],
+    "cut": {
+      "sitemapPagesNotInRoster": 3024,
+      "regionalBankPages": 6697,
+      "note": "content-pending for later iterations"
+    },
+    "fetchTechnique": "headless",
+    "botBlock": null,
+    "subResourceBlock": null,
+    "requiresAuth": [
+      "/nb/bank/privat/innlogging.html",
+      "/nb/bank/bedrift/innlogging.html"
+    ],
+    "malformed": []
+  },
+  "consent": {
+    "method": "text-match fallback (project instrument fix: + godta alle / aksepter)",
+    "widget": "SB1 optin-settings dialog \"Bruk av informasjonskapsler\"",
+    "run1Misses": [
+      "nb-bank-bedrift-html",
+      "nb-bank-privat-daglig-bruk-bankid-html"
+    ]
+  },
+  "favicon": {
+    "url": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/favicon.png",
+    "file": "assets/favicon.png"
+  },
+  "crawl": {
+    "startedAt": "2026-09-14T14:56:35.544Z",
+    "finishedAt": "2026-09-14T15:06:12.331Z",
+    "successes": 100,
+    "failures": [],
+    "duplicates": []
+  },
+  "stylePass": {
+    "script": "stardust/scripts/capture-styles.mjs",
+    "pagesWithStylePass": 100,
+    "lastRun": "2026-09-14T15:06:21.880Z"
+  },
+  "dynamicSurface": {
+    "pages": 100,
+    "pagesWithSameSiteData": 100,
+    "pagesWithSearchForm": 0,
+    "pagesHydrated": 0,
+    "truncatedPages": 0,
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/nettsider/ressurser/bank/user",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user",
+        "pages": 100,
+        "examples": [
+          "nb-bank-bedrift-html",
+          "nb-bank-privat-html",
+          "nb-bank-privat-daglig-bruk-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/bin/sb1/components/footer",
+        "query": [
+          "bank",
+          "lang",
+          "market"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/bin/sb1/components/footer",
+        "pages": 12,
+        "examples": [
+          "nb-bank-om-oss-nyheter-html",
+          "nb-bank-om-oss-hjemme-html",
+          "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+        "query": [
+          "limit",
+          "offset",
+          "temaFilter"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+        "pages": 6,
+        "examples": [
+          "nb-bank-privat-html",
+          "nb-bank-privat-sparing-html",
+          "nb-bank-privat-pensjon-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/personal/banking/consent/cookies/identity",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity",
+        "pages": 4,
+        "examples": [
+          "nb-bank-bedrift-html",
+          "nb-bank-privat-html",
+          "nb-bank-privat-daglig-bruk-html"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/nettsider/opt-in",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+        "pages": 4,
+        "examples": [
+          "nb-bank-privat-html",
+          "nb-bank-privat-daglig-bruk-html",
+          "nb-bank-om-oss-html"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "adobedc.demdex.net",
+        "path": "/ee/v1/interact",
+        "query": [
+          "configId",
+          "requestId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://adobedc.demdex.net/ee/v1/interact",
+        "pages": 3,
+        "examples": [
+          "nb-bank-privat-html",
+          "nb-bank-om-oss-html",
+          "nb-bank-privat-lan-boliglan-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/nyheter.export.json",
+        "query": [
+          "limit",
+          "offset",
+          "temaFilter"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.export.json",
+        "pages": 3,
+        "examples": [
+          "nb-bank-om-oss-html",
+          "nb-bank-privat-svindel-html",
+          "nb-bank-om-oss-nyheter-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/bank/nettsider-privat/fond/toggles",
+        "query": [
+          "bankShortName"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/bank/nettsider-privat/fond/toggles",
+        "pages": 2,
+        "examples": [
+          "nb-bank-privat-sparing-html",
+          "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/personal/banking/savingscalculator/expected-performance",
+        "query": [
+          "initialValue",
+          "periodicInvestment",
+          "risk",
+          "years"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/expected-performance",
+        "pages": 2,
+        "examples": [
+          "nb-bank-privat-sparing-html",
+          "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/personal/banking/savingscalculator/suggested-savings-product",
+        "query": [
+          "risk",
+          "years"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/suggested-savings-product",
+        "pages": 2,
+        "examples": [
+          "nb-bank-privat-sparing-html",
+          "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/personal/banking/fund/products/available",
+        "query": [
+          "fid"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v3+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/personal/banking/fund/products/available",
+        "pages": 2,
+        "examples": [
+          "nb-bank-privat-sparing-html",
+          "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.sparebank1.no",
+        "path": "/api/personal/banking/boliglan-kalkulator/economy",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/economy",
+        "pages": 2,
+        "examples": [
+          "nb-bank-privat-lan-boliglan-html",
+          "nb-bank-privat-lan-lanekalkulator-html"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.sparebank1.no",
+        "path": "/api/personal/banking/boliglan-kalkulator/annuity-loan",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/annuity-loan",
+        "pages": 2,
+        "examples": [
+          "nb-bank-privat-lan-boliglan-html",
+          "nb-bank-privat-lan-lanekalkulator-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/hjemme.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/hjemme.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-om-oss-hjemme-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/personal/banking/consent/cookies",
+        "query": [
+          "withIdentity"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/personal/banking/consent/cookies",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-lan-forbrukslan-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/personal/banking/credit/calculator/consumerloan/estimate",
+        "query": [
+          "durationInYears",
+          "nominalInterest",
+          "principal"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/personal/banking/credit/calculator/consumerloan/estimate",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-lan-forbrukslan-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/nettsider/ressurser/bank/valutakurser",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/valutakurser",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.export.json",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "googleads.g.doubleclick.net",
+        "path": "/pagead/id",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/html",
+        "sameSite": false,
+        "example": "https://googleads.g.doubleclick.net/pagead/id",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-sparing-markedsnytt-html"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "jnn-pa.googleapis.com",
+        "path": "/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json+protobuf",
+        "sameSite": false,
+        "example": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-sparing-markedsnytt-html"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.youtube.com",
+        "pages": 4,
+        "examples": [
+          "nb-bank-privat-lan-forbrukslan-html",
+          "nb-bank-privat-daglig-bruk-kredittkort-html",
+          "nb-bank-privat-daglig-bruk-bankid-html"
+        ]
+      },
+      {
+        "host": "static.doubleclick.net",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-sparing-markedsnytt-html"
+        ]
+      },
+      {
+        "host": "www.google.com",
+        "pages": 1,
+        "examples": [
+          "nb-bank-privat-sparing-markedsnytt-html"
+        ]
+      }
+    ],
+    "frameworkHints": [],
+    "globalState": [],
+    "formTargets": []
+  },
+  "visionCheck": [
+    {
+      "slug": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-bedriftsforsikring-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-bedriftskort-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-betaling-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-daglig-drift-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-html",
+      "verdict": "recaptured",
+      "notes": "run1 captured the SB1 cookie-consent dialog (\"Bruk av informasjonskapsler\" — Norwegian \"Godta alle\" label unmatched); crawl.mjs consent labels patched (instrument fix), recaptured clean in run3",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-konto-bedriftskonto-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-konto-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-kundeservice-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-lan-finansiering-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-lan-finansiering-leasing-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-open-api-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-pensjon-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-regnskap-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-sparing-investering-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-starte-bedrift-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-bedrift-tips-og-rad-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-hjemme-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-investor-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-jobb-og-karriere-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-nyheter-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-personvern-generelle-vilkar-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-personvern-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-presse-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-samfunnsansvar-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-selskaper-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-om-oss-vare-eksperter-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-bankid-html",
+      "verdict": "recaptured",
+      "notes": "run1 captured the SB1 cookie-consent dialog (\"Bruk av informasjonskapsler\" — Norwegian \"Godta alle\" label unmatched); crawl.mjs consent labels patched (instrument fix), recaptured clean in run3",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-bankkonto-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-bankkort-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-kredittkort-html",
+      "verdict": "recaptured",
+      "notes": "run1 showed lazy illustrations on the logo.svg placeholder (custom data-lazy-src loader); recaptured at slow wait — real asset URLs are in the rendered DOM (data-lazy-src) and are the recreation source; placeholder in screenshot is capture-state",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-eiendom-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-barneforsikring-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-bilforsikring-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-innboforsikring-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-kundehistorier-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-meld-skade-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-forsikring-reiseforsikring-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-kontakt-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-verktoy-klager-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-lan-billan-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-lan-boliglan-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-lan-forbrukslan-html",
+      "verdict": "recaptured",
+      "notes": "run1 showed lazy illustrations on the logo.svg placeholder (custom data-lazy-src loader); recaptured at slow wait — real asset URLs are in the rendered DOM (data-lazy-src) and are the recreation source; placeholder in screenshot is capture-state",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-lan-gronne-lan-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-lan-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-lan-lanekalkulator-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-lan-refinansiering-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-lofavor-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-pensjon-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-private-banking-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-sparing-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-sparing-markedsnytt-html",
+      "verdict": "recaptured",
+      "notes": "run1 showed lazy illustrations on the logo.svg placeholder (custom data-lazy-src loader); recaptured at slow wait — real asset URLs are in the rendered DOM (data-lazy-src) and are the recreation source; placeholder in screenshot is capture-state",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-sparing-spare-i-fond-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-sparing-spare-pa-konto-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-sparing-spare-til-barn-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-svindel-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    },
+    {
+      "slug": "nb-bank-privat-tips-og-rad-html",
+      "verdict": "ok",
+      "notes": "matches record: header, bank-choice band, content, contact row, footer present; palette and logo plausible",
+      "method": "contact-sheet review (stardust/validation/extract-contact-sheets/sheet-01..09.png) + programmatic placeholder/consent detector (_recapture-list.json)"
+    }
+  ],
+  "siblingCandidates": [
+    {
+      "origin": "https://www.sparebank1.no/nb/<regional-bank>/",
+      "confidence": "high",
+      "evidence": "footer lists 12 regional banks on 100/100 pages; same clientlib",
+      "decision": "same design system — same project, later iterations (A1); not a brand-source"
+    },
+    {
+      "origin": "https://kundeforsikring.sparebank1.no",
+      "confidence": "medium",
+      "evidence": "header \"Til forsikring\" + footer \"Pensjon\" links",
+      "decision": "excluded — Fremtind insurance self-service app"
+    },
+    {
+      "origin": "https://www.sparebank1.no/bank/nettbank-privat/*",
+      "confidence": "high",
+      "evidence": "every Logg inn / Søk CTA",
+      "decision": "excluded — authenticated apps"
+    }
+  ],
+  "runs": [
+    {
+      "discovery": {
+        "fetchTechnique": "headless",
+        "count": 100,
+        "concurrency": 4
+      },
+      "consent": {
+        "method": "auto"
+      },
+      "favicon": {
+        "url": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/favicon.png",
+        "file": "assets/favicon.png"
+      },
+      "crawl": {
+        "failures": []
+      },
+      "dynamicSurface": {
+        "pages": 100,
+        "pagesWithSameSiteData": 100,
+        "pagesWithSearchForm": 0,
+        "pagesHydrated": 0,
+        "truncatedPages": 0,
+        "endpoints": [
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/openapi/nettsider/ressurser/bank/user",
+            "query": [],
+            "resourceType": "xhr",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user",
+            "pages": 100,
+            "examples": [
+              "nb-bank-bedrift-html",
+              "nb-bank-privat-html",
+              "nb-bank-privat-daglig-bruk-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/bin/sb1/components/footer",
+            "query": [
+              "bank",
+              "lang",
+              "market"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/bin/sb1/components/footer",
+            "pages": 12,
+            "examples": [
+              "nb-bank-om-oss-nyheter-html",
+              "nb-bank-om-oss-hjemme-html",
+              "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+            "query": [
+              "limit",
+              "offset",
+              "temaFilter"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+            "pages": 6,
+            "examples": [
+              "nb-bank-privat-html",
+              "nb-bank-privat-sparing-html",
+              "nb-bank-privat-pensjon-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/personal/banking/consent/cookies/identity",
+            "query": [],
+            "resourceType": "fetch",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity",
+            "pages": 4,
+            "examples": [
+              "nb-bank-bedrift-html",
+              "nb-bank-privat-html",
+              "nb-bank-privat-daglig-bruk-html"
+            ]
+          },
+          {
+            "method": "POST",
+            "host": "www.sparebank1.no",
+            "path": "/openapi/nettsider/opt-in",
+            "query": [],
+            "resourceType": "fetch",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+            "pages": 4,
+            "examples": [
+              "nb-bank-privat-html",
+              "nb-bank-privat-daglig-bruk-html",
+              "nb-bank-om-oss-html"
+            ]
+          },
+          {
+            "method": "POST",
+            "host": "adobedc.demdex.net",
+            "path": "/ee/v1/interact",
+            "query": [
+              "configId",
+              "requestId"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": false,
+            "example": "https://adobedc.demdex.net/ee/v1/interact",
+            "pages": 3,
+            "examples": [
+              "nb-bank-privat-html",
+              "nb-bank-om-oss-html",
+              "nb-bank-privat-lan-boliglan-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/nb/bank/om-oss/nyheter.export.json",
+            "query": [
+              "limit",
+              "offset",
+              "temaFilter"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.export.json",
+            "pages": 3,
+            "examples": [
+              "nb-bank-om-oss-html",
+              "nb-bank-privat-svindel-html",
+              "nb-bank-om-oss-nyheter-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/bank/nettsider-privat/fond/toggles",
+            "query": [
+              "bankShortName"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/bank/nettsider-privat/fond/toggles",
+            "pages": 2,
+            "examples": [
+              "nb-bank-privat-sparing-html",
+              "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/openapi/personal/banking/savingscalculator/expected-performance",
+            "query": [
+              "initialValue",
+              "periodicInvestment",
+              "risk",
+              "years"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/expected-performance",
+            "pages": 2,
+            "examples": [
+              "nb-bank-privat-sparing-html",
+              "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/openapi/personal/banking/savingscalculator/suggested-savings-product",
+            "query": [
+              "risk",
+              "years"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/suggested-savings-product",
+            "pages": 2,
+            "examples": [
+              "nb-bank-privat-sparing-html",
+              "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/openapi/personal/banking/fund/products/available",
+            "query": [
+              "fid"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/vnd.sparebank1.v3+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/openapi/personal/banking/fund/products/available",
+            "pages": 2,
+            "examples": [
+              "nb-bank-privat-sparing-html",
+              "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html"
+            ]
+          },
+          {
+            "method": "POST",
+            "host": "www.sparebank1.no",
+            "path": "/api/personal/banking/boliglan-kalkulator/economy",
+            "query": [],
+            "resourceType": "fetch",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/economy",
+            "pages": 2,
+            "examples": [
+              "nb-bank-privat-lan-boliglan-html",
+              "nb-bank-privat-lan-lanekalkulator-html"
+            ]
+          },
+          {
+            "method": "POST",
+            "host": "www.sparebank1.no",
+            "path": "/api/personal/banking/boliglan-kalkulator/annuity-loan",
+            "query": [],
+            "resourceType": "fetch",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/api/personal/banking/boliglan-kalkulator/annuity-loan",
+            "pages": 2,
+            "examples": [
+              "nb-bank-privat-lan-boliglan-html",
+              "nb-bank-privat-lan-lanekalkulator-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/nb/bank/om-oss/hjemme.export.json",
+            "query": [
+              "limit",
+              "offset"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/nb/bank/om-oss/hjemme.export.json",
+            "pages": 1,
+            "examples": [
+              "nb-bank-om-oss-hjemme-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/personal/banking/consent/cookies",
+            "query": [
+              "withIdentity"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/personal/banking/consent/cookies",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-lan-forbrukslan-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/openapi/personal/banking/credit/calculator/consumerloan/estimate",
+            "query": [
+              "durationInYears",
+              "nominalInterest",
+              "principal"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/openapi/personal/banking/credit/calculator/consumerloan/estimate",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-lan-forbrukslan-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/openapi/nettsider/ressurser/bank/valutakurser",
+            "query": [],
+            "resourceType": "fetch",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/valutakurser",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.export.json",
+            "query": [
+              "limit",
+              "offset"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.export.json",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-pensjon-hva-far-jeg-i-pensjon-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade.export.json",
+            "query": [
+              "limit",
+              "offset"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade.export.json",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-.export.json",
+            "query": [
+              "limit",
+              "offset"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-.export.json",
+            "pages": 1,
+            "examples": [
+              "nb-bank-om-oss-nyheter-5-lommebokvennlige-tips-til-juleshoppingen-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.export.json",
+            "query": [
+              "limit",
+              "offset"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.export.json",
+            "pages": 1,
+            "examples": [
+              "nb-bank-om-oss-nyheter-advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.export.json",
+            "query": [
+              "limit",
+              "offset"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.export.json",
+            "pages": 1,
+            "examples": [
+              "nb-bank-om-oss-nyheter-bamses-historie-traktorulykken-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.export.json",
+            "query": [
+              "limit",
+              "offset"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.export.json",
+            "pages": 1,
+            "examples": [
+              "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket.export.json",
+            "query": [
+              "limit",
+              "offset"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket.export.json",
+            "pages": 1,
+            "examples": [
+              "nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.export.json",
+            "query": [
+              "limit",
+              "offset"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.export.json",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.export.json",
+            "query": [
+              "limit",
+              "offset"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.export.json",
+            "pages": 1,
+            "examples": [
+              "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.export.json",
+            "query": [
+              "limit",
+              "offset"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.export.json",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "googleads.g.doubleclick.net",
+            "path": "/pagead/id",
+            "query": [],
+            "resourceType": "xhr",
+            "contentType": "text/html",
+            "sameSite": false,
+            "example": "https://googleads.g.doubleclick.net/pagead/id",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-sparing-markedsnytt-html"
+            ]
+          },
+          {
+            "method": "POST",
+            "host": "jnn-pa.googleapis.com",
+            "path": "/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+            "query": [],
+            "resourceType": "xhr",
+            "contentType": "application/json+protobuf",
+            "sameSite": false,
+            "example": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-sparing-markedsnytt-html"
+            ]
+          }
+        ],
+        "thirdPartyScriptHosts": [
+          {
+            "host": "www.youtube.com",
+            "pages": 4,
+            "examples": [
+              "nb-bank-privat-lan-forbrukslan-html",
+              "nb-bank-privat-daglig-bruk-kredittkort-html",
+              "nb-bank-privat-daglig-bruk-bankid-html"
+            ]
+          },
+          {
+            "host": "static.doubleclick.net",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-sparing-markedsnytt-html"
+            ]
+          },
+          {
+            "host": "www.google.com",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-sparing-markedsnytt-html"
+            ]
+          }
+        ],
+        "frameworkHints": [],
+        "globalState": [],
+        "formTargets": []
+      },
+      "pages": 100,
+      "invokedAt": "2026-09-14T14:55:00Z",
+      "args": "--pages <100 roster> --max 100 --wait medium --concurrency 4 --dynamics"
+    },
+    {
+      "discovery": {
+        "fetchTechnique": "headless",
+        "count": 6,
+        "concurrency": 3
+      },
+      "consent": {
+        "method": "auto"
+      },
+      "favicon": {
+        "url": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/favicon.png",
+        "file": "assets/favicon.png"
+      },
+      "crawl": {
+        "failures": []
+      },
+      "dynamicSurface": {
+        "pages": 6,
+        "pagesWithSameSiteData": 6,
+        "pagesWithSearchForm": 0,
+        "pagesHydrated": 0,
+        "truncatedPages": 0,
+        "endpoints": [
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/openapi/nettsider/ressurser/bank/user",
+            "query": [],
+            "resourceType": "xhr",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user",
+            "pages": 6,
+            "examples": [
+              "nb-bank-privat-daglig-bruk-bankid-html",
+              "nb-bank-bedrift-html",
+              "nb-bank-privat-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/personal/banking/consent/cookies/identity",
+            "query": [],
+            "resourceType": "fetch",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity",
+            "pages": 3,
+            "examples": [
+              "nb-bank-privat-daglig-bruk-bankid-html",
+              "nb-bank-bedrift-html",
+              "nb-bank-privat-html"
+            ]
+          },
+          {
+            "method": "POST",
+            "host": "www.sparebank1.no",
+            "path": "/openapi/nettsider/opt-in",
+            "query": [],
+            "resourceType": "fetch",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+            "pages": 3,
+            "examples": [
+              "nb-bank-privat-html",
+              "nb-bank-privat-lan-forbrukslan-html",
+              "nb-bank-privat-daglig-bruk-kredittkort-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+            "query": [
+              "limit",
+              "offset",
+              "temaFilter"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+            "pages": 2,
+            "examples": [
+              "nb-bank-privat-html",
+              "nb-bank-privat-sparing-markedsnytt-html"
+            ]
+          },
+          {
+            "method": "POST",
+            "host": "adobedc.demdex.net",
+            "path": "/ee/v1/interact",
+            "query": [
+              "configId",
+              "requestId"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": false,
+            "example": "https://adobedc.demdex.net/ee/v1/interact",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "googleads.g.doubleclick.net",
+            "path": "/pagead/id",
+            "query": [],
+            "resourceType": "xhr",
+            "contentType": "text/html",
+            "sameSite": false,
+            "example": "https://googleads.g.doubleclick.net/pagead/id",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-sparing-markedsnytt-html"
+            ]
+          },
+          {
+            "method": "POST",
+            "host": "jnn-pa.googleapis.com",
+            "path": "/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+            "query": [],
+            "resourceType": "xhr",
+            "contentType": "application/json+protobuf",
+            "sameSite": false,
+            "example": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-sparing-markedsnytt-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/personal/banking/consent/cookies",
+            "query": [
+              "withIdentity"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/personal/banking/consent/cookies",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-lan-forbrukslan-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/openapi/personal/banking/credit/calculator/consumerloan/estimate",
+            "query": [
+              "durationInYears",
+              "nominalInterest",
+              "principal"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/openapi/personal/banking/credit/calculator/consumerloan/estimate",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-lan-forbrukslan-html"
+            ]
+          }
+        ],
+        "thirdPartyScriptHosts": [
+          {
+            "host": "www.youtube.com",
+            "pages": 4,
+            "examples": [
+              "nb-bank-privat-daglig-bruk-bankid-html",
+              "nb-bank-privat-sparing-markedsnytt-html",
+              "nb-bank-privat-lan-forbrukslan-html"
+            ]
+          },
+          {
+            "host": "static.doubleclick.net",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-sparing-markedsnytt-html"
+            ]
+          },
+          {
+            "host": "www.google.com",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-sparing-markedsnytt-html"
+            ]
+          }
+        ],
+        "frameworkHints": [],
+        "globalState": [],
+        "formTargets": []
+      },
+      "pages": 6,
+      "invokedAt": "2026-09-14T15:16:00Z",
+      "args": "--pages <5 recapture + entry> --wait slow --concurrency 3 --dynamics (escalation ladder step 1)"
+    },
+    {
+      "discovery": {
+        "fetchTechnique": "headless",
+        "count": 3,
+        "concurrency": 2
+      },
+      "consent": {
+        "method": "auto"
+      },
+      "favicon": {
+        "url": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/favicon.png",
+        "file": "assets/favicon.png"
+      },
+      "crawl": {
+        "failures": []
+      },
+      "dynamicSurface": {
+        "pages": 3,
+        "pagesWithSameSiteData": 3,
+        "pagesWithSearchForm": 0,
+        "pagesHydrated": 0,
+        "truncatedPages": 0,
+        "endpoints": [
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/openapi/nettsider/ressurser/bank/user",
+            "query": [],
+            "resourceType": "xhr",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user",
+            "pages": 3,
+            "examples": [
+              "nb-bank-privat-html",
+              "nb-bank-bedrift-html",
+              "nb-bank-privat-daglig-bruk-bankid-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/personal/banking/consent/cookies/identity",
+            "query": [],
+            "resourceType": "fetch",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/personal/banking/consent/cookies/identity",
+            "pages": 2,
+            "examples": [
+              "nb-bank-privat-html",
+              "nb-bank-bedrift-html"
+            ]
+          },
+          {
+            "method": "POST",
+            "host": "www.sparebank1.no",
+            "path": "/openapi/nettsider/opt-in",
+            "query": [],
+            "resourceType": "fetch",
+            "contentType": "application/vnd.sparebank1.v1+json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/openapi/nettsider/opt-in",
+            "pages": 2,
+            "examples": [
+              "nb-bank-privat-html",
+              "nb-bank-bedrift-html"
+            ]
+          },
+          {
+            "method": "POST",
+            "host": "adobedc.demdex.net",
+            "path": "/ee/v1/interact",
+            "query": [
+              "configId",
+              "requestId"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": false,
+            "example": "https://adobedc.demdex.net/ee/v1/interact",
+            "pages": 2,
+            "examples": [
+              "nb-bank-privat-html",
+              "nb-bank-bedrift-html"
+            ]
+          },
+          {
+            "method": "GET",
+            "host": "www.sparebank1.no",
+            "path": "/nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+            "query": [
+              "limit",
+              "offset",
+              "temaFilter"
+            ],
+            "resourceType": "fetch",
+            "contentType": "application/json",
+            "sameSite": true,
+            "example": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-html"
+            ]
+          }
+        ],
+        "thirdPartyScriptHosts": [
+          {
+            "host": "www.youtube.com",
+            "pages": 1,
+            "examples": [
+              "nb-bank-privat-daglig-bruk-bankid-html"
+            ]
+          }
+        ],
+        "frameworkHints": [],
+        "globalState": [],
+        "formTargets": []
+      },
+      "pages": 3,
+      "invokedAt": "2026-09-14T15:26:00Z",
+      "args": "--pages bedrift,bankid --wait slow (after consent-label instrument fix)"
+    }
+  ]
+}

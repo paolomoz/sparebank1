@@ -1,0 +1,3136 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-09-14T14:58:54.554Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200,
+    "stylePass": {
+      "fetchedAt": "2026-09-14T15:01:57.872Z",
+      "waitMs": 4074,
+      "httpStatus": 200,
+      "viewport": "1440x900@2x",
+      "script": "stardust/scripts/capture-styles.mjs"
+    }
+  },
+  "slug": "nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html",
+  "url": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.html",
+  "finalUrl": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.html",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-09-14T14:58:54.554Z",
+  "title": "Går du glipp av millioner i pensjon? – Mange får seg en overraskelse | SpareBank 1",
+  "metaDescription": "De færreste av oss vet hvor mye arbeidsgiveren vår sparer for oss til pensjon. Forskjellen på de beste og dårligste tjenestepensjonsordningene kan faktisk utgjøre mange millioner kroner den dagen du slutter å jobbe. Har du råd til å la være å sjekke tallene dine?",
+  "canonical": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.html",
+  "og": {
+    "title": "Går du glipp av millioner i pensjon? – Mange får seg en overraskelse ",
+    "description": "De færreste av oss vet hvor mye arbeidsgiveren vår sparer for oss til pensjon. Forskjellen på de beste og dårligste tjenestepensjonsordningene kan faktisk utgjøre mange millioner kroner den dagen du slutter å jobbe. Har du råd til å la være å sjekke tallene dine?",
+    "image": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/pensjonssak-tjenestepensjon-illustrasjon-markedsnytt-ny.jpg.thumb.1280.2276.jpg",
+    "type": "article",
+    "siteName": null
+  },
+  "themeColor": {},
+  "language": "nb",
+  "generator": null,
+  "heroHeadline": "Går du glipp av millioner i pensjon? – Mange får seg en overraskelse",
+  "heroLede": "De færreste av oss vet hvor mye arbeidsgiveren vår sparer for oss til pensjon. Forskjellen på de beste og dårligste tjenestepensjonsordningene kan faktisk utgjøre mange millioner kroner den dagen du slutter å jobbe. Har du råd til å la være å sjekke tallene dine?",
+  "heroSource": "dom",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Går du glipp av millioner i pensjon? – Mange får seg en overraskelse",
+      "id": null,
+      "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__header.responsive-grid:nth-child(1) > div.title:nth-child(3) > h1.ffe-h1",
+      "top": 765,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "64px",
+        "lineHeight": "70px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Forskjeller som vokser over tid",
+      "id": null,
+      "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__content.responsive-grid:nth-child(2) > div.text:nth-child(4) > div.text-content:nth-child(1) > h2",
+      "top": 2199,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Husk pensjon når du bytter jobb",
+      "id": null,
+      "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__content.responsive-grid:nth-child(2) > div.text:nth-child(6) > div.text-content:nth-child(1) > h2",
+      "top": 3167,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Sjekk spareprofilen",
+      "id": null,
+      "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__content.responsive-grid:nth-child(2) > div.text:nth-child(7) > div.text-content:nth-child(1) > h2",
+      "top": 3587,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "PENSJONSEKSPERTEN OPPSUMMERER DET VIKTIGSTE I TRE RÅD:",
+      "id": null,
+      "domPath": "div.sb1-article__content.responsive-grid:nth-child(2) > div.infoBox__fullWidth.infoBox:nth-child(8) > div.infoBox__content.sb1-bgcolor__sand-70:nth-child(2) > div.text:nth-child(1) > div.text-content:nth-child(1) > h2",
+      "top": 4275,
+      "style": {
+        "fontFamily": "SpareBank1-title-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "uppercase"
+      }
+    },
+    {
+      "level": 2,
+      "text": "RELATERTE ARTIKLER",
+      "id": null,
+      "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1) > div.related-list > h2.ffe-h5.related-list__header",
+      "top": 1154,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "18px",
+        "lineHeight": "24px",
+        "letterSpacing": "2.6px",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "uppercase"
+      }
+    },
+    {
+      "level": 2,
+      "text": "RELATERTE TEMA",
+      "id": null,
+      "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.tags:nth-child(2) > h2.ffe-h5.related-list__header",
+      "top": 2417,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "18px",
+        "lineHeight": "24px",
+        "letterSpacing": "2.6px",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "uppercase"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Snarveier",
+      "id": null,
+      "domPath": "div.ffe-grid__col.ffe-grid__col--sm-12 > div.ffe-grid > div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > h2.ffe-h2.ffe-h4",
+      "top": 5202,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Logg inn",
+      "id": null,
+      "domPath": "div.ffe-grid__col.ffe-grid__col--sm-12 > div.ffe-grid > div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(2) > h2.ffe-h2.ffe-h4",
+      "top": 5202,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Sosiale medier",
+      "id": null,
+      "domPath": "div.ffe-grid__col.ffe-grid__col--sm-12 > div.ffe-grid > div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column.footer-columns__column--social-media:nth-child(3) > h2.ffe-h2.ffe-h4",
+      "top": 5202,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(255, 255, 255)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 2,
+      "text": "Bruk av informasjonskapsler",
+      "id": null,
+      "domPath": "section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(2) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > span.optin-header-wrapper > h2.ffe-h3.optin-settings-header",
+      "top": 111,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "24px",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    },
+    {
+      "level": 3,
+      "text": "Teknisk",
+      "id": null,
+      "domPath": "div.optin__pages.optin__pages--settings-page:nth-child(2) > section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(3) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > h3.ffe-h5.optin-settings__header",
+      "top": 167,
+      "style": {
+        "fontFamily": "SpareBank1-medium, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 39, 118)",
+        "textTransform": "none"
+      }
+    }
+  ],
+  "headingsCrawl": [
+    {
+      "tag": "h1",
+      "text": "Går du glipp av millioner i pensjon? – Mange får seg en overraskelse"
+    },
+    {
+      "tag": "h2",
+      "text": "Forskjeller som vokser over tid"
+    },
+    {
+      "tag": "h2",
+      "text": "Husk pensjon når du bytter jobb"
+    },
+    {
+      "tag": "h2",
+      "text": "Sjekk spareprofilen"
+    },
+    {
+      "tag": "h2",
+      "text": "pensjonseksperten Oppsummerer det Viktigste i tre råd:"
+    },
+    {
+      "tag": "h2",
+      "text": "Relaterte artikler"
+    },
+    {
+      "tag": "h2",
+      "text": "Relaterte tema"
+    },
+    {
+      "tag": "h2",
+      "text": "Snarveier"
+    },
+    {
+      "tag": "h2",
+      "text": "Logg inn"
+    },
+    {
+      "tag": "h2",
+      "text": "Sosiale medier"
+    }
+  ],
+  "body": [
+    "Privat",
+    "Bedrift",
+    "Om oss",
+    "Daglig bruk",
+    "Låne",
+    "Spare",
+    "Pensjon",
+    "Forsikring",
+    "Eiendom",
+    "Tips og råd",
+    "Kundeservice",
+    "LOfavør-fordeler",
+    "De færreste av oss vet hvor mye arbeidsgiveren vår sparer for oss til pensjon. Forskjellen på de beste og dårligste tjenestepensjonsordningene kan faktisk utgjøre mange millioner kroner den dagen du slutter å jobbe. Har du råd til å la være å sjekke tallene dine?",
+    "Kun rundt hver tredje ansatt vet hva arbeidsgiver sparer for dem til pensjon. Nesten to av tre ansatte er enten usikre eller har ingen anelse. Det viser en undersøkelse gjort av Respons Analyse for SpareBank 1.",
+    "Hvis arbeidsgiveren din sparer tilsvarende 2 prosent av lønnen din for deg, har du en minimumsordning. I de beste ordningene kan arbeidsgiver spare tilsvarende 7 prosent av lønnen din inntil 1.561.920 kroner, også kalt 12 G. Arbeidsgiver kan også spare inntil 18,1 prosent ekstra for lønn over 924.136 kroner (7,1 G). G er forkortelsen for grunnbeløpet og brukes som beregningsgrunnlag i folketrygden. I dag tilsvarer 1 G 130.160 kroner, men beløpet justeres årlig.",
+    "– Når du slutter å jobbe, er det pensjonspengene du skal leve av. Pensjon blir da lønnen din, og det er derfor viktig at du setter deg inn i hva slags pensjonsordning du har gjennom jobben, sier pensjonsekspert Marianne Christensen i SpareBank 1.",
+    "Forskjellen mellom høy og lav spareprosent merkes ikke nødvendigvis fra ett år til det neste. Over tid blir den derimot stor. Pensjonssparing tilsvarende 2 eller 7 prosent av lønn gir svært ulikt sluttresultat. Det ser vi tydelig i eksemplene nedenfor.",
+    "La oss si du har 500.000 kroner i årslønn, er 30 år, får 2 prosent lønnsvekst i året og jobber til du er 67 år:",
+    "2 prosent sparing fra arbeidsgiver kan vokse til rundt 1.133.000 kroner i potten totalt den dagen du går av med pensjon.",
+    "7 prosent sparing fra arbeidsgiver kan vokse til rundt 3.967.000 kroner.",
+    "Er du 50 år og tjener 700.000 kroner i året, kan 2 prosent sparing fra arbeidsgiver tilsvarende vokse til rundt 340.000 kroner totalt, mens 7 prosent kan vokse til nesten 1,2 millioner.",
+    "Eksemplene viser at forskjellene kan bli enorme. Likevel er det sjelden du som arbeidstaker er i posisjon til å påvirke eller endre spareprosenten arbeidsgiver har valgt på pensjonsordningen. Den er som regel bestemt på forhånd, og er den samme for alle ansatte. Nettopp derfor er det viktig å vite hva slags pensjonsordning du faktisk har – og pensjon bør være en naturlig del av totalvurderingen når du vurderer et jobbtilbud eller planlegger et bytte, påpeker Marianne.",
+    "– Er du i den situasjonen at du kan velge mellom flere jobber, er det mer enn lønn her og nå som teller. Pensjon kan utgjøre store beløp over tid – og er en del av den samlede kompensasjonen. Et godt råd er derfor også å løfte pensjon som tema i den årlige lønnssamtalen. For noen kan justeringer i pensjon gi større verdi på sikt enn en tilsvarende økning i lønn, sier hun.",
+    "Utover å påvirke eller være bevisst på arbeidsgivers spareprosent, er det også andre tiltak du kan gjøre.",
+    "Marianne påpeker at det ikke bare er sparebeløpet som teller; vel så avgjørende er hvordan pengene i pensjonsordningen investeres. Likevel har mange ikke tatt stilling til dette. Rundt hver tredje med innskuddspensjon har ikke aktivt valgt hvordan pensjonssparingen deres skal investeres. Det viser undersøkelsen som er gjort av Respons Analyse blant personer med innskuddspensjon, den vanligste pensjonsordningen i privat sektor.",
+    "– En spareprofil, også kalt investeringsprofil, forteller hvordan sparingen din er satt sammen, altså hvordan fordelingen er mellom aksjer og renter. Når du sparer til pensjon betyr denne fordelingen mye for utviklingen over tid. Aksjer kan svinge mer underveis, men har historisk gitt høyere avkastning enn renter over tid. Over et langt arbeidsliv kan derfor valg av spareprofil ha stor betydning for hvor mye pensjon du til slutt får utbetalt, sier Marianne.",
+    "Hun påpeker at valg av spareprofil først og fremst handler om hvor lenge du har igjen til pensjon, og hvor komfortabel du er med at verdien kan svinge på veien. Har du mange år igjen i jobb, kan en høy aksjeandel gi bedre vekstmuligheter. Når pensjonsalderen nærmer seg, kan det være fornuftig å trappe ned risikoen. Det finnes også løsninger der aksjeandelen er høy når du er ung, og gradvis reduseres automatisk etter hvert som du blir eldre.",
+    "– Pensjon er langsiktig sparing, og generelt anbefaler vi å ha en høy aksjeandel når det er lenge til du skal begynne å ta ut pensjonen. Med en spareprofil som passer deg og livssituasjonen din, gir du pengene best mulig vekstgrunnlag over tid, sier Marianne.",
+    "1. Sjekk pensjonsordningen. Start med å finne ut hvor mye arbeidsgiveren din faktisk sparer for deg. Det er grunnlaget for alle videre valg du tar.",
+    "Hvor god pensjonsordning du har gjennom jobben, har nemlig stor betydning for hvordan du bør spare privat. For mange vil det være avgjørende for om de må sette av ekstra penger på egen hånd for å kunne leve det livet de ønsker som pensjonist – enten det handler om reiser, fritid eller økonomisk trygghet i hverdagen. Jo tidligere du får oversikt, desto bedre kan du planlegge.",
+    "2. Juster spareprofilen, velg en spareprofil som er tilpasset deg og din livssituasjon",
+    "3. Start privat sparing så tidlig som mulig. Jo tidligere du begynner, desto mindre beløp trenger du å sette av, fordi rentes rente-effekten gjør at pengene får mer tid til å vokse av seg selv.",
+    "Du kan sjekke pensjonen din på www.nav.no eller her hos SpareBank 1.",
+    "Dette innholdet er å anse som markedsføring og er verken ment som personlige spareråd eller anbefalinger. Har du spørsmål om pensjon, kan du kontakte en av rådgiverne våre.",
+    "Selv om aksjemarkedet har gitt god avkastning historisk, er det ingen garanti for fremtidig avkastning. Avkastningen kan bli både positiv og negativ, og den påvirkes av markedsutviklingen, risikoen i din spareprofil, forvalters dyktighet og kostnader.",
+    "Bli kunde",
+    "Sperre kort",
+    "Meld skade",
+    "Prisliste",
+    "Kundeservice",
+    "Klage",
+    "Svindel",
+    "Nettbank privat",
+    "Nettbank bedrift",
+    "Forsikring",
+    "Pensjon",
+    "Selskapsinformasjon",
+    "Vilkår for bruk av nettsiden",
+    "Personvern",
+    "Informasjonskapsler",
+    "For utviklere"
+  ],
+  "codeBlocks": [],
+  "landmarks": [
+    {
+      "tag": "main",
+      "role": "main",
+      "id": "main-content",
+      "classes": [
+        "main"
+      ],
+      "childElementCount": 3,
+      "innerText": "PRIVAT\nBEDRIFT\nOM OSS\nSøk\nBli kunde\nLogg inn\nDaglig bruk\nLåne\nSpare\nPensjon\nForsikring\nEiendom\nTips og råd\nKundeservice\nLOfavør-fordeler\nPENSJON\nGår du glipp av millioner i pensjon? – Mange får seg en overraskelse\n27. APRIL 2026\nDe færreste av oss vet hvor mye arbeidsgiveren vår sparer for oss til pensjon. Forskjellen på de beste og dårligste tjenestepensjonsordningene kan faktisk utgjøre mange millioner kroner den dagen du slutter å jobbe. Har du råd til å la være å sjekke tallene dine?\nKun rundt hver tredje ansatt vet hva arbeidsgiver sparer for dem til pensjon. Nesten to av tre ansatte er enten usikre eller har ingen anelse. Det viser en undersøkelse gjort av Respons Analyse for SpareBank 1.\nHvis arbeidsgiveren din sparer tilsvarende 2 prosent av lønnen din for deg, har du en minimumsordning. I de beste ordningene kan arbeidsgiver spare tilsvarende 7 prosent av lønnen din inntil 1.561.920 kroner, også kalt 12 G. Arbeidsgiver kan også spare inntil 18,1 prosent ekstra for lønn over 924.136 kroner (7,1 G). G er forkortelsen for grunnbeløpet og brukes som beregningsgrunnlag i folketrygden. I dag tilsvarer 1 G 130.160 kroner, men beløpet justeres årlig.\n– Når du slutter å jobbe, er det pensjonspengene du skal leve av. Pensjon blir da lønnen din, og det er derfor viktig at du setter deg inn i hva slags pensjonsordning du har gjennom jobben, sier pensjonsekspert Marianne Christensen i SpareBank 1.\n–  Mange tror at pensjonssparingen de har gjennom jobben er veldig god. Når de først sjekker, oppdager flere at arbeidsgiver sparer langt mindre enn de hadde sett for seg. Over tid kan det utgjøre en forskjell på flere millioner kroner, sier Marianne.\nForskjeller som vokser over tid\nForskjellen mellom høy og lav spareprosent merkes ikke nødvendigvis fra ett år til det neste. Over tid blir den derimot stor. Pensjonssparing tilsvarende 2 eller 7 prosent av lønn gir svært ulikt sluttresultat. Det ser vi tydelig i eksemplene nedenfor.\nLa oss si du har 500.000 kroner i årslønn, er 30 år, får 2 prosent lønnsvekst i året og jobber til du er 67 år:\n2 prosent sparing fra arbeidsgiver kan vokse til rundt 1.133.000 kroner i potten totalt den dagen du går av med pensjon.\n7 prosent sparing fra arbeidsgiver kan vokse til rundt 3.967.000 kroner.\nEr du 50 år og tjener 700.000 kroner i året, kan 2 prosent sparing fra arbeidsgiver tilsvarende vokse til rundt 340.000 kroner totalt, mens 7 prosent kan vokse til nesten 1,2 millioner.\nAlle prognosene er basert på at sparingen er plassert i en innskuddspensjonsordning med alderstilpasset spareprofil, hvor fordelingen mellom aksjer og renter justeres i tråd med alderen din. Aktiv forvaltning. Uttaket starter ved fylte 67 år. Beregningene er i tråd med Finans Norges bransjestandard for avkastningsprognoser, og det er lagt til grunn at årlig lønnsvekst, inflasjon og G-regulering er på 2 prosent. Kilde: SpareBank 1 Forsikring.\nHusk pensjon når du bytter jobb\nEksemplene viser at forskjellene kan bli enorme. Likevel er det sjelden du som arbeidstaker er i posisjon til å påvirke eller endre spareprosenten arbeidsgiver har valgt på pensjonsordningen. Den er som regel bestemt på forhånd, og er den samme for alle ansatte. Nettopp derfor er det viktig å vite hva slags pensjonsordning du faktisk har – og pensjon bør være en naturlig del av totalvurderingen når du vurderer et jobbtilbud eller planlegger et bytte, påpeker Marianne.\n– Er du i den situasjonen at du kan velge mellom flere jobber, er det mer enn lønn her og nå som teller. Pensjon kan utgjøre store beløp over tid – og er en del av den samlede kompensasjonen. Et godt råd er derfor også å løfte pensjon som tema i den årlige lønnssamtalen. For noen kan justeringer i pensjon gi større verdi på sikt enn en tilsvarende økning i lønn, sier hun.\nUtover å påvirke eller være bevisst på arbeidsgivers spareprosent, er det også andre tiltak du kan gjøre.\nSjekk spareprofilen\nMarianne påpeker at det ikke bare er sparebeløpet som teller; vel så avgjørende er hvordan pengene i pensjonsordningen investeres. Likevel har mange ikke tatt stilling til dette. Rundt hver tredje med innskuddspensjon har ikke aktivt valgt hvordan pensjonssparingen deres skal investeres. Det viser undersøkelsen som er gjort av Respons Analyse blant personer med innskuddspensjon, den vanligste pensjonsordningen i privat sektor.\n– En spareprofil, også kalt investeringsprofil, forteller hvordan sparingen din er satt sammen, altså hvordan fordelingen er mellom aksjer og renter. Når du sparer til pensjon betyr denne fordelingen mye for utviklingen over tid. Aksjer kan svinge mer underveis, men har historisk gitt høyere avkastning enn renter over tid. Over et langt arbeidsliv kan derfor valg av spareprofil ha stor betydning for hvor mye pensjon du til slutt får utbetalt, sier Marianne.\nHun påpeker at valg av spareprofil først og fremst handler om hvor lenge du har igjen til pensjon, og hvor komfortabel du er med at verdien kan svinge på veien. Har du mange år igjen i jobb, kan en høy aksjeandel gi bedre vekstmuligheter. Når pensjonsalderen nærmer seg, kan det være fornuftig å trappe ned risikoen. Det finnes også løsninger der aksjeandelen er høy når du er ung, og gradvis reduseres automatisk etter hvert som du blir eldre.\n– Pensjon er langsiktig sparing, og generelt anbefaler vi å ha en høy aksjeandel når det er lenge til du skal begynne å ta ut pensjonen. Med en spareprofil som passer deg og livssituasjonen din, gir du pengene best mulig vekstgrunnlag over tid, sier Marianne.\nPENSJONSEKSPERTEN OPPSUMMERER DET VIKTIGSTE I TRE RÅD:\n1. Sjekk pensjonsordningen. Start med å finne ut hvor mye arbeidsgiveren din faktisk sparer for deg. Det er grunnlaget for alle videre valg du tar.\nHvor god pensjonsordning du har gjennom jobben, har nemlig stor betydning for hvordan du bør spare privat. For mange vil det være avgjørende for om de må sette av ekstra penger på egen hånd for å kunne leve det livet de ønsker som pensjonist – enten det handler om reiser, fritid eller økonomisk trygghet i hverdagen. Jo tidligere du får oversikt, desto bedre kan du planlegge.\n2. Juster spareprofilen, velg en spareprofil som er tilpasset deg og din livssituasjon\n3. Start privat sparing så tidlig som mulig. Jo tidligere du begynner, desto mindre beløp trenger du å sette av, fordi rentes rente-effekten gjør at pengene får mer tid til å vokse av seg selv.\nDu kan sjekke pensjonen din på www.nav.no eller her hos SpareBank 1.\nLes mer om pensjon her\nDu finner flere artikler om sparing og investering på Markedsnytt\nDette innholdet er å anse som markedsføring og er verken ment som personlige spareråd eller anbefalinger. Har du spørsmål om pensjon, kan du kontakte en av rådgiverne våre.\nSelv om aksjemarkedet har gitt god avkastning historisk, er det ingen garanti for fremtidig avkastning. Avkastningen kan bli både positiv og negativ, og den påvirkes av markedsutviklingen, risikoen i din spareprofil, forvalters dyktighet og kostnader.\nRELATERTE ARTIKLER\nSjekk pensjonskalkulatoren: Se hvordan økonomien din kan bli som pensjonist\nDin guide til god pensjonsøkonomi: – Det handler om frihet\nMange havner i 62-årsfella:– Inntekten kan falle med 70 % over natten\nSmarte damer tar smarte valg\nMillionforskjellen du ikke vil gå glipp av\nRELATERTE TEMA\n#Pensjon\nSnarveier\nBli kunde\nSperre kort\nMeld skade\nPrisliste\nKundeservice\nKlage\nSvindel\nLogg inn\nNettbank privat\nNettbank bedrift\nForsikring\nPensjon\nSosiale medier\nSelskapsinformasjon\nVilkår for bruk av nettsiden\nPersonvern\nInformasjonskapsler\nFor utviklere\nSpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo",
+      "children": [
+        {
+          "tag": "header",
+          "role": null,
+          "id": null,
+          "classes": [
+            "header",
+            "undefined"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "PRIVAT\nBEDRIFT\nOM OSS\nSøk\nBli kunde\nLogg inn\nDaglig bruk\nLåne\nSpare\nPensjon\nForsikring\nEiendom\nTips og råd\nKundeservice\nLOfavør-fordeler",
+          "wordCount": 21,
+          "rect": {
+            "top": 0,
+            "height": 124,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "sb1-article",
+            "responsive-grid"
+          ],
+          "purpose": "rich-text",
+          "headlineRef": 0,
+          "innerTextSummary": "PENSJON\nGår du glipp av millioner i pensjon? – Mange får seg en overraskelse\n27. APRIL 2026\nDe færreste av oss vet hvor mye arbeidsgiveren vår sparer for oss til pensjon. Forskjellen på de beste og dårligste tjenestepensjonsordningene kan f",
+          "wordCount": 1168,
+          "rect": {
+            "top": 164,
+            "height": 4923,
+            "width": 1144
+          },
+          "body": [
+            "De færreste av oss vet hvor mye arbeidsgiveren vår sparer for oss til pensjon. Forskjellen på de beste og dårligste tjenestepensjonsordningene kan faktisk utgjøre mange millioner kroner den dagen du slutter å jobbe. Har du råd til å la være å sjekke tallene dine?",
+            "Kun rundt hver tredje ansatt vet hva arbeidsgiver sparer for dem til pensjon. Nesten to av tre ansatte er enten usikre eller har ingen anelse. Det viser en undersøkelse gjort av Respons Analyse for SpareBank 1.",
+            "Hvis arbeidsgiveren din sparer tilsvarende 2 prosent av lønnen din for deg, har du en minimumsordning. I de beste ordningene kan arbeidsgiver spare tilsvarende 7 prosent av lønnen din inntil 1.561.920 kroner, også kalt 12 G. Arbeidsgiver kan også spare inntil 18,1 prosent ekstra for lønn over 924.136 kroner (7,1 G). G er forkortelsen for grunnbeløpet og brukes som beregningsgrunnlag i folketrygden. I dag tilsvarer 1 G 130.160 kroner, men beløpet justeres årlig.",
+            "– Når du slutter å jobbe, er det pensjonspengene du skal leve av. Pensjon blir da lønnen din, og det er derfor viktig at du setter deg inn i hva slags pensjonsordning du har gjennom jobben, sier pensjonsekspert Marianne Christensen i SpareBank 1.",
+            "Forskjellen mellom høy og lav spareprosent merkes ikke nødvendigvis fra ett år til det neste. Over tid blir den derimot stor. Pensjonssparing tilsvarende 2 eller 7 prosent av lønn gir svært ulikt sluttresultat. Det ser vi tydelig i eksemplene nedenfor.",
+            "La oss si du har 500.000 kroner i årslønn, er 30 år, får 2 prosent lønnsvekst i året og jobber til du er 67 år:",
+            "Er du 50 år og tjener 700.000 kroner i året, kan 2 prosent sparing fra arbeidsgiver tilsvarende vokse til rundt 340.000 kroner totalt, mens 7 prosent kan vokse til nesten 1,2 millioner.",
+            "Eksemplene viser at forskjellene kan bli enorme. Likevel er det sjelden du som arbeidstaker er i posisjon til å påvirke eller endre spareprosenten arbeidsgiver har valgt på pensjonsordningen. Den er som regel bestemt på forhånd, og er den samme for alle ansatte. Nettopp derfor er det viktig å vite hva slags pensjonsordning du faktisk har – og pensjon bør være en naturlig del av totalvurderingen når du vurderer et jobbtilbud eller planlegger et bytte, påpeker Marianne.",
+            "– Er du i den situasjonen at du kan velge mellom flere jobber, er det mer enn lønn her og nå som teller. Pensjon kan utgjøre store beløp over tid – og er en del av den samlede kompensasjonen. Et godt råd er derfor også å løfte pensjon som tema i den årlige lønnssamtalen. For noen kan justeringer i pensjon gi større verdi på sikt enn en tilsvarende økning i lønn, sier hun.",
+            "Utover å påvirke eller være bevisst på arbeidsgivers spareprosent, er det også andre tiltak du kan gjøre.",
+            "Marianne påpeker at det ikke bare er sparebeløpet som teller; vel så avgjørende er hvordan pengene i pensjonsordningen investeres. Likevel har mange ikke tatt stilling til dette. Rundt hver tredje med innskuddspensjon har ikke aktivt valgt hvordan pensjonssparingen deres skal investeres. Det viser undersøkelsen som er gjort av Respons Analyse blant personer med innskuddspensjon, den vanligste pensjonsordningen i privat sektor.",
+            "– En spareprofil, også kalt investeringsprofil, forteller hvordan sparingen din er satt sammen, altså hvordan fordelingen er mellom aksjer og renter. Når du sparer til pensjon betyr denne fordelingen mye for utviklingen over tid. Aksjer kan svinge mer underveis, men har historisk gitt høyere avkastning enn renter over tid. Over et langt arbeidsliv kan derfor valg av spareprofil ha stor betydning for hvor mye pensjon du til slutt får utbetalt, sier Marianne.",
+            "Hun påpeker at valg av spareprofil først og fremst handler om hvor lenge du har igjen til pensjon, og hvor komfortabel du er med at verdien kan svinge på veien. Har du mange år igjen i jobb, kan en høy aksjeandel gi bedre vekstmuligheter. Når pensjonsalderen nærmer seg, kan det være fornuftig å trappe ned risikoen. Det finnes også løsninger der aksjeandelen er høy når du er ung, og gradvis reduseres automatisk etter hvert som du blir eldre.",
+            "– Pensjon er langsiktig sparing, og generelt anbefaler vi å ha en høy aksjeandel når det er lenge til du skal begynne å ta ut pensjonen. Med en spareprofil som passer deg og livssituasjonen din, gir du pengene best mulig vekstgrunnlag over tid, sier Marianne.",
+            "1. Sjekk pensjonsordningen. Start med å finne ut hvor mye arbeidsgiveren din faktisk sparer for deg. Det er grunnlaget for alle videre valg du tar.",
+            "Hvor god pensjonsordning du har gjennom jobben, har nemlig stor betydning for hvordan du bør spare privat. For mange vil det være avgjørende for om de må sette av ekstra penger på egen hånd for å kunne leve det livet de ønsker som pensjonist – enten det handler om reiser, fritid eller økonomisk trygghet i hverdagen. Jo tidligere du får oversikt, desto bedre kan du planlegge.",
+            "2. Juster spareprofilen, velg en spareprofil som er tilpasset deg og din livssituasjon",
+            "3. Start privat sparing så tidlig som mulig. Jo tidligere du begynner, desto mindre beløp trenger du å sette av, fordi rentes rente-effekten gjør at pengene får mer tid til å vokse av seg selv.",
+            "Du kan sjekke pensjonen din på www.nav.no eller her hos SpareBank 1.",
+            "Dette innholdet er å anse som markedsføring og er verken ment som personlige spareråd eller anbefalinger. Har du spørsmål om pensjon, kan du kontakte en av rådgiverne våre.",
+            "Selv om aksjemarkedet har gitt god avkastning historisk, er det ingen garanti for fremtidig avkastning. Avkastningen kan bli både positiv og negativ, og den påvirkes av markedsutviklingen, risikoen i din spareprofil, forvalters dyktighet og kostnader."
+          ],
+          "lists": [
+            {
+              "ordered": false,
+              "items": [
+                "2 prosent sparing fra arbeidsgiver kan vokse til rundt 1.133.000 kroner i potten totalt den dagen du går av med pensjon.",
+                "7 prosent sparing fra arbeidsgiver kan vokse til rundt 3.967.000 kroner."
+              ]
+            }
+          ],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "footer",
+          "role": null,
+          "id": null,
+          "classes": [
+            "footer"
+          ],
+          "purpose": "footer-nav",
+          "headlineRef": 7,
+          "innerTextSummary": "Snarveier\nBli kunde\nSperre kort\nMeld skade\nPrisliste\nKundeservice\nKlage\nSvindel\nLogg inn\nNettbank privat\nNettbank bedrift\nForsikring\nPensjon\nSosiale medier\nSelskapsinformasjon\nVilkår for bruk av nettsiden\nPersonvern\nInformasjonskapsler\nFor ",
+          "wordCount": 38,
+          "rect": {
+            "top": 5127,
+            "height": 548,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "header",
+      "role": "banner",
+      "id": null,
+      "classes": [
+        "header",
+        "undefined"
+      ],
+      "childElementCount": 2,
+      "innerText": "PRIVAT\nBEDRIFT\nOM OSS\nSøk\nBli kunde\nLogg inn\nDaglig bruk\nLåne\nSpare\nPensjon\nForsikring\nEiendom\nTips og råd\nKundeservice\nLOfavør-fordeler",
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "header__wrap"
+          ],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "PRIVAT\nBEDRIFT\nOM OSS\nSøk\nBli kunde\nLogg inn\nDaglig bruk\nLåne\nSpare\nPensjon\nForsikring\nEiendom\nTips og råd\nKundeservice\nLOfavør-fordeler",
+          "wordCount": 21,
+          "rect": {
+            "top": 0,
+            "height": 119,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "nav",
+      "role": "navigation",
+      "id": "main-menu",
+      "classes": [
+        "header__main-nav"
+      ],
+      "childElementCount": 1,
+      "innerText": "Daglig bruk\nLåne\nSpare\nPensjon\nForsikring\nEiendom\nTips og råd\nKundeservice\nLOfavør-fordeler",
+      "children": [
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Daglig bruk",
+          "wordCount": 2,
+          "rect": {
+            "top": 57,
+            "height": 62,
+            "width": 90
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Låne",
+          "wordCount": 1,
+          "rect": {
+            "top": 57,
+            "height": 62,
+            "width": 37
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Spare",
+          "wordCount": 1,
+          "rect": {
+            "top": 57,
+            "height": 62,
+            "width": 45
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Pensjon",
+          "wordCount": 1,
+          "rect": {
+            "top": 57,
+            "height": 62,
+            "width": 60
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Forsikring",
+          "wordCount": 1,
+          "rect": {
+            "top": 57,
+            "height": 62,
+            "width": 76
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Eiendom",
+          "wordCount": 1,
+          "rect": {
+            "top": 57,
+            "height": 62,
+            "width": 68
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Tips og råd",
+          "wordCount": 3,
+          "rect": {
+            "top": 57,
+            "height": 62,
+            "width": 89
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "Kundeservice",
+          "wordCount": 1,
+          "rect": {
+            "top": 57,
+            "height": 62,
+            "width": 104
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "li",
+          "role": null,
+          "id": null,
+          "classes": [],
+          "purpose": "unknown",
+          "headlineRef": null,
+          "innerTextSummary": "LOfavør-fordeler",
+          "wordCount": 1,
+          "rect": {
+            "top": 57,
+            "height": 62,
+            "width": 129
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    },
+    {
+      "tag": "footer",
+      "role": "contentinfo",
+      "id": null,
+      "classes": [
+        "footer"
+      ],
+      "childElementCount": 2,
+      "innerText": "Snarveier\nBli kunde\nSperre kort\nMeld skade\nPrisliste\nKundeservice\nKlage\nSvindel\nLogg inn\nNettbank privat\nNettbank bedrift\nForsikring\nPensjon\nSosiale medier\nSelskapsinformasjon\nVilkår for bruk av nettsiden\nPersonvern\nInformasjonskapsler\nFor utviklere\nSpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo",
+      "children": [
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "ffe-grid"
+          ],
+          "purpose": "unknown",
+          "headlineRef": 7,
+          "innerTextSummary": "Snarveier\nBli kunde\nSperre kort\nMeld skade\nPrisliste\nKundeservice\nKlage\nSvindel\nLogg inn\nNettbank privat\nNettbank bedrift\nForsikring\nPensjon\nSosiale medier\nSelskapsinformasjon\nVilkår for bruk av nettsiden\nPersonvern\nInformasjonskapsler\nFor ",
+          "wordCount": 31,
+          "rect": {
+            "top": 5202,
+            "height": 374,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        },
+        {
+          "tag": "div",
+          "role": null,
+          "id": null,
+          "classes": [
+            "footer-info"
+          ],
+          "purpose": "footer-nav",
+          "headlineRef": null,
+          "innerTextSummary": "SpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo",
+          "wordCount": 7,
+          "rect": {
+            "top": 5576,
+            "height": 24,
+            "width": 1440
+          },
+          "body": [],
+          "lists": [],
+          "qa": [],
+          "quotes": []
+        }
+      ]
+    }
+  ],
+  "ctas": [
+    {
+      "label": "Søk",
+      "href": null,
+      "tag": "button",
+      "domPath": "main#main-content > header.header.undefined > div.header__wrap:nth-child(1) > div.header__content.aem-main-container > div.header__user-content:nth-child(2) > button.header-search-button",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(50, 50, 50)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "30px",
+        "padding": "8px 15px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(50, 50, 50)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "label": "Bli kunde",
+      "href": null,
+      "tag": "button",
+      "domPath": "div#login > button.ffe-button.ffe-button--action:nth-child(1)",
+      "style": {
+        "backgroundColor": "rgb(0, 117, 78)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "30px",
+        "padding": "8px 16px",
+        "boxShadow": "none",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "label": "Logg inn",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#login-button",
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 117, 78)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "30px",
+        "padding": "8px 16px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(0, 117, 78)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "fold",
+      "inHeader": true,
+      "inFooter": false
+    },
+    {
+      "label": "Del på Facebook",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#facebook-share",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "5px",
+        "boxShadow": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Del på LinkedIn",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#linkedin-share",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "5px",
+        "boxShadow": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Del på Twitter",
+      "href": null,
+      "tag": "button",
+      "domPath": "button#twitter-share",
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "0px",
+        "padding": "5px",
+        "boxShadow": "none",
+        "border": "0px none rgb(0, 0, 0)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Les mer om pensjon her",
+      "href": "/nb/bank/privat/pensjon.html",
+      "tag": "a",
+      "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__content.responsive-grid:nth-child(2) > div.button.center:nth-child(10) > a.ffe-button.ffe-button--primary",
+      "style": {
+        "backgroundColor": "rgb(0, 90, 164)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "96px",
+        "padding": "10px 24px",
+        "boxShadow": "none",
+        "border": "2px solid rgba(0, 0, 0, 0)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    },
+    {
+      "label": "Du finner flere artikler om sparing og investering på Markedsnytt",
+      "href": "/nb/bank/privat/sparing/markedsnytt.html",
+      "tag": "a",
+      "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__content.responsive-grid:nth-child(2) > div.button.center:nth-child(11) > a.ffe-button.ffe-button--secondary",
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 90, 164)",
+        "fontFamily": "SpareBank1-regular, arial, sans-serif",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "borderRadius": "96px",
+        "padding": "10px 24px",
+        "boxShadow": "none",
+        "border": "2px solid rgb(0, 90, 164)",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      },
+      "appearsAbove": "below-fold",
+      "inHeader": false,
+      "inFooter": false
+    }
+  ],
+  "ctasCrawl": [
+    {
+      "label": "Privat",
+      "href": "/nb/bank/privat.html"
+    },
+    {
+      "label": "Bedrift",
+      "href": "/nb/bank/bedrift.html"
+    },
+    {
+      "label": "Om oss",
+      "href": "/nb/bank/om-oss.html"
+    },
+    {
+      "label": "Søk",
+      "href": null
+    },
+    {
+      "label": "Bli kunde",
+      "href": null
+    },
+    {
+      "label": "Logg inn",
+      "href": null
+    },
+    {
+      "label": "Daglig bruk",
+      "href": "/nb/bank/privat/daglig-bruk.html"
+    },
+    {
+      "label": "Låne",
+      "href": "/nb/bank/privat/lan.html"
+    },
+    {
+      "label": "Spare",
+      "href": "/nb/bank/privat/sparing.html"
+    },
+    {
+      "label": "Pensjon",
+      "href": "/nb/bank/privat/pensjon.html"
+    },
+    {
+      "label": "Forsikring",
+      "href": "/nb/bank/privat/forsikring.html"
+    },
+    {
+      "label": "Eiendom",
+      "href": "/nb/bank/privat/eiendom.html"
+    },
+    {
+      "label": "Tips og råd",
+      "href": "/nb/bank/privat/tips-og-rad.html"
+    },
+    {
+      "label": "Kundeservice",
+      "href": "/nb/bank/privat/kundeservice.html"
+    },
+    {
+      "label": "LOfavør-fordeler",
+      "href": "/nb/bank/privat/lofavor.html"
+    },
+    {
+      "label": "www.nav.no",
+      "href": "https://www.nav.no/pensjon"
+    },
+    {
+      "label": "SpareBank 1",
+      "href": "/nb/bank/privat/pensjon.html"
+    },
+    {
+      "label": "Les mer om pensjon her",
+      "href": "/nb/bank/privat/pensjon.html"
+    },
+    {
+      "label": "Du finner flere artikler om sparing og investering på Markedsnytt",
+      "href": "/nb/bank/privat/sparing/markedsnytt.html"
+    },
+    {
+      "label": "Sjekk pensjonskalkulatoren: Se hvordan økonomien din kan bli som pensjonist",
+      "href": "/content/sites/sb1/nb/bank/privat/sparing/markedsnytt/artikler/sjekk-pensjon-se-hvordan-okonomien-kan-bli-som-pensjonist.html"
+    },
+    {
+      "label": "Din guide til god pensjonsøkonomi: – Det handler om frihet",
+      "href": "/content/sites/sb1/nb/bank/privat/sparing/markedsnytt/artikler/din-guide-til-livets-lengste-ferie.html"
+    },
+    {
+      "label": "Mange havner i 62-årsfella:– Inntekten kan falle med 70 % over natten",
+      "href": "/content/sites/sb1/nb/bank/privat/sparing/markedsnytt/artikler/pensjon-mange-havner-i-62-arsfella.html"
+    },
+    {
+      "label": "Smarte damer tar smarte valg",
+      "href": "/content/sites/sb1/nb/bank/privat/sparing/markedsnytt/artikler/pensjon-smarte-kvinner-tar-smarte-valg.html"
+    },
+    {
+      "label": "Millionforskjellen du ikke vil gå glipp av",
+      "href": "/content/sites/sb1/nb/bank/privat/sparing/markedsnytt/artikler/millionforskjellen-du-ikke-vil-ga-glipp-av.html"
+    },
+    {
+      "label": "#Pensjon",
+      "href": "/content/sites/sb1/nb/bank/privat/sparing/markedsnytt/artikler.html?tema=sb1:nyheter/tema/pensjon"
+    },
+    {
+      "label": "Bli kunde",
+      "href": "/content/sites/sb1/nb/bank/privat/kundeservice/bestill/bli-kunde.html"
+    },
+    {
+      "label": "Sperre kort",
+      "href": "/content/sites/sb1/nb/bank/privat/kundeservice/verktoy/sperre-kort.html"
+    },
+    {
+      "label": "Meld skade",
+      "href": "/content/sites/sb1/nb/bank/privat/forsikring/meld-skade.html"
+    },
+    {
+      "label": "Prisliste",
+      "href": "/content/sites/sb1/nb/bank/privat/kundeservice/bestill/prisliste.html"
+    },
+    {
+      "label": "Kundeservice",
+      "href": "/content/sites/sb1/nb/bank/privat/kundeservice.html"
+    },
+    {
+      "label": "Klage",
+      "href": "/content/sites/sb1/nb/bank/privat/kundeservice/verktoy/klager.html"
+    },
+    {
+      "label": "Svindel",
+      "href": "/content/sites/sb1/nb/bank/privat/svindel.html"
+    },
+    {
+      "label": "Nettbank privat",
+      "href": "/content/sites/sb1/nb/bank/privat/innlogging.html"
+    },
+    {
+      "label": "Nettbank bedrift",
+      "href": "/content/sites/sb1/nb/bank/bedrift/innlogging.html"
+    },
+    {
+      "label": "Forsikring",
+      "href": "https://kundeforsikring.sparebank1.no"
+    },
+    {
+      "label": "Pensjon",
+      "href": "https://kundeforsikring.sparebank1.no/privat/sparing"
+    },
+    {
+      "label": "Selskapsinformasjon",
+      "href": "/content/sites/sb1/nb/bank/om-oss/om-banken/selskapsinformasjon.html"
+    },
+    {
+      "label": "Vilkår for bruk av nettsiden",
+      "href": "/content/sites/sb1/nb/bank/om-oss/personvern/generelle-vilkar.html"
+    },
+    {
+      "label": "Personvern",
+      "href": "/content/sites/sb1/nb/bank/om-oss/personvern.html"
+    },
+    {
+      "label": "Informasjonskapsler",
+      "href": "/content/sites/sb1/nb/bank/om-oss/personvern.html#cookies"
+    },
+    {
+      "label": "For utviklere",
+      "href": "/content/sites/sb1/nb/bank/bedrift/open-api.html"
+    }
+  ],
+  "links": {
+    "internal": [
+      {
+        "href": "/content/sites/sb1/nb/bank/privat.html",
+        "text": "",
+        "domPath": "header.header.undefined > div.header__wrap:nth-child(1) > div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__logo:nth-child(1) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat.html",
+        "text": "PRIVAT",
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__top-nav:nth-child(3) > ul > li:nth-child(1) > a.active",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/bedrift.html",
+        "text": "BEDRIFT",
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__top-nav:nth-child(3) > ul > li:nth-child(2) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/om-oss.html",
+        "text": "OM OSS",
+        "domPath": "div.header__content.aem-main-container > div.header__top-wrap:nth-child(1) > div.header__top-nav:nth-child(3) > ul > li:nth-child(3) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/daglig-bruk.html",
+        "text": "Daglig bruk",
+        "domPath": "nav#main-menu > ul > li:nth-child(1) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/lan.html",
+        "text": "Låne",
+        "domPath": "nav#main-menu > ul > li:nth-child(2) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/sparing.html",
+        "text": "Spare",
+        "domPath": "nav#main-menu > ul > li:nth-child(3) > a.active",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/pensjon.html",
+        "text": "Pensjon",
+        "domPath": "nav#main-menu > ul > li:nth-child(4) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/forsikring.html",
+        "text": "Forsikring",
+        "domPath": "nav#main-menu > ul > li:nth-child(5) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/eiendom.html",
+        "text": "Eiendom",
+        "domPath": "nav#main-menu > ul > li:nth-child(6) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/tips-og-rad.html",
+        "text": "Tips og råd",
+        "domPath": "nav#main-menu > ul > li:nth-child(7) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/kundeservice.html",
+        "text": "Kundeservice",
+        "domPath": "nav#main-menu > ul > li:nth-child(8) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/lofavor.html",
+        "text": "LOfavør-fordeler",
+        "domPath": "nav#main-menu > ul > li:nth-child(9) > a",
+        "region": "header"
+      },
+      {
+        "href": "/nb/bank/privat/pensjon.html",
+        "text": "SpareBank 1",
+        "domPath": "div.sb1-article.responsive-grid > div.sb1-article__content.responsive-grid:nth-child(2) > div.text:nth-child(9) > div.text-content:nth-child(1) > p > a:nth-child(2)",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/privat/pensjon.html",
+        "text": "",
+        "domPath": "div.sb1-article.responsive-grid > div.sb1-article__content.responsive-grid:nth-child(2) > div.text:nth-child(9) > div.text-content:nth-child(1) > p > a:nth-child(3)",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/privat/pensjon.html",
+        "text": "Les mer om pensjon her",
+        "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__content.responsive-grid:nth-child(2) > div.button.center:nth-child(10) > a.ffe-button.ffe-button--primary",
+        "region": "main"
+      },
+      {
+        "href": "/nb/bank/privat/sparing/markedsnytt.html",
+        "text": "Du finner flere artikler om sparing og investering på Markedsnytt",
+        "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__content.responsive-grid:nth-child(2) > div.button.center:nth-child(11) > a.ffe-button.ffe-button--secondary",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/sparing/markedsnytt/artikler/sjekk-pensjon-se-hvordan-okonomien-kan-bli-som-pensjonist.html",
+        "text": "Sjekk pensjonskalkulatoren: Se hvordan økonomien din kan bli som pensjonist",
+        "domPath": "div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1) > div.related-list > article.related-list__item:nth-child(2) > a",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/sparing/markedsnytt/artikler/din-guide-til-livets-lengste-ferie.html",
+        "text": "Din guide til god pensjonsøkonomi: – Det handler om frihet",
+        "domPath": "div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1) > div.related-list > article.related-list__item:nth-child(3) > a",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/sparing/markedsnytt/artikler/pensjon-mange-havner-i-62-arsfella.html",
+        "text": "Mange havner i 62-årsfella:– Inntekten kan falle med 70 % over natten",
+        "domPath": "div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1) > div.related-list > article.related-list__item:nth-child(4) > a",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/sparing/markedsnytt/artikler/pensjon-smarte-kvinner-tar-smarte-valg.html",
+        "text": "Smarte damer tar smarte valg",
+        "domPath": "div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1) > div.related-list > article.related-list__item:nth-child(5) > a",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/sparing/markedsnytt/artikler/millionforskjellen-du-ikke-vil-ga-glipp-av.html",
+        "text": "Millionforskjellen du ikke vil gå glipp av",
+        "domPath": "div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1) > div.related-list > article.related-list__item:nth-child(6) > a",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/sparing/markedsnytt/artikler.html?tema=sb1:nyheter/tema/pensjon",
+        "text": "#Pensjon",
+        "domPath": "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.tags:nth-child(2) > a",
+        "region": "main"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+        "text": "Bli kunde",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(1) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/kundeservice/verktoy/sperre-kort.html",
+        "text": "Sperre kort",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(2) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/forsikring/meld-skade.html",
+        "text": "Meld skade",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(3) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/kundeservice/bestill/prisliste.html",
+        "text": "Prisliste",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(4) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/kundeservice.html",
+        "text": "Kundeservice",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(5) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/kundeservice/verktoy/klager.html",
+        "text": "Klage",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(6) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/svindel.html",
+        "text": "Svindel",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(1) > ul.footer-columns__link-list > li:nth-child(7) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/privat/innlogging.html",
+        "text": "Nettbank privat",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(2) > ul.footer-columns__link-list > li:nth-child(1) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/bedrift/innlogging.html",
+        "text": "Nettbank bedrift",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(2) > ul.footer-columns__link-list > li:nth-child(2) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/om-banken/selskapsinformasjon.html",
+        "text": "Selskapsinformasjon",
+        "domPath": "div.footer-columns__bottom.ffe-grid__row:nth-child(3) > div.ffe-grid__col.ffe-grid__col--sm-10 > div.footer-columns__column > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(1) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/personvern/generelle-vilkar.html",
+        "text": "Vilkår for bruk av nettsiden",
+        "domPath": "div.footer-columns__bottom.ffe-grid__row:nth-child(3) > div.ffe-grid__col.ffe-grid__col--sm-10 > div.footer-columns__column > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(2) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/personvern.html",
+        "text": "Personvern",
+        "domPath": "div.footer-columns__bottom.ffe-grid__row:nth-child(3) > div.ffe-grid__col.ffe-grid__col--sm-10 > div.footer-columns__column > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(3) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/om-oss/personvern.html",
+        "text": "Informasjonskapsler",
+        "domPath": "div.footer-columns__bottom.ffe-grid__row:nth-child(3) > div.ffe-grid__col.ffe-grid__col--sm-10 > div.footer-columns__column > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(4) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "/content/sites/sb1/nb/bank/bedrift/open-api.html",
+        "text": "For utviklere",
+        "domPath": "div.footer-columns__bottom.ffe-grid__row:nth-child(3) > div.ffe-grid__col.ffe-grid__col--sm-10 > div.footer-columns__column > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(5) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      }
+    ],
+    "external": [
+      {
+        "href": "https://www.nav.no/pensjon",
+        "text": "www.nav.no",
+        "domPath": "div.sb1-article.responsive-grid > div.sb1-article__content.responsive-grid:nth-child(2) > div.text:nth-child(9) > div.text-content:nth-child(1) > p > a:nth-child(1)",
+        "region": "main"
+      },
+      {
+        "href": "https://kundeforsikring.sparebank1.no/",
+        "text": "Forsikring",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(2) > ul.footer-columns__link-list > li:nth-child(3) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "https://kundeforsikring.sparebank1.no/privat/sparing",
+        "text": "Pensjon",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column:nth-child(2) > ul.footer-columns__link-list > li:nth-child(4) > a.ffe-link-text.footer-columns__link",
+        "region": "footer"
+      },
+      {
+        "href": "https://no.linkedin.com/company/sparebank-1",
+        "text": "",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column.footer-columns__column--social-media:nth-child(3) > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(1) > a",
+        "region": "footer"
+      },
+      {
+        "href": "https://www.youtube.com/channel/UCdfZfi4HC6bK0-OfRcDJSzg",
+        "text": "",
+        "domPath": "div.ffe-grid__row > div.ffe-grid__col.footer-columns__ffe-col > div.footer-columns__column.footer-columns__column--social-media:nth-child(3) > ul.footer-columns__link-list.footer-columns__link-list--horizontal > li:nth-child(2) > a",
+        "region": "footer"
+      }
+    ]
+  },
+  "media": {
+    "images": [
+      {
+        "src": "/content/dam/SB1/nettsider/logo.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "Tilbake til forsiden for privat for - SpareBank 1",
+        "naturalWidth": 282,
+        "naturalHeight": 78,
+        "rect": {
+          "top": 10,
+          "width": 170,
+          "height": 47
+        },
+        "loading": null,
+        "domPath": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.inline-svg.responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/pensjonssak-tjenestepensjon-illustrasjon-markedsnytt-ny.jpg.thumb.1280.2276.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/pensjonssak-tjenestepensjon-illustrasjon-markedsnytt-ny.jpg.thumb.1280.2276.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 891,
+        "naturalHeight": 587,
+        "rect": {
+          "top": 205,
+          "width": 1062,
+          "height": 488
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header.responsive-grid:nth-child(1) > div.sb1-article__header-image.image--hero:nth-child(1) > div.image__wrap > figure > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/pensjonsekspert-marianne-christensen-markedsnytt.jpg.thumb.1280.1280.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/pensjonsekspert-marianne-christensen-markedsnytt.jpg.thumb.1280.1280.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 1280,
+        "naturalHeight": 935,
+        "rect": {
+          "top": 1558,
+          "width": 688,
+          "height": 503
+        },
+        "loading": null,
+        "domPath": "div.image:nth-child(3) > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/figur-tjenestepensjonssak-markedsnytt-ny.jpg.thumb.1280.1280.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/figur-tjenestepensjonssak-markedsnytt-ny.jpg.thumb.1280.1280.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "rect": {
+          "top": 2603,
+          "width": 688,
+          "height": 387
+        },
+        "loading": null,
+        "domPath": "div.image:nth-child(5) > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/oppslagsbilde-sak-om-pensjonskalkulator-markedsnytt.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/oppslagsbilde-sak-om-pensjonskalkulator-markedsnytt.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 576,
+        "rect": {
+          "top": 1202,
+          "width": 294,
+          "height": 139
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/oppslagsbilde-pensjonssak-mor-og-sonn-pa-benk-markedsnytt.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/oppslagsbilde-pensjonssak-mor-og-sonn-pa-benk-markedsnytt.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 576,
+        "rect": {
+          "top": 1469,
+          "width": 294,
+          "height": 139
+        },
+        "loading": null,
+        "domPath": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/pensjon-illustrasjonsbilde-dame-pa-trapp-markedsnytt.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/pensjon-illustrasjonsbilde-dame-pa-trapp-markedsnytt.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 486,
+        "rect": {
+          "top": 1712,
+          "width": 294,
+          "height": 139
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/profilbilder-liggende/vinterjente-smiler-ute-dame.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/vinterjente-smiler-ute-dame.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 512,
+        "rect": {
+          "top": 1955,
+          "width": 294,
+          "height": 139
+        },
+        "loading": null,
+        "domPath": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/foto/Nyhetssenter/oppslagsbilde-pensjonssak-ips.jpg.thumb.768.768.jpg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/oppslagsbilde-pensjonssak-ips.jpg.thumb.768.768.jpg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 768,
+        "naturalHeight": 576,
+        "rect": {
+          "top": 2174,
+          "width": 294,
+          "height": 139
+        },
+        "loading": null,
+        "domPath": "div.sb1-article__header-image.image--hero > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 30,
+        "naturalHeight": 30,
+        "rect": {
+          "top": 5254,
+          "width": 30,
+          "height": 30
+        },
+        "loading": null,
+        "domPath": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      },
+      {
+        "src": "/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg",
+        "currentSrc": "https://www.sparebank1.no/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg",
+        "srcset": null,
+        "sizes": null,
+        "alt": "",
+        "naturalWidth": 37,
+        "naturalHeight": 30,
+        "rect": {
+          "top": 5254,
+          "width": 35,
+          "height": 30
+        },
+        "loading": null,
+        "domPath": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.image--responsive",
+        "visible": true,
+        "resolves": true
+      }
+    ],
+    "inlineSvgs": [
+      {
+        "viewBox": "0 0 32 32",
+        "domPath": "button#facebook-share > svg.svg-icon",
+        "width": 32,
+        "height": 32,
+        "ariaLabel": null,
+        "markupLength": 1905,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 32 32",
+        "domPath": "button#linkedin-share > svg.svg-icon",
+        "width": 32,
+        "height": 32,
+        "ariaLabel": null,
+        "markupLength": 2518,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 32 32",
+        "domPath": "button#twitter-share > svg.svg-icon",
+        "width": 32,
+        "height": 32,
+        "ariaLabel": null,
+        "markupLength": 644,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 281.633 78.197",
+        "domPath": "svg#SpareBank_1",
+        "width": 132,
+        "height": 32,
+        "ariaLabel": null,
+        "markupLength": 6544,
+        "inHeader": false
+      },
+      {
+        "viewBox": "0 0 40 41",
+        "domPath": "section.optin-settings__section-wrapper > section.optin-settings__section:nth-child(2) > div.optin-grid-col > div.optin-grid-col__col2:nth-child(2) > span.optin-header-wrapper > svg.optin-icon__svg",
+        "width": 40,
+        "height": 40,
+        "ariaLabel": null,
+        "markupLength": 4116,
+        "inHeader": false
+      }
+    ],
+    "cssBackgrounds": [],
+    "videos": [],
+    "iframes": [],
+    "imgsCrawl": [
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg",
+        "alt": "Tilbake til forsiden for privat for - SpareBank 1",
+        "w": 282,
+        "h": 78
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/pensjonssak-tjenestepensjon-illustrasjon-markedsnytt-ny.jpg.thumb.1280.2276.jpg",
+        "alt": "",
+        "w": 891,
+        "h": 587
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/pensjonsekspert-marianne-christensen-markedsnytt.jpg.thumb.1280.1280.jpg",
+        "alt": "",
+        "w": 1280,
+        "h": 935
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/figur-tjenestepensjonssak-markedsnytt-ny.jpg.thumb.1280.1280.jpg",
+        "alt": "",
+        "w": 1280,
+        "h": 720
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/pensjon-illustrasjonsbilde-dame-pa-trapp-markedsnytt.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 486
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/vinterjente-smiler-ute-dame.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 512
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/oppslagsbilde-pensjonssak-ips.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 768,
+        "h": 576
+      }
+    ],
+    "allImgCount": 7,
+    "modals": []
+  },
+  "forms": [],
+  "widgets": {
+    "modals": [
+      {
+        "domPath": "div#opt-in > div.optin__wrapper > div.optin",
+        "open": true,
+        "label": null
+      }
+    ],
+    "accordions": [],
+    "tabs": []
+  },
+  "components": {
+    "cards": {
+      "count": 1,
+      "examples": [
+        "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1)"
+      ]
+    },
+    "grids": {
+      "count": 1,
+      "examples": [
+        "main#main-content > div.sb1-article.responsive-grid > div.sb1-article__aside.responsive-grid:nth-child(3) > div.sb1-article__aside-related.news-card:nth-child(1) > div.related-list"
+      ]
+    },
+    "accordions": {
+      "count": 0,
+      "examples": []
+    },
+    "tabs": {
+      "count": 0,
+      "examples": []
+    },
+    "tables": {
+      "count": 0,
+      "examples": []
+    },
+    "modals": {
+      "count": 1,
+      "examples": [
+        "div#opt-in > div.optin__wrapper > div.optin"
+      ]
+    },
+    "carousels": {
+      "count": 0,
+      "examples": []
+    },
+    "videos": {
+      "count": 0,
+      "examples": []
+    },
+    "iframes": {
+      "count": 0,
+      "examples": []
+    },
+    "dataVizEmbeds": {
+      "count": 0,
+      "examples": []
+    },
+    "teamTiles": {
+      "count": 0,
+      "examples": []
+    },
+    "pricingTiles": {
+      "count": 0,
+      "examples": []
+    },
+    "testimonialCards": {
+      "count": 0,
+      "examples": []
+    },
+    "logoStrip": {
+      "count": 0,
+      "examples": []
+    },
+    "timeline": {
+      "count": 0,
+      "examples": []
+    },
+    "breadcrumbs": {
+      "count": 0,
+      "examples": []
+    },
+    "statRow": {
+      "count": 0,
+      "examples": []
+    },
+    "ctaBand": {
+      "count": 0,
+      "examples": []
+    },
+    "formFields": {
+      "count": 0,
+      "examples": []
+    },
+    "other": []
+  },
+  "perSectionStyle": [
+    {
+      "sectionRef": "main#main-content > header.header.undefined",
+      "purpose": "unknown",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": true,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(50, 50, 50)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": "8px",
+        "marginBlock": "0px 0px"
+      },
+      "borderRadius": "30px",
+      "fontFamilies": [
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 0,
+        "height": 124
+      }
+    },
+    {
+      "sectionRef": "main#main-content > div.sb1-article.responsive-grid",
+      "purpose": "rich-text",
+      "background": {
+        "color": "rgb(255, 255, 255)",
+        "hasImage": true,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(2, 10, 10)"
+      },
+      "spacing": {
+        "paddingBlock": "0px 0px",
+        "paddingInline": "0px 0px",
+        "gap": "8px",
+        "marginBlock": "40px 40px"
+      },
+      "borderRadius": "96px",
+      "fontFamilies": [
+        "SpareBank1-regular",
+        "SpareBank1-title-medium",
+        "SpareBank1-medium"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 164,
+        "height": 4923
+      }
+    },
+    {
+      "sectionRef": "main#main-content > footer.footer",
+      "purpose": "footer-nav",
+      "background": {
+        "color": "rgb(0, 39, 118)",
+        "hasImage": true,
+        "hasGradient": false
+      },
+      "text": {
+        "dominantColor": "rgb(255, 255, 255)"
+      },
+      "spacing": {
+        "paddingBlock": "75px 75px",
+        "paddingInline": "0px 0px",
+        "gap": "16px",
+        "marginBlock": "0px 0px"
+      },
+      "borderRadius": null,
+      "fontFamilies": [
+        "SpareBank1-medium",
+        "SpareBank1-regular"
+      ],
+      "shadowsUsed": [],
+      "rect": {
+        "top": 5127,
+        "height": 548
+      }
+    }
+  ],
+  "embedDominance": {
+    "dominated": false,
+    "iframeSrc": null,
+    "viewportCoveragePct": null,
+    "mainHeightCoveragePct": null
+  },
+  "cssCustomProperties": [
+    {
+      "name": "--ffe-farge-fjell",
+      "value": "#002776"
+    },
+    {
+      "name": "--ffe-farge-fjell-70",
+      "value": "#4d689f"
+    },
+    {
+      "name": "--ffe-farge-fjell-30",
+      "value": "#b3bed6"
+    },
+    {
+      "name": "--ffe-farge-vann",
+      "value": "#005aa4"
+    },
+    {
+      "name": "--ffe-farge-vann-70",
+      "value": "#4d8cbf"
+    },
+    {
+      "name": "--ffe-farge-vann-30",
+      "value": "#b3cee4"
+    },
+    {
+      "name": "--ffe-farge-sand",
+      "value": "#f8e9dd"
+    },
+    {
+      "name": "--ffe-farge-sand-70",
+      "value": "#faf0e7"
+    },
+    {
+      "name": "--ffe-farge-sand-30",
+      "value": "#fdf8f5"
+    },
+    {
+      "name": "--ffe-farge-frost",
+      "value": "#7eb5d2"
+    },
+    {
+      "name": "--ffe-farge-frost-70",
+      "value": "#a5cbe0"
+    },
+    {
+      "name": "--ffe-farge-frost-30",
+      "value": "#d8e9f2"
+    },
+    {
+      "name": "--ffe-farge-syrin",
+      "value": "#d3d3ea"
+    },
+    {
+      "name": "--ffe-farge-syrin-70",
+      "value": "#e0e0f0"
+    },
+    {
+      "name": "--ffe-farge-syrin-30",
+      "value": "#f2f2f9"
+    },
+    {
+      "name": "--ffe-farge-myrull",
+      "value": "#fae4e0"
+    },
+    {
+      "name": "--ffe-farge-myrull-70",
+      "value": "#fcece9"
+    },
+    {
+      "name": "--ffe-farge-myrull-30",
+      "value": "#fef7f6"
+    },
+    {
+      "name": "--ffe-farge-villblomst",
+      "value": "#ee8d9c"
+    },
+    {
+      "name": "--ffe-farge-villblomst-70",
+      "value": "#f3afba"
+    },
+    {
+      "name": "--ffe-farge-villblomst-30",
+      "value": "#fadde1"
+    },
+    {
+      "name": "--ffe-farge-nordlys",
+      "value": "#33af85"
+    },
+    {
+      "name": "--ffe-farge-nordlys-70",
+      "value": "#70c7aa"
+    },
+    {
+      "name": "--ffe-farge-nordlys-30",
+      "value": "#c2e7da"
+    },
+    {
+      "name": "--ffe-farge-lyng",
+      "value": "#873953"
+    },
+    {
+      "name": "--ffe-farge-lyng-70",
+      "value": "#ab7487"
+    },
+    {
+      "name": "--ffe-farge-lyng-30",
+      "value": "#dbc4cb"
+    },
+    {
+      "name": "--ffe-farge-baer",
+      "value": "#e44244"
+    },
+    {
+      "name": "--ffe-farge-baer-70",
+      "value": "#ec7b7c"
+    },
+    {
+      "name": "--ffe-farge-baer-30",
+      "value": "#f7c6c7"
+    },
+    {
+      "name": "--ffe-farge-skog",
+      "value": "#00754e"
+    },
+    {
+      "name": "--ffe-farge-skog-70",
+      "value": "#4d9e83"
+    },
+    {
+      "name": "--ffe-farge-skog-30",
+      "value": "#b3d6ca"
+    },
+    {
+      "name": "--ffe-farge-multe",
+      "value": "#f8b181"
+    },
+    {
+      "name": "--ffe-farge-multe-70",
+      "value": "#fac8a7"
+    },
+    {
+      "name": "--ffe-farge-multe-30",
+      "value": "#fde8d9"
+    },
+    {
+      "name": "--ffe-farge-sol",
+      "value": "#dc8000"
+    },
+    {
+      "name": "--ffe-farge-sol-70",
+      "value": "#e7a64d"
+    },
+    {
+      "name": "--ffe-farge-sol-30",
+      "value": "#f5d9b3"
+    },
+    {
+      "name": "--ffe-farge-natt",
+      "value": "#001032"
+    },
+    {
+      "name": "--ffe-farge-svart",
+      "value": "#020a0a"
+    },
+    {
+      "name": "--ffe-farge-koksgraa",
+      "value": "#323232"
+    },
+    {
+      "name": "--ffe-farge-moerkgraa",
+      "value": "#676767"
+    },
+    {
+      "name": "--ffe-farge-graa",
+      "value": "#adadad"
+    },
+    {
+      "name": "--ffe-farge-lysgraa",
+      "value": "#d8d8d8"
+    },
+    {
+      "name": "--ffe-farge-moerkvarmgraa",
+      "value": "#848383"
+    },
+    {
+      "name": "--ffe-farge-varmgraa",
+      "value": "#9b9797"
+    },
+    {
+      "name": "--ffe-farge-lysvarmgraa",
+      "value": "#d7d2cb"
+    },
+    {
+      "name": "--ffe-farge-hvit",
+      "value": "#fff"
+    },
+    {
+      "name": "--ffe-fontsize-body-text",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-small-text",
+      "value": "0.875rem"
+    },
+    {
+      "name": "--ffe-fontsize-micro-text",
+      "value": "0.75rem"
+    },
+    {
+      "name": "--ffe-fontsize-lead-paragraph",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-sub-lead-paragraph",
+      "value": "1.063rem"
+    },
+    {
+      "name": "--ffe-fontsize-h1",
+      "value": "1.75rem"
+    },
+    {
+      "name": "--ffe-fontsize-h2",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--ffe-fontsize-h3",
+      "value": "1.25rem"
+    },
+    {
+      "name": "--ffe-fontsize-h4",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-h5",
+      "value": "1.0625rem"
+    },
+    {
+      "name": "--ffe-fontsize-h6",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-form-input",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-form-dropdown",
+      "value": "1rem"
+    },
+    {
+      "name": "--ffe-fontsize-button",
+      "value": "1rem"
+    },
+    {
+      "name": "--breakpoint-sm",
+      "value": "480px"
+    },
+    {
+      "name": "--breakpoint-md",
+      "value": "768px"
+    },
+    {
+      "name": "--breakpoint-lg",
+      "value": "1024px"
+    },
+    {
+      "name": "--breakpoint-xl",
+      "value": "1280px"
+    },
+    {
+      "name": "--app-width",
+      "value": "1280px"
+    },
+    {
+      "name": "--app-width-min",
+      "value": "320px"
+    },
+    {
+      "name": "--app-margin",
+      "value": "20px"
+    },
+    {
+      "name": "--ffe-ease-in-out-back",
+      "value": "cubic-bezier(0.46, -0.265, 0.48, 1.38)"
+    },
+    {
+      "name": "--ffe-ease",
+      "value": "cubic-bezier(0.25, 0.1, 0.25, 1)"
+    },
+    {
+      "name": "--ffe-transition-duration",
+      "value": "0.2s"
+    },
+    {
+      "name": "--ffe-spacing",
+      "value": "8px"
+    },
+    {
+      "name": "--ffe-spacing-2xs",
+      "value": "4px"
+    },
+    {
+      "name": "--ffe-spacing-xs",
+      "value": "8px"
+    },
+    {
+      "name": "--ffe-spacing-sm",
+      "value": "16px"
+    },
+    {
+      "name": "--ffe-spacing-md",
+      "value": "24px"
+    },
+    {
+      "name": "--ffe-spacing-lg",
+      "value": "32px"
+    },
+    {
+      "name": "--ffe-spacing-xl",
+      "value": "40px"
+    },
+    {
+      "name": "--ffe-spacing-2xl",
+      "value": "48px"
+    },
+    {
+      "name": "--ffe-spacing-3xl",
+      "value": "64px"
+    },
+    {
+      "name": "--ffe-spacing-4xl",
+      "value": "80px"
+    },
+    {
+      "name": "--ffe-spacing-5xl",
+      "value": "160px"
+    },
+    {
+      "name": "--ffe-g-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-g-secondary-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-error-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-g-border-color",
+      "value": "var(--ffe-farge-varmgraa)"
+    },
+    {
+      "name": "--ffe-g-border-radius",
+      "value": "4px"
+    },
+    {
+      "name": "--ffe-g-font",
+      "value": "'SpareBank1-regular',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-heading",
+      "value": "'SpareBank1-title-medium',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-heading-small",
+      "value": "'SpareBank1-medium',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-strong",
+      "value": "'SpareBank1-medium',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-font-italic",
+      "value": "'SpareBank1-italic',arial,sans-serif"
+    },
+    {
+      "name": "--ffe-g-text-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-g-lead-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-heading-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-link-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-g-link-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-g-link-color-visited",
+      "value": "var(--ffe-farge-lyng)"
+    },
+    {
+      "name": "--ffe-g-link-icon-color-hover",
+      "value": "var(--ffe-farge-natt)"
+    },
+    {
+      "name": "--ffe-g-link-icon-color-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-fontsize-lead-paragraph",
+      "value": "1.5rem"
+    },
+    {
+      "name": "--ffe-fontsize-sub-lead-paragraph",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-h1",
+      "value": "2.5rem"
+    },
+    {
+      "name": "--ffe-fontsize-h2",
+      "value": "2rem"
+    },
+    {
+      "name": "--ffe-fontsize-h3",
+      "value": "1.688rem"
+    },
+    {
+      "name": "--ffe-fontsize-h4",
+      "value": "1.375rem"
+    },
+    {
+      "name": "--ffe-fontsize-h5",
+      "value": "1.125rem"
+    },
+    {
+      "name": "--ffe-fontsize-h1",
+      "value": "2.875rem"
+    },
+    {
+      "name": "--ffe-fontsize-h2",
+      "value": "2.25rem"
+    },
+    {
+      "name": "--ffe-fontsize-h3",
+      "value": "1.75rem"
+    },
+    {
+      "name": "--ffe-v-lists-title-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-lists-description-description-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-lists-check-list-check-icon-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-lists-check-list-cross-icon-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-v-detail-list-card-background-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-detail-list-card-border-color",
+      "value": "var(--ffe-farge-lysgraa)"
+    },
+    {
+      "name": "--ffe-v-detail-list-card-border-radius",
+      "value": "16px"
+    },
+    {
+      "name": "--ffe-v-input-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-input-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-input-placeholder-color",
+      "value": "var(--ffe-farge-moerkgraa)"
+    },
+    {
+      "name": "--ffe-v-info-message-icon-color",
+      "value": "var(--ffe-g-secondary-color)"
+    },
+    {
+      "name": "--ffe-v-info-message-icon-fill",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-dropdown-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-success-message-icon-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-success-message-icon-fill",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-error-message-icon-color",
+      "value": "var(--ffe-g-error-color)"
+    },
+    {
+      "name": "--ffe-v-error-message-icon-fill",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-text-on-colored-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-checkbox-color",
+      "value": "var(--ffe-g-border-color)"
+    },
+    {
+      "name": "--ffe-v-checkbox-selected-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-checkbox-marker-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-checkbox-focus-outline-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-radio-button-label-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-toggle-switch-box-shadow",
+      "value": "0 0 0 3px var(--ffe-farge-hvit),0 0 0 5px var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-toggle-switch-hover-color",
+      "value": "var(--ffe-farge-moerkgraa)"
+    },
+    {
+      "name": "--ffe-v-tooltip-icon-color",
+      "value": "var(--ffe-g-primary-color)"
+    },
+    {
+      "name": "--ffe-v-tooltip-border-color",
+      "value": "var(--ffe-g-border-color)"
+    },
+    {
+      "name": "--ffe-v-button-text-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-buttons-border-radius",
+      "value": "6em"
+    },
+    {
+      "name": "--ffe-v-button-shadow-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-action-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-button-action-color-hover",
+      "value": "#095139"
+    },
+    {
+      "name": "--ffe-v-button-action-color-text",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-primary-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-primary-color-text",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-border-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color-text-hover",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color-bg-hover",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-secondary-color-text",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-tertiary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-tertiary-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-tertiary-color-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-task-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-task-color-border",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-task-color-text",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-task-color-text-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-button-task-color-icon",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-button-task-color-icon-hover",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-button-task-border-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-cards-common-card-background-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-cards-common-card-box-shadow-color",
+      "value": "var(--ffe-farge-graa)"
+    },
+    {
+      "name": "--ffe-v-cards-common-card-box-shadow",
+      "value": "0 1px 4px 0 var(--ffe-v-cards-common-card-box-shadow-color)"
+    },
+    {
+      "name": "--ffe-v-cards-common-card-border-radius",
+      "value": "16px"
+    },
+    {
+      "name": "--ffe-v-cards-text-color",
+      "value": "var(--ffe-farge-moerkgraa)"
+    },
+    {
+      "name": "--ffe-v-cards-border-hover-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-cards-stippled-border-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-cards-icon-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-cards-common-group-card-separation-border-color",
+      "value": "var(--ffe-farge-lysgraa)"
+    },
+    {
+      "name": "--ffe-v-cards-common-group-card-separation-border-color-dm",
+      "value": "var(--ffe-farge-koksgraa)"
+    },
+    {
+      "name": "--ffe-v-group-card-footer-background-color",
+      "value": "var(--ffe-farge-syrin-30)"
+    },
+    {
+      "name": "--ffe-v-group-card-footer-background-color-dm",
+      "value": "var(--ffe-farge-koksgraa)"
+    },
+    {
+      "name": "--ffe-v-accordion-primary-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-accordion-secondary-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-accordion-body-text-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-accordion-focus-border-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-icons-size-sm",
+      "value": "20px"
+    },
+    {
+      "name": "--ffe-v-icons-size-md",
+      "value": "24px"
+    },
+    {
+      "name": "--ffe-v-icons-size-lg",
+      "value": "40px"
+    },
+    {
+      "name": "--ffe-v-icons-size-xl",
+      "value": "48px"
+    },
+    {
+      "name": "--ffe-v-icons-default-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-messages-tips-bg-color",
+      "value": "var(--ffe-farge-sol-30)"
+    },
+    {
+      "name": "--ffe-v-messages-tips-icon-bg-color",
+      "value": "var(--ffe-farge-sol)"
+    },
+    {
+      "name": "--ffe-v-messages-tips-icon-color",
+      "value": "var(--ffe-farge-sol-30)"
+    },
+    {
+      "name": "--ffe-v-messages-tips-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-messages-tips-icon-variant-bg-color",
+      "value": "var(--ffe-farge-sol)"
+    },
+    {
+      "name": "--ffe-v-messages-info-bg-color",
+      "value": "var(--ffe-farge-vann-30)"
+    },
+    {
+      "name": "--ffe-v-messages-info-icon-bg-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-messages-info-icon-color",
+      "value": "var(--ffe-farge-vann-30)"
+    },
+    {
+      "name": "--ffe-v-messages-info-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-messages-info-icon-variant-bg-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-messages-success-bg-color",
+      "value": "var(--ffe-farge-skog-30)"
+    },
+    {
+      "name": "--ffe-v-messages-success-icon-bg-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-messages-success-icon-color",
+      "value": "var(--ffe-farge-skog-30)"
+    },
+    {
+      "name": "--ffe-v-messages-success-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-messages-success-icon-variant-bg-color",
+      "value": "var(--ffe-farge-skog)"
+    },
+    {
+      "name": "--ffe-v-messages-error-bg-color",
+      "value": "var(--ffe-farge-baer-30)"
+    },
+    {
+      "name": "--ffe-v-messages-error-icon-bg-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-v-messages-error-icon-color",
+      "value": "var(--ffe-farge-baer-30)"
+    },
+    {
+      "name": "--ffe-v-messages-error-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-messages-error-icon-variant-bg-color",
+      "value": "var(--ffe-farge-baer)"
+    },
+    {
+      "name": "--ffe-v-messages-news-bg-color",
+      "value": "var(--ffe-farge-lysgraa)"
+    },
+    {
+      "name": "--ffe-v-messages-news-icon-bg-color",
+      "value": "var(--ffe-farge-koksgraa)"
+    },
+    {
+      "name": "--ffe-v-messages-news-icon-color",
+      "value": "var(--ffe-farge-lysgraa)"
+    },
+    {
+      "name": "--ffe-v-messages-news-variant-bg-color",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-messages-news-icon-variant-bg-color",
+      "value": "var(--ffe-farge-koksgraa)"
+    },
+    {
+      "name": "--ffe-v-messages-close-button-color",
+      "value": "var(--ffe-farge-moerkgraa)"
+    },
+    {
+      "name": "--ffe-v-messages-close-button-color-hover",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-messages-close-button-border-color-focus",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-messages-text-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-messages-link-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-messages-link-color-hover",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-messages-link-color-visited",
+      "value": "var(--ffe-farge-lyng)"
+    },
+    {
+      "name": "--ffe-v-messages-link-color-focus",
+      "value": "var(--ffe-farge-hvit)"
+    },
+    {
+      "name": "--ffe-v-table-heading-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-table-heading-color-sortable",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-table-row-bordercolor",
+      "value": "var(--ffe-farge-varmgraa)"
+    },
+    {
+      "name": "--ffe-v-table-expand-icon-color",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-table-expanded-content-bg",
+      "value": "var(--ffe-farge-syrin-30)"
+    },
+    {
+      "name": "--ffe-v-table-expanded-row-bg",
+      "value": "var(--ffe-farge-syrin-70)"
+    },
+    {
+      "name": "--ffe-v-table-sortable-header-hover-color",
+      "value": "var(--ffe-farge-fjell)"
+    },
+    {
+      "name": "--ffe-v-table-button-focus-outline",
+      "value": "var(--ffe-farge-vann)"
+    },
+    {
+      "name": "--ffe-v-table-content-color",
+      "value": "var(--ffe-farge-svart)"
+    },
+    {
+      "name": "--ffe-v-table-sortable-header-active-color",
+      "value": "var(--ffe-farge-syrin-70)"
+    }
+  ],
+  "customProps": {
+    "--ffe-farge-fjell": "#002776",
+    "--ffe-farge-fjell-70": "#4d689f",
+    "--ffe-farge-fjell-30": "#b3bed6",
+    "--ffe-farge-vann": "#005aa4",
+    "--ffe-farge-vann-70": "#4d8cbf",
+    "--ffe-farge-vann-30": "#b3cee4",
+    "--ffe-farge-sand": "#f8e9dd",
+    "--ffe-farge-sand-70": "#faf0e7",
+    "--ffe-farge-sand-30": "#fdf8f5",
+    "--ffe-farge-frost": "#7eb5d2",
+    "--ffe-farge-frost-70": "#a5cbe0",
+    "--ffe-farge-frost-30": "#d8e9f2",
+    "--ffe-farge-syrin": "#d3d3ea",
+    "--ffe-farge-syrin-70": "#e0e0f0",
+    "--ffe-farge-syrin-30": "#f2f2f9",
+    "--ffe-farge-myrull": "#fae4e0",
+    "--ffe-farge-myrull-70": "#fcece9",
+    "--ffe-farge-myrull-30": "#fef7f6",
+    "--ffe-farge-villblomst": "#ee8d9c",
+    "--ffe-farge-villblomst-70": "#f3afba",
+    "--ffe-farge-villblomst-30": "#fadde1",
+    "--ffe-farge-nordlys": "#33af85",
+    "--ffe-farge-nordlys-70": "#70c7aa",
+    "--ffe-farge-nordlys-30": "#c2e7da",
+    "--ffe-farge-lyng": "#873953",
+    "--ffe-farge-lyng-70": "#ab7487",
+    "--ffe-farge-lyng-30": "#dbc4cb",
+    "--ffe-farge-baer": "#e44244",
+    "--ffe-farge-baer-70": "#ec7b7c",
+    "--ffe-farge-baer-30": "#f7c6c7",
+    "--ffe-farge-skog": "#00754e",
+    "--ffe-farge-skog-70": "#4d9e83",
+    "--ffe-farge-skog-30": "#b3d6ca",
+    "--ffe-farge-multe": "#f8b181",
+    "--ffe-farge-multe-70": "#fac8a7",
+    "--ffe-farge-multe-30": "#fde8d9",
+    "--ffe-farge-sol": "#dc8000",
+    "--ffe-farge-sol-70": "#e7a64d",
+    "--ffe-farge-sol-30": "#f5d9b3",
+    "--ffe-farge-natt": "#001032",
+    "--ffe-farge-svart": "#020a0a",
+    "--ffe-farge-koksgraa": "#323232",
+    "--ffe-farge-moerkgraa": "#676767",
+    "--ffe-farge-graa": "#adadad",
+    "--ffe-farge-lysgraa": "#d8d8d8",
+    "--ffe-farge-moerkvarmgraa": "#848383",
+    "--ffe-farge-varmgraa": "#9b9797",
+    "--ffe-farge-lysvarmgraa": "#d7d2cb",
+    "--ffe-farge-hvit": "#fff",
+    "--ffe-fontsize-body-text": "1rem",
+    "--ffe-fontsize-small-text": "0.875rem",
+    "--ffe-fontsize-micro-text": "0.75rem",
+    "--ffe-fontsize-lead-paragraph": "1.5rem",
+    "--ffe-fontsize-sub-lead-paragraph": "1.125rem",
+    "--ffe-fontsize-h1": "2.875rem",
+    "--ffe-fontsize-h2": "2.25rem",
+    "--ffe-fontsize-h3": "1.75rem",
+    "--ffe-fontsize-h4": "1.375rem",
+    "--ffe-fontsize-h5": "1.125rem",
+    "--ffe-fontsize-h6": "1rem",
+    "--ffe-fontsize-form-input": "1rem",
+    "--ffe-fontsize-form-dropdown": "1rem",
+    "--ffe-fontsize-button": "1rem",
+    "--breakpoint-sm": "480px",
+    "--breakpoint-md": "768px",
+    "--breakpoint-lg": "1024px",
+    "--breakpoint-xl": "1280px",
+    "--app-width": "1280px",
+    "--app-width-min": "320px",
+    "--app-margin": "20px",
+    "--ffe-ease-in-out-back": "cubic-bezier(0.46, -0.265, 0.48, 1.38)",
+    "--ffe-ease": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+    "--ffe-transition-duration": "0.2s",
+    "--ffe-spacing": "8px",
+    "--ffe-spacing-2xs": "4px",
+    "--ffe-spacing-xs": "8px",
+    "--ffe-spacing-sm": "16px",
+    "--ffe-spacing-md": "24px",
+    "--ffe-spacing-lg": "32px",
+    "--ffe-spacing-xl": "40px",
+    "--ffe-spacing-2xl": "48px",
+    "--ffe-spacing-3xl": "64px",
+    "--ffe-spacing-4xl": "80px",
+    "--ffe-spacing-5xl": "160px",
+    "--ffe-g-primary-color": "#005aa4",
+    "--ffe-g-secondary-color": "#002776",
+    "--ffe-g-error-color": "#e44244",
+    "--ffe-g-border-color": "#9b9797",
+    "--ffe-g-border-radius": "4px",
+    "--ffe-g-font": "'SpareBank1-regular',arial,sans-serif",
+    "--ffe-g-font-heading": "'SpareBank1-title-medium',arial,sans-serif",
+    "--ffe-g-font-heading-small": "'SpareBank1-medium',arial,sans-serif",
+    "--ffe-g-font-strong": "'SpareBank1-medium',arial,sans-serif",
+    "--ffe-g-font-italic": "'SpareBank1-italic',arial,sans-serif",
+    "--ffe-g-text-color": "#020a0a",
+    "--ffe-g-lead-color": "#002776",
+    "--ffe-g-heading-color": "#002776",
+    "--ffe-g-link-color": "#005aa4",
+    "--ffe-g-link-color-hover": "#002776",
+    "--ffe-g-link-color-visited": "#873953",
+    "--ffe-g-link-icon-color-hover": "#001032",
+    "--ffe-g-link-icon-color-focus": "#005aa4",
+    "--ffe-v-lists-title-color": "#002776",
+    "--ffe-v-lists-description-description-color": "#020a0a",
+    "--ffe-v-lists-check-list-check-icon-color": "#00754e",
+    "--ffe-v-lists-check-list-cross-icon-color": "#e44244",
+    "--ffe-v-detail-list-card-background-color": "#fff",
+    "--ffe-v-detail-list-card-border-color": "#d8d8d8",
+    "--ffe-v-detail-list-card-border-radius": "16px",
+    "--ffe-v-input-color": "#020a0a",
+    "--ffe-v-input-bg-color": "#fff",
+    "--ffe-v-input-placeholder-color": "#676767",
+    "--ffe-v-info-message-icon-color": "#002776",
+    "--ffe-v-info-message-icon-fill": "#fff",
+    "--ffe-v-dropdown-bg-color": "#fff",
+    "--ffe-v-success-message-icon-color": "#00754e",
+    "--ffe-v-success-message-icon-fill": "#fff",
+    "--ffe-v-error-message-icon-color": "#e44244",
+    "--ffe-v-error-message-icon-fill": "#fff",
+    "--ffe-v-text-on-colored-bg-color": "#fff",
+    "--ffe-v-checkbox-color": "#9b9797",
+    "--ffe-v-checkbox-selected-color": "#005aa4",
+    "--ffe-v-checkbox-marker-color": "#005aa4",
+    "--ffe-v-checkbox-focus-outline-color": "#005aa4",
+    "--ffe-v-radio-button-label-color": "#005aa4",
+    "--ffe-v-toggle-switch-box-shadow": "0 0 0 3px #fff,0 0 0 5px #005aa4",
+    "--ffe-v-toggle-switch-hover-color": "#676767",
+    "--ffe-v-tooltip-icon-color": "#005aa4",
+    "--ffe-v-tooltip-border-color": "#9b9797",
+    "--ffe-v-button-text-color": "#fff",
+    "--ffe-v-buttons-border-radius": "6em",
+    "--ffe-v-button-shadow-color": "#005aa4",
+    "--ffe-v-button-action-color": "#00754e",
+    "--ffe-v-button-action-color-hover": "#095139",
+    "--ffe-v-button-action-color-text": "#fff",
+    "--ffe-v-button-primary-color": "#005aa4",
+    "--ffe-v-button-primary-color-hover": "#002776",
+    "--ffe-v-button-primary-color-text": "#fff",
+    "--ffe-v-button-secondary-color": "#fff",
+    "--ffe-v-button-secondary-border-color": "#005aa4",
+    "--ffe-v-button-secondary-color-text-hover": "#fff",
+    "--ffe-v-button-secondary-color-bg-hover": "#005aa4",
+    "--ffe-v-button-secondary-color-text": "#005aa4",
+    "--ffe-v-button-tertiary-color": "#005aa4",
+    "--ffe-v-button-tertiary-color-hover": "#002776",
+    "--ffe-v-button-tertiary-color-focus": "#005aa4",
+    "--ffe-v-button-task-color": "#fff",
+    "--ffe-v-button-task-color-border": "#005aa4",
+    "--ffe-v-button-task-color-text": "#005aa4",
+    "--ffe-v-button-task-color-text-hover": "#002776",
+    "--ffe-v-button-task-color-icon": "#005aa4",
+    "--ffe-v-button-task-color-icon-hover": "#fff",
+    "--ffe-v-button-task-border-focus": "#005aa4",
+    "--ffe-v-cards-common-card-background-color": "#fff",
+    "--ffe-v-cards-common-card-box-shadow-color": "#adadad",
+    "--ffe-v-cards-common-card-box-shadow": "0 1px 4px 0 #adadad",
+    "--ffe-v-cards-common-card-border-radius": "16px",
+    "--ffe-v-cards-text-color": "#676767",
+    "--ffe-v-cards-border-hover-color": "#005aa4",
+    "--ffe-v-cards-stippled-border-color": "#005aa4",
+    "--ffe-v-cards-icon-color": "#002776",
+    "--ffe-v-cards-common-group-card-separation-border-color": "#d8d8d8",
+    "--ffe-v-cards-common-group-card-separation-border-color-dm": "#323232",
+    "--ffe-v-group-card-footer-background-color": "#f2f2f9",
+    "--ffe-v-group-card-footer-background-color-dm": "#323232",
+    "--ffe-v-accordion-primary-color": "#005aa4",
+    "--ffe-v-accordion-secondary-color": "#fff",
+    "--ffe-v-accordion-body-text-color": "#020a0a",
+    "--ffe-v-accordion-focus-border-color": "#005aa4",
+    "--ffe-v-icons-size-sm": "20px",
+    "--ffe-v-icons-size-md": "24px",
+    "--ffe-v-icons-size-lg": "40px",
+    "--ffe-v-icons-size-xl": "48px",
+    "--ffe-v-icons-default-color": "#005aa4",
+    "--ffe-v-messages-tips-bg-color": "#f5d9b3",
+    "--ffe-v-messages-tips-icon-bg-color": "#dc8000",
+    "--ffe-v-messages-tips-icon-color": "#f5d9b3",
+    "--ffe-v-messages-tips-variant-bg-color": "#fff",
+    "--ffe-v-messages-tips-icon-variant-bg-color": "#dc8000",
+    "--ffe-v-messages-info-bg-color": "#b3cee4",
+    "--ffe-v-messages-info-icon-bg-color": "#005aa4",
+    "--ffe-v-messages-info-icon-color": "#b3cee4",
+    "--ffe-v-messages-info-variant-bg-color": "#fff",
+    "--ffe-v-messages-info-icon-variant-bg-color": "#002776",
+    "--ffe-v-messages-success-bg-color": "#b3d6ca",
+    "--ffe-v-messages-success-icon-bg-color": "#00754e",
+    "--ffe-v-messages-success-icon-color": "#b3d6ca",
+    "--ffe-v-messages-success-variant-bg-color": "#fff",
+    "--ffe-v-messages-success-icon-variant-bg-color": "#00754e",
+    "--ffe-v-messages-error-bg-color": "#f7c6c7",
+    "--ffe-v-messages-error-icon-bg-color": "#e44244",
+    "--ffe-v-messages-error-icon-color": "#f7c6c7",
+    "--ffe-v-messages-error-variant-bg-color": "#fff",
+    "--ffe-v-messages-error-icon-variant-bg-color": "#e44244",
+    "--ffe-v-messages-news-bg-color": "#d8d8d8",
+    "--ffe-v-messages-news-icon-bg-color": "#323232",
+    "--ffe-v-messages-news-icon-color": "#d8d8d8",
+    "--ffe-v-messages-news-variant-bg-color": "#fff",
+    "--ffe-v-messages-news-icon-variant-bg-color": "#323232",
+    "--ffe-v-messages-close-button-color": "#676767",
+    "--ffe-v-messages-close-button-color-hover": "#020a0a",
+    "--ffe-v-messages-close-button-border-color-focus": "#005aa4",
+    "--ffe-v-messages-text-color": "#020a0a",
+    "--ffe-v-messages-link-color": "#005aa4",
+    "--ffe-v-messages-link-color-hover": "#002776",
+    "--ffe-v-messages-link-color-visited": "#873953",
+    "--ffe-v-messages-link-color-focus": "#fff",
+    "--ffe-v-table-heading-color": "#020a0a",
+    "--ffe-v-table-heading-color-sortable": "#002776",
+    "--ffe-v-table-row-bordercolor": "#9b9797",
+    "--ffe-v-table-expand-icon-color": "#005aa4",
+    "--ffe-v-table-expanded-content-bg": "#f2f2f9",
+    "--ffe-v-table-expanded-row-bg": "#e0e0f0",
+    "--ffe-v-table-sortable-header-hover-color": "#002776",
+    "--ffe-v-table-button-focus-outline": "#005aa4",
+    "--ffe-v-table-content-color": "#020a0a",
+    "--ffe-v-table-sortable-header-active-color": "#e0e0f0"
+  },
+  "fontFaces": [
+    {
+      "family": "SpareBank1-medium",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2\") format(\"woff2\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-medium; font-display: fallback; src: url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2\") format(\"woff2\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.css"
+    },
+    {
+      "family": "SpareBank1-regular",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2\") format(\"woff2\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-regular; font-display: fallback; src: url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2\") format(\"woff2\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.css"
+    },
+    {
+      "family": "SpareBank1-italic",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-It-Web.woff2\") format(\"woff2\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-italic; font-display: fallback; src: url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-It-Web.woff2\") format(\"woff2\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.css"
+    },
+    {
+      "family": "SpareBank1-title-medium",
+      "weight": "400",
+      "style": "normal",
+      "display": "fallback",
+      "src": "url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2\") format(\"woff2\")",
+      "unicodeRange": null,
+      "cssText": "@font-face { font-family: SpareBank1-title-medium; font-display: fallback; src: url(\"../../../../../../etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2\") format(\"woff2\"); }",
+      "sheet": "https://www.sparebank1.no/etc.clientlibs/settings/wcm/designs/sb1/nettsider-frontend/clientlib_base.1156912316.css"
+    }
+  ],
+  "iconFont": null,
+  "textRendering": {
+    "textRendering": "auto",
+    "webkitFontSmoothing": "auto",
+    "fontSynthesis": "weight style small-caps",
+    "fontKerning": "auto",
+    "fontVariantNumeric": "tabular-nums",
+    "bodyFontFamily": "SpareBank1-regular, arial, sans-serif",
+    "bodyFontSize": "16px",
+    "bodyLineHeight": "24px",
+    "bodyColor": "rgb(2, 10, 10)",
+    "bodyBackground": "rgba(216, 216, 216, 0.3)",
+    "htmlFontSize": "16px"
+  },
+  "containerModel": {
+    "maxWidthMode": "100%",
+    "sample": [
+      {
+        "domPath": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container > img.inline-svg.responsive",
+        "renderedWidth": 170,
+        "marginLeft": "0px",
+        "marginRight": "0px"
+      },
+      {
+        "domPath": "div.sb1-article__header.responsive-grid:nth-child(1) > div.sb1-article__header-image.image--hero:nth-child(1) > div.image__wrap > figure > div.image__container > img.image--responsive",
+        "renderedWidth": 1062,
+        "marginLeft": "0px",
+        "marginRight": "0px"
+      }
+    ],
+    "documentHeight": 5675,
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    }
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 10,
+    "mainTextLen": 7541,
+    "realImageCount": 7,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "screenshot": "assets/screenshots/nb-bank-privat-sparing-markedsnytt-artikler-gar-du-glipp-av-millioner-i-pensjon-html.png",
+  "stats": {
+    "wordCount": 1409,
+    "ctaCount": 8,
+    "internalLinkCount": 37,
+    "externalLinkCount": 5,
+    "imageCount": 11,
+    "headingCount": 12
+  },
+  "slots": {
+    "pageType": "article",
+    "archetypeFamily": "news-article",
+    "headline": "Går du glipp av millioner i pensjon? – Mange får seg en overraskelse",
+    "deck": "De færreste av oss vet hvor mye arbeidsgiveren vår sparer for oss til pensjon. Forskjellen på de beste og dårligste tjenestepensjonsordningene kan faktisk utgjøre mange millioner kroner den dagen du slutter å jobbe. Har du råd til å la være å sjekke tallene dine?",
+    "meta": {
+      "title": "Går du glipp av millioner i pensjon? – Mange får seg en overraskelse | SpareBank 1",
+      "description": "De færreste av oss vet hvor mye arbeidsgiveren vår sparer for oss til pensjon. Forskjellen på de beste og dårligste tjenestepensjonsordningene kan faktisk utgjøre mange millioner kroner den dagen du slutter å jobbe. Har du råd til å la være å sjekke tallene dine?",
+      "canonical": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.html",
+      "og": {
+        "title": "Går du glipp av millioner i pensjon? – Mange får seg en overraskelse ",
+        "description": "De færreste av oss vet hvor mye arbeidsgiveren vår sparer for oss til pensjon. Forskjellen på de beste og dårligste tjenestepensjonsordningene kan faktisk utgjøre mange millioner kroner den dagen du slutter å jobbe. Har du råd til å la være å sjekke tallene dine?",
+        "image": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/pensjonssak-tjenestepensjon-illustrasjon-markedsnytt-ny.jpg.thumb.1280.2276.jpg",
+        "type": "article",
+        "siteName": null
+      }
+    },
+    "breadcrumb": null,
+    "sections": [
+      "Forskjeller som vokser over tid",
+      "Husk pensjon når du bytter jobb",
+      "Sjekk spareprofilen",
+      "PENSJONSEKSPERTEN OPPSUMMERER DET VIKTIGSTE I TRE RÅD:",
+      "RELATERTE ARTIKLER",
+      "RELATERTE TEMA"
+    ],
+    "h3": [],
+    "paragraphs": 23,
+    "primaryCtas": [
+      {
+        "label": "Del på Facebook",
+        "href": null
+      },
+      {
+        "label": "Del på LinkedIn",
+        "href": null
+      },
+      {
+        "label": "Del på Twitter",
+        "href": null
+      },
+      {
+        "label": "Les mer om pensjon her",
+        "href": "/nb/bank/privat/pensjon.html"
+      },
+      {
+        "label": "Du finner flere artikler om sparing og investering på Markedsnytt",
+        "href": "/nb/bank/privat/sparing/markedsnytt.html"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/pensjonssak-tjenestepensjon-illustrasjon-markedsnytt-ny.jpg.thumb.1280.2276.jpg",
+        "alt": "",
+        "w": 1062,
+        "h": 488
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/pensjonsekspert-marianne-christensen-markedsnytt.jpg.thumb.1280.1280.jpg",
+        "alt": "",
+        "w": 688,
+        "h": 503
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/figur-tjenestepensjonssak-markedsnytt-ny.jpg.thumb.1280.1280.jpg",
+        "alt": "",
+        "w": 688,
+        "h": 387
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/oppslagsbilde-sak-om-pensjonskalkulator-markedsnytt.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 294,
+        "h": 139
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/oppslagsbilde-pensjonssak-mor-og-sonn-pa-benk-markedsnytt.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 294,
+        "h": 139
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/pensjon-illustrasjonsbilde-dame-pa-trapp-markedsnytt.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 294,
+        "h": 139
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/profilbilder-liggende/vinterjente-smiler-ute-dame.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 294,
+        "h": 139
+      },
+      {
+        "src": "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/oppslagsbilde-pensjonssak-ips.jpg.thumb.768.768.jpg",
+        "alt": "",
+        "w": 294,
+        "h": 139
+      }
+    ],
+    "faqItems": [],
+    "hasFeedback": false,
+    "hasContactRow": false,
+    "hasBankChoice": false,
+    "kicker": "PENSJONSEKSPERTEN OPPSUMMERER DET VIKTIGSTE I TRE RÅD:",
+    "share": [
+      "Del på Facebook",
+      "Del på LinkedIn",
+      "Del på Twitter"
+    ],
+    "related": [
+      "RELATERTE ARTIKLER",
+      "RELATERTE TEMA"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "writtenAt": "2026-09-14T15:06:21.880Z",
+  "results": [
+    {
+      "slug": "nb-bank-bedrift-html",
+      "ok": true,
+      "ms": 8936,
+      "headings": 12,
+      "ctas": 11,
+      "sections": 9,
+      "imgs": 21,
+      "bg": 0,
+      "forms": 0,
+      "fontFaces": 3
+    },
+    {
+      "slug": "nb-bank-privat-html",
+      "ok": true,
+      "ms": 8937,
+      "headings": 18,
+      "ctas": 8,
+      "sections": 7,
+      "imgs": 19,
+      "bg": 0,
+      "forms": 0,
+      "fontFaces": 3
+    },
+    {
+      "slug": "nb-bank-privat-daglig-bruk-bankid-html",
+      "ok": true,
+      "ms": 9110,
+      "headings": 28,
+      "ctas": 35,
+      "sections": 13,
+      "imgs": 19,
+      "bg": 0,
+      "forms": 0,
+      "fontFaces": 3
+    }
+  ]
+}

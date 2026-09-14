@@ -1,0 +1,2813 @@
+<!doctype html>
+
+
+<html lang="nb">
+<head>
+
+    <meta charset="utf-8"/>
+    
+        <script>
+            try{!function(){var e="Expected a function",t=NaN,n="[object Symbol]",r=/^\s+|\s+$/g,i=/^[-+]0x[0-9a-f]+$/i,o=/^0b[01]+$/i,a=/^0o[0-7]+$/i,c=parseInt,u="object"==typeof global&&global&&global.Object===Object&&global,s="object"==typeof self&&self&&self.Object===Object&&self,f=u||s||Function("return this")(),l=Object.prototype.toString,p=Math.max,v=Math.min,g=function(){return f.Date.now()};function m(t,n,r){var i,o,a,c,u,s,f=0,l=!1,m=!1,b=!0;if("function"!=typeof t)throw new TypeError(e);function O(e){var n=i,r=o;return i=o=void 0,f=e,c=t.apply(r,n)}function y(e){var t=e-s;return void 0===s||t>=n||t<0||m&&e-f>=a}function N(){var e,t,r=g();if(y(r))return w(r);u=setTimeout(N,(t=n-((e=r)-s),m?v(t,a-(e-f)):t))}function w(e){return u=void 0,b&&i?O(e):(i=o=void 0,c)}function x(){var e,t=g(),r=y(t);if(i=arguments,o=this,s=t,r){if(void 0===u)return f=e=s,u=setTimeout(N,n),l?O(e):c;if(m)return u=setTimeout(N,n),O(s)}return void 0===u&&(u=setTimeout(N,n)),c}return n=d(n)||0,h(r)&&(l=!!r.leading,a=(m="maxWait"in r)?p(d(r.maxWait)||0,n):a,b="trailing"in r?!!r.trailing:b),x.cancel=function(){void 0!==u&&clearTimeout(u),f=0,i=s=o=u=void 0},x.flush=function(){return void 0===u?c:w(g())},x}function h(e){var t=typeof e;return!!e&&("object"==t||"function"==t)}function d(e){if("number"==typeof e)return e;if("symbol"==typeof(u=e)||(s=u)&&"object"==typeof s&&l.call(u)==n)return t;var u,s;if(h(e)){var f="function"==typeof e.valueOf?e.valueOf():e;e=h(f)?f+"":f}if("string"!=typeof e)return 0===e?e:+e;e=e.replace(r,"");var p=o.test(e);return p||a.test(e)?c(e.slice(2),p?2:8):i.test(e)?t:+e}var b,O,y,N,w=(b=function(){function e(e){return!isNaN(parseFloat(e))&&isFinite(e)}function t(e){return e.charAt(0).toUpperCase()+e.substring(1)}function n(e){return function(){return this[e]}}var r=["isConstructor","isEval","isNative","isToplevel"],i=["columnNumber","lineNumber"],o=["fileName","functionName","source"],a=r.concat(i,o,["args"]);function c(e){if(e instanceof Object)for(var n=0;n<a.length;n++)e.hasOwnProperty(a[n])&&void 0!==e[a[n]]&&this["set"+t(a[n])](e[a[n]])}c.prototype={getArgs:function(){return this.args},setArgs:function(e){if("[object Array]"!==Object.prototype.toString.call(e))throw new TypeError("Args must be an Array");this.args=e},getEvalOrigin:function(){return this.evalOrigin},setEvalOrigin:function(e){if(e instanceof c)this.evalOrigin=e;else{if(!(e instanceof Object))throw new TypeError("Eval Origin must be an Object or StackFrame");this.evalOrigin=new c(e)}},toString:function(){return(this.getFunctionName()||"{anonymous}")+"("+(this.getArgs()||[]).join(",")+")"+(this.getFileName()?"@"+this.getFileName():"")+(e(this.getLineNumber())?":"+this.getLineNumber():"")+(e(this.getColumnNumber())?":"+this.getColumnNumber():"")}};for(var u=0;u<r.length;u++)c.prototype["get"+t(r[u])]=n(r[u]),c.prototype["set"+t(r[u])]=function(e){return function(t){this[e]=Boolean(t)}}(r[u]);for(var s=0;s<i.length;s++)c.prototype["get"+t(i[s])]=n(i[s]),c.prototype["set"+t(i[s])]=function(t){return function(n){if(!e(n))throw new TypeError(t+" must be a Number");this[t]=Number(n)}}(i[s]);for(var f=0;f<o.length;f++)c.prototype["get"+t(o[f])]=n(o[f]),c.prototype["set"+t(o[f])]=function(e){return function(t){this[e]=String(t)}}(o[f]);return c}(),O=/(^|@)\S+\:\d+/,y=/^\s*at .*(\S+\:\d+|\(native\))/m,N=/^(eval@)?(\[native code\])?$/,{parse:function(e){if(void 0!==e.stacktrace||void 0!==e["opera#sourceloc"])return this.parseOpera(e);if(e.stack&&e.stack.match(y))return this.parseV8OrIE(e);if(e.stack)return this.parseFFOrSafari(e);throw new Error("Cannot parse given Error object")},extractLocation:function(e){if(-1===e.indexOf(":"))return[e];var t=/(.+?)(?:\:(\d+))?(?:\:(\d+))?$/.exec(e.replace(/[\(\)]/g,""));return[t[1],t[2]||void 0,t[3]||void 0]},parseV8OrIE:function(e){return e.stack.split("\n").filter(function(e){return!!e.match(y)},this).map(function(e){e.indexOf("(eval ")>-1&&(e=e.replace(/eval code/g,"eval").replace(/(\(eval at [^\()]*)|(\)\,.*$)/g,""));var t=e.replace(/^\s+/,"").replace(/\(eval code/g,"(").split(/\s+/).slice(1),n=this.extractLocation(t.pop()),r=t.join(" ")||void 0,i=["eval","<anonymous>"].indexOf(n[0])>-1?void 0:n[0];return new b({functionName:r,fileName:i,lineNumber:n[1],columnNumber:n[2],source:e})},this)},parseFFOrSafari:function(e){return e.stack.split("\n").filter(function(e){return!e.match(N)},this).map(function(e){if(e.indexOf(" > eval")>-1&&(e=e.replace(/ line (\d+)(?: > eval line \d+)* > eval\:\d+\:\d+/g,":$1")),-1===e.indexOf("@")&&-1===e.indexOf(":"))return new b({functionName:e});var t=/((.*".+"[^@]*)?[^@]*)(?:@)/,n=e.match(t),r=n&&n[1]?n[1]:void 0,i=this.extractLocation(e.replace(t,""));return new b({functionName:r,fileName:i[0],lineNumber:i[1],columnNumber:i[2],source:e})},this)},parseOpera:function(e){return!e.stacktrace||e.message.indexOf("\n")>-1&&e.message.split("\n").length>e.stacktrace.split("\n").length?this.parseOpera9(e):e.stack?this.parseOpera11(e):this.parseOpera10(e)},parseOpera9:function(e){for(var t=/Line (\d+).*script (?:in )?(\S+)/i,n=e.message.split("\n"),r=[],i=2,o=n.length;i<o;i+=2){var a=t.exec(n[i]);a&&r.push(new b({fileName:a[2],lineNumber:a[1],source:n[i]}))}return r},parseOpera10:function(e){for(var t=/Line (\d+).*script (?:in )?(\S+)(?:: In function (\S+))?$/i,n=e.stacktrace.split("\n"),r=[],i=0,o=n.length;i<o;i+=2){var a=t.exec(n[i]);a&&r.push(new b({functionName:a[3]||void 0,fileName:a[2],lineNumber:a[1],source:n[i]}))}return r},parseOpera11:function(e){return e.stack.split("\n").filter(function(e){return!!e.match(O)&&!e.match(/^Error created at/)},this).map(function(e){var t,n=e.split("@"),r=this.extractLocation(n.pop()),i=n.shift()||"",o=i.replace(/<anonymous function(: (\w+))?>/,"$2").replace(/\([^\)]*\)/g,"")||void 0;i.match(/\(([^\)]*)\)/)&&(t=i.replace(/^[^\(]+\(([^\)]*)\)$/,"$1"));var a=void 0===t||"[arguments not available]"===t?void 0:t.split(",");return new b({functionName:o,args:a,fileName:r[0],lineNumber:r[1],columnNumber:r[2],source:e})},this)}});window.onerror=function(t,n,r){var i=!0,o=!0;if("function"!=typeof t)throw new TypeError(e);return h(r)&&(i="leading"in r?!!r.leading:i,o="trailing"in r?!!r.trailing:o),m(t,n,{leading:i,maxWait:n,trailing:o})}(function(e,t,n,r,i){var o,a;i&&(o=w.parse(i)),window.location&&window.location.href&&(a=window.location.href),function(e){try{var t=new XMLHttpRequest;t.open("POST","/LogServlet",!0),t.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8"),t.send("javascriptError="+encodeURI(e))}catch(e){}}(JSON.stringify({userAgent:navigator.userAgent,url:a,logger:"apne_nettsider",message:e,source:t,lineno:n,colno:r,stacktrace:o}))},200)}()}catch(e){}
+        </script>
+    
+
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes"/>
+    
+    <meta name="description" content="Hussopp og råte er en tilleggsdekning til både hytte- og husforsikring. Den dekker både skade på bygningsmaterialer og konstruksjoner av.."/>
+    
+
+    
+        <meta itemprop="category"/>
+    
+
+    
+
+    <meta property="og:url" content="https://www.sparebank1.no/nb/bank/privat/kundeservice/forsikring/hussopp-rate.html"/>
+    <meta property="og:title" content="Dekker hytte-/husforsikringen hussopp og råte?"/>
+    <meta property="og:description" content="Hussopp og råte er en tilleggsdekning til både hytte- og husforsikring. Den dekker både skade på bygningsmaterialer og konstruksjoner av.."/>
+    <meta property="og:image" content="https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"/>
+    <meta property="og:type" content="article"/>
+
+    <meta property="article:published_time" content="2021-06-29T15:05:55+02:00"/>
+    <meta property="article:modified_time" content="2021-06-29T15:05:55+02:00"/>
+
+    <meta name="twitter:title" content="Dekker hytte-/husforsikringen hussopp og råte?"/>
+    <meta name="twitter:description" content="Hussopp og råte er en tilleggsdekning til både hytte- og husforsikring. Den dekker både skade på bygningsmaterialer og konstruksjoner av.."/>
+    <meta name="twitter:image:src" content="https://www.sparebank1.no/content/dam/SB1/nettsider/logo.svg.thumb.768.768.jpg"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+
+    
+    
+    
+
+    <link rel="preconnect" href="https://adobedc.demdex.net" crossorigin/>
+    <link rel="preconnect" href="https://edge.adobedc.net" crossorigin/>
+
+    
+    <link rel="preload" as="font" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/fonts/SpareBank1-Medium-Web.woff2" type="font/woff2" crossorigin/>
+    <link rel="preload" as="font" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/fonts/SpareBank1-Regular-Web.woff2" type="font/woff2" crossorigin/>
+    <link rel="preload" as="font" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/fonts/SpareBank1-Title-Medium-Web.woff2" type="font/woff2" crossorigin/>
+
+    <link rel="shortcut icon" type="image/png" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/favicon.png"/>
+    <link rel="apple-touch-icon" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base/resources/apple-touch-icon.png"/>
+    <link rel="canonical" href="https://www.sparebank1.no/nb/bank/privat/kundeservice/forsikring/hussopp-rate.html"/>
+    <link rel="stylesheet" href="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.css" type="text/css"/>
+    <title>Hussopp og råte | Husforsikring | SpareBank 1 </title>
+    
+    <!-- aem01-01 - 5.168.0 -->
+    
+
+    <script type="text/javascript">
+        var _satellite = {
+            track: function() {}
+        }
+    </script>
+
+    
+
+    
+</head>
+
+
+
+<body class="ffe-body-text">
+    
+    
+    
+    
+        
+
+<script>
+    window.SB1 = {
+        config: {
+            app: {
+                logServlet: '/LogServlet',
+                param1: "",
+                param2: "all",
+                param3: '',
+                sendToBank: "true",
+                sendToBankList: "",
+                sendToBankClose: "3",
+                sendToBankDelay: "4",
+                loggedInRedirectEnabled: "true",
+                urlList: "LogServlet,/bin/logservlet,/bin,/content/dam,/dynres,/restportal,static,/innhold,services.cicero.no,/kjopsprosess,/api/common/banking/skjema,/nettmote,.boost.ai/,https://publish.ne.cision.com/Subscription/Subscribe,dpm.demdex.net,sparebank1.d3.sc.omtrdc.net,/solr,/sb1-dialoghub,/openapi,edge.adobedc.net,/api/tracking/webbehavior,/pm-boliglan/,/api/personal/",
+                loginRedirectTimeout: "300000",
+                isLoginIframeCheckEnabled: "true",
+                chatDefaultOpen: "",
+                enableWebTracker: "true",
+                enableAdobeTargetCurrentPage: "",
+                enableSendConsent: "false", // To be removed when we have streamed the consents for a period of time
+                adobeEdgeIdBank: "c9ffe15c-d455-425b-877f-81f1a83db1c3",
+                version: "5.168.0",
+            },
+            user: {
+                language: "nb",
+            },
+            global: {
+                logAjax: false,
+            },
+            urls: {
+                marketPage: "/content/sites/sb1/nb/bank/privat.html",
+                gotoNettbank: '',
+            },
+            server: {},
+            sites: {},
+            page: {
+                tagVariables: "",
+                pageType: "Spørsmål",
+                market: "Privat",
+                marketName: "privat",
+                brand: "sb1",
+                products: [
+                    {
+                        name: "",
+                        category: "",
+                    },
+                ],
+                is404Page: "false",
+            },
+            bank: {
+                bankSemanticUrl: "bank",
+                bankShortName: "bank",
+                bankName: "SpareBank 1 ",
+                defaultLanguage: "nb",
+                financialInstitutionId: "fid-ostlandet"
+            },
+        },
+    };
+</script>
+
+        
+<script>
+    digitalData = {
+        content: {
+            BU: "SpareBank 1",
+            subBrand: "bank",
+            language: "nb",
+            page: "sb1|nb|bank|privat|kundeservice|forsikring|hussopp\u002Drate",
+            section1: "privat",
+            section2: "privat|kundeservice",
+            section3: "privat|kundeservice|forsikring",
+            section4: "privat|kundeservice|forsikring|hussopp\u002Drate",
+            errorpages: "Nei",
+            pagetype: "Spørsmål",
+            tags: "",
+            application: "sb1-nettsider"
+        }
+    };
+</script>
+   
+        <noscript>
+            <div>For at du skal kunne se innhold på SpareBank 1s nettsider optimalt, må du aktivere javascript i din nettleser.</div>
+        </noscript>
+
+        <div id="outer-main-wrap" class="main-wrap">
+            
+            
+            <nav class="page-nav">
+    <a href="#main-menu" class="visually-hidden focusable">Til hovedmeny</a>
+
+    <a href="#main-content" class="visually-hidden focusable">Til hovedinnhold</a>
+</nav>
+            
+
+
+    <aside aria-label="Melding" role="complementary">
+        <div class="global-message">
+            <div class="li-information-message-blue js-ie-message-item hide" role="alert" aria-live="assertive" data-id="ie-no-longer-supported" data-button="Lukk">
+                
+            </div>
+            
+        </div>
+    </aside>
+
+
+<header class="header">
+    
+    
+    
+    
+    
+    <div class="header__wrap">
+        <div class="header__content  aem-main-container">
+            <div class="header__top-wrap">
+                <a class="header__search-mobile search-toggle" href="?search=" aria-label="Søk" title="Søk">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+    <path aria-hidden="true" fill="currentColor" d="M378.67-326q-108.44 0-183.56-75.17Q120-476.33 120-583.33t75.17-182.17q75.16-75.17 182.5-75.17 107.33 0 182.16 75.17 74.84 75.17 74.84 182.27 0 43.23-14 82.9-14 39.66-40.67 73l236 234.66q9.67 9.37 9.67 23.86 0 14.48-9.67 24.14-9.67 9.67-24.15 9.67-14.48 0-23.85-9.67L532.67-380q-30 25.33-69.64 39.67Q423.39-326 378.67-326Zm-.67-66.67q79.17 0 134.58-55.83Q568-504.33 568-583.33q0-79-55.42-134.84Q457.17-774 378-774q-79.72 0-135.53 55.83-55.8 55.84-55.8 134.84t55.8 134.83q55.81 55.83 135.53 55.83Z"/>
+</svg>
+                    
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="header__search-icon header__search-icon--close">
+        <path fill="currentColor" d="M480-433.33 274.67-228q-9.67 9.67-23.34 9.67-13.66 0-23.33-9.67-9.67-9.67-9.67-23.33 0-13.67 9.67-23.34L433.33-480 228-685.33q-9.67-9.67-9.67-23.34 0-13.66 9.67-23.33 9.67-9.67 23.33-9.67 13.67 0 23.34 9.67L480-526.67 685.33-732q9.67-9.67 23.34-9.67 13.66 0 23.33 9.67 9.67 9.67 9.67 23.33 0 13.67-9.67 23.34L526.67-480 732-274.67q9.67 9.67 9.67 23.34 0 13.66-9.67 23.33-9.67 9.67-23.33 9.67-13.67 0-23.34-9.67L480-433.33Z"/>
+    </svg>
+
+                </a>
+                
+                <div class="header__logo">
+<a href="/nb/bank/privat.html">
+    
+    
+    
+
+    
+        
+    
+        
+
+    <picture>
+        <img aria-hidden="false" width="180" height="50" src="/content/dam/SB1/nettsider/logo.svg" alt="Tilbake til forsiden for privat for - SpareBank 1" class="inline-svg responsive  "/>
+    </picture>
+    <link rel="image_src" itemprop="image" href="/content/dam/SB1/nettsider/logo.svg.thumb.1280.1280.jpg"/>
+
+        
+    
+    
+
+        
+    
+    
+    
+    
+
+</a></div>
+
+                <button href="#" class="hamburger-wrapper" aria-hidden="false" aria-expanded="false" aria-label="Meny">
+                    <div class="inner-wrapper">
+                        <div class="hamburger"></div>
+                    </div>
+                </button>
+
+                <div class="header__top-nav">
+                    <ul>
+                        <li data-title="Privat">
+                            <a class="js-nav-link active" href="/nb/bank/privat.html">Privat</a>
+                        </li>
+                    
+                        <li data-title="Bedrift">
+                            <a class="js-nav-link " href="/nb/bank/bedrift.html">Bedrift</a>
+                        </li>
+                    
+                        <li data-title="Om oss">
+                            <a class="js-nav-link " href="/nb/bank/om-oss.html">Om oss</a>
+                        </li>
+                    
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <div class="header__user-content">
+                
+
+                <button aria-controls="search-area" class="header__search-desktop search-toggle " aria-label="Søk">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+    <path aria-hidden="true" fill="currentColor" d="M378.67-326q-108.44 0-183.56-75.17Q120-476.33 120-583.33t75.17-182.17q75.16-75.17 182.5-75.17 107.33 0 182.16 75.17 74.84 75.17 74.84 182.27 0 43.23-14 82.9-14 39.66-40.67 73l236 234.66q9.67 9.37 9.67 23.86 0 14.48-9.67 24.14-9.67 9.67-24.15 9.67-14.48 0-23.85-9.67L532.67-380q-30 25.33-69.64 39.67Q423.39-326 378.67-326Zm-.67-66.67q79.17 0 134.58-55.83Q568-504.33 568-583.33q0-79-55.42-134.84Q457.17-774 378-774q-79.72 0-135.53 55.83-55.8 55.84-55.8 134.84t55.8 134.83q55.81 55.83 135.53 55.83Z"/>
+</svg>
+                    <span>Søk</span>
+                </button>
+
+                <div class=" menu-actions">
+                    
+                    
+                    
+
+                    <div id="header-bli-kunde" class="button">
+                        <div class="button-wrapper">
+                            
+                            
+                                <a onclick="" href="/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat" class="ffe-button ffe-button--action btn-bli-kunde overlay-btn">Bli kunde</a>
+                            
+                        </div>
+                        
+                            
+                            
+    
+    
+
+    
+    
+    
+
+    <div data-nosnippet class="bank-choice-overlay" role="dialog" aria-modal="true" title="For å gå videre - velg en bank" id="-bankchoice" data-desktop-link="/content/sites/sb1/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat" data-prefilled-noproduct="Velg en av bankene som tilbyr produktet for å gå videre." data-modal-header="For å gå videre - velg en bank" data-modal-header-prefilled="For å gå videre..." data-prefilled-bank-text="Gå til banken du var hos sist" data-input-text="Ditt postnummer" data-optin-Bankpicker-Func="true" data-optin-Bankpicker-Func-Override="false" data-optinfunk-header="Vi kan dessverre ikke vise deg siste besøkte bank, da du ikke har tillatt funksjonelle informasjonskapsler" data-optinfunk-sublead="Hvis du ønsker å slippe å gjøre de samme valgene hver gang du er på nettsidene våre, så vil funksjonelle informasjonskapsler lagre opplysninger om din bruk av nettsidene og hvilke innstillinger du har gjort." data-optinfunk-accept="Slå på funksjonelle informasjonskapsler" data-optinfunk-reject="Nei takk" data-more-choices-text="Se alle banker" data-hide-choices-text="Skjul bankene" data-placeholder="Postnummer" data-placeholder-position="Din posisjon" data-fortsett="Fortsett til" data-filtered-list="Se resten av bankene" data-position-access="Tips! Tillatt nettleseren å hente din stedsinformasjon." data-position-api-fail="Vi finner ikke posisjonen din. Prøv å skriv et postnummer i stedet!" data-position-btn="Bruk min posisjon" data-error-msg="En feil oppstod, vennligst prøv igjen senere." data-close="Lukk" data-please-wait="Vennligst vent" data-finding-pos="Søker posisjon"></div>
+
+                        
+                    </div>
+
+                    
+
+
+
+
+
+<div id="login" class="user-buttons todo-handle">
+            
+            <div id="login-button-app" data-editmode="false" data-app-text="Åpne mobilbank-app" data-bankid-text="Logg inn med BankID" data-uten-bankid-text="Logg inn uten BankID" data-login-error-heading="Noe er feil" data-login-error-msg="Vi får ikke vist knappene for innlogging akkurat nå. Prøv igjen senere, eller bruk mobilbanken." data-login-so-me-warning-heading="Kommer du fra en SoMe-post og skal logge inn?" data-login-so-me-warning-msg="For din egen sikkerhet kan du ikke logge inn i banken via de innebygde nettleserne i Facebook, Instagram eller andre SoMe-apper.&lt;br>&lt;br>Du logger inn ved å:&lt;ul>&lt;li>åpne SpareBank 1 mobil-app, eller&lt;/li>&lt;li>åpne siden i nettleseren du bruker til vanlig. Trykk på de tre prikkene øverst i høyre hjørne og velg &lt;strong>Åpne i ekstern nettleser&lt;/strong> som Safari, Chrome, Edge eller andre.&lt;/li>&lt;/ul>" data-fin-inst="" data-lang="nb" data-app="nettbank-pm" data-bank="bank" data-login-text="Logg inn" data-close-text="Lukk" data-on-cancel="/content/sites/sb1/nb/bank/privat/kundeservice/forsikring/hussopp-rate.html" data-login-url="https://login.sparebank1.no/">
+                <a id="login-button" class="login-button--expand login-btn login" href="/nb/bank/privat/innlogging.html" aria-expanded="false" aria-controls="login-choices">
+                    <span id="login-button__text">Logg inn</span>
+                    <span id="login-button__text--close" aria-hidden="true" class="hide">Lukk<span class="visually-hidden"> Logg inn</span></span>
+                </a>
+            </div>
+        
+    
+
+    
+
+    <a id="nettbank-button" class="goto-btn to-bank-button login-buttons" href="#/">
+        <span>Til nettbank</span>
+    </a>
+
+    <a id="forsikring-button" class="goto-btn to-forsikring login-buttons" href="https://kundeforsikring.sparebank1.no">
+        <span>Til forsikring</span>
+    </a>
+
+    <button id="logout-button" class="logout-btn login-buttons" data-logout-url="/content/sites/sb1/nb/bank/privat/innlogging/logget-ut.html">
+        <span>Logg ut</span>
+    </button>
+</div>
+
+<script type="text/javascript">
+    (function () {
+
+        try {
+            var loginSection = document.getElementById('login');
+            var nettBankButton = document.getElementsByClassName('to-bank-button')[0];
+            var loginButton = document.getElementById('login-button');
+            var bank = window.SB1 ? window.SB1.config.bank.bankShortName : '';
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.open('GET', '/openapi/nettsider/ressurser/' + bank + '/user', true);
+
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {
+                        var result = JSON.parse(this.responseText);
+
+                        if (result.authenticated) {
+                            loginSection.dataset['authenticated'] = 'true';
+                            showButton(document.getElementById('logout-button'));
+                            addClass(loginSection, 'mobile-border');
+
+                            var realms = result.realms;
+                            if (realms.length > -1) {
+                                
+                                //Skjuler login knapp
+                                loginButton.style.display = 'none';
+                                var loginButtonApp = document.getElementById('login-button-app');
+                                if (loginButtonApp) {
+                                    loginButtonApp.style.display = 'none';
+                                    loginButtonApp.setAttribute('aria-hidden', true);
+                                }
+
+                                //Bli kunde button
+                                var bliKundeBtn = document.getElementById('header-bli-kunde');
+                                if (bliKundeBtn) {
+                                    bliKundeBtn.style.display = 'none';
+                                }
+
+                                //Viser kun en knapp denne runden
+                                //tilrettelegger for flere knapper i neste runde
+                            
+                                // NETTBANK-PM og finsieringsselskap-pm
+                                if (realms.includes('nettbank-pm') || realms.includes('finansieringsselskap-pm')) {
+                                    //finansieringsselskap-pm skal ikke knyttes til en spesifikk bank                                   
+                                    var toNettbank = '/bank/nettbank-privat/oversikt';
+                                    nettBankButton.href = toNettbank;
+                                    setGotoNettbankConf(toNettbank);
+
+                                    //DIG-116242 Skjule "Til nettbank" for SB1 forvaltning
+                                    if (window.location.href && window.location.href.indexOf('sb1-forvaltning') == -1) {
+                                        showButton(nettBankButton);
+                                    }
+                                }else if (realms.includes('nettbank-bm')){
+                                //NETTBANK-BM
+                                    var nettbankUrl = '/' + result.bank + '/nettbank-bedrift/forside';
+                                    var isMobilBank = nettBankButton.id === 'mobilbank-button';
+                                    if (isMobilBank) {
+                                        nettbankUrl = nettBankButton.href;
+                                    } else {
+                                        nettBankButton.href = nettbankUrl;
+                                    }
+                                    setGotoNettbankConf(nettbankUrl);
+                                    showButton(nettBankButton);
+                                }else if (realms.includes('forsikring-pm')) {
+                                //FORSIKRING-PM
+                                    showButton(document.getElementById('forsikring-button'));
+                                }                              
+                            }
+                            window.SB1.config.user.authenticated = true;
+                        } else {
+                            setGotoNettbankConf(loginButton.href);
+                            window.SB1.config.user.authenticated = false;
+                        }
+                    } else {
+                        setGotoNettbankConf(loginButton.href);
+                        window.SB1.config.user.authenticated = false;
+                    }
+                }
+            };
+            xhttp.send();
+
+            function showButton(btn) {
+                addClass(btn, 'login-buttons__show');
+            }
+
+            function setGotoNettbankConf(sUrl) {
+                window.SB1.config.urls.gotoNettbank = sUrl;
+            }
+
+            function addClass(obj, name) {
+                var arr;
+                arr = obj.className.split(' ');
+                if (arr.indexOf(name) == -1) {
+                    obj.className += ' ' + name;
+                }
+            }
+        } catch (exception) {
+            document.getElementById('login-button').style.display = 'flex';
+        }
+    })();
+</script>
+
+                    
+                </div>
+            </div>
+
+            <nav id="main-menu" class="header__main-nav " aria-label="Hovedmeny" tabindex="-1">
+                <ul>
+                    <li>
+                        <a class=" js-nav-link" href="/nb/bank/privat/daglig-bruk.html">Daglig bruk</a>
+                    </li>
+                
+                    <li>
+                        <a class=" js-nav-link" href="/nb/bank/privat/lan.html">Låne</a>
+                    </li>
+                
+                    <li>
+                        <a class=" js-nav-link" href="/nb/bank/privat/sparing.html">Spare</a>
+                    </li>
+                
+                    <li>
+                        <a class=" js-nav-link" href="/nb/bank/privat/pensjon.html">Pensjon</a>
+                    </li>
+                
+                    <li>
+                        <a class=" js-nav-link" href="/nb/bank/privat/forsikring.html">Forsikring</a>
+                    </li>
+                
+                    <li>
+                        <a class=" js-nav-link" href="/nb/bank/privat/eiendom.html">Eiendom</a>
+                    </li>
+                
+                    <li>
+                        <a class=" js-nav-link" href="/nb/bank/privat/tips-og-rad.html">Tips og råd</a>
+                    </li>
+                
+                    <li>
+                        <a class="active js-nav-link" href="/nb/bank/privat/kundeservice.html">Kundeservice</a>
+                    </li>
+                
+                    <li>
+                        <a class=" js-nav-link" href="/nb/bank/privat/lofavor.html">LOfavør-fordeler</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</header>
+
+
+    
+    <div id="search-area" class="search-overlay hide " aria-expanded="false" aria-live="polite" role="search">
+        <div class="full-width-wrap">
+            <div class="aem-main-container search-overlay__close">
+                <button tabindex="0" class="search-overlay__close-btn js-search-close">
+                    <span class="ffe-strong-text">Lukk</span>
+                    
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+        <path fill="currentColor" d="M480-433.33 274.67-228q-9.67 9.67-23.34 9.67-13.66 0-23.33-9.67-9.67-9.67-9.67-23.33 0-13.67 9.67-23.34L433.33-480 228-685.33q-9.67-9.67-9.67-23.34 0-13.66 9.67-23.33 9.67-9.67 23.33-9.67 13.67 0 23.34 9.67L480-526.67 685.33-732q9.67-9.67 23.34-9.67 13.66 0 23.33 9.67 9.67 9.67 9.67 23.33 0 13.67-9.67 23.34L526.67-480 732-274.67q9.67 9.67 9.67 23.34 0 13.66-9.67 23.33-9.67 9.67-23.33 9.67-13.67 0-23.34-9.67L480-433.33Z"/>
+    </svg>
+
+                </button>
+            </div>
+        </div>  
+        
+        <div id="search-app" data-no-personal-info="Ikke skriv personlig informasjon i søkefeltet." data-no-result-text="Ingen treff på" data-facet-label="Vis resultater fra" data-try-again-text="Fant du ikke svar? Prøv igjen" data-searching-text="Søker" data-search-title="Hva lurer du på?" data-customer-service-text="Eller prøv kundeservice" data-market="Privat"></div>
+    </div>
+
+
+
+            <main id="main-content" class="main" tabindex="-1">
+
+<div class="question-page aem-main-container">
+
+    <div class="aem-main-container to-parent">
+        
+            <a class="ffe-link-text to-parent__link" href="/nb/bank/privat/kundeservice.html">
+                
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="to-parent__link-icon">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+                Kundeservice
+            </a>
+        
+        
+    </div>
+
+    
+
+     <div class="question-page__question-container">
+         <h1>
+             
+Dekker hytte-/husforsikringen hussopp og råte?
+         </h1>
+         <div class="question-page__answer">
+    
+    
+    
+    <div class="text">
+
+
+
+
+<div class="aem-component-container text-container">
+    
+    
+        
+        
+        
+            <div class="text-wrapper  ">
+                
+                    <p>Hussopp og råte er en tilleggsdekning til både <a href="/nb/bank/privat/forsikring/hytteforsikring.html">hytte</a>- og <a href="/nb/bank/privat/forsikring/husforsikring.html">husforsikring</a>. Den dekker både skade på bygningsmaterialer og konstruksjoner av tre forårsaket av hussopp, råte eller <a href="/nb/bank/privat/forsikring/husforsikring/skadedyr-forsikring.html">insekter</a>, samt utgifter til bekjempelse.</p>
+<p><a href="/nb/bank/privat/forsikring/husforsikring/muggsopp-rate-forsikring.html">Les mer om sopp, råte og insektsdekningen</a></p>
+<p> </p>
+<p><span class="h5">Har du hatt skade?</span></p>
+
+                
+            </div>
+        
+
+        
+
+        
+    
+</div>
+</div>
+
+
+    
+    
+    
+    <div class="button parbase">
+
+<div class="aem-component-container">
+    
+        
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    <div class="button-wrapper left">
+        <a onclick="" class="action-btn ffe-button ffe-button--action     id-1573842802 " href="https://meldskade.fremtind.no/app/start/andreskaderhus" rel="">
+            
+            <span class="ffe-button__label">Få veiledning og meld skade
+                
+            </span>
+        </a>
+        
+    </div>
+
+    
+    
+    
+        
+
+        
+    
+    
+
+
+
+    
+
+    
+</div>
+</div>
+
+</div>
+
+         <div class="faq__feedback-box">
+            <div class="feedback">
+<div class="aem-component-container">
+
+    
+    <div class="component-root feedback--layoutfaq" aria-live="polite" data-question="Hva kan vi gjøre for å bli bedre?
+" data-question-default="Hva synes du om denne siden?" data-question-need-help="Uffda, hva kan bli bedre? (Valgfritt)" data-question-need-help-body="Svaret ditt er veldig nyttig for oss. Du får ikke svar på tilbakemeldingen din." data-layout="faq" data-thanks-text="Takk! Du bidrar til bedre nettsider!" data-thanks-header="Supert! Hva liker du? (Valgfritt)" data-thanks-body="Svaret ditt er veldig nyttig for oss. Du får ikke svar på tilbakemeldingen din." data-send-button-text="Send tilbakemelding" data-cancel-button-text="Avbryt" data-open-button-text="Åpne" data-input-description="IKKE skriv opplysninger om deg selv eller andre i tilbakemeldingen." data-input-placeholder="Skriv din tilbakemelding her" data-yes-button-text="Ja" data-no-button-text="Nei" data-error-text="Det har oppstått en feil. Vi beklager." , data-feedback-submitted="Takk for tilbakemeldingen" data-question-faq="Var dette nyttig?" data-faq-yes-header="Takk! Bra det var nyttig." data-faq-yes-body="Noe annet vi bør vite? (valgfritt)" data-faq-no-header="Takk for at du sier i fra!" data-faq-no-body="Hva var det du ikke fant? (valgfritt)" data-feedback-options="[]" data-feedback-chat-pre="Hvis du lurer på noe" data-feedback-chat-btn="spør oss i chatten" data-no-personal-info-text="Ikke skriv personlig informasjon i søkefeltet."></div>
+</div></div>
+        </div>
+        
+    </div>
+    <script type="application/ld+json">
+        {
+            "@context":"http://schema.org",
+            "@type":"FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Dekker hytte-/husforsikringen hussopp og råte?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "&lt;p&gt;Hussopp og råte er en tilleggsdekning til både&amp;nbsp;&lt;a href=&#34;/content/sites/sb1/nb/bank/privat/forsikring/hytteforsikring.html&#34;&gt;hytte&lt;/a&gt;- og &lt;a href=&#34;/content/sites/sb1/nb/bank/privat/forsikring/husforsikring.html&#34;&gt;husforsikring&lt;/a&gt;. Den dekker både skade på bygningsmaterialer og konstruksjoner av tre forårsaket av hussopp, råte eller &lt;a href=&#34;/content/sites/sb1/nb/bank/privat/forsikring/husforsikring/skadedyr-forsikring.html&#34;&gt;insekter&lt;/a&gt;, samt&amp;nbsp;utgifter til bekjempelse.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/content/sites/sb1/nb/bank/privat/forsikring/husforsikring/muggsopp-rate-forsikring.html&#34;&gt;Les mer om sopp, råte og insektsdekningen&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;h5&#34;&gt;Har du hatt skade?&lt;/span&gt;&lt;/p&gt;
+"
+                    }
+                }
+            ]
+        }
+    </script>
+</div></main>
+
+
+    
+    
+        <script type="text/javascript">
+            let hasOpenCookie = false;
+            const matchOpen = document.cookie.match(new RegExp(`sb1-optin-v3=(.*?)`));
+            hasOpenCookie = (matchOpen) ? true : false;
+                       
+            if (!hasOpenCookie) {                 
+                // js fil
+                const scriptEle = document.createElement("script");
+                const JS_URL = "/sb1-nettsider-optin/bank/static/opt-in.js";
+                scriptEle.setAttribute("src", JS_URL);
+                scriptEle.setAttribute("type", "text/javascript");
+                scriptEle.setAttribute("async", true);
+                scriptEle.setAttribute("onerror", "optinScriptError=true;");
+
+                //css fil
+                const CSS_URL = "/sb1-nettsider-optin/bank/static/opt-in.css";
+                const cssEle = document.createElement('link');                
+                cssEle.setAttribute('rel', 'stylesheet');
+                cssEle.setAttribute('onerror', 'optinScriptError=true;');
+                cssEle.setAttribute('property', 'stylesheet');
+                cssEle.setAttribute('media', 'screen,print');
+                cssEle.setAttribute('type', 'text/css');
+                cssEle.setAttribute('href', CSS_URL);
+
+                // div element
+                const divEle = document.createElement('div');
+                divEle.setAttribute('id', 'opt-in');
+                divEle.setAttribute('data-trigger-modal', 'true');
+
+                document.body.appendChild(divEle);
+                document.body.appendChild(cssEle);
+                document.body.appendChild(scriptEle);
+            }
+        </script>
+        
+    
+
+
+            
+
+<footer class="footer-wrapper">
+    <div class="footer-top container-fluid">
+        <div id="contact-us">
+<div class="contact-section ">
+
+    <h2>Kontakt oss</h2>
+    
+
+
+
+
+<div class="aem-component-container text-container">
+    
+    
+        
+        
+        
+            <div class="text-wrapper  ">
+                
+                    <p style="	text-align: center;
+"><a href="/nb/bank/privat/kundeservice.html">Gå til kundeservice</a></p>
+
+                
+            </div>
+        
+
+        
+
+        
+    
+</div>
+
+    <div class="customer-action-wrap clearfix ">
+        <ul class="customer-action__list" role="tablist">
+
+            
+                
+<li class="customer-action__list-item" id="contact-tab1" data-menu-section="contact-call-template" aria-controls="panel1" role="tab">
+    <a href="#/" class="cs-action tab-section">
+        <div class="icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M800-480q-16 0-28.5-11.5T757-520q-13-93-78.5-158.5T520-757q-17-2-28.5-14T480-800q0-17 12-28.5t28-9.5q126 14 215 103t103 215q2 16-9.5 28T800-480Zm-167 0q-13 0-23-9t-15-24q-8-29-30.5-51.5T513-595q-15-5-24-15t-9-24q0-20 14-32.5t31-8.5q56 13 96.5 53.5T675-525q4 17-9 31t-33 14Zm165 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+        </div>
+        <span class="btn-name">Ring oss</span>
+        <span class="sub-info">7-22 (10-18)</span>
+    </a>
+    <div class="icon">
+        
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="arrow-down">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+    </div>
+</li>
+
+
+            
+
+            
+                
+<li class="customer-action__list-item" id="contact-tab2" data-menu-section="contact-appointment-template" aria-controls="panel2" role="tab">
+    <a id="meeting" href="#/" class="cs-action tab-section">
+        <div class="icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z"/></svg>
+        </div>
+
+        <span class="btn-name">Avtal møte</span>
+        <span class="sub-info">med en rådgiver</span>
+    </a>
+    <div class="icon">
+        
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="arrow-down">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+    </div>
+</li>
+
+
+            
+
+            
+                
+<li class="customer-action__list-item" id="contact-tab3" data-menu-section="contact-message-template" aria-controls="panel3" role="tab">
+    <a id="message" href="#/" class="cs-action tab-section">
+        <div class="icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+        </div>
+        <span class="btn-name">Skriv til oss</span>
+        <span class="sub-info"></span>
+    </a>
+    <div class="icon">
+        
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="arrow-down">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+    </div>
+</li>
+
+
+
+
+            
+
+            
+                
+<li class="customer-action__list-item" id="contact-tab4" data-menu-section="find-us-template" aria-controls="panel4" role="tab">
+    <a href="#/" class="cs-action tab-section">
+        <div class="icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+        </div>
+        <span class="btn-name">Finn kontor</span>
+        <span class="sub-info"></span>
+    </a>
+    <div class="icon">
+       
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="arrow-down">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+    </div>
+</li>
+
+
+            
+
+            
+                
+<li class="customer-action__list-item" id="contact-tab5" data-menu-section="contact-chat-template" aria-controls="panel5" role="tab">
+    <a id="contact-chat" href="#/" class="cs-action tab-section">
+        <div class="icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+        </div>
+        <span class="btn-name">Chat</span>
+        <span class="sub-info">7-22 (10-18)</span>
+    </a>
+    <div class="icon">
+        
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="arrow-down">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+    </div>
+</li>
+
+
+            
+
+        </ul>
+
+        
+
+
+
+        
+        
+    
+    <div aria-hidden="true" id="contact-call-template" class="hide">
+        <div id="panel1" class="contact-info-section" aria-labelledby="contact-tab1" role="tabpanel">
+            <div class="call-section">
+                <div class="call-banks">
+
+
+
+
+
+    <div class="call-banks__col2">
+
+        
+        <h3 class="contact-bankpicker__header ffe-h4">Melde skade <a class="call-option__number-link" href="tel:(+47)91502300">(+47) 915 02300</a></h3>
+        <div class="call-option__sub-info">
+            <div class="call-option__sub-text">
+                <span>Meld skade forsikring (Fremtind)</span>
+                
+            </div>
+            
+                <span class="call-option__sub-text">Hverdager 08 - 16</span>
+            
+        </div>
+
+    </div>
+
+    <div class="call-banks__col1">
+
+        
+
+
+<div class="js-contact-bankpicker__listHeader-suggest hide">
+
+    
+
+    
+</div>
+
+<div class="js-contact-bankpicker__suggest contact-bankpicker__suggest hide" aria-live="polite"></div>
+
+<div class="contact-bankpicker">
+    
+
+    <div class="postal-input js-postal-input">       
+        <div class="postal-code ffe-input-group ffe-input-group--no-extra-margin ffe-input-group--message">
+            <label class="postal-input__label ffe-body-paragraph">Skriv inn postnummeret ditt</label>
+            <input class="contact-bankpicker__input ffe-input-field ffe-input-field--inline" type="tel" name="postalcode" maxlength="4" placeholder="Postnummer"/>
+            <button class="contact-bankpicker__searchBtn ffe-button ffe-button--primary ffe-input-field--inline button">
+                <span class="ffe-button__label">S&oslash;k</span>
+                <span class="ffe-button__spinner" aria-hidden="true">Vennligst vent</span>
+            </button>
+            <div class="sb1_form_validation_error ffe-field-error-message hide" role="alert">
+                <span>Skriv inn et gyldig postnummer (4 siffer).</span>
+            </div>
+        </div>       
+    </div>
+
+    <div class="contact-bankpicker__nobanks hide" aria-live="polite" role="alert">
+        <div class="ffe-field-error-message ffe-body-paragraph">
+            Vi fant dessverre ingen banker på dette postnummeret.
+        </div>
+    </div>
+</div>
+
+
+
+
+        <div class="contact-bankpicker__banksinfo" aria-live="polite" role="alert">
+            
+            
+            
+            
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide gudbrandsdal" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1295&#34;},{&#34;from&#34;:&#34;2607&#34;,&#34;to&#34;:&#34;2658&#34;},{&#34;from&#34;:&#34;2670&#34;,&#34;to&#34;:&#34;2677&#34;}]" data-bank-name="gudbrandsdal">
+                    <div class="call-banks__bankname">
+                        <h3><a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/gudbrandsdal/privat/kundeservice/forsikring/hussopp-rate.html">SpareBank 1 Gudbrandsdal</a></h3>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:02095">02095</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 02095" class="call-option__sub-number">+47 915 02095</a><br/>
+                                7-22 (10-18)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:02095">02095</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 91 50 20 95" class="call-option__sub-number">+47 91 50 20 95</a><br/>
+                                7-18
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide hallingdal" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;2550&#34;,&#34;to&#34;:&#34;2555&#34;},{&#34;from&#34;:&#34;2860&#34;,&#34;to&#34;:&#34;2985&#34;},{&#34;from&#34;:&#34;3528&#34;,&#34;to&#34;:&#34;3528&#34;},{&#34;from&#34;:&#34;3535&#34;,&#34;to&#34;:&#34;3536&#34;},{&#34;from&#34;:&#34;3539&#34;,&#34;to&#34;:&#34;3588&#34;},{&#34;from&#34;:&#34;3629&#34;,&#34;to&#34;:&#34;3632&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5499&#34;},{&#34;from&#34;:&#34;5550&#34;,&#34;to&#34;:&#34;5555&#34;},{&#34;from&#34;:&#34;5590&#34;,&#34;to&#34;:&#34;5598&#34;},{&#34;from&#34;:&#34;5626&#34;,&#34;to&#34;:&#34;5628&#34;},{&#34;from&#34;:&#34;5632&#34;,&#34;to&#34;:&#34;5636&#34;},{&#34;from&#34;:&#34;5650&#34;,&#34;to&#34;:&#34;5718&#34;},{&#34;from&#34;:&#34;5723&#34;,&#34;to&#34;:&#34;5723&#34;},{&#34;from&#34;:&#34;5730&#34;,&#34;to&#34;:&#34;5736&#34;},{&#34;from&#34;:&#34;5748&#34;,&#34;to&#34;:&#34;5785&#34;},{&#34;from&#34;:&#34;6700&#34;,&#34;to&#34;:&#34;6710&#34;},{&#34;from&#34;:&#34;6713&#34;,&#34;to&#34;:&#34;6714&#34;},{&#34;from&#34;:&#34;6716&#34;,&#34;to&#34;:&#34;6716&#34;},{&#34;from&#34;:&#34;6718&#34;,&#34;to&#34;:&#34;6718&#34;},{&#34;from&#34;:&#34;6900&#34;,&#34;to&#34;:&#34;6919&#34;},{&#34;from&#34;:&#34;6940&#34;,&#34;to&#34;:&#34;6944&#34;}]" data-bank-name="hallingdal">
+                    <div class="call-banks__bankname">
+                        <h3><a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/hallingdal/privat/kundeservice/forsikring/hussopp-rate.html">SpareBank 1 Hallingdal Valdres</a></h3>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:03202">03202</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 03 202" class="call-option__sub-number">+47 915 03 202</a><br/>
+                                7-22 (10-18)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:03202">03202</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 03202" class="call-option__sub-number">+47 915 03202</a><br/>
+                                7 - 18
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide helgeland" data-postal="[{&#34;from&#34;:&#34;7979&#34;,&#34;to&#34;:&#34;7983&#34;},{&#34;from&#34;:&#34;8110&#34;,&#34;to&#34;:&#34;8118&#34;},{&#34;from&#34;:&#34;8128&#34;,&#34;to&#34;:&#34;8128&#34;},{&#34;from&#34;:&#34;8181&#34;,&#34;to&#34;:&#34;8183&#34;},{&#34;from&#34;:&#34;8185&#34;,&#34;to&#34;:&#34;8198&#34;},{&#34;from&#34;:&#34;8600&#34;,&#34;to&#34;:&#34;8986&#34;}]" data-bank-name="helgeland">
+                    <div class="call-banks__bankname">
+                        <h3><a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/helgeland/privat/kundeservice/forsikring/hussopp-rate.html">SpareBank 1 Helgeland</a></h3>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:+47 75 11 90 00">+47 75 11 90 00</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 75 11 90 00" class="call-option__sub-number">+47 75 11 90 00</a><br/>
+                                7-22 (10-18)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:+47 75 11 90 00">+47 75 11 90 00</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 75 11 90 00" class="call-option__sub-number">+47 75 11 90 00</a><br/>
+                                7-18
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide lom-skjaak" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1369&#34;},{&#34;from&#34;:&#34;1450&#34;,&#34;to&#34;:&#34;1454&#34;},{&#34;from&#34;:&#34;1456&#34;,&#34;to&#34;:&#34;1479&#34;},{&#34;from&#34;:&#34;1900&#34;,&#34;to&#34;:&#34;1910&#34;},{&#34;from&#34;:&#34;1920&#34;,&#34;to&#34;:&#34;1925&#34;},{&#34;from&#34;:&#34;2000&#34;,&#34;to&#34;:&#34;2004&#34;},{&#34;from&#34;:&#34;2007&#34;,&#34;to&#34;:&#34;2007&#34;},{&#34;from&#34;:&#34;2010&#34;,&#34;to&#34;:&#34;2013&#34;},{&#34;from&#34;:&#34;2015&#34;,&#34;to&#34;:&#34;2020&#34;},{&#34;from&#34;:&#34;2660&#34;,&#34;to&#34;:&#34;2669&#34;},{&#34;from&#34;:&#34;2680&#34;,&#34;to&#34;:&#34;2695&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3060&#34;},{&#34;from&#34;:&#34;3075&#34;,&#34;to&#34;:&#34;3075&#34;},{&#34;from&#34;:&#34;3430&#34;,&#34;to&#34;:&#34;3490&#34;}]" data-bank-name="lom-skjaak">
+                    <div class="call-banks__bankname">
+                        <h3><a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/lom-skjaak/privat/kundeservice/forsikring/hussopp-rate.html">SpareBank 1 Lom og Skjåk</a></h3>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:61 21 90 00">61 21 90 00</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 61 21 90 00" class="call-option__sub-number">+47 61 21 90 00</a><br/>
+                                7-22 (10-18)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:61 21 90 00">61 21 90 00</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 61 21 90 00" class="call-option__sub-number">+47 61 21 90 00</a><br/>
+                                7-18
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide nord-norge" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1406&#34;},{&#34;from&#34;:&#34;1408&#34;,&#34;to&#34;:&#34;1425&#34;},{&#34;from&#34;:&#34;1450&#34;,&#34;to&#34;:&#34;1454&#34;},{&#34;from&#34;:&#34;1456&#34;,&#34;to&#34;:&#34;1488&#34;},{&#34;from&#34;:&#34;1870&#34;,&#34;to&#34;:&#34;1875&#34;},{&#34;from&#34;:&#34;1900&#34;,&#34;to&#34;:&#34;1910&#34;},{&#34;from&#34;:&#34;1920&#34;,&#34;to&#34;:&#34;1925&#34;},{&#34;from&#34;:&#34;1930&#34;,&#34;to&#34;:&#34;2020&#34;},{&#34;from&#34;:&#34;2030&#34;,&#34;to&#34;:&#34;2069&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3060&#34;},{&#34;from&#34;:&#34;3075&#34;,&#34;to&#34;:&#34;3075&#34;},{&#34;from&#34;:&#34;3402&#34;,&#34;to&#34;:&#34;3490&#34;},{&#34;from&#34;:&#34;4005&#34;,&#34;to&#34;:&#34;4085&#34;},{&#34;from&#34;:&#34;4110&#34;,&#34;to&#34;:&#34;4110&#34;},{&#34;from&#34;:&#34;4128&#34;,&#34;to&#34;:&#34;4129&#34;},{&#34;from&#34;:&#34;4150&#34;,&#34;to&#34;:&#34;4164&#34;},{&#34;from&#34;:&#34;4168&#34;,&#34;to&#34;:&#34;4173&#34;},{&#34;from&#34;:&#34;4187&#34;,&#34;to&#34;:&#34;4187&#34;},{&#34;from&#34;:&#34;4306&#34;,&#34;to&#34;:&#34;4329&#34;},{&#34;from&#34;:&#34;4332&#34;,&#34;to&#34;:&#34;4332&#34;},{&#34;from&#34;:&#34;4336&#34;,&#34;to&#34;:&#34;4340&#34;},{&#34;from&#34;:&#34;4342&#34;,&#34;to&#34;:&#34;4342&#34;},{&#34;from&#34;:&#34;4344&#34;,&#34;to&#34;:&#34;4347&#34;},{&#34;from&#34;:&#34;4355&#34;,&#34;to&#34;:&#34;4355&#34;},{&#34;from&#34;:&#34;4608&#34;,&#34;to&#34;:&#34;4658&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5176&#34;},{&#34;from&#34;:&#34;5178&#34;,&#34;to&#34;:&#34;5184&#34;},{&#34;from&#34;:&#34;5221&#34;,&#34;to&#34;:&#34;5268&#34;},{&#34;from&#34;:&#34;5561&#34;,&#34;to&#34;:&#34;5561&#34;},{&#34;from&#34;:&#34;7010&#34;,&#34;to&#34;:&#34;7099&#34;},{&#34;from&#34;:&#34;7212&#34;,&#34;to&#34;:&#34;7236&#34;},{&#34;from&#34;:&#34;7540&#34;,&#34;to&#34;:&#34;7563&#34;},{&#34;from&#34;:&#34;8003&#34;,&#34;to&#34;:&#34;8830&#34;},{&#34;from&#34;:&#34;8854&#34;,&#34;to&#34;:&#34;9990&#34;}]" data-bank-name="nord-norge">
+                    <div class="call-banks__bankname">
+                        <h3><a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/nord-norge/privat/kundeservice/forsikring/hussopp-rate.html">SpareBank 1 Nord-Norge</a></h3>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:915 02244">915 02244</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 02244" class="call-option__sub-number">+47 915 02244</a><br/>
+                                7-22 (10-18)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:915 02244">915 02244</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 02244" class="call-option__sub-number">+47 915 02244</a><br/>
+                                8-18
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide nordmore" data-postal="[{&#34;from&#34;:&#34;6002&#34;,&#34;to&#34;:&#34;7800&#34;}]" data-bank-name="nordmore">
+                    <div class="call-banks__bankname">
+                        <h3><a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/nordmore/privat/kundeservice/forsikring/hussopp-rate.html">SpareBank 1 Nordmøre</a></h3>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:+47 915 03900">+47 915 03900</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 03900" class="call-option__sub-number">+47 915 03900</a><br/>
+                                7-22 (10-18)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:+47 915 03900">+47 915 03900</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 03900" class="call-option__sub-number">+47 915 03900</a><br/>
+                                7-18
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide ringerike-hadeland" data-postal="[{&#34;from&#34;:&#34;1461&#34;,&#34;to&#34;:&#34;1488&#34;},{&#34;from&#34;:&#34;1900&#34;,&#34;to&#34;:&#34;2069&#34;},{&#34;from&#34;:&#34;2720&#34;,&#34;to&#34;:&#34;2770&#34;},{&#34;from&#34;:&#34;3510&#34;,&#34;to&#34;:&#34;3525&#34;},{&#34;from&#34;:&#34;3530&#34;,&#34;to&#34;:&#34;3538&#34;}]" data-bank-name="ringerike-hadeland">
+                    <div class="call-banks__bankname">
+                        <h3><a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/ringerike-hadeland/privat/kundeservice/forsikring/hussopp-rate.html">SpareBank 1 Ringerike Hadeland</a></h3>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:915 02130">915 02130</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 02130" class="call-option__sub-number">+47 915 02130</a><br/>
+                                7-22 (10-18)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:915 02130">915 02130</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 02130" class="call-option__sub-number">+47 915 02130</a><br/>
+                                7-18
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide smn" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;2093&#34;},{&#34;from&#34;:&#34;2500&#34;,&#34;to&#34;:&#34;2695&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3060&#34;},{&#34;from&#34;:&#34;3075&#34;,&#34;to&#34;:&#34;3075&#34;},{&#34;from&#34;:&#34;3402&#34;,&#34;to&#34;:&#34;3490&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5417&#34;},{&#34;from&#34;:&#34;5962&#34;,&#34;to&#34;:&#34;5962&#34;},{&#34;from&#34;:&#34;6002&#34;,&#34;to&#34;:&#34;7994&#34;}]" data-bank-name="smn">
+                    <div class="call-banks__bankname">
+                        <h3><a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/smn/privat/kundeservice/forsikring/hussopp-rate.html">SpareBank 1 SMN</a></h3>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:(+47) 915 07300">(+47) 915 07300</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 91507300" class="call-option__sub-number">+47 91507300</a><br/>
+                                7-22 (10-18)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:(+47) 915 07303">(+47) 915 07303</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 91507303" class="call-option__sub-number">+47 91507303</a><br/>
+                                7-18
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide sogn-fjordane" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;7973&#34;},{&#34;from&#34;:&#34;7985&#34;,&#34;to&#34;:&#34;7994&#34;}]" data-bank-name="sogn-fjordane">
+                    <div class="call-banks__bankname">
+                        <h3><a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nn/sogn-fjordane/privat/kundeservice/forsikring/hussopp-rate.html">SpareBank 1 Sogn og Fjordane</a></h3>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:+47 57 82 97 00">+47 57 82 97 00</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 57 82 97 00" class="call-option__sub-number">+47 57 82 97 00</a><br/>
+                                7 - 22 (10 - 18)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:+47 57 82 97 00">+47 57 82 97 00</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 57 82 97 00" class="call-option__sub-number">+47 57 82 97 00</a><br/>
+                                7 - 18 (stengt)
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide sor-norge" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;5994&#34;},{&#34;from&#34;:&#34;6700&#34;,&#34;to&#34;:&#34;6750&#34;},{&#34;from&#34;:&#34;6770&#34;,&#34;to&#34;:&#34;6996&#34;}]" data-bank-name="sor-norge">
+                    <div class="call-banks__bankname">
+                        <h3><a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/sor-norge/privat/kundeservice/forsikring/hussopp-rate.html">SpareBank 1 Sør-Norge</a></h3>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:915 02002">915 02002</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 02002" class="call-option__sub-number">+47 915 02002</a><br/>
+                                7-22 hverdager (10-18 helg og helligdager)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:915 02002">915 02002</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 02002" class="call-option__sub-number">+47 915 02002</a><br/>
+                                hverdager 08-18
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide ostfold-akershus" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1295&#34;},{&#34;from&#34;:&#34;1400&#34;,&#34;to&#34;:&#34;1459&#34;},{&#34;from&#34;:&#34;1511&#34;,&#34;to&#34;:&#34;1894&#34;},{&#34;from&#34;:&#34;1911&#34;,&#34;to&#34;:&#34;1914&#34;},{&#34;from&#34;:&#34;1930&#34;,&#34;to&#34;:&#34;1970&#34;}]" data-bank-name="ostfold-akershus">
+                    <div class="call-banks__bankname">
+                        <h3><a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/ostfold-akershus/privat/kundeservice/forsikring/hussopp-rate.html">SpareBank 1 Østfold Akershus</a></h3>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:05700">05700</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:(+47) 915 05700" class="call-option__sub-number">(+47) 915 05700</a><br/>
+                                7-22 (10-18)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:05700">05700</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 05700" class="call-option__sub-number">+47 915 05700</a><br/>
+                                7-18
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="js-contact-bankpicker__bankInfo call-banks__bankInfo hide ostlandet" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;8098&#34;},{&#34;from&#34;:&#34;8100&#34;,&#34;to&#34;:&#34;8103&#34;},{&#34;from&#34;:&#34;9006&#34;,&#34;to&#34;:&#34;9034&#34;},{&#34;from&#34;:&#34;9043&#34;,&#34;to&#34;:&#34;9043&#34;},{&#34;from&#34;:&#34;9057&#34;,&#34;to&#34;:&#34;9057&#34;},{&#34;from&#34;:&#34;9100&#34;,&#34;to&#34;:&#34;9128&#34;},{&#34;from&#34;:&#34;9131&#34;,&#34;to&#34;:&#34;9131&#34;},{&#34;from&#34;:&#34;9141&#34;,&#34;to&#34;:&#34;9141&#34;},{&#34;from&#34;:&#34;9402&#34;,&#34;to&#34;:&#34;9430&#34;}]" data-bank-name="ostlandet">
+                    <div class="call-banks__bankname">
+                        <h3><a class="contact-bankpicker__bankname ffe-h4 ffe-link-text" href="/nb/ostlandet/privat/kundeservice/forsikring/hussopp-rate.html">SpareBank 1 Østlandet</a></h3>
+                        
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Privat <a class="call-option__number-link" href="tel:915 07040">915 07040</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 07040" class="call-option__sub-number">+47 915 07040</a><br/>
+                                7-22 (10-18)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-banks__market">
+                        <h4 class="ffe-h4">Bedrift <a class="call-option__number-link" href="tel:915 07050">915 07050</a></h4>
+                        <div class="call-option__sub-info">
+                            <div class="call-option__sub-text">
+                                <span>Fra utland: </span>
+                                <a href="tel:+47 915 07050" class="call-option__sub-number">+47 915 07050</a><br/>
+                                7-18
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+        </div>
+
+        
+    <div class="js-contact-bankpicker__banklist-wrap contact-bankpicker__banklist-wrapper">
+        <div class="ffe-body-paragraph">
+            <span>... eller
+                <button aria-expanded="false" aria-controls="banks__expand-region-call" class="js-contact-bankpicker__toggle ffe-inline-button ffe-inline-button--expand">
+                    <span class="ffe-inline-button__label">velg banken</span>
+                    <svg viewBox="0 0 200 200" class="ffe-inline-button__icon ffe-inline-button__icon--right" style="margin-left: 5px; transform: none;"><path d="m16.171492,41.999998c-4.143269,0-8.2852797,1.57464-11.4277496,4.706478-6.3249899,6.283609-6.3249899,16.499474,0,22.803034l84.0286676,83.76282c6.30496,6.30356,16.54928,6.30356,22.87426,0l83.60959-83.26412c6.32499-6.28361,6.32499-16.499477,0-22.803038-6.30496-6.30356-16.55553-6.30356-22.88051,0l-72.13806,71.893768-72.613438-72.373767c-3.14247-3.151781-7.29074-4.725174-11.433999-4.725174h-0.0188z"></path></svg>
+                </button>
+                 du ønsker å kontakte</span>
+        </div>
+
+        <div class="js-contact-bankpicker__banklist contact-bankpicker__bankList-wrap hide" id="banks__expand-region-call" tabindex="-1">
+            <div class="icon">
+                
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="listbanks">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+            </div>
+            
+            <div class="contact-bankpicker__bankList">
+                
+                    <div class="contact-bankpicker__bankList-list">
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="gudbrandsdal">
+                                 SpareBank 1 
+                                <span class="bank-name">Gudbrandsdal</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="hallingdal">
+                                 SpareBank 1 
+                                <span class="bank-name">Hallingdal Valdres</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="helgeland">
+                                 SpareBank 1 
+                                <span class="bank-name">Helgeland</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="lom-skjaak">
+                                 SpareBank 1 
+                                <span class="bank-name">Lom og Skjåk</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="nord-norge">
+                                 SpareBank 1 
+                                <span class="bank-name">Nord-Norge</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="nordmore">
+                                 SpareBank 1 
+                                <span class="bank-name">Nordmøre</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ringerike-hadeland">
+                                 SpareBank 1 
+                                <span class="bank-name">Ringerike Hadeland</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="smn">
+                                 SpareBank 1 
+                                <span class="bank-name">SMN</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="sogn-fjordane">
+                                 SpareBank 1 
+                                <span class="bank-name">Sogn og Fjordane</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="sor-norge">
+                                 SpareBank 1 
+                                <span class="bank-name">Sør-Norge</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ostfold-akershus">
+                                 SpareBank 1 
+                                <span class="bank-name">Østfold Akershus</span>
+                                
+                            </button>
+                        </div>
+                    
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <button class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ostlandet">
+                                 SpareBank 1 
+                                <span class="bank-name">Østlandet</span>
+                                
+                            </button>
+                        </div>
+                    </div>
+                
+                
+                
+                <button class="contact-bankpicker__bankList--close ffe-button ffe-button--expand ffe-button--expanded" aria-label="Lukk bankliste">
+                    <svg focusable="false" class="ffe-button__icon" viewBox="0 0 200 200" width="150" height="150" x="1200" y="1200" xmlns="http://www.w3.org/2000/svg"><path d="M18.77 0c-3.562 0-7.125 1.347-9.834 4.044L4.507 8.483c-5.381 5.394-5.381 14.25 0 19.68l71.19 71.83-71.66 71.83c-5.381 5.394-5.381 14.25 0 19.68l4.429 4.439c5.381 5.394 14.22 5.394 19.64 0l71.66-71.83 71.65 71.83c5.381 5.394 14.23 5.394 19.65 0l4.429-4.439c5.381-5.394 5.381-14.25 0-19.68l-71.19-71.83 71.66-71.83c5.381-4.914 5.381-13.78 0-19.21l-4.429-4.423c-5.381-5.394-14.22-5.394-19.64 0l-72.13 71.34-71.17-71.83c-2.691-2.697-6.257-4.044-9.819-4.044z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</div>
+                <div class="contact-box call-section">
+                    
+                    <ul class="call-section__list">                        
+                        
+    
+    
+    
+    <li class="call-option__list-item">
+
+
+
+
+
+<div class="call-option__sub-info">
+    
+    
+</div>
+</li>
+
+
+    
+    
+    
+    <li class="call-option__list-item">
+
+
+
+
+
+<div class="call-option__sub-info">
+    
+    
+</div>
+</li>
+
+
+    
+    
+    
+    <li class="call-option__list-item">
+
+
+
+
+
+<div class="call-option__sub-info">
+    
+    
+</div>
+</li>
+
+
+                    </ul>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        
+        
+
+<div aria-hidden="true" id="contact-appointment-template" class="hide">
+
+    <div id="panel2" class="contact-info-section" aria-labelledby="contact-tab2" role="tabpanel">
+        <section class="contact-box appointment-section">
+            
+            <div>
+    
+    
+    
+
+    
+    
+    
+
+
+
+
+<div class="appointment-banks">
+
+    
+
+
+<div class="js-contact-bankpicker__listHeader-suggest hide">
+
+    <h3 class="contact-bankpicker__header ffe-h4">Avtal møte</h3>
+
+    
+</div>
+
+<div class="js-contact-bankpicker__suggest contact-bankpicker__suggest hide" aria-live="polite"></div>
+
+<div class="contact-bankpicker">
+    <h3 class="contact-bankpicker__header ffe-h4">Avtal møte</h3>
+
+    <div class="postal-input js-postal-input">       
+        <div class="postal-code ffe-input-group ffe-input-group--no-extra-margin ffe-input-group--message">
+            <label class="postal-input__label ffe-body-paragraph">Skriv inn postnummeret ditt</label>
+            <input class="contact-bankpicker__input ffe-input-field ffe-input-field--inline" type="tel" name="postalcode" maxlength="4" placeholder="Postnummer"/>
+            <button class="contact-bankpicker__searchBtn ffe-button ffe-button--primary ffe-input-field--inline button">
+                <span class="ffe-button__label">S&oslash;k</span>
+                <span class="ffe-button__spinner" aria-hidden="true">Vennligst vent</span>
+            </button>
+            <div class="sb1_form_validation_error ffe-field-error-message hide" role="alert">
+                <span>Skriv inn et gyldig postnummer (4 siffer).</span>
+            </div>
+        </div>       
+    </div>
+
+    <div class="contact-bankpicker__nobanks hide" aria-live="polite" role="alert">
+        <div class="ffe-field-error-message ffe-body-paragraph">
+            Vi fant dessverre ingen banker på dette postnummeret.
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div class="contact-bankpicker__banksinfo">
+
+        <div class="contact-bankpicker__banksinfo-list">
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide gudbrandsdal" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1295&#34;},{&#34;from&#34;:&#34;2607&#34;,&#34;to&#34;:&#34;2658&#34;},{&#34;from&#34;:&#34;2670&#34;,&#34;to&#34;:&#34;2677&#34;}]" data-bank-name="gudbrandsdal">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/gudbrandsdal/privat/kundeservice/forsikring/hussopp-rate.html#meeting">SpareBank 1 Gudbrandsdal</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide hallingdal" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;2550&#34;,&#34;to&#34;:&#34;2555&#34;},{&#34;from&#34;:&#34;2860&#34;,&#34;to&#34;:&#34;2985&#34;},{&#34;from&#34;:&#34;3528&#34;,&#34;to&#34;:&#34;3528&#34;},{&#34;from&#34;:&#34;3535&#34;,&#34;to&#34;:&#34;3536&#34;},{&#34;from&#34;:&#34;3539&#34;,&#34;to&#34;:&#34;3588&#34;},{&#34;from&#34;:&#34;3629&#34;,&#34;to&#34;:&#34;3632&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5499&#34;},{&#34;from&#34;:&#34;5550&#34;,&#34;to&#34;:&#34;5555&#34;},{&#34;from&#34;:&#34;5590&#34;,&#34;to&#34;:&#34;5598&#34;},{&#34;from&#34;:&#34;5626&#34;,&#34;to&#34;:&#34;5628&#34;},{&#34;from&#34;:&#34;5632&#34;,&#34;to&#34;:&#34;5636&#34;},{&#34;from&#34;:&#34;5650&#34;,&#34;to&#34;:&#34;5718&#34;},{&#34;from&#34;:&#34;5723&#34;,&#34;to&#34;:&#34;5723&#34;},{&#34;from&#34;:&#34;5730&#34;,&#34;to&#34;:&#34;5736&#34;},{&#34;from&#34;:&#34;5748&#34;,&#34;to&#34;:&#34;5785&#34;},{&#34;from&#34;:&#34;6700&#34;,&#34;to&#34;:&#34;6710&#34;},{&#34;from&#34;:&#34;6713&#34;,&#34;to&#34;:&#34;6714&#34;},{&#34;from&#34;:&#34;6716&#34;,&#34;to&#34;:&#34;6716&#34;},{&#34;from&#34;:&#34;6718&#34;,&#34;to&#34;:&#34;6718&#34;},{&#34;from&#34;:&#34;6900&#34;,&#34;to&#34;:&#34;6919&#34;},{&#34;from&#34;:&#34;6940&#34;,&#34;to&#34;:&#34;6944&#34;}]" data-bank-name="hallingdal">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/hallingdal/privat/kundeservice/forsikring/hussopp-rate.html#meeting">SpareBank 1 Hallingdal Valdres</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide helgeland" data-postal="[{&#34;from&#34;:&#34;7979&#34;,&#34;to&#34;:&#34;7983&#34;},{&#34;from&#34;:&#34;8110&#34;,&#34;to&#34;:&#34;8118&#34;},{&#34;from&#34;:&#34;8128&#34;,&#34;to&#34;:&#34;8128&#34;},{&#34;from&#34;:&#34;8181&#34;,&#34;to&#34;:&#34;8183&#34;},{&#34;from&#34;:&#34;8185&#34;,&#34;to&#34;:&#34;8198&#34;},{&#34;from&#34;:&#34;8600&#34;,&#34;to&#34;:&#34;8986&#34;}]" data-bank-name="helgeland">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/helgeland/privat/kundeservice/forsikring/hussopp-rate.html#meeting">SpareBank 1 Helgeland</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide lom-skjaak" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1369&#34;},{&#34;from&#34;:&#34;1450&#34;,&#34;to&#34;:&#34;1454&#34;},{&#34;from&#34;:&#34;1456&#34;,&#34;to&#34;:&#34;1479&#34;},{&#34;from&#34;:&#34;1900&#34;,&#34;to&#34;:&#34;1910&#34;},{&#34;from&#34;:&#34;1920&#34;,&#34;to&#34;:&#34;1925&#34;},{&#34;from&#34;:&#34;2000&#34;,&#34;to&#34;:&#34;2004&#34;},{&#34;from&#34;:&#34;2007&#34;,&#34;to&#34;:&#34;2007&#34;},{&#34;from&#34;:&#34;2010&#34;,&#34;to&#34;:&#34;2013&#34;},{&#34;from&#34;:&#34;2015&#34;,&#34;to&#34;:&#34;2020&#34;},{&#34;from&#34;:&#34;2660&#34;,&#34;to&#34;:&#34;2669&#34;},{&#34;from&#34;:&#34;2680&#34;,&#34;to&#34;:&#34;2695&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3060&#34;},{&#34;from&#34;:&#34;3075&#34;,&#34;to&#34;:&#34;3075&#34;},{&#34;from&#34;:&#34;3430&#34;,&#34;to&#34;:&#34;3490&#34;}]" data-bank-name="lom-skjaak">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/lom-skjaak/privat/kundeservice/forsikring/hussopp-rate.html#meeting">SpareBank 1 Lom og Skjåk</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide nord-norge" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1406&#34;},{&#34;from&#34;:&#34;1408&#34;,&#34;to&#34;:&#34;1425&#34;},{&#34;from&#34;:&#34;1450&#34;,&#34;to&#34;:&#34;1454&#34;},{&#34;from&#34;:&#34;1456&#34;,&#34;to&#34;:&#34;1488&#34;},{&#34;from&#34;:&#34;1870&#34;,&#34;to&#34;:&#34;1875&#34;},{&#34;from&#34;:&#34;1900&#34;,&#34;to&#34;:&#34;1910&#34;},{&#34;from&#34;:&#34;1920&#34;,&#34;to&#34;:&#34;1925&#34;},{&#34;from&#34;:&#34;1930&#34;,&#34;to&#34;:&#34;2020&#34;},{&#34;from&#34;:&#34;2030&#34;,&#34;to&#34;:&#34;2069&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3060&#34;},{&#34;from&#34;:&#34;3075&#34;,&#34;to&#34;:&#34;3075&#34;},{&#34;from&#34;:&#34;3402&#34;,&#34;to&#34;:&#34;3490&#34;},{&#34;from&#34;:&#34;4005&#34;,&#34;to&#34;:&#34;4085&#34;},{&#34;from&#34;:&#34;4110&#34;,&#34;to&#34;:&#34;4110&#34;},{&#34;from&#34;:&#34;4128&#34;,&#34;to&#34;:&#34;4129&#34;},{&#34;from&#34;:&#34;4150&#34;,&#34;to&#34;:&#34;4164&#34;},{&#34;from&#34;:&#34;4168&#34;,&#34;to&#34;:&#34;4173&#34;},{&#34;from&#34;:&#34;4187&#34;,&#34;to&#34;:&#34;4187&#34;},{&#34;from&#34;:&#34;4306&#34;,&#34;to&#34;:&#34;4329&#34;},{&#34;from&#34;:&#34;4332&#34;,&#34;to&#34;:&#34;4332&#34;},{&#34;from&#34;:&#34;4336&#34;,&#34;to&#34;:&#34;4340&#34;},{&#34;from&#34;:&#34;4342&#34;,&#34;to&#34;:&#34;4342&#34;},{&#34;from&#34;:&#34;4344&#34;,&#34;to&#34;:&#34;4347&#34;},{&#34;from&#34;:&#34;4355&#34;,&#34;to&#34;:&#34;4355&#34;},{&#34;from&#34;:&#34;4608&#34;,&#34;to&#34;:&#34;4658&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5176&#34;},{&#34;from&#34;:&#34;5178&#34;,&#34;to&#34;:&#34;5184&#34;},{&#34;from&#34;:&#34;5221&#34;,&#34;to&#34;:&#34;5268&#34;},{&#34;from&#34;:&#34;5561&#34;,&#34;to&#34;:&#34;5561&#34;},{&#34;from&#34;:&#34;7010&#34;,&#34;to&#34;:&#34;7099&#34;},{&#34;from&#34;:&#34;7212&#34;,&#34;to&#34;:&#34;7236&#34;},{&#34;from&#34;:&#34;7540&#34;,&#34;to&#34;:&#34;7563&#34;},{&#34;from&#34;:&#34;8003&#34;,&#34;to&#34;:&#34;8830&#34;},{&#34;from&#34;:&#34;8854&#34;,&#34;to&#34;:&#34;9990&#34;}]" data-bank-name="nord-norge">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html">SpareBank 1 Nord-Norge</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide nordmore" data-postal="[{&#34;from&#34;:&#34;6002&#34;,&#34;to&#34;:&#34;7800&#34;}]" data-bank-name="nordmore">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/nordmore/privat/kundeservice/forsikring/hussopp-rate.html#meeting">SpareBank 1 Nordmøre</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide ringerike-hadeland" data-postal="[{&#34;from&#34;:&#34;1461&#34;,&#34;to&#34;:&#34;1488&#34;},{&#34;from&#34;:&#34;1900&#34;,&#34;to&#34;:&#34;2069&#34;},{&#34;from&#34;:&#34;2720&#34;,&#34;to&#34;:&#34;2770&#34;},{&#34;from&#34;:&#34;3510&#34;,&#34;to&#34;:&#34;3525&#34;},{&#34;from&#34;:&#34;3530&#34;,&#34;to&#34;:&#34;3538&#34;}]" data-bank-name="ringerike-hadeland">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ringerike-hadeland/privat/kundeservice/forsikring/hussopp-rate.html#meeting">SpareBank 1 Ringerike Hadeland</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide smn" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;2093&#34;},{&#34;from&#34;:&#34;2500&#34;,&#34;to&#34;:&#34;2695&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3060&#34;},{&#34;from&#34;:&#34;3075&#34;,&#34;to&#34;:&#34;3075&#34;},{&#34;from&#34;:&#34;3402&#34;,&#34;to&#34;:&#34;3490&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5417&#34;},{&#34;from&#34;:&#34;5962&#34;,&#34;to&#34;:&#34;5962&#34;},{&#34;from&#34;:&#34;6002&#34;,&#34;to&#34;:&#34;7994&#34;}]" data-bank-name="smn">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/smn/privat/kundeservice/forsikring/hussopp-rate.html#meeting">SpareBank 1 SMN</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide sogn-fjordane" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;7973&#34;},{&#34;from&#34;:&#34;7985&#34;,&#34;to&#34;:&#34;7994&#34;}]" data-bank-name="sogn-fjordane">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nn/sogn-fjordane/privat/kundeservice/forsikring/hussopp-rate.html#meeting">SpareBank 1 Sogn og Fjordane</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide sor-norge" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;5994&#34;},{&#34;from&#34;:&#34;6700&#34;,&#34;to&#34;:&#34;6750&#34;},{&#34;from&#34;:&#34;6770&#34;,&#34;to&#34;:&#34;6996&#34;}]" data-bank-name="sor-norge">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/sor-norge/privat/kundeservice/forsikring/hussopp-rate.html#meeting">SpareBank 1 Sør-Norge</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide ostfold-akershus" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1295&#34;},{&#34;from&#34;:&#34;1400&#34;,&#34;to&#34;:&#34;1459&#34;},{&#34;from&#34;:&#34;1511&#34;,&#34;to&#34;:&#34;1894&#34;},{&#34;from&#34;:&#34;1911&#34;,&#34;to&#34;:&#34;1914&#34;},{&#34;from&#34;:&#34;1930&#34;,&#34;to&#34;:&#34;1970&#34;}]" data-bank-name="ostfold-akershus">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ostfold-akershus/privat/kundeservice/forsikring/hussopp-rate.html#meeting">SpareBank 1 Østfold Akershus</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo appointment-banks__bankInfo hide ostlandet" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;8098&#34;},{&#34;from&#34;:&#34;8100&#34;,&#34;to&#34;:&#34;8103&#34;},{&#34;from&#34;:&#34;9006&#34;,&#34;to&#34;:&#34;9034&#34;},{&#34;from&#34;:&#34;9043&#34;,&#34;to&#34;:&#34;9043&#34;},{&#34;from&#34;:&#34;9057&#34;,&#34;to&#34;:&#34;9057&#34;},{&#34;from&#34;:&#34;9100&#34;,&#34;to&#34;:&#34;9128&#34;},{&#34;from&#34;:&#34;9131&#34;,&#34;to&#34;:&#34;9131&#34;},{&#34;from&#34;:&#34;9141&#34;,&#34;to&#34;:&#34;9141&#34;},{&#34;from&#34;:&#34;9402&#34;,&#34;to&#34;:&#34;9430&#34;}]" data-bank-name="ostlandet">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ostlandet/privat/kundeservice/forsikring/hussopp-rate.html#meeting">SpareBank 1 Østlandet</a>
+                
+
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="js-contact-bankpicker__banklist-wrap contact-bankpicker__banklist-wrapper">
+        <div class="ffe-body-paragraph">
+            <span>... eller
+                <button aria-expanded="false" aria-controls="banks__expand-region-appointment" class="js-contact-bankpicker__toggle ffe-inline-button ffe-inline-button--expand">
+                    <span class="ffe-inline-button__label">velg banken</span>
+                    <svg viewBox="0 0 200 200" class="ffe-inline-button__icon ffe-inline-button__icon--right" style="margin-left: 5px; transform: none;"><path d="m16.171492,41.999998c-4.143269,0-8.2852797,1.57464-11.4277496,4.706478-6.3249899,6.283609-6.3249899,16.499474,0,22.803034l84.0286676,83.76282c6.30496,6.30356,16.54928,6.30356,22.87426,0l83.60959-83.26412c6.32499-6.28361,6.32499-16.499477,0-22.803038-6.30496-6.30356-16.55553-6.30356-22.88051,0l-72.13806,71.893768-72.613438-72.373767c-3.14247-3.151781-7.29074-4.725174-11.433999-4.725174h-0.0188z"></path></svg>
+                </button>
+                 du ønsker å kontakte</span>
+        </div>
+
+        <div class="js-contact-bankpicker__banklist contact-bankpicker__bankList-wrap hide" id="banks__expand-region-appointment" tabindex="-1">
+            <div class="icon">
+                
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="listbanks">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+            </div>
+            
+            <div class="contact-bankpicker__bankList">
+                
+                
+                    <div class="contact-bankpicker__bankList-list">
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/gudbrandsdal/privat/kundeservice/forsikring/hussopp-rate.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="gudbrandsdal">
+                                SpareBank 1 
+                                <span class="bank-name">Gudbrandsdal</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/hallingdal/privat/kundeservice/forsikring/hussopp-rate.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="hallingdal">
+                                SpareBank 1 
+                                <span class="bank-name">Hallingdal Valdres</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/helgeland/privat/kundeservice/forsikring/hussopp-rate.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="helgeland">
+                                SpareBank 1 
+                                <span class="bank-name">Helgeland</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/lom-skjaak/privat/kundeservice/forsikring/hussopp-rate.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="lom-skjaak">
+                                SpareBank 1 
+                                <span class="bank-name">Lom og Skjåk</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/bestill/bestill-mote-med-radgiver.html" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="nord-norge">
+                                SpareBank 1 
+                                <span class="bank-name">Nord-Norge</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/nordmore/privat/kundeservice/forsikring/hussopp-rate.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="nordmore">
+                                SpareBank 1 
+                                <span class="bank-name">Nordmøre</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ringerike-hadeland/privat/kundeservice/forsikring/hussopp-rate.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ringerike-hadeland">
+                                SpareBank 1 
+                                <span class="bank-name">Ringerike Hadeland</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/smn/privat/kundeservice/forsikring/hussopp-rate.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="smn">
+                                SpareBank 1 
+                                <span class="bank-name">SMN</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nn/sogn-fjordane/privat/kundeservice/forsikring/hussopp-rate.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="sogn-fjordane">
+                                SpareBank 1 
+                                <span class="bank-name">Sogn og Fjordane</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/sor-norge/privat/kundeservice/forsikring/hussopp-rate.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="sor-norge">
+                                SpareBank 1 
+                                <span class="bank-name">Sør-Norge</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ostfold-akershus/privat/kundeservice/forsikring/hussopp-rate.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ostfold-akershus">
+                                SpareBank 1 
+                                <span class="bank-name">Østfold Akershus</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ostlandet/privat/kundeservice/forsikring/hussopp-rate.html#meeting" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ostlandet">
+                                SpareBank 1 
+                                <span class="bank-name">Østlandet</span>
+                                
+                            </a> 
+                        </div>   
+                    </div>
+                
+                
+                <button class="contact-bankpicker__bankList--close ffe-button ffe-button--expand ffe-button--expanded" aria-label="Lukk bankliste">
+                    <svg focusable="false" class="ffe-button__icon" viewBox="0 0 200 200" width="150" height="150" x="1200" y="1200" xmlns="http://www.w3.org/2000/svg"><path d="M18.77 0c-3.562 0-7.125 1.347-9.834 4.044L4.507 8.483c-5.381 5.394-5.381 14.25 0 19.68l71.19 71.83-71.66 71.83c-5.381 5.394-5.381 14.25 0 19.68l4.429 4.439c5.381 5.394 14.22 5.394 19.64 0l71.66-71.83 71.65 71.83c5.381 5.394 14.23 5.394 19.65 0l4.429-4.439c5.381-5.394 5.381-14.25 0-19.68l-71.19-71.83 71.66-71.83c5.381-4.914 5.381-13.78 0-19.21l-4.429-4.423c-5.381-5.394-14.22-5.394-19.64 0l-72.13 71.34-71.17-71.83c-2.691-2.697-6.257-4.044-9.819-4.044z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+        </section>
+    </div>
+</div>
+
+        
+        
+
+
+
+
+
+<div aria-hidden="true" id="contact-message-template" class="hide">
+    <div id="panel3" aria-labelledby="contact-tab3" class="contact-info-section" role="tabpanel">
+        <section class="contact-box message-section">
+            
+
+
+
+
+<div class="message-banks">
+
+    
+
+
+<div class="js-contact-bankpicker__listHeader-suggest hide">
+
+    <h3 class="contact-bankpicker__header ffe-h4">Skriv til oss</h3>
+
+    
+</div>
+
+<div class="js-contact-bankpicker__suggest contact-bankpicker__suggest hide" aria-live="polite"></div>
+
+<div class="contact-bankpicker">
+    <h3 class="contact-bankpicker__header ffe-h4">Skriv til oss</h3>
+
+    <div class="postal-input js-postal-input">       
+        <div class="postal-code ffe-input-group ffe-input-group--no-extra-margin ffe-input-group--message">
+            <label class="postal-input__label ffe-body-paragraph">Skriv inn postnummeret ditt</label>
+            <input class="contact-bankpicker__input ffe-input-field ffe-input-field--inline" type="tel" name="postalcode" maxlength="4" placeholder="Postnummer"/>
+            <button class="contact-bankpicker__searchBtn ffe-button ffe-button--primary ffe-input-field--inline button">
+                <span class="ffe-button__label">S&oslash;k</span>
+                <span class="ffe-button__spinner" aria-hidden="true">Vennligst vent</span>
+            </button>
+            <div class="sb1_form_validation_error ffe-field-error-message hide" role="alert">
+                <span>Skriv inn et gyldig postnummer (4 siffer).</span>
+            </div>
+        </div>       
+    </div>
+
+    <div class="contact-bankpicker__nobanks hide" aria-live="polite" role="alert">
+        <div class="ffe-field-error-message ffe-body-paragraph">
+            Vi fant dessverre ingen banker på dette postnummeret.
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div class="contact-bankpicker__banksinfo">
+
+        <div class="contact-bankpicker__banksinfo-list">
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide gudbrandsdal" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1295&#34;},{&#34;from&#34;:&#34;2607&#34;,&#34;to&#34;:&#34;2658&#34;},{&#34;from&#34;:&#34;2670&#34;,&#34;to&#34;:&#34;2677&#34;}]" data-bank-name="gudbrandsdal">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/gudbrandsdal/privat/kundeservice/forsikring/hussopp-rate.html#message">SpareBank 1 Gudbrandsdal</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide hallingdal" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;2550&#34;,&#34;to&#34;:&#34;2555&#34;},{&#34;from&#34;:&#34;2860&#34;,&#34;to&#34;:&#34;2985&#34;},{&#34;from&#34;:&#34;3528&#34;,&#34;to&#34;:&#34;3528&#34;},{&#34;from&#34;:&#34;3535&#34;,&#34;to&#34;:&#34;3536&#34;},{&#34;from&#34;:&#34;3539&#34;,&#34;to&#34;:&#34;3588&#34;},{&#34;from&#34;:&#34;3629&#34;,&#34;to&#34;:&#34;3632&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5499&#34;},{&#34;from&#34;:&#34;5550&#34;,&#34;to&#34;:&#34;5555&#34;},{&#34;from&#34;:&#34;5590&#34;,&#34;to&#34;:&#34;5598&#34;},{&#34;from&#34;:&#34;5626&#34;,&#34;to&#34;:&#34;5628&#34;},{&#34;from&#34;:&#34;5632&#34;,&#34;to&#34;:&#34;5636&#34;},{&#34;from&#34;:&#34;5650&#34;,&#34;to&#34;:&#34;5718&#34;},{&#34;from&#34;:&#34;5723&#34;,&#34;to&#34;:&#34;5723&#34;},{&#34;from&#34;:&#34;5730&#34;,&#34;to&#34;:&#34;5736&#34;},{&#34;from&#34;:&#34;5748&#34;,&#34;to&#34;:&#34;5785&#34;},{&#34;from&#34;:&#34;6700&#34;,&#34;to&#34;:&#34;6710&#34;},{&#34;from&#34;:&#34;6713&#34;,&#34;to&#34;:&#34;6714&#34;},{&#34;from&#34;:&#34;6716&#34;,&#34;to&#34;:&#34;6716&#34;},{&#34;from&#34;:&#34;6718&#34;,&#34;to&#34;:&#34;6718&#34;},{&#34;from&#34;:&#34;6900&#34;,&#34;to&#34;:&#34;6919&#34;},{&#34;from&#34;:&#34;6940&#34;,&#34;to&#34;:&#34;6944&#34;}]" data-bank-name="hallingdal">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/hallingdal/privat/kundeservice/forsikring/hussopp-rate.html#message">SpareBank 1 Hallingdal Valdres</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide helgeland" data-postal="[{&#34;from&#34;:&#34;7979&#34;,&#34;to&#34;:&#34;7983&#34;},{&#34;from&#34;:&#34;8110&#34;,&#34;to&#34;:&#34;8118&#34;},{&#34;from&#34;:&#34;8128&#34;,&#34;to&#34;:&#34;8128&#34;},{&#34;from&#34;:&#34;8181&#34;,&#34;to&#34;:&#34;8183&#34;},{&#34;from&#34;:&#34;8185&#34;,&#34;to&#34;:&#34;8198&#34;},{&#34;from&#34;:&#34;8600&#34;,&#34;to&#34;:&#34;8986&#34;}]" data-bank-name="helgeland">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/helgeland/privat/kundeservice/forsikring/hussopp-rate.html#message">SpareBank 1 Helgeland</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide lom-skjaak" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1369&#34;},{&#34;from&#34;:&#34;1450&#34;,&#34;to&#34;:&#34;1454&#34;},{&#34;from&#34;:&#34;1456&#34;,&#34;to&#34;:&#34;1479&#34;},{&#34;from&#34;:&#34;1900&#34;,&#34;to&#34;:&#34;1910&#34;},{&#34;from&#34;:&#34;1920&#34;,&#34;to&#34;:&#34;1925&#34;},{&#34;from&#34;:&#34;2000&#34;,&#34;to&#34;:&#34;2004&#34;},{&#34;from&#34;:&#34;2007&#34;,&#34;to&#34;:&#34;2007&#34;},{&#34;from&#34;:&#34;2010&#34;,&#34;to&#34;:&#34;2013&#34;},{&#34;from&#34;:&#34;2015&#34;,&#34;to&#34;:&#34;2020&#34;},{&#34;from&#34;:&#34;2660&#34;,&#34;to&#34;:&#34;2669&#34;},{&#34;from&#34;:&#34;2680&#34;,&#34;to&#34;:&#34;2695&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3060&#34;},{&#34;from&#34;:&#34;3075&#34;,&#34;to&#34;:&#34;3075&#34;},{&#34;from&#34;:&#34;3430&#34;,&#34;to&#34;:&#34;3490&#34;}]" data-bank-name="lom-skjaak">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/lom-skjaak/privat/kundeservice/forsikring/hussopp-rate.html#message">SpareBank 1 Lom og Skjåk</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide nord-norge" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1406&#34;},{&#34;from&#34;:&#34;1408&#34;,&#34;to&#34;:&#34;1425&#34;},{&#34;from&#34;:&#34;1450&#34;,&#34;to&#34;:&#34;1454&#34;},{&#34;from&#34;:&#34;1456&#34;,&#34;to&#34;:&#34;1488&#34;},{&#34;from&#34;:&#34;1870&#34;,&#34;to&#34;:&#34;1875&#34;},{&#34;from&#34;:&#34;1900&#34;,&#34;to&#34;:&#34;1910&#34;},{&#34;from&#34;:&#34;1920&#34;,&#34;to&#34;:&#34;1925&#34;},{&#34;from&#34;:&#34;1930&#34;,&#34;to&#34;:&#34;2020&#34;},{&#34;from&#34;:&#34;2030&#34;,&#34;to&#34;:&#34;2069&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3060&#34;},{&#34;from&#34;:&#34;3075&#34;,&#34;to&#34;:&#34;3075&#34;},{&#34;from&#34;:&#34;3402&#34;,&#34;to&#34;:&#34;3490&#34;},{&#34;from&#34;:&#34;4005&#34;,&#34;to&#34;:&#34;4085&#34;},{&#34;from&#34;:&#34;4110&#34;,&#34;to&#34;:&#34;4110&#34;},{&#34;from&#34;:&#34;4128&#34;,&#34;to&#34;:&#34;4129&#34;},{&#34;from&#34;:&#34;4150&#34;,&#34;to&#34;:&#34;4164&#34;},{&#34;from&#34;:&#34;4168&#34;,&#34;to&#34;:&#34;4173&#34;},{&#34;from&#34;:&#34;4187&#34;,&#34;to&#34;:&#34;4187&#34;},{&#34;from&#34;:&#34;4306&#34;,&#34;to&#34;:&#34;4329&#34;},{&#34;from&#34;:&#34;4332&#34;,&#34;to&#34;:&#34;4332&#34;},{&#34;from&#34;:&#34;4336&#34;,&#34;to&#34;:&#34;4340&#34;},{&#34;from&#34;:&#34;4342&#34;,&#34;to&#34;:&#34;4342&#34;},{&#34;from&#34;:&#34;4344&#34;,&#34;to&#34;:&#34;4347&#34;},{&#34;from&#34;:&#34;4355&#34;,&#34;to&#34;:&#34;4355&#34;},{&#34;from&#34;:&#34;4608&#34;,&#34;to&#34;:&#34;4658&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5176&#34;},{&#34;from&#34;:&#34;5178&#34;,&#34;to&#34;:&#34;5184&#34;},{&#34;from&#34;:&#34;5221&#34;,&#34;to&#34;:&#34;5268&#34;},{&#34;from&#34;:&#34;5561&#34;,&#34;to&#34;:&#34;5561&#34;},{&#34;from&#34;:&#34;7010&#34;,&#34;to&#34;:&#34;7099&#34;},{&#34;from&#34;:&#34;7212&#34;,&#34;to&#34;:&#34;7236&#34;},{&#34;from&#34;:&#34;7540&#34;,&#34;to&#34;:&#34;7563&#34;},{&#34;from&#34;:&#34;8003&#34;,&#34;to&#34;:&#34;8830&#34;},{&#34;from&#34;:&#34;8854&#34;,&#34;to&#34;:&#34;9990&#34;}]" data-bank-name="nord-norge">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/kontakt.html">SpareBank 1 Nord-Norge</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide nordmore" data-postal="[{&#34;from&#34;:&#34;6002&#34;,&#34;to&#34;:&#34;7800&#34;}]" data-bank-name="nordmore">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/nordmore/privat/kundeservice/forsikring/hussopp-rate.html#message">SpareBank 1 Nordmøre</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide ringerike-hadeland" data-postal="[{&#34;from&#34;:&#34;1461&#34;,&#34;to&#34;:&#34;1488&#34;},{&#34;from&#34;:&#34;1900&#34;,&#34;to&#34;:&#34;2069&#34;},{&#34;from&#34;:&#34;2720&#34;,&#34;to&#34;:&#34;2770&#34;},{&#34;from&#34;:&#34;3510&#34;,&#34;to&#34;:&#34;3525&#34;},{&#34;from&#34;:&#34;3530&#34;,&#34;to&#34;:&#34;3538&#34;}]" data-bank-name="ringerike-hadeland">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ringerike-hadeland/privat/kundeservice/forsikring/hussopp-rate.html#message">SpareBank 1 Ringerike Hadeland</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide smn" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;2093&#34;},{&#34;from&#34;:&#34;2500&#34;,&#34;to&#34;:&#34;2695&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3060&#34;},{&#34;from&#34;:&#34;3075&#34;,&#34;to&#34;:&#34;3075&#34;},{&#34;from&#34;:&#34;3402&#34;,&#34;to&#34;:&#34;3490&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5417&#34;},{&#34;from&#34;:&#34;5962&#34;,&#34;to&#34;:&#34;5962&#34;},{&#34;from&#34;:&#34;6002&#34;,&#34;to&#34;:&#34;7994&#34;}]" data-bank-name="smn">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/smn/privat/kundeservice/forsikring/hussopp-rate.html#message">SpareBank 1 SMN</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide sogn-fjordane" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;7973&#34;},{&#34;from&#34;:&#34;7985&#34;,&#34;to&#34;:&#34;7994&#34;}]" data-bank-name="sogn-fjordane">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nn/sogn-fjordane/privat/kundeservice/forsikring/hussopp-rate.html#message">SpareBank 1 Sogn og Fjordane</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide sor-norge" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;5994&#34;},{&#34;from&#34;:&#34;6700&#34;,&#34;to&#34;:&#34;6750&#34;},{&#34;from&#34;:&#34;6770&#34;,&#34;to&#34;:&#34;6996&#34;}]" data-bank-name="sor-norge">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="https://www.sparebank1.no/nb/sor-norge/privat/kundeservice.html">SpareBank 1 Sør-Norge</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide ostfold-akershus" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1295&#34;},{&#34;from&#34;:&#34;1400&#34;,&#34;to&#34;:&#34;1459&#34;},{&#34;from&#34;:&#34;1511&#34;,&#34;to&#34;:&#34;1894&#34;},{&#34;from&#34;:&#34;1911&#34;,&#34;to&#34;:&#34;1914&#34;},{&#34;from&#34;:&#34;1930&#34;,&#34;to&#34;:&#34;1970&#34;}]" data-bank-name="ostfold-akershus">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ostfold-akershus/privat/kundeservice/forsikring/hussopp-rate.html#message">SpareBank 1 Østfold Akershus</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide ostlandet" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;8098&#34;},{&#34;from&#34;:&#34;8100&#34;,&#34;to&#34;:&#34;8103&#34;},{&#34;from&#34;:&#34;9006&#34;,&#34;to&#34;:&#34;9034&#34;},{&#34;from&#34;:&#34;9043&#34;,&#34;to&#34;:&#34;9043&#34;},{&#34;from&#34;:&#34;9057&#34;,&#34;to&#34;:&#34;9057&#34;},{&#34;from&#34;:&#34;9100&#34;,&#34;to&#34;:&#34;9128&#34;},{&#34;from&#34;:&#34;9131&#34;,&#34;to&#34;:&#34;9131&#34;},{&#34;from&#34;:&#34;9141&#34;,&#34;to&#34;:&#34;9141&#34;},{&#34;from&#34;:&#34;9402&#34;,&#34;to&#34;:&#34;9430&#34;}]" data-bank-name="ostlandet">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ostlandet/privat/kundeservice/forsikring/hussopp-rate.html#message">SpareBank 1 Østlandet</a>
+                
+
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="js-contact-bankpicker__banklist-wrap contact-bankpicker__banklist-wrapper">
+        <div class="ffe-body-paragraph">
+            <span>... eller
+                <button aria-expanded="false" aria-controls="banks__expand-region-message" class="js-contact-bankpicker__toggle ffe-inline-button ffe-inline-button--expand">
+                    <span class="ffe-inline-button__label">velg banken</span>
+                    <svg viewBox="0 0 200 200" class="ffe-inline-button__icon ffe-inline-button__icon--right" style="margin-left: 5px; transform: none;"><path d="m16.171492,41.999998c-4.143269,0-8.2852797,1.57464-11.4277496,4.706478-6.3249899,6.283609-6.3249899,16.499474,0,22.803034l84.0286676,83.76282c6.30496,6.30356,16.54928,6.30356,22.87426,0l83.60959-83.26412c6.32499-6.28361,6.32499-16.499477,0-22.803038-6.30496-6.30356-16.55553-6.30356-22.88051,0l-72.13806,71.893768-72.613438-72.373767c-3.14247-3.151781-7.29074-4.725174-11.433999-4.725174h-0.0188z"></path></svg>
+                </button>
+                 du ønsker å kontakte</span>
+        </div>
+
+        <div class="js-contact-bankpicker__banklist contact-bankpicker__bankList-wrap hide" id="banks__expand-region-message" tabindex="-1">
+            <div class="icon">
+                
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="listbanks">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+            </div>
+            
+            <div class="contact-bankpicker__bankList">
+                
+                
+                    <div class="contact-bankpicker__bankList-list">
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/gudbrandsdal/privat/kundeservice/forsikring/hussopp-rate.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="gudbrandsdal">
+                                SpareBank 1 
+                                <span class="bank-name">Gudbrandsdal</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/hallingdal/privat/kundeservice/forsikring/hussopp-rate.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="hallingdal">
+                                SpareBank 1 
+                                <span class="bank-name">Hallingdal Valdres</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/helgeland/privat/kundeservice/forsikring/hussopp-rate.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="helgeland">
+                                SpareBank 1 
+                                <span class="bank-name">Helgeland</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/lom-skjaak/privat/kundeservice/forsikring/hussopp-rate.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="lom-skjaak">
+                                SpareBank 1 
+                                <span class="bank-name">Lom og Skjåk</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="https://www.sparebank1.no/nb/nord-norge/privat/kundeservice/kontakt.html" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="nord-norge">
+                                SpareBank 1 
+                                <span class="bank-name">Nord-Norge</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/nordmore/privat/kundeservice/forsikring/hussopp-rate.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="nordmore">
+                                SpareBank 1 
+                                <span class="bank-name">Nordmøre</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ringerike-hadeland/privat/kundeservice/forsikring/hussopp-rate.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ringerike-hadeland">
+                                SpareBank 1 
+                                <span class="bank-name">Ringerike Hadeland</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/smn/privat/kundeservice/forsikring/hussopp-rate.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="smn">
+                                SpareBank 1 
+                                <span class="bank-name">SMN</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nn/sogn-fjordane/privat/kundeservice/forsikring/hussopp-rate.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="sogn-fjordane">
+                                SpareBank 1 
+                                <span class="bank-name">Sogn og Fjordane</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="https://www.sparebank1.no/nb/sor-norge/privat/kundeservice.html" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="sor-norge">
+                                SpareBank 1 
+                                <span class="bank-name">Sør-Norge</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ostfold-akershus/privat/kundeservice/forsikring/hussopp-rate.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ostfold-akershus">
+                                SpareBank 1 
+                                <span class="bank-name">Østfold Akershus</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ostlandet/privat/kundeservice/forsikring/hussopp-rate.html#message" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ostlandet">
+                                SpareBank 1 
+                                <span class="bank-name">Østlandet</span>
+                                
+                            </a> 
+                        </div>   
+                    </div>
+                
+                
+                <button class="contact-bankpicker__bankList--close ffe-button ffe-button--expand ffe-button--expanded" aria-label="Lukk bankliste">
+                    <svg focusable="false" class="ffe-button__icon" viewBox="0 0 200 200" width="150" height="150" x="1200" y="1200" xmlns="http://www.w3.org/2000/svg"><path d="M18.77 0c-3.562 0-7.125 1.347-9.834 4.044L4.507 8.483c-5.381 5.394-5.381 14.25 0 19.68l71.19 71.83-71.66 71.83c-5.381 5.394-5.381 14.25 0 19.68l4.429 4.439c5.381 5.394 14.22 5.394 19.64 0l71.66-71.83 71.65 71.83c5.381 5.394 14.23 5.394 19.65 0l4.429-4.439c5.381-5.394 5.381-14.25 0-19.68l-71.19-71.83 71.66-71.83c5.381-4.914 5.381-13.78 0-19.21l-4.429-4.423c-5.381-5.394-14.22-5.394-19.64 0l-72.13 71.34-71.17-71.83c-2.691-2.697-6.257-4.044-9.819-4.044z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+            
+            
+        </section>
+    </div>
+</div>
+
+        
+        
+
+
+<div aria-hidden="true" id="find-us-template" class="hide ">
+    <div id="panel4" class="contact-info-section find-us" aria-labelledby="contact-tab4" role="tabpanel">
+        <section class="contact-box find-us-section">
+            <h3 class="find-us__header ffe-h4">Søk etter et kontor</h3>
+
+            <div class="search-field-wrap">
+                <label class="visually-hidden" aria-hidden="true">Søk</label>
+                <input class="aem-input search-field" aria-label="Søk
+" name="search" type="search"/>
+
+                <button class="search-button" aria-label="Søk">                    
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+    <path aria-hidden="true" fill="currentColor" d="M378.67-326q-108.44 0-183.56-75.17Q120-476.33 120-583.33t75.17-182.17q75.16-75.17 182.5-75.17 107.33 0 182.16 75.17 74.84 75.17 74.84 182.27 0 43.23-14 82.9-14 39.66-40.67 73l236 234.66q9.67 9.37 9.67 23.86 0 14.48-9.67 24.14-9.67 9.67-24.15 9.67-14.48 0-23.85-9.67L532.67-380q-30 25.33-69.64 39.67Q423.39-326 378.67-326Zm-.67-66.67q79.17 0 134.58-55.83Q568-504.33 568-583.33q0-79-55.42-134.84Q457.17-774 378-774q-79.72 0-135.53 55.83-55.8 55.84-55.8 134.84t55.8 134.83q55.81 55.83 135.53 55.83Z"/>
+</svg>
+                </button>
+                <button class="search-clear-button hide" aria-label="Fjern søketekst">
+                    
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="icon-search-clear">
+        <path fill="currentColor" d="M480-433.33 274.67-228q-9.67 9.67-23.34 9.67-13.66 0-23.33-9.67-9.67-9.67-9.67-23.33 0-13.67 9.67-23.34L433.33-480 228-685.33q-9.67-9.67-9.67-23.34 0-13.66 9.67-23.33 9.67-9.67 23.33-9.67 13.67 0 23.34 9.67L480-526.67 685.33-732q9.67-9.67 23.34-9.67 13.66 0 23.33 9.67 9.67 9.67 9.67 23.33 0 13.67-9.67 23.34L526.67-480 732-274.67q9.67 9.67 9.67 23.34 0 13.66-9.67 23.33-9.67 9.67-23.33 9.67-13.67 0-23.34-9.67L480-433.33Z"/>
+    </svg>
+
+                </button>
+            </div>
+
+            
+
+            <div class="search-results-wrap find-us__wrap hide">
+                
+                <div class="category-facets-wrap"></div>
+                
+                <ul class="search-results"></ul>
+            </div>
+
+            <div class="search-messages-wrap hide" role="alert">
+                <div class="error-state hide">
+                    
+                    
+    
+    
+    
+    <div class="text">
+
+
+
+
+<div class="aem-component-container text-container">
+    
+    
+        
+        
+        
+            <div class="text-wrapper  ">
+                
+                    <p style="	text-align: center;
+"><span class="h5">Det oppstod en uventet feil. Vennligst prøv på nytt.</span></p>
+
+                
+            </div>
+        
+
+        
+
+        
+    
+</div>
+</div>
+
+
+
+                </div>
+                <div class="no-results-state hide">
+                    
+                    
+    
+    
+    
+    <div class="text">
+
+
+
+
+<div class="aem-component-container text-container">
+    
+    
+        
+        
+        
+            <div class="text-wrapper  ">
+                
+                    <p style="	text-align: center;
+"><span class="h5">Søket ditt ga ingen treff.</span></p>
+<p style="	text-align: center;
+"><span class="h5">Skriv &#34;alle kontorer&#34; (begge ordene), for å se hele listen.</span></p>
+
+                
+            </div>
+        
+
+        
+
+        
+    
+</div>
+</div>
+
+
+                    
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+</div>
+
+
+        
+        
+
+<div aria-hidden="true" id="contact-chat-template" class="hide">
+    <div id="panel5" class="contact-info-section" aria-labelledby="contact-tab5" role="tabpanel">
+        <section class="contact-box chat-section chat-section__bankpicker">
+
+            <h3 class="ffe-h4">Chat med oss</h3>
+
+            <div class="chat-section__text">
+                
+            </div>
+            
+            
+
+
+
+
+<div class="chat-banks">
+
+    
+
+
+<div class="js-contact-bankpicker__listHeader-suggest hide">
+
+    
+
+    
+</div>
+
+<div class="js-contact-bankpicker__suggest contact-bankpicker__suggest hide" aria-live="polite"></div>
+
+<div class="contact-bankpicker">
+    
+
+    <div class="postal-input js-postal-input">       
+        <div class="postal-code ffe-input-group ffe-input-group--no-extra-margin ffe-input-group--message">
+            <label class="postal-input__label ffe-body-paragraph">Skriv inn postnummeret ditt</label>
+            <input class="contact-bankpicker__input ffe-input-field ffe-input-field--inline" type="tel" name="postalcode" maxlength="4" placeholder="Postnummer"/>
+            <button class="contact-bankpicker__searchBtn ffe-button ffe-button--primary ffe-input-field--inline button">
+                <span class="ffe-button__label">S&oslash;k</span>
+                <span class="ffe-button__spinner" aria-hidden="true">Vennligst vent</span>
+            </button>
+            <div class="sb1_form_validation_error ffe-field-error-message hide" role="alert">
+                <span>Skriv inn et gyldig postnummer (4 siffer).</span>
+            </div>
+        </div>       
+    </div>
+
+    <div class="contact-bankpicker__nobanks hide" aria-live="polite" role="alert">
+        <div class="ffe-field-error-message ffe-body-paragraph">
+            Vi fant dessverre ingen banker på dette postnummeret.
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div class="contact-bankpicker__banksinfo">
+
+        <div class="contact-bankpicker__banksinfo-list">
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide gudbrandsdal" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1295&#34;},{&#34;from&#34;:&#34;2607&#34;,&#34;to&#34;:&#34;2658&#34;},{&#34;from&#34;:&#34;2670&#34;,&#34;to&#34;:&#34;2677&#34;}]" data-bank-name="gudbrandsdal">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/gudbrandsdal/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat">SpareBank 1 Gudbrandsdal</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide hallingdal" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1397&#34;},{&#34;from&#34;:&#34;2550&#34;,&#34;to&#34;:&#34;2555&#34;},{&#34;from&#34;:&#34;2860&#34;,&#34;to&#34;:&#34;2985&#34;},{&#34;from&#34;:&#34;3528&#34;,&#34;to&#34;:&#34;3528&#34;},{&#34;from&#34;:&#34;3535&#34;,&#34;to&#34;:&#34;3536&#34;},{&#34;from&#34;:&#34;3539&#34;,&#34;to&#34;:&#34;3588&#34;},{&#34;from&#34;:&#34;3629&#34;,&#34;to&#34;:&#34;3632&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5499&#34;},{&#34;from&#34;:&#34;5550&#34;,&#34;to&#34;:&#34;5555&#34;},{&#34;from&#34;:&#34;5590&#34;,&#34;to&#34;:&#34;5598&#34;},{&#34;from&#34;:&#34;5626&#34;,&#34;to&#34;:&#34;5628&#34;},{&#34;from&#34;:&#34;5632&#34;,&#34;to&#34;:&#34;5636&#34;},{&#34;from&#34;:&#34;5650&#34;,&#34;to&#34;:&#34;5718&#34;},{&#34;from&#34;:&#34;5723&#34;,&#34;to&#34;:&#34;5723&#34;},{&#34;from&#34;:&#34;5730&#34;,&#34;to&#34;:&#34;5736&#34;},{&#34;from&#34;:&#34;5748&#34;,&#34;to&#34;:&#34;5785&#34;},{&#34;from&#34;:&#34;6700&#34;,&#34;to&#34;:&#34;6710&#34;},{&#34;from&#34;:&#34;6713&#34;,&#34;to&#34;:&#34;6714&#34;},{&#34;from&#34;:&#34;6716&#34;,&#34;to&#34;:&#34;6716&#34;},{&#34;from&#34;:&#34;6718&#34;,&#34;to&#34;:&#34;6718&#34;},{&#34;from&#34;:&#34;6900&#34;,&#34;to&#34;:&#34;6919&#34;},{&#34;from&#34;:&#34;6940&#34;,&#34;to&#34;:&#34;6944&#34;}]" data-bank-name="hallingdal">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/hallingdal/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat">SpareBank 1 Hallingdal Valdres</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide helgeland" data-postal="[{&#34;from&#34;:&#34;7979&#34;,&#34;to&#34;:&#34;7983&#34;},{&#34;from&#34;:&#34;8110&#34;,&#34;to&#34;:&#34;8118&#34;},{&#34;from&#34;:&#34;8128&#34;,&#34;to&#34;:&#34;8128&#34;},{&#34;from&#34;:&#34;8181&#34;,&#34;to&#34;:&#34;8183&#34;},{&#34;from&#34;:&#34;8185&#34;,&#34;to&#34;:&#34;8198&#34;},{&#34;from&#34;:&#34;8600&#34;,&#34;to&#34;:&#34;8986&#34;}]" data-bank-name="helgeland">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/helgeland/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat">SpareBank 1 Helgeland</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide lom-skjaak" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1369&#34;},{&#34;from&#34;:&#34;1450&#34;,&#34;to&#34;:&#34;1454&#34;},{&#34;from&#34;:&#34;1456&#34;,&#34;to&#34;:&#34;1479&#34;},{&#34;from&#34;:&#34;1900&#34;,&#34;to&#34;:&#34;1910&#34;},{&#34;from&#34;:&#34;1920&#34;,&#34;to&#34;:&#34;1925&#34;},{&#34;from&#34;:&#34;2000&#34;,&#34;to&#34;:&#34;2004&#34;},{&#34;from&#34;:&#34;2007&#34;,&#34;to&#34;:&#34;2007&#34;},{&#34;from&#34;:&#34;2010&#34;,&#34;to&#34;:&#34;2013&#34;},{&#34;from&#34;:&#34;2015&#34;,&#34;to&#34;:&#34;2020&#34;},{&#34;from&#34;:&#34;2660&#34;,&#34;to&#34;:&#34;2669&#34;},{&#34;from&#34;:&#34;2680&#34;,&#34;to&#34;:&#34;2695&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3060&#34;},{&#34;from&#34;:&#34;3075&#34;,&#34;to&#34;:&#34;3075&#34;},{&#34;from&#34;:&#34;3430&#34;,&#34;to&#34;:&#34;3490&#34;}]" data-bank-name="lom-skjaak">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/lom-skjaak/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat">SpareBank 1 Lom og Skjåk</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide nord-norge" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1406&#34;},{&#34;from&#34;:&#34;1408&#34;,&#34;to&#34;:&#34;1425&#34;},{&#34;from&#34;:&#34;1450&#34;,&#34;to&#34;:&#34;1454&#34;},{&#34;from&#34;:&#34;1456&#34;,&#34;to&#34;:&#34;1488&#34;},{&#34;from&#34;:&#34;1870&#34;,&#34;to&#34;:&#34;1875&#34;},{&#34;from&#34;:&#34;1900&#34;,&#34;to&#34;:&#34;1910&#34;},{&#34;from&#34;:&#34;1920&#34;,&#34;to&#34;:&#34;1925&#34;},{&#34;from&#34;:&#34;1930&#34;,&#34;to&#34;:&#34;2020&#34;},{&#34;from&#34;:&#34;2030&#34;,&#34;to&#34;:&#34;2069&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3060&#34;},{&#34;from&#34;:&#34;3075&#34;,&#34;to&#34;:&#34;3075&#34;},{&#34;from&#34;:&#34;3402&#34;,&#34;to&#34;:&#34;3490&#34;},{&#34;from&#34;:&#34;4005&#34;,&#34;to&#34;:&#34;4085&#34;},{&#34;from&#34;:&#34;4110&#34;,&#34;to&#34;:&#34;4110&#34;},{&#34;from&#34;:&#34;4128&#34;,&#34;to&#34;:&#34;4129&#34;},{&#34;from&#34;:&#34;4150&#34;,&#34;to&#34;:&#34;4164&#34;},{&#34;from&#34;:&#34;4168&#34;,&#34;to&#34;:&#34;4173&#34;},{&#34;from&#34;:&#34;4187&#34;,&#34;to&#34;:&#34;4187&#34;},{&#34;from&#34;:&#34;4306&#34;,&#34;to&#34;:&#34;4329&#34;},{&#34;from&#34;:&#34;4332&#34;,&#34;to&#34;:&#34;4332&#34;},{&#34;from&#34;:&#34;4336&#34;,&#34;to&#34;:&#34;4340&#34;},{&#34;from&#34;:&#34;4342&#34;,&#34;to&#34;:&#34;4342&#34;},{&#34;from&#34;:&#34;4344&#34;,&#34;to&#34;:&#34;4347&#34;},{&#34;from&#34;:&#34;4355&#34;,&#34;to&#34;:&#34;4355&#34;},{&#34;from&#34;:&#34;4608&#34;,&#34;to&#34;:&#34;4658&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5176&#34;},{&#34;from&#34;:&#34;5178&#34;,&#34;to&#34;:&#34;5184&#34;},{&#34;from&#34;:&#34;5221&#34;,&#34;to&#34;:&#34;5268&#34;},{&#34;from&#34;:&#34;5561&#34;,&#34;to&#34;:&#34;5561&#34;},{&#34;from&#34;:&#34;7010&#34;,&#34;to&#34;:&#34;7099&#34;},{&#34;from&#34;:&#34;7212&#34;,&#34;to&#34;:&#34;7236&#34;},{&#34;from&#34;:&#34;7540&#34;,&#34;to&#34;:&#34;7563&#34;},{&#34;from&#34;:&#34;8003&#34;,&#34;to&#34;:&#34;8830&#34;},{&#34;from&#34;:&#34;8854&#34;,&#34;to&#34;:&#34;9990&#34;}]" data-bank-name="nord-norge">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/nord-norge/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat">SpareBank 1 Nord-Norge</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide nordmore" data-postal="[{&#34;from&#34;:&#34;6002&#34;,&#34;to&#34;:&#34;7800&#34;}]" data-bank-name="nordmore">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/nordmore/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat">SpareBank 1 Nordmøre</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide ringerike-hadeland" data-postal="[{&#34;from&#34;:&#34;1461&#34;,&#34;to&#34;:&#34;1488&#34;},{&#34;from&#34;:&#34;1900&#34;,&#34;to&#34;:&#34;2069&#34;},{&#34;from&#34;:&#34;2720&#34;,&#34;to&#34;:&#34;2770&#34;},{&#34;from&#34;:&#34;3510&#34;,&#34;to&#34;:&#34;3525&#34;},{&#34;from&#34;:&#34;3530&#34;,&#34;to&#34;:&#34;3538&#34;}]" data-bank-name="ringerike-hadeland">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ringerike-hadeland/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat">SpareBank 1 Ringerike Hadeland</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide smn" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;2093&#34;},{&#34;from&#34;:&#34;2500&#34;,&#34;to&#34;:&#34;2695&#34;},{&#34;from&#34;:&#34;3011&#34;,&#34;to&#34;:&#34;3060&#34;},{&#34;from&#34;:&#34;3075&#34;,&#34;to&#34;:&#34;3075&#34;},{&#34;from&#34;:&#34;3402&#34;,&#34;to&#34;:&#34;3490&#34;},{&#34;from&#34;:&#34;5003&#34;,&#34;to&#34;:&#34;5417&#34;},{&#34;from&#34;:&#34;5962&#34;,&#34;to&#34;:&#34;5962&#34;},{&#34;from&#34;:&#34;6002&#34;,&#34;to&#34;:&#34;7994&#34;}]" data-bank-name="smn">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/smn/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat">SpareBank 1 SMN</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide sogn-fjordane" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;7973&#34;},{&#34;from&#34;:&#34;7985&#34;,&#34;to&#34;:&#34;7994&#34;}]" data-bank-name="sogn-fjordane">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nn/sogn-fjordane/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat">SpareBank 1 Sogn og Fjordane</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide sor-norge" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;5994&#34;},{&#34;from&#34;:&#34;6700&#34;,&#34;to&#34;:&#34;6750&#34;},{&#34;from&#34;:&#34;6770&#34;,&#34;to&#34;:&#34;6996&#34;}]" data-bank-name="sor-norge">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/sor-norge/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat">SpareBank 1 Sør-Norge</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide ostfold-akershus" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;1295&#34;},{&#34;from&#34;:&#34;1400&#34;,&#34;to&#34;:&#34;1459&#34;},{&#34;from&#34;:&#34;1511&#34;,&#34;to&#34;:&#34;1894&#34;},{&#34;from&#34;:&#34;1911&#34;,&#34;to&#34;:&#34;1914&#34;},{&#34;from&#34;:&#34;1930&#34;,&#34;to&#34;:&#34;1970&#34;}]" data-bank-name="ostfold-akershus">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ostfold-akershus/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat">SpareBank 1 Østfold Akershus</a>
+                
+
+            </div>
+        
+            
+            <div class="js-contact-bankpicker__bankInfo message-banks__bankInfo hide ostlandet" data-postal="[{&#34;from&#34;:&#34;0050&#34;,&#34;to&#34;:&#34;8098&#34;},{&#34;from&#34;:&#34;8100&#34;,&#34;to&#34;:&#34;8103&#34;},{&#34;from&#34;:&#34;9006&#34;,&#34;to&#34;:&#34;9034&#34;},{&#34;from&#34;:&#34;9043&#34;,&#34;to&#34;:&#34;9043&#34;},{&#34;from&#34;:&#34;9057&#34;,&#34;to&#34;:&#34;9057&#34;},{&#34;from&#34;:&#34;9100&#34;,&#34;to&#34;:&#34;9128&#34;},{&#34;from&#34;:&#34;9131&#34;,&#34;to&#34;:&#34;9131&#34;},{&#34;from&#34;:&#34;9141&#34;,&#34;to&#34;:&#34;9141&#34;},{&#34;from&#34;:&#34;9402&#34;,&#34;to&#34;:&#34;9430&#34;}]" data-bank-name="ostlandet">
+                
+
+                <a class="contact-bankpicker__bankname ffe-link-text ffe-h4" href="/nb/ostlandet/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat">SpareBank 1 Østlandet</a>
+                
+
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="js-contact-bankpicker__banklist-wrap contact-bankpicker__banklist-wrapper">
+        <div class="ffe-body-paragraph">
+            <span>... eller
+                <button aria-expanded="false" aria-controls="banks__expand-region-" class="js-contact-bankpicker__toggle ffe-inline-button ffe-inline-button--expand">
+                    <span class="ffe-inline-button__label">velg banken</span>
+                    <svg viewBox="0 0 200 200" class="ffe-inline-button__icon ffe-inline-button__icon--right" style="margin-left: 5px; transform: none;"><path d="m16.171492,41.999998c-4.143269,0-8.2852797,1.57464-11.4277496,4.706478-6.3249899,6.283609-6.3249899,16.499474,0,22.803034l84.0286676,83.76282c6.30496,6.30356,16.54928,6.30356,22.87426,0l83.60959-83.26412c6.32499-6.28361,6.32499-16.499477,0-22.803038-6.30496-6.30356-16.55553-6.30356-22.88051,0l-72.13806,71.893768-72.613438-72.373767c-3.14247-3.151781-7.29074-4.725174-11.433999-4.725174h-0.0188z"></path></svg>
+                </button>
+                 du ønsker å chatte med</span>
+        </div>
+
+        <div class="js-contact-bankpicker__banklist contact-bankpicker__bankList-wrap hide" id="banks__expand-region-" tabindex="-1">
+            <div class="icon">
+                
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="listbanks">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+            </div>
+            
+            <div class="contact-bankpicker__bankList">
+                
+                
+                    <div class="contact-bankpicker__bankList-list">
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/gudbrandsdal/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="gudbrandsdal">
+                                SpareBank 1 
+                                <span class="bank-name">Gudbrandsdal</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/hallingdal/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="hallingdal">
+                                SpareBank 1 
+                                <span class="bank-name">Hallingdal Valdres</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/helgeland/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="helgeland">
+                                SpareBank 1 
+                                <span class="bank-name">Helgeland</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/lom-skjaak/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="lom-skjaak">
+                                SpareBank 1 
+                                <span class="bank-name">Lom og Skjåk</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/nord-norge/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="nord-norge">
+                                SpareBank 1 
+                                <span class="bank-name">Nord-Norge</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/nordmore/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="nordmore">
+                                SpareBank 1 
+                                <span class="bank-name">Nordmøre</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ringerike-hadeland/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ringerike-hadeland">
+                                SpareBank 1 
+                                <span class="bank-name">Ringerike Hadeland</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/smn/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="smn">
+                                SpareBank 1 
+                                <span class="bank-name">SMN</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nn/sogn-fjordane/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="sogn-fjordane">
+                                SpareBank 1 
+                                <span class="bank-name">Sogn og Fjordane</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/sor-norge/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="sor-norge">
+                                SpareBank 1 
+                                <span class="bank-name">Sør-Norge</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ostfold-akershus/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ostfold-akershus">
+                                SpareBank 1 
+                                <span class="bank-name">Østfold Akershus</span>
+                                
+                            </a> 
+                        </div>   
+                    
+                        
+                        <div class="contact-bankpicker__bankList-list-item">
+                            <a href="/nb/ostlandet/privat/kundeservice/forsikring/hussopp-rate.html#sb1openchat" class="contact-bankpicker__bankBtn ffe-inline-button ffe-inline-button--tertiary js-bank-link" data-bank-name="ostlandet">
+                                SpareBank 1 
+                                <span class="bank-name">Østlandet</span>
+                                
+                            </a> 
+                        </div>   
+                    </div>
+                
+                
+                <button class="contact-bankpicker__bankList--close ffe-button ffe-button--expand ffe-button--expanded" aria-label="Lukk bankliste">
+                    <svg focusable="false" class="ffe-button__icon" viewBox="0 0 200 200" width="150" height="150" x="1200" y="1200" xmlns="http://www.w3.org/2000/svg"><path d="M18.77 0c-3.562 0-7.125 1.347-9.834 4.044L4.507 8.483c-5.381 5.394-5.381 14.25 0 19.68l71.19 71.83-71.66 71.83c-5.381 5.394-5.381 14.25 0 19.68l4.429 4.439c5.381 5.394 14.22 5.394 19.64 0l71.66-71.83 71.65 71.83c5.381 5.394 14.23 5.394 19.65 0l4.429-4.439c5.381-5.394 5.381-14.25 0-19.68l-71.19-71.83 71.66-71.83c5.381-4.914 5.381-13.78 0-19.21l-4.429-4.423c-5.381-5.394-14.22-5.394-19.64 0l-72.13 71.34-71.17-71.83c-2.691-2.697-6.257-4.044-9.819-4.044z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+            
+            
+
+            
+        </section>
+    </div>
+</div>
+
+
+    </div>
+
+</div>
+
+
+
+</div>
+        <a href="#/" class="to-top" tabindex="-1" aria-hidden="true">
+    <span class="visually-hidden">Til toppen</span>
+    <span class="icon-holder">
+        
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="arrow-up">
+        <path fill="currentColor" d="M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z"/>
+    </svg>
+
+    </span>
+</a>
+
+    </div>
+    <div class="footer-bottom">
+        <div class="bottom-content container-fluid">
+            
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-bottom__columns ">
+
+        <div class="footer-bottom__column">
+            <div class="footer-bottom__column-links">
+                <h2 class="ffe-h4">Privat</h2>
+                
+                <ul>
+                    <li><a class="js-nav-link" href="/nb/bank/privat/kundeservice/bestill/bli-kunde.html">Bli kunde</a></li>
+                
+                    <li><a class="js-nav-link" href="/nb/bank/privat/kundeservice/verktoy/sperre-kort.html">Sperre kort</a></li>
+                
+                    <li><a class="js-nav-link" href="/nb/bank/privat/forsikring/meld-skade.html">Meld skade</a></li>
+                
+                    <li><a class="js-nav-link" href="/nb/bank/privat/kundeservice/bestill/prisliste.html">Prisliste</a></li>
+                
+                    <li><a class="js-nav-link" href="/nb/bank/privat/kundeservice.html">Kundeservice</a></li>
+                
+                    <li><a class="js-nav-link" href="/nb/bank/privat/kundeservice/verktoy/klager.html">Klage</a></li>
+                
+                    <li><a class="js-nav-link" href="/nb/bank/privat/svindel.html">Svindel</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom__column-links">
+                <h2 class="ffe-h4">Logg inn</h2>
+                <ul>
+                    <li><a class="js-nav-link" href="/nb/bank/privat/innlogging.html">Nettbank privat</a></li>
+                
+                    <li><a class="js-nav-link" href="/nb/bank/bedrift/innlogging.html">Nettbank bedrift</a></li>
+                
+                    <li><a class="js-nav-link" href="https://kundeforsikring.sparebank1.no">Forsikring</a></li>
+                
+                    <li><a class="js-nav-link" href="https://kundeforsikring.sparebank1.no/privat/sparing">Pensjon</a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+        <div class="footer-bottom__column footer-bottom__column-right">
+            <div class="footer-bottom__column-links footer-bottom__social-links">
+                <h2 class="ffe-h4">Sosiale medier</h2>
+                <ul>
+                    <li>
+                        <a class="social-logo" href="https://no.linkedin.com/company/sparebank-1" target="_blank" rel="noopener" title="Linkedin">
+                            
+
+<div class="aem-component-container image--all-rounded-small">
+      
+            
+    
+    
+
+    
+        
+    
+    
+        
+    <div class="image-wrapper">
+        <noscript class="lazyload lazyload--image">
+            <img aria-hidden="false" src="/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg" alt="Sjekk ut Linkedin-profilen vår" class="inline-svg responsive  " style="width:100%;" data-lazy-smallsrc="/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg" data-lazy-largesrc="/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg" data-lazy-breakpoint="768px"/>
+        </noscript>
+    </div>
+    <link rel="image_src" itemprop="image" href="/content/dam/SB1/ikoner/SoMe/linkedin-hvit.svg.thumb.1280.1280.jpg"/>
+
+        
+    
+
+        
+    
+    
+    
+    
+
+      
+</div>
+                            <span class="visually-hidden">Linkedin</span>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="social-logo" href="https://www.youtube.com/channel/UCdfZfi4HC6bK0-OfRcDJSzg" target="_blank" rel="noopener" title="YouTube">
+                            
+
+<div class="aem-component-container image--all-rounded-small">
+      
+            
+    
+    
+
+    
+        
+    
+    
+        
+    <div class="image-wrapper">
+        <noscript class="lazyload lazyload--image">
+            <img aria-hidden="false" src="/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg" alt="Gå til Youtube-kanalen vår" class="inline-svg responsive  " style="width:100%;" data-lazy-smallsrc="/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg" data-lazy-largesrc="/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg" data-lazy-breakpoint="768px"/>
+        </noscript>
+    </div>
+    <link rel="image_src" itemprop="image" href="/content/dam/SB1/ikoner/SoMe/youtube-hvit.svg.thumb.1280.1280.jpg"/>
+
+        
+    
+
+        
+    
+    
+    
+    
+
+      
+</div>
+                            <span class="visually-hidden">YouTube</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+    </div>
+
+    <div class="footer-bottom__column-links footer-bottom__small-links ">
+        <ul>
+            <li><a class="ffe-link-text" href="/nb/bank/om-oss/om-banken/selskapsinformasjon.html">Selskapsinformasjon</a></li>
+        
+            <li><a class="ffe-link-text" href="/nb/bank/om-oss/personvern/generelle-vilkar.html">Vilkår for bruk av nettsiden</a></li>
+        
+            <li><a class="ffe-link-text" href="/nb/bank/om-oss/personvern.html">Personvern</a></li>
+        
+            <li><a class="ffe-link-text" href="/nb/bank/om-oss/personvern.html#cookies">Informasjonskapsler</a></li>
+        
+            <li><a class="ffe-link-text" href="/nb/bank/bedrift/open-api.html">For utviklere</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-bottom__address">
+        <p>SpareBank 1 Gruppen, Hammersborggata 11, 0179 Oslo</p>
+        
+    </div>
+
+        </div>
+    </div>
+</footer>
+        </div>
+
+        <div class="hide" id="translated-text">
+
+	{
+		"EMAIL_FIELD_ERROR": "Skriv inn en gyldig e-postadresse.",
+		"CHECKBOX_ERROR": "",
+		"CHECKBOX_GROUP_ERROR": "Velg minst et av alternativene",
+		"DROPDOWN_ERROR": "Gjør et valg i nedtrekkslisten.",
+		"DATE_TO_FROM_ERROR": "Ugyldig dato (eksempel på gyldig dato 31.12.2016).",
+		"RADIO_ERROR": "Velg et alternativ.",
+		"POSTAL_CODE_ERROR": "Skriv inn et gyldig postnummer (4 siffer).",
+		"TEXT_FIELD_ERROR": "Feltet må fylles ut.",
+		"TEXT_FIELD_CONTENTS_ERROR": "Ugyldig verdi.",
+		"ACCOUNT_FIELD_ERROR": "Skriv inn et gyldig kontonummer (11 siffer).",
+		"ORGANISATION_FIELD_ERROR": "Skriv inn et gyldig organisasjonsnummer (9 siffer).",
+		"SSN_ERROR": "Skriv inn et gyldig fødselsnummer (11 siffer).",
+		"PHONE_ERROR": "Skriv inn et gyldig telefonnummer (8 siffer).",
+		"MOBILE_PHONE_NO_ERROR": "Skriv inn et gyldig norsk mobilnummer (8 siffer)",
+		"SEARCH_ALLE": "Alle",
+		"MORE_INFO": "Vis mer informasjon",
+		"RESULT_TYPE_BANK": "Bankkontor",
+		"RESULT_TYPE_ADVISOR": "Rådgiver",
+		"VIEW_IN_MAP": "Vis i kart",
+		"BEFORE_COUNT_TEXT": "Du har",
+		"AFTER_COUNT_TEXT": "oppgave som venter på deg",
+		"AFTER_COUNT_TEXT_PLURAL": "oppgaver som venter på deg",
+		"MINE_OPPGAVER_LINK_TEXT": "Relevant for deg",
+		"MINE_OPPGAVER_CLOSE_TEXT": "Ikke nå",
+        "MINE_OPPGAVER_COUNT_TEXT": "en",
+		"FORM_ERROR_LABEL":"Feil i skjema
+",
+		"FORM_SUCCESS_LABEL":"Takk for din henvendelse",
+		"TEXT_FIELD_LENGTH_ERROR":"TEXT_FIELD_LENGTH_ERROR",
+		"TEXTAREA_FIELD_LENGTH_ERROR":"Maks 2000 tegn",
+		"NUMBER_ERROR": "Du kan kun skrive inn tall.",
+		"SEC_BLOCKER_DROPDOWN_DEFAULT": "Velg land",
+		"GLOBAL_SEARCH_NO_RESULT_TEXT": "Ingen treff på",
+		"GLOBAL_SEARCH_FACET_LABEL": "Vis resultater fra",
+		"MODAL_CLOSE": "Lukk",
+		"SEND_TO_BANK_BEFORE_INFO_TEXT": "Vil du komme rett til",
+		"SEND_TO_BANK_AFTER_INFO_TEXT": "neste gang?",
+		"SEND_TO_BANK_NEXT_BUTTON_TEXT": "Ja, husk banken min",
+		"SEND_TO_BANK_CANCEL_BUTTON_TEXT": "Nei, ikke nå",
+		"SEND_TO_BANK_NEXT_DISCLAMER_TEXT": "For at du skal slippe å velge bank hver gang, bruker vi funksjonelle informasjonskapsler som lagrer hvordan du bruker nettsidene og hvilke innstillinger du har gjort."      
+	}
+
+</div>
+
+        
+
+<script type="text/javascript" src="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/vendors_bundle.1156912316.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/settings/wcm/designs/sb1/nettsider/clientlib_base.1156912316.js"></script>
+
+
+        <script>
+            try {
+                [].slice.call(document.getElementsByClassName('ghost')).forEach(function (element) {
+                    element.parentNode.removeChild(element);
+                });
+            } catch (e) {}
+        </script>
+        
+
+        
+            
+        
+
+        <!-- Remove header and footer inside Mobilbank app, Remove data-sly-test config when tested ok in mobile app in prod -->
+        <script>
+            (function () { // Wrap in IIFE to avoid leaking variables to global scope
+                // Detect Mobilbank user agent
+                const isMobilbank = /mobilbank\//i.test(navigator.userAgent);
+                if (!isMobilbank) return;
+
+                document.documentElement.classList.add('in-mobilbank');
+                try {
+                    if (!document.getElementById('in-mobilbank-style')) {
+                        const style = document.createElement('style');
+                        style.id = 'in-mobilbank-style';
+                        style.textContent = `
+                            html.in-mobilbank .footer-wrapper,
+                            html.in-mobilbank #outer-main-wrap header.header,
+                            html.in-mobilbank #outer-main-wrap .market-nav,
+                            html.in-mobilbank #outer-main-wrap .global-message,
+                            html.in-mobilbank #outer-main-wrap > .main > .to-parent,
+                            html.in-mobilbank #dialoghub-iframe {
+                              display: none !important;
+                            }
+                        `;
+                        (document.head || document.documentElement).appendChild(style);
+                    }
+                } catch (e) {
+                    console.error('Failed to remove Nettsider header for User Agent Mobilbank: ', e);
+                }
+            })();
+        </script>
+    
+</body>
+
+</html>
