@@ -20,3 +20,8 @@ stardust/current/assets/screenshots/
 stardust/validation/**/*.png
 stardust/replica/gates/
 scope/*.html
+
+# stardust token hygiene
+.env
+.env.*
+qa/

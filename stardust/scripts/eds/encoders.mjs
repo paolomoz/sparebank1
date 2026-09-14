@@ -13,12 +13,12 @@ const { esc, href, inline, prose, ctaHtml, imgHtml, pic, block, section, heading
 const q = (el, s) => el?.querySelector(s) || null;
 const qa = (el, s) => (el ? [...el.querySelectorAll(s)] : []);
 const cls = (el) => (el?.getAttribute('class') || '').split(/\s+/).filter(Boolean);
-const bandBg = (el) => { const m = (el?.getAttribute('style') || '').match(/--band-bg:\s*([^;]+)/i); return m ? m[1].trim().toLowerCase() : null; };
-const bgToken = (hex) => ({ '#fdf8f5': 'sand', '#faf0e7': 'sand-70', '#f8e9dd': 'sand', '#d8e9f2': 'frost', '#005aa4': 'brand', '#ffffff': null, '#fff': null }[hex] ?? null);
-const styleOf = (...tokens) => tokens.filter(Boolean).join(', ');
+export const bandBg = (el) => { const m = (el?.getAttribute('style') || '').match(/--band-bg:\s*([^;]+)/i); return m ? m[1].trim().toLowerCase() : null; };
+export const bgToken = (hex) => ({ '#fdf8f5': 'sand', '#faf0e7': 'sand-70', '#f8e9dd': 'sand', '#d8e9f2': 'frost', '#005aa4': 'brand', '#ffffff': null, '#fff': null }[hex] ?? null);
+export const styleOf = (...tokens) => tokens.filter(Boolean).join(', ');
 
 /** Default-content prose from a .richtext (or any container): verbatim inline markup, CTAs as emphasis links. */
-function richtext(el, ctx) {
+export function richtext(el, ctx) {
   if (!el) return '';
   let out = '';
   for (const n of el.childNodes) {
@@ -37,7 +37,7 @@ function richtext(el, ctx) {
 }
 
 /** Card → one DA row: [media?][body: tag p (uppercase eyebrow as <p><em>? no — plain p), title heading-link, text p]. */
-function cardRows(cards, ctx) {
+export function cardRows(cards, ctx) {
   return cards.map((card) => {
     const img = q(card, '.card__media img, .card__iconwrap img');
     const title = q(card, '.card__title'); const tag = q(card, '.card__tag'); const texts = qa(card, '.card__text');
@@ -47,18 +47,20 @@ function cardRows(cards, ctx) {
     if (tag) body += `<p>${inline(tag, ctx)}</p>`;
     if (title) body += hrefV ? `<${lvl}><a href="${esc(hrefV)}">${inline(title, ctx)}</a></${lvl}>` : `<${lvl}>${inline(title, ctx)}</${lvl}>`;
     for (const p of texts) body += `<p>${inline(p, ctx)}</p>`;
-    return img ? [pic(img, ctx), body] : [body];
+    return [img ? pic(img, ctx) : '', body]; // always [media][body] so every row has the same shape (lint D3); an image-less card has an empty media cell
   });
 }
-const cardVariant = (list) => { const c = cls(list); if (c.includes('card-list--price')) return 'price'; if (c.includes('card-list--visual-nav')) return 'nav'; if (c.includes('card-list--static-cards')) return 'static'; return null; };
+export const cardVariant = (list) => { const c = cls(list); if (c.includes('card-list--price')) return 'price'; if (c.includes('card-list--visual-nav')) return 'nav'; if (c.includes('card-list--static-cards')) return 'static'; return null; };
 
 /* ------------------------------------------------------------------ chrome-adjacent ------------------------------------------------------------------ */
 export function breadcrumb(root, ctx) {
+  ctx.notes.push('lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content');
   const a = q(root, 'a'); if (!a) return null;
   return { html: section([block('breadcrumbs', [], [[`<p><a href="${esc(href(a.getAttribute('href') || ''))}">${esc(a.textContent.trim())}</a></p>`]])]), blocks: ['breadcrumbs'] };
 }
 /** bank-choice band (fixed composition, template-slotted): rows = heading | lede | label+placeholder | position label | expand label | one row per bank (link + tagline). */
 export function bankChoice(root, ctx) {
+  ctx.notes.push('lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally');
   const rows = [
     [`<p>${inline(q(root, '.bank-choice__heading'), ctx)}</p>`],
     [`<p>${inline(q(root, '.bank-choice__sublead'), ctx)}</p>`],
@@ -120,6 +122,7 @@ export function richtextSection(root, ctx) {
 }
 
 export function calculator(root, ctx) {
+  ctx.notes.push('lint D1 calculator: bespoke widget (shadow-root snapshot of the loan calculator; dynamics #7 interim) — the link names the snapshot');
   const snap = ctx.slug.replace(/^nb-bank-/, '').replace(/-html$/, '');
   ctx.notes.push(`calculator: static snapshot served from /data/calculator/${snap}.html (dynamics #7 interim — computation disabled until the API is exposed)`);
   return { html: section([block('calculator', [], [[`<p><a href="/data/calculator/${snap}.html">Boliglånskalkulator</a></p>`]])]), blocks: ['calculator'] };
@@ -153,6 +156,7 @@ export function relatedTopics(root, ctx) {
 export const relatedProducts = relatedTopics;
 
 export function feedback(root, ctx) {
+  ctx.notes.push('lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only');
   const qEl = q(root, '.feedback__question');
   return { html: section([block('feedback', [], [[`<p>${inline(qEl, ctx)}</p>`]])], { style: 'gap-48' }), blocks: ['feedback'] };
 }

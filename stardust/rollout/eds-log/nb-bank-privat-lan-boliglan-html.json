@@ -88,9 +88,13 @@
   "feedback"
  ],
  "notes": [
-  "calculator: static snapshot served from /data/calculator/privat-lan-boliglan.html (dynamics #7 interim — computation disabled until the API is exposed)"
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "lint D1 calculator: bespoke widget (shadow-root snapshot of the loan calculator; dynamics #7 interim) — the link names the snapshot",
+  "calculator: static snapshot served from /data/calculator/privat-lan-boliglan.html (dynamics #7 interim — computation disabled until the API is exposed)",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
  "assets": [],
- "writtenAt": "2026-09-14T18:24:21.601Z"
+ "writtenAt": "2026-09-14T18:31:37.865Z"
 }

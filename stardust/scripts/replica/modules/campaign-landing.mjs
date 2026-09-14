@@ -10,6 +10,13 @@ const settledRoot = (slug) => {
   try { const html = fs.readFileSync(new URL(`../../../replica/lift/${map[slug]}`, import.meta.url), 'utf8'); return parseHTML(html).document.querySelector('.sb1-story__body'); } catch { return null; }
 };
 const has = (n, c) => n?.classList?.contains(c);
+// Mobile renditions are chosen client-side (no markup hint after hydration); the 360 lift holds the settled
+// background-image per `.image__background`, in DOM order → emitted as --bg-mobile (used below 768 px).
+const mobileBackgrounds = (slug) => {
+  const map = { 'nb-bank-om-oss-hjemme-html': 'hjemme-360-detail.json' };
+  if (!map[slug]) return [];
+  try { const L = JSON.parse(fs.readFileSync(new URL(`../../../replica/lift/${map[slug]}`, import.meta.url), 'utf8')); return (L['.image__background'] || []).map((e) => { const m = String(e.style?.backgroundImage || '').match(/url\(\s*["']?([^"')]+)/); return m ? m[1] : null; }); } catch { return []; }
+};
 const bgUrl = (n) => { const m = (n?.getAttribute('style') || '').match(/url\(\s*["']?([^"')]+)/); return m ? m[1] : null; };
 
 export default {
@@ -17,6 +24,7 @@ export default {
     const { el, abs, richtext, button, cleanCopy } = ctx;
     const root = settledRoot(ctx.slug) || node;
     const story = el('section', { class: 'story' });
+    const mobiles = mobileBackgrounds(ctx.slug); let bgIndex = 0;
 
     const block = (b) => {
       const sec = el('section', { class: 'story__block' });
@@ -25,7 +33,7 @@ export default {
         const m = el('div', { class: 'story__media' });
         const vid = media.querySelector('video'); const bg = media.querySelector('.image__background'); const img = media.querySelector('img:not(.video__placeholder)');
         if (vid) { const src = vid.querySelector('source')?.getAttribute('src') || vid.getAttribute('src'); m.append(el('video', { class: 'story__video', src: abs(src), title: vid.getAttribute('title'), autoplay: true, muted: true, loop: true, controls: vid.hasAttribute('controls') || null, playsinline: true, preload: 'auto' })); }
-        else if (bg && bgUrl(bg)) m.append(el('div', { class: 'story__bg', role: 'img', 'aria-label': '', style: `background-image:url("${abs(bgUrl(bg))}")` }));
+        else if (bg && bgUrl(bg)) { const mob = mobiles[bgIndex++]; m.append(el('div', { class: 'story__bg', role: 'img', 'aria-label': '', style: `--bg-desktop:url("${abs(bgUrl(bg))}")` + (mob ? `;--bg-mobile:url("${abs(mob)}")` : '') })); }
         else if (img) m.append(el('img', { class: 'story__bg-img', src: abs(img.getAttribute('src')), alt: img.getAttribute('alt') || '' }));
         sec.append(m);
       }

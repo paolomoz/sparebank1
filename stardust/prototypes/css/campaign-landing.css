@@ -7,7 +7,7 @@
 .story__block { position: relative; height: 900px; overflow: hidden; background: #4d8cbf; }
 .story__media { position: absolute; inset: 0; }
 .story__video, .story__bg-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
-.story__bg { position: absolute; inset: 0; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-attachment: fixed; } /* live: .block-media .image__container is fixed (parallax) */
+.story__bg { position: absolute; inset: 0; background-image: var(--bg-mobile, var(--bg-desktop)); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-attachment: fixed; } /* live: .block-media .image__container is fixed (parallax) */
 .story__overlay { position: absolute; inset: 0; z-index: 9; display: flex; justify-content: center; }
 .story__overlay-grid { display: flex; flex-direction: column; justify-content: center; align-items: center; width: calc(100% - 36px); max-width: 1024px; }
 .story__card-text { display: flow-root; width: 100%; color: var(--white); }
@@ -45,6 +45,7 @@
 .story__factbox-col:first-child { display: flex; justify-content: center; align-items: center; margin-bottom: 40px; }
 @media (min-width: 768px) {
   .story { font-size: 20px; line-height: 32px; }
+  .story__bg { background-image: var(--bg-desktop); }
   .story__overlay-grid { width: 100%; }
   .story__card-text h1 { font-size: 96px; line-height: 115px; }
   .story__card-text h2 { margin: 40px 128px 0; font-size: 36px; line-height: 44px; }

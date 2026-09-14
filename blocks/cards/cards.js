@@ -13,7 +13,7 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     const cells = [...row.children];
     const media = cells.find((c) => c.querySelector('picture, img') && !c.querySelector('h1,h2,h3,h4,h5,h6'));
-    const body = cells.find((c) => c !== media) || cells[0];
+    const body = cells.find((c) => c !== media && c.textContent.trim()) || cells[cells.length - 1]; // rows are [media][body]; the media cell may be empty
     const title = body.querySelector('h1,h2,h3,h4,h5,h6'); const link = title?.querySelector('a') || body.querySelector('a');
     const href = link?.getAttribute('href');
     const card = el(href ? 'a' : 'div', { class: `card ${media ? 'card--medium' : 'card--small card--no-image'}${price ? ' card--price' : ''}${news ? ' card--news' : ''} card--clickable`, href: href || null });

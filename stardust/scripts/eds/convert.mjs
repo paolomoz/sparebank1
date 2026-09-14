@@ -11,7 +11,13 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import * as L from './lib.mjs';
-import { ENCODERS } from './encoders.mjs';
+import { ENCODERS as CORE_ENCODERS } from './encoders.mjs';
+
+// family encoders: stardust/scripts/eds/encoders/<family>.mjs → `export default { '<module-class>': (root, ctx) => ({ html, blocks }) }`
+// merged over the core map (alphabetical file order; a family file may override a core key only if the product page still gates clean)
+const ENCODERS = { ...CORE_ENCODERS };
+const encDir = path.resolve('stardust/scripts/eds/encoders');
+if (fs.existsSync(encDir)) for (const f of fs.readdirSync(encDir).filter((x) => x.endsWith('.mjs')).sort()) Object.assign(ENCODERS, (await import(path.join(encDir, f))).default || {});
 
 const args = process.argv.slice(2);
 const state = JSON.parse(fs.readFileSync('stardust/state.json', 'utf8'));
