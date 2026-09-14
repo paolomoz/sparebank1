@@ -1,0 +1,420 @@
+{
+"total": 103,
+"offset": 0,
+"limit": 103,
+"data": [
+{
+"Source": "/",
+"Destination": "/nb/bank/privat"
+},
+{
+"Source": "/nb/bank",
+"Destination": "/nb/bank/privat"
+},
+{
+"Source": "/nb/bank.html",
+"Destination": "/nb/bank/privat"
+},
+{
+"Source": "/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+"Destination": "/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie"
+},
+{
+"Source": "/nb/bank/bedrift/bedriftsforsikring.html",
+"Destination": "/nb/bank/bedrift/bedriftsforsikring"
+},
+{
+"Source": "/nb/bank/bedrift/bedriftskort.html",
+"Destination": "/nb/bank/bedrift/bedriftskort"
+},
+{
+"Source": "/nb/bank/bedrift/bedriftskort/kredittkort.html",
+"Destination": "/nb/bank/bedrift/bedriftskort/kredittkort"
+},
+{
+"Source": "/nb/bank/bedrift/betaling.html",
+"Destination": "/nb/bank/bedrift/betaling"
+},
+{
+"Source": "/nb/bank/bedrift/betaling/utenlandsbetaling.html",
+"Destination": "/nb/bank/bedrift/betaling/utenlandsbetaling"
+},
+{
+"Source": "/nb/bank/bedrift/daglig-drift.html",
+"Destination": "/nb/bank/bedrift/daglig-drift"
+},
+{
+"Source": "/nb/bank/bedrift.html",
+"Destination": "/nb/bank/bedrift"
+},
+{
+"Source": "/nb/bank/bedrift/konto/bedriftskonto.html",
+"Destination": "/nb/bank/bedrift/konto/bedriftskonto"
+},
+{
+"Source": "/nb/bank/bedrift/konto.html",
+"Destination": "/nb/bank/bedrift/konto"
+},
+{
+"Source": "/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler.html",
+"Destination": "/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler"
+},
+{
+"Source": "/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf.html",
+"Destination": "/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf"
+},
+{
+"Source": "/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+"Destination": "/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse"
+},
+{
+"Source": "/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg.html",
+"Destination": "/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg"
+},
+{
+"Source": "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-blir-jeg-bedriftskunde.html",
+"Destination": "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-blir-jeg-bedriftskunde"
+},
+{
+"Source": "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf.html",
+"Destination": "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf"
+},
+{
+"Source": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankaxept.html",
+"Destination": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankaxept"
+},
+{
+"Source": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode.html",
+"Destination": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode"
+},
+{
+"Source": "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan.html",
+"Destination": "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan"
+},
+{
+"Source": "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd.html",
+"Destination": "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd"
+},
+{
+"Source": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift.html",
+"Destination": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift"
+},
+{
+"Source": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura.html",
+"Destination": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura"
+},
+{
+"Source": "/nb/bank/bedrift/kundeservice.html",
+"Destination": "/nb/bank/bedrift/kundeservice"
+},
+{
+"Source": "/nb/bank/bedrift/lan-finansiering/bedriftslan.html",
+"Destination": "/nb/bank/bedrift/lan-finansiering/bedriftslan"
+},
+{
+"Source": "/nb/bank/bedrift/lan-finansiering.html",
+"Destination": "/nb/bank/bedrift/lan-finansiering"
+},
+{
+"Source": "/nb/bank/bedrift/lan-finansiering/kassekreditt.html",
+"Destination": "/nb/bank/bedrift/lan-finansiering/kassekreditt"
+},
+{
+"Source": "/nb/bank/bedrift/lan-finansiering/leasing.html",
+"Destination": "/nb/bank/bedrift/lan-finansiering/leasing"
+},
+{
+"Source": "/nb/bank/bedrift/open-api.html",
+"Destination": "/nb/bank/bedrift/open-api"
+},
+{
+"Source": "/nb/bank/bedrift/pensjon.html",
+"Destination": "/nb/bank/bedrift/pensjon"
+},
+{
+"Source": "/nb/bank/bedrift/regnskap.html",
+"Destination": "/nb/bank/bedrift/regnskap"
+},
+{
+"Source": "/nb/bank/bedrift/sparing-investering.html",
+"Destination": "/nb/bank/bedrift/sparing-investering"
+},
+{
+"Source": "/nb/bank/bedrift/starte-bedrift.html",
+"Destination": "/nb/bank/bedrift/starte-bedrift"
+},
+{
+"Source": "/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk.html",
+"Destination": "/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk"
+},
+{
+"Source": "/nb/bank/bedrift/tips-og-rad.html",
+"Destination": "/nb/bank/bedrift/tips-og-rad"
+},
+{
+"Source": "/nb/bank/om-oss/hjemme.html",
+"Destination": "/nb/bank/om-oss/hjemme"
+},
+{
+"Source": "/nb/bank/om-oss.html",
+"Destination": "/nb/bank/om-oss"
+},
+{
+"Source": "/nb/bank/om-oss/investor.html",
+"Destination": "/nb/bank/om-oss/investor"
+},
+{
+"Source": "/nb/bank/om-oss/jobb-og-karriere.html",
+"Destination": "/nb/bank/om-oss/jobb-og-karriere"
+},
+{
+"Source": "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-.html",
+"Destination": "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-"
+},
+{
+"Source": "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.html",
+"Destination": "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-"
+},
+{
+"Source": "/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html",
+"Destination": "/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken"
+},
+{
+"Source": "/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket.html",
+"Destination": "/nb/bank/om-oss/nyheter/bank-regnskap-nerderiket"
+},
+{
+"Source": "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+"Destination": "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast"
+},
+{
+"Source": "/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.html",
+"Destination": "/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien"
+},
+{
+"Source": "/nb/bank/om-oss/nyheter.html",
+"Destination": "/nb/bank/om-oss/nyheter"
+},
+{
+"Source": "/nb/bank/om-oss/om-banken/selskapsinformasjon.html",
+"Destination": "/nb/bank/om-oss/om-banken/selskapsinformasjon"
+},
+{
+"Source": "/nb/bank/om-oss/personvern/generelle-vilkar.html",
+"Destination": "/nb/bank/om-oss/personvern/generelle-vilkar"
+},
+{
+"Source": "/nb/bank/om-oss/personvern.html",
+"Destination": "/nb/bank/om-oss/personvern"
+},
+{
+"Source": "/nb/bank/om-oss/presse.html",
+"Destination": "/nb/bank/om-oss/presse"
+},
+{
+"Source": "/nb/bank/om-oss/samfunnsansvar.html",
+"Destination": "/nb/bank/om-oss/samfunnsansvar"
+},
+{
+"Source": "/nb/bank/om-oss/selskaper.html",
+"Destination": "/nb/bank/om-oss/selskaper"
+},
+{
+"Source": "/nb/bank/om-oss/vare-eksperter.html",
+"Destination": "/nb/bank/om-oss/vare-eksperter"
+},
+{
+"Source": "/nb/bank/privat/daglig-bruk/bankid.html",
+"Destination": "/nb/bank/privat/daglig-bruk/bankid"
+},
+{
+"Source": "/nb/bank/privat/daglig-bruk/bankkonto.html",
+"Destination": "/nb/bank/privat/daglig-bruk/bankkonto"
+},
+{
+"Source": "/nb/bank/privat/daglig-bruk/bankkort.html",
+"Destination": "/nb/bank/privat/daglig-bruk/bankkort"
+},
+{
+"Source": "/nb/bank/privat/daglig-bruk.html",
+"Destination": "/nb/bank/privat/daglig-bruk"
+},
+{
+"Source": "/nb/bank/privat/daglig-bruk/kredittkort.html",
+"Destination": "/nb/bank/privat/daglig-bruk/kredittkort"
+},
+{
+"Source": "/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort.html",
+"Destination": "/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort"
+},
+{
+"Source": "/nb/bank/privat/daglig-bruk/mobilbank.html",
+"Destination": "/nb/bank/privat/daglig-bruk/mobilbank"
+},
+{
+"Source": "/nb/bank/privat/eiendom.html",
+"Destination": "/nb/bank/privat/eiendom"
+},
+{
+"Source": "/nb/bank/privat/forsikring/barneforsikring.html",
+"Destination": "/nb/bank/privat/forsikring/barneforsikring"
+},
+{
+"Source": "/nb/bank/privat/forsikring/bilforsikring.html",
+"Destination": "/nb/bank/privat/forsikring/bilforsikring"
+},
+{
+"Source": "/nb/bank/privat/forsikring.html",
+"Destination": "/nb/bank/privat/forsikring"
+},
+{
+"Source": "/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+"Destination": "/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man"
+},
+{
+"Source": "/nb/bank/privat/forsikring/innboforsikring.html",
+"Destination": "/nb/bank/privat/forsikring/innboforsikring"
+},
+{
+"Source": "/nb/bank/privat/forsikring/kundehistorier.html",
+"Destination": "/nb/bank/privat/forsikring/kundehistorier"
+},
+{
+"Source": "/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade.html",
+"Destination": "/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade"
+},
+{
+"Source": "/nb/bank/privat/forsikring/meld-skade.html",
+"Destination": "/nb/bank/privat/forsikring/meld-skade"
+},
+{
+"Source": "/nb/bank/privat/forsikring/reiseforsikring.html",
+"Destination": "/nb/bank/privat/forsikring/reiseforsikring"
+},
+{
+"Source": "/nb/bank/privat.html",
+"Destination": "/nb/bank/privat"
+},
+{
+"Source": "/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+"Destination": "/nb/bank/privat/kundeservice/bestill/bli-kunde"
+},
+{
+"Source": "/nb/bank/privat/kundeservice/bestill/prisliste.html",
+"Destination": "/nb/bank/privat/kundeservice/bestill/prisliste"
+},
+{
+"Source": "/nb/bank/privat/kundeservice.html",
+"Destination": "/nb/bank/privat/kundeservice"
+},
+{
+"Source": "/nb/bank/privat/kundeservice/kontakt.html",
+"Destination": "/nb/bank/privat/kundeservice/kontakt"
+},
+{
+"Source": "/nb/bank/privat/kundeservice/verktoy/iban-og-swift.html",
+"Destination": "/nb/bank/privat/kundeservice/verktoy/iban-og-swift"
+},
+{
+"Source": "/nb/bank/privat/kundeservice/verktoy/klager.html",
+"Destination": "/nb/bank/privat/kundeservice/verktoy/klager"
+},
+{
+"Source": "/nb/bank/privat/kundeservice/verktoy/sparekalkulator.html",
+"Destination": "/nb/bank/privat/kundeservice/verktoy/sparekalkulator"
+},
+{
+"Source": "/nb/bank/privat/kundeservice/verktoy/sperre-kort.html",
+"Destination": "/nb/bank/privat/kundeservice/verktoy/sperre-kort"
+},
+{
+"Source": "/nb/bank/privat/kundeservice/verktoy/valutakalkulator.html",
+"Destination": "/nb/bank/privat/kundeservice/verktoy/valutakalkulator"
+},
+{
+"Source": "/nb/bank/privat/lan/billan.html",
+"Destination": "/nb/bank/privat/lan/billan"
+},
+{
+"Source": "/nb/bank/privat/lan/boliglan.html",
+"Destination": "/nb/bank/privat/lan/boliglan"
+},
+{
+"Source": "/nb/bank/privat/lan/forbrukslan.html",
+"Destination": "/nb/bank/privat/lan/forbrukslan"
+},
+{
+"Source": "/nb/bank/privat/lan/gronne-lan.html",
+"Destination": "/nb/bank/privat/lan/gronne-lan"
+},
+{
+"Source": "/nb/bank/privat/lan.html",
+"Destination": "/nb/bank/privat/lan"
+},
+{
+"Source": "/nb/bank/privat/lan/lanekalkulator.html",
+"Destination": "/nb/bank/privat/lan/lanekalkulator"
+},
+{
+"Source": "/nb/bank/privat/lan/refinansiering.html",
+"Destination": "/nb/bank/privat/lan/refinansiering"
+},
+{
+"Source": "/nb/bank/privat/lofavor.html",
+"Destination": "/nb/bank/privat/lofavor"
+},
+{
+"Source": "/nb/bank/privat/pensjon/egen-pensjonskonto.html",
+"Destination": "/nb/bank/privat/pensjon/egen-pensjonskonto"
+},
+{
+"Source": "/nb/bank/privat/pensjon.html",
+"Destination": "/nb/bank/privat/pensjon"
+},
+{
+"Source": "/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon.html",
+"Destination": "/nb/bank/privat/pensjon/hva-far-jeg-i-pensjon"
+},
+{
+"Source": "/nb/bank/privat/private-banking.html",
+"Destination": "/nb/bank/privat/private-banking"
+},
+{
+"Source": "/nb/bank/privat/sparing.html",
+"Destination": "/nb/bank/privat/sparing"
+},
+{
+"Source": "/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon.html",
+"Destination": "/nb/bank/privat/sparing/markedsnytt/artikler/gar-du-glipp-av-millioner-i-pensjon"
+},
+{
+"Source": "/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo.html",
+"Destination": "/nb/bank/privat/sparing/markedsnytt/artikler/kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo"
+},
+{
+"Source": "/nb/bank/privat/sparing/markedsnytt.html",
+"Destination": "/nb/bank/privat/sparing/markedsnytt"
+},
+{
+"Source": "/nb/bank/privat/sparing/spare-i-fond.html",
+"Destination": "/nb/bank/privat/sparing/spare-i-fond"
+},
+{
+"Source": "/nb/bank/privat/sparing/spare-pa-konto.html",
+"Destination": "/nb/bank/privat/sparing/spare-pa-konto"
+},
+{
+"Source": "/nb/bank/privat/sparing/spare-til-barn.html",
+"Destination": "/nb/bank/privat/sparing/spare-til-barn"
+},
+{
+"Source": "/nb/bank/privat/svindel.html",
+"Destination": "/nb/bank/privat/svindel"
+},
+{
+"Source": "/nb/bank/privat/tips-og-rad.html",
+"Destination": "/nb/bank/privat/tips-og-rad"
+}
+],
+":type": "sheet"
+}

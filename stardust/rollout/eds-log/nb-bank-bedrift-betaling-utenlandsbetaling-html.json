@@ -1,0 +1,111 @@
+{
+ "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+ "daPath": "/nb/bank/bedrift/betaling/utenlandsbetaling",
+ "file": "content/nb/bank/bedrift/betaling/utenlandsbetaling.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns",
+    "cards"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": []
+  },
+  {
+   "module": "tip",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "module",
+   "blocks": []
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards",
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "breadcrumbs",
+  "columns",
+  "cards",
+  "callout",
+  "accordion",
+  "feedback"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2025/verdenskart-verden-lys-bakgrunn.svg is 64250 bytes of SVG (> 40000) — authored as DA media verdenskart-verden-lys-bakgrunn.png (rasterised)",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [
+  "module module.module--step-by-step emitted as prose",
+  "module module.module--accordion emitted as prose"
+ ],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2025/verdenskart-verden-lys-bakgrunn.svg"
+ ],
+ "writtenAt": "2026-09-14T19:24:55.094Z"
+}

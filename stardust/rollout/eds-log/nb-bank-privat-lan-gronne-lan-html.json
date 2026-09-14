@@ -1,0 +1,75 @@
+{
+ "slug": "nb-bank-privat-lan-gronne-lan-html",
+ "daPath": "/nb/bank/privat/lan/gronne-lan",
+ "file": "content/nb/bank/privat/lan/gronne-lan.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "title",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "vnav",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "vnav",
+   "blocks": []
+  },
+  {
+   "module": "vnav",
+   "blocks": []
+  },
+  {
+   "module": "banner-small",
+   "blocks": [
+    "banner"
+   ]
+  },
+  {
+   "module": "related-products",
+   "blocks": [
+    "cards"
+   ]
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "breadcrumbs",
+  "cards",
+  "banner"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "cards nav: 3 visual-nav modules (3 photo, 0 icon) folded into one block — one row per card"
+ ],
+ "gaps": [
+  "module title emitted as prose",
+  "no encoder for module title"
+ ],
+ "assets": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T19:25:00.350Z"
+}

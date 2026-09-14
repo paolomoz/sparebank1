@@ -1,0 +1,100 @@
+{
+ "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+ "daPath": "/nb/bank/privat/daglig-bruk/mobilbank",
+ "file": "content/nb/bank/privat/daglig-bruk/mobilbank.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "banner-small",
+   "blocks": [
+    "banner"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "module",
+   "blocks": []
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "related-products",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "breadcrumbs",
+  "columns",
+  "banner",
+  "accordion",
+  "cards",
+  "feedback"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/pengene-vokser-dame-mater-fisk-lys-bakgrunn.svg is 320828 bytes of SVG (> 40000) — authored as DA media pengene-vokser-dame-mater-fisk-lys-bakgrunn.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg is 69217 bytes of SVG (> 40000) — authored as DA media mann-bil-tre.png (rasterised)",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [
+  "module module.module--guide-carousel emitted as prose"
+ ],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/pengene-vokser-dame-mater-fisk-lys-bakgrunn.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg"
+ ],
+ "writtenAt": "2026-09-14T19:24:58.059Z"
+}

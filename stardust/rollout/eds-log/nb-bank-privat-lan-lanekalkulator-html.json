@@ -1,0 +1,104 @@
+{
+ "slug": "nb-bank-privat-lan-lanekalkulator-html",
+ "daPath": "/nb/bank/privat/lan/lanekalkulator",
+ "file": "content/nb/bank/privat/lan/lanekalkulator.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards",
+    "columns"
+   ]
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "calculator",
+   "blocks": [
+    "calculator"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "reference",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "breadcrumbs",
+  "columns",
+  "cards",
+  "calculator",
+  "feedback"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kalkulator-sand-sirkel-usymmetrisk.svg is 861599 bytes of SVG (> 40000) — authored as DA media illustrasjon-kalkulator-sand-sirkel-usymmetrisk.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/mann-sparegris.svg is 41078 bytes of SVG (> 40000) — authored as DA media mann-sparegris.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/dame-tenker-okonomi-sammenlikner.svg is 51143 bytes of SVG (> 40000) — authored as DA media dame-tenker-okonomi-sammenlikner.png (rasterised)",
+  "lint D1 calculator: bespoke widget (shadow-root snapshot of the loan calculator; dynamics #7 interim) — the link names the snapshot",
+  "calculator: static snapshot served from /data/calculator/privat-lan-lanekalkulator.html (dynamics #7 interim — computation disabled until the API is exposed)",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kalkulator-sand-sirkel-usymmetrisk.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/mann-sparegris.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/dame-tenker-okonomi-sammenlikner.svg"
+ ],
+ "writtenAt": "2026-09-14T19:25:00.584Z"
+}

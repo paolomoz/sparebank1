@@ -1,0 +1,143 @@
+{
+ "slug": "nb-bank-privat-forsikring-barneforsikring-html",
+ "daPath": "/nb/bank/privat/forsikring/barneforsikring",
+ "file": "content/nb/bank/privat/forsikring/barneforsikring.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "usp",
+   "blocks": [
+    "usp"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": []
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "reference",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "module",
+   "blocks": []
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "tip",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "image image--center",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "button-wrap button-wrap--center",
+   "blocks": []
+  },
+  {
+   "module": "static-cards",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "related-products",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "static-cards",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "reference",
+   "blocks": []
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "columns",
+  "usp",
+  "callout",
+  "cards",
+  "accordion",
+  "feedback"
+ ],
+ "notes": [
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kyss-sand-sirkel-usymmetrisk.svg is 983750 bytes of SVG (> 40000) — authored as DA media illustrasjon-kyss-sand-sirkel-usymmetrisk.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mobil-lege.svg is 44242 bytes of SVG (> 40000) — authored as DA media mobil-lege.png (rasterised)",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [
+  "module module.module--progressive-disclosure emitted as prose",
+  "module image.image--center emitted as prose",
+  "no encoder for module image image--center",
+  "module button-wrap.button-wrap--center emitted as prose",
+  "no encoder for module button-wrap button-wrap--center"
+ ],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kyss-sand-sirkel-usymmetrisk.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mobil-lege.svg"
+ ],
+ "writtenAt": "2026-09-14T19:24:58.317Z"
+}

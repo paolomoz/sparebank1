@@ -1,0 +1,137 @@
+{
+ "slug": "nb-bank-privat-daglig-bruk-bankkort-html",
+ "daPath": "/nb/bank/privat/daglig-bruk/bankkort",
+ "file": "content/nb/bank/privat/daglig-bruk/bankkort.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns",
+    "usp"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "module",
+   "blocks": []
+  },
+  {
+   "module": "cobranding",
+   "blocks": [
+    "cobranding"
+   ]
+  },
+  {
+   "module": "shortcuts",
+   "blocks": [
+    "shortcuts"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": []
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns",
+    "accordion"
+   ]
+  },
+  {
+   "module": "related-products",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "reference",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "breadcrumbs",
+  "columns",
+  "usp",
+  "cobranding",
+  "shortcuts",
+  "accordion",
+  "cards",
+  "feedback"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "lint D3 cobranding: single-cell rows read by position — row 1 heading + toggle label (EW8: the label moves into the expand button), row 2 partner logo + title, rows 3+ one panel column each; the panel is closed at rest (dynamics #14 static snapshot)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/pall.svg is 86953 bytes of SVG (> 40000) — authored as DA media pall.png (rasterised)",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [
+  "module module.module--progressive-disclosure emitted as prose"
+ ],
+ "assets": [
+  "chevron.svg"
+ ],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/pall.svg"
+ ],
+ "writtenAt": "2026-09-14T19:24:57.524Z"
+}

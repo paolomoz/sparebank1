@@ -1,0 +1,79 @@
+{
+ "slug": "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+ "daPath": "/nb/bank/privat/kundeservice/bestill/bli-kunde",
+ "file": "content/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "title",
+   "blocks": []
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "usp",
+   "blocks": [
+    "usp"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "banner-small",
+   "blocks": [
+    "banner"
+   ]
+  },
+  {
+   "module": "related-products",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "columns",
+  "usp",
+  "banner",
+  "cards",
+  "feedback"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-penger-sand-sirkel-usymmetrisk.svg is 1026451 bytes of SVG (> 40000) — authored as DA media illustrasjon-penger-sand-sirkel-usymmetrisk.png (rasterised)",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [
+  "module title emitted as prose",
+  "no encoder for module title"
+ ],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-penger-sand-sirkel-usymmetrisk.svg"
+ ],
+ "writtenAt": "2026-09-14T19:24:59.657Z"
+}

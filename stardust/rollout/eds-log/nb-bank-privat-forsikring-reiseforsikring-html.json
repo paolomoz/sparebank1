@@ -1,0 +1,162 @@
+{
+ "slug": "nb-bank-privat-forsikring-reiseforsikring-html",
+ "daPath": "/nb/bank/privat/forsikring/reiseforsikring",
+ "file": "content/nb/bank/privat/forsikring/reiseforsikring.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "usp",
+   "blocks": [
+    "usp"
+   ]
+  },
+  {
+   "module": "cobranding",
+   "blocks": [
+    "cobranding"
+   ]
+  },
+  {
+   "module": "tip",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": []
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "reference",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "button-wrap button-wrap--center",
+   "blocks": []
+  },
+  {
+   "module": "image image--center",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "button-wrap button-wrap--center",
+   "blocks": []
+  },
+  {
+   "module": "static-cards",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "tip",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "static-cards",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "module",
+   "blocks": []
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "related-products",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "reference",
+   "blocks": []
+  },
+  {
+   "module": "reference",
+   "blocks": []
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "reference",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "columns",
+  "usp",
+  "cobranding",
+  "callout",
+  "cards",
+  "accordion",
+  "feedback"
+ ],
+ "notes": [
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "lint D3 cobranding: single-cell rows read by position — row 1 heading + toggle label (EW8: the label moves into the expand button), row 2 partner logo + title, rows 3+ one panel column each; the panel is closed at rest (dynamics #14 static snapshot)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-koffert-reise-rosa.svg is 47074 bytes of SVG (> 40000) — authored as DA media dame-koffert-reise-rosa.png (rasterised)",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [
+  "module module.module--progressive-disclosure emitted as prose",
+  "module button-wrap.button-wrap--center emitted as prose",
+  "no encoder for module button-wrap button-wrap--center",
+  "module image.image--center emitted as prose",
+  "no encoder for module image image--center",
+  "module button-wrap.button-wrap--center emitted as prose",
+  "no encoder for module button-wrap button-wrap--center",
+  "module module.module--progressive-disclosure emitted as prose"
+ ],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-koffert-reise-rosa.svg"
+ ],
+ "writtenAt": "2026-09-14T19:24:59.426Z"
+}

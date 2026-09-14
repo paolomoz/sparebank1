@@ -1,0 +1,110 @@
+{
+ "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+ "daPath": "/nb/bank/bedrift/lan-finansiering/bedriftslan",
+ "file": "content/nb/bank/bedrift/lan-finansiering/bedriftslan.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "usp",
+   "blocks": [
+    "usp"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "module",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "button-wrap button-wrap--center",
+   "blocks": []
+  },
+  {
+   "module": "tip",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "reference",
+   "blocks": []
+  },
+  {
+   "module": "related-products",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "breadcrumbs",
+  "columns",
+  "usp",
+  "callout",
+  "accordion",
+  "cards",
+  "feedback"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [
+  "module module.module--price-and-terms emitted as prose",
+  "module button-wrap.button-wrap--center emitted as prose",
+  "no encoder for module button-wrap button-wrap--center"
+ ],
+ "assets": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T19:24:55.563Z"
+}

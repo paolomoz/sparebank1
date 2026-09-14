@@ -1,0 +1,85 @@
+{
+ "slug": "nb-bank-bedrift-lan-finansiering-leasing-html",
+ "daPath": "/nb/bank/bedrift/lan-finansiering/leasing",
+ "file": "content/nb/bank/bedrift/lan-finansiering/leasing.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns",
+    "usp"
+   ]
+  },
+  {
+   "module": "module",
+   "blocks": []
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "cards"
+   ]
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "breadcrumbs",
+  "columns",
+  "usp",
+  "accordion",
+  "cards"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/innhosting-korn-bonde-landbruk-bedrift-lys-bakgrunn.svg is 719982 bytes of SVG (> 40000) — authored as DA media innhosting-korn-bonde-landbruk-bedrift-lys-bakgrunn.png (rasterised)"
+ ],
+ "gaps": [
+  "module module.module--price-and-terms emitted as prose"
+ ],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/innhosting-korn-bonde-landbruk-bedrift-lys-bakgrunn.svg"
+ ],
+ "writtenAt": "2026-09-14T19:24:56.049Z"
+}

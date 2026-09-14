@@ -1,0 +1,48 @@
+{
+ "slug": "nb-bank-privat-forsikring-kundehistorier-html",
+ "daPath": "/nb/bank/privat/forsikring/kundehistorier",
+ "file": "content/nb/bank/privat/forsikring/kundehistorier.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T19:24:59.106Z"
+}

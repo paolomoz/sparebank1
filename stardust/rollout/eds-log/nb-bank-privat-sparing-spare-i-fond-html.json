@@ -1,0 +1,127 @@
+{
+ "slug": "nb-bank-privat-sparing-spare-i-fond-html",
+ "daPath": "/nb/bank/privat/sparing/spare-i-fond",
+ "file": "content/nb/bank/privat/sparing/spare-i-fond.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": []
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "related-products",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "reference",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "breadcrumbs",
+  "cards",
+  "columns",
+  "accordion",
+  "feedback"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "media: https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/girls-just-want-to-have-fond-med-ameline-usymmetrisk-.svg is 1019801 bytes of SVG (> 40000) — authored as DA media girls-just-want-to-have-fond-med-ameline-usymmetrisk-.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2023/dame-star-pa-penger-spare-fond.svg is 51791 bytes of SVG (> 40000) — authored as DA media dame-star-pa-penger-spare-fond.png (rasterised)",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [
+  "module module module--columns produced no content"
+ ],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/girls-just-want-to-have-fond-med-ameline-usymmetrisk-.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2023/dame-star-pa-penger-spare-fond.svg"
+ ],
+ "writtenAt": "2026-09-14T19:25:01.317Z"
+}
