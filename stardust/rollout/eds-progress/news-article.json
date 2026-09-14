@@ -1,0 +1,89 @@
+{
+ "regime": "published-origin (local EDS emulation, stardust/scripts/eds/serve.mjs :3015, content/… + blocks) vs the cached live capture",
+ "at": "2026-09-14T20:45:32.414Z",
+ "worker": "W5",
+ "archetype": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "document": "content/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+ "encoder": "stardust/scripts/eds/encoders/news-article.mjs (key `article`; no core key overridden)",
+ "blocks": [
+  "hero (article variant — new decorate for the boilerplate hero dir; `top` sub-variant)",
+  "callout (infobox variant, tint sub-variants sand-70 · frost-30 · nordlys-30 · green-mint)",
+  "cards (related variant)",
+  "header (header--frontend variant)",
+  "footer (footer--frontend variant)"
+ ],
+ "sections": [
+  "article-hero",
+  "article-body [, lead | figure-right | figure-left]",
+  "article-aside"
+ ],
+ "chrome": {
+  "nav": "/nav-frontend-om-oss-2",
+  "footer": "/footer-frontend-om-oss-2",
+  "regeneratedBy": "stardust/scripts/eds/_w5-chrome.mjs (chrome.mjs output predated the frontend prototypes)"
+ },
+ "iterations": 4,
+ "breakpoints": {
+  "360": {
+   "pixelPct": 8,
+   "heightDelta": 2,
+   "chromeHeaderPct": 0.31,
+   "chromeFooterPct": 0,
+   "pass": true,
+   "evidence": "stardust/replica/gates/nyhet-eds-360/ (pixel-iter2.txt, chrome-header.txt, chrome-footer.txt)"
+  },
+  "1440": {
+   "pixelPct": 3.18,
+   "heightDelta": 1,
+   "chromeHeaderPct": 1.82,
+   "chromeFooterPct": 0,
+   "pass": true,
+   "evidence": "stardust/replica/gates/nyhet-eds-1440/ (pixel-iter4.txt, chrome-header.txt, chrome-footer.txt, content-diff-iter1.txt, content-diff-live.txt)"
+  }
+ },
+ "contentDiff": {
+  "prototype": "0 🔴 · 5 🟠 EXTRA cta (the related-article titles are h3 links in the cards block; the prototype renders them as a span inside the anchor — role classification, same text/href)",
+  "live": "0 🔴 · same 5 🟠 (1 live hit)"
+ },
+ "lint": "0 🔴 · 1 🟡 D1 callout infobox (justified in the conversion log: the live infoBox component — tinted box, no icon, reused callout shape)",
+ "justified": [
+  {
+   "flag": "360 pixel bands y4000–5500 up to 14.9 %",
+   "why": "five related-article photos rendered at natural aspect (fill) — decode/scale noise across the photo area; positions match to 1px (same residual as the replica gate 14.9 %)",
+   "permanent": true
+  },
+  {
+   "flag": "1440 header crop 98.18 % (texture thick)",
+   "why": "live main-nav / top-nav label spacing differs from the gated prototype by 4–11 px (tabular-digit label widths, centred row) — the replica gate carried the same residual at 98.22 %",
+   "permanent": true
+  },
+  {
+   "flag": "content-diff 🟠 EXTRA cta ×5",
+   "why": "card-as-link keeps the authored h3 link inside the card (EW6); the source renders the title as a span inside the anchor",
+   "permanent": true
+  },
+  {
+   "flag": "related thumbnail top-crop focus",
+   "why": "one live thumbnail carries a DAM top-crop focus; not authorable — cards render the centre crop",
+   "permanent": true
+  }
+ ],
+ "fixesThisRound": [
+  "hero article: <div class=\"hero__header\"> (a <header> element inside the block was sized by the global chrome `header { height }` rule)",
+  "article body margin model: sections contain a paragraph's trailing 16px → flow-root wrapper + first-child heading 24px (40−16), callout-wrapper 24/8px, the section after a figure section opens at +41 (live clear + 1px padding), mobile figure first-child 8px",
+  "footer--frontend: divider carries 40px above and below (.footer__small margin-top 40); login pill 42px",
+  "aside tags authored as a list (inline-block items 16px apart) instead of space-separated links",
+  "icons harvested from the live DOM: search-frontend, close-frontend, arrow-right-frontend, share-facebook / share-linkedin / share-twitter"
+ ],
+ "siblings": {
+  "converted": 9,
+  "gaps": 0,
+  "lint": "0 🔴 on all 9 (🟡: callout infobox ×2, SVG D4 ×1)",
+  "note": "6 are sb1-article pages (hero + cards, callout on 2, bio quote on 3, floated figure on 1); 3 (bank-regnskap-nerderiket, sikrer-seg-mot-vannlekkasje-klok-av-skade, kan-utviklingen-til-teknologifondene…) are sb1-STORY pages misfiled under news-article — converted by encoders/campaign-landing.mjs, template metadata corrected by stardust/scripts/eds/_w5-template-fix.mjs (request filed)",
+  "eyeball": "bruk-mobilbanken-fa-kontroll-pa-okonomien @1440: stardust/replica/gates/nyhet-eds-siblings/ (stitch + content-diff 0 🔴, 5 🟠 related ctas, 1 🟡 bio-modal trigger \"Les mer om …\" not authored)"
+ },
+ "productRegression": {
+  "docByteIdentical": true,
+  "pixelPct1440": 0.65
+ }
+}

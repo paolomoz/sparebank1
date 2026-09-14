@@ -1,0 +1,41 @@
+/* story — the sb1-story campaign slides, lifted from stardust/prototypes/css/campaign-landing.css (.story__block / __media / __bg /
+   __overlay* / __card-* / buttons) ← frontend_clientlib_base + lift/hjemme-{1440,360}-detail.json */
+.story .story__slide { position: relative; height: 900px; overflow: hidden; background: #4d8cbf; }
+.story .story__media { position: absolute; inset: 0; opacity: 0; transition: opacity 1s ease-out; }
+.story .story__media.is-visible { opacity: 1; }
+.story .story__video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+.story .story__bg { position: absolute; inset: 0; background-image: var(--bg-mobile, var(--bg-desktop)); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-attachment: fixed; } /* live: the image container is fixed (parallax) */
+.story .story__source { display: none; } /* the authored pictures / video link: editable source of the media, not painted twice */
+.story .story__overlay { position: absolute; inset: 0; z-index: 9; display: flex; justify-content: center; }
+.story .story__overlay-grid { display: flex; flex-direction: column; justify-content: center; align-items: center; width: calc(100% - 36px); max-width: 1024px; }
+.story .story__card-text { display: flow-root; width: 100%; color: var(--white); }
+.story .story__card-text h1 { margin: 0; font-family: var(--font-heading); font-size: 36px; line-height: 50px; font-weight: 400; color: var(--white); text-align: center; }
+.story .story__card-text h2 { max-width: 768px; margin: 40px 0 0; padding: 32px; font-family: var(--font-heading); font-size: 24px; line-height: 28px; font-weight: 400; color: #002776; background: var(--white); border-radius: 4px; text-align: center; }
+.story .story__card-text p { max-width: 768px; margin: -40px 0 16px; padding: 32px; font-size: 16px; line-height: 22px; color: #020a0a; background: var(--white); border-radius: 4px; }
+.story .story__card-buttons { display: flex; justify-content: center; align-self: stretch; max-width: 768px; margin: -24px 0 0; padding: 0 32px 24px; background: var(--white); border-radius: 4px; }
+.story .story__btn-group { display: flex; flex-direction: column; flex-wrap: wrap; width: 260px; padding: 40px 0 0; gap: 8px 16px; }
+.story p.story__btn { display: flex; justify-content: center; margin: 0; text-align: center; }
+.story p.story__btn:last-child { margin-bottom: 8px; }
+.story .story__btn a.button:any-link { width: auto; flex: 0 1 auto; max-width: 100%; margin: 0 0 8px; }
+.story .story__card-button { align-self: stretch; max-width: 768px; margin: -32px 0 20px; padding: 32px; background: var(--white); border-radius: 4px; text-align: center; }
+.story .story__card-button p { margin: 0; }
+/* buttons: the frontend ffe-button geometry */
+.story a.button:any-link { display: flex; align-items: center; justify-content: center; min-height: 0; padding: 10px 24px; border: 2px solid transparent; border-radius: 96px; font: 400 16px/19.2px var(--font); text-decoration: none; transition: color 0.2s var(--ease), background-color 0.2s var(--ease); }
+.story a.button.accent:any-link { background: #00754e; color: var(--white); }
+.story a.button.accent:hover { background: #095139; color: var(--white); }
+.story a.button.secondary:any-link { background: var(--white); color: #005aa4; border-color: #005aa4; }
+.story a.button.secondary:hover { background: #005aa4; color: var(--white); border-color: #005aa4; }
+
+@media (width >= 768px) {
+  .story .story__bg { background-image: var(--bg-desktop); }
+  .story .story__overlay-grid { width: 100%; }
+  .story .story__card-text h1 { font-size: 96px; line-height: 115px; }
+  .story .story__card-text h2 { margin: 40px 128px 0; font-size: 36px; line-height: 44px; }
+  .story .story__card-text p { margin: -40px 128px 20px; font-size: 20px; line-height: 28px; }
+  .story .story__card-buttons { margin: -24px 128px 0; }
+  .story .story__btn-group { flex-direction: row; width: auto; }
+  .story p.story__btn { margin: 0 0 8px; }
+  .story p.story__btn + p.story__btn { margin-left: 16px; }
+  .story .story__card-button { margin: -32px 128px 20px; }
+  .story .story__card-button a.button:any-link, .story .story__btn a.button:any-link { display: inline-flex; }
+}

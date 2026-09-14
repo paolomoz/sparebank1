@@ -114,7 +114,7 @@ main .section.faq .default-content-wrapper h2 { text-align: center; }
 @media (width >= 1024px) { .accordion.steps .col-lg-4 { grid-column: auto / span 4; } .accordion.steps .col-lg-6 { grid-column: auto / span 6; } .accordion.steps .col-lg-offset-1.col-lg-4 { grid-column: 2 / span 4; } }
 /* tabs — the AEM "section" item list (mirrors stardust/prototypes/css/product.css .seclist*) */
 .accordion.tabs { text-align: left; }
-.accordion.tabs .seclist__body { min-height: 144px; }
+.accordion.tabs .seclist__body { min-height: 144px; padding: 16px 0; box-sizing: content-box; }
 .accordion.tabs .seclist__btn { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 8px; margin: 0; padding: 18px 0; border: 0; border-bottom: 1px solid #ccc; border-radius: 0; background: none; color: var(--vann); font: inherit; text-align: left; cursor: pointer; }
 .accordion.tabs .seclist__btn p { margin: 0; }
 .accordion.tabs .seclist__item--active .seclist__btn { border-bottom: 2px solid var(--fjell); color: var(--fjell); }

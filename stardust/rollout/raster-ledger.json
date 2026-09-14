@@ -362,5 +362,54 @@
   "bytes": 248131,
   "size": "1200x720@2x",
   "at": "2026-09-14T20:18:02.893Z"
+ },
+ "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2025/Barn_som_turner_lys_bakgrunn.svg": {
+  "png": "Barn_som_turner_lys_bakgrunn.png",
+  "status": 201,
+  "bytes": 197504,
+  "size": "1200x630@2x",
+  "at": "2026-09-14T20:38:26.783Z"
+ },
+ "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2024/lyspare-og-mobilskjerm-med-data-mobil-grafer-lys-mork-bakgrunn.svg": {
+  "png": "lyspare-og-mobilskjerm-med-data-mobil-grafer-lys-mork-bakgrunn.png",
+  "status": 201,
+  "bytes": 301052,
+  "size": "1200x1359@2x",
+  "at": "2026-09-14T20:38:47.752Z"
+ },
+ "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/mote-spisebord-kaffe.svg": {
+  "png": "mote-spisebord-kaffe.png",
+  "status": 201,
+  "bytes": 233229,
+  "size": "1200x887@2x",
+  "at": "2026-09-14T20:38:48.666Z"
+ },
+ "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/person-med-signert-papir-i-handa-lys-bakgrunn.svg": {
+  "png": "person-med-signert-papir-i-handa-lys-bakgrunn.png",
+  "status": 201,
+  "bytes": 77825,
+  "size": "356x700@2x",
+  "at": "2026-09-14T20:38:49.422Z"
+ },
+ "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/menneske-person-voksen-med-hund-i-lenestol-sjekker-mobilen.svg": {
+  "png": "menneske-person-voksen-med-hund-i-lenestol-sjekker-mobilen.png",
+  "status": 201,
+  "bytes": 42133,
+  "size": "311x214@2x",
+  "at": "2026-09-14T20:38:50.210Z"
+ },
+ "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/visning-familie-mork.svg": {
+  "png": "visning-familie-mork.png",
+  "status": 201,
+  "bytes": 102143,
+  "size": "953x310@2x",
+  "at": "2026-09-14T20:38:50.959Z"
+ },
+ "https://www.sparebank1.no/content/dam/SB1/vedlegg/pensjon/bilder/avkastningsgraf-pensjon-2026.svg": {
+  "png": "avkastningsgraf-pensjon-2026.png",
+  "status": 201,
+  "bytes": 79132,
+  "size": "596x335@2x",
+  "at": "2026-09-14T20:38:51.851Z"
  }
 }

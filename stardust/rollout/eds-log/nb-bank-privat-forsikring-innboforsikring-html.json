@@ -123,6 +123,7 @@
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
+  "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
@@ -130,5 +131,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-usymmetrisk-samboer-dame-mann-high-five.svg"
  ],
- "writtenAt": "2026-09-14T20:33:23.713Z"
+ "writtenAt": "2026-09-14T20:41:11.109Z"
 }

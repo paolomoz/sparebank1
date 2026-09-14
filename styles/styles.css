@@ -657,6 +657,19 @@ main .section:has(> .cards-wrapper > .cards.static) .default-content-wrapper { m
 main .section:has(> .cards-wrapper > .cards.static) .default-content-wrapper h2 { margin: 0 0 24px; text-align: left; }
 /* section-list: the AEM "section" master/detail module — layout2: illustration in cols 2-3, content cols 4-11; small-img: 80px round illustration beside the title */
 main .section.section-list { padding: 48px 8px 32px; }
+main .section.small-text .default-content-wrapper p { font-size: 14px; line-height: 20px; }
+main .section.after-spacer-1 .default-content-wrapper { padding-bottom: 40px; }
+main .section.after-spacer-2 .default-content-wrapper { padding-bottom: 80px; }
+main .section.related-icons { margin-top: 0; padding: 48px 8px 32px; }
+main .section.related-icons .cards.small .card-list li { margin-bottom: 16px; }
+main .section.main-lead .default-content-wrapper p { margin: 16px 0 0; padding-bottom: 24px; font-size: 18px; line-height: 24px; color: var(--fjell); text-align: center; }
+main .section.gap-24 { margin-top: 24px; }
+main .section.band.product.calculator-container { padding: 48px 16px; } /* the core calculator-container skin zeroes the band padding for the archetype's full-bleed widget */
+main .section.band.product .default-content-wrapper { padding-bottom: 0; } /* live band prose carries no wrapper padding (the core 16px was tuned on the archetype) */
+main .section.small-text .default-content-wrapper p { line-height: 24px; } /* the live small print sits in a 16/24 paragraph: 14px glyphs on 24px lines */
+main .section.section-list .accordion.tabs .seclist__detail p:has(> :is(picture, img):only-child) { float: right; width: 26%; margin: 0 0 16px 24px; line-height: 0; text-align: center; }
+main .section.section-list .accordion.tabs .seclist__detail p:has(> :is(picture, img):only-child) img { width: auto; max-width: 100%; max-height: 264px; }
+main .section.section-list.small-img .accordion.tabs .seclist__body { padding: 12px 0 0; }
 main .section.section-list .default-content-wrapper p:first-child:has(> picture, > img) { margin: 0; line-height: 0; }
 main .section.section-list .default-content-wrapper h2 { margin: 0 0 8px; font-family: var(--font-medium); font-size: 20px; line-height: 24px; }
 main .section.section-list .default-content-wrapper h2 + p { margin: 16px 0 24px; font-size: 17px; line-height: 24px; }
@@ -675,8 +688,11 @@ main .section.cta.center .default-content-wrapper a.button { display: flex; widt
   main .section.steps .default-content-wrapper { margin-left: 8.3333%; padding: 0 16px; }
   main .section.steps .default-content-wrapper h2 { margin-bottom: 24px; font-size: 28px; line-height: 36px; }
   main .section.cta.center .default-content-wrapper a.button { display: inline-flex; width: auto; }
-  main .section.section-list { padding: 72px 0 56px; }
-  main .section.section-list > div { display: grid; grid-template-columns: repeat(12, 1fr); }
+  main .section.section-list { display: grid; grid-template-columns: repeat(12, 1fr); padding: 72px max(0px, calc((100% - var(--container)) / 2)) 56px; }
+  main .section.band.product.calculator-container { padding: 72px 0; }
+  main .section.main-lead .default-content-wrapper p { font-size: 24px; line-height: 32px; }
+  main .section.section-list > div { width: 100%; max-width: none; margin: 0; }
+  main .section.related-icons { padding: 72px 0 56px; }
   main .section.section-list .default-content-wrapper h2 { margin-bottom: 24px; font-size: 28px; line-height: 36px; }
   main .section.section-list .default-content-wrapper h2 + p { margin: 0 0 18px; font-size: 18px; line-height: 28px; }
   main .section.section-list.layout2 .default-content-wrapper, main .section.section-list.layout2 .accordion-wrapper { grid-column: 4 / span 8; padding: 0 16px; }
@@ -809,7 +825,7 @@ main .section.theme-intro .default-content-wrapper p { margin: 16px 0 18px; font
 main .section.theme-intro + .section.band { margin-top: 48px; }
 /* theme-lead: a centred span.lead line (17/24 → 18/28, text colour) in the 620px column */
 main .section.theme-lead > div { display: flow-root; max-width: 660px; padding: 0 20px; }
-main .section.theme-lead .default-content-wrapper p { margin: 16px 0 18px; font-size: 17px; line-height: 24px; color: var(--text); text-align: center; }
+main .section.theme-lead .default-content-wrapper p { margin: 16px 0 17px; font-size: 17px; line-height: 24px; color: var(--text); text-align: center; } /* live span.lead margin-bottom 1em */
 /* theme-image: the top-level centred illustration (live .main > .image: 48/72 above, inline picture at its authored max-width) */
 main .section.theme-image { margin-top: 48px; }
 main .section.theme-image .default-content-wrapper p { margin: 0; line-height: 24px; text-align: center; }
@@ -830,7 +846,7 @@ main .section.cta .default-content-wrapper p.button-wrapper { margin: 8px 0; }
 
 @media (width >= 768px) {
   main .section.theme-intro .default-content-wrapper p { margin-bottom: 24px; font-size: 24px; line-height: 32px; }
-  main .section.theme-lead .default-content-wrapper p { font-size: 18px; line-height: 28px; }
+  main .section.theme-lead .default-content-wrapper p { margin-bottom: 18px; font-size: 18px; line-height: 28px; }
 }
 
 @media (width >= 1024px) {
@@ -871,3 +887,78 @@ body.news-listing main .section.listing .default-content-wrapper a.button:hover:
   body.news-listing main > .section.listing { padding: 40px; }
 }
 /* ===== /news-listing ===== */
+
+/* ===== campaign-landing =====
+   the nettsider-frontend `sb1-story` page (stardust/prototypes/css/campaign-landing.css .story / __text / __image / __button /
+   __anchor): sand canvas, 768px prose column, 100/80px after a slide band, the centred 600px illustration, the anchor's 32px gap.
+   The bottom rhythm is the live story body's 20px; an empty factbox component adds its measured slot to the section before it. */
+body.campaign-landing main { padding: 0 0 20px; background: var(--sand-30); color: #020a0a; font-size: 16px; line-height: 24px; overflow-wrap: anywhere; }
+body.campaign-landing main > .section { margin: 0; padding: 0; }
+body.campaign-landing main > .section > div { max-width: none; margin: 0; }
+body.campaign-landing main > .section.anchor-gap { margin-top: 32px; }
+body.campaign-landing main > .section.factbox-slot { padding-bottom: 136px; } /* the empty live factbox after this section: 40+56+40 below 768, 64+0+64 from 768 */
+body.campaign-landing main .section.story-text .default-content-wrapper { max-width: 768px; margin: 40px auto; padding: 0 20px; }
+body.campaign-landing main .section.story-text.after-slides .default-content-wrapper { margin-top: 80px; }
+body.campaign-landing main .section.story-text .default-content-wrapper h1 { margin: 0 0 8px; font-family: var(--font-heading); font-size: 28px; line-height: 36px; font-weight: 400; color: #002776; }
+body.campaign-landing main .section.story-text .default-content-wrapper p { margin: 0 0 16px; font-size: 16px; line-height: 24px; }
+body.campaign-landing main .section.story-text .default-content-wrapper h5 { margin: 0 0 16px; font-family: var(--font-medium); font-size: 17px; line-height: 20px; color: #002776; }
+body.campaign-landing main .section.story-image .default-content-wrapper { max-width: 600px; margin: 40px auto; padding: 0 20px; text-align: center; }
+body.campaign-landing main .section.story-image .default-content-wrapper p { margin: 0; line-height: 0; }
+body.campaign-landing main .section.story-image .default-content-wrapper img { display: inline; width: 100%; max-width: 600px; border-radius: 30px; vertical-align: top; }
+body.campaign-landing main .section.story-button .default-content-wrapper { max-width: 768px; margin: -30px auto 20px; padding: 0 20px; text-align: center; }
+body.campaign-landing main .section.story-button .default-content-wrapper p { margin: 0; }
+body.campaign-landing main .section.story-button .default-content-wrapper a.button:any-link { display: flex; align-items: center; justify-content: center; min-height: 0; padding: 10px 24px; border: 2px solid transparent; border-radius: 96px; font: 400 16px/19.2px var(--font); transition: color 0.2s var(--ease), background-color 0.2s var(--ease); }
+body.campaign-landing main .section.story-button .default-content-wrapper a.button.accent:any-link { background: #00754e; color: var(--white); }
+body.campaign-landing main .section.story-button .default-content-wrapper a.button.accent:hover { background: #095139; }
+
+@media (width >= 768px) {
+  body.campaign-landing main { font-size: 20px; line-height: 32px; }
+  body.campaign-landing main > .section.factbox-slot { padding-bottom: 128px; }
+  body.campaign-landing main .section.story-text .default-content-wrapper { margin: 64px auto; padding: 0 64px; }
+  body.campaign-landing main .section.story-text.after-slides .default-content-wrapper { margin-top: 100px; }
+  body.campaign-landing main .section.story-text .default-content-wrapper h1 { margin: 0 0 24px; font-size: 46px; line-height: 56px; }
+  body.campaign-landing main .section.story-text .default-content-wrapper p { margin: 0 0 20px; font-size: 20px; line-height: 32px; }
+  body.campaign-landing main .section.story-text .default-content-wrapper h5 { margin: 0 0 20px; font-size: 18px; line-height: 24px; }
+  body.campaign-landing main .section.story-image .default-content-wrapper { margin: 64px auto; padding: 0; }
+  body.campaign-landing main .section.story-button .default-content-wrapper { padding: 0 64px; }
+  body.campaign-landing main .section.story-button .default-content-wrapper a.button:any-link { display: inline-flex; }
+}
+/* ===== /campaign-landing ===== */
+/* ===== campaign-landing (cont.) ===== the live pseudo-heading sits in a story paragraph: its line boxes keep the paragraph's strut (24 / 32) */
+body.campaign-landing main .section.story-text .default-content-wrapper h5 { line-height: 24px; }
+@media (width >= 768px) { body.campaign-landing main .section.story-text .default-content-wrapper h5 { line-height: 32px; } }
+/* ===== /campaign-landing (cont.) ===== */
+
+/* ===== markedsnytt-listing ===== */
+/* mn-hero: the hero cols tucks 36px under the bank-choice band / breadcrumb (live .main > .breadcrumb + .cols { margin-top: -36px }) */
+main .section.mn-hero { margin-top: -36px; }
+/* mn: the Markedsnytt bands — live h3 is the medium face; text-wrapper lists: disc, ul 0 0 16, li 8 0 0 16 → 32 */
+main .section.mn h3 { font-family: var(--font-medium); }
+main .section.mn :is(.default-content-wrapper, .columns) ul { margin: 0 0 16px; padding: 0; list-style: disc; text-align: left; }
+main .section.mn :is(.default-content-wrapper, .columns) ul li { margin: 8px 0 0 16px; }
+/* cta-row: a centred CTA row (live grid-row--cols-6 col-md-12 .button-wrap--center: 8px margins, 16px col padding) */
+main .section.cta-row .default-content-wrapper:last-child { padding-bottom: 16px; text-align: center; }
+main .section.cta-row .default-content-wrapper p.button-wrapper { margin: 8px 0; }
+/* mn-flush: the news rail follows a band flush on live (canon adds 72px above .main > .related-topics) */
+main .section.related.mn-flush { margin-top: 0; }
+
+@media (width >= 768px) {
+  main .section.mn :is(.default-content-wrapper, .columns) ul { margin-left: 16px; }
+  main .section.mn :is(.default-content-wrapper, .columns) ul li { margin-left: 32px; }
+}
+/* head / split-video: a live band whose grid rows pair a text column with a YouTube embed is authored as two sections — the heading row
+   (head: no bottom padding) and the text + embed pairs as default content + auto-blocked embeds laid out by the section itself on the live
+   11-column grid (text cols 2–6, embed cols 7–11, 1173px, embed first in the DOM = the live mobile order, centred rows). */
+main .section.band.head, main .section.cols.head { padding-bottom: 0; }
+main .section.split-video { display: grid; grid-template-columns: minmax(0, 1fr) repeat(11, minmax(0, 106.67px)) minmax(0, 1fr); grid-auto-flow: row dense; align-items: center; padding-top: 0; }
+main .section.split-video > div { width: 100%; max-width: none; margin: 0; padding: 0 16px 16px; }
+main .section.split-video > .default-content-wrapper { grid-column: 3 / span 5; }
+main .section.split-video > .embed-wrapper { grid-column: 8 / span 5; }
+main .section.split-video .default-content-wrapper > :first-child { margin-top: 0; }
+main .section.split-video .default-content-wrapper p.button-wrapper { margin: 8px 0; }
+main .section.split-video .default-content-wrapper h3 + h3 { margin-top: 0; }
+@media (width <= 767px) {
+  main .section.split-video { display: block; }
+  main .section.split-video > div { padding: 0 8px 16px; }
+}
+/* ===== /markedsnytt-listing ===== */

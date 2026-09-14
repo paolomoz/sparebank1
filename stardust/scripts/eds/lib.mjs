@@ -63,7 +63,8 @@ export function mediaUrl(src, ctx) {
 
 export function imgHtml(img, ctx, { alt } = {}) {
   if (!img) return '';
-  const src = mediaUrl(bestSrc(img), ctx);
+  const raw = bestSrc(img); if (!raw || raw === 'null' || raw === 'undefined') { ctx?.notes?.push('image without a resolvable source dropped (lazy placeholder never resolved in the prototype — replica image handler)'); return ''; }
+  const src = mediaUrl(raw, ctx);
   const a = alt ?? img.getAttribute('alt') ?? '';
   // blog media the CDN refuses to serve to the ingester stays on the source origin: authored as an "Image:" link, turned into <img> by scripts.js
   if (isRemoteBlogMedia(src)) { const w = img.getAttribute('width'); const h = img.getAttribute('height'); return `<a href="${esc(src)}">Image${w && h ? ` ${w}×${h}` : ''}: ${esc(a || 'photo')}</a>`; } // dimensions reserve the box before load

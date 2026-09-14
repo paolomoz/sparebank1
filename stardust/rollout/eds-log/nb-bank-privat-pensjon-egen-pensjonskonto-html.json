@@ -135,6 +135,7 @@
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg is 860616 bytes of SVG (> 40000) — authored as DA media illustrasjon-sporsmal-sand-sirkel-usymmetrisk.png (rasterised)",
+  "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
@@ -144,5 +145,5 @@
   "https://www.sparebank1.no/content/dam/SB1/vedlegg/pensjon/bilder/avkastningsgraf-pensjon-2026.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg"
  ],
- "writtenAt": "2026-09-14T20:33:24.949Z"
+ "writtenAt": "2026-09-14T20:41:12.253Z"
 }

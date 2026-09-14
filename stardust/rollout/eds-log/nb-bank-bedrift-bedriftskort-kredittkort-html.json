@@ -92,13 +92,15 @@
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
   "price-terms: the overlay link targets its own module anchor on live (bank chooser dialog) — kept verbatim, no-op until the dialog dynamic exists",
+  "richtext small-text: the live paragraph is wrapped in span.subtle-text (14/20) — carried as a section token (no inline classes in David's Model)",
   "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)",
   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
   "lint D1 callout: the FFE message box (round glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+  "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:33:21.533Z"
+ "writtenAt": "2026-09-14T20:41:09.011Z"
 }

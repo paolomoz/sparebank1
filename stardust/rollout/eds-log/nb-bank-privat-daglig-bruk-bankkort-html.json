@@ -136,6 +136,7 @@
   "faq: a guide-carousel sits inside this answer on live — its slides are authored as prose (title, copy, screenshot); no nested blocks",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "faq: a columns-grid sits inside this answer on live — cells authored in order as prose (no nested blocks)",
+  "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
@@ -145,5 +146,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/pall.svg"
  ],
- "writtenAt": "2026-09-14T20:33:22.940Z"
+ "writtenAt": "2026-09-14T20:41:10.426Z"
 }

@@ -34,7 +34,7 @@
   {
    "module": "band",
    "blocks": [
-    "columns"
+    "embed"
    ]
   },
   {
@@ -58,7 +58,7 @@
   {
    "module": "cols",
    "blocks": [
-    "columns"
+    "embed"
    ]
   },
   {
@@ -69,7 +69,9 @@
   },
   {
    "module": "reference",
-   "blocks": []
+   "blocks": [
+    "columns"
+   ]
   }
  ],
  "blocks": [
@@ -77,15 +79,23 @@
   "breadcrumbs",
   "columns",
   "cards",
+  "embed",
   "feedback"
  ],
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
-  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  "lint D5 cards featured photo: the live featured article card (cover photo, h6 teaser, centred \"Les saken her\" button) — one row per card [photo][teaser + CTA]; not clickable on live, the button is the only link",
+  "video: the live YouTube embed is authored as its fully-qualified embed URL (link text = the video title) as default content; scripts.js auto-blocks it into `embed` (D1). Live shows the lazy placeholder image until the player scrolls in — permanent residual (brief)",
+  "cta: live ffe-button--shortcut (outline pill with arrow) authored as the secondary emphasis — the arrow glyph is block chrome the columns block does not add (residual)",
+  "lint D1 embed: the live text + YouTube rows are default content (embed link first = live mobile order, then the text); scripts.js auto-blocks the link into `embed`; the section style split-video lays the pairs on the live 11-column grid — no block holds a video URL",
+  "cards news: a news card carries its publication date as the paragraph after the title (live .card__date)",
+  "lint D1 embed: the live text + YouTube rows are default content (embed link first = live mobile order, then the text); scripts.js auto-blocks the link into `embed`; the section style split-video lays the pairs on the live 11-column grid — no block holds a video URL",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only",
+  "reference: the live block wraps a white band with two columns-grids (heading row + two text columns) — authored as that band section (gap-48 = the live 48/72 above)"
  ],
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T19:55:43.976Z"
+ "writtenAt": "2026-09-14T20:51:44.038Z"
 }

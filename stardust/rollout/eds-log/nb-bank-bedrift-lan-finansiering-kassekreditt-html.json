@@ -81,6 +81,7 @@
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-penger-sand-sirkel-usymmetrisk.svg is 1026451 bytes of SVG (> 40000) — authored as DA media illustrasjon-penger-sand-sirkel-usymmetrisk.png (rasterised)",
   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
+  "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
@@ -88,5 +89,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-penger-sand-sirkel-usymmetrisk.svg"
  ],
- "writtenAt": "2026-09-14T20:33:22.042Z"
+ "writtenAt": "2026-09-14T20:41:09.526Z"
 }

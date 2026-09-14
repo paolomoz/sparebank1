@@ -214,7 +214,8 @@
    featured — the live card--featured (stardust/prototypes/css/theme.css): a contain-fit illustration row (200px, 270px from 768; 8px side
    padding), a full richtext body (h2 at heading size, sub-lead paragraphs 17/24 → 18/28, checked list: bold link title + 14px note), no arrow,
    not clickable. */
-.cards.featured .card { grid-template-rows: 200px 1fr; border-radius: 16px; }
+.cards.featured .card { grid-template-rows: 200px 1fr; height: auto; border-radius: 16px; } /* height auto: the card sits on its 16px margin inside the grid row (100% would add the margin to the card) */
+.cards.flat .card { height: auto; } /* flat (theme card grids): same — live card--medium rows do not stretch the card by its margin */
 .cards.featured .card__media { height: auto; max-height: 200px; border-radius: 15px 15px 0 0; overflow: hidden; line-height: 24px; text-align: center; }
 .cards.featured .card__media p { margin: 0; }
 .cards.featured .card__media picture { display: inline; }
@@ -224,7 +225,7 @@
 .cards.featured .card__content { display: flow-root; }
 .cards.featured .card__content > :first-child { margin-top: 0; }
 .cards.featured .card__title { display: block; margin: 0 0 8px; font-family: var(--font-heading); font-size: var(--heading-font-size-xl); line-height: 28px; color: var(--fjell); }
-.cards.featured .card__text { margin: 16px 0 18px; font-size: 17px; line-height: 24px; color: var(--text); }
+.cards.featured .card__text { margin: 16px 0 17px; font-size: 17px; line-height: 24px; color: var(--text); } /* live span.sub-lead-left margin-bottom 1em = 17px mobile / 18px desktop */
 .cards.featured .card__text a:any-link { color: var(--vann); border-bottom: 1px solid var(--vann); }
 .cards.featured ul.card__text { margin: 0 0 16px; padding: 0; list-style: none; font-size: 14px; line-height: 24px; text-align: left; }
 .cards.featured ul.card__text li { position: relative; margin: 16px 0 0 32px; padding: 0; line-height: 24px; }
@@ -237,7 +238,7 @@
   .cards.featured .card__media { max-height: 270px; }
   .cards.featured .card__media img { height: 270px; max-height: 270px; }
   .cards.featured .card__title { margin-bottom: 24px; line-height: 44px; }
-  .cards.featured .card__text { font-size: 18px; line-height: 28px; }
+  .cards.featured .card__text { margin-bottom: 18px; font-size: 18px; line-height: 28px; }
   .cards.featured ul.card__text li > strong { font-size: 18px; line-height: 24px; }
 }
 /* ===== /theme / markedsnytt-listing ===== */
@@ -293,3 +294,23 @@
   .cards.listing li:has(> .card--headline) { width: 100%; }
 }
 /* ===== /news-listing ===== */
+
+/* ===== markedsnytt-listing (additive variants) =====
+   featured photo — the featured ARTICLE card (stardust/prototypes/css/markedsnytt-listing.css .card--featured): 200/270px cover photo,
+   h6 teaser 16/20 → 16/24 medium, centred "Les saken her" button; cols-9 — three cards in the live 9-column row (960px). */
+.cards.featured.photo .card__media { max-height: none; line-height: 0; text-align: left; }
+.cards.featured.photo .card__media picture, .cards.featured.photo .card__media img { display: block; width: 100%; height: 200px; max-height: none; padding: 0; object-fit: cover; object-position: 50% 50%; vertical-align: top; }
+.cards.featured.photo .card__title { margin: 16px 0 24px; font-family: var(--font-medium); font-size: 16px; line-height: 20px; color: var(--fjell); }
+.cards.featured.photo .card__text.button-wrapper { margin: 8px 0; text-align: center; }
+.cards.featured.photo .card__text.button-wrapper a.button { display: flex; width: 100%; justify-content: center; }
+
+@media (width >= 768px) {
+  .cards.featured.photo .card__media picture, .cards.featured.photo .card__media img { height: 270px; }
+  .cards.featured.photo .card__title { line-height: 24px; }
+  .cards.featured.photo .card__text.button-wrapper a.button { display: inline-flex; width: auto; }
+}
+
+@media (width >= 1024px) {
+  .cards.grid.cols-9 .card-list { grid-template-columns: repeat(3, 1fr); max-width: min(75%, 960px); }
+}
+/* ===== /markedsnytt-listing ===== */

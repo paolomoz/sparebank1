@@ -9,16 +9,20 @@
  "modules": [
   {
    "module": "story",
-   "blocks": []
+   "blocks": [
+    "story"
+   ]
   }
  ],
- "blocks": [],
- "notes": [],
- "gaps": [
-  "module story emitted as prose",
-  "no encoder for module story"
+ "blocks": [
+  "story"
  ],
+ "notes": [
+  "quote: the live bio-quote component is default content — portrait image paragraph + <blockquote> (quote, attribution); the \"Les mer om Eskil Angset, ansvarlig forva\" bio-modal trigger is client UI without captured content (dynamics) — not authored",
+  "template: news-article → campaign-landing (W5 _w5-template-fix.mjs — the live page is an sb1-story; roster misclassification filed in eds-requests.md)"
+ ],
+ "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:30:21.266Z"
+ "writtenAt": "2026-09-14T20:43:36.955Z"
 }

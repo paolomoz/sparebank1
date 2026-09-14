@@ -59,16 +59,18 @@ export function omBand(root, ctx, opts = {}) {
     if (opts.rowHook) { const r = opts.rowHook(row, cols, ctx); if (r) { parts.push(r.html); blocks.push(...r.blocks); return; } } // family hook (theme featured cards)
     const cards = cols.filter((c) => q(c, ':scope > .col__content > .card'));
     const grid = gridCols(row);
-    if (cards.length && cards.length === cols.length) { const span = (cls(cols[0]).find((c) => /^col-lg-\d+$/.test(c)) || 'col-lg-3').replace('col-', ''); parts.push(block('cards', ['grid', span, grid], cardRows(cols.map((c) => q(c, '.card')), ctx))); blocks.push('cards'); return; }
-    if (cols.length === 1 && /grid-row--cols-/.test(row.className)) { parts.push(richtext(q(cols[0], '.col__content'), ctx)); return; }
+    if (cards.length && cards.length === cols.length) { const span = (cls(cols[0]).find((c) => /^col-lg-\d+$/.test(c)) || 'col-lg-3').replace('col-', ''); parts.push(block('cards', ['grid', span, grid, opts.cardVariant], cardRows(cols.map((c) => q(c, '.card')), ctx))); blocks.push('cards'); return; }
+    if (cols.length === 1 && /grid-row--cols-/.test(row.className)) { const cc = q(cols[0], '.col__content'); if ([...cc.children].every((ch) => /\bbutton-(wrap|list)\b/.test(ch.getAttribute('class') || ''))) extraStyle = styleOf(extraStyle, 'cta-row'); parts.push(richtext(cc, ctx)); return; } // a centred heading / CTA row → default content
     const variants = cols.map((c) => { const k = cls(c); const span = (k.find((x) => /^col-lg-\d+$/.test(x)) || 'col-lg-12').replace('col-', ''); const off = k.find((x) => /^col-lg-offset-\d+$/.test(x)); const first = k.includes('col--first') ? 'first' : null; const align = (k.find((x) => /^col--(middle|center|bottom)$/.test(x)) || '').replace('col--', ''); return [span, off ? off.replace('col-lg-offset-', 'offset-') : null, first, align, illustrationWidth(c)].filter(Boolean).join('-'); });
-    const cells = cols.map((c) => richtext(q(c, ':scope > .col__content'), ctx));
+    if (opts.extraTokens) variants.push(...(opts.extraTokens(row, cols, ctx) || []).filter(Boolean)); // family cell tokens (video, stack-cta, expert …) — read BEFORE prepCol rewrites the cells
+    const cells = cols.map((c) => { opts.prepCol?.(c, ctx); return richtext(q(c, ':scope > .col__content'), ctx); });
     const lead = q(row, '.lead-blue'); if (lead) { const p = lead.closest('p'); const prev = p?.previousElementSibling; variants.push(prev && prev.tagName === 'H2' ? 'lead-2' : 'lead'); }
     if (q(row, '.subtle-text')) variants.push('subtle');
     if (cols.some((c) => illustrationWidth(c) && !/--ratio/.test(q(c, ':scope > .col__content > .image')?.getAttribute("style") || ''))) variants.push('baseline'); // live inline <picture> (7px tail)
     if (q(row, '.button-list')) variants.push('button-gap'); // live desktop 8px under each button
     const tmax = /--max:\s*(\d+)px/.exec(qa(row, '.col__content > .richtext').map((r) => r.getAttribute('style') || '').join(' '))?.[1]; if (tmax) variants.push(`text-${tmax}`); // live richtext--max text column
-    const ratio = /--ratio:\s*([\d.]+)\/([\d.]+)/.exec(qa(row, '.col__content > .image').map((i) => i.getAttribute('style') || '').join(' ')); if (ratio && Math.abs(ratio[1] / ratio[2] - 4 / 3) < 0.05) variants.push('media-4-3'); // live 4:3 photo (default model is 3:2)
+    const ratio = /--ratio:\s*([\d.]+)\/([\d.]+)/.exec(qa(row, '.col__content > .image').map((i) => i.getAttribute('style') || '').join(' ')); // live authored photo ratio → nearest cell model (3:2 is the default)
+    if (ratio) { const r = ratio[1] / ratio[2]; const near = [['4-3', 4 / 3], ['16-9', 16 / 9], ['2-1', 2], ['1-1', 1], ['5-8', 5 / 8], ['3-4', 3 / 4]].find(([, v]) => Math.abs(r / v - 1) < 0.04); if (near) variants.push(`media-${near[0]}`); }
     // an image-only column holding a non-ratio illustration WITHOUT an authored width (live: natural aspect at column width, inline picture) → media-plain + baseline
     if (cols.some((c) => { const im = q(c, ':scope > .col__content > .image'); const st = im?.getAttribute('style') || ''; return im && q(im, 'img') && !/--ratio/.test(st) && !/--w:/.test(st) && [...q(c, ':scope > .col__content').children].every((ch) => /\bimage\b/.test(ch.getAttribute('class') || '')); })) variants.push('media-plain', 'baseline');
     if (grid) { variants.push(grid); if (grid === 'cols-9') variants.push('flush'); }
@@ -86,7 +88,8 @@ export function omBand(root, ctx, opts = {}) {
     }
   };
   walk([...root.children]);
-  return { html: section(parts, { style: styleOf(extraStyle, tint) }), blocks: [...new Set(blocks)] };
+  const anchor = q(root, 'hr[id]')?.getAttribute('id') || null; // live in-page anchor (hr#artikler) → the section id
+  return { html: section(parts, { style: styleOf(extraStyle, tint), id: anchor }), blocks: [...new Set(blocks)] };
 }
 
 /** The presse split hero: one static slide → `carousel campaign reverse white lead` (same live component as the market-landing hero, D9). */

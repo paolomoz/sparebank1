@@ -103,10 +103,11 @@
   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
   "lint D1 callout: the FFE message box (round glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
   "callout tips lightbulb: the live message box is the `tips` kind (lightbulb glyph, sol ring, sand box) — carried as block variants",
+  "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:33:21.914Z"
+ "writtenAt": "2026-09-14T20:41:09.402Z"
 }

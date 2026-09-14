@@ -42,6 +42,7 @@
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "richtext main-lead: the live page lead (span.main-lead, 24/32 fjell centred) — carried as a section token",
   "cards people: the experts list (bio cards) — one row per expert [portrait][name h3, role, bio, \"Les mer om …\" link]; card-as-link via the trailing link (EW6)"
  ],
  "gaps": [
@@ -49,5 +50,5 @@
  ],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:33:22.551Z"
+ "writtenAt": "2026-09-14T20:51:32.202Z"
 }

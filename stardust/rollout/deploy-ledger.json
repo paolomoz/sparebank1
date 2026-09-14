@@ -1,17 +1,26 @@
 {
-  "/footer-2": {
+  "/nb/bank/bedrift/lan-finansiering": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T20:31:45.338Z",
-    "put": 201,
+    "ts": "2026-09-14T20:42:39.546Z",
+    "put": 200,
     "preview": 200,
     "live": 200,
     "verify": "ok"
   },
-  "/footer-bedrift": {
+  "/nb/bank/bedrift/regnskap": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T20:31:45.338Z",
+    "ts": "2026-09-14T20:42:39.546Z",
+    "put": 200,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/privat/private-banking": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T20:42:39.546Z",
     "put": 200,
     "preview": 200,
     "live": 200,

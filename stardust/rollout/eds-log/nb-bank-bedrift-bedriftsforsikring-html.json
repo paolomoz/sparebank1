@@ -1,0 +1,94 @@
+{
+ "slug": "nb-bank-bedrift-bedriftsforsikring-html",
+ "daPath": "/nb/bank/bedrift/bedriftsforsikring",
+ "file": "content/nb/bank/bedrift/bedriftsforsikring.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "button-list",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": []
+  },
+  {
+   "module": "banner-small",
+   "blocks": [
+    "banner"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "reference",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "columns",
+  "banner",
+  "cards",
+  "accordion",
+  "feedback"
+ ],
+ "notes": [
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/bonde-ku-landbruk-mork.svg is 56362 bytes of SVG (> 40000) — authored as DA media bonde-ku-landbruk-mork.png (rasterised)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "reference: on theme/markedsnytt pages the live reference block holds a tinted columns-grid (text + CTAs + image) — authored as the grid's columns block in a cols section, not as the small-print reference",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/bonde-ku-landbruk-mork.svg"
+ ],
+ "writtenAt": "2026-09-14T20:38:58.144Z"
+}

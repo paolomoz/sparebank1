@@ -9,30 +9,41 @@
  "modules": [
   {
    "module": "story",
-   "blocks": []
+   "blocks": [
+    "story"
+   ]
   }
  ],
- "blocks": [],
+ "blocks": [
+  "story"
+ ],
  "notes": [
+  "story slide: video authored as a link to the .mp4 (its text = the live title \"Kvinner som diskuterer\"); autoplay/muted/loop/controls + the fallback string are the block's chrome",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "story: unmodelled live component (sb1-story columns-noColor / columns-bgColor: figure + caption, pseudo-heading text, button group — the replica module carries it as a verbatim copy) emitted as default content; needs a live lift before production",
+  "story text: live <p><span class=\"h3\"> pseudo-heading → <h3> (site-wide ROLE SWAP rule)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "story: unmodelled live component (sb1-story columns-noColor / columns-bgColor: figure + caption, pseudo-heading text, button group — the replica module carries it as a verbatim copy) emitted as default content; needs a live lift before production",
+  "quote: the live bio-quote component is default content — portrait image paragraph + <blockquote> (quote, attribution); the \"Les mer om Gro Katarina Andorsen, daglig\" bio-modal trigger is client UI without captured content (dynamics) — not authored",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
+  "story: unmodelled live component (sb1-story columns-noColor / columns-bgColor: figure + caption, pseudo-heading text, button group — the replica module carries it as a verbatim copy) emitted as default content; needs a live lift before production",
+  "story text: live <p><span class=\"h3\"> pseudo-heading → <h3> (site-wide ROLE SWAP rule)",
+  "quote: the live bio-quote component is default content — portrait image paragraph + <blockquote> (quote, attribution); the \"Les mer om Nora Økland, senior bedriftsr\" bio-modal trigger is client UI without captured content (dynamics) — not authored",
+  "story slide: video authored as a link to the .mp4 (its text = the live title \"Kaffe som helles i kopp\"); autoplay/muted/loop/controls + the fallback string are the block's chrome",
+  "story text: live <p><span class=\"h3\"> pseudo-heading → <h3> (site-wide ROLE SWAP rule)",
+  "quote: the live bio-quote component is default content — portrait image paragraph + <blockquote> (quote, attribution); the \"Les mer om Gro Katarina Andorsen, daglig\" bio-modal trigger is client UI without captured content (dynamics) — not authored",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
-  "spacer: blank <p> dropped (live renders it as vertical space)",
-  "spacer: blank <p> dropped (live renders it as vertical space)",
-  "spacer: blank <p> dropped (live renders it as vertical space)",
-  "spacer: blank <p> dropped (live renders it as vertical space)",
-  "spacer: blank <p> dropped (live renders it as vertical space)",
-  "spacer: blank <p> dropped (live renders it as vertical space)",
-  "spacer: blank <p> dropped (live renders it as vertical space)"
+  "story: unmodelled live component (sb1-story columns-noColor / columns-bgColor: figure + caption, pseudo-heading text, button group — the replica module carries it as a verbatim copy) emitted as default content; needs a live lift before production",
+  "template: news-article → campaign-landing (W5 _w5-template-fix.mjs — the live page is an sb1-story; roster misclassification filed in eds-requests.md)"
  ],
- "gaps": [
-  "module story emitted as prose",
-  "no encoder for module story"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:30:20.437Z"
+ "writtenAt": "2026-09-14T20:43:36.790Z"
 }

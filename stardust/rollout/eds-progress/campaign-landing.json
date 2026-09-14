@@ -1,0 +1,89 @@
+{
+ "regime": "published-origin (local EDS emulation, stardust/scripts/eds/serve.mjs :3015, content/… + blocks) vs the cached live capture",
+ "at": "2026-09-14T20:45:32.414Z",
+ "worker": "W5",
+ "archetype": "nb-bank-om-oss-hjemme-html",
+ "document": "content/nb/bank/om-oss/hjemme.html",
+ "encoder": "stardust/scripts/eds/encoders/campaign-landing.mjs (key `story`; no core key overridden)",
+ "blocks": [
+  "story (NEW: one row per 900px media slide [video link | wide picture (+ mobile rendition)][heading · text · CTAs]; parallax background-attachment: fixed; fade-in on intersection)",
+  "header (header--frontend header--story header--no-bottom-links)",
+  "footer (footer--frontend)"
+ ],
+ "sections": [
+  "story-slides [, anchor-gap | after-slides | factbox-slot]",
+  "story-text [, center | after-slides]",
+  "story-image",
+  "story-button",
+  "section-metadata id = the live anchors (kontakt · blikunde · samfunn · anchor_…)"
+ ],
+ "chrome": {
+  "nav": "/nav-frontend-om-oss",
+  "footer": "/footer-frontend-om-oss (regenerated)"
+ },
+ "media": {
+  "rasterised": "Barn_som_turner_lys_bakgrunn.svg (44,336 B > 40 KB, pure vector) → DA media Barn_som_turner_lys_bakgrunn.png (1200×630@2x, uploaded, raster-ledger.json); svg-sizes.json entry added"
+ },
+ "iterations": 2,
+ "breakpoints": {
+  "360": {
+   "pixelPct": 5.49,
+   "heightDelta": 0,
+   "chromeHeaderPct": 0.31,
+   "chromeFooterPct": 0,
+   "pass": true,
+   "evidence": "stardust/replica/gates/hjemme-eds-360/ (pixel-iter1.txt, chrome-*.txt)"
+  },
+  "1440": {
+   "pixelPct": 0.9,
+   "heightDelta": 0,
+   "chromeHeaderPct": 0.45,
+   "chromeFooterPct": 0,
+   "pass": true,
+   "evidence": "stardust/replica/gates/hjemme-eds-1440/ (pixel-iter2.txt, chrome-*.txt, content-diff-iter1.txt, content-diff-live.txt)"
+  }
+ },
+ "contentDiff": {
+  "prototype": "1 🔴 ROLE SWAP \"Skal du flytte…\" (live <p><span class=\"h5\"> pseudo-heading → <h5>; site-wide justified class) · 2 🟠 EXTRA cta (the authored video links — hidden editable source of the <video>, their text = the live title)",
+  "live": "identical (1 live hit)"
+ },
+ "lint": "0 🔴 · 1 🟡 D4 authored SVG (pure vector, verified; rasterised for the 40 KB limit)",
+ "justified": [
+  {
+   "flag": "360 bands y5000–5500 23.9 % / y5500–6000 45.4 %",
+   "why": "second video slide (teater.mp4, autoplay + controls) — the captures land on different playback frames; surrounding rects match (known permanent residual)",
+   "permanent": true
+  },
+  {
+   "flag": "content-diff 🔴 ROLE SWAP .h5",
+   "why": "site-wide justified class: live pseudo-heading spans → heading at the visual rank (line boxes keep the paragraph strut 24/32)",
+   "permanent": true
+  },
+  {
+   "flag": "slide 2 paragraph left-aligned (live p.ta-center)",
+   "why": "David's Model carries no inline alignment; the other slides are left-aligned — 2 lines inside a 768px card",
+   "permanent": true
+  },
+  {
+   "flag": "anchors #blikunde / #samfunn",
+   "why": "two consecutive live anchors → one id per section: #blikunde on the illustration section, #samfunn on the heading section after it (target shifts by the illustration height)",
+   "permanent": true
+  }
+ ],
+ "fixesThisRound": [
+  "h5 pseudo-heading keeps the paragraph strut (24/32) — the page was −24px from the lead",
+  "bottom rhythm: the empty live factbox after the last section → `factbox-slot` (128px ≥768, 136px below) on that section, main padding 20px (page-driven, the story siblings have no factbox)",
+  "anchor ids queue forward onto the following sections"
+ ],
+ "siblings": {
+  "converted": 3,
+  "gaps": 0,
+  "lint": "0 🔴 (1 🟡 D1 on sikrer-seg-mot-vannlekkasje)",
+  "note": "the three sb1-story pages filed under news-article (see news-article ledger); template metadata → campaign-landing via _w5-template-fix.mjs. Their live `columns-noColor / columns-bgColor` components (figure + caption, pseudo-heading text, button group) and nested bio quotes are not modelled by the replica module (verbatim copies) → emitted as default content; a live lift is needed before production",
+  "eyeball": "bank-regnskap-nerderiket @1440: stardust/replica/gates/hjemme-eds-siblings/ (stitch + content-diff: 8 🔴 ROLE SWAP — all live pseudo-heading spans .h2/.h3, site-wide justified; 🟠 video titles, 🟡 bio-modal triggers)"
+ },
+ "productRegression": {
+  "docByteIdentical": true,
+  "pixelPct1440": 0.65
+ }
+}

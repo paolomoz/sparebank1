@@ -34,7 +34,7 @@ const figureHtml = (fig, ctx) => { const img = q(fig, 'img'); const cap = q(fig,
 
 /** The live `quote` component (bio quote: portrait, quote text, name, a "Les mer om …" bio-modal button) → default content:
  *  the portrait as an image paragraph, then a <blockquote> with the quote and the attribution paragraphs. */
-function quoteHtml(node, ctx) {
+export function quoteHtml(node, ctx) {
   const bq = q(node, 'blockquote') || node; const img = q(bq, 'img');
   const spans = qa(bq, 'span').filter((sp) => txt(sp) && !sp.closest('figure') && !qa(sp, 'span').length);
   const [quote, ...rest] = spans.length ? spans : [null];

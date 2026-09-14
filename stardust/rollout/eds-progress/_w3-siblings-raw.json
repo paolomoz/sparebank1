@@ -27,7 +27,9 @@
   },
   "notes": [
    "price-terms: the overlay link targets its own module anchor on live (bank chooser dialog) — kept verbatim, no-op until the dialog dynamic exists",
-   "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)"
+   "richtext small-text: the live paragraph is wrapped in span.subtle-text (14/20) — carried as a section token (no inline classes in David's Model)",
+   "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)",
+   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
    "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
@@ -142,7 +144,8 @@
    ]
   },
   "notes": [
-   "callout tips lightbulb: the live message box is the `tips` kind (lightbulb glyph, sol ring, sand box) — carried as block variants"
+   "callout tips lightbulb: the live message box is the `tips` kind (lightbulb glyph, sol ring, sand box) — carried as block variants",
+   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
    "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
@@ -178,7 +181,8 @@
    ]
   },
   "notes": [
-   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-penger-sand-sirkel-usymmetrisk.svg is 1026451 bytes of SVG (> 40000) — authored as DA media illustrasjon-penger-sand-sirkel-usymmetrisk.png (rasterised)"
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-penger-sand-sirkel-usymmetrisk.svg is 1026451 bytes of SVG (> 40000) — authored as DA media illustrasjon-penger-sand-sirkel-usymmetrisk.png (rasterised)",
+   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
    "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
@@ -273,7 +277,8 @@
    ]
   },
   "notes": [
-   "spacer: blank <p> dropped (live renders it as vertical space)"
+   "spacer: blank <p> dropped (live renders it as vertical space)",
+   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
    "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
@@ -407,7 +412,7 @@
     "🟡 D1 content/nb/bank/privat/daglig-bruk/bankkort.html: section (unnamed) → block \"usp\": single-column, 3-row block holding only prose elements — default-conten",
     "🟡 D1 content/nb/bank/privat/daglig-bruk/bankkort.html: section (unnamed) → block \"shortcuts\": single-column, 1-row block holding only prose elements — default-",
     "🟡 D1 content/nb/bank/privat/daglig-bruk/bankkort.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — default-c",
-    "🟡 D4 content/nb/bank/privat/daglig-bruk/bankkort.html: 12 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s th"
+    "🟡 D4 content/nb/bank/privat/daglig-bruk/bankkort.html: 18 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s th"
    ]
   },
   "notes": [
@@ -420,7 +425,8 @@
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "faq: a guide-carousel sits inside this answer on live — its slides are authored as prose (title, copy, screenshot); no nested blocks",
    "spacer: blank <p> dropped (live renders it as vertical space)",
-   "faq: a columns-grid sits inside this answer on live — cells authored in order as prose (no nested blocks)"
+   "faq: a columns-grid sits inside this answer on live — cells authored in order as prose (no nested blocks)",
+   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
    "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
@@ -495,14 +501,15 @@
     "🟡 D3 content/nb/bank/privat/daglig-bruk/mobilbank.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structure",
     "🟡 D1 content/nb/bank/privat/daglig-bruk/mobilbank.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — defau",
     "🟡 D1 content/nb/bank/privat/daglig-bruk/mobilbank.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — default-",
-    "🟡 D4 content/nb/bank/privat/daglig-bruk/mobilbank.html: 9 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s th"
+    "🟡 D4 content/nb/bank/privat/daglig-bruk/mobilbank.html: 12 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s t"
    ]
   },
   "notes": [
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/pengene-vokser-dame-mater-fisk-lys-bakgrunn.svg is 320828 bytes of SVG (> 40000) — authored as DA media pengene-vokser-dame-mater-fisk-lys-bakgrunn.png (rasterised)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg is 69217 bytes of SVG (> 40000) — authored as DA media mann-bil-tre.png (rasterised)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2025/ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.svg is 55304 bytes of SVG (> 40000) — authored as DA media ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.png (rasterised)",
-   "spacer: blank <p> dropped (live renders it as vertical space)"
+   "spacer: blank <p> dropped (live renders it as vertical space)",
+   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
    "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
@@ -533,7 +540,7 @@
     "🟡 D1 content/nb/bank/privat/forsikring/barneforsikring.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — ",
     "🟡 D1 content/nb/bank/privat/forsikring/barneforsikring.html: section (unnamed) → block \"callout\": single-column, 1-row block holding only prose elements — defa",
     "🟡 D1 content/nb/bank/privat/forsikring/barneforsikring.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — def",
-    "🟡 D4 content/nb/bank/privat/forsikring/barneforsikring.html: 3 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 40"
+    "🟡 D4 content/nb/bank/privat/forsikring/barneforsikring.html: 6 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 40"
    ]
   },
   "notes": [
@@ -542,7 +549,8 @@
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
-   "spacer: blank <p> dropped (live renders it as vertical space)"
+   "spacer: blank <p> dropped (live renders it as vertical space)",
+   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
    "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
@@ -571,17 +579,20 @@
    "yellows": [
     "🟡 D1 content/nb/bank/privat/forsikring/bilforsikring.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — de",
     "🟡 D1 content/nb/bank/privat/forsikring/bilforsikring.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — defau",
-    "🟡 D4 content/nb/bank/privat/forsikring/bilforsikring.html: 6 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s"
+    "🟡 D4 content/nb/bank/privat/forsikring/bilforsikring.html: 11 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409"
    ]
   },
   "notes": [
+   "richtext small-text: the live paragraph is wrapped in span.subtle-text (14/20) — carried as a section token (no inline classes in David's Model)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-dame-sand-sirkel-usymmetrisk.svg is 1012845 bytes of SVG (> 40000) — authored as DA media illustrasjon-dame-sand-sirkel-usymmetrisk.png (rasterised)",
+   "richtext small-text: the live paragraph is wrapped in span.subtle-text (14/20) — carried as a section token (no inline classes in David's Model)",
    "faq: a coverage comparison table sits inside this answer on live — flattened to default content (feature, covered-by list, details); a table/block cannot nest inside an accordion row",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
-   "spacer: blank <p> dropped (live renders it as vertical space)"
+   "spacer: blank <p> dropped (live renders it as vertical space)",
+   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
    "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
@@ -609,7 +620,7 @@
     "🟡 D1 content/nb/bank/privat/forsikring/innboforsikring.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — ",
     "🟡 D1 content/nb/bank/privat/forsikring/innboforsikring.html: section (unnamed) → block \"usp\": single-column, 3-row block holding only prose elements — default-",
     "🟡 D1 content/nb/bank/privat/forsikring/innboforsikring.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — def",
-    "🟡 D4 content/nb/bank/privat/forsikring/innboforsikring.html: 3 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 40"
+    "🟡 D4 content/nb/bank/privat/forsikring/innboforsikring.html: 7 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 40"
    ]
   },
   "notes": [
@@ -620,7 +631,8 @@
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
-   "spacer: blank <p> dropped (live renders it as vertical space)"
+   "spacer: blank <p> dropped (live renders it as vertical space)",
+   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
    "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
@@ -675,7 +687,7 @@
     "🟡 D1 content/nb/bank/privat/forsikring/reiseforsikring.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — ",
     "🟡 D1 content/nb/bank/privat/forsikring/reiseforsikring.html: section (unnamed) → block \"callout\": single-column, 1-row block holding only prose elements — defa",
     "🟡 D1 content/nb/bank/privat/forsikring/reiseforsikring.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — def",
-    "🟡 D4 content/nb/bank/privat/forsikring/reiseforsikring.html: 2 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 40"
+    "🟡 D4 content/nb/bank/privat/forsikring/reiseforsikring.html: 6 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 40"
    ]
   },
   "notes": [
@@ -695,7 +707,8 @@
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
-   "spacer: blank <p> dropped (live renders it as vertical space)"
+   "spacer: blank <p> dropped (live renders it as vertical space)",
+   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
    "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
@@ -731,7 +744,8 @@
    ]
   },
   "notes": [
-   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-penger-sand-sirkel-usymmetrisk.svg is 1026451 bytes of SVG (> 40000) — authored as DA media illustrasjon-penger-sand-sirkel-usymmetrisk.png (rasterised)"
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-penger-sand-sirkel-usymmetrisk.svg is 1026451 bytes of SVG (> 40000) — authored as DA media illustrasjon-penger-sand-sirkel-usymmetrisk.png (rasterised)",
+   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
    "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
@@ -764,12 +778,13 @@
     "🟡 D1 content/nb/bank/privat/lan/billan.html: section (unnamed) → block \"usp\": single-column, 3-row block holding only prose elements — default-content candidat",
     "🟡 D1 content/nb/bank/privat/lan/billan.html: section (unnamed) → block \"shortcuts\": single-column, 1-row block holding only prose elements — default-content ca",
     "🟡 D1 content/nb/bank/privat/lan/billan.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — default-content can",
-    "🟡 D4 content/nb/bank/privat/lan/billan.html: 5 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s the whole pag"
+    "🟡 D4 content/nb/bank/privat/lan/billan.html: 11 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s the whole pa"
    ]
   },
   "notes": [
    "price-terms: the overlay link targets its own module anchor on live (bank chooser dialog) — kept verbatim, no-op until the dialog dynamic exists",
-   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg is 69217 bytes of SVG (> 40000) — authored as DA media mann-bil-tre.png (rasterised)"
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg is 69217 bytes of SVG (> 40000) — authored as DA media mann-bil-tre.png (rasterised)",
+   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
    "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
@@ -808,6 +823,8 @@
    ]
   },
   "notes": [
+   "richtext small-text: the live paragraph is wrapped in span.subtle-text (14/20) — carried as a section token (no inline classes in David's Model)",
+   "richtext after-spacer-1: 1 trailing empty author paragraph(s) reserve 40px each on live; the pipeline drops empty paragraphs",
    "callout tips lightbulb: the live message box is the `tips` kind (lightbulb glyph, sol ring, sand box) — carried as block variants",
    "calculator: static snapshot served from /data/calculator/privat-lan-forbrukslan.html (dynamics #7 interim — computation disabled until the API is exposed)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
@@ -837,15 +854,17 @@
   ],
   "lint": {
    "red": 0,
-   "yellow": 2,
+   "yellow": 3,
    "reds": [],
    "yellows": [
     "🟡 D3 content/nb/bank/privat/lan/gronne-lan.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structure; align",
-    "🟡 D1 content/nb/bank/privat/lan/gronne-lan.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — default-cont"
+    "🟡 D1 content/nb/bank/privat/lan/gronne-lan.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — default-cont",
+    "🟡 D4 content/nb/bank/privat/lan/gronne-lan.html: 6 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s the whole"
    ]
   },
   "notes": [
-   "cards nav: 3 visual-nav modules (3 photo, 0 icon) folded into one block — one row per card"
+   "cards nav: 3 visual-nav modules (3 photo, 0 icon) folded into one block — one row per card",
+   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
    "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
@@ -959,7 +978,8 @@
    "media: https://www.sparebank1.no/content/dam/SB1/vedlegg/pensjon/bilder/avkastningsgraf-pensjon-2026.svg is 242396 bytes of SVG (> 40000) — authored as DA media avkastningsgraf-pensjon-2026.png (rasterised)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
-   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg is 860616 bytes of SVG (> 40000) — authored as DA media illustrasjon-sporsmal-sand-sirkel-usymmetrisk.png (rasterised)"
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg is 860616 bytes of SVG (> 40000) — authored as DA media illustrasjon-sporsmal-sand-sirkel-usymmetrisk.png (rasterised)",
+   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
    "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
@@ -991,12 +1011,13 @@
     "🟡 D3 content/nb/bank/privat/sparing/spare-i-fond.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structure;",
     "🟡 D1 content/nb/bank/privat/sparing/spare-i-fond.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — defaul",
     "🟡 D1 content/nb/bank/privat/sparing/spare-i-fond.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — default-c",
-    "🟡 D4 content/nb/bank/privat/sparing/spare-i-fond.html: 1 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s the"
+    "🟡 D4 content/nb/bank/privat/sparing/spare-i-fond.html: 3 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s the"
    ]
   },
   "notes": [
    "media: https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/girls-just-want-to-have-fond-med-ameline-usymmetrisk-.svg is 1019801 bytes of SVG (> 40000) — authored as DA media girls-just-want-to-have-fond-med-ameline-usymmetrisk-.png (rasterised)",
-   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2023/dame-star-pa-penger-spare-fond.svg is 51791 bytes of SVG (> 40000) — authored as DA media dame-star-pa-penger-spare-fond.png (rasterised)"
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2023/dame-star-pa-penger-spare-fond.svg is 51791 bytes of SVG (> 40000) — authored as DA media dame-star-pa-penger-spare-fond.png (rasterised)",
+   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
    "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",

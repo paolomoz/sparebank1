@@ -69,7 +69,8 @@ function sectionList(node, ctx) {
     it.append(b, content); list.append(it); if (isActive) active = content;
   }
   const detail = el('div', { class: 'seclist__detail' }); if (active) for (const ch of active.children) detail.append(ch.cloneNode(true));
-  const body = el('div', { class: 'seclist__body' }, [list, detail]);
+  const minH = (node.querySelector('.section__content')?.getAttribute('style') || '').match(/min-height:\s*(\d+px)/);
+  const body = el('div', { class: 'seclist__body', style: minH ? `--min:${minH[1]}` : null }, [list, detail]);
   if (!small && pic) grid.append(el('div', { class: 'seclist__side' }, [pic]));
   grid.append(el('div', { class: 'seclist__main' }, [header, body])); s.append(grid);
   ctx.log.notes.push(`section: master/detail list (${small ? 'small-img' : 'layout2'}) — static snapshot, item 1 active (product.js switches items)`);
@@ -228,6 +229,15 @@ export default {
   // registry is consulted under the empty key): header (title + sub-lead, with a side illustration [layout2] or a small round one [small-img])
   // and a list of section-items whose active content shows in a detail panel (desktop) / inline (mobile). Static snapshot: item 1 active.
   '': (node, ctx) => (node.classList.contains('section') && node.querySelector(':scope > .section__wrapper') ? sectionList(node, ctx) : null),
+
+  // text — the built-in richtext copy, plus (product family only) the live lead faces cleanCopy drops: span.main-lead / span.sub-lead are re-tagged in document order
+  text: (node, ctx) => {
+    const rt = ctx.richtext(node, node.classList.contains('prices__bottom-info') ? 'prices__bottom' : '');
+    if (ctx.family !== FAMILY) return rt;
+    const src = [...(node.querySelector('.text-wrapper') || node).querySelectorAll('span')]; const out = [...rt.querySelectorAll('span')];
+    src.forEach((sp, i) => { const m = (sp.getAttribute('class') || '').match(/\b(main-lead|sub-lead|sub-lead-left|lead)\b/); if (m && out[i]) out[i].setAttribute('class', ((out[i].getAttribute('class') || '') + ' ' + (m[1] === 'sub-lead-left' ? 'sub-lead' : m[1])).trim()); });
+    return rt;
+  },
 
   // empty live placeholders — nothing to author
   columns: (node, ctx) => { if (node.children.length === 0 && !ctx.txt(node)) { ctx.log.notes.push('columns: empty live placeholder omitted'); return null; } return ctx.richtext(node); },

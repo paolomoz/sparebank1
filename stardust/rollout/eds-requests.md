@@ -128,3 +128,49 @@ Also from the sibling round: `author.mjs` unknown modules `progressive-disclosur
 `serve.mjs` (and the DA pipeline) emit `width/height` from the file, so a rasterised illustration that is not sized by CSS renders at
 twice its live size (e.g. `samtale-2` 763×382 → constrained only by the W1 `wN` cell model). Request: rasterise at 1× (or emit the
 1× width/height attributes) so prose-placed illustrations keep their live size.
+9. **`cards` `height: 100%` + `margin-bottom: 16px` inside a grid cell grows the card by its margin** (W1 patched `cols-8` with
+   `height: auto`; W4 `featured`/`flat`). Live card--medium rows do not stretch; consider `height: auto` as the grid default (check boliglan).
+10. **gateCore re-entry**: a family handler installed on the core map must capture the original BEFORE gating and never call `CORE[key]`
+    inside (theme.mjs reference recursed). If the loader is fixed per-family (#1), the pattern disappears.
+11. **`lib.mjs inline()` change of 22:32 (`<br>` moved outside `<b>/<strong>`) changed content/nb/bank/privat/lan/boliglan.html** (33 lines).
+    W4's product regression baseline was taken before it; the new document is byte-identical with the W4 encoders removed. Whoever made
+    the change should re-run the boliglan document/pixel gate and refresh the product baseline.
+12. **`cards static` has no rules** (`static-cards` → `cards static`, emitted by the core cardList for theme/hub siblings): renders as bordered
+    medium cards; the prototypes show borderless image + title rows. No lifted values exist (canon.css has none) — needs a lift on a page that
+    carries it (hvilke-forsikringer-trenger-man, netthandel-kredittkort).
+13. **Prototype-side**: only market-landing.css consumes the authored `--w` on `.image`; the theme/om-oss prototypes render such illustrations at
+    column width (netthandel credit-card illustration) while EDS follows the authored width — the sibling prototypes are not gated, so the EDS
+    reading (authored width) is kept; worth a note for whoever re-gates a sibling against live.
+
+## W5 (news-article · news-listing · campaign-landing — the nettsider-frontend families) — 2026-09-14
+
+Each item is mirrored locally (encoders/{news-article,news-listing,campaign-landing}.mjs, `_w5-chrome.mjs`, `_w5-template-fix.mjs`); the
+canon-level change is requested here, not applied. Product page byte-identical, 0.65 % at 1440.
+
+1. **Roster misclassification (BLOCKING for three documents on a `convert.mjs --all` run).** `_page-types.json` / state.json file
+   `nb-bank-om-oss-nyheter-bank-regnskap-nerderiket-html`, `nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html`
+   and `nb-bank-privat-sparing-markedsnytt-artikler-kan-utviklingen-til-teknologifondene-fortsette-videre-i-samme-tempo-html` under **news-article**,
+   but their sidecars are `sb1-story__body` pages (story header, no `.sb1-article`) — the replica author.mjs itself picks the campaign-landing module for
+   them. convert.mjs dispatches by module root so the story encoder converts them, but `metadataBlock()` writes `template: news-article` from
+   `pg.archetypeFamily`, which would render the article card layout + article header. W5 rewrites the row to `campaign-landing` with
+   `stardust/scripts/eds/_w5-template-fix.mjs` (idempotent; run after any reconversion). Request: reclassify the three pages as campaign-landing
+   (or derive `template` from the prototype's module root / let a family encoder override metadata rows).
+2. **chrome.mjs would regress the frontend chrome documents on a rerun.** It ran (17:04Z) before the frontend prototypes were finalised (20:05Z):
+   `/footer-frontend-om-oss` was an empty `columns` section, no footer carried the frontend address line (`.footer__info`, not `.footer__address`),
+   `/nav-om-oss` (the listing's nav per chrome-map) lacked Søk / Bli kunde, the frontend CTA is a `<button>` (href ""), and `/content/sites/sb1/…`
+   hrefs were kept (bounce to an AEM resource path). `_w5-chrome.mjs` regenerates `/nav-om-oss`, `/nav-frontend-om-oss{,-2}`, `/footer-frontend-om-oss{,-2}`
+   from the current prototypes. Request: fold into chrome.mjs — `q(footer, '.footer__address, .footer__info')`, the search label from
+   `.header__search-text`, a CTA href fallback (`/nb/bank/privat/kundeservice/bestill/bli-kunde`), and the `/content/sites/sb1` normalisation (= W1 #4).
+3. **chrome-map lists archetypes only**: the six privat/om-oss article siblings and the three story siblings take `/nav` + `/footer` via the
+   header.js/footer.js fallback — the frontend variant renders, but with the privat link columns ("Privat" instead of "Snarveier"). Request: map
+   frontend-template siblings to `/nav-frontend-*` / `/footer-frontend-*` (or extend the fallback on `template` ∈ frontend set).
+4. **`_pm-svg-scan.mjs` missed an oversize authored SVG**: `…/illustrasjoner/komposisjoner/2025/Barn_som_turner_lys_bakgrunn.svg` on hjemme is
+   44,336 B (> 40 KB, pure vector). W5 added the svg-sizes.json entry, rasterised + uploaded (`raster-ledger.json`) and copied the PNG to
+   `stardust/prototypes/assets/img/` for the emulation (serve.mjs has no `stardust/rollout/raster/` fallback — same as W1 #7).
+5. **`lib.href` and `/content/sites/sb1` paths** — same as W1 #4; mirrored as `href()` in encoders/news-article.mjs (shared by the three family files).
+6. **content-diff on frontend pages**: live nests header/footer inside `<main>`; the working scope for live ↔ EDS is
+   `--main ".sb1-article, main:not(:has(header))"` (resp. `.sb1-articles__content`, `.sb1-story__body`). Worth a note in the brief.
+7. (observation) `serve.mjs`: after the 20:40Z single-paragraph-cell unwrapping, blocks must accept a bare `<picture>` in a media cell (cards.js,
+   hero.js, story.js do); restart running emulations — a stale server produced a false 48 % first gate on the listing.
+8. (observation) No `stardust/replica/justified/` directory exists, so gate.mjs cannot consume the site-wide justified classes (ROLE SWAP for
+   pseudo-heading spans, MISSING CTA for lenker.sparebank1.no). The ledgers carry them verbatim.

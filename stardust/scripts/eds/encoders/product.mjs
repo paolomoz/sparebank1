@@ -24,6 +24,7 @@
 import fs from 'node:fs';
 import * as L from '../lib.mjs';
 import { ENCODERS as CORE, richtext, cardRows, bannerSmall, bandBg, bgToken, styleOf } from '../encoders.mjs';
+import { hubRelated } from './category-hub.mjs';
 
 const { section, block, heading, q, qa, cls, esc, inline, pic, href, ctaHtml } = L;
 
@@ -134,10 +135,16 @@ function gridRow(row, ctx) {
   const cards = cols.filter((c) => q(c, ':scope > .col__content > .card'));
   if (cards.length && cards.length === cols.length) { const span = (cls(cols[0]).find((c) => /^col-lg-\d+$/.test(c)) || 'col-lg-3').replace('col-', ''); return { parts: [block('cards', ['grid', span], cardRows(cols.map((c) => q(c, '.card')), ctx))], blocks: ['cards'], after }; }
   if (cols.length === 1 && /grid-row--cols-/.test(row.className)) { const n = (/grid-row--cols-(\d+)/.exec(row.className) || [])[1]; return { parts: [richtext(q(cols[0], '.col__content'), ctx)], blocks: [], after, style: n && n !== '12' ? `head-w${n}` : null }; }
-  const illo = (c) => { const cc = q(c, ':scope > .col__content'); if (!cc) return null; const kids = [...cc.children]; if (!kids.length || !kids.every((k) => /\bimage\b/.test(k.className))) return null; const src = q(cc, 'img')?.getAttribute('src') || ''; if (!/\.svg(\?|$)/i.test(src)) return null; const m = /--w:\s*(\d+)px/.exec(q(cc, '.image')?.getAttribute('style') || ''); return `w${m ? m[1] : 400}`; };
+  // image-only cell model tokens (columns.js parses them additively): wN = authored max-width · hN = authored fixed height (letterboxed SVG) ·
+  // natural = a bare img (logo) at its intrinsic size · rAxB = a photo with an authored aspect ratio other than the core 3:2 crop
+  const illo = (c) => { const cc = q(c, ':scope > .col__content'); if (!cc) return null; const kids = [...cc.children]; if (kids.length === 1 && /\bvideo\b/.test(kids[0].className)) { ctx.notes.push('columns video: the live cell is a YouTube embed (poster + lazy iframe) — authored as its poster image in a 16:9 cell (the embed is a dynamics request)'); return 'r16x9-video'; } if (!kids.length || !kids.every((k) => /\bimage\b/.test(k.className))) return null; const im = q(cc, '.image'); const st = im?.getAttribute('style') || ''; const src = q(cc, 'img')?.getAttribute('src') || ''; const w = /--w:\s*(\d+)px/.exec(st); const h = /--h:\s*(\d+)px/.exec(st); const r = /--ratio:\s*([\d.]+)\/([\d.]+)/.exec(st); const svg = /\.svg(\?|$)/i.test(src); const toks = []; if (w) toks.push(`w${w[1]}`); if (h) toks.push(`h${h[1]}`); if (r) { const a = Math.round(+r[1]), b = Math.round(+r[2]); if (Math.abs(a / b - 1.5) > 0.02) toks.push(`r${a}x${b}`); } if (!toks.length && (svg || !r)) toks.push(svg && !r ? 'natural' : 'natural'); return toks.join('-') || null; };
   const variants = cols.map((c) => { const k = cls(c); const span = (k.find((x) => /^col-lg-\d+$/.test(x)) || 'col-lg-12').replace('col-', ''); const off = k.find((x) => /^col-lg-offset-\d+$/.test(x)); const first = k.includes('col--first') ? 'first' : null; const align = (k.find((x) => /^col--(middle|center|bottom)$/.test(x)) || '').replace('col--', ''); return [span, off ? off.replace('col-lg-offset-', 'offset-') : null, first, align, illo(c)].filter(Boolean).join('-'); });
   // photo cells: every column opens with a rounded photo followed by text (the live 4-up "reasons" grid) → the block keeps the 30px radius / 3:2 crop
-  if (cols.length > 1 && cols.every((c) => { const cc = q(c, ':scope > .col__content'); return cc && cc.children.length > 1 && /\bimage--rounded\b/.test(cc.children[0].className); })) variants.push('photo-cells');
+  const firstImg = (c) => { const cc = q(c, ':scope > .col__content'); return cc && cc.children.length > 1 && /\bimage\b/.test(cc.children[0].className) ? cc.children[0] : null; };
+  if (cols.length > 1 && cols.every((c) => { const im = firstImg(c); return im && /--ratio/.test(im.getAttribute('style') || ''); })) variants.push('photo-cells');
+  // illustration cells: every column opens with a fixed-height SVG illustration (live img style="width:100%;height:Npx") followed by text
+  const hs = cols.map((c) => { const im = firstImg(c); const m = im && /--h:\s*(\d+)px/.exec(im.getAttribute('style') || ''); return m ? m[1] : null; });
+  if (cols.length > 1 && hs.every(Boolean)) variants.push('illo-cells', `h${hs[0]}`);
   const cells = cols.map((c) => {
     const cc = q(c, ':scope > .col__content'); if (!cc) return ''; fixPlaceholderHrefs(cc, ctx);
     for (const m of qa(cc, ':scope > .price-terms, :scope > .disclosure')) { const enc = m.classList.contains('price-terms') ? priceTerms : disclosure; const r = enc(m, ctx, { inline: true }); after.push(r.html); blocks.push(...r.blocks); m.remove(); ctx.notes.push(`${m.classList[0]}: authored inside a columns-grid column on live — a columns cell cannot hold a block, so it follows the columns block as a sibling (layout stacks; content complete)`); }
@@ -225,7 +232,25 @@ const ENC_INLINE = { 'price-terms': priceTerms, disclosure, steps, 'accordion-mo
 const hasNew = (root) => !!q(root, NEW_KINDS);
 
 // family-gated wrappers installed on the CORE map (see header): the original core encoders stay the fallback for every other page
-const coreBand = CORE.band, coreCols = CORE.cols, coreFaq = CORE.faq, coreTip = CORE.tip, coreModule = CORE.module, coreReference = CORE.reference, coreCalculator = CORE.calculator;
+const coreBand = CORE.band, coreCols = CORE.cols, coreFaq = CORE.faq, coreTip = CORE.tip, coreModule = CORE.module, coreReference = CORE.reference, coreCalculator = CORE.calculator, coreRelated = CORE['related-products'], coreBanner = CORE['banner-small'], coreRichtext = CORE.richtext;
+/** the hub-style related-products (icon card list — category-hub.mjs authors it on every family) → heading + `cards small`; the core reads .newsfeed cards only (0 rows = silent content loss) */
+function productRelated(root, ctx, opts) {
+  if (!isProductSibling(ctx) || !q(root, '.card-list')) return coreRelated(root, ctx, opts);
+  const r = hubRelated(root, ctx); ctx.notes.push('related-products: the live icon-card list ("Se også") → heading + cards small (hub model); the core newsfeed reader would drop the cards');
+  return { html: opts?.inline ? r.parts.join('') : section(r.parts, { style: styleOf('related', 'related-icons', tintOf(root)) }), blocks: r.blocks };
+}
+/** top-level page text on product siblings: a small-print paragraph (every text node inside .subtle-text → 14/20) and trailing empty author spacers (dropped by the pipeline → padding token) */
+function productRichtext(root, ctx, opts) {
+  const r = coreRichtext(root, ctx, opts); if (!r || !isProductSibling(ctx) || opts?.inline) return r;
+  const ps = qa(root, ':scope > p'); const empty = ps.filter((p) => !p.textContent.trim() && !q(p, 'img')).length; const textPs = ps.filter((p) => p.textContent.trim());
+  const small = textPs.length && textPs.every((p) => { const t = p.textContent.trim(); const sub = qa(p, '.subtle-text').map((x) => x.textContent.trim()).join(' '); return sub && sub.replace(/\s+/g, ' ') === t.replace(/\s+/g, ' '); });
+  const afterTitle = root.previousElementSibling?.classList.contains('title'); const lead = !!q(root, '.main-lead') || (afterTitle && !!q(root, ':scope > p:first-child > span:only-child > span'));
+  if (lead) ctx.notes.push('richtext main-lead: the live page lead (span.main-lead, 24/32 fjell centred) — carried as a section token');
+  if (afterTitle) r.html = r.html.replace('center, narrow, gap-72', 'center, narrow, gap-24');
+  const add = [small ? 'small-text' : null, lead ? 'main-lead' : null, empty ? `after-spacer-${Math.min(empty, 2)}` : null].filter(Boolean).join(', ');
+  if (add) { r.html = r.html.replace(/(<div class="section-metadata"><div><div>style<\/div><div>)([^<]*)/, (m, a, v) => `${a}${v}, ${add}`); if (small) ctx.notes.push('richtext small-text: the live paragraph is wrapped in span.subtle-text (14/20) — carried as a section token (no inline classes in David\'s Model)'); if (empty) ctx.notes.push(`richtext after-spacer-${Math.min(empty, 2)}: ${empty} trailing empty author paragraph(s) reserve 40px each on live; the pipeline drops empty paragraphs`); }
+  return r;
+}
 const wrapped = {
   // top-level image / CTA modules: tool.mjs owns the `image` and `button-wrap` keys (family-gated → null off its family) and convert.mjs then falls back to `module`
   module: (root, ctx, opts) => { if (isProductSibling(ctx) && root.parentElement?.tagName === 'MAIN') { if (root.classList.contains('image')) { const r = topImage(root, ctx); if (r) return r; } if (root.classList.contains('button-wrap')) { const r = topCta(root, ctx); if (r) return r; } } return coreModule(root, ctx, opts); },
@@ -236,6 +261,10 @@ const wrapped = {
   // calculator: the core labels every snapshot "Boliglånskalkulator"; the product siblings name theirs by product
   calculator: (root, ctx, opts) => { const r = coreCalculator(root, ctx, opts); if (r && isProductSibling(ctx)) { const label = /forbrukslan/.test(ctx.slug) ? 'Forbrukslånskalkulator' : 'Lånekalkulator'; r.html = r.html.replace('>Boliglånskalkulator<', `>${label}<`); } return r; },
   // tip: the live `ffe-message-box--tips` (lightbulb in a sol ring, sand box) is recognised by its Material icon path → callout variant `tips lightbulb`
+  'related-products': productRelated,
+  richtext: productRichtext,
+  // top-level banner-small on product siblings: the live module sits 72px (48 mobile) under the previous module
+  'banner-small': (root, ctx, opts) => { const r = coreBanner(root, ctx, opts); if (r && isProductSibling(ctx) && !opts?.inline && root.parentElement?.tagName === 'MAIN') r.html = r.html.replace(/<\/div>\s*$/, `${L.sectionMeta({ style: 'gap-72' })}</div>`); return r; },
   tip: (root, ctx, opts) => { const r = coreTip(root, ctx, opts); if (r && isProductSibling(ctx)) { ctx.notes.push('lint D1 callout: the FFE message box (round glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell'); if (q(root, '.tip__icon svg path[d^="M480-80q-33.67"]')) { r.html = r.html.replace('class="callout tip"', 'class="callout tips lightbulb"'); ctx.notes.push('callout tips lightbulb: the live message box is the `tips` kind (lightbulb glyph, sol ring, sand box) — carried as block variants'); } } return r; },
   faq: (root, ctx, opts) => (isProductSibling(ctx) && q(root, '.comparison, .gcarousel, .accordion__body > .cols') ? productFaq(root, ctx) : coreFaq(root, ctx, opts)),
 };

@@ -63,12 +63,13 @@
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
-  "cards nav: 3 visual-nav modules (3 photo, 0 icon) folded into one block — one row per card"
+  "cards nav: 3 visual-nav modules (3 photo, 0 icon) folded into one block — one row per card",
+  "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
  ],
  "gaps": [
   "module title emitted as prose"
  ],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:33:24.529Z"
+ "writtenAt": "2026-09-14T20:41:11.873Z"
 }

@@ -147,4 +147,46 @@
    photo-cells — every column opens with a rounded 3:2 photo followed by heading/text/link (the live 4-up "reasons" grid, forbrukslan 1440 crop) */
 .columns.photo-cells .col__text > p:first-child { margin: 0 0 24px; line-height: 0; }
 .columns.photo-cells .col__text > p:first-child img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 30px; }
+/* hN — an authored fixed image height on an SVG illustration column (live img style="width:100%;height:200px"): letterboxed, no crop/radius */
+.columns .col--fixed-h.col--media picture { display: block; width: 100%; aspect-ratio: auto; border-radius: 0; }
+.columns .col--fixed-h.col--media img { display: block; width: 100%; height: var(--h); aspect-ratio: auto; object-fit: contain; border-radius: 0; }
+/* natural — a bare image (logo) at its intrinsic size, left in the column flow */
+.columns .col--natural.col--media picture { display: block; width: auto; aspect-ratio: auto; border-radius: 0; }
+.columns .col--natural.col--media img { display: block; width: auto; max-width: 100%; height: auto; aspect-ratio: auto; object-fit: contain; border-radius: 0; }
+/* rAxB — a photo whose authored ratio is not the 3:2 core crop (e.g. the 1:1 portrait); with wN it is centred at N px */
+.columns .col--ratio.col--media picture, .columns .col--ratio.col--media img { aspect-ratio: var(--ratio); }
+.columns .col--ratio.col--illustration.col--media img { width: 100%; max-width: var(--w); margin: 0 auto; object-fit: cover; border-radius: 30px; }
+/* video — a YouTube embed's poster in a 16:9 cell (no radius) */
+.columns .col--video.col--media picture, .columns .col--video.col--media img { border-radius: 0; object-fit: cover; }
+/* illo-cells (+ hN on the block) — every column opens with a fixed-height SVG illustration (inline, 7px line-box tail) then a 16px-margin title paragraph */
+.columns.illo-cells .col__text > p:first-child { margin: 0; line-height: 24px; }
+.columns.illo-cells .col__text > p:first-child img { display: inline; width: 100%; height: var(--h, 200px); aspect-ratio: auto; object-fit: contain; border-radius: 0; vertical-align: baseline; }
+.columns.illo-cells .col__text > :is(h3, h4, p:not(:first-child)) { margin: 16px 0; }
 /* ===== /product siblings ===== */
+
+/* ===== theme / om-oss (additive cell models) =====
+   media-W-H — the live authored photo ratio (--ratio) when it is not the 3:2 default (the walker snaps to the nearest of these). */
+.columns.media-16-9 .col--media picture, .columns.media-16-9 .col--media img { aspect-ratio: 16 / 9; }
+.columns.media-2-1 .col--media picture, .columns.media-2-1 .col--media img { aspect-ratio: 2 / 1; }
+.columns.media-1-1 .col--media picture, .columns.media-1-1 .col--media img { aspect-ratio: 1 / 1; }
+.columns.media-5-8 .col--media picture, .columns.media-5-8 .col--media img { aspect-ratio: 5 / 8; }
+.columns.media-3-4 .col--media picture, .columns.media-3-4 .col--media img { aspect-ratio: 3 / 4; }
+/* ===== /theme / om-oss ===== */
+
+/* ===== markedsnytt-listing (additive variants) =====
+   stack-cta — several
+   authored CTAs stay stacked block buttons (live sibling .button-wrap modules, 8px margins) instead of an inline button-list;
+   expert — the portrait column: 250px rounded 1:1 photo centred (live .image--center[--ratio] max-width 250) + a centred h4 name card
+   (live h4 holding h5/h6/subtle spans: 85px over three lines → 16px/28px medium); text-600 — the live richtext--max:600px column. */
+.columns.stack-cta .button-list { display: flex; flex-direction: column; gap: 16px; margin: 8px 0; } /* live: sibling .button-wrap blocks, 8px margins that do not collapse in the flex column */
+.columns.stack-cta .button-list p, .columns.stack-cta .button-list p.button-wrapper { display: block; margin: 0; }
+.columns.expert .col__text > p:has(> :is(picture, img):only-child) { margin: 0; line-height: 0; text-align: center; }
+.columns.expert .col__text > p:has(> :is(picture, img):only-child) picture { display: inline-block; width: 250px; max-width: 100%; }
+.columns.expert .col__text > p:has(> :is(picture, img):only-child) img { display: block; width: 250px; max-width: 100%; height: 250px; border-radius: 30px; object-fit: cover; }
+.columns.expert .col__text h4 { margin: 0 0 24px; font-family: var(--font-medium); font-size: 16px; line-height: 28px; color: var(--fjell); text-align: center; }
+.columns.text-600 .col__text { width: 100%; max-width: 600px; margin-left: auto; margin-right: auto; }
+
+@media (width >= 768px) {
+  .columns.stack-cta .button-list p a.button, .columns.stack-cta .button-list p.button-wrapper a.button { display: inline-flex; width: auto; }
+}
+/* ===== /markedsnytt-listing ===== */

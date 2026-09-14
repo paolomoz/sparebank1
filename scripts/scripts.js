@@ -74,6 +74,21 @@ function buildWidgetAutoBlocks(main) {
 }
 
 /**
+ * Auto-blocks video embeds: an authored paragraph holding only a fully-qualified YouTube / Vimeo link becomes an `embed` block
+ * (Block Collection shape: one cell, the link). The link node is moved, never rebuilt.
+ * @param {Element} main The container element
+ */
+function buildEmbedAutoBlocks(main) {
+  const EMBED = /(youtube\.com\/embed\/|youtu\.be\/|youtube-nocookie\.com\/embed\/|player\.vimeo\.com\/video\/)/;
+  main.querySelectorAll('p > a[href]').forEach((link) => {
+    if (link.closest('.embed, .widget') || !EMBED.test(link.href)) return;
+    const p = link.closest('p');
+    if (p.querySelectorAll('a').length !== 1 || p.textContent.trim() !== link.textContent.trim()) return;
+    p.replaceWith(buildBlock('embed', { elems: [link] }));
+  });
+}
+
+/**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
@@ -97,6 +112,7 @@ function buildAutoBlocks(main) {
       });
     }
     buildWidgetAutoBlocks(main);
+    buildEmbedAutoBlocks(main); // additive (markedsnytt): a paragraph that is only a YouTube/Vimeo embed link → `embed` block (D1 URL-based content)
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);

@@ -107,7 +107,10 @@
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "columns video: the live cell is a YouTube embed (poster + lazy iframe) — authored as its poster image in a 16:9 cell (the embed is a dynamics request)",
   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
+  "richtext small-text: the live paragraph is wrapped in span.subtle-text (14/20) — carried as a section token (no inline classes in David's Model)",
+  "richtext after-spacer-1: 1 trailing empty author paragraph(s) reserve 40px each on live; the pipeline drops empty paragraphs",
   "lint D1 callout: the FFE message box (round glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
   "callout tips lightbulb: the live message box is the `tips` kind (lightbulb glyph, sol ring, sand box) — carried as block variants",
   "lint D1 calculator: bespoke widget (shadow-root snapshot of the loan calculator; dynamics #7 interim) — the link names the snapshot",
@@ -120,5 +123,5 @@
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:33:24.380Z"
+ "writtenAt": "2026-09-14T20:49:01.057Z"
 }

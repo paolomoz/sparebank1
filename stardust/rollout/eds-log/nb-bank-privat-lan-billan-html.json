@@ -110,6 +110,7 @@
   "price-terms: the overlay link targets its own module anchor on live (bank chooser dialog) — kept verbatim, no-op until the dialog dynamic exists",
   "lint D3 cobranding: single-cell rows read by position — row 1 heading + toggle label (EW8: the label moves into the expand button), row 2 partner logo + title, rows 3+ one panel column each; the panel is closed at rest (dynamics #14 static snapshot)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg is 69217 bytes of SVG (> 40000) — authored as DA media mann-bil-tre.png (rasterised)",
+  "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
@@ -117,5 +118,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg"
  ],
- "writtenAt": "2026-09-14T20:33:24.248Z"
+ "writtenAt": "2026-09-14T20:41:11.622Z"
 }

@@ -16,6 +16,7 @@ const { section, block, q, qa, cls, esc, inline, pic } = L;
 const FAMILY = 'theme';
 const REF_FAMILIES = new Set(['theme', 'markedsnytt-listing']);
 const isTheme = (ctx) => familyOf(ctx) === FAMILY;
+const coreReference = CORE.reference; // captured BEFORE the gate below wraps the key (the fallback must not re-enter the gate)
 
 /** The hr module before a root: plain `hr.rule` = 64px (`rule`); `rule--extra-top` is carried by convert.mjs as `rule` → theme adds `rule-72` (live 72px at ≥1024). */
 const ruleBefore = (root) => { const prev = root.previousElementSibling; if (prev?.tagName !== 'HR') return null; return /rule--extra-top/.test(prev.className) ? 'rule-72' : 'rule'; };
@@ -36,12 +37,13 @@ function featuredRow(row, cols, ctx) {
 }
 
 /** band / top-level cols on theme pages: the om-oss walker + featured cards + the trailing centred richtext (`band-tail`). */
-const themeBand = (root, ctx, opts = {}) => omBand(root, ctx, { ...opts, rowHook: featuredRow, tailToken: 'band-tail', style: styleOf(opts.topLevelCols ? 'theme-cols' : null, opts.style) });
+const themeBand = (root, ctx, opts = {}) => omBand(root, ctx, { ...opts, rowHook: featuredRow, tailToken: 'band-tail', cardVariant: 'flat', style: styleOf(opts.topLevelCols ? 'theme-cols' : null, opts.style) });
 
 /** reference (theme / markedsnytt): the live block wraps a tinted columns-grid → the grid's `columns` in a `cols` section; the plain-text reference stays core. */
 function reference(root, ctx) {
-  const colsEl = q(root, ':scope > .cols');
-  if (!REF_FAMILIES.has(familyOf(ctx)) || !colsEl) return CORE.reference(root, ctx);
+  const colsEl = q(root, ':scope > .cols, :scope > .band'); // theme: a tinted cols; markedsnytt: a band holding two cols
+  if (!REF_FAMILIES.has(familyOf(ctx)) || !colsEl) return coreReference(root, ctx);
+  if (colsEl.classList.contains('band')) { ctx.notes.push('reference: the live block wraps a white band with two columns-grids (heading row + two text columns) — authored as that band section (gap-48 = the live 48/72 above)'); return omBand(colsEl, ctx, { style: 'gap-48' }); }
   ctx.notes.push('reference: on theme/markedsnytt pages the live reference block holds a tinted columns-grid (text + CTAs + image) — authored as the grid\'s columns block in a cols section, not as the small-print reference');
   return omBand(colsEl, ctx, { topLevelCols: true, style: styleOf(ruleBefore(root), 'theme-ref') });
 }
@@ -63,9 +65,9 @@ function themeModule(root, ctx, opts, orig) {
     ctx.notes.push('image: the live top-level centred illustration (inline picture, authored max-width) → default content picture in a theme-image section');
     return { html: section([pic(img, ctx)], { style: styleOf('theme-image', w ? `w-${w}` : null, k.contains('image--center') ? 'center' : null) }), blocks: [] };
   }
-  if (k.contains('button-wrap')) {
+  if (k.contains('button-wrap') || k.contains('button-list')) { // top-level CTA row (live .button-wrap / .button-list): default content emphasised links, `cta` section (center when live centres)
     const html = richtext(root, ctx); if (!html.trim()) return null;
-    return { html: section([html], { style: styleOf('cta', /button-wrap--center/.test(root.className) ? 'center' : null) }), blocks: [] };
+    return { html: section([html], { style: styleOf('cta', /button-(wrap|list)--center/.test(root.className) ? 'center' : null) }), blocks: [] };
   }
   return orig ? orig(root, ctx, opts) : null;
 }
@@ -84,6 +86,7 @@ gateCore('richtext', FAMILY, themeRichtext);
 gateCore('module', FAMILY, themeModule);
 gateCore('tip', FAMILY, themeTip);
 gateCore('reference', FAMILY, reference);
+gateCore('reference', 'markedsnytt-listing', reference); // the same live component on the Markedsnytt hub (band-wrapped)
 
 /** intro (AEM page title on theme pages): the full-width centred h1 (W2 `title` skin: margin 16/8 → 16/24) — the hub `intro` skin caps the wrapper at 800px and wraps this title. */
 const intro = (root, ctx) => (isTheme(ctx) ? { html: section([richtext(root, ctx)], { style: 'title' }), blocks: [] } : hub.intro(root, ctx));

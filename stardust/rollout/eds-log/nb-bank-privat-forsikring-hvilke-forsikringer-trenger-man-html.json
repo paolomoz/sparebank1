@@ -1,0 +1,61 @@
+{
+ "slug": "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html",
+ "daPath": "/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man",
+ "file": "content/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "static-cards",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "related-topics",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "columns",
+  "cards",
+  "feedback"
+ ],
+ "notes": [
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T20:36:44.102Z"
+}

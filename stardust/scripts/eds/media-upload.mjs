@@ -6,7 +6,7 @@
  */
 import fs from 'node:fs'; import path from 'node:path'; import crypto from 'node:crypto';
 const TOKEN = process.env.DA_TOKEN; if (!TOKEN) { console.error('DA_TOKEN missing (set -a; source ~/.claude/.env; set +a)'); process.exit(1); }
-const ORG = 'paolomoz', REPO = 'experian', SRC = 'stardust/prototypes/assets/img', LEDGER = 'stardust/rollout/media-ledger.json';
+const ORG = 'paolomoz', REPO = 'sparebank1', SRC = 'stardust/prototypes/assets', SRC2 = 'stardust/prototypes/assets/img', LEDGER = 'stardust/rollout/media-ledger.json';
 const TYPES = { svg: 'image/svg+xml', png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg', webp: 'image/webp', gif: 'image/gif' };
 const args = process.argv.slice(2);
 let files = args.filter((a) => !a.startsWith('--'));
@@ -15,14 +15,15 @@ if (!files.length) {
   if (args.includes('--all')) fs.readdirSync(SRC).forEach((f) => set.add(f));
   else {
     for (const f of fs.readdirSync('stardust/rollout/eds-log')) JSON.parse(fs.readFileSync(`stardust/rollout/eds-log/${f}`, 'utf8')).assets.forEach((a) => set.add(a));
-    JSON.parse(fs.readFileSync('stardust/rollout/chrome-map.json', 'utf8')).assets.forEach((a) => set.add(a));
+    (JSON.parse(fs.readFileSync('stardust/rollout/chrome-map.json', 'utf8')).assets || []).forEach((a) => set.add(a));
   }
   files = [...set];
 }
 const ledger = fs.existsSync(LEDGER) ? JSON.parse(fs.readFileSync(LEDGER, 'utf8')) : {};
 let up = 0, skip = 0, fail = 0;
 for (const f of files) {
-  const p = path.join(SRC, f); if (!fs.existsSync(p)) { console.log('missing', f); fail++; continue; }
+  if (f === 'null') continue;
+  const p = fs.existsSync(path.join(SRC, f)) ? path.join(SRC, f) : path.join(SRC2, f); if (!fs.existsSync(p)) { console.log('missing', f); fail++; continue; }
   const buf = fs.readFileSync(p); const sha = crypto.createHash('sha1').update(buf).digest('hex').slice(0, 12);
   if (ledger[f]?.sha === sha && ledger[f].status === 201) { skip++; continue; }
   const ext = f.split('.').pop().toLowerCase(); const type = TYPES[ext]; if (!type) { console.log('skip type', f); continue; }

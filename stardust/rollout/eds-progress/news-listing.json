@@ -1,0 +1,77 @@
+{
+ "regime": "published-origin (local EDS emulation, stardust/scripts/eds/serve.mjs :3015, content/… + blocks) vs the cached live capture",
+ "at": "2026-09-14T20:45:32.414Z",
+ "worker": "W5",
+ "archetype": "nb-bank-om-oss-nyheter-html",
+ "document": "content/nb/bank/om-oss/nyheter.html",
+ "encoder": "stardust/scripts/eds/encoders/news-listing.mjs (key `articles`; no core key overridden)",
+ "blocks": [
+  "cards (listing variant — first row = featured headline; additive tag/date detection in cards.js)",
+  "header (header--frontend)",
+  "footer (footer--frontend)"
+ ],
+ "sections": [
+  "listing-title",
+  "listing (cards listing + pager CTA as default content)"
+ ],
+ "chrome": {
+  "nav": "/nav-om-oss (regenerated: Søk + Bli kunde were missing)",
+  "footer": "/footer-frontend-om-oss (regenerated: was an empty columns section)"
+ },
+ "feedDecision": "AUTHORED rows for the pilot: the 31 settled cards verbatim (deliverable without site configuration). Production: a query index at tools.aem.live over /nb/bank/om-oss/nyheter/** (title, image, tag, date, path) feeding the same `cards listing` shape; the pager links to the live feed page (?limit=31&offset=31) until then — see journal.",
+ "iterations": 2,
+ "breakpoints": {
+  "360": {
+   "pixelPct": 1.03,
+   "heightDelta": 0,
+   "chromeHeaderPct": 0.31,
+   "chromeFooterPct": 0,
+   "pass": true,
+   "evidence": "stardust/replica/gates/nyheter-eds-360/ (pixel-iter1.txt, chrome-*.txt)"
+  },
+  "1440": {
+   "pixelPct": 4.12,
+   "heightDelta": -1,
+   "chromeHeaderPct": 1.82,
+   "chromeFooterPct": 1.64,
+   "pass": true,
+   "evidence": "stardust/replica/gates/nyheter-eds-1440/ (pixel-iter2.txt, chrome-*.txt, content-diff-iter1.txt, content-diff-live.txt)"
+  }
+ },
+ "contentDiff": {
+  "prototype": "0 🔴 · 🟡 EXTRA body ×31 (the dates: source renders them in a div, not a prose element) · 🟡 EDITABLE COUNT 3 vs 32 (the card list is one <ul>; each card's h2 link / tag / date are the authored nodes moved into slots)",
+  "live": "0 🔴 · 🟠 role notes only (live tag spans / anchor-wrapped titles) (1 live hit)"
+ },
+ "lint": "0 🔴 · 0 🟡",
+ "justified": [
+  {
+   "flag": "1440 band y1000–1500 8.8 %",
+   "why": "headline photo (1060×488 cover of a 1080×720 rendition) + card photo decode noise; every text rect matches within 1–4px",
+   "permanent": true
+  },
+  {
+   "flag": "card thumbnail crop focus (top/center/bottom)",
+   "why": "live per-card DAM focus classes — not authorable; cards render the centre crop",
+   "permanent": true
+  },
+  {
+   "flag": "1440 header crop 98.18 %",
+   "why": "same frontend header residual as news-article",
+   "permanent": true
+  }
+ ],
+ "fixesThisRound": [
+  "pager href fully-qualified (lint D4)",
+  "cards.js additive: `listing` tag eyebrow + d/m/yyyy date detection, first row = card--headline"
+ ],
+ "siblings": {
+  "converted": 0,
+  "gaps": 0,
+  "lint": "n/a",
+  "note": "the family has a single page"
+ },
+ "productRegression": {
+  "docByteIdentical": true,
+  "pixelPct1440": 0.65
+ }
+}

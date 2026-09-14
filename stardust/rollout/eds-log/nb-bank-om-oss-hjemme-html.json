@@ -1,0 +1,39 @@
+{
+ "slug": "nb-bank-om-oss-hjemme-html",
+ "daPath": "/nb/bank/om-oss/hjemme",
+ "file": "content/nb/bank/om-oss/hjemme.html",
+ "chrome": {
+  "nav": "/nav-frontend-om-oss",
+  "footer": "/footer-frontend-om-oss"
+ },
+ "modules": [
+  {
+   "module": "story",
+   "blocks": [
+    "story"
+   ]
+  }
+ ],
+ "blocks": [
+  "story"
+ ],
+ "notes": [
+  "story slide: video authored as a link to the .mp4 (its text = the live title \"Video topp\"); autoplay/muted/loop/controls + the fallback string are the block's chrome",
+  "story text: live <p><span class=\"h5\"> pseudo-heading → <h5> (site-wide ROLE SWAP rule)",
+  "story slide: two pictures — the wide rendition, then the mobile rendition the live page swaps in below 768 (block: --bg-desktop / --bg-mobile)",
+  "story slide: a live paragraph is centred (p.ta-center) — David's Model carries no inline alignment; the card text stays left-aligned like the other slides (justified residual)",
+  "story slide: two pictures — the wide rendition, then the mobile rendition the live page swaps in below 768 (block: --bg-desktop / --bg-mobile)",
+  "story slide: two pictures — the wide rendition, then the mobile rendition the live page swaps in below 768 (block: --bg-desktop / --bg-mobile)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2025/Barn_som_turner_lys_bakgrunn.svg is 44336 bytes of SVG (> 40000) — authored as DA media Barn_som_turner_lys_bakgrunn.png (rasterised)",
+  "anchor: consecutive live anchors — #blikunde on this section, #samfunn on the next one(s) (a section carries one id; the target shifts by that section's height)",
+  "story slide: video authored as a link to the .mp4 (its text = the live title \"Der du føler deg hjemme\"); autoplay/muted/loop/controls + the fallback string are the block's chrome",
+  "story slide: two pictures — the wide rendition, then the mobile rendition the live page swaps in below 768 (block: --bg-desktop / --bg-mobile)",
+  "factbox: the live factbox component is empty on this page (both columns 0px) — nothing authored; the section before it carries `factbox-slot` (the empty component's measured slot: 128px at ≥768, 136px below)"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2025/Barn_som_turner_lys_bakgrunn.svg"
+ ],
+ "writtenAt": "2026-09-14T20:43:37.037Z"
+}
