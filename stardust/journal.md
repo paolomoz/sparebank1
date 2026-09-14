@@ -149,3 +149,13 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Next:** Flow B rollout (agent) → reply to Bertrand with both live sites; follow-ups filed in eds-requests.md / canon-requests.md.
 
 ---
+
+## 2026-09-15T06:20:00Z — Flow B live; both deliverables done
+
+**Prompt:** (continuation, hands-off).
+
+**Decisions:** the redesign agent finished its rollout: 100/100 pages on `https://main--sparebank1-redesign--paolomoz.aem.live`, 13/13 archetypes gated on the published origin against their approved prototypes (≤ 2.28 % pixel, |Δh| ≤ 1, chrome ≥ 99 %, 0 structural content diffs; sampled sibling per family clean), 17 blocks (11 Block Collection names + 6 bespoke), David's-Model lint clean on 100/100. Two defects found by that gate were fixed at source (emphasis runs merged without whitespace; step lists flattened). The reply to Bertrand (`stardust/rollout/REPLY-TO-BERTRAND.md`) now carries both sites.
+
+**Open (owner batch, both flows):** bank lookup / calculator / rates / feedback backends, boost.ai chat, Adobe tags + consent, search on the new host, font licence before production, tools.aem.live site config review, regional-bank trees (iteration 2+).
+
+---

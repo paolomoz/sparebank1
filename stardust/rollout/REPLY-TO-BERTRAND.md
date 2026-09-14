@@ -15,10 +15,10 @@ Rather than scoping a pilot, we ran it. SpareBank 1's public site is already on 
 
 ## 2. Redesign (same content, new design)
 
-- Site: {{FLOW_B_LIVE_URL}}
-- Authoring: {{FLOW_B_DA_URL}}
-- Code: {{FLOW_B_REPO_URL}}
-- Direction: calm, confident Nordic bank — the brand kept (Fjell/Vann/action green, SpareBank1 faces), generous whitespace, stronger typographic hierarchy, editorial photography, one action per module; content and links verbatim; mobile-first, WCAG AA. {{FLOW_B_GATE_SUMMARY}}
+- Site: https://main--sparebank1-redesign--paolomoz.aem.live/nb/bank/privat (100 pages; same URL structure and redirects as the as-is site)
+- Authoring: https://da.live/#/paolomoz/sparebank1-redesign
+- Code: https://github.com/paolomoz/sparebank1-redesign (17 blocks: 11 Block Collection names reused, 6 bespoke)
+- Direction: calm, confident Nordic bank — the brand kept (Fjell/Vann/action green, SpareBank1 faces), generous whitespace, stronger typographic hierarchy, editorial photography, one action per module; content and links verbatim; mobile-first, WCAG AA. Every one of the 13 templates was measured on the published origin against its approved redesign prototype: all differ by under 2.3 % of pixels at 1440 and 360 with page heights within 1 px, and no content is missing (0 structural diffs on every template and on a sampled sub-page per family).
 
 ## What SpareBank 1 would still decide (owner decisions, both flows)
 - Backend/CORS for the bank lookup, loan and savings calculators and rates (shipped as static snapshots for now)
