@@ -308,7 +308,7 @@
 .seclist__item--active .seclist__icon { display: block; }
 .seclist__icon svg { width: 24px; height: 24px; fill: currentColor; color: var(--fjell); transform: rotate(-90deg); }
 .seclist__content { display: none; padding: 16px 0; }
-.seclist__item--active .seclist__content { display: block; }
+.seclist__item--open .seclist__content { display: block; }
 .seclist__detail { display: none; }
 @media (min-width: 768px) {
   .seclist { padding: 72px 0 56px; }
@@ -336,7 +336,6 @@
 /* column images on product siblings: a fixed authored height (`style="width:100%;height:200px"` → --h) letterboxes the SVG; a bare <img> (no ratio, width or
    height — e.g. the SpareBank 1 logo) renders at its natural size; the hub-style related-products icon cards (category-hub.mjs handler, values from category-hub.css) */
 .page--product .col__content > .image[style*="--h"] .image__img { display: block; width: 100%; height: var(--h); }
-.page--product .col__content > .image:not([style*="--ratio"]):not([style*="--w"]):not([style*="--h"]) .image__img { width: auto; max-width: 100%; }
 .page--product .main > .related-products { padding: 48px 8px 32px; }
 .page--product .related-products__title h2 { text-align: center; margin-bottom: 24px; }
 .page--product .card-list--small { display: flex; flex-wrap: wrap; justify-content: center; max-width: var(--container); margin: 0 auto; }
@@ -357,10 +356,6 @@
 @media (min-width: 1024px) { .page--product .main > .related-products { padding: 72px 0 56px; } .page--product .card-list--small .card { width: 33.333%; max-width: 400px; } .page--product .main > .banner-small { margin-top: 72px; } }
 
 /* top-level columns-grid heading rows (grid-row--cols-N): N/12 wide, centred (live `columns-grid__row--col-N`); bands keep canon (the archetype's cols-6 sits in a band) */
-.page--product .main > .cols > .grid-row--cols-4 > .col:only-child { max-width: 33.333%; margin: 0 auto; }
-.page--product .main > .cols > .grid-row--cols-6 > .col:only-child { max-width: 50%; margin: 0 auto; }
-.page--product .main > .cols > .grid-row--cols-8 > .col:only-child { max-width: 66.667%; margin: 0 auto; }
-.page--product .main > .cols > .grid-row--cols-10 > .col:only-child { max-width: 83.333%; margin: 0 auto; }
 /* fixed-height illustration cells: the live <img> is inline (7px line-box tail) and the title paragraph keeps its 16px top margin */
 .page--product .col__content > .image[style*="--h"] .image__img { display: inline; vertical-align: baseline; }
 .page--product .col__content > .image[style*="--h"] + .richtext > :first-child { margin-top: 16px; }
@@ -380,4 +375,34 @@
 .page--product .main > .title + .richtext > p:first-child { margin: 16px 0 0; }
 .page--product .main > .title + .richtext > p:first-child > span:only-child { display: block; margin-bottom: 24px; font-size: 24px; line-height: 32px; color: var(--fjell); text-align: center; }
 @media (max-width: 767px) { .page--product .main > .title + .richtext > p:first-child > span:only-child { font-size: 18px; line-height: 24px; } }
+@media (min-width: 768px) {
+  .page--product .main > .cols > .grid-row--cols-4 > .col:only-child { max-width: 33.333%; margin: 0 auto; }
+  .page--product .main > .cols > .grid-row--cols-6 > .col:only-child { max-width: 50%; margin: 0 auto; }
+  .page--product .main > .cols > .grid-row--cols-8 > .col:only-child { max-width: 66.667%; margin: 0 auto; }
+  .page--product .main > .cols > .grid-row--cols-10 > .col:only-child { max-width: 83.333%; margin: 0 auto; }
+}
+/* live rhythm around a top-level columns-grid: the hero grid overlaps the breadcrumb row by 36px (like bands); a grid after a banner sits 72/48 below it */
+.page--product .breadcrumb + .cols { margin-top: -36px; }
+.page--product .main > .banner-small + .cols { margin-top: 48px; }
+@media (min-width: 1024px) { .page--product .main > .banner-small + .cols { margin-top: 72px; } }
+/* ✓ check lists in any product richtext (live .checked-list ul: 16px items, fjell check glyph at -2em) */
+.page--product .richtext .checked-list ul { margin: 0 0 16px; padding: 0; list-style: none; }
+.page--product .richtext .checked-list ul li { position: relative; margin: 16px 0 0 32px; line-height: 1.5em; }
+.page--product .richtext .checked-list ul li::before { content: '✓'; display: block; position: absolute; left: -2em; top: .15em; width: 1em; height: 1em; text-indent: -9999px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200' width='200' height='200'%3E%3Cpath fill='%23002776' d='M176.56-8.325E-7c-4.403,0-8.307,2.46595-10.288,5.89248l-90.5448,156.336-42.6109-59.77c-2.46172-2.94562-5.88534-4.89058-9.78806-4.89058h-7.3426c-4.40307,0-8.30704,2.46094-10.2884,6.36839-1.94136,3.94753-1.46102,8.8406,1.0007,12.2671l54.8007,75.963c3.4224,4.89,9.3077,7.834,15.1918,7.834,6.84477,0,12.7076-3.42654,16.13-9.31777l100.827-173.487c2.46172-3.4666,2.46547-7.83618,0.0438-11.3028-1.942-3.94755-5.886-5.8925-10.289-5.8925h-6.84226z'/%3E%3C/svg%3E") center / 1em 1em no-repeat; }
+/* mobile: section-list items are closed at rest (tap opens); related icon cards are 72px rows */
+@media (max-width: 767px) { .page--product .card-list--small .card--small { grid-template-rows: 72px; } }
+/* section-list on mobile (live 360): no side illustration, every item shows a down chevron, no active underline; items closed at rest */
+@media (max-width: 767px) {
+  .seclist__side { display: none; }
+  .seclist__icon { display: block; }
+  .seclist__icon svg { transform: none; color: var(--vann); }
+  .seclist__item--active .seclist__btn { border-bottom: 1px solid #ccc; color: var(--vann); }
+  .seclist__item--open .seclist__icon svg { transform: rotate(180deg); }
+  .page--product .static-cards { padding: 40px 8px 16px; }
+}
+@media (max-width: 767px) {
+  .seclist__body { padding: 0; min-height: 0; }
+  .seclist__btn { padding: 14px 0; }
+  .page--product .main > .title h1 { margin: 16px 0 8px; }
+}
 /* ===== /product siblings ===== */

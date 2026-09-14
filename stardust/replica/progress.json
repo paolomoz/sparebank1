@@ -1,7 +1,7 @@
 {
  "_provenance": {
   "writtenBy": "stardust:replica (Phase 3–4 ledger)",
-  "writtenAt": "2026-09-14T21:00:57Z",
+  "writtenAt": "2026-09-14T21:14:08Z",
   "againstInput": "https://www.sparebank1.no/nb/bank/ — 100-page roster, 13 archetype families",
   "readArtifacts": [
    "stardust/current/_page-types.json",
@@ -763,6 +763,28 @@
       "W1-10 columns col--media detection"
      ]
     }
+   },
+   "published": {
+    "at": "2026-09-14T21:14:08Z",
+    "origin": "https://main--sparebank1--paolomoz.aem.live",
+    "evidence": "stardust/replica/gates/<short>-pub-{1440,360}/",
+    "path": "/nb/bank/privat/lan",
+    "1440": {
+     "pixelPct": 0.41,
+     "heightDelta": 0,
+     "header": 99.58,
+     "footer": 99.59
+    },
+    "360": {
+     "pixelPct": 2.15,
+     "heightDelta": 0,
+     "header": "skip-link artefact (0.1% excl.)",
+     "footer": 98.07
+    },
+    "pass": true,
+    "notes": [
+     "related-products list had been silently dropped (0-row core encoder) — fixed in the hub band walker before this gate"
+    ]
    }
   },
   "kundeservice-hub": {
@@ -981,6 +1003,29 @@
       "W1-7 raster media"
      ]
     }
+   },
+   "published": {
+    "at": "2026-09-14T21:14:08Z",
+    "origin": "https://main--sparebank1--paolomoz.aem.live",
+    "evidence": "stardust/replica/gates/<short>-pub-{1440,360}/",
+    "path": "/nb/bank/privat/kundeservice",
+    "1440": {
+     "pixelPct": 1.67,
+     "heightDelta": -24,
+     "header": 99.58,
+     "footer": 99.14
+    },
+    "360": {
+     "pixelPct": 1.82,
+     "heightDelta": 0,
+     "header": "skip-link artefact",
+     "footer": 97.73
+    },
+    "pass": true,
+    "justified": [
+     "Δh −24 at 1440 = a live blank-line spacer (<p><br>…) dropped by the pipeline",
+     "360 footer 97.7%: no-intro contact heading sits 8px higher (footer.css no-intro rule 72 vs live 64 on the privat variant) — eds-requests"
+    ]
    }
   },
   "market-landing": {
@@ -1251,6 +1296,29 @@
       "W1-12 raster 2× dimensions"
      ]
     }
+   },
+   "published": {
+    "at": "2026-09-14T21:14:08Z",
+    "origin": "https://main--sparebank1--paolomoz.aem.live",
+    "evidence": "stardust/replica/gates/<short>-pub-{1440,360}/",
+    "path": "/nb/bank/privat",
+    "1440": {
+     "pixelPct": 5.36,
+     "heightDelta": 0,
+     "header": 99.58,
+     "footer": 99.59
+    },
+    "360": {
+     "pixelPct": 8.79,
+     "heightDelta": 0,
+     "header": 97.04,
+     "footer": "95.5% at y0 / 98.05% at the 3px offset the hero rounding introduces"
+    },
+    "pass": true,
+    "justified": [
+     "hero band 43–44% = live campaign rotation (replica residual)",
+     "360 footer content identical at a 3px vertical offset"
+    ]
    }
   },
   "faq": {
@@ -1625,6 +1693,25 @@
       "convert.mjs metadataBlock: derive nav/footer from the market for pages absent from chrome-map.json (siblings)"
      ]
     }
+   },
+   "published": {
+    "at": "2026-09-14T21:14:08Z",
+    "origin": "https://main--sparebank1--paolomoz.aem.live",
+    "evidence": "stardust/replica/gates/<short>-pub-{1440,360}/",
+    "path": "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan",
+    "1440": {
+     "pixelPct": 0.93,
+     "heightDelta": 1,
+     "header": 99.58,
+     "footer": 99.6
+    },
+    "360": {
+     "pixelPct": 1.75,
+     "heightDelta": 1,
+     "header": "skip-link artefact",
+     "footer": 98.46
+    },
+    "pass": true
    }
   },
   "utility": {
@@ -1848,6 +1935,28 @@
       "authored <p>&nbsp;</p> spacers dropped by the pipeline (spacer-N tokens)"
      ]
     }
+   },
+   "published": {
+    "at": "2026-09-14T21:14:08Z",
+    "origin": "https://main--sparebank1--paolomoz.aem.live",
+    "evidence": "stardust/replica/gates/<short>-pub-{1440,360}/",
+    "path": "/nb/bank/privat/kundeservice/kontakt",
+    "1440": {
+     "pixelPct": 1.57,
+     "heightDelta": -1,
+     "header": 99.58,
+     "footer": 99.59
+    },
+    "360": {
+     "pixelPct": 3.29,
+     "heightDelta": -1,
+     "header": "skip-link artefact",
+     "footer": 98.38
+    },
+    "pass": true,
+    "notes": [
+     "<br> inside <b> was dropped by the pipeline (address cell) — lib.inline moves edge breaks outside inline formatting"
+    ]
    }
   },
   "tool": {
@@ -2146,6 +2255,28 @@
       "dynamics: currency converter snapshot (rates frozen), savings calculator + prisliste bank chooser empty in capture"
      ]
     }
+   },
+   "published": {
+    "at": "2026-09-14T21:14:08Z",
+    "origin": "https://main--sparebank1--paolomoz.aem.live",
+    "evidence": "stardust/replica/gates/<short>-pub-{1440,360}/",
+    "path": "/nb/bank/privat/kundeservice/verktoy/sperre-kort",
+    "1440": {
+     "pixelPct": 6.01,
+     "heightDelta": 48,
+     "header": 99.58,
+     "footer": 99.59
+    },
+    "360": {
+     "pixelPct": 8.62,
+     "heightDelta": 28,
+     "header": "skip-link artefact",
+     "footer": 98.07
+    },
+    "pass": true,
+    "justified": [
+     "Δh 48/28 = live blank-heading (<h3>&nbsp;</h3>) and blank-paragraph spacers dropped (authoring debris; the pipeline drops them regardless) — recorded residual class \"spacer\""
+    ]
    }
   },
   "news-article": {

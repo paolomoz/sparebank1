@@ -79,7 +79,10 @@
  ],
  "notes": [
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "lint D5 cards featured: the live featured card (contain-fit illustration + h2 + lead paragraphs + checked list of bold link titles) — one row per card [illustration][body]; not clickable on live, the block keeps the authored links as the only links",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "lint D1 callout: the FFE message box (round glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell; warm = the live tips colours",
   "reference: on theme/markedsnytt pages the live reference block holds a tinted columns-grid (text + CTAs + image) — authored as the grid's columns block in a cols section, not as the small-print reference",
   "image: the live top-level centred illustration (inline picture, authored max-width) → default content picture in a theme-image section",
@@ -89,5 +92,5 @@
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:51:44.070Z"
+ "writtenAt": "2026-09-14T21:12:10.794Z"
 }

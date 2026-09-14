@@ -64,7 +64,7 @@ function videoBand(root, ctx, topLevel) {
   return { html: section(head, { style: styleOf(base, 'head'), id: anchor }) + section(pairs, { style: styleOf(base, 'split-video') }), blocks: ['embed'] };
 }
 
-const mnBand = (root, ctx, opts = {}) => (q(root, '.video') ? videoBand(root, ctx, !!opts.topLevelCols) : omBand(root, ctx, { ...opts, rowHook: featuredRow, prepCol, extraTokens, cardVariant: 'flat', style: styleOf('mn', opts.style) }));
+const mnBand = (root, ctx, opts = {}) => (q(root, '.video') ? videoBand(root, ctx, !!opts.topLevelCols) : omBand(root, ctx, { ...opts, rowHook: featuredRow, prepCol, extraTokens, cardVariant: 'flat', textMax: false, style: styleOf('mn', opts.style) }));
 
 /** The dated news rail: [tag][title][date] — the date is the paragraph after the title (cards news marks it); card hrefs normalised. */
 function relatedTopics(root, ctx) {

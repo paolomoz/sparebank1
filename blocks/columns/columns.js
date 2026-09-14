@@ -7,6 +7,7 @@ import { el, icon, inlineIcons, uid, text } from '../../scripts/sb1.js';
  */
 export default function decorate(block) {
   const variants = [...block.classList].filter((c) => /^lg-\d+/.test(c));
+  const textMax = [...block.classList].find((c) => /^text-\d+$/.test(c)); if (textMax) block.style.setProperty('--text-max', `${textMax.slice(5)}px`); // additive (theme/markedsnytt): `text-N` = the live richtext--max text column width
   const blockH = [...block.classList].find((c) => /^h\d+$/.test(c)); if (blockH) block.style.setProperty('--h', `${blockH.slice(1)}px`); // additive (product siblings): illo-cells fixed illustration height
   const linkList = block.classList.contains('link-list'); // additive variant: plain link paragraphs stay a list, never a button row
   const row = block.querySelector(':scope > div'); if (!row) return;
@@ -18,12 +19,13 @@ export default function decorate(block) {
     const span = (v.match(/^lg-(\d+)/) || [, '12'])[1]; const offset = (v.match(/offset-(\d+)/) || [])[1];
     const align = (v.match(/-(middle|center|bottom)/) || [])[1]; const first = /-first/.test(v);
     const illo = (v.match(/-w(\d+)(?:-|$)/) || [])[1]; // additive cell model: `wN` = an illustration column, rendered at N px max, centred, uncropped
+    const split = /-split(?:-|$)/.test(v); // additive cell model (markedsnytt): several one-paragraph live text modules in one cell → 32px between paragraphs
     const fixedH = (v.match(/-h(\d+)(?:-|$)/) || [])[1]; // additive (product siblings): `hN` = an authored fixed image height (letterboxed SVG)
     const ratio = v.match(/-r(\d+)x(\d+)(?:-|$)/); // additive (product siblings): `rAxB` = a photo with an authored aspect ratio other than 3:2
     const natural = /-natural(?:-|$)/.test(v); // additive (product siblings): a bare image (logo) at its intrinsic size
     const video = /-video(?:-|$)/.test(v); // additive (product siblings): a video poster cell (16:9, no radius)
     const styles = [illo ? `--w: ${illo}px` : null, fixedH ? `--h: ${fixedH}px` : null, ratio ? `--ratio: ${ratio[1]} / ${ratio[2]}` : null].filter(Boolean).join('; ');
-    const col = el('div', { class: ['col', `col-lg-${span}`, offset !== undefined ? `col-lg-offset-${offset}` : null, first ? 'col--first' : null, align ? `col--${align}` : null, illo ? 'col--illustration' : null, fixedH ? 'col--fixed-h' : null, ratio ? 'col--ratio' : null, natural ? 'col--natural' : null, video ? 'col--video' : null].filter(Boolean).join(' '), style: styles || null });
+    const col = el('div', { class: ['col', `col-lg-${span}`, offset !== undefined ? `col-lg-offset-${offset}` : null, first ? 'col--first' : null, align ? `col--${align}` : null, illo ? 'col--illustration' : null, split ? 'col--split' : null, fixedH ? 'col--fixed-h' : null, ratio ? 'col--ratio' : null, natural ? 'col--natural' : null, video ? 'col--video' : null].filter(Boolean).join(' '), style: styles || null });
     const content = el('div', { class: 'col__content' });
     while (cell.firstChild) content.append(cell.firstChild);
     // consecutive CTA paragraphs (a paragraph that is only a link) form one button row, as the live button-list does;

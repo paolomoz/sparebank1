@@ -107,7 +107,7 @@ function decorateTabs(block) {
     const text = el('span', { class: 'seclist__text' }); while (titleCell?.firstChild) text.append(titleCell.firstChild); btn.append(text, el('span', { class: 'seclist__icon' }, icon('chevron')));
     const content = el('div', { class: 'seclist__content', id }); while (contentCell?.firstChild) content.append(contentCell.firstChild);
     item.append(btn, content); list.append(item);
-    btn.addEventListener('click', () => { items.forEach((it) => { const on = it === item; it.classList.toggle('seclist__item--active', on); it.querySelector('.seclist__btn').setAttribute('aria-expanded', String(on)); }); detail.replaceChildren(...[...content.children].map((c) => c.cloneNode(true))); });
+    btn.addEventListener('click', () => { const wasOpen = item.classList.contains('seclist__item--open'); items.forEach((it) => { const on = it === item; it.classList.toggle('seclist__item--active', on); it.classList.toggle('seclist__item--open', on && !wasOpen); it.querySelector('.seclist__btn').setAttribute('aria-expanded', String(on)); }); detail.replaceChildren(...[...content.children].map((c) => c.cloneNode(true))); });
     return item;
   });
   const first = list.querySelector('.seclist__item--active .seclist__content'); if (first) detail.replaceChildren(...[...first.children].map((c) => c.cloneNode(true)));

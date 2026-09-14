@@ -43,7 +43,7 @@ const themeBand = (root, ctx, opts = {}) => omBand(root, ctx, { ...opts, rowHook
 function reference(root, ctx) {
   const colsEl = q(root, ':scope > .cols, :scope > .band'); // theme: a tinted cols; markedsnytt: a band holding two cols
   if (!REF_FAMILIES.has(familyOf(ctx)) || !colsEl) return coreReference(root, ctx);
-  if (colsEl.classList.contains('band')) { ctx.notes.push('reference: the live block wraps a white band with two columns-grids (heading row + two text columns) — authored as that band section (gap-48 = the live 48/72 above)'); return omBand(colsEl, ctx, { style: 'gap-48' }); }
+  if (colsEl.classList.contains('band')) { ctx.notes.push('reference: the live block wraps a white band with two columns-grids (heading row + two text columns) — authored as that band section (gap-48 = the live 48/72 above)'); return omBand(colsEl, ctx, { style: styleOf('gap-48', 'mn-ref'), textMax: false, extraTokens: (row, cols) => (cols.some((c) => q(c, ':scope > .col__content > .richtext > p:first-child')) ? ['text-gap'] : []) }); } // live: --max ignored by the markedsnytt CSS; the richtext keeps its first paragraph's 16px (W2 text-gap)
   ctx.notes.push('reference: on theme/markedsnytt pages the live reference block holds a tinted columns-grid (text + CTAs + image) — authored as the grid\'s columns block in a cols section, not as the small-print reference');
   return omBand(colsEl, ctx, { topLevelCols: true, style: styleOf(ruleBefore(root), 'theme-ref') });
 }

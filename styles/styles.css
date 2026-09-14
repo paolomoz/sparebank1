@@ -652,15 +652,20 @@ main .section.head-w6 .default-content-wrapper { max-width: 640px; margin: 0 aut
 main .section.head-w8 .default-content-wrapper { max-width: 853px; margin: 0 auto; }
 main .section.head-w10 .default-content-wrapper { max-width: 1066px; margin: 0 auto; }
 /* static-cards section: heading in a 640px centred column, left-aligned; 56/24 wrap */
-main .section:has(> .cards-wrapper > .cards.static) { padding: 56px 8px 24px; }
+main .section:has(> .cards-wrapper > .cards.static) { margin-top: 0; padding: 56px 8px 24px; } /* live: flush under the previous module */
+main .section.breadcrumbs-container + .section.cols.product { margin-top: -36px; } /* the live hero columns-grid overlaps the breadcrumb row */
+main .section.banner-container + .section.cols.product { margin-top: 48px; }
 main .section:has(> .cards-wrapper > .cards.static) .default-content-wrapper { max-width: 640px; margin: 0 auto; }
 main .section:has(> .cards-wrapper > .cards.static) .default-content-wrapper h2 { margin: 0 0 24px; text-align: left; }
 /* section-list: the AEM "section" master/detail module — layout2: illustration in cols 2-3, content cols 4-11; small-img: 80px round illustration beside the title */
 main .section.section-list { padding: 48px 8px 32px; }
+@media (max-width: 767px) { main .section.section-list.layout2 .default-content-wrapper p:first-child:has(> picture, > img) { display: none; } main .section:has(> .cards-wrapper > .cards.static) { padding: 40px 8px 8px; } }
 main .section.small-text .default-content-wrapper p { font-size: 14px; line-height: 20px; }
 main .section.after-spacer-1 .default-content-wrapper { padding-bottom: 40px; }
 main .section.after-spacer-2 .default-content-wrapper { padding-bottom: 80px; }
-main .section.related-icons { margin-top: 0; padding: 48px 8px 32px; }
+main .section.related-icons { padding: 48px 8px 32px; }
+main .section.rule.related-icons { margin-top: 72px; } /* live: hr module (64) + the related wrap's own 8 */
+@media (max-width: 767px) { main .section.related-icons .cards.small .card-list li { margin-bottom: 6px; } }
 main .section.related-icons .cards.small .card-list li { margin-bottom: 16px; }
 main .section.main-lead .default-content-wrapper p { margin: 16px 0 0; padding-bottom: 24px; font-size: 18px; line-height: 24px; color: var(--fjell); text-align: center; }
 main .section.gap-24 { margin-top: 24px; }
@@ -691,6 +696,7 @@ main .section.cta.center .default-content-wrapper a.button { display: flex; widt
   main .section.cta.center .default-content-wrapper a.button { display: inline-flex; width: auto; }
   main .section.section-list { display: grid; grid-template-columns: repeat(12, 1fr); padding: 72px max(0px, calc((100% - var(--container)) / 2)) 56px; }
   main .section.band.product.calculator-container { padding: 72px 0; }
+  main .section.banner-container + .section.cols.product { margin-top: 72px; }
   main .section.main-lead .default-content-wrapper p { font-size: 24px; line-height: 32px; }
   main .section.section-list > div { width: 100%; max-width: none; margin: 0; }
   main .section.related-icons { padding: 72px 0 56px; }
@@ -940,12 +946,15 @@ main .section.mn :is(.default-content-wrapper, .columns) ul li { margin: 8px 0 0
 /* cta-row: a centred CTA row (live grid-row--cols-6 col-md-12 .button-wrap--center: 8px margins, 16px col padding) */
 main .section.cta-row .default-content-wrapper:last-child { padding-bottom: 16px; text-align: center; }
 main .section.cta-row .default-content-wrapper p.button-wrapper { margin: 8px 0; }
+/* mn-ref: the closing reference band — its h2 carries a .h3 span on live (28px glyphs in the h2's 36/44 strut → 28px mobile line box) */
+main .section.mn-ref .columns h3 { line-height: 28px; }
 /* mn-flush: the news rail follows a band flush on live (canon adds 72px above .main > .related-topics) */
 main .section.related.mn-flush { margin-top: 0; }
 
 @media (width >= 768px) {
   main .section.mn :is(.default-content-wrapper, .columns) ul { margin-left: 16px; }
   main .section.mn :is(.default-content-wrapper, .columns) ul li { margin-left: 32px; }
+  main .section.mn-ref .columns h3 { line-height: 44px; }
 }
 /* head / split-video: a live band whose grid rows pair a text column with a YouTube embed is authored as two sections — the heading row
    (head: no bottom padding) and the text + embed pairs as default content + auto-blocked embeds laid out by the section itself on the live
@@ -959,6 +968,7 @@ main .section.split-video > .embed-wrapper { grid-column: 8 / span 5; }
 main .section.split-video .default-content-wrapper > :first-child { margin-top: 0; }
 main .section.split-video .default-content-wrapper p.button-wrapper { margin: 24px 0 8px; } /* live: richtext BFC (16) + button-wrap 8 */
 main .section.split-video .default-content-wrapper h3 + h3 { margin-top: 0; }
+main .section.split-video .default-content-wrapper :is(h1, h2, h3, p) { text-align: left; } /* the band skin centres default-content headings; these are column texts */
 @media (width <= 767px) {
   main .section.split-video { display: block; }
   main .section.split-video > div { padding: 0 8px 16px; }

@@ -161,8 +161,10 @@
 .columns .col--video.col--media picture, .columns .col--video.col--media img { border-radius: 0; object-fit: cover; }
 /* illo-cells (+ hN on the block) — every column opens with a fixed-height SVG illustration (inline, 7px line-box tail) then a 16px-margin title paragraph */
 .columns.illo-cells .col__text > p:first-child { margin: 0; line-height: 24px; }
+.columns.illo-cells .col__text > p:first-child picture { display: inline; width: 100%; height: auto; aspect-ratio: auto; border-radius: 0; }
 .columns.illo-cells .col__text > p:first-child img { display: inline; width: 100%; height: var(--h, 200px); aspect-ratio: auto; object-fit: contain; border-radius: 0; vertical-align: baseline; }
 .columns.illo-cells .col__text > :is(h3, h4, p:not(:first-child)) { margin: 16px 0; }
+@media (max-width: 767px) { .columns.photo-cells .col__text > :is(h5, h6) { margin: 0 0 8px; line-height: 28px; } } /* live mobile h2 line (24/28) */
 /* ===== /product siblings ===== */
 
 /* ===== theme / om-oss (additive cell models) =====
@@ -184,11 +186,13 @@
 .columns.expert .col__text > p:has(> :is(picture, img):only-child) { margin: 0; line-height: 0; text-align: center; }
 .columns.expert .col__text > p:has(> :is(picture, img):only-child) picture { display: inline-block; width: 250px; max-width: 100%; }
 .columns.expert .col__text > p:has(> :is(picture, img):only-child) img { display: block; width: 250px; max-width: 100%; height: 250px; border-radius: 30px; object-fit: cover; }
-.columns.expert .col__text h4 { margin: 0 0 24px; font-family: var(--font-medium); font-size: 16px; line-height: 24px; color: var(--fjell); text-align: center; }
-.columns.text-600 .col__text { width: 100%; max-width: 600px; margin-left: auto; margin-right: auto; }
+.columns.expert .col__text h4 { margin: 0 0 8px; font-family: var(--font-medium); font-size: 16px; line-height: 28px; color: var(--fjell); text-align: center; } /* live: 28px line boxes at every width (h4 strut), margin 8 → 24 */
+/* split — a cell holding several one-paragraph live text modules: consecutive paragraphs keep both modules' 16px margins (32px) */
+.columns .col--split .col__text > p + p { margin-top: 32px; }
+.columns[class*=" text-"] .col__text { width: 100%; max-width: var(--text-max, none); margin-left: auto; margin-right: auto; } /* text-N (any N): columns.js sets --text-max */
 
 @media (width >= 768px) {
-  .columns.expert .col__text h4 { line-height: 28px; }
+  .columns.expert .col__text h4 { margin-bottom: 24px; }
   .columns.stack-cta .button-list p a.button, .columns.stack-cta .button-list p.button-wrapper a.button { display: inline-flex; width: auto; }
 }
 /* ===== /markedsnytt-listing ===== */

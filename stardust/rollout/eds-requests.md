@@ -174,3 +174,8 @@ canon-level change is requested here, not applied. Product page byte-identical, 
    hero.js, story.js do); restart running emulations — a stale server produced a false 48 % first gate on the listing.
 8. (observation) No `stardust/replica/justified/` directory exists, so gate.mjs cannot consume the site-wide justified classes (ROLE SWAP for
    pseudo-heading spans, MISSING CTA for lenker.sparebank1.no). The ledgers carry them verbatim.
+
+## Orchestrator — 2026-09-15
+- footer.css no-intro rule (`.contact__title + .contact__actions { margin-top: 72px }`, from the bedrift faq lift) puts the privat footer-2 heading 8px off: live privat no-intro variant measures 64px (kundeservice hub, 360). Verify the two live variants and split the rule by footer document.
+- Silent 0-row blocks (core `relatedTopics` on a `.card-list`; `cards news` with no `.newsfeed`) are the most dangerous defect class: convert.mjs should fail a page whose block has 0 rows unless the encoder marks it intentional.
+- Every "emulation passed, published failed" case came from a pipeline behaviour the emulation lacked (single-`<p>` cell unwrap, nbsp/blank spacers, edge `<br>`, `<br>` inside inline formatting). serve.mjs now mirrors them — re-gate any page whose emulation gate predates 2026-09-15 before trusting it.

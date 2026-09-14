@@ -49,7 +49,8 @@
   document.querySelectorAll('.seclist').forEach((sec) => {
     const items = [...sec.querySelectorAll('.seclist__item')]; const detail = sec.querySelector('.seclist__detail');
     items.forEach((item) => item.querySelector('.seclist__btn').addEventListener('click', () => {
-      items.forEach((it) => { const on = it === item; it.classList.toggle('seclist__item--active', on); it.querySelector('.seclist__btn').setAttribute('aria-expanded', String(on)); });
+      const wasOpen = item.classList.contains('seclist__item--open');
+      items.forEach((it) => { const on = it === item; it.classList.toggle('seclist__item--active', on); it.classList.toggle('seclist__item--open', on && !wasOpen); it.querySelector('.seclist__btn').setAttribute('aria-expanded', String(on)); });
       if (detail) detail.replaceChildren(...[...item.querySelector('.seclist__content').children].map((c) => c.cloneNode(true)));
     }));
   });
