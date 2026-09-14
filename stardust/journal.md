@@ -127,3 +127,25 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Next:** deploy W5's 12 frontend documents + W3 product siblings + W4 families when they land; published gates for their archetypes; QA sweep; Flow B rollout; reply to Bertrand.
 
 ---
+
+## 2026-09-15T04:10:00Z — Rollout complete: 100/100 pages live; sibling fidelity residuals recorded
+
+**Prompt:** (continuation, hands-off).
+
+**Decisions:**
+- All 100 roster pages, 12 chrome documents and the redirect sheet are live on the published origin; the QA sweep reads 100/100 (page + plain 200, 0 `about:error`), every live `.html` URL 301s to its migrated path, `/` → `/nb/bank/privat`.
+- 13/13 archetypes gated on the published origin. Ten meet the bar at both widths. Theme (borettslag) reads Δh 33/47 after the spacer/br normalisation landed post-gate (W4 #14); markedsnytt-listing at 360 is dominated by the three YouTube boxes (placeholder on live, player on EDS). Both recorded, not chased.
+- Product siblings (29) are content-complete (lint 0 🔴) and live; their mobile fidelity (forbrukslån 14.8 %, mobilbank 13.4 %, vare-eksperter 18.9 % at 360) is a recorded residual class: sibling-only modules were never lifted at 360. Filed as the next fidelity step, not a blocker for the pilot.
+- The USP module (15 pages) had been silently empty on both sides — the replica handler read `.usp-item` while the live markup is `.icon-list__item` — and the encoder emitted a zero-row block for a block that did not exist. Recovered end to end (author.mjs, canon.css, encoder, `blocks/usp`). Third instance today of the silent-zero-row class → convert.mjs should fail on empty blocks (eds-requests).
+- Family-group encoder dispatch (landing = category-hub/kundeservice-hub/market-landing, service = utility/tool) with shared new keys resolved in sequence; explicit chrome rows for non-privat pages; delivery paths normalised per the rollout lint; `url()` parsing tolerant of parentheses; unresolvable image sources dropped with a note.
+
+**Artifacts touched:** blocks/usp/*, blocks/cards, blocks/footer, stardust/scripts/eds/{convert,lib,serve,chrome,encoders,media-upload,_pm-*}.mjs, stardust/scripts/replica/{author.mjs,modules/campaign-landing.mjs}, stardust/prototypes/css/canon.css, content/** (100 docs), stardust/rollout/{qa/sweep.json,eds-requests.md,chrome-map.json,deploy.log}, stardust/replica/progress.json, gates/*-pub-*.
+
+**Findings worth flagging:**
+- The most dangerous defect class in this pipeline is the silent zero-row block (three instances: hub related-products, empty USP, campaign carousel). A gate only caught them as Δh.
+- Emulation truthfulness was the lever: once serve.mjs mirrored the pipeline (cell unwrap, nbsp, edge `<br>`, `<br>` in inline formatting) the published gates stopped surprising.
+- Worker scripts colliding on shared files (registry keys, `_dump.mjs`, carousel.js rewrite) cost several rounds; owner prefixes and family-group dispatch are the durable fixes.
+
+**Next:** Flow B rollout (agent) → reply to Bertrand with both live sites; follow-ups filed in eds-requests.md / canon-requests.md.
+
+---

@@ -1,117 +1,135 @@
 {
-  "/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie": {
+  "/nb/bank/bedrift/bedriftskort/kredittkort": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T21:41:41.846Z",
-    "put": 201,
+    "ts": "2026-09-14T21:54:59.568Z",
+    "put": 200,
     "preview": 200,
     "live": 200,
     "verify": "ok"
   },
-  "/nb/bank/bedrift/bedriftsforsikring": {
+  "/nb/bank/bedrift/konto/bedriftskonto": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T21:41:41.847Z",
-    "put": 201,
+    "ts": "2026-09-14T21:54:59.568Z",
+    "put": 200,
     "preview": 200,
     "live": 200,
     "verify": "ok"
   },
-  "/nb/bank/om-oss/investor": {
+  "/nb/bank/bedrift/lan-finansiering/bedriftslan": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T21:41:41.847Z",
-    "put": 201,
+    "ts": "2026-09-14T21:54:59.568Z",
+    "put": 200,
     "preview": 200,
     "live": 200,
     "verify": "ok"
   },
-  "/nb/bank/om-oss/jobb-og-karriere": {
+  "/nb/bank/bedrift/lan-finansiering/kassekreditt": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T21:41:48.015Z",
-    "put": 201,
+    "ts": "2026-09-14T21:55:05.875Z",
+    "put": 200,
     "preview": 200,
     "live": 200,
     "verify": "ok"
   },
-  "/nb/bank/om-oss/om-banken/selskapsinformasjon": {
+  "/nb/bank/bedrift/lan-finansiering/leasing": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T21:41:48.196Z",
-    "put": 201,
+    "ts": "2026-09-14T21:55:05.920Z",
+    "put": 200,
     "preview": 200,
     "live": 200,
     "verify": "ok"
   },
-  "/nb/bank/om-oss/personvern/generelle-vilkar": {
+  "/nb/bank/privat/daglig-bruk/bankkort": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T21:41:48.290Z",
-    "put": 201,
+    "ts": "2026-09-14T21:55:06.151Z",
+    "put": 200,
     "preview": 200,
     "live": 200,
     "verify": "ok"
   },
-  "/nb/bank/om-oss/personvern": {
+  "/nb/bank/privat/daglig-bruk/kredittkort": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T21:41:52.716Z",
-    "put": 201,
+    "ts": "2026-09-14T21:55:11.186Z",
+    "put": 200,
     "preview": 200,
     "live": 200,
     "verify": "ok"
   },
-  "/nb/bank/om-oss/presse": {
+  "/nb/bank/privat/forsikring/barneforsikring": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T21:41:52.719Z",
-    "put": 201,
+    "ts": "2026-09-14T21:55:11.243Z",
+    "put": 200,
     "preview": 200,
     "live": 200,
     "verify": "ok"
   },
-  "/nb/bank/om-oss/samfunnsansvar": {
+  "/nb/bank/privat/forsikring/bilforsikring": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T21:41:53.099Z",
-    "put": 201,
+    "ts": "2026-09-14T21:55:12.077Z",
+    "put": 200,
     "preview": 200,
     "live": 200,
     "verify": "ok"
   },
-  "/nb/bank/om-oss/selskaper": {
+  "/nb/bank/privat/forsikring/innboforsikring": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T21:41:57.922Z",
-    "put": 201,
+    "ts": "2026-09-14T21:55:17.642Z",
+    "put": 200,
     "preview": 200,
     "live": 200,
     "verify": "ok"
   },
-  "/nb/bank/privat/daglig-bruk/kredittkort/netthandel-kredittkort": {
+  "/nb/bank/privat/forsikring/reiseforsikring": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T21:41:58.182Z",
-    "put": 201,
+    "ts": "2026-09-14T21:55:18.617Z",
+    "put": 200,
     "preview": 200,
     "live": 200,
     "verify": "ok"
   },
-  "/nb/bank/privat/forsikring/hvilke-forsikringer-trenger-man": {
+  "/nb/bank/privat/kundeservice/bestill/bli-kunde": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T21:41:58.580Z",
-    "put": 201,
+    "ts": "2026-09-14T21:55:19.831Z",
+    "put": 200,
     "preview": 200,
     "live": 200,
     "verify": "ok"
   },
-  "/nb/bank/privat/sparing/markedsnytt": {
+  "/nb/bank/privat/lan/billan": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T21:42:02.188Z",
-    "put": 201,
+    "ts": "2026-09-14T21:55:24.269Z",
+    "put": 200,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/privat/pensjon/egen-pensjonskonto": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:55:25.415Z",
+    "put": 200,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/privat/private-banking": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T21:55:25.904Z",
+    "put": 200,
     "preview": 200,
     "live": 200,
     "verify": "ok"
