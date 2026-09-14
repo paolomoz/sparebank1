@@ -518,15 +518,14 @@ main .section.hub-rule .columns-wrapper + .cards-wrapper { margin-top: 64px; }
    answer prose 16/24 with the live list indents (16 → 48), the inline feedback row flush left (values: stardust/prototypes/css/faq.css) */
 main .section.question > div { max-width: 768px; }
 main .section.question > div { display: flow-root; }
-main .section.question .default-content-wrapper h1 { margin: 0 0 8px; }
-main .section.question .default-content-wrapper h1 + p { margin-top: 16px; }
+main .section.question .default-content-wrapper h1 { margin: 0; padding-bottom: 8px; } /* padding, not margin: the live answer .richtext is a flow-root, so its first p keeps its own 16px on top of the h1's 8/24 */
 main .section.question .default-content-wrapper p { margin: 16px 0; }
 main .section.question .default-content-wrapper ul { margin: 0 0 16px; padding: 0; list-style: disc; }
 main .section.question .default-content-wrapper ul li { margin: 8px 0 0 16px; }
 main .section.question .feedback-wrapper { margin-top: 0; }
 
 @media (width >= 768px) {
-  main .section.question .default-content-wrapper h1 { margin-bottom: 24px; }
+  main .section.question .default-content-wrapper h1 { padding-bottom: 24px; }
   main .section.question .default-content-wrapper ul { margin-left: 16px; }
   main .section.question .default-content-wrapper ul li { margin-left: 32px; }
 }

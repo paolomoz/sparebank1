@@ -1,7 +1,7 @@
 {
  "_provenance": {
   "writtenBy": "stardust:replica (Phase 3–4 ledger)",
-  "writtenAt": "2026-09-14T18:55:25Z",
+  "writtenAt": "2026-09-14T19:17:36Z",
   "againstInput": "https://www.sparebank1.no/nb/bank/ — 100-page roster, 13 archetype families",
   "readArtifacts": [
    "stardust/current/_page-types.json",
@@ -217,6 +217,63 @@
      "footer: contact icon inlined as SVG, link underlines (live), contact item spacing, .visually-hidden utility",
      "header: whitespace text nodes between inline-block list items (word-spacing hack removed)",
      "encoders: pseudo-heading spans (.h2–.h6) → heading at the visual rank (lib.mjs headingTag); h4 22/28, h5 17/20→18/24"
+    ]
+   },
+   "published": {
+    "regime": "published origin https://main--sparebank1--paolomoz.aem.live/nb/bank/privat/lan/boliglan vs live capture",
+    "at": "2026-09-14T19:17:36Z",
+    "deploy": {
+     "da": "https://da.live/#/paolomoz/sparebank1/nb/bank/privat/lan/boliglan",
+     "chrome": [
+      "/nav",
+      "/footer"
+     ],
+     "media": [
+      "illustrasjon-usymmetrisk-samboer-dame-mann-high-five-lys-bakgrunn.png (70KB SVG rasterised 300x272@2x)"
+     ],
+     "ledger": "stardust/rollout/deploy-ledger.json",
+     "lint": "0 🔴 (D1 calculator/feedback, D4 svgs justified in the conversion log)"
+    },
+    "breakpoints": {
+     "1440": {
+      "pixelPct": 0.52,
+      "heightDelta": 0,
+      "chromeHeaderPct": 0.42,
+      "chromeFooterPct": 0.45,
+      "pass": true,
+      "evidence": "stardust/replica/gates/boliglan-pub-1440/ (pixel-iter3.txt, chrome-*.txt, content-diff-published-eds.txt)"
+     },
+     "360": {
+      "pixelPct": 1.83,
+      "heightDelta": 0,
+      "chromeHeaderPct": 3.58,
+      "chromeHeaderPctExcludingSkipLink": 0.14,
+      "chromeFooterPct": 1.74,
+      "pass": true,
+      "evidence": "stardust/replica/gates/boliglan-pub-360/ (pixel-iter3.txt, chrome-*.txt)"
+     }
+    },
+    "contentDiff": {
+     "liveVsPublished": "71 findings, 9 structural 🔴 — all justified: 7 ROLE SWAP = live pseudo-heading spans (.h4/.h5) authored at their visual heading rank (decision, journal 19:05Z); 2 MISSING CTA = live runtime rewrites hrefs to lenker.sparebank1.no (known, replica gate)",
+     "protoVsEmulation": "68 findings, 7 structural 🔴 (the same pseudo-heading class)"
+    },
+    "justified": [
+     {
+      "flag": "360 header crop 3.58% > 2%",
+      "why": "live focused skip link (instrument); 0.14% excluding x<115",
+      "permanent": true
+     },
+     {
+      "flag": "to-top disc at chunk seams",
+      "why": "capture-only (live handler silent on programmatic scroll)",
+      "permanent": true
+     }
+    ],
+    "fixesThisRound": [
+     "preview 409 = 70KB authored SVG → svg-sizes.json scan (67 of 285 site SVGs > 40KB) + rasterise-svg.mjs (PNG @2x → DA media), mediaUrl() rewrites at conversion",
+     "footer contact icons painted white (currentColor) after the inline-SVG change",
+     "cards: live model restored — <div class=\"card card--clickable\"> with the authored title link inside (click delegation), fixes the content-diff MISSING CTA class",
+     "feedback question keeps its live h2 rank"
     ]
    }
   },

@@ -88,3 +88,6 @@ node stardust/scripts/diff/content-diff.mjs "http://localhost:8812/<slug>-propos
 Do not touch stardust/state.json, progress.json, journal.md, status.jsonl, chrome-map.json, or another worker's files.
 Report back per archetype: blocks used (new vs reused), per breakpoint pixel %, Δheight, chrome crops, content-diff
 reds (justified/not), lint result, siblings converted with gaps, product regression number, requests filed.
+
+## Changelog (orchestrator)
+- 2026-09-14 20:40Z — cards.js: the card is a `<div class="card card--clickable">` again with the authored `<h3><a>` inside (click delegation). Do not rely on `a.card`. Oversize SVGs: `lib.mjs mediaUrl()` rewrites authored SVGs > 40 KB (per `stardust/rollout/svg-sizes.json`) to DA media PNGs; run `DA_TOKEN=… node stardust/scripts/eds/rasterise-svg.mjs` before deploying a page whose conversion log lists `rasterise` entries. Content-diff justified classes site-wide: ROLE SWAP for live pseudo-heading spans (`.h2–.h6` → heading at the visual rank) and MISSING CTA for `lenker.sparebank1.no` runtime href rewrites.

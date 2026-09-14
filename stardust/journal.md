@@ -82,3 +82,25 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Next:** merge workers C (om-oss/theme/markedsnytt) and D (news-article/news-listing/campaign-landing); encoders + blocks for the remaining 12 families (fan-out on the same brief pattern, per-family encoder files), sibling conversion, DA deploy + published-origin gate; Flow B in `../sparebank1-redesign`.
 
 ---
+
+## 2026-09-14T20:40:00Z — Product page live on the published origin; workers fanned out on the EDS side; Flow B started
+
+**Prompt:** (continuation, hands-off).
+
+**Decisions:**
+- The product page is deployed to DA and published: `https://main--sparebank1--paolomoz.aem.live/nb/bank/privat/lan/boliglan` (DA `paolomoz/sparebank1`, chrome `/nav` + `/footer`). Published-origin gate vs the live capture: **1440 0.52 % Δ0** (header 99.58 %, footer 99.55 %), **360 1.83 % Δ0** (footer 98.26 %; header residual = skip link). Live ↔ published content-diff: 9 structural reds, all in two justified classes (pseudo-heading rank; `lenker.sparebank1.no` runtime rewrites).
+- Oversize authored SVGs (67 of the site's 285 SVGs exceed the pipeline's 40 KB preview limit; the first one 409'd the product page) are authored as PNG rasterisations on DA media at conversion time (`stardust/rollout/svg-sizes.json`, `rasterise-svg.mjs`).
+- Cards follow the live model again: the card is a `div`, the authored title link is the link, the card is clickable by delegation. Unwrapping the anchor had made every card title an unmatched CTA for the content classifier.
+- EDS conversion fanned out: W1 (category-hub, kundeservice-hub, market-landing) and W2 (faq, utility, tool) under `stardust/rollout/EDS-BRIEF.md` (family encoder files auto-loaded by convert.mjs; additive-only shared blocks; product regression as the guard). Replica workers C (om-oss/theme/markedsnytt) still running; D merged (10/13 archetypes approved).
+- Flow B (redesign) started as a separate agent in `../sparebank1-redesign` (seed from the extraction, `direct` on the modernisation intent, `prepare-migration` through prototype --prep for 13 archetypes; stops before migrate).
+
+**Artifacts touched:** blocks/{cards,feedback,footer}/*, stardust/scripts/eds/{lib,encoders,convert,rasterise-svg,_pm-svg-scan}.mjs, stardust/scripts/eds/encoders/ (loader), stardust/rollout/{EDS-BRIEF.md,svg-sizes.json,raster-ledger.json,deploy-ledger.json,deploy.log,raster/}, content/nav*.html, content/footer*.html (sanitised), stardust/replica/progress.json (product.eds, product.published, 10 archetypes), stardust/state.json, status.jsonl.
+
+**Findings worth flagging:**
+- HEAD content-length of the source DAM reports the gzipped SVG size; the pipeline limit applies to raw bytes — measure with GET.
+- On the published origin the same CSS produced dark contact icons (currentColor inherited from the action) — the emulation footer crop had passed only because it was 0.4 % above the bar; chrome crops need a visual look, not just a number.
+- A worker stall (W2, no progress for 600 s at start) was recovered by a fresh spawn with the same brief.
+
+**Next:** merge W1/W2 (EDS ledgers), C (replica), then EDS conversion for C/D families; sibling conversion + full DA rollout (deploy-batch), redirects, qa sweep; Flow B prototypes.
+
+---

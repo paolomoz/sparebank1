@@ -17,8 +17,15 @@
 .page--markedsnytt-listing .richtext h3 { font-family: var(--font-medium); }
 
 /* live .text-wrapper lists: ul margin 0 0 16px 16px, items 8px 0 0 32px, disc */
-.page--markedsnytt-listing .richtext ul { margin: 0 0 16px 16px; padding: 0; list-style: disc; text-align: left; }
-.page--markedsnytt-listing .richtext ul li { margin: 8px 0 0 32px; }
+.page--markedsnytt-listing .richtext ul { margin: 0 0 16px; padding: 0; list-style: disc; text-align: left; }
+.page--markedsnytt-listing .richtext ul li { margin: 8px 0 0 16px; }
+@media (min-width: 768px) {
+  .page--markedsnytt-listing .richtext ul { margin-left: 16px; }
+  .page--markedsnytt-listing .richtext ul li { margin-left: 32px; }
+}
+
+/* the newsfeed rail follows a band flush on live (canon adds 72px above .main > .related-topics) */
+.page--markedsnytt-listing .main > .band + .related-topics { margin-top: 0; }
 
 /* heading utility classes on live are the heading sizes (h2 > .h3 renders 28/36) */
 .page--markedsnytt-listing .h3 { font-size: 20px; line-height: 24px; }

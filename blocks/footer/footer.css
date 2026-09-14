@@ -189,3 +189,10 @@ footer .footer {
   .footer .footer__bottom { padding: 75px 0; }
   .footer .footer__small li { display: inline-block; line-height: 28px; }
 }
+
+/* ===== faq / bedrift chrome (additive) =====
+   a contact section WITHOUT an intro paragraph (the bedrift footer): the live title keeps its 8/24px below the heading in
+   addition to the 64px above the channel row (lifted: stardust/prototypes/css/faq.css .page--faq .contact__title) */
+.footer .contact__title + .contact__actions { margin-top: 72px; }
+@media (width >= 768px) { .footer .contact__title + .contact__actions { margin-top: 88px; } }
+/* ===== /faq / bedrift chrome ===== */
