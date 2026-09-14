@@ -1,0 +1,59 @@
+{
+ "slug": "nb-bank-privat-kundeservice-html",
+ "daPath": "/nb/bank/privat/kundeservice",
+ "file": "content/nb/bank/privat/kundeservice.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer-2"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns",
+    "cards"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "related-products",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "banner-small",
+   "blocks": [
+    "banner"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "columns",
+  "cards",
+  "accordion",
+  "banner"
+ ],
+ "notes": [],
+ "gaps": [],
+ "assets": [],
+ "writtenAt": "2026-09-14T18:29:04.646Z"
+}

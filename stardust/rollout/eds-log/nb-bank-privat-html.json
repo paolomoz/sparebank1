@@ -1,0 +1,71 @@
+{
+ "slug": "nb-bank-privat-html",
+ "daPath": "/nb/bank/privat",
+ "file": "content/nb/bank/privat.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "visually-hidden",
+   "blocks": []
+  },
+  {
+   "module": "campaign",
+   "blocks": []
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "banner-small",
+   "blocks": [
+    "banner"
+   ]
+  },
+  {
+   "module": "related-topics",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "columns",
+  "banner",
+  "cards"
+ ],
+ "notes": [],
+ "gaps": [
+  "module send-to-bank-modal produced no content",
+  "module send-to-bank__loading produced no content",
+  "module visually-hidden emitted as prose",
+  "no encoder for module visually-hidden",
+  "module campaign emitted as prose",
+  "no encoder for module campaign",
+  "module campaign campaign--empty produced no content"
+ ],
+ "assets": [],
+ "writtenAt": "2026-09-14T18:29:04.731Z"
+}

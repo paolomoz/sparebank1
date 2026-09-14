@@ -1,0 +1,35 @@
+{
+  "_provenance": { "writtenBy": "stardust:replica worker (frontend families) — Phase 3–4 ledger", "writtenAt": "2026-09-14T17:40:00Z", "againstInput": "family news-article (nettsider-frontend clientlib variant)", "readArtifacts": ["stardust/replica/gates/nyhet-1440/*", "stardust/replica/gates/nyhet-360/*", "stardust/replica/lift/nyhet-*-detail.json", "stardust/replica/motion/nyhet-*.json", "stardust/current/assets/css/frontend_clientlib_base.1156912316.css"] },
+  "pageType": "article",
+  "family": "news-article",
+  "archetype": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+  "liveUrl": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+  "prototype": "stardust/prototypes/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html-proposed.html",
+  "css": ["css/ffe-tokens.css", "css/canon.css", "css/news-article.css"],
+  "js": ["js/canon.js", "js/news-article.js"],
+  "modules": ["stardust/scripts/replica/modules/frontend-chrome.mjs (__header/__footer for variant=frontend)", "stardust/scripts/replica/modules/news-article.mjs (sb1-article)"],
+  "regime": "prototype (standalone prototype vs live page)",
+  "contentDiffScope": "--main \".sb1-article, .article\" — on frontend pages <header>/<footer> live inside <main>; the article root scopes both sides symmetrically (chrome is covered by chrome-parity + crop gates)",
+  "liveHits": { "stitch": 3, "lift": 2, "geometryProbes": 5, "contentDiff": 2, "visualDiff": 1, "chromeParity": 1, "motionObserve": 2 },
+  "breakpoints": {
+    "1440": { "pixelRounds": 6, "liveGateIterations": 2, "result": { "structuralRed": 0, "visualFlags": "4 justified", "pixelPct": 2.84, "heightDelta": 1, "chromeHeaderPct": 1.78, "chromeFooterPct": 0.36, "pass": true },
+      "justified": [ { "probe": "visual", "flag": "STRETCHED IMAGE ×4 (hero 1200×800→1062×488, related 768×512→294×139 …)", "why": "live renders the same renditions at the same boxes with object-fit: cover (lifted); mirrored" } ],
+      "residuals": [ { "band": "y 2000–2500", "pct": 4.6, "cause": "floated portrait photo decode + text anti-aliasing", "flaggedFor": "none" }, { "region": "header", "pct": 1.78, "cause": "main-nav label widths (tabular digits) + focused skip link in the live capture", "flaggedFor": "none" } ] },
+    "360": { "pixelRounds": 6, "liveGateIterations": 2, "result": { "structuralRed": 0, "visualFlags": "same as 1440", "pixelPct": 7.94, "heightDelta": 2, "chromeHeaderPct": 0.0, "chromeFooterPct": 0.0, "pass": true },
+      "justified": [],
+      "residuals": [ { "band": "y 4000–5500", "pct": 14.9, "cause": "five related-article photos at natural aspect (fill) — decode/scale noise across the whole photo area; positions match to 1px", "flaggedFor": "none" }, { "band": "y 2000–2500", "pct": 11.7, "cause": "floated portrait photo + paragraph anti-aliasing", "flaggedFor": "none" } ],
+      "captureNote": "the first 360 live stitch (short settle) missed every lazy-loaded image (docH 5214 vs lift 6602); re-captured with --wait 5000 (docH 6632) and kept as ground truth (live-short-settle.png retained as evidence)" }
+  },
+  "findings": [
+    "live body carries .ffe-body-text → font-variant-numeric: tabular-nums inherited everywhere; canon's `font` shorthand resets it (canon-requests.md) — the frontend family sets it on body/main/header/footer",
+    "frontend `p` margins are 0 0 16px (not 16px 0); teaser p 24/32 fjell at ≥768, 18/24 at mobile, text-wrap: pretty",
+    "frontend header/footer live INSIDE <main>; grey page canvas rgba(216,216,216,.3); header 124/60 static at every scroll position (no mobile morph — canon.js morph neutralised for .header--frontend)",
+    "footer columns: three auto margins (first column margin-left:auto; social margin auto both sides) inside a 1216px flex row; canon's .footer__columns padding-left:80px had to be overridden",
+    "buttons in the frontend header carry a 2px transparent border (105 = 32 + 69 + 4)"
+  ],
+  "captureState": [ { "what": "search field (#header-searcharea) and login choices (#login-choices) are client-rendered and empty in the settled DOM", "where": "header", "how": "toggle states implemented (aria-expanded, icon swap); no field content — dynamics #20 interim" } ],
+  "motion": { "observed": "stardust/replica/motion/nyhet-1440.json (0 animations, 0 transitions, 12 class mutations: lazyload image__container + search-button active classes; hover: main-nav a colour → fjell), nyhet-360.json (7 transitions on .hamburger.open, class mutations: hamburger open, header__wrap--active, bank-buttons--mobile-menu-active; header static)", "implemented": ["main-nav hover colour (CSS)", "search button toggle: is-active + icon swap + aria-expanded (js/news-article.js)", "hamburger → header__wrap--active + is-open (canon.js) + fixed bottom bank-buttons bar + bars→cross transitions (news-article.css/js)"], "dead": ["header__wrap scroll/show morph (declared in frontend CSS, never fired — neutralised)", "related-link, share-button and search-button hover (no computed change)"], "pixelAfterMotion": "1440 2.84% / 360 7.94% (unchanged)" },
+  "inconsistencyRegister": "empty (pure replica)",
+  "approvedBy": "hands-off",
+  "approvedAt": "2026-09-14T17:40:00Z"
+}

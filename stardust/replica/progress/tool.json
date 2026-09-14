@@ -1,0 +1,97 @@
+{
+  "pageType": "form",
+  "family": "tool",
+  "archetype": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+  "liveUrl": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sperre-kort.html",
+  "prototype": "stardust/prototypes/nb-bank-privat-kundeservice-verktoy-sperre-kort-html-proposed.html",
+  "css": [
+    "css/ffe-tokens.css",
+    "css/canon.css",
+    "css/tool.css"
+  ],
+  "module": "stardust/scripts/replica/modules/utility.mjs (tip handler, shared) \u2014 no tool-specific module needed; all modules canon",
+  "liveHits": {
+    "stitch": 4,
+    "lift": 3,
+    "contentDiff": 1,
+    "visualDiff": 1,
+    "chromeParity": 1,
+    "motionObserve": 1
+  },
+  "breakpoints": {
+    "360": {
+      "pixelRounds": 2,
+      "liveGateIterations": 1,
+      "result": {
+        "structuralRed": 0,
+        "visualFlags": "none",
+        "pixelPct": 0.79,
+        "heightDelta": 0,
+        "chromeHeaderPct": 3.58,
+        "chromeHeaderPctExcludingSkipLink": 0.14,
+        "chromeFooterPct": 1.07,
+        "pass": true
+      },
+      "justified": [
+        {
+          "probe": "chrome-crop",
+          "flag": "header 3.58% > 2%",
+          "why": "live focused skip link box (x<115); 0.14% otherwise \u2014 same instrument artefact as every archetype",
+          "permanent": true
+        }
+      ],
+      "residuals": []
+    },
+    "1440": {
+      "pixelRounds": 2,
+      "liveGateIterations": 1,
+      "result": {
+        "structuralRed": 0,
+        "visualFlags": "none",
+        "pixelPct": 0.23,
+        "heightDelta": 0,
+        "chromeHeaderPct": 0.42,
+        "chromeFooterPct": 0.31,
+        "pass": true
+      },
+      "justified": [],
+      "residuals": [
+        {
+          "region": "header",
+          "pct": 0.42,
+          "cause": "live focused skip link + glyph antialiasing"
+        }
+      ]
+    }
+  },
+  "captureState": [
+    {
+      "what": "first live 360 stitch measured 15,830px (18 chunks) against a 5,509px document \u2014 capture poisoned (live page grew during the stitch); re-captured clean (5,509)",
+      "where": "gates/sperrekort-360/live.png",
+      "how": "re-stitched; recorded as an instrument event, not a page defect"
+    }
+  ],
+  "motion": {
+    "observed": "stardust/replica/motion/sperrekort-1440.json \u2014 0 animations; class mutations only on chrome (to-top scroll/show, lazy images); hover: none on action/primary buttons or contact icons in this run; `.loginModal` CTA click opens the live <dialog class=login-modal-app> (login chooser) \u2014 dynamics feature #3",
+    "implemented": [
+      "nothing family-specific: CTAs keep their nettbank hrefs (static path); the login dialog is scheduled in dynamics plan D2-b (rebuild-native)"
+    ],
+    "dead": [
+      "ffe-button transitions (declared, no hover change observed)"
+    ],
+    "deferred": [
+      "login-modal dialog (dynamics #3, Phase 5)"
+    ],
+    "pixelAfterMotion": "unchanged"
+  },
+  "canonRequests": [
+    "KEEP_CLASS drops the `main-lead` class (page lead span 24/32 centred fjell; 18/24 mobile) \u2014 styled via a span selector in tool.css",
+    "canon `title` module emits div.title>h1 without the live geometry (container 1280/padding 20, h1 centred, margin 16 0 24 / 16 0 8) \u2014 added in tool.css",
+    "the tip (ffe-message-box) CSS lives in utility.css and had to be duplicated into tool.css \u2014 move to canon",
+    ".text-wrapper ol numbering (counter, no markers, li margin 16 0 0 32, ::before number at -1.8em) missing from canon richtext rules \u2014 added in tool.css",
+    ".main > .richtext + .cols and .main > .tip + (.rule +) .cols carry margin-top 72/48 on live"
+  ],
+  "inconsistencyRegister": "empty",
+  "approvedBy": "hands-off (worker)",
+  "approvedAt": "2026-09-14T17:38:35Z"
+}

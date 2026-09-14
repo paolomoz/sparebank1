@@ -1,0 +1,517 @@
+{
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.html",
+  "width": 360,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1200,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2400,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 3600,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 4800,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 6000,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 5985,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 4485,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2400,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1200,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 800,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 500,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 300,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 200,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 150,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 120,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 90,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 60,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 30,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    }
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".hamburger, .header__hamburger, button[aria-label*=eny]",
+      "frames": [
+        {
+          "t": 16930.299999952316,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 17133,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 17336.099999904633,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 17539.099999904633,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": ".newscard__click-area",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 39, 118)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "img.image--responsive",
+            "transform": "none",
+            "color": "rgb(0, 39, 118)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "h2.ffe-h2.newscard__title",
+            "transform": "none",
+            "color": "rgb(0, 39, 118)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 39, 118)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "img.image--responsive",
+            "transform": "none",
+            "color": "rgb(0, 39, 118)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "h2.ffe-h2.newscard__title",
+            "transform": "none",
+            "color": "rgb(0, 39, 118)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      }
+    }
+  ],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "top",
+        "el": "div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper > div.inner-wrapper > div.hamburger.open",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper > div.inner-wrapper > div.hamburger.open",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "top",
+        "el": "div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper > div.inner-wrapper > div.hamburger.open",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper > div.inner-wrapper > div.hamburger.open",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-position-x",
+        "el": "div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper > div.inner-wrapper > div.hamburger.open",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-position-y",
+        "el": "div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper > div.inner-wrapper > div.hamburger.open",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper > div.inner-wrapper > div.hamburger.open",
+        "y": 0,
+        "dur": "0.2s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.sb1-article__header-image--top-crop > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 1200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 1600
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.sb1-article__header-image--center-crop > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 2000
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 2800
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 2800
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 3600
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.sb1-article__header-image--center-crop > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 3600
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 4000
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 4000
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 5200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 5200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 6000
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 6000
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 6400
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 6800
+      },
+      {
+        "added": [
+          "open"
+        ],
+        "el": "div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper > div.inner-wrapper > div.hamburger.open",
+        "y": 0
+      },
+      {
+        "added": [
+          "bank-buttons--mobile-menu-active"
+        ],
+        "el": "header.header.undefined > div.header__wrap.header__wrap--active > div.header__content.aem-main-container > div.header__user-content > div.bank-buttons.bank-buttons--mobile-menu-active",
+        "y": 0
+      },
+      {
+        "added": [
+          "header__wrap--active"
+        ],
+        "el": "body.basepage.page.basicpage > div.main-wrap > main.main > header.header.undefined > div.header__wrap.header__wrap--active",
+        "y": 0
+      }
+    ]
+  }
+}

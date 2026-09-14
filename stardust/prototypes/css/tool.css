@@ -1,0 +1,52 @@
+/* tool.css — archetype "tool" (Verktoy pages, e.g. /privat/kundeservice/verktoy/sperre-kort.html).
+   Values lifted from stardust/replica/lift/sperrekort-{1440,360}-detail.json + clientlib rules (.text-wrapper ol, .main-lead, .title h1). */
+.page--tool h3 { font-family: var(--font-medium); }
+/* page title block: full-width centred h1 (ffe-h1) */
+.main > .title { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+.main > .title h1 { margin: 16px 0 8px; text-align: center; }
+@media (min-width: 768px) { .main > .title h1 { margin: 16px 0 24px; } }
+/* page lead: .text-wrapper.max-width 700px centred; the lead span (.main-lead — class dropped by cleanCopy) */
+.page--tool .main > .richtext { display: flow-root; max-width: 700px; margin: 0 20px; padding: 0; }
+.page--tool .main > .richtext > :first-child { margin-top: 16px; }
+.page--tool .main > .richtext p > span { display: block; margin: 0 0 18px; font-size: 18px; line-height: 24px; text-align: center; color: var(--fjell); }
+@media (min-width: 768px) { .page--tool .main > .richtext { margin: 0 auto; } .page--tool .main > .richtext p > span { margin-bottom: 24px; font-size: 24px; line-height: 32px; } }
+/* top-level columns grid after the page lead */
+.page--tool .main > .richtext + .cols { margin-top: 48px; }
+@media (min-width: 1024px) { .page--tool .main > .richtext + .cols { margin-top: 72px; } }
+.page--tool .col__content > .button-wrap + .richtext > :first-child, .page--tool .col__content > .richtext + .richtext > :first-child { margin-top: 16px; }
+.page--tool .main > .tip + .rule + .cols, .page--tool .main > .tip + .cols { margin-top: 48px; }
+@media (min-width: 1024px) { .page--tool .main > .tip + .rule + .cols, .page--tool .main > .tip + .cols { margin-top: 72px; } }
+/* narrowed 10-col rows on top-level columns grids */
+@media (min-width: 1024px) { .main > .cols > .grid-row--cols-10 { grid-template-columns: repeat(10, 1fr); max-width: 1066.67px; } }
+/* numbered steps (.text-wrapper ol): custom counter, no markers */
+.page--tool .richtext ol { margin: 0 0 16px; padding: 0; list-style: none; text-align: left; counter-reset: list-elements; }
+.page--tool .richtext ol li { position: relative; margin: 16px 0 0 32px; line-height: 1.5em; counter-increment: list-elements; }
+.page--tool .richtext ol li::before { content: counter(list-elements); display: block; position: absolute; left: -1.8em; top: .05em; font-size: 1.1em; color: var(--fjell); }
+/* inline SVG illustration in a column: inline img, max-width 250 */
+.page--tool .col__content > .image .image__img { display: inline; width: 100%; max-width: 250px; vertical-align: baseline; }
+.page--tool .col__content > .image[style*="--ratio"] .image__img { display: block; max-width: 100%; }
+.page--tool .col__content > .richtext + .button-wrap { margin: 8px 0; }
+.page--tool .col__content > .richtext > :first-child { margin-top: 0; }
+.page--tool .col__content > .richtext { display: flow-root; }
+/* tip = ffe-message-box--info callout (overrides canon .tip) */
+.main > .tip { max-width: none; margin: 48px 0 0; padding: 0 20px; border-radius: 0; background: transparent; text-align: center; }
+@media (min-width: 1024px) { .main > .tip { margin-top: 72px; } }
+.tip__col { display: flex; justify-content: center; max-width: var(--container); margin: 0 auto; }
+.tip__box { width: 100%; text-align: center; }
+.tip--small .tip__box { max-width: 480px; }
+@media (min-width: 768px) { .tip__col.col-md-10 { max-width: 83.3333%; } .tip__col.col-md-8 { max-width: 66.6667%; } }
+@media (min-width: 1024px) { .tip__col.col-lg-8 { max-width: 853.33px; } .tip__col.col-lg-6 { max-width: 640px; } .tip__col.col-lg-10 { max-width: 1066.67px; } }
+.tip__icon { display: inline-flex; position: relative; align-items: center; justify-content: center; width: 64px; height: 64px; margin: 0 0 -16px; border: 2px solid var(--vann); border-radius: 50%; background: var(--white); color: var(--vann); }
+.tip__icon svg { width: 56px; height: 56px; fill: currentColor; }
+.tip__body { display: flow-root; padding: 40px 32px; border-radius: 8px; background: var(--frost-30); text-align: center; }
+.tip__body h2, .tip__body h3 { margin: 0 0 8px; font-family: var(--font-medium); font-size: 17px; line-height: 20px; color: var(--text); }
+.tip__body p { margin: 16px 0; }
+.tip__body > :first-child { margin-top: 0; }
+@media (min-width: 768px) { .tip__body h2, .tip__body h3 { margin-bottom: 24px; font-size: 18px; line-height: 24px; } }
+/* live h3 in the centred 6-col row balances onto two lines at 360 (glyphs render a hair wider than 328px) */
+@media (max-width: 767px) { .page--utility .grid-row--cols-6 h3 { text-wrap: balance; padding: 0 2px; } }
+
+.tip--left .tip__body, .tip--left .tip__body h2, .tip--left .tip__body h3, .tip--left .tip__body p { text-align: left; }
+.tip__body h3 { margin: 0 0 8px; }
+@media (min-width: 768px) { .tip__body h3 { margin-bottom: 24px; } }
+.tip__body h3:empty { display: block; height: 24px; }

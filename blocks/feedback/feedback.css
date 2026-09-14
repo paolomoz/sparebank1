@@ -1,0 +1,14 @@
+/* feedback — lifted from canon.css (.feedback, .thumbs) */
+.feedback { min-height: 96px; }
+.feedback .feedback__inner { max-width: 600px; margin: 0 auto; padding: 0; text-align: center; }
+.feedback .feedback__question p { margin: 0 0 8px; font-family: var(--font-medium); font-size: 20px; line-height: 24px; color: var(--fjell); }
+.feedback .thumbs { display: flex; justify-content: center; }
+.feedback button.thumbs__btn { flex: 1 1 0; height: 40px; min-height: 40px; margin: 0 2px; padding: 8px 24px; line-height: 20px; }
+.feedback .thumbs__btn svg { width: 20px; height: 20px; }
+.feedback .thumbs__btn--down svg { transform: rotateX(180deg); }
+.feedback .feedback__thanks { margin: 0; color: var(--fjell); }
+
+@media (width >= 768px) {
+  .feedback .feedback__question p { margin-bottom: 24px; font-size: 28px; line-height: 36px; }
+  .feedback button.thumbs__btn { flex: 0 0 auto; }
+}

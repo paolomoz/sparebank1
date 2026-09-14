@@ -1,0 +1,98 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica worker (category-hub)",
+    "writtenAt": "2026-09-14T17:49:56Z"
+  },
+  "archetypes": {
+    "kundeservice-hub": {
+      "pageType": "landing",
+      "family": "kundeservice-hub",
+      "archetype": "nb-bank-privat-kundeservice-html",
+      "liveUrl": "https://www.sparebank1.no/nb/bank/privat/kundeservice.html",
+      "prototype": "stardust/prototypes/nb-bank-privat-kundeservice-html-proposed.html",
+      "css": [
+        "css/ffe-tokens.css",
+        "css/canon.css",
+        "css/kundeservice-hub.css (@imports category-hub.css)"
+      ],
+      "js": [
+        "js/canon.js"
+      ],
+      "modules": "stardust/scripts/replica/modules/kundeservice-hub.mjs (+ category-hub.mjs related-products)",
+      "siblings": 2,
+      "liveHits": {
+        "stitch": 2,
+        "liftStyles": 5,
+        "contentDiff": 1,
+        "visualDiff": 1,
+        "motionObserve": 1
+      },
+      "breakpoints": {
+        "360": {
+          "pixelRounds": 2,
+          "liveGateIterations": 0,
+          "result": {
+            "structuralRed": "not run at 360 (1440 clean; same DOM)",
+            "pixelPct": 1.09,
+            "heightDelta": 0,
+            "chromeHeaderPct": 3.58,
+            "chromeHeaderPctExcludingSkipLink": 0.14,
+            "chromeFooterPct": 1.07,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "chrome-crop",
+              "flag": "header 3.58%",
+              "why": "live focused skip link \"Til hovedmeny\"; 0.14% excluding it",
+              "permanent": true
+            }
+          ],
+          "residuals": []
+        },
+        "1440": {
+          "pixelRounds": 2,
+          "liveGateIterations": 1,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 0.28,
+            "heightDelta": 0,
+            "chromeHeaderPct": 0.42,
+            "chromeFooterPct": 0.34,
+            "pass": true
+          },
+          "justified": [],
+          "residuals": [
+            {
+              "region": "header",
+              "pct": 0.42,
+              "cause": "live focused skip link (instrument-induced) + antialiasing",
+              "flaggedFor": "none"
+            }
+          ]
+        }
+      },
+      "captureState": [
+        {
+          "what": "boost.ai chat entry (chat-field)",
+          "how": "form rendered as captured (textarea + send button), no backend — dynamics #6 interim (submission goes nowhere; action points at the live kundeservice page)"
+        }
+      ],
+      "motion": {
+        "observed": "stardust/replica/motion/ks-1440.json — accordion open classes (ffe-accordion-item--open, heading-button--open, content--open), card hover bg+ring; chat-field button: no hover change",
+        "implemented": [
+          "accordion + card hover via canon.js/canon.css"
+        ],
+        "dead": [],
+        "pixelAfterMotion": "unchanged (0.28 / 1.09)"
+      },
+      "notes": [
+        "page opens with an empty nested background-container (48px desktop / 32px mobile) — mirrored as a padded empty band",
+        "medium cards without an image collapse their image row (family override; canon request)"
+      ],
+      "approvedBy": "hands-off",
+      "approvedAt": "2026-09-14T17:49:56Z"
+    }
+  }
+}

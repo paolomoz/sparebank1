@@ -1,0 +1,67 @@
+/* om-oss family — OM OSS chrome variant + presse modules. Values lifted from live at 1440/360 (stardust/replica/lift/presse-*). */
+
+/* chrome: the OM OSS header is the canon header with the om-oss main nav (verified by chrome-parity at 1440/360 — no variant overrides needed) */
+
+/* ---------------------------------------------------------------- campaign (split photo hero) */
+.campaign { display: flow-root; background: var(--campaign-bg, var(--white)); }
+.campaign__grid { display: grid; grid-template-columns: repeat(12, 1fr); width: 100%; max-width: 100%; }
+.campaign__media { grid-column: span 12; } /* inline picture: the line box adds the 7px descender live has (col 407 / 247) */
+.campaign__media picture { display: inline; }
+.campaign__img { display: inline; vertical-align: baseline; width: 100%; height: 240px; max-width: 100%; object-fit: cover; }
+.campaign__col { grid-column: span 12; display: flex; flex-direction: column; justify-content: center; }
+.campaign__content { width: 100%; max-width: 450px; margin: 0 auto; padding: 20px; text-align: center; color: #262626; }
+.campaign__content .richtext > :first-child { margin-top: 0; }
+.campaign__content h1 { text-align: center; }
+.campaign__content p { margin: 16px 0; }
+.campaign__content .lead-blue { text-align: center; }
+
+@media (min-width: 768px) {
+  .campaign { height: 400px; }
+  .campaign__media { grid-column: span 7; }
+  .campaign__img { height: 400px; }
+  .campaign__col { grid-column: span 5; }
+  .campaign--reverse .campaign__media { order: 2; }
+  .campaign__content { padding: 0 10px 0 40px; margin: 0; text-align: left; }
+  .campaign__content--right { padding: 0 40px 0 10px; margin-left: auto; }
+  .campaign__content h1, .campaign__content .lead-blue { text-align: left; }
+}
+
+/* the frost band that follows the hero starts flush under it */
+.page--om-oss .main > .campaign + .band { margin-top: 0; }
+
+/* ---------------------------------------------------------------- adviser-list (press contacts) */
+.adviser-list { padding: 24px 16px 16px; text-align: center; }
+.adviser-list__header { display: flex; justify-content: center; }
+.adviser-list__title { margin: 0 0 8px; }
+.adviser-list__list { display: flex; flex-wrap: wrap; justify-content: center; max-width: var(--container); margin: 0 auto; }
+.adviser { max-width: 340px; padding: 0 8px 32px; text-align: center; }
+.adviser__image { display: block; width: 180px; height: 180px; margin: 0 auto 10px; border-radius: 100%; overflow: hidden; }
+.adviser__image picture { display: inline; }
+.adviser__img { display: inline; vertical-align: baseline; width: 180px; height: 180px; object-fit: cover; border-radius: 100%; }
+.adviser__name { font-family: var(--font-medium); font-size: 17px; line-height: 20px; color: var(--fjell); }
+.adviser__subtext { font-size: 16px; line-height: 24px; }
+.adviser__phone { font-family: var(--font-medium); }
+.adviser__email { color: var(--vann); }
+
+@media (min-width: 768px) {
+  .adviser__name { font-size: 18px; line-height: 24px; }
+}
+@media (min-width: 1024px) {
+  .adviser-list { padding: 40px 16px 16px; }
+  .adviser-list__title { margin: 0 0 24px; }
+  .adviser { width: 25%; max-width: 25%; padding: 0 16px 32px; }
+}
+
+/* ---------------------------------------------------------------- narrow column grids (live columns-grid__row--col-9/10/11) */
+@media (min-width: 1024px) {
+  .page--om-oss .grid-row--cols-9, .page--om-oss .main > .cols > .grid-row--cols-9 { grid-template-columns: repeat(9, 1fr); max-width: 960px; }
+  .page--om-oss .grid-row--cols-10, .page--om-oss .main > .cols > .grid-row--cols-10 { grid-template-columns: repeat(10, 1fr); max-width: 1066.67px; }
+  .page--om-oss .grid-row--cols-11, .page--om-oss .main > .cols > .grid-row--cols-11 { grid-template-columns: repeat(11, 1fr); max-width: 1173.33px; }
+}
+
+/* the illustration column: live inline style max-width:200px on the svg, inline (line box +7px), centred, rounded 30 like every columns-grid image */
+.page--om-oss .cols .col-lg-4 .image { text-align: center; }
+.page--om-oss .cols .col-lg-4 .image .image__img { display: inline; vertical-align: baseline; max-width: 200px; border-radius: 30px; }
+
+/* live button-list items keep an 8px bottom margin at desktop too (canon only has it on mobile) */
+@media (min-width: 768px) { .page--om-oss .button-list .button-wrap { margin-bottom: 8px; } }

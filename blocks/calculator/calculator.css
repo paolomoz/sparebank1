@@ -1,0 +1,6 @@
+/* calculator — host for the static widget snapshot (the widget's own CSS lives in widget.css inside the shadow root) */
+main .section .calculator-wrapper { max-width: none; }
+main .section:has(> .calculator-wrapper) { padding: 0; }
+.calculator .calculator__host { display: block; width: 100%; line-height: 18.4px; }
+.calculator .calculator__note { max-width: 640px; margin: 8px auto 0; padding: 0 20px; font-size: 14px; line-height: 20px; color: var(--moerkgraa); text-align: center; }
+.calculator .calculator__fallback { text-align: center; }

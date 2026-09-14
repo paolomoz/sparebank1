@@ -1,0 +1,107 @@
+{
+  "pageType": "static",
+  "family": "utility",
+  "archetype": "nb-bank-privat-kundeservice-kontakt-html",
+  "liveUrl": "https://www.sparebank1.no/nb/bank/privat/kundeservice/kontakt.html",
+  "prototype": "stardust/prototypes/nb-bank-privat-kundeservice-kontakt-html-proposed.html",
+  "css": [
+    "css/ffe-tokens.css",
+    "css/canon.css",
+    "css/utility.css"
+  ],
+  "module": "stardust/scripts/replica/modules/utility.mjs (table handler + tip override)",
+  "liveHits": {
+    "stitch": 3,
+    "lift": 2,
+    "contentDiff": 1,
+    "visualDiff": 1,
+    "chromeParity": 1,
+    "motionObserve": 1
+  },
+  "breakpoints": {
+    "360": {
+      "pixelRounds": 3,
+      "liveGateIterations": 1,
+      "result": {
+        "structuralRed": 0,
+        "visualFlags": "none",
+        "pixelPct": 3.13,
+        "heightDelta": -1,
+        "chromeHeaderPct": 3.58,
+        "chromeHeaderPctExcludingSkipLink": 0.14,
+        "chromeFooterPct": 0.76,
+        "pass": true
+      },
+      "justified": [
+        {
+          "probe": "chrome-crop",
+          "flag": "header 3.58% > 2%",
+          "why": "live focused skip link box (x<115) \u2014 0.14% otherwise (same instrument artefact as product/faq)",
+          "permanent": true
+        }
+      ],
+      "residuals": [
+        {
+          "band": "y 1000\u20131500",
+          "pct": 9.6,
+          "cause": "table overflow row (688px table in a 328px scroller) \u2014 glyph antialiasing across 13 rows; the mobile scroll-indicator pill is mirrored statically",
+          "flaggedFor": "none"
+        }
+      ]
+    },
+    "1440": {
+      "pixelRounds": 3,
+      "liveGateIterations": 1,
+      "result": {
+        "structuralRed": 0,
+        "visualFlags": "none",
+        "pixelPct": 1.78,
+        "heightDelta": -1,
+        "chromeHeaderPct": 0.42,
+        "chromeFooterPct": 0.31,
+        "pass": true
+      },
+      "justified": [],
+      "residuals": [
+        {
+          "band": "y 1000\u20131500",
+          "pct": 4.5,
+          "cause": "table row glyph antialiasing (13 rows of link text) + hero photo decode",
+          "flaggedFor": "none"
+        },
+        {
+          "region": "header",
+          "pct": 0.42,
+          "cause": "live focused skip link + glyph antialiasing"
+        }
+      ]
+    }
+  },
+  "captureState": [
+    {
+      "what": "table sticky-header / scroll-indicator runtime helpers",
+      "where": "table module",
+      "how": "hidden at capture (desktop); the mobile 25px indicator row with the orange pill is mirrored statically (CSS ::after)"
+    }
+  ],
+  "motion": {
+    "observed": "stardust/replica/motion/kontakt-1440.json \u2014 0 animations; chrome only (to-top scroll/show, footer lazy images); hover: contact icon-circle (canon); table links / secondary button: no change",
+    "implemented": [
+      "nothing family-specific"
+    ],
+    "dead": [
+      "secondary button transition (declared, no hover change observed)"
+    ],
+    "pixelAfterMotion": "unchanged"
+  },
+  "canonRequests": [
+    "canon h3 font family (title-medium vs live medium)",
+    "canon tip stub replaced by ffe-message-box structure (modules/utility.mjs overrides the `tip` key globally; CSS in utility.css)",
+    "canon .main > .cols > .grid-row max-width outranks .grid-row--cols-N",
+    "canon .main > .band:first-of-type negative margin fires on non-first bands",
+    "canon header top-nav line-height, footer social icon size/offset, to-top icon size (parity)"
+  ],
+  "inconsistencyRegister": "empty",
+  "approvedBy": "hands-off (worker)",
+  "approvedAt": "2026-09-14T17:15:20Z"
+}

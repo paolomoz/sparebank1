@@ -1,0 +1,32 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font",
+        "value": "sparebank1-regular-fallback",
+        "createdAt": "2026-09-14T16:56:09.707Z",
+        "reason": "metric-matched local fallback face (aem-boilerplate/stardust:deploy Step 4 principle 3): Arial re-declared with the brand font's metrics for zero-CLS font loading; not a new typeface"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "sparebank1-medium-fallback",
+        "createdAt": "2026-09-14T16:56:09.720Z",
+        "reason": "metric-matched local fallback face (aem-boilerplate/stardust:deploy Step 4 principle 3): Arial re-declared with the brand font's metrics for zero-CLS font loading; not a new typeface"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "sparebank1-title-fallback",
+        "createdAt": "2026-09-14T16:56:09.730Z",
+        "reason": "metric-matched local fallback face (aem-boilerplate/stardust:deploy Step 4 principle 3): Arial re-declared with the brand font's metrics for zero-CLS font loading; not a new typeface"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "sparebank1-italic",
+        "createdAt": "2026-09-14T16:56:09.741Z",
+        "reason": "mirrors the live site's stack: clientlib declares SpareBank1-italic for <i>/<em> but never loads it (falls back to arial italic) — content-diff font-fork parity, replica fidelity"
+      }
+    ]
+  }
+}

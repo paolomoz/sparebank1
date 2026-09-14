@@ -1,0 +1,360 @@
+{
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+  "width": 360,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1200,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2400,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 3600,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 3082,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1582,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2400,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1200,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 800,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 500,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 300,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 200,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 150,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 120,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 90,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 60,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 30,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "60px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    }
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".hamburger-wrapper",
+      "frames": [
+        {
+          "t": 15796.599999904633,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 15999.799999952316,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 16202.199999809265,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 16404.89999985695,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "top",
+        "el": "div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper > div.inner-wrapper > div.hamburger.open",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper > div.inner-wrapper > div.hamburger.open",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-position-x",
+        "el": "div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper > div.inner-wrapper > div.hamburger.open",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-position-y",
+        "el": "div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper > div.inner-wrapper > div.hamburger.open",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper > div.inner-wrapper > div.hamburger.open",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "top",
+        "el": "div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper > div.inner-wrapper > div.hamburger.open",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper > div.inner-wrapper > div.hamburger.open",
+        "y": 0,
+        "dur": "0.2s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__content--right-adjust.image.sb1-article__content--right-adjust > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 400
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 3200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 3200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 3200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 3200
+      },
+      {
+        "added": [
+          "open"
+        ],
+        "el": "div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper > div.inner-wrapper > div.hamburger.open",
+        "y": 0
+      },
+      {
+        "added": [
+          "bank-buttons--mobile-menu-active"
+        ],
+        "el": "header.header.undefined > div.header__wrap.header__wrap--active > div.header__content.aem-main-container > div.header__user-content > div.bank-buttons.bank-buttons--mobile-menu-active",
+        "y": 0
+      },
+      {
+        "added": [
+          "header__wrap--active"
+        ],
+        "el": "body.basepage.page.basicpage > div.main-wrap > main.main > header.header.undefined > div.header__wrap.header__wrap--active",
+        "y": 0
+      }
+    ]
+  }
+}

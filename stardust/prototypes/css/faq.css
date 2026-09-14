@@ -1,0 +1,24 @@
+/* faq.css — archetype "faq" (Spørsmål question pages). Values lifted from stardust/replica/lift/faq-{1440,360}-detail.json. */
+.qp { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+.qp__breadcrumb { height: 24px; margin: 0 0 16px; padding: 0 var(--gutter); }
+.qp__container { max-width: 768px; margin: 0 auto; }
+.qp__title { margin: 0 0 8px; font-size: 28px; line-height: 36px; }
+.qp__answer .richtext { display: flow-root; }
+.qp__answer .richtext > :first-child { margin-top: 16px; }
+.qp__answer p { margin: 16px 0; }
+.qp__answer ul { margin: 0 0 16px; padding: 0; list-style: disc; text-align: left; }
+.qp__answer .richtext ul li { margin: 8px 0 0 16px; }
+.qp .feedback--inline { display: flex; align-items: flex-start; max-width: none; min-height: 0; margin: 48px 0 0; text-align: left; }
+/* canon defect workaround (see stardust/replica/canon-requests.md): footer() picks a hidden contact-panel <p> when the page has no top-level contact text */
+.page--faq .contact__text { display: none; }
+.page--faq .contact__title { margin-bottom: 0; padding-bottom: 8px; }
+@media (min-width: 768px) { .page--faq .contact__title { padding-bottom: 24px; } }
+.qp .feedback--inline .feedback__question { margin: 5px 20px 0 0; font-family: var(--font); font-size: 16px; line-height: 24px; color: #262626; }
+.qp .feedback--inline .thumbs { display: flex; }
+.qp .feedback--inline .thumbs__btn { width: 20px; height: 29px; min-height: 0; margin: 0 10px; padding: 0; border: 0; border-radius: 0; background: none; color: var(--vann); }
+.qp .feedback--inline .thumbs__btn svg { width: 20px; height: 20px; fill: var(--vann); }
+@media (min-width: 768px) {
+  .qp__title { margin: 0 0 24px; font-size: 46px; line-height: 56px; }
+  .qp__answer ul { margin: 0 0 16px 16px; }
+  .qp__answer .richtext ul li { margin: 8px 0 0 32px; }
+}

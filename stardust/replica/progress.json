@@ -1,165 +1,890 @@
 {
-  "_provenance": {
-    "writtenBy": "stardust:replica (Phase 3–4 ledger)",
-    "writtenAt": "2026-09-14T16:24:37Z",
-    "againstInput": "https://www.sparebank1.no/nb/bank/ — 100-page roster, 13 archetype families",
-    "readArtifacts": [
-      "stardust/current/_page-types.json",
-      "stardust/replica/gates/*",
-      "stardust/replica/motion/*",
-      "stardust/replica/lift/*"
-    ]
-  },
-  "regime": "prototype (standalone prototype vs live page)",
-  "breakpoints": [
-    1440,
-    360
-  ],
-  "liveHitsBudget": {
-    "note": "live navigations per archetype recorded below"
-  },
-  "archetypes": {
-    "product": {
-      "pageType": "program",
-      "family": "product",
-      "archetype": "nb-bank-privat-lan-boliglan-html",
-      "liveUrl": "https://www.sparebank1.no/nb/bank/privat/lan/boliglan.html",
-      "prototype": "stardust/prototypes/nb-bank-privat-lan-boliglan-html-proposed.html",
-      "css": [
-        "css/ffe-tokens.css",
-        "css/canon.css",
-        "css/product.css"
-      ],
-      "generator": "stardust/scripts/replica/author.mjs",
-      "liveHits": {
-        "stitch": 2,
-        "anchor": 1,
-        "geometryProbes": 6,
-        "contentDiff": 4,
-        "visualDiff": 2,
-        "chromeParity": 1,
-        "motionObserve": 2,
-        "calculatorShadow": 2
+ "_provenance": {
+  "writtenBy": "stardust:replica (Phase 3–4 ledger)",
+  "writtenAt": "2026-09-14T18:28:30Z",
+  "againstInput": "https://www.sparebank1.no/nb/bank/ — 100-page roster, 13 archetype families",
+  "readArtifacts": [
+   "stardust/current/_page-types.json",
+   "stardust/replica/gates/*",
+   "stardust/replica/lift/*",
+   "stardust/replica/motion/*",
+   "stardust/replica/progress/*.json"
+  ]
+ },
+ "regime": "prototype (standalone prototype vs live page)",
+ "breakpoints": [
+  1440,
+  360
+ ],
+ "liveHitsBudget": {
+  "note": "live navigations per archetype recorded below"
+ },
+ "archetypes": {
+  "product": {
+   "pageType": "program",
+   "family": "product",
+   "archetype": "nb-bank-privat-lan-boliglan-html",
+   "liveUrl": "https://www.sparebank1.no/nb/bank/privat/lan/boliglan.html",
+   "prototype": "stardust/prototypes/nb-bank-privat-lan-boliglan-html-proposed.html",
+   "css": [
+    "css/ffe-tokens.css",
+    "css/canon.css",
+    "css/product.css"
+   ],
+   "generator": "stardust/scripts/replica/author.mjs",
+   "liveHits": {
+    "stitch": 2,
+    "anchor": 1,
+    "geometryProbes": 6,
+    "contentDiff": 4,
+    "visualDiff": 2,
+    "chromeParity": 1,
+    "motionObserve": 2,
+    "calculatorShadow": 2
+   },
+   "breakpoints": {
+    "360": {
+     "pixelRounds": 7,
+     "liveGateIterations": 2,
+     "result": {
+      "structuralRed": 2,
+      "structuralRedJustified": 2,
+      "visualFlags": "4 justified (same as 1440 + mobile bg svg now loaded)",
+      "pixelPct": 1.54,
+      "heightDelta": 0,
+      "chromeHeaderPct": 3.58,
+      "chromeHeaderPctExcludingSkipLink": 0.14,
+      "chromeFooterPct": 0.88,
+      "pass": true
+     },
+     "justified": [
+      {
+       "probe": "chrome-crop",
+       "flag": "header 3.58% > 2% bar",
+       "why": "96% of the differing pixels are the live focused skip link \"Til hovedmeny\" (rendered visible in the live capture because focus lands on it after the consent click — instrument-induced state); the header excluding that box measures 0.14%. Recorded as residual, not a pass.",
+       "permanent": true
+      }
+     ],
+     "residuals": [
+      {
+       "band": "y 7000–7500",
+       "pct": 8.2,
+       "cause": "to-top button seam repeat at a chunk boundary (fixed chrome, symmetric) + newsfeed scroll row edge",
+       "flaggedFor": "none"
       },
-      "breakpoints": {
-        "360": {
-          "pixelRounds": 7,
-          "liveGateIterations": 2,
-          "result": {
-            "structuralRed": 2,
-            "structuralRedJustified": 2,
-            "visualFlags": "4 justified (same as 1440 + mobile bg svg now loaded)",
-            "pixelPct": 1.54,
-            "heightDelta": 0,
-            "chromeHeaderPct": 3.58,
-            "chromeHeaderPctExcludingSkipLink": 0.14,
-            "chromeFooterPct": 0.88,
-            "pass": true
-          },
-          "justified": [
-            {
-              "probe": "chrome-crop",
-              "flag": "header 3.58% > 2% bar",
-              "why": "96% of the differing pixels are the live focused skip link \"Til hovedmeny\" (rendered visible in the live capture because focus lands on it after the consent click — instrument-induced state); the header excluding that box measures 0.14%. Recorded as residual, not a pass.",
-              "permanent": true
-            }
-          ],
-          "residuals": [
-            {
-              "band": "y 7000–7500",
-              "pct": 8.2,
-              "cause": "to-top button seam repeat at a chunk boundary (fixed chrome, symmetric) + newsfeed scroll row edge",
-              "flaggedFor": "none"
-            },
-            {
-              "band": "y 6500–7000",
-              "pct": 4,
-              "cause": "accordion glyph antialiasing",
-              "flaggedFor": "none"
-            }
-          ]
-        },
-        "1440": {
-          "pixelRounds": 14,
-          "liveGateIterations": 3,
-          "result": {
-            "structuralRed": 2,
-            "structuralRedJustified": 2,
-            "visualFlags": "3 justified",
-            "pixelPct": 0.37,
-            "heightDelta": 0,
-            "chromeHeaderPct": 0.42,
-            "chromeFooterPct": 0.35,
-            "pass": true
-          },
-          "justified": [
-            {
-              "probe": "content",
-              "flag": "🔴 MISSING CTA ×2 (\"Søk om avdragsfrihet\", \"Søk om refinansiering av boliglån\")",
-              "why": "both CTAs exist in the build with the authored hrefs (# / /nb/bank/privat/lan/boliglan/refinansiering-av-boliglan.html); the live runtime rewrites them to the lenker.sparebank1.no tracking redirector, which content-diff reads as a different link. Link destinations are preserved per content-preservation.md; redirector rewriting is a tag concern (dynamics #15).",
-              "permanent": true
-            },
-            {
-              "probe": "content",
-              "flag": "🟠 font fork \"bør\" italic",
-              "why": "live declares SpareBank1-italic which never loads (→ system italic); the build declares the same stack and falls back identically",
-              "permanent": true
-            },
-            {
-              "probe": "visual",
-              "flag": "STRETCHED IMAGE ×3 (card photos 1067×800 → 302×200)",
-              "why": "the live cards render the same renditions at the same box with object-fit:cover 50% 0 — mirrored; the flag fires on both sides"
-            }
-          ],
-          "residuals": [
-            {
-              "band": "y 500–1000",
-              "pct": 1.7,
-              "cause": "bank-choice illustration anti-aliasing + hero photo decode",
-              "flaggedFor": "none"
-            },
-            {
-              "region": "header",
-              "pct": 0.42,
-              "cause": "live capture shows the focused skip link \"Til hovedmeny\" (focus lands on it after the consent click — instrument-induced state); glyph antialiasing",
-              "flaggedFor": "none"
-            }
-          ]
-        }
+      {
+       "band": "y 6500–7000",
+       "pct": 4,
+       "cause": "accordion glyph antialiasing",
+       "flaggedFor": "none"
+      }
+     ]
+    },
+    "1440": {
+     "pixelRounds": 14,
+     "liveGateIterations": 3,
+     "result": {
+      "structuralRed": 2,
+      "structuralRedJustified": 2,
+      "visualFlags": "3 justified",
+      "pixelPct": 0.37,
+      "heightDelta": 0,
+      "chromeHeaderPct": 0.42,
+      "chromeFooterPct": 0.35,
+      "pass": true
+     },
+     "justified": [
+      {
+       "probe": "content",
+       "flag": "🔴 MISSING CTA ×2 (\"Søk om avdragsfrihet\", \"Søk om refinansiering av boliglån\")",
+       "why": "both CTAs exist in the build with the authored hrefs (# / /nb/bank/privat/lan/boliglan/refinansiering-av-boliglan.html); the live runtime rewrites them to the lenker.sparebank1.no tracking redirector, which content-diff reads as a different link. Link destinations are preserved per content-preservation.md; redirector rewriting is a tag concern (dynamics #15).",
+       "permanent": true
       },
-      "captureState": [
-        {
-          "what": "loan calculator (#boliglan-kalkulator) — client-rendered React widget in a shadow root",
-          "where": "calculator section",
-          "how": "static snapshot of the hydrated shadow DOM (declarative shadow DOM) + CSS portation of sb1-lanekalkulator.css scoped to the shadow root (recreation-procedure § Fallback criterion 2); dynamics #7 interim tier — computation disabled until the API is exposed"
-        },
-        {
-          "what": "lazy illustrations (data-lazy-src)",
-          "where": "banner-small, icons",
-          "how": "real URLs read from the rendered DOM; rendered as plain <img>"
-        }
-      ],
-      "motion": {
-        "observed": "stardust/replica/motion/boliglan-1440.json, boliglan-360.json (0 animations; transitions on to-top and card/contact hovers; header__wrap scroll/show morph ≤1024 from clientlib module 2741; accordion + faq-more + bank list + hamburger + contact tabs class mutations)",
-        "implemented": [
-          "header scroll/show morph (threshold 130, show when scrolled up ≥400 from the furthest point) — mirrored state machine in js/canon.js",
-          "to-top show/hide + smooth scroll",
-          "FAQ accordion (aria-expanded, height collapse like ffe-collapse)",
-          "\"Se flere spørsmål og svar\" reveal",
-          "bank list expand/collapse",
-          "hamburger → header__wrap--active",
-          "contact tabs → panels (captured verbatim, hidden)",
-          "hover: card tint #e7f1f9 + 1px ring; contact icon fjell; buttons fjell/green"
-        ],
-        "dead": [
-          "ffe-button label transform transition (declared, never fired)",
-          ".hamburger.open animation (not reachable in capture)"
-        ],
-        "pixelAfterMotion": "unchanged (0.37 / 1.54)"
+      {
+       "probe": "content",
+       "flag": "🟠 font fork \"bør\" italic",
+       "why": "live declares SpareBank1-italic which never loads (→ system italic); the build declares the same stack and falls back identically",
+       "permanent": true
       },
-      "inconsistencyRegister": "empty (pure replica)",
-      "approvedBy": "hands-off",
-      "approvedAt": "2026-09-14T16:24:37Z"
+      {
+       "probe": "visual",
+       "flag": "STRETCHED IMAGE ×3 (card photos 1067×800 → 302×200)",
+       "why": "the live cards render the same renditions at the same box with object-fit:cover 50% 0 — mirrored; the flag fires on both sides"
+      }
+     ],
+     "residuals": [
+      {
+       "band": "y 500–1000",
+       "pct": 1.7,
+       "cause": "bank-choice illustration anti-aliasing + hero photo decode",
+       "flaggedFor": "none"
+      },
+      {
+       "region": "header",
+       "pct": 0.42,
+       "cause": "live capture shows the focused skip link \"Til hovedmeny\" (focus lands on it after the consent click — instrument-induced state); glyph antialiasing",
+       "flaggedFor": "none"
+      }
+     ]
     }
+   },
+   "captureState": [
+    {
+     "what": "loan calculator (#boliglan-kalkulator) — client-rendered React widget in a shadow root",
+     "where": "calculator section",
+     "how": "static snapshot of the hydrated shadow DOM (declarative shadow DOM) + CSS portation of sb1-lanekalkulator.css scoped to the shadow root (recreation-procedure § Fallback criterion 2); dynamics #7 interim tier — computation disabled until the API is exposed"
+    },
+    {
+     "what": "lazy illustrations (data-lazy-src)",
+     "where": "banner-small, icons",
+     "how": "real URLs read from the rendered DOM; rendered as plain <img>"
+    }
+   ],
+   "motion": {
+    "observed": "stardust/replica/motion/boliglan-1440.json, boliglan-360.json (0 animations; transitions on to-top and card/contact hovers; header__wrap scroll/show morph ≤1024 from clientlib module 2741; accordion + faq-more + bank list + hamburger + contact tabs class mutations)",
+    "implemented": [
+     "header scroll/show morph (threshold 130, show when scrolled up ≥400 from the furthest point) — mirrored state machine in js/canon.js",
+     "to-top show/hide + smooth scroll",
+     "FAQ accordion (aria-expanded, height collapse like ffe-collapse)",
+     "\"Se flere spørsmål og svar\" reveal",
+     "bank list expand/collapse",
+     "hamburger → header__wrap--active",
+     "contact tabs → panels (captured verbatim, hidden)",
+     "hover: card tint #e7f1f9 + 1px ring; contact icon fjell; buttons fjell/green"
+    ],
+    "dead": [
+     "ffe-button label transform transition (declared, never fired)",
+     ".hamburger.open animation (not reachable in capture)"
+    ],
+    "pixelAfterMotion": "unchanged (0.37 / 1.54)"
+   },
+   "inconsistencyRegister": "empty (pure replica)",
+   "approvedBy": "hands-off",
+   "approvedAt": "2026-09-14T16:24:37Z",
+   "eds": {
+    "regime": "published-origin (local EDS emulation, stardust/scripts/eds/serve.mjs :3010, content/nb/bank/privat/lan/boliglan.html + blocks) vs live capture",
+    "at": "2026-09-14T18:28:30Z",
+    "document": "content/nb/bank/privat/lan/boliglan.html",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "cards",
+     "banner",
+     "calculator",
+     "accordion",
+     "feedback",
+     "header",
+     "footer"
+    ],
+    "iterations": 8,
+    "breakpoints": {
+     "1440": {
+      "pixelPct": 0.59,
+      "heightDelta": 0,
+      "chromeHeaderPct": 0.42,
+      "chromeFooterPct": 1.31,
+      "pass": true,
+      "evidence": "stardust/replica/gates/boliglan-eds-1440/ (pixel-iter8.txt, chrome-header.txt, chrome-footer.txt)"
+     },
+     "360": {
+      "pixelPct": 1.88,
+      "heightDelta": 0,
+      "chromeHeaderPct": 3.58,
+      "chromeHeaderPctExcludingSkipLink": 0.14,
+      "chromeFooterPct": 1.6,
+      "pass": true,
+      "evidence": "stardust/replica/gates/boliglan-eds-360/ (pixel-iter6.txt, chrome-header.txt, chrome-footer.txt)"
+     }
+    },
+    "justified": [
+     {
+      "flag": "360 header crop 3.58% > 2%",
+      "why": "live focused skip link \"Til hovedmeny\" (instrument-induced); 0.14% excluding x<115",
+      "permanent": true
+     },
+     {
+      "flag": "to-top disc at every chunk seam (both widths)",
+      "why": "live scroll handler does not fire on programmatic scrollTo during capture; footer.js (like canon.js) shows the button after 130px — ~0.2–0.4% of every gate",
+      "permanent": true
+     }
+    ],
+    "fixesThisRound": [
+     "columns: text wrapper (.col__text) so heading/paragraph margins collapse like live .richtext; single CTA p margin 8; lead p margin-top 16",
+     "cards: icon card (card--small) icon inside the body, heading visually hidden (live LO card); news tag detection; rail gap",
+     "sections: rule outranks gap-*; prices 640px wrappers + button margin 8; h2 margin-bottom 24 only ≥768 (prices/faq/reference); reference mobile 17/28 + p 14/24; rule-visible padding 48/72",
+     "feedback inner padding; accordion inline feedback face/line-height",
+     "footer: contact icon inlined as SVG, link underlines (live), contact item spacing, .visually-hidden utility",
+     "header: whitespace text nodes between inline-block list items (word-spacing hack removed)",
+     "encoders: pseudo-heading spans (.h2–.h6) → heading at the visual rank (lib.mjs headingTag); h4 22/28, h5 17/20→18/24"
+    ]
+   }
+  },
+  "category-hub": {
+   "pageType": "landing",
+   "family": "category-hub",
+   "archetype": "nb-bank-privat-lan-html",
+   "liveUrl": "https://www.sparebank1.no/nb/bank/privat/lan.html",
+   "prototype": "stardust/prototypes/nb-bank-privat-lan-html-proposed.html",
+   "css": [
+    "css/ffe-tokens.css",
+    "css/canon.css",
+    "css/category-hub.css"
+   ],
+   "js": [
+    "js/canon.js",
+    "js/category-hub.js"
+   ],
+   "modules": "stardust/scripts/replica/modules/category-hub.mjs",
+   "generator": "stardust/scripts/replica/author.mjs",
+   "siblings": 20,
+   "liveHits": {
+    "stitch": 0,
+    "liftStyles": 2,
+    "domProbes": 3,
+    "contentDiff": 2,
+    "visualDiff": 1,
+    "chromeParity": 3,
+    "motionObserve": 3
+   },
+   "breakpoints": {
+    "360": {
+     "pixelRounds": 2,
+     "liveGateIterations": 1,
+     "result": {
+      "structuralRed": 0,
+      "visualFlags": "not run (content-diff clean at 360; visual-diff at 1440 clean)",
+      "pixelPct": 1.98,
+      "heightDelta": 0,
+      "chromeHeaderPct": 3.58,
+      "chromeHeaderPctExcludingSkipLink": 0.14,
+      "chromeFooterPct": 1.07,
+      "pass": true
+     },
+     "justified": [
+      {
+       "probe": "chrome-crop",
+       "flag": "header 3.58% > 2%",
+       "why": "the differing pixels are the live focused skip link \"Til hovedmeny\" (instrument-induced); header excluding x<115 measures 0.14%",
+       "permanent": true
+      }
+     ],
+     "residuals": [
+      {
+       "band": "y 1000–1500",
+       "pct": 5.9,
+       "cause": "visual-nav photo (background-image cover) decode differences + mobile card shadow antialiasing",
+       "flaggedFor": "none"
+      },
+      {
+       "band": "y 4000–4500",
+       "pct": 4,
+       "cause": "banner illustration + related-products icon antialiasing",
+       "flaggedFor": "none"
+      }
+     ]
+    },
+    "1440": {
+     "pixelRounds": 3,
+     "liveGateIterations": 1,
+     "result": {
+      "structuralRed": 0,
+      "visualFlags": "none",
+      "pixelPct": 0.39,
+      "heightDelta": 0,
+      "chromeHeaderPct": 0.42,
+      "chromeFooterPct": 0.31,
+      "pass": true
+     },
+     "justified": [],
+     "residuals": [
+      {
+       "band": "y 3500–4500",
+       "pct": 1.8,
+       "cause": "photo decode + card border antialiasing",
+       "flaggedFor": "none"
+      },
+      {
+       "region": "header",
+       "pct": 0.42,
+       "cause": "live focused skip link \"Til hovedmeny\" (instrument-induced focus after the consent click) + glyph antialiasing",
+       "flaggedFor": "none"
+      }
+     ],
+     "chromeParity": "header: top-nav links 17px→19px height (canon: inactive links carry a 2px transparent border; live 0) — canon request; footer: social icons Δx+35/Δy-28, to-top icon 40→50, LinkedIn 30→35 — canon footer on this page (canon request)"
+    }
+   },
+   "captureState": [
+    {
+     "what": "visual-nav is client-rendered per breakpoint on live (data-* driven; the 360 DOM differs from the 1440 sidecar)",
+     "how": "both variants authored from data-title/data-text/data-image-src and toggled by CSS"
+    },
+    {
+     "what": "LOfavør cobranding content (client-rendered)",
+     "how": "static snapshot of the settled DOM, collapsed (display:none) as captured — dynamics #14"
+    }
+   ],
+   "motion": {
+    "observed": "stardust/replica/motion/lan-1440.json, lan-360.json — 0 animations; hover: shortcut-btn (colour/background swap + chevron matrix(0,-1,1,0,12,0)), card__container--clickable (bg + ring); visual-nav cards: NO hover change (dead ffe-card-base:hover); click js-brand-button → ffe-button--expanded + label.hide; 360 hamburger → header__wrap--active + open, main/bank-choice/footer get hide",
+    "implemented": [
+     "shortcut hover colour/background + chevron rotate/translate (CSS)",
+     "cobranding toggle (js/category-hub.js: aria-expanded, label hidden, content shown)",
+     "card hover via canon"
+    ],
+    "dead": [
+     "visual-nav card hover (border-color rule never fired) — removed",
+     "ffe-button__icon will-change transform (no fired change besides hover)"
+    ],
+    "pixelAfterMotion": "unchanged (0.39 / 1.98)"
+   },
+   "notes": [
+    "registry collision: modules/utility.mjs (another worker) also exports  and wins alphabetically; category-hub.css styles that markup (see canon-requests.md)",
+    "chrome-parity run 3× — two live timeouts, third run exit 2 with canon-level deltas only"
+   ],
+   "inconsistencyRegister": "empty",
+   "approvedBy": "hands-off",
+   "approvedAt": "2026-09-14T17:43:50Z",
+   "ledger": "stardust/replica/progress/category-hub.json",
+   "mergedAt": "2026-09-14T18:26:22Z"
+  },
+  "kundeservice-hub": {
+   "pageType": "landing",
+   "family": "kundeservice-hub",
+   "archetype": "nb-bank-privat-kundeservice-html",
+   "liveUrl": "https://www.sparebank1.no/nb/bank/privat/kundeservice.html",
+   "prototype": "stardust/prototypes/nb-bank-privat-kundeservice-html-proposed.html",
+   "css": [
+    "css/ffe-tokens.css",
+    "css/canon.css",
+    "css/kundeservice-hub.css (@imports category-hub.css)"
+   ],
+   "js": [
+    "js/canon.js"
+   ],
+   "modules": "stardust/scripts/replica/modules/kundeservice-hub.mjs (+ category-hub.mjs related-products)",
+   "siblings": 2,
+   "liveHits": {
+    "stitch": 2,
+    "liftStyles": 5,
+    "contentDiff": 1,
+    "visualDiff": 1,
+    "motionObserve": 1
+   },
+   "breakpoints": {
+    "360": {
+     "pixelRounds": 2,
+     "liveGateIterations": 0,
+     "result": {
+      "structuralRed": "not run at 360 (1440 clean; same DOM)",
+      "pixelPct": 1.09,
+      "heightDelta": 0,
+      "chromeHeaderPct": 3.58,
+      "chromeHeaderPctExcludingSkipLink": 0.14,
+      "chromeFooterPct": 1.07,
+      "pass": true
+     },
+     "justified": [
+      {
+       "probe": "chrome-crop",
+       "flag": "header 3.58%",
+       "why": "live focused skip link \"Til hovedmeny\"; 0.14% excluding it",
+       "permanent": true
+      }
+     ],
+     "residuals": []
+    },
+    "1440": {
+     "pixelRounds": 2,
+     "liveGateIterations": 1,
+     "result": {
+      "structuralRed": 0,
+      "visualFlags": "none",
+      "pixelPct": 0.28,
+      "heightDelta": 0,
+      "chromeHeaderPct": 0.42,
+      "chromeFooterPct": 0.34,
+      "pass": true
+     },
+     "justified": [],
+     "residuals": [
+      {
+       "region": "header",
+       "pct": 0.42,
+       "cause": "live focused skip link (instrument-induced) + antialiasing",
+       "flaggedFor": "none"
+      }
+     ]
+    }
+   },
+   "captureState": [
+    {
+     "what": "boost.ai chat entry (chat-field)",
+     "how": "form rendered as captured (textarea + send button), no backend — dynamics #6 interim (submission goes nowhere; action points at the live kundeservice page)"
+    }
+   ],
+   "motion": {
+    "observed": "stardust/replica/motion/ks-1440.json — accordion open classes (ffe-accordion-item--open, heading-button--open, content--open), card hover bg+ring; chat-field button: no hover change",
+    "implemented": [
+     "accordion + card hover via canon.js/canon.css"
+    ],
+    "dead": [],
+    "pixelAfterMotion": "unchanged (0.28 / 1.09)"
+   },
+   "notes": [
+    "page opens with an empty nested background-container (48px desktop / 32px mobile) — mirrored as a padded empty band",
+    "medium cards without an image collapse their image row (family override; canon request)"
+   ],
+   "approvedBy": "hands-off",
+   "approvedAt": "2026-09-14T17:49:56Z",
+   "ledger": "stardust/replica/progress/kundeservice-hub.json",
+   "mergedAt": "2026-09-14T18:26:22Z"
+  },
+  "market-landing": {
+   "pageType": "landing",
+   "family": "market-landing",
+   "archetype": "nb-bank-privat-html",
+   "liveUrl": "https://www.sparebank1.no/nb/bank/privat.html",
+   "prototype": "stardust/prototypes/nb-bank-privat-html-proposed.html",
+   "css": [
+    "css/ffe-tokens.css",
+    "css/canon.css",
+    "css/market-landing.css (@imports kundeservice-hub.css → category-hub.css)"
+   ],
+   "js": [
+    "js/canon.js"
+   ],
+   "modules": "stardust/scripts/replica/modules/market-landing.mjs (send-to-bank-modal, send-to-bank__loading, visually-hidden, campaign-carousel, image*, banner-small*, related-topics* — * = canon key overrides that reproduce canon output for other families)",
+   "siblings": 3,
+   "liveHits": {
+    "stitch": 2,
+    "liftStyles": 4,
+    "contentDiff": 1,
+    "visualDiff": 1,
+    "motionObserve": 1,
+    "chromeParity": 1
+   },
+   "breakpoints": {
+    "1440": {
+     "pixelRounds": 2,
+     "liveGateIterations": 1,
+     "result": {
+      "structuralRed": 0,
+      "visualFlags": "3 advisory (cover-cropped hero + card photo = live behaviour; visually-hidden h1 flagged flush-left)",
+      "pixelPct": 5.28,
+      "pixelPctExcludingHero": 0.23,
+      "heightDelta": 0,
+      "chromeHeaderPct": 0.42,
+      "chromeFooterPct": 0.31,
+      "pass": true
+     },
+     "justified": [
+      {
+       "probe": "pixel",
+       "flag": "hot band y 529–929 (43 %) = 5.05 % of page",
+       "why": "campaign-carousel is client-rendered and rotates campaigns between loads: live capture shows 'Noe som gnager litt?' (frost), sidecar/prototype 'Se hva du kan spare!' (#F2F2F9); geometry identical (400px), content-diff on the same load matched",
+       "permanent": true
+      },
+      {
+       "probe": "visual-diff",
+       "flag": "STRETCHED IMAGE hero 840×400 / card 298×200",
+       "why": "object-fit: cover, same as live",
+       "permanent": true
+      },
+      {
+       "probe": "visual-diff",
+       "flag": "FLUSH-LEFT h1 'Privat'",
+       "why": "visually-hidden page h1 (1×1 clipped), as on live",
+       "permanent": true
+      }
+     ],
+     "residuals": [
+      {
+       "region": "header",
+       "pct": 0.42,
+       "cause": "live focused skip link + antialiasing",
+       "flaggedFor": "none"
+      }
+     ],
+     "chromeParity": "exit 2 — same canon-level deltas as lan: top-nav inactive links 17→19px (2px transparent border), footer social icons Δx+35/Δy−28, to-top icon 40→50, LinkedIn 30→35 (canon request already filed by category-hub)"
+    },
+    "360": {
+     "pixelRounds": 2,
+     "liveGateIterations": 0,
+     "result": {
+      "structuralRed": "not run at 360 (1440 clean; same DOM)",
+      "pixelPct": 4.85,
+      "pixelPctExcludingHero": 1.52,
+      "heightDelta": 0,
+      "chromeHeaderPct": 2.96,
+      "chromeHeaderPctExcludingSkipLink": 1.33,
+      "chromeFooterPct": 1.07,
+      "pass": true
+     },
+     "justified": [
+      {
+       "probe": "pixel",
+       "flag": "hot band y 582–1101 (43 %) = 3.33 % of page",
+       "why": "campaign rotation (see 1440)",
+       "permanent": true
+      },
+      {
+       "probe": "chrome-crop",
+       "flag": "header 2.96 % (bar 2 %)",
+       "why": "live focused skip link 'Til hovedmeny' (instrument artifact); 1.33 % excluding it — remaining = antialiasing of the market-nav text and logo",
+       "permanent": true
+      }
+     ],
+     "residuals": []
+    }
+   },
+   "captureState": [
+    {
+     "what": "campaign-carousel",
+     "how": "single slide as captured in the sidecar (no controls exist for one slide); no rotation logic — dynamics: campaign selection is server/client-side per load"
+    },
+    {
+     "what": "send-to-bank-modal / send-to-bank__loading",
+     "how": "mirrored as hidden empty shells"
+    },
+    {
+     "what": ".market-nav",
+     "how": "inserted verbatim before .bank-choice by the campaign-carousel handler (author.mjs does not emit it) — canon request"
+    }
+   ],
+   "motion": {
+    "observed": "stardust/replica/motion/privat-1440.json — primary button hover bg (0.2s), secondary banner button hover color+bg; cards, text links, hero photo link: no change; carousel controls: none found (.campaign-carousel button not found); footer to-top transition (chrome)",
+    "implemented": [
+     "button hovers via canon.css (.btn--primary:hover / .btn--secondary:hover)"
+    ],
+    "dead": [],
+    "js": "none needed (js/market-landing.js not created)",
+    "pixelAfterMotion": "unchanged (5.28 / 4.85)"
+   },
+   "notes": [
+    "news cards carry .card__date and <img> chevron arrows on live — restored in the related-topics override (scoped to this family)",
+    "two-column banner-small (frost-30 / sand-30) implemented as .banner-small--columns",
+    "news rail: two 620px groups → 12px seam between card 2 and 3 on desktop (track 1248px)",
+    "column-grid text blocks keep a leading <p> top margin (56/216px) — band richtext override"
+   ],
+   "approvedBy": "hands-off",
+   "approvedAt": "2026-09-14T18:19:12Z",
+   "ledger": "stardust/replica/progress/market-landing.json",
+   "mergedAt": "2026-09-14T18:26:22Z"
+  },
+  "faq": {
+   "pageType": "article",
+   "family": "faq",
+   "archetype": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+   "liveUrl": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan.html",
+   "prototype": "stardust/prototypes/nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html-proposed.html",
+   "css": [
+    "css/ffe-tokens.css",
+    "css/canon.css",
+    "css/faq.css"
+   ],
+   "module": "stardust/scripts/replica/modules/faq.mjs",
+   "chromeVariant": "bedrift (top-nav active Bedrift, 8 main-nav items, CTA \"Bli bedriftskunde\", bedrift footer columns) — rendered from the DOM by the canon header()/footer(); chrome-parity clean apart from canon-level items",
+   "liveHits": {
+    "stitch": 2,
+    "lift": 2,
+    "contentDiff": 1,
+    "visualDiff": 1,
+    "chromeParity": 1,
+    "motionObserve": 1
+   },
+   "breakpoints": {
+    "360": {
+     "pixelRounds": 2,
+     "liveGateIterations": 1,
+     "result": {
+      "structuralRed": 0,
+      "visualFlags": "none",
+      "pixelPct": 1.35,
+      "heightDelta": 1,
+      "chromeHeaderPct": 3.58,
+      "chromeHeaderPctExcludingSkipLink": 0.14,
+      "chromeFooterPct": 1.97,
+      "pass": true
+     },
+     "justified": [
+      {
+       "probe": "chrome-crop",
+       "flag": "header 3.58% > 2%",
+       "why": "live focused skip link box (x<115) — excluding it the header measures 0.14%; same artefact as the product archetype",
+       "permanent": true
+      }
+     ],
+     "residuals": [
+      {
+       "band": "y 3000–3358",
+       "pct": 4.2,
+       "cause": "footer small-links glyph antialiasing + social icon size (canon)"
+      }
+     ]
+    },
+    "1440": {
+     "pixelRounds": 2,
+     "liveGateIterations": 1,
+     "result": {
+      "structuralRed": 0,
+      "visualFlags": "none",
+      "pixelPct": 0.87,
+      "heightDelta": 1,
+      "chromeHeaderPct": 0.42,
+      "chromeFooterPct": 1.1,
+      "pass": true
+     },
+     "justified": [
+      {
+       "probe": "content",
+       "flag": "🟡 MISSING BODY (FAQPage JSON-LD script text counted as body on the source)",
+       "why": "inline <script type=application/ld+json> text; not content (dropped per content-preservation § Drop deliberately); the FAQPage schema is re-emitted at deploy as page metadata",
+       "permanent": true
+      }
+     ],
+     "residuals": [
+      {
+       "region": "header",
+       "pct": 0.42,
+       "cause": "live focused skip link \"Til hovedmeny\" (instrument-induced focus after consent click) + glyph antialiasing"
+      },
+      {
+       "region": "footer",
+       "pct": 1.1,
+       "cause": "canon-level: social icon box 30→35, LinkedIn/YouTube x offset, to-top icon 40→50 (see canon-requests.md)"
+      }
+     ]
+    }
+   },
+   "captureState": [],
+   "motion": {
+    "observed": "stardust/replica/motion/faq-1440.json — 0 animations; class mutations only on chrome (to-top scroll/show, footer lazy images); hover: contact icon-circle background (canon); thumbs hover: no change",
+    "implemented": [
+     "nothing family-specific — all fired behaviours are canon chrome (js/canon.js)"
+    ],
+    "dead": [
+     "feedback thumbs transitions (declared, no hover/click change observed)"
+    ],
+    "pixelAfterMotion": "unchanged"
+   },
+   "canonRequests": [
+    "footer(): contact text selector picks a hidden panel <p> on pages without top-level contact text (worked around in faq.css)",
+    "canon: .header__topnav a line-height 17px vs live normal (Δh 2px)",
+    "canon footer: social icon box 35×40, LinkedIn/YouTube x/y (Δ+35/−29 on bedrift footer), to-top icon 50 vs 40"
+   ],
+   "inconsistencyRegister": "empty",
+   "approvedBy": "hands-off (worker)",
+   "approvedAt": "2026-09-14T16:47:28Z",
+   "ledger": "stardust/replica/progress/faq.json",
+   "mergedAt": "2026-09-14T18:26:22Z"
+  },
+  "utility": {
+   "pageType": "static",
+   "family": "utility",
+   "archetype": "nb-bank-privat-kundeservice-kontakt-html",
+   "liveUrl": "https://www.sparebank1.no/nb/bank/privat/kundeservice/kontakt.html",
+   "prototype": "stardust/prototypes/nb-bank-privat-kundeservice-kontakt-html-proposed.html",
+   "css": [
+    "css/ffe-tokens.css",
+    "css/canon.css",
+    "css/utility.css"
+   ],
+   "module": "stardust/scripts/replica/modules/utility.mjs (table handler + tip override)",
+   "liveHits": {
+    "stitch": 3,
+    "lift": 2,
+    "contentDiff": 1,
+    "visualDiff": 1,
+    "chromeParity": 1,
+    "motionObserve": 1
+   },
+   "breakpoints": {
+    "360": {
+     "pixelRounds": 3,
+     "liveGateIterations": 1,
+     "result": {
+      "structuralRed": 0,
+      "visualFlags": "none",
+      "pixelPct": 3.13,
+      "heightDelta": -1,
+      "chromeHeaderPct": 3.58,
+      "chromeHeaderPctExcludingSkipLink": 0.14,
+      "chromeFooterPct": 0.76,
+      "pass": true
+     },
+     "justified": [
+      {
+       "probe": "chrome-crop",
+       "flag": "header 3.58% > 2%",
+       "why": "live focused skip link box (x<115) — 0.14% otherwise (same instrument artefact as product/faq)",
+       "permanent": true
+      }
+     ],
+     "residuals": [
+      {
+       "band": "y 1000–1500",
+       "pct": 9.6,
+       "cause": "table overflow row (688px table in a 328px scroller) — glyph antialiasing across 13 rows; the mobile scroll-indicator pill is mirrored statically",
+       "flaggedFor": "none"
+      }
+     ]
+    },
+    "1440": {
+     "pixelRounds": 3,
+     "liveGateIterations": 1,
+     "result": {
+      "structuralRed": 0,
+      "visualFlags": "none",
+      "pixelPct": 1.78,
+      "heightDelta": -1,
+      "chromeHeaderPct": 0.42,
+      "chromeFooterPct": 0.31,
+      "pass": true
+     },
+     "justified": [],
+     "residuals": [
+      {
+       "band": "y 1000–1500",
+       "pct": 4.5,
+       "cause": "table row glyph antialiasing (13 rows of link text) + hero photo decode",
+       "flaggedFor": "none"
+      },
+      {
+       "region": "header",
+       "pct": 0.42,
+       "cause": "live focused skip link + glyph antialiasing"
+      }
+     ]
+    }
+   },
+   "captureState": [
+    {
+     "what": "table sticky-header / scroll-indicator runtime helpers",
+     "where": "table module",
+     "how": "hidden at capture (desktop); the mobile 25px indicator row with the orange pill is mirrored statically (CSS ::after)"
+    }
+   ],
+   "motion": {
+    "observed": "stardust/replica/motion/kontakt-1440.json — 0 animations; chrome only (to-top scroll/show, footer lazy images); hover: contact icon-circle (canon); table links / secondary button: no change",
+    "implemented": [
+     "nothing family-specific"
+    ],
+    "dead": [
+     "secondary button transition (declared, no hover change observed)"
+    ],
+    "pixelAfterMotion": "unchanged"
+   },
+   "canonRequests": [
+    "canon h3 font family (title-medium vs live medium)",
+    "canon tip stub replaced by ffe-message-box structure (modules/utility.mjs overrides the `tip` key globally; CSS in utility.css)",
+    "canon .main > .cols > .grid-row max-width outranks .grid-row--cols-N",
+    "canon .main > .band:first-of-type negative margin fires on non-first bands",
+    "canon header top-nav line-height, footer social icon size/offset, to-top icon size (parity)"
+   ],
+   "inconsistencyRegister": "empty",
+   "approvedBy": "hands-off (worker)",
+   "approvedAt": "2026-09-14T17:15:20Z",
+   "ledger": "stardust/replica/progress/utility.json",
+   "mergedAt": "2026-09-14T18:26:22Z"
+  },
+  "tool": {
+   "pageType": "form",
+   "family": "tool",
+   "archetype": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+   "liveUrl": "https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/sperre-kort.html",
+   "prototype": "stardust/prototypes/nb-bank-privat-kundeservice-verktoy-sperre-kort-html-proposed.html",
+   "css": [
+    "css/ffe-tokens.css",
+    "css/canon.css",
+    "css/tool.css"
+   ],
+   "module": "stardust/scripts/replica/modules/utility.mjs (tip handler, shared) — no tool-specific module needed; all modules canon",
+   "liveHits": {
+    "stitch": 4,
+    "lift": 3,
+    "contentDiff": 1,
+    "visualDiff": 1,
+    "chromeParity": 1,
+    "motionObserve": 1
+   },
+   "breakpoints": {
+    "360": {
+     "pixelRounds": 2,
+     "liveGateIterations": 1,
+     "result": {
+      "structuralRed": 0,
+      "visualFlags": "none",
+      "pixelPct": 0.79,
+      "heightDelta": 0,
+      "chromeHeaderPct": 3.58,
+      "chromeHeaderPctExcludingSkipLink": 0.14,
+      "chromeFooterPct": 1.07,
+      "pass": true
+     },
+     "justified": [
+      {
+       "probe": "chrome-crop",
+       "flag": "header 3.58% > 2%",
+       "why": "live focused skip link box (x<115); 0.14% otherwise — same instrument artefact as every archetype",
+       "permanent": true
+      }
+     ],
+     "residuals": []
+    },
+    "1440": {
+     "pixelRounds": 2,
+     "liveGateIterations": 1,
+     "result": {
+      "structuralRed": 0,
+      "visualFlags": "none",
+      "pixelPct": 0.23,
+      "heightDelta": 0,
+      "chromeHeaderPct": 0.42,
+      "chromeFooterPct": 0.31,
+      "pass": true
+     },
+     "justified": [],
+     "residuals": [
+      {
+       "region": "header",
+       "pct": 0.42,
+       "cause": "live focused skip link + glyph antialiasing"
+      }
+     ]
+    }
+   },
+   "captureState": [
+    {
+     "what": "first live 360 stitch measured 15,830px (18 chunks) against a 5,509px document — capture poisoned (live page grew during the stitch); re-captured clean (5,509)",
+     "where": "gates/sperrekort-360/live.png",
+     "how": "re-stitched; recorded as an instrument event, not a page defect"
+    }
+   ],
+   "motion": {
+    "observed": "stardust/replica/motion/sperrekort-1440.json — 0 animations; class mutations only on chrome (to-top scroll/show, lazy images); hover: none on action/primary buttons or contact icons in this run; `.loginModal` CTA click opens the live <dialog class=login-modal-app> (login chooser) — dynamics feature #3",
+    "implemented": [
+     "nothing family-specific: CTAs keep their nettbank hrefs (static path); the login dialog is scheduled in dynamics plan D2-b (rebuild-native)"
+    ],
+    "dead": [
+     "ffe-button transitions (declared, no hover change observed)"
+    ],
+    "deferred": [
+     "login-modal dialog (dynamics #3, Phase 5)"
+    ],
+    "pixelAfterMotion": "unchanged"
+   },
+   "canonRequests": [
+    "KEEP_CLASS drops the `main-lead` class (page lead span 24/32 centred fjell; 18/24 mobile) — styled via a span selector in tool.css",
+    "canon `title` module emits div.title>h1 without the live geometry (container 1280/padding 20, h1 centred, margin 16 0 24 / 16 0 8) — added in tool.css",
+    "the tip (ffe-message-box) CSS lives in utility.css and had to be duplicated into tool.css — move to canon",
+    ".text-wrapper ol numbering (counter, no markers, li margin 16 0 0 32, ::before number at -1.8em) missing from canon richtext rules — added in tool.css",
+    ".main > .richtext + .cols and .main > .tip + (.rule +) .cols carry margin-top 72/48 on live"
+   ],
+   "inconsistencyRegister": "empty",
+   "approvedBy": "hands-off (worker)",
+   "approvedAt": "2026-09-14T17:38:35Z",
+   "ledger": "stardust/replica/progress/tool.json",
+   "mergedAt": "2026-09-14T18:26:22Z"
   }
+ }
 }

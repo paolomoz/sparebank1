@@ -1,0 +1,190 @@
+/* category-hub.css — archetype "category-hub" (Kategori / Oversikt hub pages such as /privat/lan.html).
+   Values lifted from stardust/replica/lift/lan-1440-detail.json / lan-360-detail.json and the live clientlib. */
+
+/* intro: h1 + centred lead, 1280 container */
+.intro { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); text-align: center; }
+.intro h1 { margin: 16px 0 24px; text-align: center; }
+.intro__lead { display: flow-root; max-width: var(--max, 800px); margin: 0 auto; overflow: hidden; }
+.intro__lead p { margin: 16px 0; text-align: center; }
+.main-lead { display: block; margin-bottom: 24px; font-size: 24px; line-height: 32px; color: var(--fjell); text-align: center; }
+@media (max-width: 767px) { .intro h1 { margin-bottom: 8px; } .intro__lead { max-width: 280px; } .main-lead { margin-bottom: 18px; font-size: 18px; line-height: 24px; } }
+
+/* visual-nav — medium (photo + card) and small (icon row); desktop and mobile variants toggled by width */
+.vnav { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; margin-top: 24px; }
+.vnav__link { display: flex; flex-direction: column; width: 92%; color: inherit; text-decoration: none; }
+.vnav__photo { display: flex; flex-direction: column; justify-content: flex-end; height: 225px; min-height: 225px; border-radius: 16px; background: var(--img-mobile) center / cover no-repeat; box-shadow: 0 3px 8px 0 rgba(38, 38, 38, .3); }
+.vnav__mcard { width: auto; height: 120px; margin: 0 16px -40px; padding: 16px; border: 2px solid transparent; border-radius: 11px; background: var(--white); box-shadow: 0 3px 8px 0 rgba(38, 38, 38, .3); transition: border-color .2s; }
+.vnav__mcard-content { display: flex; flex-direction: column; justify-content: left; padding: 8px 0 0 8px; }
+.vnav__mcard-header, .vnav__sheader { display: flex; flex-direction: row; justify-content: space-between; }
+.vnav__mtitle, .vnav__stitle { margin: 0 0 8px; font-family: var(--font-medium); font-size: 17px; line-height: 20px; color: var(--fjell); }
+.vnav__mtext, .vnav__stext { margin: 0; font-size: 16px; line-height: 24px; color: var(--text); }
+.vnav__stext { margin-bottom: 16px; }
+.vnav__chevron { width: 24px; height: 24px; transform: rotate(270deg); }
+.vnav__dcard { display: none; }
+.vnav--medium .vnav__link { height: 265px; }
+.vnav--small .vnav__link--small { width: 92%; }
+.vnav__scard { display: flex; flex-direction: row; align-items: center; justify-content: flex-end; width: 100%; height: 114px; padding: 16px; border: 2px solid transparent; border-radius: 16px; background: var(--white); box-shadow: 0 3px 8px 0 rgba(38, 38, 38, .3); transition: border-color .2s; }
+.vnav__sicon, .vnav__sarrow { display: none; }
+.vnav__scontent { display: flex; flex-direction: column; justify-content: left; width: 100%; padding: 5px; }
+/* no hover change fired on live visual-nav cards (motion-observe 2026-09-14) — none implemented */
+@media (min-width: 768px) {
+  .vnav { margin-top: 10px; }
+  .vnav--medium .vnav__link { flex-direction: row; align-items: center; justify-content: center; width: 848px; height: 292px; border-radius: 32px; }
+  .vnav__photo { display: block; width: 400px; height: 260px; min-height: 260px; margin: 16px 8px 16px 16px; border-radius: 16px; background-image: var(--img-desktop); box-shadow: 0 2px 3px 2px rgba(38, 38, 38, .3); }
+  .vnav__mcard { display: none; }
+  .vnav__dcard { display: block; position: relative; width: 400px; height: 260px; margin: 16px 16px 16px 8px; border: 2px solid transparent; border-radius: 16px; background: var(--white); box-shadow: 0 2px 3px 2px rgba(38, 38, 38, .3); }
+  .vnav__dcard-content { display: flex; flex-direction: row; justify-content: space-between; height: auto; padding: 10px; }
+  .vnav__dtext { padding: 20px; }
+  .vnav__dtitle { margin: 0 0 8px; font-family: var(--font-medium); font-size: 28px; line-height: 36px; color: var(--fjell); }
+  .vnav__dlead { margin: 0 0 19.2px; font-size: 19.2px; line-height: 32px; color: var(--fjell); }
+  .vnav__dicon { position: absolute; right: 8px; bottom: 110px; display: flex; align-items: center; justify-content: center; width: 26px; height: 20px; }
+  .vnav__dicon .vnav__chevron { margin: 0 6px 0 0; }
+  .vnav--small .vnav__link--small { width: 816px; margin-top: 12px; }
+  .vnav__scard { height: 120px; padding: 16px; box-shadow: 0 2px 3px 2px rgba(38, 38, 38, .3); }
+  .vnav__sicon { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: var(--white); }
+  .vnav__sicon img { width: 44px; height: 44px; }
+  .vnav__scontent { width: 55%; margin: 0 50px 0 20px; }
+  .vnav__sheader .vnav__chevron { display: none; }
+  .vnav__stitle { margin: 0; font-size: 22px; line-height: 28px; }
+  .vnav__stext { margin: 0; font-size: 18px; line-height: 32px; color: var(--fjell); }
+  .vnav__sarrow { display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; }
+}
+@media (min-width: 768px) and (max-width: 844px) { .vnav--small .vnav__link--small { width: 710px; } .vnav__photo, .vnav__dcard { width: 356px; } }
+
+/* rule + shortcuts */
+.shortcuts { margin-top: 48px; text-align: center; }
+.shortcuts__title { max-width: var(--container); margin: 0 auto 20px; padding: 0 var(--gutter); }
+.shortcuts__title h2 { margin-bottom: 8px; text-align: center; }
+.shortcuts__list { list-style: none; max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); text-align: center; }
+.shortcuts__item { display: inline-block; width: 100%; margin: 0 0 10px; text-align: center; }
+.btn--shortcut { display: flex; width: 100%; padding: 8px 24px; border-color: var(--vann); background: var(--white); color: var(--vann); border-radius: 96px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.btn--shortcut svg { width: 16px; height: 16px; fill: currentColor; transition: all .2s var(--ease); }
+.btn--shortcut:hover { background: var(--vann); color: var(--white); }
+.btn--shortcut:hover svg { transform: rotate(-90deg) translate(12px, 0); color: var(--white); }
+.cobranding__toggle.is-expanded .btn__label { display: none; }
+.cobranding__toggle.is-expanded svg { display: inline; width: 24px; height: 24px; }
+@media (min-width: 768px) { .shortcuts { margin-top: 72px; } .shortcuts__title h2 { margin-bottom: 24px; } .shortcuts__item { width: 256px; max-width: 256px; margin: 0 10px 10px; } .btn--shortcut { display: inline-flex; } }
+
+/* cobranding (LOfavør) */
+.cobranding { margin-top: 48px; text-align: center; }
+.cobranding__header { position: relative; z-index: 1; padding: 0 20px; }
+.cobranding__heading { margin: 0 0 8px; font-family: var(--font-medium); font-size: 18px; line-height: 24px; color: var(--fjell); }
+.cobranding__toggle { display: flex; width: 100%; height: 44px; }
+.cobranding__toggle svg { display: none; }
+.cobranding__content { position: relative; margin-top: -20px; padding: 20px 10px; background: var(--band-bg, var(--sand-30)); text-align: left; }
+.cobranding__columns { display: flex; flex-wrap: wrap; gap: 16px; max-width: var(--container); margin: 0 auto; }
+.cobranding__col { flex: 1 1 300px; }
+.cobranding__logo img { height: 60px; width: auto; }
+@media (min-width: 768px) { .cobranding { margin-top: 72px; } .cobranding__heading { margin-bottom: 24px; font-size: 22px; line-height: 28px; } .cobranding__toggle { display: inline-flex; width: auto; } }
+
+/* top-level module rhythm on hub pages (live: .main > .columns-grid/.banner-small/.background-container carry margin-top 72/48) */
+.page--category-hub .main > .cols, .page--category-hub .main > .banner-small, .page--category-hub .main > .band { margin-top: 48px; }
+.page--category-hub .main > .banner-small { max-width: none; }
+.page--category-hub .main > .banner-small .banner-small__inner { background: var(--white); }
+@media (min-width: 768px) { .page--category-hub .main > .cols, .page--category-hub .main > .banner-small, .page--category-hub .main > .band { margin-top: 72px; } }
+
+/* tip: FFE message box with overlapping round icon */
+.tip { margin: 48px auto 0; padding: 0 var(--gutter); background: none; border-radius: 0; max-width: none; text-align: center; }
+.tip__box { display: flex; flex-direction: column; align-items: center; max-width: 480px; margin: 0 auto; text-align: center; }
+.tip__icon { position: relative; bottom: -16px; display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; margin: 0 0 -16px; border: 2px solid var(--vann); border-radius: 50%; background: var(--white); color: var(--vann); }
+.tip__icon svg { width: 56px; height: 56px; fill: currentColor; }
+.tip__content { width: 100%; padding: 40px 32px; border-radius: 8px; background: var(--frost-30); color: var(--text); }
+.tip__box--tips .tip__content { background: var(--sand-30); }
+.tip__content h3 { margin: 0 0 8px; font-family: var(--font-medium); font-size: 17px; line-height: 20px; color: var(--text); text-align: center; }
+.tip__content p { margin: 16px 0; text-align: center; }
+.tip__content .button-list { margin-top: 24px; text-align: center; }
+.tip__content .button-list .button-wrap { display: inline-block; margin: 0; }
+.tip__content .btn { display: inline-flex; flex-wrap: wrap; padding: 8px 17px; margin: 0 -4px; border: 2px solid transparent; border-radius: 22px; background: transparent; color: var(--vann); min-height: 44px; width: auto; }
+.tip__content .btn:hover { text-decoration: underline; }
+@media (min-width: 768px) { .tip { margin-top: 72px; } .tip__content h3 { margin-bottom: 24px; font-size: 18px; line-height: 24px; } }
+
+/* full-width top-level modules on hub pages (live: hr/shortcuts/referance span 1440) */
+.page--category-hub .main > .rule, .page--category-hub .reference { max-width: none; padding-left: 0; padding-right: 0; }
+.shortcuts__item { vertical-align: top; }
+/* tip box: 16px top padding so the 64px icon overlaps the box by 16px */
+.tip__box { padding-top: 16px; }
+.tip__content p { margin: 16px 0; }
+.tip__content .button-list { margin-top: 40px; }
+.tip__content .button-list .button-wrap { display: block; height: 52px; margin: 0; }
+/* banner-small on hub: illustration svg 110×190, white grid */
+.page--category-hub .banner-small__img { width: auto; height: 190px; max-width: 200px; border-radius: 30px; }
+@media (max-width: 767px) { .page--category-hub .banner-small__img { height: 150px; } }
+/* related-products inside a band: no own padding; icon card list (86px icon column, 3-up, 400px max) */
+.page--category-hub .band .related-products { padding: 0; }
+.related-products__title h2 { text-align: left; margin-bottom: 24px; }
+.card-list--small .card { padding: 8px; }
+.card-list--small .card--small { display: grid; grid-template-columns: 86px 1fr; grid-template-rows: 86px; align-items: center; border: 1px solid var(--border); border-radius: 16px; background: var(--white); }
+.card-list--small .card--small .card__media { width: 86px; height: 86px; border-radius: 0; display: flex; align-items: center; justify-content: center; overflow: visible; }
+.card-list--small .card--small .card__media img { width: 70px; height: 70px; object-fit: fill; }
+.card-list--small .card--small .card__body { padding: 16px 8px 16px 16px; }
+.card-list--small .card--small .card__title { font-size: 18px; line-height: 24px; }
+@media (min-width: 1024px) { .card-list--small .card { width: 33.333%; max-width: 400px; } }
+@media (max-width: 767px) { .related-products__title h2 { margin-bottom: 8px; } }
+
+/* intro lead keeps its 16px top margin (canon resets the first richtext child) */
+.intro__lead > :first-child { margin-top: 16px; }
+/* shortcuts: full width on hub pages; inline-block rows without baseline slack; live gap = 20px margins + one 4.4px space */
+.page--category-hub .shortcuts { max-width: none; padding: 0; }
+.shortcuts__list { font-size: 0; line-height: 0; }
+.shortcuts__item { font-size: 16px; line-height: 24px; vertical-align: top; }
+@media (min-width: 768px) { .shortcuts__item { margin: 0 12.2px 10px; } }
+/* related-products icon cards: the 400×104 cell keeps its 8px padding; the bordered box is drawn on ::before */
+.card-list--small .card--small { position: relative; grid-template-columns: 86px 1fr; grid-template-rows: 86px; padding: 8px; border: none; background: none; border-radius: 0; }
+.card-list--small .card--small::before { content: ''; position: absolute; inset: 8px; border: 1px solid var(--border); border-radius: 16px; background: var(--white); z-index: 0; }
+.card-list--small .card--small:hover::before { background: var(--surface-hover); box-shadow: 0 0 0 1px var(--border-hover); }
+.card-list--small .card--small:hover { background: none; box-shadow: none; }
+.card-list--small .card--small > .card__media { grid-column: 1; grid-row: 1; position: relative; z-index: 1; margin: 1px 0 0 1px; }
+.card-list--small .card--small > .card__body { grid-column: 2; grid-row: 1; position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 24px; align-items: center; align-content: start; }
+/* banner-small on hub (product.css is not linked on this family): lifted 1440/360 geometry */
+.banner-small { display: flex; justify-content: center; max-width: none; margin: 0 auto; padding: 54px 0 0; }
+.banner-small__inner { display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; width: 100%; margin: 0; padding: 0 16px; }
+.banner-small__media { display: flex; position: relative; width: 200px; max-width: 200px; height: 150px; margin: -60px 0 -90px; justify-content: center; }
+.banner-small__text { width: 100%; padding: 100px 0 20px; text-align: center; color: var(--fjell); }
+.banner-small__heading { margin: 0; font-family: var(--font-medium); font-size: 20px; line-height: 24px; color: var(--fjell); }
+.banner-small__info { margin: 0; color: var(--fjell); }
+.banner-small__bottom { display: flex; flex-direction: column-reverse; align-items: center; justify-content: center; min-height: 80px; }
+.banner-small__bottom .button-wrap { margin: 8px 0; }
+@media (min-width: 768px) {
+  .banner-small { padding: 0; }
+  .banner-small__inner { flex-direction: row; padding: 0; }
+  .banner-small__inner > * { flex: 0 0 auto; }
+  .banner-small__media { width: 200px; height: 190px; margin: -25px 0 0; }
+  .page--category-hub .banner-small__img { height: 190px; }
+  .banner-small__text { width: 568px; padding: 20px; text-align: left; }
+  .banner-small__heading { font-size: 28px; line-height: 36px; }
+  .banner-small__bottom { flex-direction: row; justify-content: flex-start; min-height: 0; height: 60px; }
+}
+.page--category-hub .shortcuts__list { display: block; gap: 0; }
+@media (min-width: 768px) { .page--category-hub .banner-small__inner { height: 165px; } }
+.tip__box { display: block; }
+/* inner related-products: no inner padding on hub; 104px cells (88px container + 16 padding) */
+.page--category-hub .band .related-products__inner { padding: 0; }
+.card-list--small .card--small { grid-template-rows: 88px; }
+.card-list--small .card--small > .card__media { margin: 1px 0 0 1px; }
+/* tip icon line: 16px top padding + 64px icon on a zero line, pulled 13px into the box (live box starts 67px below the tip) */
+.tip__box { line-height: 0; }
+.tip__icon { vertical-align: top; margin-bottom: -13px; }
+.tip__content { line-height: 24px; }
+.tip__content .button-list .button-wrap { height: auto; padding-bottom: 8px; }
+@media (max-width: 767px) { .tip__content .btn { margin: 0; width: 100%; } }
+/* mobile: every small visual-nav after the first carries its own 24px top margin (live pitch 162) */
+@media (max-width: 767px) { .vnav--small + .vnav--small .vnav__link--small { margin-top: 24px; } }
+@media (max-width: 767px) { .card-list--small .card--small .card__title { font-size: 17px; line-height: 20px; } }
+
+/* tip — markup produced by modules/utility.mjs (registry key `tip` is shared; utility.mjs loads after category-hub.mjs):
+   section.tip.tip--small > .tip__col > .tip__box > .tip__icon + .tip__body(.richtext) > div(h3,p) + .button-list */
+.tip.tip--small { margin: 48px auto 0; padding: 0 var(--gutter); }
+.tip__col { display: flex; justify-content: center; max-width: 640px; margin: 0 auto; }
+.tip__box { display: block; width: 100%; max-width: 480px; padding-top: 16px; line-height: 0; text-align: center; }
+.tip__icon { position: relative; bottom: -16px; display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; margin: 0 0 -13px; border: 2px solid var(--vann); border-radius: 50%; background: var(--white); color: var(--vann); vertical-align: top; }
+.tip__icon svg { width: 56px; height: 56px; fill: currentColor; }
+.tip__body { display: block; padding: 40px 32px; border-radius: 8px; background: var(--frost-30); color: var(--text); line-height: 24px; text-align: center; }
+.tip__body > div > :first-child { margin-top: 0; }
+.tip__body h3 { margin: 0 0 8px; font-family: var(--font-medium); font-size: 17px; line-height: 20px; color: var(--text); text-align: center; }
+.tip__body p { margin: 16px 0; text-align: center; }
+.tip__body .button-list { margin-top: 40px; text-align: center; }
+.tip__body .button-list .button-wrap { display: block; height: auto; margin: 0; padding-bottom: 8px; }
+.tip__body .btn { display: inline-flex; flex-wrap: wrap; width: auto; min-height: 44px; margin: 0 -4px; padding: 8px 17px; border: 2px solid transparent; border-radius: 22px; background: transparent; color: var(--vann); }
+.tip__body .btn:hover { text-decoration: underline; }
+@media (min-width: 768px) { .tip.tip--small { margin-top: 72px; } .tip__body h3 { margin-bottom: 24px; font-size: 18px; line-height: 24px; } }
+@media (max-width: 767px) { .tip__body .btn { margin: 0; width: 100%; } }

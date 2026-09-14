@@ -1,0 +1,76 @@
+/* news-listing.css — nettsider-frontend news listing (`.sb1-articles__content`). Chrome + page canvas come from
+   news-article.css. Values lifted from frontend_clientlib_base.1156912316.css (.sb1-articles rules) and
+   stardust/replica/lift/nyheter-*-detail.json. */
+@import url(news-article.css);
+
+.articles { max-width: 1144px; margin: 0 auto; padding: 20px; }
+.articles__title { width: 100%; }
+.articles__title h1 { margin: 20px 0 0; font-family: var(--font-heading); font-size: 28px; line-height: 36px; color: var(--fjell); }
+.newscards { margin: 20px 0; }
+.newscard { width: 100%; margin-bottom: 16px; background: var(--white); border: 1px solid var(--lysgraa); border-radius: 4px; box-shadow: 0 0 3px #aaa; }
+.newscard__link { display: block; height: 100%; color: var(--fjell); text-decoration: none; }
+.newscard__wrap { height: 100%; overflow: auto; border-radius: 0 4px 4px 4px; }
+.newscard__wrap--withimage { border-top: 4px solid var(--vann); }
+.newscard__image { width: 100%; }
+.newscard__image img { display: inline; width: 100%; height: auto; border-radius: 0; }
+.newscard__image--top img { object-position: top; }
+.newscard__image--center img { object-position: center; }
+.newscard__image--bottom img { object-position: bottom; }
+.newscard__text { padding: 16px 8px 0; font-size: 14px; }
+.newscard__tag-item { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: var(--vann); text-transform: uppercase; }
+.newscard__title { margin: 8px 0; font-family: var(--font-heading); font-size: 1.375rem; line-height: 1.625rem; font-weight: 400; color: var(--fjell); }
+.newscard__date { margin-bottom: 16px; font-size: 12px; color: var(--vann); }
+/* featured headline card */
+.newscard.newscard--headline { width: 100%; margin-bottom: 24px; text-align: center; }
+.newscard--headline .newscard__wrap { border: 1px solid var(--lysgraa); border-radius: 4px; box-shadow: 0 0 3px #aaa; }
+.newscard--headline .newscard__wrap--withimage { border-top: none; }
+.newscard--headline .newscard__content { margin: auto; }
+.newscard--headline .newscard__image img { width: 100%; }
+.newscard--headline .newscard__text { padding: 0 20px; }
+.newscard--headline .newscard__tag { display: inline-block; background: var(--vann); line-height: 26px; }
+.newscard--headline .newscard__tag-item { display: block; min-width: 150px; padding: 0 10px; color: var(--white); letter-spacing: 1.5px; text-align: center; text-transform: uppercase; }
+.newscard--headline .newscard__title { margin: 24px 0 16px; font-size: 32px; line-height: 36px; font-weight: lighter; }
+/* no-image / green variants (not on the archetype, kept for siblings) */
+.newscard--noimage .newscard__wrap { display: flex; align-items: center; justify-content: center; background: var(--vann); color: var(--white); text-align: center; }
+.newscard--noimage .newscard__title { margin: 16px 0; color: var(--white); }
+.newscard--noimage .newscard__text { padding: 40px; }
+.newscard--noimage .newscard__tag-item, .newscard--noimage .newscard__date { color: var(--white); }
+.newscard--noimage .newscard__date { margin-bottom: 0; }
+.newscard--green .newscard__wrap--withimage { border-top-color: #00754e; }
+.newscard--green .newscard__tag-item, .newscard--green .newscard__date { color: #00754e; }
+/* pager */
+.newscards__footer { width: 100%; text-align: center; }
+.newscards__pager { display: flex; flex-direction: column; align-items: center; padding: 40px 0; width: 100%; }
+.newscards__more { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 48px; margin: 0 0 8px; padding: 10px 24px; font-size: 16px; line-height: 19.2px; color: var(--vann); background: var(--white); border: 2px solid var(--vann); border-radius: 96px; text-decoration: none; }
+.newscards__more-icon { display: inline-block; width: 24px; height: 24px; background-color: currentColor; -webkit-mask-image: var(--icon); mask-image: var(--icon); -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-size: 24px 24px; mask-size: 24px 24px; }
+@media (min-width: 768px) {
+  .articles { padding: 40px; }
+  .articles__title h1 { font-size: 46px; line-height: 56px; }
+  .newscards__more { width: fit-content; }
+  .newscards { display: flex; flex-wrap: wrap; justify-content: space-between; margin: 40px 0; padding: 16px; background: var(--white); border: 1px solid var(--lysgraa); border-radius: 4px; box-shadow: 0 0 3px #aaa; }
+  .newscard { width: 49%; background: transparent; border: none; border-radius: 0; box-shadow: none; }
+  .newscard__image img { width: 100%; height: 190px; object-fit: cover; }
+  .newscard__title { font-size: 1.5rem; line-height: 32px; }
+  .newscard__date { margin-bottom: 0; font-size: 14px; }
+  .newscard--headline .newscard__image img { height: 300px; }
+  .newscard--headline .newscard__title { margin: 24px 0; font-size: 42px; line-height: 52px; }
+  .newscard--headline .newscard__date { margin-bottom: 16px; }
+  .newscard--noimage .newscard__text { padding: 48px 44px; }
+}
+@media (min-width: 1024px) {
+  .articles { padding: 0; }
+  .newscards { padding: 40px; }
+  .newscard { width: 32%; margin-bottom: 24px; }
+  .newscard__title { font-size: 1.625rem; line-height: 34px; }
+  .newscard.newscard--headline { margin-bottom: 40px; }
+  .newscard--headline .newscard__image img { height: 488px; }
+  .newscard--headline .newscard__title { margin: 40px 0; font-size: 62px; line-height: 64px; }
+  .newscard--headline .newscard__tag { line-height: 32px; }
+}
+@media (min-width: 1280px) { .newscard { width: 339px; } }
+/* observed states (stardust/replica/motion/nyheter-1440.json): pager hover inverts colours and nudges the arrow 12px;
+   card hover changes nothing; header static at every scroll position (handled in news-article.css) */
+.newscards__more { transition: color .2s cubic-bezier(.25, .1, .25, 1), background-color .2s cubic-bezier(.25, .1, .25, 1); }
+.newscards__more:hover { color: var(--white); background: var(--vann); }
+.newscards__more-icon { transition: transform .2s cubic-bezier(.25, .1, .25, 1), background-color .2s cubic-bezier(.25, .1, .25, 1); }
+.newscards__more:hover .newscards__more-icon { transform: translateX(12px); background-color: var(--white); }

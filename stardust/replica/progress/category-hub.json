@@ -1,0 +1,133 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica worker (category-hub)",
+    "writtenAt": "2026-09-14T17:43:50Z"
+  },
+  "archetypes": {
+    "category-hub": {
+      "pageType": "landing",
+      "family": "category-hub",
+      "archetype": "nb-bank-privat-lan-html",
+      "liveUrl": "https://www.sparebank1.no/nb/bank/privat/lan.html",
+      "prototype": "stardust/prototypes/nb-bank-privat-lan-html-proposed.html",
+      "css": [
+        "css/ffe-tokens.css",
+        "css/canon.css",
+        "css/category-hub.css"
+      ],
+      "js": [
+        "js/canon.js",
+        "js/category-hub.js"
+      ],
+      "modules": "stardust/scripts/replica/modules/category-hub.mjs",
+      "generator": "stardust/scripts/replica/author.mjs",
+      "siblings": 20,
+      "liveHits": {
+        "stitch": 0,
+        "liftStyles": 2,
+        "domProbes": 3,
+        "contentDiff": 2,
+        "visualDiff": 1,
+        "chromeParity": 3,
+        "motionObserve": 3
+      },
+      "breakpoints": {
+        "360": {
+          "pixelRounds": 2,
+          "liveGateIterations": 1,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "not run (content-diff clean at 360; visual-diff at 1440 clean)",
+            "pixelPct": 1.98,
+            "heightDelta": 0,
+            "chromeHeaderPct": 3.58,
+            "chromeHeaderPctExcludingSkipLink": 0.14,
+            "chromeFooterPct": 1.07,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "chrome-crop",
+              "flag": "header 3.58% > 2%",
+              "why": "the differing pixels are the live focused skip link \"Til hovedmeny\" (instrument-induced); header excluding x<115 measures 0.14%",
+              "permanent": true
+            }
+          ],
+          "residuals": [
+            {
+              "band": "y 1000–1500",
+              "pct": 5.9,
+              "cause": "visual-nav photo (background-image cover) decode differences + mobile card shadow antialiasing",
+              "flaggedFor": "none"
+            },
+            {
+              "band": "y 4000–4500",
+              "pct": 4,
+              "cause": "banner illustration + related-products icon antialiasing",
+              "flaggedFor": "none"
+            }
+          ]
+        },
+        "1440": {
+          "pixelRounds": 3,
+          "liveGateIterations": 1,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 0.39,
+            "heightDelta": 0,
+            "chromeHeaderPct": 0.42,
+            "chromeFooterPct": 0.31,
+            "pass": true
+          },
+          "justified": [],
+          "residuals": [
+            {
+              "band": "y 3500–4500",
+              "pct": 1.8,
+              "cause": "photo decode + card border antialiasing",
+              "flaggedFor": "none"
+            },
+            {
+              "region": "header",
+              "pct": 0.42,
+              "cause": "live focused skip link \"Til hovedmeny\" (instrument-induced focus after the consent click) + glyph antialiasing",
+              "flaggedFor": "none"
+            }
+          ],
+          "chromeParity": "header: top-nav links 17px→19px height (canon: inactive links carry a 2px transparent border; live 0) — canon request; footer: social icons Δx+35/Δy-28, to-top icon 40→50, LinkedIn 30→35 — canon footer on this page (canon request)"
+        }
+      },
+      "captureState": [
+        {
+          "what": "visual-nav is client-rendered per breakpoint on live (data-* driven; the 360 DOM differs from the 1440 sidecar)",
+          "how": "both variants authored from data-title/data-text/data-image-src and toggled by CSS"
+        },
+        {
+          "what": "LOfavør cobranding content (client-rendered)",
+          "how": "static snapshot of the settled DOM, collapsed (display:none) as captured — dynamics #14"
+        }
+      ],
+      "motion": {
+        "observed": "stardust/replica/motion/lan-1440.json, lan-360.json — 0 animations; hover: shortcut-btn (colour/background swap + chevron matrix(0,-1,1,0,12,0)), card__container--clickable (bg + ring); visual-nav cards: NO hover change (dead ffe-card-base:hover); click js-brand-button → ffe-button--expanded + label.hide; 360 hamburger → header__wrap--active + open, main/bank-choice/footer get hide",
+        "implemented": [
+          "shortcut hover colour/background + chevron rotate/translate (CSS)",
+          "cobranding toggle (js/category-hub.js: aria-expanded, label hidden, content shown)",
+          "card hover via canon"
+        ],
+        "dead": [
+          "visual-nav card hover (border-color rule never fired) — removed",
+          "ffe-button__icon will-change transform (no fired change besides hover)"
+        ],
+        "pixelAfterMotion": "unchanged (0.39 / 1.98)"
+      },
+      "notes": [
+        "registry collision: modules/utility.mjs (another worker) also exports  and wins alphabetically; category-hub.css styles that markup (see canon-requests.md)",
+        "chrome-parity run 3× — two live timeouts, third run exit 2 with canon-level deltas only"
+      ],
+      "inconsistencyRegister": "empty",
+      "approvedBy": "hands-off",
+      "approvedAt": "2026-09-14T17:43:50Z"
+    }
+  }
+}

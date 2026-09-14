@@ -1,0 +1,69 @@
+{
+ "slug": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+ "daPath": "/nb/bank/privat/kundeservice/verktoy/sperre-kort",
+ "file": "content/nb/bank/privat/kundeservice/verktoy/sperre-kort.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "title",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "tip",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "breadcrumbs",
+  "columns",
+  "callout",
+  "feedback"
+ ],
+ "notes": [],
+ "gaps": [
+  "module title emitted as prose",
+  "no encoder for module title"
+ ],
+ "assets": [],
+ "writtenAt": "2026-09-14T18:29:04.980Z"
+}

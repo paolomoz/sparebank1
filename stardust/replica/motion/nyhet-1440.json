@@ -1,0 +1,508 @@
+{
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+  "width": 1440,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1200,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2400,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1476,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2400,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1200,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 800,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 500,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 300,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 200,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 150,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 120,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 90,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 60,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 30,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    }
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".header-search-button",
+      "frames": [
+        {
+          "t": 15651.099999904633,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 15853.399999856949,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 16054.899999856949,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 16256.899999856949,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": ".related-list__item a",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 90, 164)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "0.2s cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "subs": [
+          {
+            "el": "img.image--responsive",
+            "transform": "none",
+            "color": "rgb(0, 90, 164)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 90, 164)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "0.2s cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "subs": [
+          {
+            "el": "img.image--responsive",
+            "transform": "none",
+            "color": "rgb(0, 90, 164)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      }
+    },
+    {
+      "sel": ".header__main-nav a",
+      "changed": [
+        "self.color"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(50, 50, 50)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 39, 118)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".header-search-button",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 90, 164)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "span.ffe-icons.ffe-icons--md",
+            "transform": "none",
+            "color": "rgb(0, 39, 118)",
+            "background": "rgb(255, 255, 255)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "span.ffe-icons.ffe-icons--md",
+            "transform": "none",
+            "color": "rgb(0, 39, 118)",
+            "background": "rgb(255, 255, 255)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 90, 164)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "span.ffe-icons.ffe-icons--md",
+            "transform": "none",
+            "color": "rgb(0, 39, 118)",
+            "background": "rgb(255, 255, 255)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "span.ffe-icons.ffe-icons--md",
+            "transform": "none",
+            "color": "rgb(0, 39, 118)",
+            "background": "rgb(255, 255, 255)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      }
+    },
+    {
+      "sel": ".some__item-button",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "svg.[object.SVGAnimatedString]",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "svg.[object.SVGAnimatedString]",
+            "transform": "none",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      }
+    }
+  ],
+  "events": {
+    "animations": [],
+    "transitions": [],
+    "classMutations": [
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 400
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 400
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 400
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__content--right-adjust.image.sb1-article__content--right-adjust > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 800
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 1200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.sb1-article__header-image--top-crop > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 1200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 2400
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 2400
+      },
+      {
+        "added": [
+          "hamburger-wrapper--search-active"
+        ],
+        "el": "header.header.undefined > div.header__wrap > div.header__content.aem-main-container > div.header__top-wrap > button.hamburger-wrapper.hamburger-wrapper--search-active",
+        "y": 0
+      },
+      {
+        "added": [
+          "header-search-button__icon--cross--active"
+        ],
+        "el": "div.header__wrap > div.header__content.aem-main-container > div.header__user-content > button.header-search-button.header-search-button--active > span.ffe-icons.ffe-icons--md.header-search-button__icon",
+        "y": 0
+      },
+      {
+        "added": [
+          "header-search-button__icon--glass--active"
+        ],
+        "el": "div.header__wrap > div.header__content.aem-main-container > div.header__user-content > button.header-search-button.header-search-button--active > span.ffe-icons.ffe-icons--md.header-search-button__icon",
+        "y": 0
+      },
+      {
+        "added": [
+          "header-search-button--active"
+        ],
+        "el": "header.header.undefined > div.header__wrap > div.header__content.aem-main-container > div.header__user-content > button.header-search-button.header-search-button--active",
+        "y": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+ "daPath": "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan",
+ "file": "content/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan.html",
+ "chrome": {
+  "nav": "/nav-bedrift",
+  "footer": "/footer-bedrift"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "qp",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "bank-choice"
+ ],
+ "notes": [],
+ "gaps": [
+  "module qp emitted as prose",
+  "no encoder for module qp"
+ ],
+ "assets": [],
+ "writtenAt": "2026-09-14T18:29:04.810Z"
+}

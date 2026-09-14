@@ -1,0 +1,567 @@
+{
+  "url": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.html",
+  "width": 1440,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1200,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2400,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2495,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 995,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2400,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1200,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 800,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 500,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 300,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 200,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 150,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 120,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 90,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 60,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 30,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "header undefined",
+      "position": "static",
+      "height": "124px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    }
+  ],
+  "widgetSamples": [],
+  "hoverSamples": [
+    {
+      "sel": ".newscard__click-area",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 39, 118)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "img.image--responsive",
+            "transform": "none",
+            "color": "rgb(0, 39, 118)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "h2.ffe-h2.newscard__title",
+            "transform": "none",
+            "color": "rgb(0, 39, 118)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 39, 118)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "img.image--responsive",
+            "transform": "none",
+            "color": "rgb(0, 39, 118)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "h2.ffe-h2.newscard__title",
+            "transform": "none",
+            "color": "rgb(0, 39, 118)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      }
+    },
+    {
+      "sel": ".newscards-footer .ffe-button",
+      "changed": [
+        "self.color",
+        "self.background",
+        "span.ffe-icons.ffe-icons--md.transform",
+        "span.ffe-icons.ffe-icons--md.color",
+        "span.ffe-icons.ffe-icons--md.background"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 90, 164)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "0.2s cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "subs": [
+          {
+            "el": "span.ffe-icons.ffe-icons--md",
+            "transform": "none",
+            "color": "rgb(0, 90, 164)",
+            "background": "rgb(0, 90, 164)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "0.2s cubic-bezier(0.25, 0.1, 0.25, 1)"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 90, 164)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "0.2s cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "subs": [
+          {
+            "el": "span.ffe-icons.ffe-icons--md",
+            "transform": "matrix(1, 0, 0, 1, 12, 0)",
+            "color": "rgb(255, 255, 255)",
+            "background": "rgb(255, 255, 255)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "0.2s cubic-bezier(0.25, 0.1, 0.25, 1)"
+          }
+        ]
+      }
+    },
+    {
+      "sel": ".header__main-nav a",
+      "changed": [
+        "self.color"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(50, 50, 50)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 39, 118)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    }
+  ],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "color",
+        "el": "div.newscards-footer > div.ffe-button-group > a.ffe-button.ffe-button--shortcut > span.ffe-button__label > span.ffe-icons.ffe-icons--md.ffe-button__icon",
+        "y": 4544,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.newscards-footer > div.ffe-button-group > a.ffe-button.ffe-button--shortcut > span.ffe-button__label > span.ffe-icons.ffe-icons--md.ffe-button__icon",
+        "y": 4544,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "div.sb1-articles__content.responsive-grid.sb1-articles__content > div.newscards > div.newscards-footer > div.ffe-button-group > a.ffe-button.ffe-button--shortcut",
+        "y": 4544,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.sb1-articles__content.responsive-grid.sb1-articles__content > div.newscards > div.newscards-footer > div.ffe-button-group > a.ffe-button.ffe-button--shortcut",
+        "y": 4544,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "div.newscards-footer > div.ffe-button-group > a.ffe-button.ffe-button--shortcut > span.ffe-button__label > span.ffe-icons.ffe-icons--md.ffe-button__icon",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.newscards-footer > div.ffe-button-group > a.ffe-button.ffe-button--shortcut > span.ffe-button__label > span.ffe-icons.ffe-icons--md.ffe-button__icon",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "div.sb1-articles__content.responsive-grid.sb1-articles__content > div.newscards > div.newscards-footer > div.ffe-button-group > a.ffe-button.ffe-button--shortcut",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.sb1-articles__content.responsive-grid.sb1-articles__content > div.newscards > div.newscards-footer > div.ffe-button-group > a.ffe-button.ffe-button--shortcut",
+        "y": 0,
+        "dur": "0.2s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 1200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.sb1-article__header-image--center-crop > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 1200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 1200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 2000
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 2000
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 2000
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 2000
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 2000
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 2000
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 2400
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 2400
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 2400
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.sb1-article__header-image--center-crop > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 3200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 3200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.sb1-article__header-image--center-crop > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 3200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.sb1-article__header-image--top-crop > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 3200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 3200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 3200
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.sb1-article__header-image--center-crop > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 4544
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 4544
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.sb1-article__header-image.image--hero.sb1-article__header-image--top-crop > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 4544
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 4544
+      },
+      {
+        "added": [
+          "image__container"
+        ],
+        "el": "div.image > div.image__wrap > figure > div.lazyload-wrapper > div.image__container",
+        "y": 4544
+      }
+    ]
+  }
+}

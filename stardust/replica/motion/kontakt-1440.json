@@ -1,0 +1,474 @@
+{
+  "url": "https://www.sparebank1.no/nb/bank/privat/kundeservice/kontakt.html",
+  "width": 1440,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1200,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2400,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1533,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 33,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2400,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1200,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 800,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 500,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 300,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 200,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 150,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 120,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 90,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 60,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 30,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "header",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    }
+  ],
+  "widgetSamples": [],
+  "hoverSamples": [
+    {
+      "sel": ".table-wrapper td a",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 90, 164)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "0.2s cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 90, 164)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "0.2s cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".cs-action",
+      "changed": [
+        "div.icon-circle.background"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(74, 81, 85)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "div.icon-circle",
+            "transform": "none",
+            "color": "rgb(74, 81, 85)",
+            "background": "rgb(0, 90, 164)",
+            "boxShadow": "rgb(173, 173, 173) 0px 4px 4px 0px",
+            "opacity": "1",
+            "transition": "background-color 0.2s"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(74, 81, 85)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "div.icon-circle",
+            "transform": "none",
+            "color": "rgb(74, 81, 85)",
+            "background": "rgb(0, 39, 118)",
+            "boxShadow": "rgb(173, 173, 173) 0px 4px 4px 0px",
+            "opacity": "1",
+            "transition": "background-color 0.2s"
+          }
+        ]
+      }
+    },
+    {
+      "sel": ".ffe-button--secondary",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 90, 164)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "0.2s cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 90, 164)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "0.2s cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "subs": []
+      }
+    }
+  ],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "bottom",
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show",
+        "y": 1533,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show > span.visually-hidden",
+        "y": 1533,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show > span.icon-holder",
+        "y": 1533,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "bottom",
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top",
+        "y": 33,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top > span.visually-hidden",
+        "y": 2400,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top > span.icon-holder",
+        "y": 2400,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "bottom",
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show",
+        "y": 1200,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show > span.visually-hidden",
+        "y": 1200,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show > span.icon-holder",
+        "y": 1200,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "bottom",
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll",
+        "y": 800,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll > span.visually-hidden",
+        "y": 500,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll > span.icon-holder",
+        "y": 500,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "div.customer-action-wrap.clearfix > ul.customer-action__list > li.customer-action__list-item > a.cs-action.tab-section > span.btn-name",
+        "y": 2346,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.customer-action-wrap.clearfix > ul.customer-action__list > li.customer-action__list-item > a.cs-action.tab-section > div.icon-circle",
+        "y": 2346,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "div.customer-action-wrap.clearfix > ul.customer-action__list > li.customer-action__list-item > a.cs-action.tab-section > span.btn-name",
+        "y": 2346,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.customer-action-wrap.clearfix > ul.customer-action__list > li.customer-action__list-item > a.cs-action.tab-section > div.icon-circle",
+        "y": 2346,
+        "dur": "0.2s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "scroll"
+        ],
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll",
+        "y": 800
+      },
+      {
+        "added": [
+          "lazyload--triggered"
+        ],
+        "el": "a.social-logo > div.aem-component-container.image--all-rounded-small > div.image-wrapper.image-padding > picture > img.inline-svg.responsive.lazyload--triggered",
+        "y": 2400
+      },
+      {
+        "added": [
+          "image-padding"
+        ],
+        "el": "ul > li > a.social-logo > div.aem-component-container.image--all-rounded-small > div.image-wrapper.image-padding",
+        "y": 2400
+      },
+      {
+        "added": [
+          "lazyload--triggered"
+        ],
+        "el": "a.social-logo > div.aem-component-container.image--all-rounded-small > div.image-wrapper.image-padding > picture > img.inline-svg.responsive.lazyload--triggered",
+        "y": 2400
+      },
+      {
+        "added": [
+          "image-padding"
+        ],
+        "el": "ul > li > a.social-logo > div.aem-component-container.image--all-rounded-small > div.image-wrapper.image-padding",
+        "y": 2400
+      },
+      {
+        "added": [
+          "show"
+        ],
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show",
+        "y": 1533
+      },
+      {
+        "added": [
+          "scroll",
+          "show"
+        ],
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show",
+        "y": 1200
+      },
+      {
+        "added": [
+          "show"
+        ],
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show",
+        "y": 1200
+      },
+      {
+        "added": [
+          "scroll"
+        ],
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll",
+        "y": 2346
+      }
+    ]
+  }
+}

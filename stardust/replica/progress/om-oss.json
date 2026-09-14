@@ -1,0 +1,62 @@
+{
+  "pageType": "om-oss",
+  "family": "om-oss",
+  "archetype": "nb-bank-om-oss-presse-html",
+  "liveUrl": "https://www.sparebank1.no/nb/bank/om-oss/presse.html",
+  "prototype": "stardust/prototypes/nb-bank-om-oss-presse-html-proposed.html",
+  "css": ["css/ffe-tokens.css", "css/canon.css", "css/om-oss.css"],
+  "generator": "stardust/scripts/replica/author.mjs + modules/om-oss.mjs (campaign, adviser-list)",
+  "chromeVariant": "OM OSS (topnav OM OSS active, main nav Om SpareBank 1 / Presse / Investor / Jobb og karriere / Samfunnsansvar / Nyheter; Søk + Bli kunde + Logg inn) — canon header/footer generators reproduce it, no variant CSS needed",
+  "liveHits": 15,
+  "breakpoints": {
+    "1440": {
+      "pixelRounds": 5,
+      "liveGateIterations": 2,
+      "result": { "structuralRed": 0, "structuralRedJustified": 0, "visualFlags": 2, "pixelPct": 0.68, "heightDelta": 0, "chromeHeaderPct": 98.51, "chromeFooterPct": 99.16, "pass": true },
+      "justified": [
+        "content-diff 🟠 FONT FORK body \"911 11 555\" (-12% width): same face SpareBank1-medium both sides; live renders digits tabular (canon-requests: body font-variant-numeric: tabular-nums) — canon-level, not family",
+        "visual-diff STRETCHED IMAGE campaign photo 1200x800 → 840x400: live is the same object-fit:cover crop (source side also reports stretched)",
+        "visual-diff STRETCHED IMAGE magne-gundersen-22 1188x1280 → 180x180: live circle portrait is the same object-fit:cover crop",
+        "chrome-parity header PAIR Δh +2 (17→19) on topnav Privat/Bedrift/Om oss and Δw -3 'Om SpareBank 1': canon topnav line-height (already in canon-requests)",
+        "chrome-parity footer Linkedin/YouTube Δx +35 Δy -28 and icon 30→35 / to-top 40→50: canon footer social list (canon-requests: social icon width, ul padding-top 11px live 0, to-top icon)"
+      ],
+      "residuals": [
+        "header crop 98.51%: live capture shows the focused skip link 'Til hovedmeny' at x<115 (permanent); remaining header diff is the topnav 2px line-height (canon)",
+        "footer social icon row 11px lower and Linkedin 5px wider than live (canon footer)"
+      ]
+    },
+    "360": {
+      "pixelRounds": 3,
+      "liveGateIterations": 1,
+      "result": { "structuralRed": 0, "structuralRedJustified": 0, "visualFlags": 1, "pixelPct": 1.74, "heightDelta": 0, "chromeHeaderPct": 96.42, "chromeHeaderPctExcludingSkipLink": 99.90, "chromeFooterPct": 98.36, "pass": true },
+      "justified": [
+        "content-diff 🟠 FONT FORK \"911 11 555\" — same as 1440 (tabular digits, canon)",
+        "visual-diff STRETCHED IMAGE magne-gundersen-22 713x768 → 180x180: live cover crop",
+        "chrome-parity footer 'Sosiale medier' Δw +40 (130→170), Linkedin/YouTube Δx +35 Δy -40, icons 30→35 / 40→50: canon mobile footer social block (canon-requests)"
+      ],
+      "residuals": [
+        "header crop 96.42% full width / 99.90% for x≥115: the live skip link 'Til hovedmeny' (focused after the consent click) occupies x<115 — permanent capture residual, not a defect",
+        "footer social icon row: canon (see canon-requests)"
+      ]
+    }
+  },
+  "captureState": [
+    "consent dialog dismissed with button:has-text(\"Godta alle\") before capture; skip link 'Til hovedmeny' visible in the live capture at both widths",
+    "live 1440 stitched 1440x3342 (= lifted docH 3342); live 360 stitched 360x4624 (= lifted docH 4624)",
+    "adviser portraits lazyload--triggered in the sidecar → mirrored as the resolved <picture> (1280 / 768 sources)",
+    "adviser-list header h2 is empty on live (0px tall) → omitted; its 24px/8px margin is folded into .adviser-list padding (40/24 top)"
+  ],
+  "motion": {
+    "observed": "stardust/replica/motion/presse-1440.json, presse-360.json — 0 animations; hovers: header nav links color → fjell, .ffe-button--primary bg → fjell, .ffe-button--secondary → bg vann/white text, .btn-bli-kunde bg → rgb(9,81,57), header search → white on vann; .adviser-email hover: no change; mobile header morph (scroll/show) as canon",
+    "implemented": [],
+    "canonCovers": ["header nav hover (canon .header__mainnav a:hover / .header__topnav a:hover)", ".btn--primary:hover fjell", ".header__search:hover", "mobile header morph (canon.js)"],
+    "canonDeviations": [".btn--secondary:hover canon = fjell, live = vann (rgb 0,90,164)", ".btn--action:hover canon #005a3c, live rgb(9,81,57) #095139"],
+    "dead": [".adviser-email hover (transition declared, nothing changes)"],
+    "pixelAfterMotion": { "1440": 0.68, "360": 1.74 }
+  },
+  "inconsistencyRegister": [
+    "live inline <img> inside <picture> sits on the baseline → every image column is 7px taller than the image (campaign col 407/247, svg illustration col 284); canon img{vertical-align:middle} hides this — om-oss.css restores baseline where live shows it"
+  ],
+  "approvedBy": "worker C (fork) — gate per ARCHETYPE-BRIEF.md",
+  "approvedAt": "2026-09-14T20:20:00+02:00"
+}

@@ -1,0 +1,126 @@
+/* bank-choice — lifted from canon.css (.bank-choice*) */
+main .section .bank-choice-wrapper { max-width: none; }
+main .section:has(> .bank-choice-wrapper) { padding: 0; }
+
+.bank-choice .bank-choice__container {
+  position: relative;
+  min-height: 470px;
+  padding: 24px;
+  background: var(--vann);
+  overflow: hidden;
+}
+
+.bank-choice .bank-choice__bg { position: absolute; inset: 0; overflow: hidden; z-index: 0; pointer-events: none; }
+.bank-choice .bank-choice__bg-desktop { display: none; }
+
+.bank-choice .bank-choice__bg-mobile {
+  display: inline;
+  position: absolute;
+  top: 120px;
+  left: -24px;
+  width: 526px;
+  max-width: none;
+  height: auto;
+  margin-top: 60px;
+  clip-path: inset(0 0 calc(100% - 350px) 0);
+}
+
+.bank-choice .bank-choice__wrap {
+  position: relative;
+  z-index: 1;
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--white);
+}
+
+.bank-choice .bank-choice__heading p {
+  margin: 0 0 8px;
+  font: 400 24px/28px var(--font-heading);
+  color: var(--white);
+  text-wrap: balance;
+}
+
+.bank-choice .bank-choice__sublead p { margin: 0; color: var(--white); }
+.bank-choice .bank-choice__search { max-width: 335px; margin: 0 auto; }
+.bank-choice .bank-choice__field { display: flex; flex-direction: column; align-items: center; }
+
+.bank-choice .bank-choice__label {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--white);
+  overflow-wrap: anywhere;
+}
+
+.bank-choice .bank-choice__input {
+  display: block;
+  width: 160px;
+  height: 56px;
+  margin: 0 0 8px;
+  padding: 0 16px;
+  border: 2px solid var(--white);
+  border-radius: 16px;
+  background: var(--white);
+  color: var(--text);
+  font: 400 16px var(--font);
+  font-variant-numeric: tabular-nums;
+}
+
+.bank-choice .bank-choice__message { min-height: 0; font-size: 14px; }
+.bank-choice .bank-choice__myposition { display: flex; flex-direction: column; align-items: center; margin-top: 16px; }
+.bank-choice button.bank-choice__position-btn { height: 52px; padding: 4px 24px; }
+.bank-choice .bank-choice__btn-label { display: flex; align-items: center; gap: 8px; }
+.bank-choice .bank-choice__btn-label p { margin: 0; }
+.bank-choice .bank-choice__position-btn .icon svg { width: 40px; height: 40px; }
+.bank-choice .bank-choice__all { position: relative; display: flex; flex-direction: column; padding: 16px 0; }
+.bank-choice .bank-choice__all--open { margin-top: 16px; border-radius: 16px; background: var(--white); }
+
+.bank-choice .bank-choice__expand {
+  display: inline-flex;
+  align-items: center;
+  margin: auto;
+  padding: 8px 17px;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  background: transparent;
+  color: var(--white);
+  font: 400 16px/18.4px var(--font);
+  cursor: pointer;
+}
+
+.bank-choice .bank-choice__expand p { margin: 0; text-decoration: underline; }
+.bank-choice .bank-choice__expand .icon svg { width: 16px; height: 16px; margin-left: 6px; transition: transform 0.2s var(--ease-back); }
+.bank-choice .bank-choice__expand[aria-expanded='true'] .icon svg { transform: rotate(180deg); }
+.bank-choice .bank-choice__all--open .bank-choice__expand { color: var(--vann); }
+.bank-choice .bank-choice__all--open .bank-choice__expand .icon svg { }
+.bank-choice .bank-choice__list { list-style: none; margin: 16px 0 -16px; padding: 0; border-top: 1px solid var(--lysgraa); text-align: left; }
+.bank-choice .bank-choice__list[hidden] { display: none; }
+
+.bank-choice .bank-choice__bank {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--lysgraa);
+  color: var(--text);
+}
+
+.bank-choice .bank-choice__bank p { margin: 0; }
+.bank-choice .bank-choice__bank-link:any-link { display: block; border: none; color: var(--fjell); }
+.bank-choice .bank-choice__bank-tagline { display: block; font-size: 12px; line-height: 20px; color: var(--moerkgraa); }
+.bank-choice .bank-choice__bank .icon svg { width: 24px; height: 24px; flex: 0 0 auto; }
+
+@media (width >= 480px) {
+  .bank-choice .bank-choice__container { min-height: 400px; height: 100%; }
+}
+
+@media (width >= 768px) {
+  .bank-choice .bank-choice__heading p { font-size: 36px; line-height: 44px; }
+  .bank-choice .bank-choice__bg-mobile { display: none; }
+  .bank-choice .bank-choice__bg-desktop { display: block; position: absolute; top: 64px; right: 0; left: 48px; width: 100%; max-width: 1250px; height: auto; margin: 0 auto; }
+}

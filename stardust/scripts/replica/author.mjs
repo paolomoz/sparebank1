@@ -13,14 +13,25 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import path from 'node:path';
 import { parseHTML } from 'linkedom';
+import { readdirSync } from 'node:fs';
+import { pathToFileURL } from 'node:url';
 
 const argv = process.argv.slice(2); const slug = argv[0];
 const opt = (k, d) => { const i = argv.indexOf(k); return i > 0 ? argv[i + 1] : d; };
-const outDir = opt('--out', 'stardust/prototypes'); const cssFiles = opt('--css', 'css/ffe-tokens.css,css/canon.css,css/product.css').split(',');
+const outDir = opt('--out', 'stardust/prototypes');
+const types = JSON.parse(readFileSync('stardust/current/_page-types.json', 'utf8'));
+const family = types.pages[slug]?.archetypeFamily || 'unknown';
+const familyCss = existsSync(`${outDir}/css/${family}.css`) ? `css/${family}.css` : null;
+const cssFiles = opt('--css', ['css/ffe-tokens.css', 'css/canon.css', familyCss].filter(Boolean).join(',')).split(',');
+// module registry: stardust/scripts/replica/modules/*.mjs export default { '<aem-class>': (node, ctx) => Element, '__header'/'__footer' (chrome overrides for a variant) }
+const registry = {};
+const modDir = new URL('./modules/', import.meta.url);
+for (const f of existsSync(modDir) ? readdirSync(modDir).filter(f => f.endsWith('.mjs')) : []) { const m = await import(pathToFileURL(path.join(modDir.pathname, f)).href); Object.assign(registry, m.default || {}); }
 const ORIGIN = 'https://www.sparebank1.no';
 const src = readFileSync(`stardust/current/pages/${slug}.html`, 'utf8');
 const rec = JSON.parse(readFileSync(`stardust/current/pages/${slug}.json`, 'utf8'));
 const { document: D } = parseHTML(src);
+const variant = /nettsider-frontend/.test(src) ? 'frontend' : 'base';
 const { document: O } = parseHTML('<!doctype html><html lang="nb"><head></head><body></body></html>');
 const log = { unknownModules: [], dropped: [], notes: [] };
 
@@ -78,6 +89,8 @@ function card(node, variant) {
 // ---------------------------------------------------------------- module dispatcher (main > * and nested)
 function moduleOf(node) {
   const cls = (node.getAttribute('class') || '').split(/\s+/); const k = cls.find(c => !['parbase', 'reference', 'responsive-grid', 'color-fillable', 'aem-GridColumn', 'section'].includes(c)) || '';
+  const tag = node.tagName.toLowerCase(); if (tag === 'header' || tag === 'footer' || tag === 'noscript' || tag === 'script') return null; // chrome is authored separately
+  if (registry[k]) return registry[k](node, ctx);
   switch (k) {
     case 'aem-main-container': { const a = node.querySelector('a.to-parent__link'); if (a) return el('nav', { class: 'breadcrumb', 'aria-label': 'Tilbake' }, [el('a', { class: 'breadcrumb__link', href: abs(a.getAttribute('href')) }, [svgOf(a.querySelector('svg')), txt(a)])]); const inner = [...node.children].map(moduleOf).filter(Boolean); return inner.length ? el('div', { class: 'container' }, inner) : null; }
     case 'background-container': { const wrap = node.querySelector(':scope > .background-container__wrap'); const s = el('section', { class: 'band', style: bgStyle(wrap) }); const content = el('div', { class: 'band__content' }); for (const ch of (wrap?.querySelector(':scope > .background-container__content') || wrap || node).children) { const m = moduleOf(ch); if (m) content.append(m); } s.append(content); return s; }
@@ -141,7 +154,7 @@ function bankChoice() {
 function footer() {
   const F = D.querySelector('footer'); const f = el('footer', { class: 'footer' });
   const top = el('div', { class: 'footer__top' }); const cs = F.querySelector('.contact-section');
-  if (cs) { const c = el('section', { class: 'contact', id: 'contact-us' }); const h = cs.querySelector(':scope > h2'); if (h) c.append(el('h2', { class: 'contact__title' }, [txt(h)])); const p = cs.querySelector('.text-container p'); if (p) c.append(el('div', { class: 'richtext contact__text' }, [cleanCopy(p)])); const wrap = el('div', { class: 'contact__actions' }); const ul = el('ul', { class: 'contact__list', role: 'tablist' }); for (const li of cs.querySelectorAll('.customer-action__list-item')) { const a = li.querySelector('a.cs-action'); const item = el('li', { class: 'contact__item', role: 'presentation' }); const btn = el('a', { class: 'contact__action', href: abs(a?.getAttribute('href')) === ORIGIN + '/' ? '#' : abs(a?.getAttribute('href')), id: a?.getAttribute('id'), role: 'tab', 'aria-selected': 'false', 'aria-controls': li.getAttribute('aria-controls') }); btn.append(el('span', { class: 'contact__icon' }, [svgOf(a?.querySelector('.icon-circle svg'))])); btn.append(el('span', { class: 'contact__name' }, [txt(a?.querySelector('.btn-name'))])); btn.append(el('span', { class: 'contact__sub' }, [txt(a?.querySelector('.sub-info'))])); item.append(btn); item.append(el('span', { class: 'contact__caret' }, [svgOf(li.querySelector('.icon svg'))])); ul.append(item); ul.append(O.createTextNode('\n')); } wrap.append(ul);
+  if (cs) { const c = el('section', { class: 'contact', id: 'contact-us' }); const h = cs.querySelector(':scope > h2'); if (h) c.append(el('h2', { class: 'contact__title' }, [txt(h)])); const p = [...cs.querySelectorAll('.text-container p')].find((x) => !x.closest('.contact-info-section, .customer-action-wrap')); if (p) c.append(el('div', { class: 'richtext contact__text' }, [cleanCopy(p)])); const wrap = el('div', { class: 'contact__actions' }); const ul = el('ul', { class: 'contact__list', role: 'tablist' }); for (const li of cs.querySelectorAll('.customer-action__list-item')) { const a = li.querySelector('a.cs-action'); const item = el('li', { class: 'contact__item', role: 'presentation' }); const btn = el('a', { class: 'contact__action', href: abs(a?.getAttribute('href')) === ORIGIN + '/' ? '#' : abs(a?.getAttribute('href')), id: a?.getAttribute('id'), role: 'tab', 'aria-selected': 'false', 'aria-controls': li.getAttribute('aria-controls') }); btn.append(el('span', { class: 'contact__icon' }, [svgOf(a?.querySelector('.icon-circle svg'))])); btn.append(el('span', { class: 'contact__name' }, [txt(a?.querySelector('.btn-name'))])); btn.append(el('span', { class: 'contact__sub' }, [txt(a?.querySelector('.sub-info'))])); item.append(btn); item.append(el('span', { class: 'contact__caret' }, [svgOf(li.querySelector('.icon svg'))])); ul.append(item); ul.append(O.createTextNode('\n')); } wrap.append(ul);
     for (const panel of cs.querySelectorAll('.contact-info-section')) { const pn = el('div', { class: 'contact__panel', id: panel.getAttribute('id'), role: 'tabpanel', hidden: true }); for (const ch of panel.childNodes) { const cc = cleanCopy(ch); if (cc) pn.append(cc); } wrap.append(pn); }
     c.append(wrap); top.append(c); }
   const tt = F.querySelector('a.to-top'); if (tt) top.append(el('a', { class: 'to-top', href: '#top', 'aria-label': 'Til toppen' }, [el('span', { class: 'visually-hidden' }, ['Til toppen']), el('span', { class: 'to-top__icon' }, [svgOf(tt.querySelector('svg'))])]));
@@ -154,17 +167,20 @@ function footer() {
   bottom.append(inner); f.append(bottom); return f;
 }
 
+// ---------------------------------------------------------------- ctx for module files
+const ctx = { O, D, el, txt, abs, cleanCopy, richtext, svgOf, picture, imageBlock, card, button, buttonWrapper, labelText, gridClasses, bgStyle, moduleOf, feedbackInline, thumbs, log, slug, family, variant, ORIGIN, KEEP_ATTR, KEEP_CLASS };
 // ---------------------------------------------------------------- assemble
 const head = O.querySelector('head');
 head.innerHTML = `<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"><title>${(rec.title || '').replace(/</g, '&lt;')}</title><meta name="description" content="${(rec.metaDescription || '').replace(/"/g, '&quot;')}"><link rel="icon" href="assets/favicon.png">${cssFiles.map(c => `<link rel="stylesheet" href="${c}">`).join('')}`;
 const body = O.querySelector('body'); body.setAttribute('class', 'page page--' + (rec.slots?.archetypeFamily || 'unknown')); body.setAttribute('id', 'top');
 body.append(el('a', { class: 'skip-link visually-hidden', href: '#main-menu' }, ['Til hovedmeny']), el('a', { class: 'skip-link visually-hidden', href: '#main-content' }, ['Til hovedinnhold']));
-body.append(header()); const bc = bankChoice(); if (bc) body.append(bc);
-const M = D.querySelector('main'); const main = el('main', { id: 'main-content', class: 'main ' + (M.getAttribute('class') || '').split(/\s+/).filter(c => /page$/.test(c) && !/^js-/.test(c)).join(' ') });
+body.append(registry.__header && variant === 'frontend' ? registry.__header(D.querySelector('header'), ctx) : header()); const bc = bankChoice(); if (bc) body.append(bc);
+const M = D.querySelector('main'); const main = el('main', { id: 'main-content', class: 'main ' + (M.getAttribute('class') || '').split(/\s+/).filter(c => /page$/.test(c) && !/^js-/.test(c)).join(' ') + ' main--' + variant });
 for (const ch of M.children) { const m = moduleOf(ch); if (m) main.append(m); }
-body.append(main); body.append(footer());
+body.append(main); body.append(registry.__footer && variant === 'frontend' ? registry.__footer(D.querySelector('footer'), ctx) : footer());
 body.append(el('script', { src: 'js/canon.js', defer: true }));
+if (existsSync(`${outDir}/js/${family}.js`)) body.append(el('script', { src: `js/${family}.js`, defer: true }));
 mkdirSync(outDir, { recursive: true });
 const html = '<!doctype html>\n' + O.documentElement.outerHTML.replace(/<template shadowrootmode="open">/g, '<template shadowrootmode="open">');
 writeFileSync(path.join(outDir, `${slug}-proposed.html`), html);
-console.log(`wrote ${outDir}/${slug}-proposed.html (${(html.length / 1024).toFixed(0)} KB); main modules: ${main.children.length}; unknown: ${[...new Set(log.unknownModules)].join(', ') || 'none'}; dropped: ${log.dropped.length}; notes: ${log.notes.join(' | ') || '-'}`);
+console.log(`[${family}/${variant}] wrote ${outDir}/${slug}-proposed.html (${(html.length / 1024).toFixed(0)} KB); main modules: ${main.children.length}; unknown: ${[...new Set(log.unknownModules)].join(', ') || 'none'}; dropped: ${log.dropped.length}; notes: ${log.notes.join(' | ') || '-'}`);

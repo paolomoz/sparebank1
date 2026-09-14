@@ -1,0 +1,110 @@
+/* market-landing.css — archetype "market-landing" (/nb/bank/privat.html, bedrift.html, om-oss.html).
+   Values lifted from stardust/replica/lift/privat-{1440,360}-detail.json and privat-{1440,360}-banner.json. */
+@import url("kundeservice-hub.css");
+
+/* full-width rules; hidden dialog shells */
+.page--market-landing .main > .rule { max-width: none; padding: 0; }
+.send-to-bank-modal, .send-to-bank__loading { display: none; }
+
+/* market strip between header and bank picker — mobile only ("Privat" · "Gå til bedrift") */
+.market-nav { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; color: var(--text); }
+.market-nav__active { display: block; font: 400 24px/28px var(--font-heading); color: var(--fjell); }
+.market-nav__goto { display: block; font: 400 16px/24px var(--font); color: var(--text); text-decoration: underline; }
+.market-nav__goto:hover { color: var(--fjell); }
+@media (min-width: 1024px) { .market-nav { display: none; } }
+
+/* campaign (hero) — one slide: content column (5/12) + photo column (7/12), photo on the right (reverse) */
+.campaign { width: 100%; }
+.campaign--empty { height: 0; margin: 0; padding: 0; }
+.campaign__slide { display: block; background: var(--band-bg, #f2f2f9); }
+.campaign__media { width: 100%; line-height: 0; }
+.campaign__media-link { display: block; }
+.campaign__img { display: block; width: 100%; height: auto; aspect-ratio: 360 / 246.53; object-fit: cover; }
+.campaign__content { display: flex; flex-direction: column; justify-content: center; }
+.campaign__text { display: flow-root; padding: 20px; color: #262626; text-align: center; }
+.campaign__text .richtext { display: flow-root; }
+.campaign__text .richtext h2 { margin: 0 0 8px; color: var(--fjell); }
+.campaign__text .richtext p { margin: 16px 0; }
+.campaign__text .richtext .h5 { font-size: 17px; line-height: 20px; }
+.campaign__text .button-wrap { margin: 8px 0; }
+.campaign__text .btn { display: flex; width: 100%; }
+@media (min-width: 768px) {
+  .campaign__slide { display: grid; grid-template-columns: repeat(12, 1fr); }
+  .campaign__slide--reverse .campaign__media { grid-column: 6 / span 7; grid-row: 1; }
+  .campaign__slide--reverse .campaign__content { grid-column: 1 / span 5; grid-row: 1; }
+  .campaign__slide { height: 400px; }
+  .campaign__media { height: 400px; }
+  .campaign__content { height: 407px; }
+  .campaign__img { height: 400px; aspect-ratio: auto; }
+  .campaign__text { width: 450px; max-width: 450px; margin: 0 0 0 150px; padding: 0 40px 0 10px; text-align: left; }
+  .campaign__text .richtext h2 { margin: 0 0 24px; }
+  .campaign__text .richtext p { line-height: 25px; }
+  .campaign__text .richtext p:has(> .h5) { line-height: 25px; }
+  .campaign__text .richtext p:not(:has(> .h5)) { line-height: 24px; }
+  .campaign__text .richtext .h5 { font-size: 18px; line-height: 25px; }
+  .campaign__text .btn { display: inline-flex; width: auto; }
+}
+
+/* bands: illustration + link-list columns (illustration keeps its authored max-width; inline image → 7px line slack like live) */
+.page--market-landing .band .image { text-align: left; }
+.page--market-landing .band .image .image__img { display: inline; width: 100%; max-width: var(--w, 100%); height: auto; vertical-align: baseline; }
+.page--market-landing .band .richtext { display: flow-root; }
+.page--market-landing .band .richtext > p:first-child { margin-top: 16px; }
+.page--market-landing .band .richtext h2 { line-height: 30px; }
+.page--market-landing .band .richtext h2 a { color: var(--fjell); text-decoration: none; border: 0; }
+.page--market-landing .band .richtext h2 a:hover { text-decoration: underline; }
+.page--market-landing .band .cols { padding: 0; }
+.page--market-landing .band .rule { max-width: none; }
+@media (min-width: 768px) { .page--market-landing .band .richtext h2 { line-height: 44px; } }
+
+/* two-column banner (frost-30 / sand-30 halves) */
+.banner-small--columns { display: block; max-width: none; margin: 48px 0 0; padding: 0; }
+.banner-small__columns { display: flex; flex-direction: column; }
+.banner-small__column { display: flex; flex: 1 1 50%; justify-content: center; padding: 54px 16px 0; }
+.banner-small__column--two { padding: 0 16px; }
+.banner-small__column[style*="--banner-color:2"] { background: var(--frost-30); }
+.banner-small__column[style*="--banner-color:4"] { background: var(--sand-30); }
+.banner-small__column[style*="--banner-color:7"] { background: var(--white); }
+.banner-small__inner--col { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; max-width: 768px; padding: 0; }
+.banner-small__inner--col > .banner-small__media { display: block; width: 200px; max-width: 200px; height: 150px; margin: -60px 0 -90px; }
+.banner-small__inner--col > .banner-small__media .banner-small__img { display: block; width: 200px; height: 150px; margin: 0; border-radius: 0; }
+.banner-small__inner--col > .banner-small__text { width: 100%; padding: 100px 0 20px; text-align: center; color: var(--fjell); }
+.banner-small__inner--col > .banner-small__text--wide { padding: 20px 0; }
+.banner-small__inner--col .banner-small__heading { margin: 0; font-size: 20px; line-height: 24px; }
+.banner-small__inner--col .banner-small__info { margin: 0; }
+.banner-small__inner--col .banner-small__bottom { display: flex; flex-direction: column-reverse; align-items: center; justify-content: center; }
+.banner-small__inner--col .banner-small__bottom .button-wrap { margin: 8px 0; }
+.banner-small__inner--col .banner-small__bottom-image { margin: 20px 0 0; line-height: 24px; }
+.banner-small__inner--col .banner-small__bottom-image:not(:empty) { height: 37px; }
+.banner-small__inner--col .banner-small__bottom-image img { display: inline; width: auto; height: 30px; vertical-align: baseline; }
+@media (min-width: 768px) {
+  .banner-small--columns { margin-top: 72px; }
+  .banner-small__columns { flex-direction: row; }
+  .banner-small__column { height: 190px; padding: 0 16px; justify-content: flex-start; }
+  .banner-small__column--two { padding: 0 16px; }
+  .banner-small__inner--col { flex-direction: row-reverse; width: 600px; max-width: 600px; height: 190px; }
+  .banner-small__inner--right { margin-left: auto; }
+  .banner-small__inner--col > .banner-small__media { display: flex; justify-content: flex-start; width: 200px; height: 190px; margin: 0; }
+  .banner-small__inner--col > .banner-small__media .banner-small__img { width: auto; height: 190px; }
+  .banner-small__inner--col > .banner-small__text { width: 400px; padding: 20px; text-align: left; }
+  .banner-small__inner--col > .banner-small__text--wide { width: 600px; align-self: flex-start; padding: 20px; }
+  .banner-small__inner--col .banner-small__heading { font-size: 28px; line-height: 36px; }
+  .banner-small__inner--col .banner-small__bottom { flex-direction: row; justify-content: flex-start; align-items: center; height: 60px; }
+  .banner-small__inner--col .banner-small__bottom-image { margin: 5px 0 0 20px; }
+}
+
+/* news rail: two 620px groups (2 + 2 cards) on desktop → 12px seam between card 2 and 3; date under the title */
+.page--market-landing .related-topics { background: transparent; }
+.page--market-landing .card__date { display: block; max-width: fit-content; padding: 4px 0; font-size: 14px; line-height: 1.4; }
+.page--market-landing .card__arrow img { width: 24px; height: 24px; }
+@media (min-width: 1024px) {
+  .page--market-landing .newsfeed__track { width: 1248px; max-width: none; margin: 0 auto; }
+  .page--market-landing .newsfeed .card:nth-child(3) { margin-left: 4px; }
+}
+
+/* "Sammenlign priser" text block (top-level .text): full-width wrapper, 620px centred copy */
+.page--market-landing .main > .richtext { display: flow-root; max-width: none; margin: 48px 0 0; padding: 0 20px; text-align: center; }
+.page--market-landing .main > .richtext > * { max-width: 620px; margin-left: auto; margin-right: auto; }
+.page--market-landing .main > .richtext h2, .page--market-landing .main > .richtext h2 > * { margin-top: 0; margin-bottom: 8px; font-size: 24px; line-height: 28px; }
+.page--market-landing .main > .richtext p { margin: 16px auto; }
+@media (min-width: 768px) { .page--market-landing .main > .richtext { margin-top: 72px; } .page--market-landing .main > .richtext h2, .page--market-landing .main > .richtext h2 > * { margin-bottom: 24px; font-size: 36px; line-height: 44px; } }

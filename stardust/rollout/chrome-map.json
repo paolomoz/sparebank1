@@ -1,0 +1,149 @@
+{
+ "writtenAt": "2026-09-14T17:04:48.752Z",
+ "variants": {
+  "nav": [
+   {
+    "path": "/nav",
+    "pages": [
+     "nb-bank-privat-html",
+     "nb-bank-privat-kundeservice-html",
+     "nb-bank-privat-kundeservice-kontakt-html",
+     "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+     "nb-bank-privat-lan-boliglan-html",
+     "nb-bank-privat-lan-html",
+     "nb-bank-privat-sparing-markedsnytt-html"
+    ]
+   },
+   {
+    "path": "/nav-bedrift",
+    "pages": [
+     "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+     "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html"
+    ]
+   },
+   {
+    "path": "/nav-frontend-om-oss",
+    "pages": [
+     "nb-bank-om-oss-hjemme-html"
+    ]
+   },
+   {
+    "path": "/nav-frontend-om-oss-2",
+    "pages": [
+     "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html"
+    ]
+   },
+   {
+    "path": "/nav-om-oss",
+    "pages": [
+     "nb-bank-om-oss-nyheter-html"
+    ]
+   },
+   {
+    "path": "/nav-om-oss-2",
+    "pages": [
+     "nb-bank-om-oss-presse-html"
+    ]
+   }
+  ],
+  "footer": [
+   {
+    "path": "/footer",
+    "pages": [
+     "nb-bank-privat-html",
+     "nb-bank-privat-kundeservice-kontakt-html",
+     "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+     "nb-bank-privat-lan-boliglan-html",
+     "nb-bank-privat-lan-html",
+     "nb-bank-privat-sparing-markedsnytt-html"
+    ]
+   },
+   {
+    "path": "/footer-2",
+    "pages": [
+     "nb-bank-privat-kundeservice-html"
+    ]
+   },
+   {
+    "path": "/footer-bedrift",
+    "pages": [
+     "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+     "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html"
+    ]
+   },
+   {
+    "path": "/footer-frontend-om-oss",
+    "pages": [
+     "nb-bank-om-oss-hjemme-html",
+     "nb-bank-om-oss-nyheter-html"
+    ]
+   },
+   {
+    "path": "/footer-frontend-om-oss-2",
+    "pages": [
+     "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html"
+    ]
+   },
+   {
+    "path": "/footer-om-oss",
+    "pages": [
+     "nb-bank-om-oss-presse-html"
+    ]
+   }
+  ]
+ },
+ "pages": {
+  "nb-bank-privat-html": {
+   "nav": "/nav",
+   "footer": "/footer"
+  },
+  "nb-bank-privat-kundeservice-html": {
+   "nav": "/nav",
+   "footer": "/footer-2"
+  },
+  "nb-bank-privat-kundeservice-kontakt-html": {
+   "nav": "/nav",
+   "footer": "/footer"
+  },
+  "nb-bank-privat-kundeservice-verktoy-sperre-kort-html": {
+   "nav": "/nav",
+   "footer": "/footer"
+  },
+  "nb-bank-privat-lan-boliglan-html": {
+   "nav": "/nav",
+   "footer": "/footer"
+  },
+  "nb-bank-privat-lan-html": {
+   "nav": "/nav",
+   "footer": "/footer"
+  },
+  "nb-bank-privat-sparing-markedsnytt-html": {
+   "nav": "/nav",
+   "footer": "/footer"
+  },
+  "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift"
+  },
+  "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html": {
+   "nav": "/nav-bedrift",
+   "footer": "/footer-bedrift"
+  },
+  "nb-bank-om-oss-hjemme-html": {
+   "nav": "/nav-frontend-om-oss",
+   "footer": "/footer-frontend-om-oss"
+  },
+  "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html": {
+   "nav": "/nav-frontend-om-oss-2",
+   "footer": "/footer-frontend-om-oss-2"
+  },
+  "nb-bank-om-oss-nyheter-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer-frontend-om-oss"
+  },
+  "nb-bank-om-oss-presse-html": {
+   "nav": "/nav-om-oss-2",
+   "footer": "/footer-om-oss"
+  }
+ }
+}

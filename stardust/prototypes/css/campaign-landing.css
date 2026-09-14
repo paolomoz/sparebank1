@@ -1,0 +1,75 @@
+/* campaign-landing.css — nettsider-frontend "story" page (`.sb1-story__body`). Chrome + canvas from news-article.css.
+   Values lifted from stardust/replica/lift/hjemme-{1440,360}-detail.json and frontend_clientlib_base.1156912316.css. */
+@import url(news-article.css);
+
+.story { padding: 0 0 20px; background: var(--ffe-farge-sand-30, #fdf8f5); color: #020a0a; font-size: 16px; line-height: 24px; overflow-wrap: anywhere; }
+/* full-bleed media blocks */
+.story__block { position: relative; height: 900px; overflow: hidden; background: #4d8cbf; }
+.story__media { position: absolute; inset: 0; }
+.story__video, .story__bg-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+.story__bg { position: absolute; inset: 0; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-attachment: fixed; } /* live: .block-media .image__container is fixed (parallax) */
+.story__overlay { position: absolute; inset: 0; z-index: 9; display: flex; justify-content: center; }
+.story__overlay-grid { display: flex; flex-direction: column; justify-content: center; align-items: center; width: calc(100% - 36px); max-width: 1024px; }
+.story__card-text { display: flow-root; width: 100%; color: var(--white); }
+.story__card-text h1 { margin: 0; font-family: var(--font-heading); font-size: 36px; line-height: 50px; font-weight: 400; color: var(--white); text-align: center; }
+.story__card-text h2 { max-width: 768px; margin: 40px 0 0; padding: 32px; font-family: var(--font-heading); font-size: 24px; line-height: 28px; font-weight: 400; color: #002776; background: var(--white); border-radius: 4px; text-align: center; }
+.story__card-text p { max-width: 768px; margin: -40px 0 16px; padding: 32px; font-size: 16px; line-height: 22px; color: #020a0a; background: var(--white); border-radius: 4px; }
+.story__card-buttons { display: flex; justify-content: center; align-self: stretch; max-width: 768px; margin: -24px 0 0; padding: 0 32px 24px; background: var(--white); border-radius: 4px; }
+.story__btn-group { display: flex; flex-direction: column; flex-wrap: wrap; width: 260px; padding: 40px 0 0; gap: 8px 16px; }
+.story__btn { display: flex; justify-content: center; margin: 0 0 8px; text-align: center; }
+.story__btn .btn { max-width: 100%; margin: 0 0 8px; }
+.story__card-button { align-self: stretch; max-width: 768px; margin: -32px 0 20px; padding: 32px; background: var(--white); border-radius: 4px; text-align: center; }
+/* buttons (frontend ffe-button geometry) */
+.story .btn { display: flex; align-items: center; justify-content: center; min-height: 0; padding: 10px 24px; border: 2px solid transparent; border-radius: 96px; font: 400 16px/19.2px var(--font); text-decoration: none; }
+.story .btn__label { display: inline; }
+.story .btn--action { background: #00754e; color: var(--white); }
+.story .btn--secondary { background: var(--white); color: #005aa4; border-color: #005aa4; }
+/* prose sections */
+.story__text { max-width: 768px; margin: 40px auto; padding: 0 20px; }
+.story__block + .story__text, .story__slides + .story__text { margin-top: 80px; }
+.story__text h1 { margin: 0 0 8px; font-family: var(--font-heading); font-size: 28px; line-height: 36px; font-weight: 400; color: #002776; }
+.story__text p { margin: 0 0 16px; font-size: 16px; line-height: 24px; }
+.story__text .h5 { font-family: 'SpareBank1-medium', arial, sans-serif; font-size: 17px; line-height: 20px; color: #002776; }
+.story .ta-center { text-align: center; }
+.story .ta-left { text-align: left; }
+.story .ta-right { text-align: right; }
+/* anchors, illustration, CTA, factbox */
+.story__anchor { height: 0; max-width: 1280px; margin: 0 auto; }
+.story__anchor--extra { margin-top: 32px; }
+.story__image { max-width: 600px; margin: 40px auto; padding: 0 20px; }
+.story__image img { display: inline; width: 100%; max-width: 600px; vertical-align: top; border-radius: 30px; }
+.story__button { max-width: 768px; margin: -30px auto 20px; padding: 0 20px; text-align: center; }
+.story__factbox { max-width: 1024px; margin: 40px auto; padding: 0 20px; }
+.story__factbox-row { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; padding: 0 16px; }
+.story__factbox-col { grid-column: span 12; text-align: center; }
+.story__factbox-col:first-child { display: flex; justify-content: center; align-items: center; margin-bottom: 40px; }
+@media (min-width: 768px) {
+  .story { font-size: 20px; line-height: 32px; }
+  .story__overlay-grid { width: 100%; }
+  .story__card-text h1 { font-size: 96px; line-height: 115px; }
+  .story__card-text h2 { margin: 40px 128px 0; font-size: 36px; line-height: 44px; }
+  .story__card-text p { margin: -40px 128px 20px; font-size: 20px; line-height: 28px; }
+  .story__card-buttons { margin: -24px 128px 0; }
+  .story__btn-group { flex-direction: row; width: auto; }
+  .story__btn + .story__btn { margin-left: 16px; }
+  .story__card-button { margin: -32px 128px 20px; }
+  .story__card-button .btn, .story__button .btn { display: inline-flex; }
+  .story__text { margin: 64px auto; padding: 0 64px; }
+  .story__block + .story__text, .story__slides + .story__text { margin-top: 100px; }
+  .story__text h1 { margin: 0 0 24px; font-size: 46px; line-height: 56px; }
+  .story__text p { margin: 0 0 20px; font-size: 20px; line-height: 32px; }
+  .story__text .h5 { font-size: 18px; line-height: 24px; }
+  .story__image { margin: 64px auto; padding: 0; }
+  .story__button { padding: 0 64px; }
+  .story__factbox { margin: 64px auto; padding: 0; }
+  .story__factbox-col:first-child { grid-column: span 7; margin-bottom: 0; }
+  .story__factbox-col--content { grid-column: 9 / span 4; }
+}
+/* observed states (stardust/replica/motion/hjemme-{1440,360}.json) */
+.story__media { opacity: 0; transition: opacity 1s ease-out; }
+.story__media.is-visible { opacity: 1; }
+.story__factbox-col--content { opacity: 0; transform: translateY(180px); transition: opacity .6s, transform 1.4s; }
+.story__factbox-col--content.is-visible { opacity: 1; transform: none; }
+.story .btn { transition: color .2s cubic-bezier(.25, .1, .25, 1), background-color .2s cubic-bezier(.25, .1, .25, 1); }
+.story .btn--action:hover { background: #095139; color: var(--white); }
+.story .btn--secondary:hover { background: #005aa4; color: var(--white); border-color: #005aa4; }

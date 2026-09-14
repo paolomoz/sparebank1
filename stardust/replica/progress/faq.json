@@ -1,0 +1,105 @@
+{
+  "pageType": "article",
+  "family": "faq",
+  "archetype": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html",
+  "liveUrl": "https://www.sparebank1.no/nb/bank/bedrift/kundeservice/bm-lan-finansiering/fast-flytende-rente-bedriftslan.html",
+  "prototype": "stardust/prototypes/nb-bank-bedrift-kundeservice-bm-lan-finansiering-fast-flytende-rente-bedriftslan-html-proposed.html",
+  "css": [
+    "css/ffe-tokens.css",
+    "css/canon.css",
+    "css/faq.css"
+  ],
+  "module": "stardust/scripts/replica/modules/faq.mjs",
+  "chromeVariant": "bedrift (top-nav active Bedrift, 8 main-nav items, CTA \"Bli bedriftskunde\", bedrift footer columns) — rendered from the DOM by the canon header()/footer(); chrome-parity clean apart from canon-level items",
+  "liveHits": {
+    "stitch": 2,
+    "lift": 2,
+    "contentDiff": 1,
+    "visualDiff": 1,
+    "chromeParity": 1,
+    "motionObserve": 1
+  },
+  "breakpoints": {
+    "360": {
+      "pixelRounds": 2,
+      "liveGateIterations": 1,
+      "result": {
+        "structuralRed": 0,
+        "visualFlags": "none",
+        "pixelPct": 1.35,
+        "heightDelta": 1,
+        "chromeHeaderPct": 3.58,
+        "chromeHeaderPctExcludingSkipLink": 0.14,
+        "chromeFooterPct": 1.97,
+        "pass": true
+      },
+      "justified": [
+        {
+          "probe": "chrome-crop",
+          "flag": "header 3.58% > 2%",
+          "why": "live focused skip link box (x<115) — excluding it the header measures 0.14%; same artefact as the product archetype",
+          "permanent": true
+        }
+      ],
+      "residuals": [
+        {
+          "band": "y 3000–3358",
+          "pct": 4.2,
+          "cause": "footer small-links glyph antialiasing + social icon size (canon)"
+        }
+      ]
+    },
+    "1440": {
+      "pixelRounds": 2,
+      "liveGateIterations": 1,
+      "result": {
+        "structuralRed": 0,
+        "visualFlags": "none",
+        "pixelPct": 0.87,
+        "heightDelta": 1,
+        "chromeHeaderPct": 0.42,
+        "chromeFooterPct": 1.1,
+        "pass": true
+      },
+      "justified": [
+        {
+          "probe": "content",
+          "flag": "🟡 MISSING BODY (FAQPage JSON-LD script text counted as body on the source)",
+          "why": "inline <script type=application/ld+json> text; not content (dropped per content-preservation § Drop deliberately); the FAQPage schema is re-emitted at deploy as page metadata",
+          "permanent": true
+        }
+      ],
+      "residuals": [
+        {
+          "region": "header",
+          "pct": 0.42,
+          "cause": "live focused skip link \"Til hovedmeny\" (instrument-induced focus after consent click) + glyph antialiasing"
+        },
+        {
+          "region": "footer",
+          "pct": 1.1,
+          "cause": "canon-level: social icon box 30→35, LinkedIn/YouTube x offset, to-top icon 40→50 (see canon-requests.md)"
+        }
+      ]
+    }
+  },
+  "captureState": [],
+  "motion": {
+    "observed": "stardust/replica/motion/faq-1440.json — 0 animations; class mutations only on chrome (to-top scroll/show, footer lazy images); hover: contact icon-circle background (canon); thumbs hover: no change",
+    "implemented": [
+      "nothing family-specific — all fired behaviours are canon chrome (js/canon.js)"
+    ],
+    "dead": [
+      "feedback thumbs transitions (declared, no hover/click change observed)"
+    ],
+    "pixelAfterMotion": "unchanged"
+  },
+  "canonRequests": [
+    "footer(): contact text selector picks a hidden panel <p> on pages without top-level contact text (worked around in faq.css)",
+    "canon: .header__topnav a line-height 17px vs live normal (Δh 2px)",
+    "canon footer: social icon box 35×40, LinkedIn/YouTube x/y (Δ+35/−29 on bedrift footer), to-top icon 50 vs 40"
+  ],
+  "inconsistencyRegister": "empty",
+  "approvedBy": "hands-off (worker)",
+  "approvedAt": "2026-09-14T16:47:28Z"
+}

@@ -1,0 +1,24 @@
+/* breadcrumbs — the back-link row above the first band (lifted: .breadcrumb in canon.css) */
+main .section:has(> .breadcrumbs-wrapper) { padding: 0; }
+.breadcrumbs .breadcrumb { max-width: var(--container); height: 24px; margin: 10px auto 0; padding: 0 var(--gutter); }
+.breadcrumbs .breadcrumb p { margin: 0; line-height: 24px; }
+
+.breadcrumbs .breadcrumb__link:any-link {
+  position: relative;
+  display: inline;
+  padding-left: 15px;
+  border-bottom: 1px solid var(--moerkgraa);
+  color: var(--moerkgraa);
+}
+
+.breadcrumbs .breadcrumb__link .icon svg {
+  position: absolute;
+  top: -2px;
+  left: -8px;
+  width: 24px;
+  height: 24px;
+  transform: rotate(90deg);
+}
+
+/* the band that follows overlaps the breadcrumb row by 36px on the live site */
+main .section:has(> .breadcrumbs-wrapper) + .section.band { margin-top: -36px; }

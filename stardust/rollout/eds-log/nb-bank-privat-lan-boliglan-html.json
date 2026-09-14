@@ -1,0 +1,96 @@
+{
+ "slug": "nb-bank-privat-lan-boliglan-html",
+ "daPath": "/nb/bank/privat/lan/boliglan",
+ "file": "content/nb/bank/privat/lan/boliglan.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards",
+    "banner"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "prices",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "calculator",
+   "blocks": [
+    "calculator"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "related-topics",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "reference",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "breadcrumbs",
+  "columns",
+  "cards",
+  "banner",
+  "calculator",
+  "accordion",
+  "feedback"
+ ],
+ "notes": [
+  "calculator: static snapshot served from /data/calculator/privat-lan-boliglan.html (dynamics #7 interim — computation disabled until the API is exposed)"
+ ],
+ "gaps": [],
+ "assets": [],
+ "writtenAt": "2026-09-14T18:24:21.601Z"
+}

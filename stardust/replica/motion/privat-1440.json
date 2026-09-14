@@ -1,0 +1,720 @@
+{
+  "url": "https://www.sparebank1.no/nb/bank/privat.html",
+  "width": 1440,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1200,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2400,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2344,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 844,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2400,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1200,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 800,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 500,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 300,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 200,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 150,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 120,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 90,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 60,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 30,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "header front-page bank-picker-active",
+      "position": "static",
+      "height": "128.969px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    }
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".campaign-carousel button",
+      "error": "not found"
+    },
+    {
+      "sel": ".campaign-carousel [class*=\"control\"], .campaign-carousel [class*=\"arrow\"], .campaign-carousel [class*=\"dot\"]",
+      "error": "not found"
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": ".campaign-content a.ffe-button",
+      "changed": [
+        "self.background"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 117, 78)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "0.2s cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(9, 81, 57)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "0.2s cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".newsfeed .card",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(2, 10, 10)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "img.responsive",
+            "transform": "none",
+            "color": "rgb(2, 10, 10)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "a.ffe-h5.ffe-text-link",
+            "transform": "none",
+            "color": "rgb(0, 39, 118)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "div.card__container-content-arrow",
+            "transform": "none",
+            "color": "rgb(2, 10, 10)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "img.arrow-right",
+            "transform": "matrix(0, -1, 1, 0, 0, 0)",
+            "color": "rgb(0, 39, 118)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(2, 10, 10)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "img.responsive",
+            "transform": "none",
+            "color": "rgb(2, 10, 10)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "a.ffe-h5.ffe-text-link",
+            "transform": "none",
+            "color": "rgb(0, 39, 118)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "div.card__container-content-arrow",
+            "transform": "none",
+            "color": "rgb(2, 10, 10)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "img.arrow-right",
+            "transform": "matrix(0, -1, 1, 0, 0, 0)",
+            "color": "rgb(0, 39, 118)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      }
+    },
+    {
+      "sel": ".banner-small__bottom a",
+      "changed": [
+        "self.color",
+        "self.background"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 90, 164)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "0.2s cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 90, 164)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "0.2s cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".background-container .text-wrapper p a",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 90, 164)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "0.2s cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 90, 164)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "0.2s cubic-bezier(0.25, 0.1, 0.25, 1)"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".campaign-bg__img",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 238)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "img.responsive.i3c9bb1",
+            "transform": "none",
+            "color": "rgb(0, 0, 238)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 238)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "img.responsive.i3c9bb1",
+            "transform": "none",
+            "color": "rgb(0, 0, 238)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      }
+    }
+  ],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "bottom",
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show",
+        "y": 2344,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show > span.visually-hidden",
+        "y": 2344,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show > span.icon-holder",
+        "y": 2344,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show > span.visually-hidden",
+        "y": 844,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show > span.icon-holder",
+        "y": 844,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "bottom",
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll",
+        "y": 800,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll > span.visually-hidden",
+        "y": 800,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll > span.icon-holder",
+        "y": 800,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll > span.visually-hidden",
+        "y": 500,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll > span.icon-holder",
+        "y": 500,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.campaign-content.campaign-bg__align-right > div.button.button--initialized > div.aem-component-container > div.button-wrapper.left > a.action-btn.ffe-button.ffe-button--action",
+        "y": 381,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.campaign-content.campaign-bg__align-right > div.button.button--initialized > div.aem-component-container > div.button-wrapper.left > a.action-btn.ffe-button.ffe-button--action",
+        "y": 1832,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "bottom",
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show",
+        "y": 1389,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show > span.visually-hidden",
+        "y": 1389,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show > span.icon-holder",
+        "y": 1389,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show > span.visually-hidden",
+        "y": 1389,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show > span.icon-holder",
+        "y": 1389,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "div.banner-small__bottom > div.banner-small__bottom--button.button.button--initialized > div.aem-component-container > div.button-wrapper.left > a.secondary-btn.ffe-button.ffe-button--secondary",
+        "y": 1389,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.banner-small__bottom > div.banner-small__bottom--button.button.button--initialized > div.aem-component-container > div.button-wrapper.left > a.secondary-btn.ffe-button.ffe-button--secondary",
+        "y": 1389,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "div.banner-small__bottom > div.banner-small__bottom--button.button.button--initialized > div.aem-component-container > div.button-wrapper.left > a.secondary-btn.ffe-button.ffe-button--secondary",
+        "y": 702,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.banner-small__bottom > div.banner-small__bottom--button.button.button--initialized > div.aem-component-container > div.button-wrapper.left > a.secondary-btn.ffe-button.ffe-button--secondary",
+        "y": 702,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "bottom",
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top",
+        "y": 282,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top > span.visually-hidden",
+        "y": 282,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top > span.icon-holder",
+        "y": 282,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top > span.visually-hidden",
+        "y": 282,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top > span.icon-holder",
+        "y": 282,
+        "dur": "0.2s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "lazyload--triggered"
+        ],
+        "el": "div.banner-small__image > div.aem-component-container > div.image-wrapper.image-padding > picture > img.inline-svg.responsive.lazyload--triggered",
+        "y": 800
+      },
+      {
+        "added": [
+          "image-padding"
+        ],
+        "el": "div.ffe-grid__col--sm-12.ffe-grid__col--md-8.ffe-grid__col--md-offset-2 > div.banner-small__content > div.banner-small__image > div.aem-component-container > div.image-wrapper.image-padding",
+        "y": 800
+      },
+      {
+        "added": [
+          "scroll"
+        ],
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll",
+        "y": 800
+      },
+      {
+        "added": [
+          "lazyload--triggered"
+        ],
+        "el": "div.aem-component-container > div.Left > div.image-wrapper.image-padding > picture > img.inline-svg.responsive.lazyload--triggered",
+        "y": 1200
+      },
+      {
+        "added": [
+          "image-padding"
+        ],
+        "el": "div.banner-small__bottom > div.banner-small__bottom--image > div.aem-component-container > div.Left > div.image-wrapper.image-padding",
+        "y": 1200
+      },
+      {
+        "added": [
+          "lazyload--triggered"
+        ],
+        "el": "div.card > div.card__container.card__container--medium.card__container--clickable > div.card__container-image.card__container-image--center.image-padding > picture > img.responsive.card__image.lazyload--triggered",
+        "y": 1200
+      },
+      {
+        "added": [
+          "image-padding"
+        ],
+        "el": "div.newsfeed.newsfeed-track > div.newsfeed-wrap.newsfeed-wrap--50 > div.card > div.card__container.card__container--medium.card__container--clickable > div.card__container-image.card__container-image--center.image-padding",
+        "y": 1200
+      },
+      {
+        "added": [
+          "lazyload--triggered"
+        ],
+        "el": "div.card > div.card__container.card__container--medium.card__container--clickable > div.card__container-image.card__container-image--center.image-padding > picture > img.responsive.card__image.lazyload--triggered",
+        "y": 1200
+      },
+      {
+        "added": [
+          "image-padding"
+        ],
+        "el": "div.newsfeed.newsfeed-track > div.newsfeed-wrap.newsfeed-wrap--50 > div.card > div.card__container.card__container--medium.card__container--clickable > div.card__container-image.card__container-image--center.image-padding",
+        "y": 1200
+      },
+      {
+        "added": [
+          "lazyload--triggered"
+        ],
+        "el": "a.social-logo > div.aem-component-container.image--all-rounded-small > div.image-wrapper.image-padding > picture > img.inline-svg.responsive.lazyload--triggered",
+        "y": 3200
+      },
+      {
+        "added": [
+          "image-padding"
+        ],
+        "el": "ul > li > a.social-logo > div.aem-component-container.image--all-rounded-small > div.image-wrapper.image-padding",
+        "y": 3200
+      },
+      {
+        "added": [
+          "lazyload--triggered"
+        ],
+        "el": "a.social-logo > div.aem-component-container.image--all-rounded-small > div.image-wrapper.image-padding > picture > img.inline-svg.responsive.lazyload--triggered",
+        "y": 3200
+      },
+      {
+        "added": [
+          "image-padding"
+        ],
+        "el": "ul > li > a.social-logo > div.aem-component-container.image--all-rounded-small > div.image-wrapper.image-padding",
+        "y": 3200
+      },
+      {
+        "added": [
+          "show"
+        ],
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show",
+        "y": 2344
+      },
+      {
+        "added": [
+          "scroll"
+        ],
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll",
+        "y": 1832
+      },
+      {
+        "added": [
+          "show"
+        ],
+        "el": "body.ffe-body-text > div.main-wrap > footer.footer-wrapper > div.footer-top.container-fluid > a.to-top.scroll.show",
+        "y": 1389
+      }
+    ]
+  }
+}

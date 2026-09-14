@@ -1,0 +1,59 @@
+{
+  "_provenance": { "writtenBy": "stardust:replica worker (category-hub)", "writtenAt": "2026-09-14T18:19:12Z" },
+  "archetypes": {
+    "market-landing": {
+      "pageType": "landing",
+      "family": "market-landing",
+      "archetype": "nb-bank-privat-html",
+      "liveUrl": "https://www.sparebank1.no/nb/bank/privat.html",
+      "prototype": "stardust/prototypes/nb-bank-privat-html-proposed.html",
+      "css": ["css/ffe-tokens.css", "css/canon.css", "css/market-landing.css (@imports kundeservice-hub.css → category-hub.css)"],
+      "js": ["js/canon.js"],
+      "modules": "stardust/scripts/replica/modules/market-landing.mjs (send-to-bank-modal, send-to-bank__loading, visually-hidden, campaign-carousel, image*, banner-small*, related-topics* — * = canon key overrides that reproduce canon output for other families)",
+      "siblings": 3,
+      "liveHits": { "stitch": 2, "liftStyles": 4, "contentDiff": 1, "visualDiff": 1, "motionObserve": 1, "chromeParity": 1 },
+      "breakpoints": {
+        "1440": {
+          "pixelRounds": 2, "liveGateIterations": 1,
+          "result": { "structuralRed": 0, "visualFlags": "3 advisory (cover-cropped hero + card photo = live behaviour; visually-hidden h1 flagged flush-left)", "pixelPct": 5.28, "pixelPctExcludingHero": 0.23, "heightDelta": 0, "chromeHeaderPct": 0.42, "chromeFooterPct": 0.31, "pass": true },
+          "justified": [
+            { "probe": "pixel", "flag": "hot band y 529–929 (43 %) = 5.05 % of page", "why": "campaign-carousel is client-rendered and rotates campaigns between loads: live capture shows 'Noe som gnager litt?' (frost), sidecar/prototype 'Se hva du kan spare!' (#F2F2F9); geometry identical (400px), content-diff on the same load matched", "permanent": true },
+            { "probe": "visual-diff", "flag": "STRETCHED IMAGE hero 840×400 / card 298×200", "why": "object-fit: cover, same as live", "permanent": true },
+            { "probe": "visual-diff", "flag": "FLUSH-LEFT h1 'Privat'", "why": "visually-hidden page h1 (1×1 clipped), as on live", "permanent": true }
+          ],
+          "residuals": [ { "region": "header", "pct": 0.42, "cause": "live focused skip link + antialiasing", "flaggedFor": "none" } ],
+          "chromeParity": "exit 2 — same canon-level deltas as lan: top-nav inactive links 17→19px (2px transparent border), footer social icons Δx+35/Δy−28, to-top icon 40→50, LinkedIn 30→35 (canon request already filed by category-hub)"
+        },
+        "360": {
+          "pixelRounds": 2, "liveGateIterations": 0,
+          "result": { "structuralRed": "not run at 360 (1440 clean; same DOM)", "pixelPct": 4.85, "pixelPctExcludingHero": 1.52, "heightDelta": 0, "chromeHeaderPct": 2.96, "chromeHeaderPctExcludingSkipLink": 1.33, "chromeFooterPct": 1.07, "pass": true },
+          "justified": [
+            { "probe": "pixel", "flag": "hot band y 582–1101 (43 %) = 3.33 % of page", "why": "campaign rotation (see 1440)", "permanent": true },
+            { "probe": "chrome-crop", "flag": "header 2.96 % (bar 2 %)", "why": "live focused skip link 'Til hovedmeny' (instrument artifact); 1.33 % excluding it — remaining = antialiasing of the market-nav text and logo", "permanent": true }
+          ],
+          "residuals": []
+        }
+      },
+      "captureState": [
+        { "what": "campaign-carousel", "how": "single slide as captured in the sidecar (no controls exist for one slide); no rotation logic — dynamics: campaign selection is server/client-side per load" },
+        { "what": "send-to-bank-modal / send-to-bank__loading", "how": "mirrored as hidden empty shells" },
+        { "what": ".market-nav", "how": "inserted verbatim before .bank-choice by the campaign-carousel handler (author.mjs does not emit it) — canon request" }
+      ],
+      "motion": {
+        "observed": "stardust/replica/motion/privat-1440.json — primary button hover bg (0.2s), secondary banner button hover color+bg; cards, text links, hero photo link: no change; carousel controls: none found (.campaign-carousel button not found); footer to-top transition (chrome)",
+        "implemented": ["button hovers via canon.css (.btn--primary:hover / .btn--secondary:hover)"],
+        "dead": [],
+        "js": "none needed (js/market-landing.js not created)",
+        "pixelAfterMotion": "unchanged (5.28 / 4.85)"
+      },
+      "notes": [
+        "news cards carry .card__date and <img> chevron arrows on live — restored in the related-topics override (scoped to this family)",
+        "two-column banner-small (frost-30 / sand-30) implemented as .banner-small--columns",
+        "news rail: two 620px groups → 12px seam between card 2 and 3 on desktop (track 1248px)",
+        "column-grid text blocks keep a leading <p> top margin (56/216px) — band richtext override"
+      ],
+      "approvedBy": "hands-off",
+      "approvedAt": "2026-09-14T18:19:12Z"
+    }
+  }
+}

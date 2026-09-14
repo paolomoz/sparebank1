@@ -1,27 +1,73 @@
-.cards > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* cards — lifted from canon.css (.card*, .card-list, .newsfeed) */
+.cards .card-list { list-style: none; margin: 0; padding: 0; }
+.cards .card-list li { margin: 0; }
+
+.cards .card {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  height: 100%;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--white);
+  color: var(--text);
+  text-decoration: none;
+  outline: 0;
 }
 
-.cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+.cards a.card:any-link { border-bottom: 1px solid var(--border); color: var(--text); }
+.cards .card--medium { grid-template-rows: var(--card-image-height) 1fr; }
+.cards .card--small { grid-template-rows: 1fr; align-items: center; }
+.cards .card--clickable:hover { background: var(--surface-hover); box-shadow: 0 0 0 1px var(--border-hover); }
+.cards .card--clickable:hover .card__title { text-decoration: underline; }
+.cards .card__media { height: var(--card-image-height); border-radius: 15px 15px 0 0; overflow: hidden; }
+.cards .card__media picture, .cards .card__media img { display: block; width: 100%; height: var(--card-image-height); object-fit: cover; object-position: 50% 0; }
+.cards .card--news .card__media img { object-position: 50% 50%; }
+.cards .card__body { display: grid; grid-template-columns: 1fr 24px; padding: 16px 8px 16px 16px; }
+.cards .card--small .card__body { align-items: center; align-content: start; }
+.cards .card__content { text-align: left; line-height: 24px; }
+.cards .card__title { display: inline; margin: 0; font-family: var(--font-medium); font-size: 20px; line-height: 20px; color: var(--fjell); }
+.cards .card--price .card__title, .cards .card--small .card__title { font-size: 17px; line-height: 20px; }
+.cards .card__text { margin: 4px 0 0; font-size: 16px; line-height: 24px; color: var(--text); }
+.cards .card__tag { display: block; max-width: fit-content; margin: 0; padding: 4px 0; font-size: 14px; line-height: 1.4; text-transform: uppercase; }
+.cards .card__arrow { display: grid; grid-template-columns: 32px; align-content: center; }
+.cards .card__arrow svg { width: 32px; height: 32px; color: var(--fjell); transform: rotate(-90deg); }
+.cards .card__iconwrap { height: 27px; line-height: 20px; }
+.cards .card__iconwrap img { height: 20px; width: auto; }
+
+/* grid variant: cards inside a band's 12-col grid — one card per column */
+.cards.grid .card-list { display: grid; grid-template-columns: 1fr; gap: 0; max-width: var(--container); margin: 0 auto; }
+.cards.grid .card-list li { padding: 0 8px 16px; }
+.cards.grid .card { margin-bottom: 16px; }
+
+/* price / static list variant: padded cells, 25% at ≥1280 */
+.cards.price .card-list { display: block; margin: 0 auto 8px; }
+.cards.price .card-list li { width: 100%; max-width: 400px; margin: 0 auto; padding: 8px; }
+.cards.price .card { display: block; }
+.cards.price .card > .card__body { display: grid; min-height: 0; }
+.cards.price .card--medium { grid-template-rows: none; }
+
+/* news rail variant (related topics): horizontal scroll on mobile, centred row on desktop */
+.cards.news { margin: 0 -20px; padding: 0 0 24px; overflow-x: auto; }
+.cards.news .card-list { display: flex; max-width: fit-content; }
+.cards.news .card-list li { flex: 0 0 auto; width: 300px; min-width: 300px; margin: 8px; }
+
+@media (width >= 768px) {
+  .cards .card__title { line-height: 24px; }
+  .cards .card--price .card__title, .cards .card--small .card__title { font-size: 18px; line-height: 24px; }
+  .cards.grid .card-list { grid-template-columns: repeat(2, 1fr); }
+  .cards.price .card-list { display: flex; flex-wrap: wrap; justify-content: center; max-width: var(--container); }
+  .cards.price .card-list li { width: 50%; margin: 0; }
+  .cards.news { margin: 0; padding: 0; overflow: visible; }
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+@media (width >= 1024px) {
+  .cards.grid.lg-3 .card-list { grid-template-columns: repeat(4, 1fr); }
+  .cards.grid.lg-4 .card-list { grid-template-columns: repeat(3, 1fr); }
+  .cards.grid.lg-6 .card-list { grid-template-columns: repeat(2, 1fr); }
+  .cards.price .card-list li { width: 33%; }
+  .cards.news .card-list { justify-content: center; max-width: none; }
 }
 
-.cards .cards-card-image {
-  line-height: 0;
-}
-
-.cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+@media (width >= 1280px) {
+  .cards.price .card-list li { width: 25%; }
 }

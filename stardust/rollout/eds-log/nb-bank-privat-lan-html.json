@@ -1,0 +1,133 @@
+{
+ "slug": "nb-bank-privat-lan-html",
+ "daPath": "/nb/bank/privat/lan",
+ "file": "content/nb/bank/privat/lan.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "intro",
+   "blocks": []
+  },
+  {
+   "module": "vnav vnav--medium",
+   "blocks": []
+  },
+  {
+   "module": "vnav vnav--medium",
+   "blocks": []
+  },
+  {
+   "module": "vnav vnav--medium",
+   "blocks": []
+  },
+  {
+   "module": "vnav vnav--medium",
+   "blocks": []
+  },
+  {
+   "module": "vnav vnav--small",
+   "blocks": []
+  },
+  {
+   "module": "vnav vnav--small",
+   "blocks": []
+  },
+  {
+   "module": "vnav vnav--small",
+   "blocks": []
+  },
+  {
+   "module": "vnav vnav--small",
+   "blocks": []
+  },
+  {
+   "module": "shortcuts",
+   "blocks": [
+    "shortcuts"
+   ]
+  },
+  {
+   "module": "cobranding",
+   "blocks": []
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "banner-small",
+   "blocks": [
+    "banner"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "tip",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "reference",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "shortcuts",
+  "columns",
+  "banner",
+  "cards",
+  "callout",
+  "feedback"
+ ],
+ "notes": [],
+ "gaps": [
+  "module intro emitted as prose",
+  "no encoder for module intro",
+  "module vnav.vnav--medium emitted as prose",
+  "no encoder for module vnav vnav--medium",
+  "module vnav.vnav--medium emitted as prose",
+  "no encoder for module vnav vnav--medium",
+  "module vnav.vnav--medium emitted as prose",
+  "no encoder for module vnav vnav--medium",
+  "module vnav.vnav--medium emitted as prose",
+  "no encoder for module vnav vnav--medium",
+  "module vnav.vnav--small emitted as prose",
+  "no encoder for module vnav vnav--small",
+  "module vnav.vnav--small emitted as prose",
+  "no encoder for module vnav vnav--small",
+  "module vnav.vnav--small emitted as prose",
+  "no encoder for module vnav vnav--small",
+  "module vnav.vnav--small emitted as prose",
+  "no encoder for module vnav vnav--small",
+  "module cobranding emitted as prose",
+  "no encoder for module cobranding"
+ ],
+ "assets": [
+  "chevron.svg"
+ ],
+ "writtenAt": "2026-09-14T18:29:04.562Z"
+}

@@ -1,171 +1,90 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
-
-// media query match that indicates mobile/tablet width
-const isDesktop = window.matchMedia('(min-width: 900px)');
-
-function closeOnEscape(e) {
-  if (e.code === 'Escape') {
-    const nav = document.getElementById('nav');
-    const navSections = nav.querySelector('.nav-sections');
-    if (!navSections) return;
-    const navSectionExpanded = navSections.querySelector('[aria-expanded="true"]');
-    if (navSectionExpanded && isDesktop.matches) {
-      // eslint-disable-next-line no-use-before-define
-      toggleAllNavSections(navSections);
-      navSectionExpanded.focus();
-    } else if (!isDesktop.matches) {
-      // eslint-disable-next-line no-use-before-define
-      toggleMenu(nav, navSections);
-      nav.querySelector('button').focus();
-    }
-  }
-}
-
-function closeOnFocusLost(e) {
-  const nav = e.currentTarget;
-  if (!nav.contains(e.relatedTarget)) {
-    const navSections = nav.querySelector('.nav-sections');
-    if (!navSections) return;
-    const navSectionExpanded = navSections.querySelector('[aria-expanded="true"]');
-    if (navSectionExpanded && isDesktop.matches) {
-      // eslint-disable-next-line no-use-before-define
-      toggleAllNavSections(navSections, false);
-    } else if (!isDesktop.matches) {
-      // eslint-disable-next-line no-use-before-define
-      toggleMenu(nav, navSections, false);
-    }
-  }
-}
-
-function openOnKeydown(e) {
-  const focused = document.activeElement;
-  const isNavDrop = focused.className === 'nav-drop';
-  if (isNavDrop && (e.code === 'Enter' || e.code === 'Space')) {
-    const dropExpanded = focused.getAttribute('aria-expanded') === 'true';
-    // eslint-disable-next-line no-use-before-define
-    toggleAllNavSections(focused.closest('.nav-sections'));
-    focused.setAttribute('aria-expanded', dropExpanded ? 'false' : 'true');
-  }
-}
-
-function focusNavSection() {
-  document.activeElement.addEventListener('keydown', openOnKeydown);
-}
+import { el, icon, sectionsOf, text, inlineIcons } from '../../scripts/sb1.js';
 
 /**
- * Toggles all nav sections
- * @param {Element} sections The container element
- * @param {Boolean} expanded Whether the element should be expanded or collapsed
+ * header — the sparebank1.no chrome rebuilt from the /nav document (template-slotted, EW1–EW3):
+ *   section 1  brand:   <p><a href="/nb/bank/privat"><img logo></a></p>
+ *   section 2  market:  <ul> Privat · Bedrift · Om oss (the active item is derived from the current path)
+ *   section 3  main:    <ul> the 9 market sections (active = longest path prefix match)
+ *   section 4  tools:   <p><a href="?search=">Søk</a></p> <p><em><strong><a>Bli kunde</a></strong></em></p> <p><a>Logg inn</a></p>
+ * Behaviour mirrors the observed live state machine (stardust/replica/motion/*.json, clientlib module 2741):
+ * ≤1024px the wrapper gets `scroll` (fixed, hidden above) once scrolled past 130px and `show` when the user scrolls
+ * back up ≥400px from the furthest point; the hamburger toggles `header__wrap--active`. Search is an interim link to
+ * the live search page (dynamics #20). The desktop header is static.
+ * Authored links are MOVED into the layout (their <li>/<p> stay the editable units); nothing is rebuilt from text.
  */
-function toggleAllNavSections(sections, expanded = false) {
-  if (!sections) return;
-  sections.querySelectorAll('.nav-sections .default-content-wrapper > ul > li').forEach((section) => {
-    section.setAttribute('aria-expanded', expanded);
+/** Normalise an authored nav item: unwrap the pipeline's <p> (#98); the active item is derived from the current path (longest prefix match). */
+function normaliseItems(ul) {
+  const here = window.location.pathname.replace(/\/$/, '') || '/';
+  let best = null; let bestLen = -1;
+  [...ul.children].forEach((li) => {
+    const p = li.querySelector(':scope > p'); if (p) p.replaceWith(...p.childNodes);
+    const a = li.querySelector('a'); if (!a) return;
+    let path; try { path = new URL(a.getAttribute('href'), window.location.href).pathname.replace(/\/$/, ''); } catch { return; }
+    if ((here === path || here.startsWith(`${path}/`)) && path.length > bestLen) { best = li; bestLen = path.length; }
   });
+  if (best) best.classList.add('is-active');
+  // the live lists are inline-block items separated by authored whitespace (≈4.4px at 16px); the pipeline emits <li> back to back
+  [...ul.children].forEach((li) => { if (li.nextElementSibling) li.after(document.createTextNode(' ')); });
 }
 
-/**
- * Toggles the entire nav
- * @param {Element} nav The container element
- * @param {Element} navSections The nav sections within the container element
- * @param {*} forceExpanded Optional param to force nav expand behavior when not null
- */
-function toggleMenu(nav, navSections, forceExpanded = null) {
-  const expanded = forceExpanded !== null ? !forceExpanded : nav.getAttribute('aria-expanded') === 'true';
-  const button = nav.querySelector('.nav-hamburger button');
-  document.body.style.overflowY = (expanded || isDesktop.matches) ? '' : 'hidden';
-  nav.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-  toggleAllNavSections(navSections, expanded || isDesktop.matches ? 'false' : 'true');
-  button.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
-  // enable nav dropdown keyboard accessibility
-  if (navSections) {
-    const navDrops = navSections.querySelectorAll('.nav-drop');
-    if (isDesktop.matches) {
-      navDrops.forEach((drop) => {
-        if (!drop.hasAttribute('tabindex')) {
-          drop.setAttribute('tabindex', 0);
-          drop.addEventListener('focus', focusNavSection);
-        }
-      });
-    } else {
-      navDrops.forEach((drop) => {
-        drop.removeAttribute('tabindex');
-        drop.removeEventListener('focus', focusNavSection);
-      });
-    }
-  }
-
-  // enable menu collapse on escape keypress
-  if (!expanded || isDesktop.matches) {
-    // collapse menu on escape press
-    window.addEventListener('keydown', closeOnEscape);
-    // collapse menu on focus lost
-    nav.addEventListener('focusout', closeOnFocusLost);
-  } else {
-    window.removeEventListener('keydown', closeOnEscape);
-    nav.removeEventListener('focusout', closeOnFocusLost);
-  }
-}
-
-/**
- * loads and decorates the header, mainly the nav
- * @param {Element} block The header block element
- */
 export default async function decorate(block) {
-  // load nav as fragment
   const navMeta = getMetadata('nav');
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   const fragment = await loadFragment(navPath);
+  if (!fragment) return;
+  const [brand, market, main, tools] = sectionsOf(fragment);
 
-  // decorate nav DOM
-  block.textContent = '';
-  const nav = document.createElement('nav');
-  nav.id = 'nav';
-  while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
+  const wrap = el('div', { class: 'header__wrap' });
+  const content = el('div', { class: 'header__content' });
+  const top = el('div', { class: 'header__top' });
 
-  const classes = ['brand', 'sections', 'tools'];
-  classes.forEach((c, i) => {
-    const section = nav.children[i];
-    if (section) section.classList.add(`nav-${c}`);
-  });
+  // search (mobile icon link) — interim: links to the live search (dynamics #20)
+  const searchP = tools?.querySelector('p a[href*="search"]')?.closest('p');
+  const searchA = searchP?.querySelector('a');
+  const searchHref = searchA ? new URL(searchA.getAttribute('href'), 'https://www.sparebank1.no/nb/bank/privat/kundeservice.html').href : 'https://www.sparebank1.no/nb/bank/privat/kundeservice.html?search=';
+  top.append(el('a', { class: 'header__search-mobile', href: searchHref, 'aria-label': text(searchA) || 'Søk' }, icon('sok')));
 
-  const navBrand = nav.querySelector('.nav-brand');
-  const brandLink = navBrand.querySelector('.button');
-  if (brandLink) {
-    brandLink.className = '';
-    brandLink.closest('.button-container').className = '';
-  }
+  // brand — move the authored logo link
+  const logoLink = brand?.querySelector('a');
+  if (logoLink) { const logo = el('div', { class: 'header__logo' }); logo.append(logoLink); top.append(logo); }
 
-  const navSections = nav.querySelector('.nav-sections');
-  if (navSections) {
-    navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
-      if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
-      navSection.addEventListener('click', () => {
-        if (isDesktop.matches) {
-          const expanded = navSection.getAttribute('aria-expanded') === 'true';
-          toggleAllNavSections(navSections);
-          navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-        }
-      });
-    });
-  }
+  top.append(el('button', { type: 'button', class: 'header__hamburger', 'aria-label': 'Meny', 'aria-expanded': 'false', 'aria-controls': 'main-menu' }, el('span', { class: 'header__hamburger-bar' })));
 
-  // hamburger for mobile
-  const hamburger = document.createElement('div');
-  hamburger.classList.add('nav-hamburger');
-  hamburger.innerHTML = `<button type="button" aria-controls="nav" aria-label="Open navigation">
-      <span class="nav-hamburger-icon"></span>
-    </button>`;
-  hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
-  nav.prepend(hamburger);
-  nav.setAttribute('aria-expanded', 'false');
-  // prevent mobile nav behavior on window resize
-  toggleMenu(nav, navSections, isDesktop.matches);
-  isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
+  // market nav — move the authored <ul>
+  const marketUl = market?.querySelector('ul');
+  if (marketUl) { normaliseItems(marketUl); const nav = el('nav', { class: 'header__topnav', 'aria-label': 'Marked' }); nav.append(marketUl); top.append(nav); }
+  content.append(top);
 
-  const navWrapper = document.createElement('div');
-  navWrapper.className = 'nav-wrapper';
-  navWrapper.append(nav);
-  block.append(navWrapper);
+  // tools — search button (desktop), CTA (authored a.button.accent), login
+  const user = el('div', { class: 'header__user' });
+  if (searchA) user.append(el('button', { type: 'button', class: 'header__search', 'aria-label': text(searchA), 'data-href': searchHref }, icon('sok'), el('span', {}, text(searchA))));
+  const actions = el('div', { class: 'header__actions' });
+  const ctaA = tools?.querySelector('a.button, p > em a, p > strong a');
+  if (ctaA) { ctaA.classList.add('header__cta'); actions.append(ctaA.closest('p') || ctaA); }
+  const loginP = [...(tools?.querySelectorAll('p') || [])].find((p) => p !== searchP && !p.contains(ctaA) && p.querySelector('a'));
+  if (loginP) { const a = loginP.querySelector('a'); a.classList.add('header__login'); actions.append(loginP); }
+  user.append(actions); content.append(user);
+
+  // main nav — move the authored <ul>
+  const mainUl = main?.querySelector('ul');
+  if (mainUl) { normaliseItems(mainUl); const nav = el('nav', { class: 'header__mainnav', id: 'main-menu', 'aria-label': 'Hovedmeny' }); nav.append(mainUl); content.append(nav); }
+
+  wrap.append(content);
+  block.replaceChildren(wrap); inlineIcons(block);
+
+  // behaviour (observed) — mobile scroll morph + hamburger
+  const THRESHOLD = 130; let bottomScrollPoint = 0; let last = 0;
+  const onScroll = () => {
+    const y = window.scrollY || document.documentElement.scrollTop;
+    const scrolled = y > THRESHOLD;
+    wrap.classList.toggle('scroll', scrolled);
+    wrap.classList.toggle('show', scrolled && y < bottomScrollPoint - 400);
+    if (y > last) bottomScrollPoint = y; last = y;
+  };
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  const burger = wrap.querySelector('.header__hamburger');
+  burger.addEventListener('click', () => { const open = burger.getAttribute('aria-expanded') === 'true'; burger.setAttribute('aria-expanded', String(!open)); wrap.classList.toggle('header__wrap--active', !open); burger.classList.toggle('is-open', !open); });
+  wrap.querySelector('.header__search')?.addEventListener('click', (e) => { window.location.href = e.currentTarget.dataset.href; });
 }

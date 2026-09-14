@@ -1,0 +1,41 @@
+{
+ "slug": "nb-bank-privat-kundeservice-kontakt-html",
+ "daPath": "/nb/bank/privat/kundeservice/kontakt",
+ "file": "content/nb/bank/privat/kundeservice/kontakt.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": []
+  },
+  {
+   "module": "tip",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  }
+ ],
+ "blocks": [
+  "columns",
+  "callout"
+ ],
+ "notes": [],
+ "gaps": [],
+ "assets": [],
+ "writtenAt": "2026-09-14T18:29:04.893Z"
+}

@@ -1,0 +1,35 @@
+{
+  "_provenance": { "writtenBy": "stardust:replica worker (frontend families) — Phase 3–4 ledger", "writtenAt": "2026-09-14T19:10:00Z", "againstInput": "family news-listing (nettsider-frontend clientlib variant)", "readArtifacts": ["stardust/replica/gates/nyheter-1440/*", "stardust/replica/gates/nyheter-360/*", "stardust/replica/lift/nyheter-*-detail.json", "stardust/replica/lift/nyheter-360-cards-settled.json", "stardust/replica/motion/nyheter-*.json", "stardust/current/pages/nb-bank-om-oss-nyheter-html.{html,json}"] },
+  "pageType": "listing",
+  "family": "news-listing",
+  "archetype": "nb-bank-om-oss-nyheter-html",
+  "liveUrl": "https://www.sparebank1.no/nb/bank/om-oss/nyheter.html",
+  "prototype": "stardust/prototypes/nb-bank-om-oss-nyheter-html-proposed.html",
+  "css": ["css/ffe-tokens.css", "css/canon.css", "css/news-listing.css (@import news-article.css for the frontend chrome)"],
+  "js": ["js/canon.js", "js/news-listing.js (frontend chrome interactions, same inventory as news-article.js)"],
+  "modules": ["stardust/scripts/replica/modules/frontend-chrome.mjs (__header/__footer)", "stardust/scripts/replica/modules/news-listing.mjs (sb1-articles__content)"],
+  "regime": "prototype (standalone prototype vs live page)",
+  "contentDiffScope": "--main \".sb1-articles__content, .articles\" (frontend template nests header/footer inside <main>; chrome proven by chrome-parity + crop gates)",
+  "liveHits": { "stitch": 2, "lift": 2, "settledCardProbe360": 1, "contentDiff": 2, "visualDiff": 1, "chromeParity": 2, "motionObserve": 2, "total": 12 },
+  "breakpoints": {
+    "1440": { "pixelRounds": 2, "liveGateIterations": 1, "result": { "structuralRed": 0, "visualFlags": "31 STRETCHED IMAGE — all justified", "pixelPct": 0.96, "heightDelta": 0, "chromeHeaderPct": 1.78, "chromeFooterPct": 0.42, "pass": true },
+      "justified": [ { "probe": "visual", "flag": "STRETCHED IMAGE ×31 (headline 1080×720→1060×488; cards 768×N→339×190)", "why": "live renders the same renditions in fixed-height boxes with object-fit: cover (lifted .newscard__image img height 190 / headline 488); mirrored" }, { "probe": "chrome-parity", "flag": "main-nav labels Δx ±2–11 px, footer bottom links Δx ±4–9 px, ICONS 0 live vs 2 build", "why": "same residual as the news-article header (tabular-digit label widths, centred row); the parity probe runs pre-lazy so the live social icons are not yet in the DOM — the stitched crop gates (98.22 % / 99.58 %) are the deciding measure" } ],
+      "residuals": [ { "band": "y 500–1000", "pct": 3.0, "cause": "headline photo decode/scale noise (1060×488 cover of a 1080×720 rendition)", "flaggedFor": "none" } ] },
+    "360": { "pixelRounds": 2, "liveGateIterations": 1, "result": { "structuralRed": 0, "visualFlags": "same as 1440", "pixelPct": 0.71, "heightDelta": 0, "chromeHeaderPct": 0.0, "chromeFooterPct": 0.12, "pass": true },
+      "justified": [ { "probe": "chrome-parity", "flag": "footer REGION BOX Δy +1053 / Δh +30 and 18 PAIR Δy", "why": "the parity probe measured the live page before its lazy card images loaded (docH 11862 vs settled 13863); the stitched live PNG (captured with --wait 5000) and the footer crop gate (99.88 %) prove the footer position and height" } ],
+      "residuals": [ { "band": "y 8500–9000", "pct": 2.1, "cause": "portrait photo (576×768) rendered at natural aspect — decode noise", "flaggedFor": "none" } ],
+      "captureNote": "live 360 ground truth captured with --wait 5000 (lazy card images); the pre-lazy lift (docH 11985) was used for typography only, geometry cross-checked with a settled live probe (lift/nyheter-360-cards-settled.json)" }
+  },
+  "findings": [
+    "three cards (dame-og-barn, Forvaltning_Morten_Soberg…, Dame-paa-PC) sat behind `lazyload-placeholder` in the sidecar snapshot (no <img>); the module restores them from the sidecar JSON media.images (DOM order, settled) — capture-state, not a page defect",
+    "card gaps: regular cards margin-bottom 16 px (mobile) / 24 px (desktop); the headline card 24 / 40 px — the lift's first .newscard (the headline) hid the regular-card value",
+    "listing h1 is 28/36 at mobile, 46/56 from 768, margin 20px 0 0; .newscards margin 20 / 40",
+    "pager button = ffe-button--shortcut: white, 2 px vann border, radius 96, min-height 48, full width at mobile, 200 px centred at desktop; group padding 40 0 + 8 px bottom margin → footer 136 px",
+    "a single-class @media(min-width:1280px) .newscard{width:339px} rule overrode the headline's width:100% (equal specificity, later) — headline width must be declared with two classes"
+  ],
+  "captureState": [ { "what": "live social icons and card images load lazily; parity/lift probes that run before the load see a shorter page and no icons", "where": "footer, cards", "how": "stitched ground truth uses --wait 5000; settled probe stored in lift/nyheter-360-cards-settled.json" } ],
+  "motion": { "observed": "stardust/replica/motion/nyheter-1440.json (0 animations, 8 transitions — pager colour/background/icon transform 0.2s; 23 class mutations — lazyload image__container; hover: card → no change, pager → invert + arrow +12px, main-nav a colour), nyheter-360.json (hamburger open transitions as on the article page; header static 60 px at every scroll position)", "implemented": ["pager hover: colour/background inversion + icon translateX(12px), 0.2s cubic-bezier(.25,.1,.25,1) (news-listing.css)", "frontend chrome interactions via js/news-listing.js (search toggle, hamburger states — same as news-article)"], "dead": ["card hover (no computed change)", "header scroll morph (never fired)"], "pixelAfterMotion": "unchanged (hover-only additions)" },
+  "inconsistencyRegister": "empty (pure replica)",
+  "approvedBy": "hands-off",
+  "approvedAt": "2026-09-14T19:10:00Z"
+}
