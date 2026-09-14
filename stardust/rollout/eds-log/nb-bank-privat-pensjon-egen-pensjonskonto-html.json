@@ -121,6 +121,7 @@
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/pensjon-forvaltning-aktiv-umerket-uten-bakgrunn.svg is 189273 bytes of SVG (> 40000) — authored as DA media pensjon-forvaltning-aktiv-umerket-uten-bakgrunn.png (rasterised)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
@@ -130,11 +131,13 @@
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "media: https://www.sparebank1.no/content/dam/SB1/vedlegg/pensjon/bilder/avkastningsgraf-pensjon-2026.svg is 242396 bytes of SVG (> 40000) — authored as DA media avkastningsgraf-pensjon-2026.png (rasterised)",
   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg is 860616 bytes of SVG (> 40000) — authored as DA media illustrasjon-sporsmal-sand-sirkel-usymmetrisk.png (rasterised)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
@@ -145,5 +148,5 @@
   "https://www.sparebank1.no/content/dam/SB1/vedlegg/pensjon/bilder/avkastningsgraf-pensjon-2026.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg"
  ],
- "writtenAt": "2026-09-14T20:41:12.253Z"
+ "writtenAt": "2026-09-14T20:56:22.434Z"
 }

@@ -102,6 +102,7 @@
   "lint D1 accordion steps: the live step-by-step widget (numbered master list + detail panel; mobile: inline expansion) — one row per step [linked step title][content]; step 1 open at rest",
   "lint D1 callout: the FFE message box (round glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2025/verdenskart-verden-lys-bakgrunn.svg is 64250 bytes of SVG (> 40000) — authored as DA media verdenskart-verden-lys-bakgrunn.png (rasterised)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
@@ -109,5 +110,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2025/verdenskart-verden-lys-bakgrunn.svg"
  ],
- "writtenAt": "2026-09-14T20:41:09.153Z"
+ "writtenAt": "2026-09-14T20:56:19.344Z"
 }

@@ -34,12 +34,14 @@
  ],
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
-  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-mann-kontor.svg is 59916 bytes of SVG (> 40000) — authored as DA media dame-mann-kontor.png (rasterised)"
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-mann-kontor.svg is 59916 bytes of SVG (> 40000) — authored as DA media dame-mann-kontor.png (rasterised)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)"
  ],
  "gaps": [],
  "assets": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-mann-kontor.svg"
  ],
- "writtenAt": "2026-09-14T20:41:09.786Z"
+ "writtenAt": "2026-09-14T20:56:19.969Z"
 }

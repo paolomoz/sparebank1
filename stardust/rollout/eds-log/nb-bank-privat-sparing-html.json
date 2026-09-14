@@ -83,10 +83,11 @@
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "cards nav: 7 visual-nav modules (3 photo, 4 icon) folded into one block — one row per card",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:32:57.220Z"
+ "writtenAt": "2026-09-14T20:56:52.056Z"
 }

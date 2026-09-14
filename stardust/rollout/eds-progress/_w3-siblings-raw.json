@@ -27,6 +27,7 @@
   },
   "notes": [
    "price-terms: the overlay link targets its own module anchor on live (bank chooser dialog) — kept verbatim, no-op until the dialog dynamic exists",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "richtext small-text: the live paragraph is wrapped in span.subtle-text (14/20) — carried as a section token (no inline classes in David's Model)",
    "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)",
    "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
@@ -65,7 +66,8 @@
    ]
   },
   "notes": [
-   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2025/verdenskart-verden-lys-bakgrunn.svg is 64250 bytes of SVG (> 40000) — authored as DA media verdenskart-verden-lys-bakgrunn.png (rasterised)"
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2025/verdenskart-verden-lys-bakgrunn.svg is 64250 bytes of SVG (> 40000) — authored as DA media verdenskart-verden-lys-bakgrunn.png (rasterised)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)"
   ],
   "lintJustifications": [
    "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
@@ -181,7 +183,10 @@
    ]
   },
   "notes": [
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-penger-sand-sirkel-usymmetrisk.svg is 1026451 bytes of SVG (> 40000) — authored as DA media illustrasjon-penger-sand-sirkel-usymmetrisk.png (rasterised)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
@@ -247,7 +252,9 @@
    ]
   },
   "notes": [
-   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-mann-kontor.svg is 59916 bytes of SVG (> 40000) — authored as DA media dame-mann-kontor.png (rasterised)"
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-mann-kontor.svg is 59916 bytes of SVG (> 40000) — authored as DA media dame-mann-kontor.png (rasterised)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)"
   ],
   "lintJustifications": [
    "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally"
@@ -307,6 +314,7 @@
    ]
   },
   "notes": [
+   "richtext main-lead: the live page lead (span.main-lead, 24/32 fjell centred) — carried as a section token",
    "cards people: the experts list (bio cards) — one row per expert [portrait][name h3, role, bio, \"Les mer om …\" link]; card-as-link via the trailing link (EW6)"
   ],
   "lintJustifications": [
@@ -339,13 +347,22 @@
    ]
   },
   "notes": [
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/hjemmekontor.svg is 49088 bytes of SVG (> 40000) — authored as DA media hjemmekontor.png (rasterised)",
+   "columns video: the live cell is a YouTube embed (poster + lazy iframe) — authored as its poster image in a 16:9 cell (the embed is a dynamics request)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "faq: a columns-grid sits inside this answer on live — cells authored in order as prose (no nested blocks)",
    "faq: a columns-grid sits inside this answer on live — cells authored in order as prose (no nested blocks)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)"
   ],
@@ -419,12 +436,18 @@
    "price-terms: the overlay link targets its own module anchor on live (bank chooser dialog) — kept verbatim, no-op until the dialog dynamic exists",
    "undefined: authored inside a columns-grid column on live — a columns cell cannot hold a block, so it follows the columns block as a sibling (layout stacks; content complete)",
    "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/pall.svg is 86953 bytes of SVG (> 40000) — authored as DA media pall.png (rasterised)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "faq: a guide-carousel sits inside this answer on live — its slides are authored as prose (title, copy, screenshot); no nested blocks",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "faq: a columns-grid sits inside this answer on live — cells authored in order as prose (no nested blocks)",
    "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
@@ -464,12 +487,22 @@
    ]
   },
   "notes": [
+   "columns video: the live cell is a YouTube embed (poster + lazy iframe) — authored as its poster image in a 16:9 cell (the embed is a dynamics request)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "undefined: authored inside a columns-grid column on live — a columns cell cannot hold a block, so it follows the columns block as a sibling (layout stacks; content complete)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "undefined: authored inside a columns-grid column on live — a columns cell cannot hold a block, so it follows the columns block as a sibling (layout stacks; content complete)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
-   "spacer: blank <p> dropped (live renders it as vertical space)"
+   "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)"
   ],
   "lintJustifications": [
    "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
@@ -507,7 +540,12 @@
   "notes": [
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/pengene-vokser-dame-mater-fisk-lys-bakgrunn.svg is 320828 bytes of SVG (> 40000) — authored as DA media pengene-vokser-dame-mater-fisk-lys-bakgrunn.png (rasterised)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg is 69217 bytes of SVG (> 40000) — authored as DA media mann-bil-tre.png (rasterised)",
+   "accordion tabs: an item holds a columns-grid (text + illustration) on live — authored as prose with the illustration first (floated beside the text; no nested blocks)",
+   "accordion tabs: an item holds a columns-grid (text + illustration) on live — authored as prose with the illustration first (floated beside the text; no nested blocks)",
+   "accordion tabs: an item holds a columns-grid (text + illustration) on live — authored as prose with the illustration first (floated beside the text; no nested blocks)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2025/ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.svg is 55304 bytes of SVG (> 40000) — authored as DA media ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.png (rasterised)",
+   "accordion tabs: an item holds a columns-grid (text + illustration) on live — authored as prose with the illustration first (floated beside the text; no nested blocks)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
@@ -545,9 +583,25 @@
   },
   "notes": [
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kyss-sand-sirkel-usymmetrisk.svg is 983750 bytes of SVG (> 40000) — authored as DA media illustrasjon-kyss-sand-sirkel-usymmetrisk.png (rasterised)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mobil-lege.svg is 44242 bytes of SVG (> 40000) — authored as DA media mobil-lege.png (rasterised)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
@@ -583,15 +637,43 @@
    ]
   },
   "notes": [
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "richtext small-text: the live paragraph is wrapped in span.subtle-text (14/20) — carried as a section token (no inline classes in David's Model)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-dame-sand-sirkel-usymmetrisk.svg is 1012845 bytes of SVG (> 40000) — authored as DA media illustrasjon-dame-sand-sirkel-usymmetrisk.png (rasterised)",
    "richtext small-text: the live paragraph is wrapped in span.subtle-text (14/20) — carried as a section token (no inline classes in David's Model)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "faq: a coverage comparison table sits inside this answer on live — flattened to default content (feature, covered-by list, details); a table/block cannot nest inside an accordion row",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
-   "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
@@ -625,11 +707,26 @@
   },
   "notes": [
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-usymmetrisk-samboer-dame-mann-high-five.svg is 43025 bytes of SVG (> 40000) — authored as DA media illustrasjon-usymmetrisk-samboer-dame-mann-high-five.png (rasterised)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
@@ -659,7 +756,9 @@
     "🟡 D4 content/nb/bank/privat/forsikring/kundehistorier.html: 1 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409"
    ]
   },
-  "notes": [],
+  "notes": [
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)"
+  ],
   "lintJustifications": [
    "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
    "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
@@ -691,23 +790,54 @@
    ]
   },
   "notes": [
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-koffert-reise-rosa.svg is 47074 bytes of SVG (> 40000) — authored as DA media dame-koffert-reise-rosa.png (rasterised)",
    "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "faq: a columns-grid sits inside this answer on live — cells authored in order as prose (no nested blocks)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
-   "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
@@ -823,10 +953,15 @@
    ]
   },
   "notes": [
+   "columns video: the live cell is a YouTube embed (poster + lazy iframe) — authored as its poster image in a 16:9 cell (the embed is a dynamics request)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "richtext small-text: the live paragraph is wrapped in span.subtle-text (14/20) — carried as a section token (no inline classes in David's Model)",
    "richtext after-spacer-1: 1 trailing empty author paragraph(s) reserve 40px each on live; the pipeline drops empty paragraphs",
    "callout tips lightbulb: the live message box is the `tips` kind (lightbulb glyph, sol ring, sand box) — carried as block variants",
    "calculator: static snapshot served from /data/calculator/privat-lan-forbrukslan.html (dynamics #7 interim — computation disabled until the API is exposed)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "band: nested faq module — its own section style (faq, gap-48) is dropped inside a band that holds other modules"
   ],
@@ -899,6 +1034,7 @@
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kalkulator-sand-sirkel-usymmetrisk.svg is 861599 bytes of SVG (> 40000) — authored as DA media illustrasjon-kalkulator-sand-sirkel-usymmetrisk.png (rasterised)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/mann-sparegris.svg is 41078 bytes of SVG (> 40000) — authored as DA media mann-sparegris.png (rasterised)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/dame-tenker-okonomi-sammenlikner.svg is 51143 bytes of SVG (> 40000) — authored as DA media dame-tenker-okonomi-sammenlikner.png (rasterised)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "calculator: static snapshot served from /data/calculator/privat-lan-lanekalkulator.html (dynamics #7 interim — computation disabled until the API is exposed)"
   ],
   "lintJustifications": [
@@ -933,6 +1069,7 @@
    ]
   },
   "notes": [
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2025/ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.svg is 55304 bytes of SVG (> 40000) — authored as DA media ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.png (rasterised)",
    "spacer: blank <p> dropped (live renders it as vertical space)"
   ],
@@ -969,16 +1106,19 @@
    ]
   },
   "notes": [
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/pensjon-forvaltning-aktiv-umerket-uten-bakgrunn.svg is 189273 bytes of SVG (> 40000) — authored as DA media pensjon-forvaltning-aktiv-umerket-uten-bakgrunn.png (rasterised)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "media: https://www.sparebank1.no/content/dam/SB1/vedlegg/pensjon/bilder/avkastningsgraf-pensjon-2026.svg is 242396 bytes of SVG (> 40000) — authored as DA media avkastningsgraf-pensjon-2026.png (rasterised)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "spacer: blank <p> dropped (live renders it as vertical space)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg is 860616 bytes of SVG (> 40000) — authored as DA media illustrasjon-sporsmal-sand-sirkel-usymmetrisk.png (rasterised)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
   "lintJustifications": [
@@ -1016,6 +1156,12 @@
   },
   "notes": [
    "media: https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/girls-just-want-to-have-fond-med-ameline-usymmetrisk-.svg is 1019801 bytes of SVG (> 40000) — authored as DA media girls-just-want-to-have-fond-med-ameline-usymmetrisk-.png (rasterised)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2023/dame-star-pa-penger-spare-fond.svg is 51791 bytes of SVG (> 40000) — authored as DA media dame-star-pa-penger-spare-fond.png (rasterised)",
    "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
   ],
@@ -1050,6 +1196,7 @@
   },
   "notes": [
    "cards nav: 4 visual-nav modules (4 photo, 0 icon) folded into one block — one row per card",
+   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
    "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-liten-penger.svg is 95992 bytes of SVG (> 40000) — authored as DA media illustrasjon-liten-penger.png (rasterised)"
   ],
   "lintJustifications": [

@@ -95,6 +95,7 @@
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
   "cards nav: 4 visual-nav modules (4 photo, 0 icon) folded into one block — one row per card",
   "lint D3 cobranding: single-cell rows read by position — row 1 heading + toggle label (EW8: the label moves into the expand button), row 2 partner logo + title, rows 3+ one panel column each; the panel is closed at rest (dynamics #14 static snapshot)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-liten-penger.svg is 95992 bytes of SVG (> 40000) — authored as DA media illustrasjon-liten-penger.png (rasterised)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
@@ -105,5 +106,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-liten-penger.svg"
  ],
- "writtenAt": "2026-09-14T20:41:12.511Z"
+ "writtenAt": "2026-09-14T20:56:22.693Z"
 }

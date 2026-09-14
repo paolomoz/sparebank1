@@ -71,6 +71,7 @@ main .section .callout-wrapper:has(> .callout.infobox) { max-width: none; margin
 /* ===== product siblings (additive variant) =====
    lightbulb — the live ffe-message-box--tips: Material lightbulb glyph (icons/lightbulb.svg, verbatim live path) in a sol #dc8000 ring, 40px,
    sand #f8e9dd box (stardust/prototypes/css/product.css .tip:has(path[d^=…]) rules; theme.css tips values) */
+.callout.lightbulb .callout__box { padding-top: 8px; } /* live tips box: the ring overlaps 16px less than the hub info box */
 .callout.lightbulb .callout__icon { border-color: #dc8000; color: #dc8000; }
 .callout.lightbulb .callout__icon svg { width: 40px; height: 40px; }
 .callout.lightbulb .callout__body { background: #f8e9dd; }

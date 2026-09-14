@@ -116,15 +116,20 @@
   "cards grid: consecutive same-shaped card rows folded into one block (D9)",
   "lint D1 shortcuts: one cell with a plain list of links (D5 simple list) — the block renders the live pill buttons with chevrons; the heading above stays default content",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg is 860616 bytes of SVG (> 40000) — authored as DA media illustrasjon-sporsmal-sand-sirkel-usymmetrisk.png (rasterised)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
-  "spacer: blank <p> dropped (live renders it as vertical space)",
-  "spacer: blank <p> dropped (live renders it as vertical space)",
-  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
@@ -137,5 +142,5 @@
   "https://www.sparebank1.no/privat/forsikring/pensjon/assets/menneske_person_tenaaring_2-CZfMiezN.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg"
  ],
- "writtenAt": "2026-09-14T20:32:56.934Z"
+ "writtenAt": "2026-09-14T20:56:51.865Z"
 }

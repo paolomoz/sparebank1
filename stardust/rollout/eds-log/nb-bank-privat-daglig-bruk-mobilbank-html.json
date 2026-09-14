@@ -96,8 +96,13 @@
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/pengene-vokser-dame-mater-fisk-lys-bakgrunn.svg is 320828 bytes of SVG (> 40000) — authored as DA media pengene-vokser-dame-mater-fisk-lys-bakgrunn.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg is 69217 bytes of SVG (> 40000) — authored as DA media mann-bil-tre.png (rasterised)",
   "lint D1 carousel: the live guide-carousel (one slide visible, \"1 av N\", prev/next) — one row per slide [screenshot][title + copy][slide name (the visually-hidden tab label)]; the counter and the Forrige/Neste controls are block chrome",
+  "accordion tabs: an item holds a columns-grid (text + illustration) on live — authored as prose with the illustration first (floated beside the text; no nested blocks)",
+  "accordion tabs: an item holds a columns-grid (text + illustration) on live — authored as prose with the illustration first (floated beside the text; no nested blocks)",
+  "accordion tabs: an item holds a columns-grid (text + illustration) on live — authored as prose with the illustration first (floated beside the text; no nested blocks)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2025/ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.svg is 55304 bytes of SVG (> 40000) — authored as DA media ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.png (rasterised)",
+  "accordion tabs: an item holds a columns-grid (text + illustration) on live — authored as prose with the illustration first (floated beside the text; no nested blocks)",
   "lint D1 accordion tabs: the live \"section\" master/detail module (list of section-items, active item shown in a detail panel; inline on mobile) — one row per item [item title][content]; item 1 open at rest",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
@@ -109,5 +114,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2025/ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.svg"
  ],
- "writtenAt": "2026-09-14T20:51:32.011Z"
+ "writtenAt": "2026-09-14T20:56:20.890Z"
 }

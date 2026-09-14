@@ -222,7 +222,9 @@ export function sectionList(root, ctx, opts = {}) {
   const img = q(root, '.seclist__img'); if (img) parts.push(pic(img, ctx));
   const h = q(root, '.seclist__title'); if (h) parts.push(heading(h, ctx));
   const sub = q(root, '.seclist__header .sub-lead'); if (sub) parts.push(`<p>${inline(sub, ctx)}</p>`);
-  const rows = qa(root, '.seclist__item').map((it) => [`<p>${inline(q(it, '.seclist__text'), ctx)}</p>`, richtext(q(it, '.seclist__content'), ctx)]);
+  // item content: prose; a nested columns-grid (text + illustration side by side on live) is authored illustration FIRST so the block can float it beside the text
+  const itemHtml = (content) => { let out = ''; for (const ch of content?.children || []) { if (ch.classList.contains('cols')) { for (const row of qa(ch, ':scope > .grid-row')) { const cols = qa(row, ':scope > .col'); const imgCols = cols.filter((c) => { const cc = q(c, ':scope > .col__content'); return cc && [...cc.children].every((k) => /\bimage\b/.test(k.className)); }); for (const c of [...imgCols, ...cols.filter((c) => !imgCols.includes(c))]) out += richtext(q(c, ':scope > .col__content'), ctx); } if (q(ch, '.col__content > .image')) ctx.notes.push('accordion tabs: an item holds a columns-grid (text + illustration) on live — authored as prose with the illustration first (floated beside the text; no nested blocks)'); continue; } out += richtext({ childNodes: [ch] }, ctx); } return out; };
+  const rows = qa(root, '.seclist__item').map((it) => [`<p>${inline(q(it, '.seclist__text'), ctx)}</p>`, itemHtml(q(it, '.seclist__content'))]);
   parts.push(block('accordion', ['tabs'], rows));
   ctx.notes.push('lint D1 accordion tabs: the live "section" master/detail module (list of section-items, active item shown in a detail panel; inline on mobile) — one row per item [item title][content]; item 1 open at rest');
   const style = styleOf('section-list', small ? 'small-img' : 'layout2', tintOf(root));

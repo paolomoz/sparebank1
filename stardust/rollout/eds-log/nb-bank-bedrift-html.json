@@ -91,6 +91,7 @@
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2023/folk-med-sportsutstyr-dame-gutt-basketball-hockey-lys.svg is 49883 bytes of SVG (> 40000) — authored as DA media folk-med-sportsutstyr-dame-gutt-basketball-hockey-lys.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2025/mobilbank-bedrift.svg is 43191 bytes of SVG (> 40000) — authored as DA media mobilbank-bedrift.png (rasterised)",
   "lint D11 carousel: the campaign hero carousel (Block Collection carousel shape) — one row per slide [image][heading, lead, text, CTA]; the live capture shows one slide (campaign rotation = permanent residual); the decorative image link duplicates the CTA and is not authored",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "cards grid: consecutive same-shaped card rows folded into one block (D9)",
   "cards grid: consecutive same-shaped card rows folded into one block (D9)"
  ],
@@ -101,5 +102,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2023/folk-med-sportsutstyr-dame-gutt-basketball-hockey-lys.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2025/mobilbank-bedrift.svg"
  ],
- "writtenAt": "2026-09-14T20:32:57.835Z"
+ "writtenAt": "2026-09-14T20:56:52.530Z"
 }

@@ -100,13 +100,22 @@
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/hjemmekontor.svg is 49088 bytes of SVG (> 40000) — authored as DA media hjemmekontor.png (rasterised)",
+  "columns video: the live cell is a YouTube embed (poster + lazy iframe) — authored as its poster image in a 16:9 cell (the embed is a dynamics request)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "faq: a columns-grid sits inside this answer on live — cells authored in order as prose (no nested blocks)",
   "faq: a columns-grid sits inside this answer on live — cells authored in order as prose (no nested blocks)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
@@ -116,5 +125,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/hjemmekontor.svg"
  ],
- "writtenAt": "2026-09-14T20:41:10.172Z"
+ "writtenAt": "2026-09-14T20:56:20.352Z"
 }

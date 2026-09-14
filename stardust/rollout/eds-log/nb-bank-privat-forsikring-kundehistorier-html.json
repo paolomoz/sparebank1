@@ -39,10 +39,11 @@
  ],
  "notes": [
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:41:11.231Z"
+ "writtenAt": "2026-09-14T20:56:21.410Z"
 }

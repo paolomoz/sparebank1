@@ -89,6 +89,7 @@
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kalkulator-sand-sirkel-usymmetrisk.svg is 861599 bytes of SVG (> 40000) — authored as DA media illustrasjon-kalkulator-sand-sirkel-usymmetrisk.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/mann-sparegris.svg is 41078 bytes of SVG (> 40000) — authored as DA media mann-sparegris.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/dame-tenker-okonomi-sammenlikner.svg is 51143 bytes of SVG (> 40000) — authored as DA media dame-tenker-okonomi-sammenlikner.png (rasterised)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "lint D1 calculator: bespoke widget (shadow-root snapshot of the loan calculator; dynamics #7 interim) — the link names the snapshot",
   "calculator: static snapshot served from /data/calculator/privat-lan-lanekalkulator.html (dynamics #7 interim — computation disabled until the API is exposed)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
@@ -100,5 +101,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/mann-sparegris.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/dame-tenker-okonomi-sammenlikner.svg"
  ],
- "writtenAt": "2026-09-14T20:41:11.997Z"
+ "writtenAt": "2026-09-14T20:56:22.177Z"
 }

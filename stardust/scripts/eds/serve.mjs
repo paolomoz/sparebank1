@@ -30,6 +30,11 @@ function mainOf(file) {
     const kids = [...cell.childNodes].filter((n) => n.nodeType !== 3 || n.textContent.trim());
     if (kids.length === 1 && kids[0].nodeType === 1 && kids[0].tagName === 'P') { const p = kids[0]; p.replaceWith(...p.childNodes); }
   });
+  // like the pipeline: a <br> at the start or end of a paragraph/list item/heading/cell does not survive markdown
+  [...document.querySelectorAll('main p, main li, main h1, main h2, main h3, main h4, main h5, main h6, main > div > div > div > div')].forEach((e) => {
+    const edge = (first) => { let n = first ? e.firstChild : e.lastChild; while (n && ((n.nodeType === 3 && !n.textContent.trim()) || (n.nodeType === 1 && n.tagName === 'BR'))) { const next = first ? n.nextSibling : n.previousSibling; if (n.nodeType === 1 || !n.textContent.trim()) n.remove(); n = next; } };
+    edge(true); edge(false);
+  });
   // like the pipeline (markdown has no small/span/empty paragraphs): unwrap <small>/<span>, drop empty <p>
   [...document.querySelectorAll('small, span:not([class])')].forEach((e) => e.replaceWith(...e.childNodes));
   [...document.querySelectorAll('p, h1, h2, h3, h4, h5, h6')].forEach((p) => { if (!p.textContent.replace(/\u00a0/g, ' ').trim() && !p.querySelector('img, picture, a, span')) { if (/^H/.test(p.tagName)) p.textContent = ''; else p.remove(); } }); // nbsp-only headings survive as empty (0px) like the pipeline

@@ -195,7 +195,7 @@ export function prose(el, ctx, opts = {}) {
     const pseudo = (e) => { const m = /\b(?:ffe-)?h([2-6])\b/.exec(e.getAttribute('class') || ''); return m ? m[1] : null; };
     if (t === 'p' && n.children.length === 1 && n.children[0].tagName === 'SPAN' && pseudo(n.children[0]) && n.textContent.trim() === n.children[0].textContent.trim()) { out += `<h${pseudo(n.children[0])}>${inline(n.children[0], ctx)}</h${pseudo(n.children[0])}>`; continue; }
     if (t === 'span' && pseudo(n)) { out += `<h${pseudo(n)}>${inline(n, ctx)}</h${pseudo(n)}>`; continue; }
-    if (t === 'p') { const s = inline(n, ctx); if (s.trim()) out += `<p>${s}</p>`; continue; }
+    if (t === 'p') { let s = inline(n, ctx); const s0 = s; s = s.replace(/^(\s*<br>\s*)+/, '').replace(/(\s*<br>\s*)+$/, ''); if (s !== s0) ctx?.notes?.push('spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)'); if (s.trim()) out += `<p>${s}</p>`; continue; }
     if (t === 'ul' || t === 'ol') { out += list(n, ctx); continue; }
     if (t === 'hr') continue; // <hr> is the DA section delimiter: dropped inside cells/prose (article bodies author a divider block instead)
     if (t === 'br') continue;

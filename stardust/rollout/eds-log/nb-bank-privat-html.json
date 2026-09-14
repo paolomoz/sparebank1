@@ -77,6 +77,7 @@
   "send-to-bank__loading: client-rendered spinner shell (dynamics) — no authored content",
   "h1: live hides the page title visually — default content in a section styled visually-hidden",
   "lint D11 carousel: the campaign hero carousel (Block Collection carousel shape) — one row per slide [image][heading, lead, text, CTA]; the live capture shows one slide (campaign rotation = permanent residual); the decorative image link duplicates the CTA and is not authored",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "lint D3 banner columns: one row per half — [illustration][heading, line, CTA(, partner logo)]; the colour variants are read in row order (like the columns lg-* cell model)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/jubelkor-lys-bakgrunn.svg is 52845 bytes of SVG (> 40000) — authored as DA media jubelkor-lys-bakgrunn.png (rasterised)",
   "campaign: the empty second carousel instance renders 0px on live — nothing to author",
@@ -87,5 +88,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/jubelkor-lys-bakgrunn.svg"
  ],
- "writtenAt": "2026-09-14T20:32:58.027Z"
+ "writtenAt": "2026-09-14T20:56:52.717Z"
 }

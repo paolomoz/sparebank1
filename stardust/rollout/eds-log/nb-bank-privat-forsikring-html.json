@@ -107,18 +107,36 @@
   "feedback"
  ],
  "notes": [
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-koffert-reise-rosa.svg is 47074 bytes of SVG (> 40000) — authored as DA media dame-koffert-reise-rosa.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/barekraft-skifte-sykkeldekk-lys-bakgrunn.svg is 52880 bytes of SVG (> 40000) — authored as DA media barekraft-skifte-sykkeldekk-lys-bakgrunn.png (rasterised)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "lint D3 banner columns: one row per half — [illustration][heading, line, CTA(, partner logo)]; the colour variants are read in row order (like the columns lg-* cell model)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/Mennesker_personer_voksen_forelder_barn.svg is 77637 bytes of SVG (> 40000) — authored as DA media Mennesker_personer_voksen_forelder_barn.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/barn_spiller_fotball.svg is 93129 bytes of SVG (> 40000) — authored as DA media barn_spiller_fotball.png (rasterised)",
   "lint D1 columns (image): a standalone illustration authored at 175px — the one-cell columns block carries the wN sizing model the default-content image cannot express",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "module progressive-disclosure: the replica prototype carries this module as richtext only (author.mjs unknown) — authored as default content; replica request filed",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "lint D1 shortcuts: one cell with a plain list of links (D5 simple list) — the block renders the live pill buttons with chevrons; the heading above stays default content",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
@@ -130,5 +148,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/Mennesker_personer_voksen_forelder_barn.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/barn_spiller_fotball.svg"
  ],
- "writtenAt": "2026-09-14T20:32:56.601Z"
+ "writtenAt": "2026-09-14T20:56:51.572Z"
 }

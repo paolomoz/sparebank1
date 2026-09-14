@@ -113,6 +113,7 @@
   "cards nav: 8 visual-nav modules (4 photo, 4 icon) folded into one block — one row per card",
   "lint D1 shortcuts: one cell with a plain list of links (D5 simple list) — the block renders the live pill buttons with chevrons; the heading above stays default content",
   "lint D3 cobranding: single-cell rows read by position — row 1 heading + toggle label (EW8: the label moves into the expand button), row 2 partner logo + title, rows 3+ one panel column each; the panel is closed at rest (dynamics #14 static snapshot)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-gar-smiler.svg is 51371 bytes of SVG (> 40000) — authored as DA media dame-gar-smiler.png (rasterised)",
   "lint D1 callout: the FFE message box (round icon overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
@@ -122,5 +123,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-gar-smiler.svg"
  ],
- "writtenAt": "2026-09-14T20:32:56.697Z"
+ "writtenAt": "2026-09-14T20:56:51.668Z"
 }

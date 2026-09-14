@@ -83,6 +83,7 @@
   "href: live placeholder \"Legg%20inn%20link%20til%20kontaktskjema%20for%20å%20få%20til\" on \"Få tilbud på regnskapstjenester\" → \"#\" (authoring error on the live page)",
   "cards grid: consecutive same-shaped card rows folded into one block (D9)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/mann-viser-og-forklarer.svg is 77587 bytes of SVG (> 40000) — authored as DA media mann-viser-og-forklarer.png (rasterised)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "lint D1 callout: the FFE message box (round icon overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
@@ -93,5 +94,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/mann-viser-og-forklarer.svg"
  ],
- "writtenAt": "2026-09-14T20:32:55.939Z"
+ "writtenAt": "2026-09-14T20:56:51.011Z"
 }
