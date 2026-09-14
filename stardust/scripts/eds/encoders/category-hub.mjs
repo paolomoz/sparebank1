@@ -36,6 +36,15 @@ export function withStyle(r, ...tokens) {
 
 const gridCols = (row) => { const m = /grid-row--cols-(\d+)/.exec(row.getAttribute('class') || ''); return m && m[1] !== '12' ? `cols-${m[1]}` : null; };
 
+/** An image-only column holding an illustration (SVG, not a /foto/ photo) renders at its authored max-width, centred, uncropped:
+ *  the prototype carries it as `--w` on .image (market-landing); the hub illustration (kundeservice cols) is the lifted 400px. → cell model token `wN`. */
+function illustrationWidth(col) {
+  const cc = q(col, ':scope > .col__content'); if (!cc) return null;
+  const imgs = qa(cc, 'img'); if (!imgs.length || [...cc.children].some((ch) => !/\bimage\b/.test(ch.getAttribute('class') || ''))) return null;
+  const src = imgs[0].getAttribute('src') || ''; if (!/\.svg(\?|$)/i.test(src)) return null;
+  const m = /--w:\s*(\d+)px/.exec(q(cc, '.image')?.getAttribute('style') || ''); return `w${m ? m[1] : 400}`;
+}
+
 /** One live .grid-row → { kind: 'cards' | 'columns' | 'prose' } — mirrors core band(): card-grid row, single centred heading row, text/image columns.
  *  Adds: `cols-N` (the live grid is N columns wide, centred), `chat` (a boost.ai entry field in the last column). */
 export function gridRow(row, ctx) {
@@ -46,7 +55,7 @@ export function gridRow(row, ctx) {
     return { kind: 'cards', variants: ['grid', span, gridCols(row)].filter(Boolean), rows: cardRows(cols.map((c) => normaliseHrefs(q(c, '.card'))), ctx) };
   }
   if (cols.length === 1 && /grid-row--cols-/.test(row.getAttribute('class') || '')) return { kind: 'prose', html: richtext(q(cols[0], '.col__content'), ctx) };
-  const variants = cols.map((c) => { const k = cls(c); const span = (k.find((x) => /^col-lg-\d+$/.test(x)) || 'col-lg-12').replace('col-', ''); const off = k.find((x) => /^col-lg-offset-\d+$/.test(x)); const first = k.includes('col--first') ? 'first' : null; const align = (k.find((x) => /^col--(middle|center|bottom)$/.test(x)) || '').replace('col--', ''); return [span, off ? off.replace('col-lg-offset-', 'offset-') : null, first, align].filter(Boolean).join('-'); });
+  const variants = cols.map((c) => { const k = cls(c); const span = (k.find((x) => /^col-lg-\d+$/.test(x)) || 'col-lg-12').replace('col-', ''); const off = k.find((x) => /^col-lg-offset-\d+$/.test(x)); const first = k.includes('col--first') ? 'first' : null; const align = (k.find((x) => /^col--(middle|center|bottom)$/.test(x)) || '').replace('col--', ''); return [span, off ? off.replace('col-lg-offset-', 'offset-') : null, first, align, illustrationWidth(c)].filter(Boolean).join('-'); });
   const cells = cols.map((c) => {
     const cc = q(c, ':scope > .col__content'); let html = richtext(normaliseHrefs(cc), ctx);
     const chat = q(cc, 'form.chat-field');

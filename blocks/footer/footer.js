@@ -13,7 +13,8 @@ import { el, icon, sectionsOf, text, inlineIcons } from '../../scripts/sb1.js';
  */
 export default async function decorate(block) {
   const footerMeta = getMetadata('footer');
-  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
+  // additive fallback (faq siblings): a bedrift-market page without an explicit footer document takes the bedrift chrome (chrome-map lists archetypes only)
+  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : (getMetadata('market') === 'bedrift' ? '/footer-bedrift' : '/footer');
   const fragment = await loadFragment(footerPath);
   if (!fragment) return;
   const sections = sectionsOf(fragment);

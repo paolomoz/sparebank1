@@ -41,7 +41,7 @@ export default {
   text(node, ctx) {
     const { richtext, txt } = ctx;
     const w = richtext(node, node.classList.contains('prices__bottom-info') ? 'prices__bottom' : '');
-    if (ctx.family !== 'theme') return w;
+    if (!FEATURED_FAMILIES.has(ctx.family)) return w;
     const tw = node.querySelector('.text-wrapper') || node;
     const mw = (tw.getAttribute('style') || '').match(/max-width:\s*(\d+(?:\.\d+)?)px/); if (mw) { w.setAttribute('class', w.getAttribute('class') + ' richtext--max'); w.setAttribute('style', `--max:${mw[1]}px`); }
     const dstSpans = [...w.querySelectorAll('span')];
@@ -49,6 +49,9 @@ export default {
       const keep = LEAD.filter(c => s.classList.contains(c)); if (!keep.length) continue;
       const t = txt(s); const d = dstSpans.find(x => !x.getAttribute('class') && txt(x) === t); if (d) d.setAttribute('class', keep.join(' '));
     }
+    // authored inline font-size / colour on inline elements (captured state; KEEP_ATTR drops style)
+    const srcInline = [...tw.querySelectorAll('b, i, span')]; const dstInline = [...w.querySelectorAll('b, i, span')];
+    if (srcInline.length === dstInline.length) srcInline.forEach((si, i) => { const st = si.getAttribute('style') || ''; const fs = st.match(/font-size:\s*([^;]+)/i); const col = st.match(/(?:^|;)\s*color:\s*([^;]+)/i); const parts = []; if (fs) parts.push(`font-size:${fs[1].trim()}`); if (col) parts.push(`color:${col[1].trim()}`); if (parts.length && txt(dstInline[i]) === txt(si)) dstInline[i].setAttribute('style', parts.join(';')); });
     const srcBlocks = [...tw.querySelectorAll('p, li')]; const dstBlocks = [...w.querySelectorAll('p, li')];
     srcBlocks.forEach((sp, i) => { const ff = (sp.getAttribute('style') || '').match(/font-family:\s*([^;]+)/i); const d = dstBlocks[i]; if (ff && d && txt(d) === txt(sp)) d.setAttribute('style', `font-family:${ff[1].trim()}`); });
     return w;

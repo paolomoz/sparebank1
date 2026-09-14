@@ -75,4 +75,8 @@
 /* lead-all: every paragraph of the text column is a lead (live h2 + span.lead-blue ×N, 18/24 → 24/32 fjell, 18/24px under) */
 .columns.lead-all .col__text p { display: block; margin: 16px 0 18px; font-size: 18px; line-height: 24px; color: var(--fjell); }
 @media (width >= 768px) { .columns.lead-all .col__text p { margin-bottom: 24px; font-size: 24px; line-height: 32px; text-wrap: pretty; } }
+/* wN cell model: an illustration column — the image keeps its own aspect, no crop/radius, at most N px wide, centred (live img style="max-width:Npx;width:100%") */
+.columns .col--illustration.col--media p { text-align: center; }
+.columns .col--illustration.col--media picture { display: block; width: 100%; height: auto; aspect-ratio: auto; border-radius: 0; }
+.columns .col--illustration.col--media img { display: block; width: 100%; max-width: var(--w, 100%); height: auto; margin: 0 auto; border-radius: 0; aspect-ratio: auto; object-fit: contain; }
 /* ===== /kundeservice-hub / market-landing ===== */

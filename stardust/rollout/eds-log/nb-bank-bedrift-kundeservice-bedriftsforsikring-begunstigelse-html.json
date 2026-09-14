@@ -1,0 +1,30 @@
+{
+ "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+ "daPath": "/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse",
+ "file": "content/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "qp",
+   "blocks": [
+    "breadcrumbs",
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "feedback"
+ ],
+ "notes": [
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron, back-link) — not default content; variant `question` = the question-page geometry",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only; variant `inline` = the live left-aligned row under the answer"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T19:21:05.574Z"
+}

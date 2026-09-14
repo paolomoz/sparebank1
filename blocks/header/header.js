@@ -31,7 +31,8 @@ function normaliseItems(ul) {
 
 export default async function decorate(block) {
   const navMeta = getMetadata('nav');
-  const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
+  // additive fallback (faq siblings): a bedrift-market page without an explicit nav document takes the bedrift chrome (chrome-map lists archetypes only)
+  const navPath = navMeta ? new URL(navMeta, window.location).pathname : (getMetadata('market') === 'bedrift' ? '/nav-bedrift' : '/nav');
   const fragment = await loadFragment(navPath);
   if (!fragment) return;
   const [brand, market, main, tools] = sectionsOf(fragment);

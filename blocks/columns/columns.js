@@ -13,7 +13,8 @@ export default function decorate(block) {
     const v = variants[i] || 'lg-12';
     const span = (v.match(/^lg-(\d+)/) || [, '12'])[1]; const offset = (v.match(/offset-(\d+)/) || [])[1];
     const align = (v.match(/-(middle|center|bottom)/) || [])[1]; const first = /-first/.test(v);
-    const col = el('div', { class: ['col', `col-lg-${span}`, offset !== undefined ? `col-lg-offset-${offset}` : null, first ? 'col--first' : null, align ? `col--${align}` : null].filter(Boolean).join(' ') });
+    const illo = (v.match(/-w(\d+)(?:-|$)/) || [])[1]; // additive cell model: `wN` = an illustration column, rendered at N px max, centred, uncropped
+    const col = el('div', { class: ['col', `col-lg-${span}`, offset !== undefined ? `col-lg-offset-${offset}` : null, first ? 'col--first' : null, align ? `col--${align}` : null, illo ? 'col--illustration' : null].filter(Boolean).join(' '), style: illo ? `--w: ${illo}px` : null });
     const content = el('div', { class: 'col__content' });
     while (cell.firstChild) content.append(cell.firstChild);
     // consecutive CTA paragraphs (a paragraph that is only a link) form one button row, as the live button-list does;

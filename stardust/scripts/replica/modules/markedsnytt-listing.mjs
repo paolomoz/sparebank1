@@ -1,6 +1,6 @@
 // markedsnytt-listing family — the Markedsnytt hub (PRIVAT chrome, productpage main). Handlers: `video` (YouTube embed mirrored
-// as captured: placeholder + iframe whose src is the loaded src or the lazyload data-video-url) and a family-gated `image`
-// that resolves lazyload portraits (data-lazy-src, no src in the captured DOM) before the canon imageBlock.
+// as captured: placeholder + iframe whose src is the loaded src or the lazyload data-video-url) and the CSS contract for
+// market-landing's `image` handler (`--w` max-width, `image--center`).
 // Featured article cards and the columns-grid reference block are handled by modules/theme.mjs (shared registry key, family-gated).
 export default {
   video(node, { el, abs }) {
@@ -25,8 +25,7 @@ export default {
     const btn = node.querySelector(':scope .button'); if (btn && !node.querySelector('.card .button')) { const bw = buttonWrapper(btn, 'center'); if (bw) inner.append(bw); }
     s.append(inner); return s;
   },
-  image(node, ctx) {
-    if (ctx.family === 'markedsnytt-listing') for (const img of node.querySelectorAll('img[data-lazy-src]:not([src])')) img.setAttribute('src', img.getAttribute('data-lazy-src'));
-    return ctx.imageBlock(node);
-  },
+  // NOTE: no `image` handler here — market-landing.mjs owns that registry key (it sorts after this file) and already emits
+  // the authored max-width as `--w` plus `image--center`; markedsnytt-listing.css consumes that contract.
+
 };

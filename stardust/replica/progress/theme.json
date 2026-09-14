@@ -1,0 +1,65 @@
+{
+  "pageType": "theme",
+  "family": "theme",
+  "archetype": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+  "liveUrl": "https://www.sparebank1.no/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+  "prototype": "stardust/prototypes/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html-proposed.html",
+  "css": ["css/ffe-tokens.css", "css/canon.css", "css/theme.css"],
+  "generator": "stardust/scripts/replica/author.mjs + modules/theme.mjs (family-gated card / referance / text handlers with canon fallback) + modules/utility.mjs tip",
+  "chromeVariant": "BEDRIFT (topnav BEDRIFT active, main nav Daglig drift / Regnskap / Finansiering / Forsikring / Pensjon …, Søk + Bli bedriftskunde + Logg inn; bedrift footer with Kontakt oss block) — canon generators reproduce it; theme.css adds the 24px/8px the empty contact text container reserves on live",
+  "liveHits": 12,
+  "breakpoints": {
+    "1440": {
+      "pixelRounds": 6,
+      "liveGateIterations": 1,
+      "result": { "structuralRed": 0, "structuralRedJustified": 0, "visualFlags": 2, "pixelPct": 1.51, "heightDelta": 0, "chromeHeaderPct": 99.58, "chromeFooterPct": 99.71, "pass": true },
+      "justified": [
+        "content-diff 🟠 FONT FORK cta \"leiligheter\" (tahoma vs SpareBank1-regular): the paragraph is authored with an inline font-family:tahoma; live resets links and lead/subtle spans to the site font — mirrored in theme.css (.richtext [style*=font-family] a, .sub-lead-left, .subtle-text), the 🟠 predates that fix",
+        "visual-diff STRETCHED IMAGE ×2 (Anbefalt cards 409x200): live is the same object-fit:cover crop",
+        "chrome-parity header PAIR Δh +2 (17→19) topnav: canon topnav line-height (canon-requests)",
+        "chrome-parity footer Linkedin/YouTube Δx +35 / icon 30→35 / to-top 40→50: canon footer social list (canon-requests)"
+      ],
+      "residuals": [
+        "hot band y 3500–4000 (15%): the Anbefalt card photos (JPEG rescale noise) and the fixed 'Til toppen' button captured mid-scroll in the prototype stitch — no layout delta",
+        "header crop 99.58%: live skip link 'Til hovedmeny' + topnav 2px line-height (canon)"
+      ]
+    },
+    "360": {
+      "pixelRounds": 6,
+      "liveGateIterations": 1,
+      "result": { "structuralRed": 0, "structuralRedJustified": 0, "visualFlags": 3, "pixelPct": 4.17, "heightDelta": 1, "chromeHeaderPct": 96.42, "chromeHeaderPctExcludingSkipLink": 99.90, "chromeFooterPct": 99.35, "pass": true },
+      "justified": [
+        "content-diff: none — content + roles match",
+        "visual-diff STRETCHED IMAGE ×3 (Anbefalt cards 326x200): live cover crops",
+        "chrome-parity footer Δy -8 on the contact block (fixed afterwards: .contact__actions margin-top 72 on mobile) and the canon social icon deltas"
+      ],
+      "residuals": [
+        "header crop 96.42% full width / 99.90% for x≥115: the live skip link 'Til hovedmeny' — permanent capture residual",
+        "hot band y 5500–6000 (17.5%): Anbefalt card photos; no layout delta"
+      ]
+    }
+  },
+  "captureState": [
+    "consent dismissed with button:has-text(\"Godta alle\"); skip link visible in live captures at both widths",
+    "live 1440 stitched 1440x5208 (= lifted docH); live 360 stitched 360x7964 (= lifted docH)",
+    "lazyload portraits/illustrations mirrored as the resolved <picture>; the inline svg illustration (pappa-triller-barnevogn) has only a viewBox — renders square at column width like live",
+    "authored inline styles mirrored where they change rendering: text-wrapper max-width (900 / 700 / 620 default), font-family:tahoma on p/li (live resets spans and links to the site font, so the visible text is SpareBank1 — mirrored)",
+    "the empty adviser-less bedrift footer contact text container reserves 24px (≥768) / 8px (mobile) above the action row on live"
+  ],
+  "motion": {
+    "observed": "stardust/replica/motion/borettslag-1440.json, borettslag-360.json — 0 animations; hovers: nav links → fjell, .card__container--clickable → bg #e7f1f9 + 1px ring, .ffe-button--secondary → bg vann/white, .ffe-button--action → #095139; .checked-list a, .tip .ffe-button, .card__container--featured: no change; mobile header morph and to-top button as canon",
+    "implemented": [],
+    "canonCovers": ["nav hover", ".card--clickable:hover (#e7f1f9 + ring)", "mobile header morph (canon.js)", "to-top"],
+    "canonDeviations": [".btn--secondary:hover canon fjell vs live vann", ".btn--action:hover canon #005a3c vs live #095139"],
+    "dead": [".checked-list a hover", ".tip .ffe-button hover", ".card__container--featured hover"],
+    "pixelAfterMotion": { "1440": 1.51, "360": 4.17 }
+  },
+  "inconsistencyRegister": [
+    "canon referance handler lifts only .text nodes → the sand columns-grid (buttons + image) was dropped; theme.mjs registers a family-gated referance with the canon path as fallback",
+    "canon card() only knows title/body-text cards → featured cards (illustration + checked list) rendered empty; theme.mjs registers a family-gated card handler",
+    "KEEP_CLASS drops main-lead / sub-lead-left / lead → theme.mjs text handler re-tags the spans by text",
+    "registry keys are global: theme.mjs card/referance/text are gated on ctx.family (theme, markedsnytt-listing) and fall back to canon behaviour otherwise"
+  ],
+  "approvedBy": "worker C (fork) — gate per ARCHETYPE-BRIEF.md",
+  "approvedAt": "2026-09-14T22:40:00+02:00"
+}

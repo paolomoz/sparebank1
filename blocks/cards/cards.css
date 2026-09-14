@@ -108,6 +108,7 @@
 .cards.small .card--small .card__media picture, .cards.small .card--small .card__media img { width: 70px; height: 70px; object-fit: fill; }
 .cards.small .card__body { padding: 16px 8px 16px 16px; }
 .cards.small .card__title { font-size: 17px; line-height: 20px; }
+.cards.grid.cols-8 .card--no-image .card__title { font-size: 20px; line-height: 20px; } /* live card--medium title (no image) */
 
 @media (width >= 768px) {
   .cards.nav .card-list li { margin-top: 10px; }

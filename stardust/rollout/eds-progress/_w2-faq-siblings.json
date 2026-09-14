@@ -1,0 +1,165 @@
+[
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-administrere-prisavtaler-html",
+  "daPath": "/nb/bank/bedrift/kundeservice/bank-regnskap/administrere-prisavtaler",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 3
+  },
+  "notes": []
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bank-regnskap-aktivere-ehf-html",
+  "daPath": "/nb/bank/bedrift/kundeservice/bank-regnskap/aktivere-ehf",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 3
+  },
+  "notes": []
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-begunstigelse-html",
+  "daPath": "/nb/bank/bedrift/kundeservice/bedriftsforsikring/begunstigelse",
+  "blocks": [
+   "breadcrumbs",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 2
+  },
+  "notes": []
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bedriftsforsikring-fg-godkjent-sprinkleranlegg-html",
+  "daPath": "/nb/bank/bedrift/kundeservice/bedriftsforsikring/fg-godkjent-sprinkleranlegg",
+  "blocks": [
+   "breadcrumbs",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 2
+  },
+  "notes": []
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-blir-jeg-bedriftskunde-html",
+  "daPath": "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-blir-jeg-bedriftskunde",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 3
+  },
+  "notes": []
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bm-andre-sporsmal-hvordan-flytte-avtalegiro-efaktura-ehf-html",
+  "daPath": "/nb/bank/bedrift/kundeservice/bm-andre-sporsmal/hvordan-flytte-avtalegiro-efaktura-ehf",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 3
+  },
+  "notes": []
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankaxept-html",
+  "daPath": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankaxept",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 3
+  },
+  "notes": []
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bm-kort-betaling-hva-er-bankkode-html",
+  "daPath": "/nb/bank/bedrift/kundeservice/bm-kort-betaling/hva-er-bankkode",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 3
+  },
+  "notes": []
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bm-lan-finansiering-kan-jeg-lease-uten-innskudd-html",
+  "daPath": "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 3
+  },
+  "notes": []
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
+  "daPath": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 3
+  },
+  "notes": []
+ },
+ {
+  "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-hvordan-sende-efaktura-html",
+  "daPath": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 3
+  },
+  "notes": []
+ }
+]
