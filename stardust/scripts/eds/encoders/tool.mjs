@@ -62,9 +62,9 @@ export default {
     return { html: section([L.pic(img, ctx)], { style: styleOf('image', /image--center/.test(root.className) ? 'center' : null, w ? `w-${w}` : null, 'service', ruleBefore(root)) }), blocks: [] };
   },
   title: (root, ctx) => {
-    if (!isService(ctx)) return null;
+    // the AEM page-title module is generic (product siblings, om-oss experts carry it too): the `service` token stays family-scoped
     const h = q(root, 'h1, h2, h3'); if (!h) return null; const t = h.tagName.toLowerCase();
-    return { html: section([`<${t}>${inline(h, ctx).replace(/\s+/g, ' ').trim()}</${t}>`], { style: `title${t === 'h1' ? '' : '-' + t}, service` }), blocks: [] };
+    return { html: section([`<${t}>${inline(h, ctx).replace(/\s+/g, ' ').trim()}</${t}>`], { style: `title${t === 'h1' ? '' : '-' + t}${isService(ctx) ? ', service' : ''}` }), blocks: [] };
   },
   richtext: (root, ctx) => {
     if (isService(ctx) && !root.textContent.trim()) { const n = qa(root, ':scope > p').length; ctx.notes.push(`richtext: ${n} empty paragraph(s) only (the live author spacer) → an empty section styled spacer-only-${n}`); return { html: section([], { style: `spacer-only-${n}` }), blocks: [] }; }

@@ -955,7 +955,6 @@ main .section.related.mn-flush { margin-top: 0; }
   main .section.mn :is(.default-content-wrapper, .columns) ul { margin-left: 16px; }
   main .section.mn :is(.default-content-wrapper, .columns) ul li { margin-left: 32px; }
   main .section.mn-ref .columns h3 { line-height: 44px; }
-  main .section.split-video .default-content-wrapper h3:has(> :is(b, strong):only-child) { line-height: 42px; }
 }
 /* head / split-video: a live band whose grid rows pair a text column with a YouTube embed is authored as two sections — the heading row
    (head: no bottom padding) and the text + embed pairs as default content + auto-blocked embeds laid out by the section itself on the live
@@ -969,7 +968,11 @@ main .section.split-video > .embed-wrapper { grid-column: 8 / span 5; }
 main .section.split-video .default-content-wrapper > :first-child { margin-top: 0; }
 main .section.split-video .default-content-wrapper p.button-wrapper { margin: 24px 0 8px; } /* live: richtext BFC (16) + button-wrap 8 */
 main .section.split-video .default-content-wrapper h3 + h3 { margin-top: 0; }
-main .section.split-video .default-content-wrapper h3:has(> :is(b, strong):only-child) { line-height: 27px; } /* live: a bold h3 line grows its line box (27px mobile, 42px desktop — measured) */
+main .section.split-video .default-content-wrapper h3:has(+ h3) { line-height: 27px; } /* live kicker + title h3 pair: measured line boxes 54|42 (kicker) and 48|64 (title) at 360|1440 */
+@media (width >= 768px) {
+  main .section.split-video .default-content-wrapper h3:has(+ h3) { line-height: 42px; }
+  main .section.split-video .default-content-wrapper h3 + h3 { line-height: 32px; }
+}
 main .section.split-video .default-content-wrapper :is(h1, h2, h3, p) { text-align: left; } /* the band skin centres default-content headings; these are column texts */
 @media (width <= 767px) {
   main .section.split-video { display: block; }

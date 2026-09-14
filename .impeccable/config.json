@@ -2,7 +2,8 @@
   "detector": {
     "ignoreRules": [],
     "ignoreFiles": [
-      "stardust/prototypes/css/canon.css"
+      "stardust/prototypes/css/canon.css",
+      "stardust/prototypes/css/product.css"
     ],
     "ignoreValues": [
       {
@@ -40,10 +41,23 @@
         "value": "cubic-bezier(0.46, -0.265, 0.48, 1.38)",
         "createdAt": "2026-09-14T19:28:44.722712Z",
         "reason": "same-design replica: the value is the live site's FFE --ease-back token (clientlib sb1/nettsider), mirrored verbatim so motion parity holds; not a design choice of ours"
+      },
+      {
+        "rule": "side-tab",
+        "value": "3px solid var(--white)",
+        "createdAt": "2026-09-14T21:25:38.113670Z",
+        "reason": "same-design replica: the live step-by-step module draws a 3px white connector line between numbered steps (::after pseudo-element, lifted from clientlib sb1/nettsider) \u2014 a connector, not a card accent"
+      },
+      {
+        "rule": "border-accent-on-rounded",
+        "value": "4px solid var(--vann)",
+        "createdAt": "2026-09-14T21:25:38.113670Z",
+        "reason": "same-design replica: the live news-listing cards carry a 4px Vann top rule on a 4px-radius card (lifted value, stardust/replica/lift/nyheter-*); mirrored for fidelity"
       }
     ],
     "ignoreFilesReasons": {
-      "stardust/prototypes/css/canon.css": "replica canon = the live site's own CSS lifted verbatim (incl. accordion height/margin transitions, canon-requests.md); design-rule linting applies to the target styles/ and blocks/, not to the mirror"
+      "stardust/prototypes/css/canon.css": "replica canon = the live site's own CSS lifted verbatim (incl. accordion height/margin transitions, canon-requests.md); design-rule linting applies to the target styles/ and blocks/, not to the mirror",
+      "stardust/prototypes/css/product.css": "replica family stylesheet = live CSS lifted verbatim for the product family (steps connector, price/terms); linting applies to styles/ and blocks/"
     }
   }
 }
