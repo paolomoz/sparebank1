@@ -1,0 +1,11 @@
+{
+  "/nb/bank/privat/lan/boliglan": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T18:51:49.435Z",
+    "put": 200,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  }
+}

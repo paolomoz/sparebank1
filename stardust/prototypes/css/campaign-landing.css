@@ -12,12 +12,13 @@
 .story__overlay-grid { display: flex; flex-direction: column; justify-content: center; align-items: center; width: calc(100% - 36px); max-width: 1024px; }
 .story__card-text { display: flow-root; width: 100%; color: var(--white); }
 .story__card-text h1 { margin: 0; font-family: var(--font-heading); font-size: 36px; line-height: 50px; font-weight: 400; color: var(--white); text-align: center; }
-.story__card-text h2 { max-width: 768px; margin: 40px 0 0; padding: 32px; font-family: var(--font-heading); font-size: 24px; line-height: 28px; font-weight: 400; color: #002776; background: var(--white); border-radius: 4px; text-align: center; }
+.story__card-text h2, .story .richtext > h2:first-child { max-width: 768px; margin: 40px 0 0; padding: 32px; font-family: var(--font-heading); font-size: 24px; line-height: 28px; font-weight: 400; color: #002776; background: var(--white); border-radius: 4px; text-align: center; }
 .story__card-text p { max-width: 768px; margin: -40px 0 16px; padding: 32px; font-size: 16px; line-height: 22px; color: #020a0a; background: var(--white); border-radius: 4px; }
 .story__card-buttons { display: flex; justify-content: center; align-self: stretch; max-width: 768px; margin: -24px 0 0; padding: 0 32px 24px; background: var(--white); border-radius: 4px; }
 .story__btn-group { display: flex; flex-direction: column; flex-wrap: wrap; width: 260px; padding: 40px 0 0; gap: 8px 16px; }
-.story__btn { display: flex; justify-content: center; margin: 0 0 8px; text-align: center; }
-.story__btn .btn { max-width: 100%; margin: 0 0 8px; }
+.story__btn { display: flex; justify-content: center; margin: 0; text-align: center; }
+.story__btn:last-child { margin-bottom: 8px; }
+.story__btn .btn { width: auto; flex: 0 1 auto; max-width: 100%; margin: 0 0 8px; }
 .story__card-button { align-self: stretch; max-width: 768px; margin: -32px 0 20px; padding: 32px; background: var(--white); border-radius: 4px; text-align: center; }
 /* buttons (frontend ffe-button geometry) */
 .story .btn { display: flex; align-items: center; justify-content: center; min-height: 0; padding: 10px 24px; border: 2px solid transparent; border-radius: 96px; font: 400 16px/19.2px var(--font); text-decoration: none; }
@@ -48,10 +49,11 @@
   .story__bg { background-image: var(--bg-desktop); }
   .story__overlay-grid { width: 100%; }
   .story__card-text h1 { font-size: 96px; line-height: 115px; }
-  .story__card-text h2 { margin: 40px 128px 0; font-size: 36px; line-height: 44px; }
+  .story__card-text h2, .story .richtext > h2:first-child { margin: 40px 128px 0; font-size: 36px; line-height: 44px; }
   .story__card-text p { margin: -40px 128px 20px; font-size: 20px; line-height: 28px; }
   .story__card-buttons { margin: -24px 128px 0; }
   .story__btn-group { flex-direction: row; width: auto; }
+  .story__btn { margin: 0 0 8px; }
   .story__btn + .story__btn { margin-left: 16px; }
   .story__card-button { margin: -32px 128px 20px; }
   .story__card-button .btn, .story__button .btn { display: inline-flex; }

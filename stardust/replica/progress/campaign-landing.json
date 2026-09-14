@@ -1,0 +1,40 @@
+{
+  "_provenance": { "writtenBy": "stardust:replica worker (frontend families) — Phase 3–4 ledger", "writtenAt": "2026-09-14T20:05:00Z", "againstInput": "family campaign-landing (nettsider-frontend clientlib variant, sb1-story template)", "readArtifacts": ["stardust/replica/gates/hjemme-1440/*", "stardust/replica/gates/hjemme-360/*", "stardust/replica/lift/hjemme-{1440,360}-detail.json", "stardust/replica/lift/hjemme-settled-1440.html", "stardust/replica/motion/hjemme-*.json", "stardust/current/assets/css/frontend_clientlib_base.1156912316.css"] },
+  "pageType": "campaign",
+  "family": "campaign-landing",
+  "archetype": "nb-bank-om-oss-hjemme-html",
+  "liveUrl": "https://www.sparebank1.no/nb/bank/om-oss/hjemme.html",
+  "prototype": "stardust/prototypes/nb-bank-om-oss-hjemme-html-proposed.html",
+  "css": ["css/ffe-tokens.css", "css/canon.css", "css/campaign-landing.css (@import news-article.css for the frontend chrome)"],
+  "js": ["js/canon.js", "js/campaign-landing.js (media fade-in, factbox reveal, frontend chrome interactions)"],
+  "modules": ["stardust/scripts/replica/modules/frontend-chrome.mjs (__header/__footer; header--story + lazy social-icon fallback added)", "stardust/scripts/replica/modules/campaign-landing.mjs (sb1-story__body)"],
+  "regime": "prototype (standalone prototype vs live page)",
+  "contentDiffScope": "--main \".sb1-story__body, .story\" (chrome inside <main>; chrome proven by chrome-parity + crop gates)",
+  "sources": { "settledDom": "stardust/replica/lift/hjemme-settled-1440.html — lazy background-image / video sources for the six media blocks", "mobileRenditions": "stardust/replica/lift/hjemme-360-detail.json .image__background[].style.backgroundImage → --bg-mobile (the live page swaps renditions client-side: *.thumb.1280.1280.jpg at 360 and a different source photo for the alpakka slide)" },
+  "liveHits": { "stitch": 2, "settledDomCapture": 1, "lift": 2, "contentDiff": 2, "visualDiff": 1, "chromeParity": 2, "motionObserve": 2, "total": 12 },
+  "breakpoints": {
+    "1440": { "pixelRounds": 4, "liveGateIterations": 1, "result": { "structuralRed": 0, "visualFlags": "3 — all justified", "pixelPct": 0.84, "heightDelta": 0, "chromeHeaderPct": 0.39, "chromeFooterPct": 0.36, "pass": true },
+      "justified": [
+        { "probe": "content", "flag": "🟡 MISSING BODY ×2 'Your browser does not support the video'", "why": "video fallback text — now emitted inside <video> in the final prototype (the probe ran one build earlier); not a structural finding" },
+        { "probe": "visual", "flag": "SURFACE/GROUND MISMATCH heading 'Uansett hvor og hvordan du lever'", "why": "prefix collision: the tool paired the white hero h1 (…er vi der du føler deg hjemme!) with the fjell h2 of the last slide (…kan du føle deg hjemme hos oss.); both colours mirror the lift (h1 white, h2 rgb(0,39,118))" },
+        { "probe": "visual", "flag": "IMAGE DID NOT LOAD ×2 (footer social icons)", "why": "the sidecar footer held lazyload placeholders; fixed in frontend-chrome.mjs by taking the settled src from the sidecar JSON media.images — final footer crop 99.64 %" },
+        { "probe": "chrome-parity", "flag": "top links Δx +4/+9, footer bottom links Δx ±4–9, ICON signatures/Δw −5", "why": "same residual as the other frontend families (centred rows, tabular-digit label widths); icons now present, crop gates 99.61 % / 99.64 %" } ],
+      "residuals": [ { "band": "y 500–1000", "pct": 5.9, "cause": "hero video (Barna-loop.mp4) — playback frame differs between the two captures", "flaggedFor": "none" }, { "band": "y 0–500", "pct": 3.2, "cause": "hero video frame + header nav label anti-aliasing", "flaggedFor": "none" } ] },
+    "360": { "pixelRounds": 4, "liveGateIterations": 1, "result": { "structuralRed": 0, "visualFlags": "same as 1440", "pixelPct": 5.22, "heightDelta": 0, "chromeHeaderPct": 0.0, "chromeFooterPct": 0.0, "pass": true },
+      "justified": [ { "probe": "pixel", "flag": "bands y 5000–5500 (23.9 %) and 5500–6000 (45.4 %)", "why": "second video block (teater.mp4, y 5209–6109, autoplay+controls): the stitched captures land on different playback frames; the controls bar and every surrounding rect match to the pixel (footer crop 100 %)" } ],
+      "residuals": [ { "band": "y 500–1000", "pct": 3.9, "cause": "hero video frame", "flaggedFor": "none" } ] }
+  },
+  "findings": [
+    "sb1-story media blocks: 900 px tall, background #4d8cbf, `.block-media` fades in (opacity 0→1, 1 s ease-out) via `block-media--visible` on intersection; image slides use background-attachment: fixed (parallax) — stitched captures show viewport-relative fragments on both sides, so the fixed attachment must be mirrored for pixel parity",
+    "content cards are three stacked white boxes (h2 padding 32 / p margin −40 / button group margin −24) that read as one card; canon's `.richtext > :first-child{margin-top:0}` stripped the h2's 40 px top margin → 20 px vertical drift until overridden",
+    "header on story pages: `.header--disable-bottom-links` 78 px at ≥768 (60 mobile) with the sand-30 canvas (`.sb1-story .header`); implemented as `.header--story` + `.header--no-bottom-links`",
+    "the live page picks background renditions client-side (1280.2276 portrait at desktop, 1280.1280 at 360, different alpakka photo at 360) — carried as --bg-desktop/--bg-mobile custom properties",
+    "factbox renders empty on this page (both columns 0 px): 0 px at desktop, 56 px at mobile from the first column's 40 px margin + 16 px grid gap — reproduced",
+    "story body typography: 20/32 body, h1 46/56, .h5 18/24 SpareBank1-medium at desktop; 16/24, 28/36, 17/20 at mobile; first section after a block gets margin-top 100 (80 mobile)"
+  ],
+  "captureState": [ { "what": "videos autoplay with controls; playback frame at capture time is arbitrary", "where": "hero block, teater block", "how": "videos mirrored (src, autoplay, muted, loop, controls, playsinline, fallback text) — frame noise accepted as capture-state" }, { "what": "footer social icons and media block backgrounds lazy-load; sidecar snapshot held placeholders", "where": "footer, slides", "how": "settled DOM (lift/hjemme-settled-1440.html) + sidecar JSON media.images used as source" } ],
+  "motion": { "observed": "stardust/replica/motion/hjemme-1440.json (0 animations, 35 transitions: block-media opacity 1s, button colour/background 0.2s; 18 class mutations: block-media--visible toggled on intersection, lazyload image__background; header static 78 px), hjemme-360.json (factbox__col-content is-visible with opacity .6s / transform 1.4s; hamburger open states; header static 60 px)", "implemented": ["media fade-in on intersection (IntersectionObserver → .is-visible; opacity 1s ease-out)", "factbox content column reveal (translateY(180px)→0, opacity)", "action button hover bg #095139; secondary hover inverted (#005aa4 bg, white text), 0.2s cubic-bezier(.25,.1,.25,1)", "frontend chrome interactions (search toggle, hamburger states) via js/campaign-landing.js"], "dead": ["block-media--scrolling fixed-parallax mode (declared in CSS, never fired)", "main-nav hover (no main nav on this template)"], "pixelAfterMotion": "1440 0.84 % / 360 5.22 % (final run includes the motion CSS/JS)" },
+  "inconsistencyRegister": "empty (pure replica)",
+  "approvedBy": "hands-off",
+  "approvedAt": "2026-09-14T20:05:00Z"
+}

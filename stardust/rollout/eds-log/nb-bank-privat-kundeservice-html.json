@@ -52,8 +52,10 @@
   "accordion",
   "banner"
  ],
- "notes": [],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally"
+ ],
  "gaps": [],
  "assets": [],
- "writtenAt": "2026-09-14T18:29:04.646Z"
+ "writtenAt": "2026-09-14T18:34:31.510Z"
 }

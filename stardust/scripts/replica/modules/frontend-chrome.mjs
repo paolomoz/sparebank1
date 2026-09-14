@@ -4,6 +4,17 @@
 // Lifted geometry: stardust/replica/lift/nyhet-1440-detail.json / nyhet-360-detail.json + frontend_clientlib_base CSS.
 const maskOf = (span) => { const m = (span?.getAttribute('style') || '').match(/mask-image:\s*(url\([^)]*\))/); return m ? m[1].replace(/&quot;/g, '"') : null; };
 
+import fs from 'node:fs';
+// Footer social icons load lazily; when the sidecar snapshot still shows `lazyload-placeholder` (no <img>), take the settled
+// src from the sidecar JSON media.images (same page, DOM order) — matched by the link's title/host (linkedin / youtube).
+const socialIconFallback = (slug, a) => {
+  try {
+    const J = JSON.parse(fs.readFileSync(new URL(`../../../current/pages/${slug}.json`, import.meta.url), 'utf8'));
+    const key = ((a.getAttribute('title') || '') + ' ' + (a.getAttribute('href') || '')).toLowerCase();
+    const hit = (J.media?.images || []).find((m) => { const s = (m.src || m.currentSrc || '').toLowerCase(); return /\.svg$/.test(s) && (/linkedin/.test(key) && /linkedin/.test(s) || /youtube/.test(key) && /youtube/.test(s) || /facebook/.test(key) && /facebook/.test(s) || /instagram/.test(key) && /instagram/.test(s)); });
+    return hit ? (hit.src || hit.currentSrc) : null;
+  } catch { return null; }
+};
 export default {
   __header(H, ctx) {
     const { el, txt, abs, svgOf } = ctx; if (!H) return null;
@@ -46,7 +57,7 @@ export default {
       const c = el('div', { class: 'footer__links' + (social ? ' footer__links--social' : '') });
       const h = col.querySelector('h2'); if (h) c.append(el('h2', { class: 'footer__heading' }, [txt(h)]));
       const ul = el('ul', { class: 'footer__list' + (social ? ' footer__list--horizontal' : '') });
-      for (const li of col.querySelectorAll('li')) { const a = li.querySelector('a'); if (!a) continue; if (social) { const img = a.querySelector('img'); ul.append(el('li', {}, [el('a', { class: 'footer__social', href: abs(a.getAttribute('href')), target: a.getAttribute('target'), rel: a.getAttribute('rel'), title: a.getAttribute('title') }, [el('img', { src: abs(img?.getAttribute('src')), alt: img?.getAttribute('alt') || '', width: '30', height: '30' })])])); } else ul.append(el('li', {}, [el('a', { class: 'footer__link', href: abs(a.getAttribute('href')) }, [txt(a)])])); }
+      for (const li of col.querySelectorAll('li')) { const a = li.querySelector('a'); if (!a) continue; if (social) { const img = a.querySelector('img'); ul.append(el('li', {}, [el('a', { class: 'footer__social', href: abs(a.getAttribute('href')), target: a.getAttribute('target'), rel: a.getAttribute('rel'), title: a.getAttribute('title') }, [el('img', { src: abs(img?.getAttribute('src') || img?.getAttribute('data-src') || img?.getAttribute('data-lazy-src') || socialIconFallback(ctx.slug, a)), alt: img?.getAttribute('alt') || '', width: '30', height: '30' })])])); } else ul.append(el('li', {}, [el('a', { class: 'footer__link', href: abs(a.getAttribute('href')) }, [txt(a)])])); }
       c.append(ul); cols.append(c);
     }
     topRow.append(cols); grid.append(topRow);

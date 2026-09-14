@@ -34,7 +34,7 @@ reference for everything: read `stardust/scripts/eds/convert.mjs`, `encoders.mjs
   is justified only by a genuinely new repeating unit or widget (e.g. a carousel, an adviser list, a table variant).
   Lint every document: `node stardust/scripts/deploy/davids-model-lint.mjs content/<path>.html` — 0 🔴; each 🟡
   fixed or justified via `ctx.notes.push('lint D#: …')` in your encoder (the note lands in the conversion log).
-- Editability (EW): blocks MOVE authored nodes into their slots, never rebuild text; the authored heading/link stays
+- Editability (EW1–EW10, full text: `/Users/paolo/.claude/plugins/cache/adobe-skills/stardust/0.20.0/skills/deploy/SKILL.md` from line ~724): blocks MOVE authored nodes into their slots, never rebuild text; the authored heading/link stays
   the editable unit (card-as-link keeps the heading inside); no text-as-metadata (a link naming a data file is the
   one exemption, `@ew-exempt` documented like calculator.js). Icons: authored `:icon-name:` spans → `inlineIcons()`.
 - Blocks: new block = new dir `blocks/<name>/{<name>.js,<name>.css}`. SHARED blocks (cards, columns, accordion,

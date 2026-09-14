@@ -103,7 +103,10 @@
   "callout",
   "feedback"
  ],
- "notes": [],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
  "gaps": [
   "module intro emitted as prose",
   "no encoder for module intro",
@@ -129,5 +132,5 @@
  "assets": [
   "chevron.svg"
  ],
- "writtenAt": "2026-09-14T18:29:04.562Z"
+ "writtenAt": "2026-09-14T18:34:31.425Z"
 }

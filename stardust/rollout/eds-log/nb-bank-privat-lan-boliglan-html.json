@@ -90,11 +90,15 @@
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "media: https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/graferogillustrasjoner/illustrasjon-usymmetrisk-samboer-dame-mann-high-five-lys-bakgrunn.svg is 70275 bytes of SVG (> 40000) — authored as DA media illustrasjon-usymmetrisk-samboer-dame-mann-high-five-lys-bakgrunn.png (rasterised)",
   "lint D1 calculator: bespoke widget (shadow-root snapshot of the loan calculator; dynamics #7 interim) — the link names the snapshot",
   "calculator: static snapshot served from /data/calculator/privat-lan-boliglan.html (dynamics #7 interim — computation disabled until the API is exposed)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
  "assets": [],
- "writtenAt": "2026-09-14T18:31:37.865Z"
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/graferogillustrasjoner/illustrasjon-usymmetrisk-samboer-dame-mann-high-five-lys-bakgrunn.svg"
+ ],
+ "writtenAt": "2026-09-14T18:51:46.756Z"
 }

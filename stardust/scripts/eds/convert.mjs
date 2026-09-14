@@ -63,6 +63,6 @@ for (const slug of slugs) {
   const rel = daPath(pg.url); const file = path.join(L.CONTENT_DIR, `${rel}.html`);
   L.writeFile(file, out);
   fs.mkdirSync('stardust/rollout/eds-log', { recursive: true });
-  fs.writeFileSync(`stardust/rollout/eds-log/${slug}.json`, JSON.stringify({ slug, daPath: rel, file, chrome, modules: map, blocks: [...new Set(map.flatMap((m) => m.blocks))], notes: ctx.notes, gaps: ctx.gaps, assets: [...ctx.assets], writtenAt: new Date().toISOString() }, null, 1));
+  fs.writeFileSync(`stardust/rollout/eds-log/${slug}.json`, JSON.stringify({ slug, daPath: rel, file, chrome, modules: map, blocks: [...new Set(map.flatMap((m) => m.blocks))], notes: ctx.notes, gaps: ctx.gaps, assets: [...ctx.assets], rasterise: [...ctx.rasterise], writtenAt: new Date().toISOString() }, null, 1));
   console.log(`${slug} → ${file} · ${map.length} modules · blocks ${[...new Set(map.flatMap((m) => m.blocks))].join(',')} · gaps ${ctx.gaps.length}${ctx.gaps.length ? ' (' + ctx.gaps.join('; ') + ')' : ''}`);
 }

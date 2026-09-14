@@ -56,7 +56,9 @@
   "banner",
   "cards"
  ],
- "notes": [],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally"
+ ],
  "gaps": [
   "module send-to-bank-modal produced no content",
   "module send-to-bank__loading produced no content",
@@ -67,5 +69,5 @@
   "module campaign campaign--empty produced no content"
  ],
  "assets": [],
- "writtenAt": "2026-09-14T18:29:04.731Z"
+ "writtenAt": "2026-09-14T18:34:31.590Z"
 }

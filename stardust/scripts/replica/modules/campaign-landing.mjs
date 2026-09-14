@@ -32,7 +32,7 @@ export default {
       if (media) {
         const m = el('div', { class: 'story__media' });
         const vid = media.querySelector('video'); const bg = media.querySelector('.image__background'); const img = media.querySelector('img:not(.video__placeholder)');
-        if (vid) { const src = vid.querySelector('source')?.getAttribute('src') || vid.getAttribute('src'); m.append(el('video', { class: 'story__video', src: abs(src), title: vid.getAttribute('title'), autoplay: true, muted: true, loop: true, controls: vid.hasAttribute('controls') || null, playsinline: true, preload: 'auto' })); }
+        if (vid) { const src = vid.querySelector('source')?.getAttribute('src') || vid.getAttribute('src'); m.append(el('video', { class: 'story__video', src: abs(src), title: vid.getAttribute('title'), autoplay: true, muted: true, loop: true, controls: vid.hasAttribute('controls') || null, playsinline: true, preload: 'auto' }, [ctx.txt(vid) || null])); }
         else if (bg && bgUrl(bg)) { const mob = mobiles[bgIndex++]; m.append(el('div', { class: 'story__bg', role: 'img', 'aria-label': '', style: `--bg-desktop:url("${abs(bgUrl(bg))}")` + (mob ? `;--bg-mobile:url("${abs(mob)}")` : '') })); }
         else if (img) m.append(el('img', { class: 'story__bg-img', src: abs(img.getAttribute('src')), alt: img.getAttribute('alt') || '' }));
         sec.append(m);

@@ -24,7 +24,7 @@ export function loadProto(slug) {
 export function esc(s = '') { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
 
 /** ENCODE context per page: collects the media assets a page references (for the DA media upload). */
-export function makeCtx(slug) { return { slug, assets: new Set(), remote: new Set(), notes: [], gaps: [] }; }
+export function makeCtx(slug) { return { slug, assets: new Set(), remote: new Set(), rasterise: new Set(), notes: [], gaps: [] }; }
 const WP_MEDIA = {};
 export const isRemoteBlogMedia = () => false;
 
@@ -41,11 +41,20 @@ export function bestSrc(img) {
 }
 
 /** Map a prototype asset reference to its DA media URL (remote URLs pass through). */
-const RASTER = { 'cred__offers__LC034.svg': 'cred__offers__LC034.png' };
+const RASTER = {};
+// SVGs over the pipeline's ~40KB limit 409 the whole page at preview: they are authored as a PNG rasterisation hosted on DA media
+// (stardust/rollout/svg-sizes.json from _pm-svg-scan.mjs; rasterise-svg.mjs renders + uploads; the PNG name = svg basename + .png)
+const SVG_SIZES = fs.existsSync('stardust/rollout/svg-sizes.json') ? JSON.parse(fs.readFileSync('stardust/rollout/svg-sizes.json', 'utf8')) : {};
+export const SVG_LIMIT = 40000;
+export const rasterName = (url) => `${path.basename(url.split('?')[0]).replace(/\.svg$/i, '')}.png`;
 export function mediaUrl(src, ctx) {
   if (!src) return '';
   if (WP_MEDIA[src]) { ctx?.assets.add(WP_MEDIA[src]); return `${MEDIA_BASE}${WP_MEDIA[src]}`; } // rehosted blog media
-  if (/^(https?:)?\/\//.test(src) || src.startsWith('data:')) { if (isRemoteBlogMedia(src)) ctx?.remote.add(src); return src.startsWith('//') ? `https:${src}` : src; }
+  if (/^(https?:)?\/\//.test(src) || src.startsWith('data:')) {
+    const abs = src.startsWith('//') ? `https:${src}` : src;
+    if (/\.svg(\?|$)/i.test(abs) && (SVG_SIZES[abs] || 0) > SVG_LIMIT) { const png = rasterName(abs); ctx?.rasterise?.add(abs); ctx?.notes?.push(`media: ${abs} is ${SVG_SIZES[abs]} bytes of SVG (> ${SVG_LIMIT}) — authored as DA media ${png} (rasterised)`); return `${MEDIA_BASE}${png}`; }
+    if (isRemoteBlogMedia(abs)) ctx?.remote.add(abs); return abs;
+  }
   let base = path.basename(src.split('?')[0]);
   if (RASTER[base]) base = RASTER[base]; // SVGs over the pipeline's 40KB limit are authored as their PNG rasterisation
   ctx?.assets.add(base);
