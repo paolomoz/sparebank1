@@ -49,7 +49,7 @@
 .cards.price .card--medium { grid-template-rows: none; }
 
 /* news rail variant (related topics): horizontal scroll on mobile, centred row on desktop */
-.cards.news { margin: 0 -20px; padding: 0 0 24px; overflow-x: auto; }
+.cards.news { margin: 0 -16px; padding: 0 0 24px; overflow-x: auto; } /* bleeds exactly to the 16px section padding: a wider box made the document 364px wide at 360 (horizontal overflow) */
 .cards.news .card-list { display: flex; max-width: fit-content; }
 .cards.news .card-list li { flex: 0 0 auto; width: 300px; min-width: 300px; margin: 8px; }
 
@@ -300,13 +300,12 @@
    h6 teaser 16/20 → 16/24 medium, centred "Les saken her" button; cols-9 — three cards in the live 9-column row (960px). */
 .cards.featured.photo .card__media { max-height: none; line-height: 0; text-align: left; }
 .cards.featured.photo .card__media picture, .cards.featured.photo .card__media img { display: block; width: 100%; height: 200px; max-height: none; padding: 0; object-fit: cover; object-position: 50% 50%; vertical-align: top; }
-.cards.featured.photo .card__title { margin: 16px 0 24px; font-family: var(--font-medium); font-size: 16px; line-height: 20px; color: var(--fjell); }
+.cards.featured.photo .card__title { margin: 16px 0 24px; font-family: var(--font-medium); font-size: 16px; line-height: 24px; color: var(--fjell); } /* the live 16/20 span sits in the paragraph strut (24px lines at every width) */
 .cards.featured.photo .card__text.button-wrapper { margin: 8px 0; text-align: center; }
 .cards.featured.photo .card__text.button-wrapper a.button { display: flex; width: 100%; justify-content: center; }
 
 @media (width >= 768px) {
   .cards.featured.photo .card__media picture, .cards.featured.photo .card__media img { height: 270px; }
-  .cards.featured.photo .card__title { line-height: 24px; }
   .cards.featured.photo .card__text.button-wrapper a.button { display: inline-flex; width: auto; }
 }
 

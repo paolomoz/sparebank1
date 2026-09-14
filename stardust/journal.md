@@ -104,3 +104,26 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Next:** merge W1/W2 (EDS ledgers), C (replica), then EDS conversion for C/D families; sibling conversion + full DA rollout (deploy-batch), redirects, qa sweep; Flow B prototypes.
 
 ---
+
+## 2026-09-15T00:20:00Z — Rollout wave 1: 46 pages live; the emulation learns the pipeline's truths
+
+**Prompt:** (continuation, hands-off).
+
+**Decisions:**
+- Encoders dispatch per page family (worker groups: landing = category-hub/kundeservice-hub/market-landing, service = utility/tool); genuinely new module kinds are shared, family-gated overrides of core keys are not. A global alphabetical merge had let the last file win everywhere (W1-0).
+- Authoring debris is dropped, not reproduced: blank `<h3>&nbsp;</h3>`/`<p>&nbsp;</p>` spacers and leading/trailing `<br>` — the pipeline drops them anyway, and the emulation now does the same (cell single-`<p>` unwrap, nbsp, edge breaks, `<br>` inside inline formatting moved outside). Pages carrying such debris show a justified Δh (sperre-kort 48 px, kundeservice 24 px).
+- Two W1 documents had lost their related-products icon list silently (core `relatedTopics` reads only `.newsfeed` → 0 rows): the hub band now routes `related-*` to `hubRelated`. Silent 0-row blocks are the most dangerous defect class in this pipeline — the gate caught it only because the published run measured Δh 318.
+- Delivery paths are lowercase with redirect rows for the two mixed-case live URLs; the chrome documents for bedrift and om-oss no longer carry the live hidden error string as their intro.
+- Flow B prep is complete (13/13 redesign prototypes approved hands-off, canon, direction); its migrate → rollout runs as a separate agent into `paolomoz/sparebank1-redesign`.
+
+**Artifacts touched:** stardust/scripts/eds/{convert,lib,serve,media-upload,chrome,_pm-pubgate,_pm-svg-scan,rasterise-svg}.mjs, encoders/category-hub.mjs, blocks/footer, content/** (58 docs + redirects), stardust/rollout/{deploy-ledger.json,eds-requests.md,eds-progress/*}, stardust/replica/progress.json (eds ledgers), gates/*-pub-*.
+
+**Findings worth flagging:**
+- Every "emulation passed, published failed" case traced to one of four pipeline behaviours the emulation lacked; they are now mirrored, so future emulation gates are truthful.
+- HEAD content-length reports gzipped SVG sizes; the 40 KB limit is raw bytes.
+- A content reset (`git checkout -- content/`) silently reverted a hand-applied chrome fix; hand edits to generated documents must go through the generator or be committed immediately.
+- Open: 360 footer crops on privat (95.5 %) and kundeservice (97.7 %) — checking for horizontal overflow (scrollWidth 364 reported by W1).
+
+**Next:** deploy W5's 12 frontend documents + W3 product siblings + W4 families when they land; published gates for their archetypes; QA sweep; Flow B rollout; reply to Bertrand.
+
+---

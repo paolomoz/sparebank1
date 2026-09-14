@@ -184,10 +184,11 @@
 .columns.expert .col__text > p:has(> :is(picture, img):only-child) { margin: 0; line-height: 0; text-align: center; }
 .columns.expert .col__text > p:has(> :is(picture, img):only-child) picture { display: inline-block; width: 250px; max-width: 100%; }
 .columns.expert .col__text > p:has(> :is(picture, img):only-child) img { display: block; width: 250px; max-width: 100%; height: 250px; border-radius: 30px; object-fit: cover; }
-.columns.expert .col__text h4 { margin: 0 0 24px; font-family: var(--font-medium); font-size: 16px; line-height: 28px; color: var(--fjell); text-align: center; }
+.columns.expert .col__text h4 { margin: 0 0 24px; font-family: var(--font-medium); font-size: 16px; line-height: 24px; color: var(--fjell); text-align: center; }
 .columns.text-600 .col__text { width: 100%; max-width: 600px; margin-left: auto; margin-right: auto; }
 
 @media (width >= 768px) {
+  .columns.expert .col__text h4 { line-height: 28px; }
   .columns.stack-cta .button-list p a.button, .columns.stack-cta .button-list p.button-wrapper a.button { display: inline-flex; width: auto; }
 }
 /* ===== /markedsnytt-listing ===== */
