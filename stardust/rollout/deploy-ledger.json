@@ -1,225 +1,27 @@
 {
-  "/nb/bank/bedrift/bedriftskort": {
+  "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T20:56:53.856Z",
-    "put": 200,
+    "ts": "2026-09-14T21:21:46.266Z",
+    "put": 201,
     "preview": 200,
     "live": 200,
     "verify": "ok"
   },
-  "/nb/bank/bedrift/betaling": {
+  "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T20:56:53.857Z",
-    "put": 200,
+    "ts": "2026-09-14T21:21:46.266Z",
+    "put": 201,
     "preview": 200,
     "live": 200,
     "verify": "ok"
   },
-  "/nb/bank/bedrift/daglig-drift": {
+  "/nb/bank/om-oss/nyheter/bruk-mobilbanken-fa-kontroll-pa-okonomien": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T20:56:53.857Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/konto": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:56:59.345Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/kundeservice": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:56:59.430Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/lan-finansiering": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:56:59.565Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/pensjon": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:04.365Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/regnskap": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:04.974Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/sparing-investering": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:06.465Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/starte-bedrift": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:10.962Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift/tips-og-rad": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:10.976Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/bedrift": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:12.264Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/om-oss": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:15.653Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/daglig-bruk": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:16.014Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/eiendom": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:18.175Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/forsikring": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:20.982Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/kundeservice": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:21.096Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/lan": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:22.500Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/lofavor": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:26.564Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/pensjon": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:27.749Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/private-banking": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:28.782Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/sparing": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:33.360Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/svindel": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:33.900Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat/tips-og-rad": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:34.164Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
-  },
-  "/nb/bank/privat": {
-    "status": "live",
-    "attempts": 1,
-    "ts": "2026-09-14T20:57:38.963Z",
-    "put": 200,
+    "ts": "2026-09-14T21:21:52.954Z",
+    "put": 201,
     "preview": 200,
     "live": 200,
     "verify": "ok"

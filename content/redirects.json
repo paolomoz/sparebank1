@@ -1,7 +1,7 @@
 {
-"total": 105,
+"total": 107,
 "offset": 0,
-"limit": 105,
+"limit": 107,
 "data": [
 {
 "Source": "/",
@@ -96,6 +96,14 @@
 "Destination": "/nb/bank/bedrift/kundeservice/bm-lan-finansiering/kan-jeg-lease-uten-innskudd"
 },
 {
+"Source": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift.html",
+"Destination": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/endre-kasserer-i-nettbank-bedrift"
+},
+{
+"Source": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift",
+"Destination": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/endre-kasserer-i-nettbank-bedrift"
+},
+{
 "Source": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura.html",
 "Destination": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/hvordan-sende-efaktura"
 },
@@ -165,11 +173,19 @@
 },
 {
 "Source": "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-.html",
-"Destination": "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-"
+"Destination": "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen"
+},
+{
+"Source": "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen-",
+"Destination": "/nb/bank/om-oss/nyheter/5-lommebokvennlige-tips-til-juleshoppingen"
 },
 {
 "Source": "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-.html",
-"Destination": "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-"
+"Destination": "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig"
+},
+{
+"Source": "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge----eldre-og-enslige-kvinner-saerlig-",
+"Destination": "/nb/bank/om-oss/nyheter/advarer-mot-ny-svindelbolge-eldre-og-enslige-kvinner-saerlig"
 },
 {
 "Source": "/nb/bank/om-oss/nyheter/bamses-historie-traktorulykken.html",
@@ -182,6 +198,14 @@
 {
 "Source": "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
 "Destination": "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast"
+},
+{
+"Source": "/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.html",
+"Destination": "/nb/bank/om-oss/nyheter/bruk-mobilbanken-fa-kontroll-pa-okonomien"
+},
+{
+"Source": "/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien",
+"Destination": "/nb/bank/om-oss/nyheter/bruk-mobilbanken-fa-kontroll-pa-okonomien"
 },
 {
 "Source": "/nb/bank/om-oss/nyheter.html",
@@ -406,22 +430,6 @@
 {
 "Source": "/nb/bank/privat/tips-og-rad.html",
 "Destination": "/nb/bank/privat/tips-og-rad"
-},
-{
-"Source": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift.html",
-"Destination": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/endre-kasserer-i-nettbank-bedrift"
-},
-{
-"Source": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift",
-"Destination": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/endre-kasserer-i-nettbank-bedrift"
-},
-{
-"Source": "/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien.html",
-"Destination": "/nb/bank/om-oss/nyheter/bruk_mobilbanken_fa_kontroll_pa_okonomien"
-},
-{
-"Source": "/nb/bank/om-oss/nyheter/Bruk_mobilbanken_fa_kontroll_pa_okonomien",
-"Destination": "/nb/bank/om-oss/nyheter/bruk_mobilbanken_fa_kontroll_pa_okonomien"
 }
 ],
 ":type": "sheet"

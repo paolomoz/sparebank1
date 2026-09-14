@@ -148,6 +148,7 @@
 .columns.photo-cells .col__text > p:first-child { margin: 0; line-height: 0; } /* live: the heading follows the photo directly */
 .columns.photo-cells .col__text > p:first-child img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 30px; }
 .columns.photo-cells .col__text > :is(h5, h6) { margin: 0 0 24px; line-height: 44px; } /* live: h2 carrying a .h6 span — small glyphs on the h2's 44px line */
+.columns.photo-cells .col__text > p:last-child { margin-bottom: 0; } /* the CTA paragraph that follows carries the 16px (flex column: margins do not collapse) */
 /* hN — an authored fixed image height on an SVG illustration column (live img style="width:100%;height:200px"): letterboxed, no crop/radius */
 .columns .col--fixed-h.col--media picture { display: block; width: 100%; aspect-ratio: auto; border-radius: 0; }
 .columns .col--fixed-h.col--media img { display: block; width: 100%; height: var(--h); aspect-ratio: auto; object-fit: contain; border-radius: 0; }

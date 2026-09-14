@@ -1,7 +1,7 @@
 {
  "_provenance": {
   "writtenBy": "stardust:replica (Phase 3–4 ledger)",
-  "writtenAt": "2026-09-14T21:14:08Z",
+  "writtenAt": "2026-09-14T21:22:10Z",
   "againstInput": "https://www.sparebank1.no/nb/bank/ — 100-page roster, 13 archetype families",
   "readArtifacts": [
    "stardust/current/_page-types.json",
@@ -2498,6 +2498,25 @@
       "pixelPct1440": 0.65
      }
     }
+   },
+   "published": {
+    "at": "2026-09-14T21:22:10Z",
+    "origin": "https://main--sparebank1--paolomoz.aem.live",
+    "evidence": "stardust/replica/gates/<short>-pub-{1440,360}/",
+    "path": "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast",
+    "1440": {
+     "pixelPct": 3.2,
+     "heightDelta": 1,
+     "header": 98.18,
+     "footer": 99.64
+    },
+    "360": {
+     "pixelPct": 7.26,
+     "heightDelta": 1,
+     "header": 99.69,
+     "footer": 100.0
+    },
+    "pass": true
    }
   },
   "news-listing": {
@@ -2706,6 +2725,25 @@
       "pixelPct1440": 0.65
      }
     }
+   },
+   "published": {
+    "at": "2026-09-14T21:22:10Z",
+    "origin": "https://main--sparebank1--paolomoz.aem.live",
+    "evidence": "stardust/replica/gates/<short>-pub-{1440,360}/",
+    "path": "/nb/bank/om-oss/nyheter",
+    "1440": {
+     "pixelPct": 4.14,
+     "heightDelta": -1,
+     "header": 98.18,
+     "footer": 99.64
+    },
+    "360": {
+     "pixelPct": 5.19,
+     "heightDelta": -2,
+     "header": 99.69,
+     "footer": 100.0
+    },
+    "pass": true
    }
   },
   "campaign-landing": {
@@ -2953,6 +2991,28 @@
       "pixelPct1440": 0.65
      }
     }
+   },
+   "published": {
+    "at": "2026-09-14T21:22:10Z",
+    "origin": "https://main--sparebank1--paolomoz.aem.live",
+    "evidence": "stardust/replica/gates/<short>-pub-{1440,360}/",
+    "path": "/nb/bank/om-oss/hjemme",
+    "1440": {
+     "pixelPct": 1.02,
+     "heightDelta": 0,
+     "header": 99.55,
+     "footer": 99.64
+    },
+    "360": {
+     "pixelPct": 5.55,
+     "heightDelta": 0,
+     "header": 99.69,
+     "footer": 100.0
+    },
+    "pass": true,
+    "justified": [
+     "360 bands 5000–6000 = teater.mp4 playback frame (permanent)"
+    ]
    }
   },
   "om-oss": {

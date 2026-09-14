@@ -1,7 +1,7 @@
 {
  "slug": "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
- "daPath": "/nb/bank/om-oss/nyheter/bruk_mobilbanken_fa_kontroll_pa_okonomien",
- "file": "content/nb/bank/om-oss/nyheter/bruk_mobilbanken_fa_kontroll_pa_okonomien.html",
+ "daPath": "/nb/bank/om-oss/nyheter/bruk-mobilbanken-fa-kontroll-pa-okonomien",
+ "file": "content/nb/bank/om-oss/nyheter/bruk-mobilbanken-fa-kontroll-pa-okonomien.html",
  "chrome": {
   "nav": "/nav",
   "footer": "/footer"
@@ -32,5 +32,5 @@
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:30:20.716Z"
+ "writtenAt": "2026-09-14T21:21:44.776Z"
 }
