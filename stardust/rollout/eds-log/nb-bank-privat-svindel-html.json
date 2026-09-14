@@ -1,0 +1,63 @@
+{
+ "slug": "nb-bank-privat-svindel-html",
+ "daPath": "/nb/bank/privat/svindel",
+ "file": "content/nb/bank/privat/svindel.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "intro",
+   "blocks": []
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "tip",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "related-topics",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "cards",
+  "callout",
+  "feedback"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/kunden-i-fokus-dame-med-kikkert-lys-bakgrunn.svg is 54394 bytes of SVG (> 40000) — authored as DA media kunden-i-fokus-dame-med-kikkert-lys-bakgrunn.png (rasterised)",
+  "lint D1 callout: the FFE message box (round icon overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/kunden-i-fokus-dame-med-kikkert-lys-bakgrunn.svg"
+ ],
+ "writtenAt": "2026-09-14T19:43:47.847Z"
+}

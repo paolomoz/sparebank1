@@ -1,7 +1,7 @@
 {
  "_provenance": {
   "writtenBy": "stardust:replica (Phase 3–4 ledger)",
-  "writtenAt": "2026-09-14T19:17:36Z",
+  "writtenAt": "2026-09-14T19:52:05Z",
   "againstInput": "https://www.sparebank1.no/nb/bank/ — 100-page roster, 13 archetype families",
   "readArtifacts": [
    "stardust/current/_page-types.json",
@@ -1351,6 +1351,345 @@
    "approvedAt": "2026-09-14T20:05:00Z",
    "ledger": "stardust/replica/progress/campaign-landing.json",
    "mergedAt": "2026-09-14T18:55:25Z"
+  },
+  "om-oss": {
+   "pageType": "om-oss",
+   "family": "om-oss",
+   "archetype": "nb-bank-om-oss-presse-html",
+   "liveUrl": "https://www.sparebank1.no/nb/bank/om-oss/presse.html",
+   "prototype": "stardust/prototypes/nb-bank-om-oss-presse-html-proposed.html",
+   "css": [
+    "css/ffe-tokens.css",
+    "css/canon.css",
+    "css/om-oss.css"
+   ],
+   "generator": "stardust/scripts/replica/author.mjs + modules/om-oss.mjs (campaign, adviser-list)",
+   "chromeVariant": "OM OSS (topnav OM OSS active, main nav Om SpareBank 1 / Presse / Investor / Jobb og karriere / Samfunnsansvar / Nyheter; Søk + Bli kunde + Logg inn) — canon header/footer generators reproduce it, no variant CSS needed",
+   "liveHits": 15,
+   "breakpoints": {
+    "1440": {
+     "pixelRounds": 5,
+     "liveGateIterations": 2,
+     "result": {
+      "structuralRed": 0,
+      "structuralRedJustified": 0,
+      "visualFlags": 2,
+      "pixelPct": 0.68,
+      "heightDelta": 0,
+      "chromeHeaderPct": 98.51,
+      "chromeFooterPct": 99.16,
+      "pass": true
+     },
+     "justified": [
+      "content-diff 🟠 FONT FORK body \"911 11 555\" (-12% width): same face SpareBank1-medium both sides; live renders digits tabular (canon-requests: body font-variant-numeric: tabular-nums) — canon-level, not family",
+      "visual-diff STRETCHED IMAGE campaign photo 1200x800 → 840x400: live is the same object-fit:cover crop (source side also reports stretched)",
+      "visual-diff STRETCHED IMAGE magne-gundersen-22 1188x1280 → 180x180: live circle portrait is the same object-fit:cover crop",
+      "chrome-parity header PAIR Δh +2 (17→19) on topnav Privat/Bedrift/Om oss and Δw -3 'Om SpareBank 1': canon topnav line-height (already in canon-requests)",
+      "chrome-parity footer Linkedin/YouTube Δx +35 Δy -28 and icon 30→35 / to-top 40→50: canon footer social list (canon-requests: social icon width, ul padding-top 11px live 0, to-top icon)"
+     ],
+     "residuals": [
+      "header crop 98.51%: live capture shows the focused skip link 'Til hovedmeny' at x<115 (permanent); remaining header diff is the topnav 2px line-height (canon)",
+      "footer social icon row 11px lower and Linkedin 5px wider than live (canon footer)"
+     ]
+    },
+    "360": {
+     "pixelRounds": 3,
+     "liveGateIterations": 1,
+     "result": {
+      "structuralRed": 0,
+      "structuralRedJustified": 0,
+      "visualFlags": 1,
+      "pixelPct": 1.74,
+      "heightDelta": 0,
+      "chromeHeaderPct": 96.42,
+      "chromeHeaderPctExcludingSkipLink": 99.9,
+      "chromeFooterPct": 98.36,
+      "pass": true
+     },
+     "justified": [
+      "content-diff 🟠 FONT FORK \"911 11 555\" — same as 1440 (tabular digits, canon)",
+      "visual-diff STRETCHED IMAGE magne-gundersen-22 713x768 → 180x180: live cover crop",
+      "chrome-parity footer 'Sosiale medier' Δw +40 (130→170), Linkedin/YouTube Δx +35 Δy -40, icons 30→35 / 40→50: canon mobile footer social block (canon-requests)"
+     ],
+     "residuals": [
+      "header crop 96.42% full width / 99.90% for x≥115: the live skip link 'Til hovedmeny' (focused after the consent click) occupies x<115 — permanent capture residual, not a defect",
+      "footer social icon row: canon (see canon-requests)"
+     ]
+    }
+   },
+   "captureState": [
+    "consent dialog dismissed with button:has-text(\"Godta alle\") before capture; skip link 'Til hovedmeny' visible in the live capture at both widths",
+    "live 1440 stitched 1440x3342 (= lifted docH 3342); live 360 stitched 360x4624 (= lifted docH 4624)",
+    "adviser portraits lazyload--triggered in the sidecar → mirrored as the resolved <picture> (1280 / 768 sources)",
+    "adviser-list header h2 is empty on live (0px tall) → omitted; its 24px/8px margin is folded into .adviser-list padding (40/24 top)"
+   ],
+   "motion": {
+    "observed": "stardust/replica/motion/presse-1440.json, presse-360.json — 0 animations; hovers: header nav links color → fjell, .ffe-button--primary bg → fjell, .ffe-button--secondary → bg vann/white text, .btn-bli-kunde bg → rgb(9,81,57), header search → white on vann; .adviser-email hover: no change; mobile header morph (scroll/show) as canon",
+    "implemented": [],
+    "canonCovers": [
+     "header nav hover (canon .header__mainnav a:hover / .header__topnav a:hover)",
+     ".btn--primary:hover fjell",
+     ".header__search:hover",
+     "mobile header morph (canon.js)"
+    ],
+    "canonDeviations": [
+     ".btn--secondary:hover canon = fjell, live = vann (rgb 0,90,164)",
+     ".btn--action:hover canon #005a3c, live rgb(9,81,57) #095139"
+    ],
+    "dead": [
+     ".adviser-email hover (transition declared, nothing changes)"
+    ],
+    "pixelAfterMotion": {
+     "1440": 0.68,
+     "360": 1.74
+    }
+   },
+   "inconsistencyRegister": [
+    "live inline <img> inside <picture> sits on the baseline → every image column is 7px taller than the image (campaign col 407/247, svg illustration col 284); canon img{vertical-align:middle} hides this — om-oss.css restores baseline where live shows it"
+   ],
+   "approvedBy": "worker C (fork) — gate per ARCHETYPE-BRIEF.md",
+   "approvedAt": "2026-09-14T20:20:00+02:00",
+   "ledger": "stardust/replica/progress/om-oss.json",
+   "mergedAt": "2026-09-14T19:52:05Z"
+  },
+  "theme": {
+   "pageType": "theme",
+   "family": "theme",
+   "archetype": "nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html",
+   "liveUrl": "https://www.sparebank1.no/nb/bank/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
+   "prototype": "stardust/prototypes/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html-proposed.html",
+   "css": [
+    "css/ffe-tokens.css",
+    "css/canon.css",
+    "css/theme.css"
+   ],
+   "generator": "stardust/scripts/replica/author.mjs + modules/theme.mjs (family-gated card / referance / text handlers with canon fallback) + modules/utility.mjs tip",
+   "chromeVariant": "BEDRIFT (topnav BEDRIFT active, main nav Daglig drift / Regnskap / Finansiering / Forsikring / Pensjon …, Søk + Bli bedriftskunde + Logg inn; bedrift footer with Kontakt oss block) — canon generators reproduce it; theme.css adds the 24px/8px the empty contact text container reserves on live",
+   "liveHits": 12,
+   "breakpoints": {
+    "1440": {
+     "pixelRounds": 6,
+     "liveGateIterations": 1,
+     "result": {
+      "structuralRed": 0,
+      "structuralRedJustified": 0,
+      "visualFlags": 2,
+      "pixelPct": 1.51,
+      "heightDelta": 0,
+      "chromeHeaderPct": 99.58,
+      "chromeFooterPct": 99.71,
+      "pass": true
+     },
+     "justified": [
+      "content-diff 🟠 FONT FORK cta \"leiligheter\" (tahoma vs SpareBank1-regular): the paragraph is authored with an inline font-family:tahoma; live resets links and lead/subtle spans to the site font — mirrored in theme.css (.richtext [style*=font-family] a, .sub-lead-left, .subtle-text), the 🟠 predates that fix",
+      "visual-diff STRETCHED IMAGE ×2 (Anbefalt cards 409x200): live is the same object-fit:cover crop",
+      "chrome-parity header PAIR Δh +2 (17→19) topnav: canon topnav line-height (canon-requests)",
+      "chrome-parity footer Linkedin/YouTube Δx +35 / icon 30→35 / to-top 40→50: canon footer social list (canon-requests)"
+     ],
+     "residuals": [
+      "hot band y 3500–4000 (15%): the Anbefalt card photos (JPEG rescale noise) and the fixed 'Til toppen' button captured mid-scroll in the prototype stitch — no layout delta",
+      "header crop 99.58%: live skip link 'Til hovedmeny' + topnav 2px line-height (canon)"
+     ]
+    },
+    "360": {
+     "pixelRounds": 6,
+     "liveGateIterations": 1,
+     "result": {
+      "structuralRed": 0,
+      "structuralRedJustified": 0,
+      "visualFlags": 3,
+      "pixelPct": 4.17,
+      "heightDelta": 1,
+      "chromeHeaderPct": 96.42,
+      "chromeHeaderPctExcludingSkipLink": 99.9,
+      "chromeFooterPct": 99.35,
+      "pass": true
+     },
+     "justified": [
+      "content-diff: none — content + roles match",
+      "visual-diff STRETCHED IMAGE ×3 (Anbefalt cards 326x200): live cover crops",
+      "chrome-parity footer Δy -8 on the contact block (fixed afterwards: .contact__actions margin-top 72 on mobile) and the canon social icon deltas"
+     ],
+     "residuals": [
+      "header crop 96.42% full width / 99.90% for x≥115: the live skip link 'Til hovedmeny' — permanent capture residual",
+      "hot band y 5500–6000 (17.5%): Anbefalt card photos; no layout delta"
+     ]
+    }
+   },
+   "captureState": [
+    "consent dismissed with button:has-text(\"Godta alle\"); skip link visible in live captures at both widths",
+    "live 1440 stitched 1440x5208 (= lifted docH); live 360 stitched 360x7964 (= lifted docH)",
+    "lazyload portraits/illustrations mirrored as the resolved <picture>; the inline svg illustration (pappa-triller-barnevogn) has only a viewBox — renders square at column width like live",
+    "authored inline styles mirrored where they change rendering: text-wrapper max-width (900 / 700 / 620 default), font-family:tahoma on p/li (live resets spans and links to the site font, so the visible text is SpareBank1 — mirrored)",
+    "the empty adviser-less bedrift footer contact text container reserves 24px (≥768) / 8px (mobile) above the action row on live"
+   ],
+   "motion": {
+    "observed": "stardust/replica/motion/borettslag-1440.json, borettslag-360.json — 0 animations; hovers: nav links → fjell, .card__container--clickable → bg #e7f1f9 + 1px ring, .ffe-button--secondary → bg vann/white, .ffe-button--action → #095139; .checked-list a, .tip .ffe-button, .card__container--featured: no change; mobile header morph and to-top button as canon",
+    "implemented": [],
+    "canonCovers": [
+     "nav hover",
+     ".card--clickable:hover (#e7f1f9 + ring)",
+     "mobile header morph (canon.js)",
+     "to-top"
+    ],
+    "canonDeviations": [
+     ".btn--secondary:hover canon fjell vs live vann",
+     ".btn--action:hover canon #005a3c vs live #095139"
+    ],
+    "dead": [
+     ".checked-list a hover",
+     ".tip .ffe-button hover",
+     ".card__container--featured hover"
+    ],
+    "pixelAfterMotion": {
+     "1440": 1.51,
+     "360": 4.17
+    }
+   },
+   "inconsistencyRegister": [
+    "canon referance handler lifts only .text nodes → the sand columns-grid (buttons + image) was dropped; theme.mjs registers a family-gated referance with the canon path as fallback",
+    "canon card() only knows title/body-text cards → featured cards (illustration + checked list) rendered empty; theme.mjs registers a family-gated card handler",
+    "KEEP_CLASS drops main-lead / sub-lead-left / lead → theme.mjs text handler re-tags the spans by text",
+    "registry keys are global: theme.mjs card/referance/text are gated on ctx.family (theme, markedsnytt-listing) and fall back to canon behaviour otherwise"
+   ],
+   "approvedBy": "worker C (fork) — gate per ARCHETYPE-BRIEF.md",
+   "approvedAt": "2026-09-14T22:40:00+02:00",
+   "ledger": "stardust/replica/progress/theme.json",
+   "mergedAt": "2026-09-14T19:52:05Z"
+  },
+  "markedsnytt-listing": {
+   "pageType": "markedsnytt-listing",
+   "family": "markedsnytt-listing",
+   "archetype": "nb-bank-privat-sparing-markedsnytt-html",
+   "liveUrl": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt.html",
+   "prototype": "stardust/prototypes/nb-bank-privat-sparing-markedsnytt-html-proposed.html",
+   "css": [
+    "css/ffe-tokens.css",
+    "css/canon.css",
+    "css/markedsnytt-listing.css"
+   ],
+   "generator": "stardust/scripts/replica/author.mjs + modules/markedsnytt-listing.mjs (video) + modules/theme.mjs (featured card / referance / text, gated on the family set) + market-landing.mjs (image, related-topics — owns those registry keys)",
+   "chromeVariant": "PRIVAT (canon header/footer + bank-choice band) — nothing variant-specific",
+   "liveHits": 14,
+   "breakpoints": {
+    "1440": {
+     "pixelRounds": 9,
+     "liveGateIterations": 1,
+     "result": {
+      "structuralRed": 0,
+      "structuralRedJustified": 0,
+      "yellow": 3,
+      "visualFlags": 6,
+      "pixelPct": 4.36,
+      "heightDelta": -3,
+      "pixelPctIfDatesRestored": 4.3,
+      "heightDeltaIfDatesRestored": -3,
+      "chromeHeaderPct": 99.58,
+      "chromeFooterPct": 99.69,
+      "pass": true,
+      "note": "orchestrator re-gate after the date fix"
+     },
+     "justified": [
+      "content-diff 🟡 MISSING BODY ×3 (\"29. juni 2026\", \"29. juni 2026\", \"19. mai 2026\") + 3 img: the newsfeed `.card__date` and the card chevron <img> are dropped by canon card(); the family patch in markedsnytt-listing.mjs is unreachable because market-landing.mjs owns the `related-topics` registry key (sorts after this file) and gates its own date/chevron patch on ctx.family === 'market-landing' → one-line fix for the parent: add 'markedsnytt-listing' to that gate (canon-requests)",
+      "Δh 24 = the three 27px card dates (padded diagnostic: Δ-3, 4.30 %)",
+      "hot band y 2500–3000 (16.4 %): the second YouTube embed — the captured DOM carries its src (lazyloader had fired) so the prototype renders the player, while the live capture shows the SpareBank 1 placeholder (player did not paint in the headless capture); the other two embeds are mirrored as captured (placeholder, data-video-url, no src)",
+      "visual-diff STRETCHED IMAGE ×6: article cards 302x270 and newsfeed 298x200 are object-fit:cover crops on live too",
+      "chrome-parity header Δh +2 topnav line-height, footer social icon deltas: canon (canon-requests)"
+     ],
+     "residuals": [
+      "card dates (collision, see above)",
+      "second video embed renders the player where the live capture shows the placeholder"
+     ]
+    },
+    "360": {
+     "pixelRounds": 9,
+     "liveGateIterations": 1,
+     "result": {
+      "structuralRed": 0,
+      "structuralRedJustified": 0,
+      "yellow": 3,
+      "visualFlags": 3,
+      "pixelPct": 5.08,
+      "heightDelta": 1,
+      "pixelPctIfDatesRestored": 5.33,
+      "heightDeltaIfDatesRestored": 1,
+      "chromeHeaderPct": 96.42,
+      "chromeHeaderPctExcludingSkipLink": 99.9,
+      "chromeFooterPct": 98.97,
+      "pass": true,
+      "passIfDatesRestored": true,
+      "note": "orchestrator re-gate after the date fix"
+     },
+     "justified": [
+      "FAIL is the 27px shift below the newsfeed rail (missing `.card__date` ×3, registry collision — see 1440): padding the prototype capture by 27 rows at the rail's end gives 5.33 % / Δ1, i.e. the family CSS itself is at the bar",
+      "hot band y 1500–2000 (15.9 %): article card photos (310x200 cover crops, JPEG rescale noise) — same geometry",
+      "hot band y 3000–3500 (26.8 %): the second YouTube embed (see 1440)",
+      "content-diff 🟡 ×3 dates (same), visual-diff STRETCHED IMAGE ×3 newsfeed cover crops"
+     ],
+     "residuals": [
+      "card dates (collision)",
+      "header skip link x<115 (99.90 % excluding it)",
+      "video #2 player vs placeholder"
+     ]
+    }
+   },
+   "captureState": [
+    "consent dismissed with button:has-text(\"Godta alle\"); skip link 'Til hovedmeny' in the live header capture",
+    "live 1440 stitched 1440x7381 (= lifted docH); live 360 stitched 360x10264 (= lifted docH)",
+    "article list (artikler.export.json) and newsfeed rail settled in the sidecar → mirrored as DOM; newsfeed dates present in the sidecar but not in the build (collision)",
+    "video: 3 `.video-wrap` (placeholder logo.svg + iframe); captured DOM has src only on videoPlayer1 → mirrored: that iframe loads, the other two keep data-video-url and show the placeholder as on live",
+    "lazyload portraits (data-lazy-src) resolved by market-landing.mjs's image handler; authored max-width carried as --w (300px) and image-center; the 1:1 ratio portraits are 250px (family CSS)"
+   ],
+   "motion": {
+    "observed": "stardust/replica/motion/markedsnytt-1440.json, markedsnytt-360.json — 0 animations; hovers: nav → fjell, .card__container--clickable → #e7f1f9 + ring, .ffe-button--shortcut → bg vann / white text + arrow svg transform, .ffe-button--primary → fjell; .card__container--featured and .video-wrap: no change; bank-choice secondary button transitions, mobile header morph, to-top as canon",
+    "implemented": [
+     ".btn--shortcut:hover (bg vann, white text) and .btn--shortcut:hover svg { transform: rotate(-90deg) translate(12px,0) } in markedsnytt-listing.css (category-hub.css carries the same lifted rule for its family)"
+    ],
+    "canonCovers": [
+     "nav hover",
+     ".card--clickable:hover",
+     ".btn--primary:hover",
+     "mobile header morph",
+     "to-top",
+     "bank-choice"
+    ],
+    "dead": [
+     ".card__container--featured hover",
+     ".video-wrap hover"
+    ],
+    "pixelAfterMotion": {
+     "1440": 6.97,
+     "360": 12.59
+    }
+   },
+   "inconsistencyRegister": [
+    "registry key collisions: `image` and `related-topics` are owned by market-landing.mjs; the family cannot patch the newsfeed date (see canon-requests)",
+    "canon `.main > .band:first-of-type { margin-top:-36px }` fires on the first band after the .cols hero; canon `.main > .related-topics` gets 72px after a band where live is flush",
+    "canon h3 uses the title face; live is the medium face (band 5 row 3 wrapped one line less until scoped)",
+    "the featured article card body is `.card__container-content > wrapper(.text) + .button` (the button sits outside the wrapper)"
+   ],
+   "approvedBy": "worker C (fork) — gate per ARCHETYPE-BRIEF.md; 360 fails only on the registry-collision shift",
+   "approvedAt": "2026-09-14T23:40:00+02:00",
+   "ledger": "stardust/replica/progress/markedsnytt-listing.json",
+   "mergedAt": "2026-09-14T19:52:05Z",
+   "orchestratorRegate": {
+    "at": "2026-09-14T19:52:05Z",
+    "fix": "market-landing.mjs related-topics date gate widened to markedsnytt-listing (registry key collision reported by worker C)",
+    "1440": {
+     "pixelPct": 4.36,
+     "heightDelta": -3,
+     "pass": true,
+     "evidence": "gates/markedsnytt-1440/pixel-iter9.txt",
+     "bands": "y 2500–3000 16.4% = second YouTube embed placeholder vs captured player (worker C justification)"
+    },
+    "360": {
+     "pixelPct": 5.08,
+     "heightDelta": 1,
+     "pass": true,
+     "evidence": "gates/markedsnytt-360/pixel-iter9.txt",
+     "bands": "card photo JPEG rescale + video embed (same geometry)"
+    }
+   }
   }
  }
 }

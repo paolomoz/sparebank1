@@ -1,0 +1,108 @@
+.comparison-card__title,.ffe-h4,.ffe-table__caption,.h4,.login-content .system-messages .error-message .message-content h2,.login-content .system-messages .info-message .message-content h2,.login-content .system-messages .login-message .message-content h2,.price-and-terms__before-text,.text-tiles-container h1,.text-tiles-container h2,.text-tiles-container h3,.text-tiles-container h4,.text-tiles-container h5,h4 { line-height:1.5rem;font-size:var(--ffe-fontsize-h4) }
+.comparison .columns-data--edit-header,.comparison-card__read-more,.customer-action-wrap .cs-action .btn-name,.ffe-h6,.h6,.login-shortcuts h1,.login-shortcuts h2,.login-shortcuts h3,.login-shortcuts h4,.office-contact-info>li .big-text,.office-contact-info>li>.title,h6 { line-height:1.25rem;font-size:var(--ffe-fontsize-h6) }
+.adviser-name,.comparison .columns-data--edit-header,.comparison-card__read-more,.comparison-card__title,.customer-action-wrap .cs-action .btn-name,.ffe-calendar__title,.ffe-card-body__title,.ffe-h1,.ffe-h2,.ffe-h3,.ffe-h4,.ffe-h5,.ffe-h6,.ffe-table__caption,.guide-carousel .guide-item .cmp-teaser__title,.h1,.h2,.h3,.h4,.h5,.h6,.login-content .system-messages .error-message .message-content h2,.login-content .system-messages .info-message .message-content h2,.login-content .system-messages .login-message .message-content h2,.login-options__title,.login-shortcuts h1,.login-shortcuts h2,.login-shortcuts h3,.login-shortcuts h4,.office-contact-info>li .big-text,.office-contact-info>li>.title,.price-and-terms--price-large .price-and-terms__after-text,.price-and-terms--price-large .price-and-terms__number-text,.price-and-terms--price-medium .price-and-terms__after-text,.price-and-terms--price-medium .price-and-terms__number-text,.price-and-terms--price-small .price-and-terms__after-text,.price-and-terms--price-small .price-and-terms__number-text,.price-and-terms__before-text,.search-results-wrap .search-results .result-row .result-title,.services__title,.step-small__number,.step__number,.text-tiles-container h1,.text-tiles-container h2,.text-tiles-container h3,.text-tiles-container h4,.text-tiles-container h5,.tip-content .h1,.tip-content .h2,.tip-content .h3,.tip-content .h4,.tip-content .h5,.tip-content h1,.tip-content h2,.tip-content h3,.tip-content h4,.tip-content h5,h1,h2,h3,h4,h5,h6 { color:var(--ffe-g-heading-color);font-weight:400;margin-bottom:var(--ffe-spacing-xs);margin-top:0;text-wrap:balance;overflow-wrap:anywhere }
+.adviser-name,.comparison .columns-data--edit-header,.comparison-card__read-more,.comparison-card__title,.customer-action-wrap .cs-action .btn-name,.ffe-calendar__title,.ffe-card-body__title,.ffe-h3,.ffe-h4,.ffe-h5,.ffe-h6,.ffe-table__caption,.guide-carousel .guide-item .cmp-teaser__title,.h3,.h4,.h5,.h6,.login-content .system-messages .error-message .message-content h2,.login-content .system-messages .info-message .message-content h2,.login-content .system-messages .login-message .message-content h2,.login-options__title,.login-shortcuts h1,.login-shortcuts h2,.login-shortcuts h3,.login-shortcuts h4,.office-contact-info>li .big-text,.office-contact-info>li>.title,.price-and-terms__before-text,.search-results-wrap .search-results .result-row .result-title,.services__title,.step-small__number,.step__number,.text-tiles-container h1,.text-tiles-container h2,.text-tiles-container h3,.text-tiles-container h4,.text-tiles-container h5,.tip-content .h1,.tip-content .h2,.tip-content .h3,.tip-content .h4,.tip-content .h5,.tip-content h1,.tip-content h2,.tip-content h3,.tip-content h4,.tip-content h5,h3,h4,h5,h6 { font-family:var(--ffe-g-font-heading-small);font-variant-numeric:tabular-nums }
+@media (min-width:480px) .comparison-card__title,.ffe-h4,.ffe-table__caption,.h4,.login-content .system-messages .error-message .message-content h2,.login-content .system-messages .info-message .message-content h2,.login-content .system-messages .login-message .message-content h2,.price-and-terms__before-text,.text-tiles-container h1,.text-tiles-container h2,.text-tiles-container h3,.text-tiles-container h4,.text-tiles-container h5,h4 { line-height:1.75rem }
+@media (min-width:480px) .comparison .columns-data--edit-header,.comparison-card__read-more,.customer-action-wrap .cs-action .btn-name,.ffe-h6,.h6,.login-shortcuts h1,.login-shortcuts h2,.login-shortcuts h3,.login-shortcuts h4,.office-contact-info>li .big-text,.office-contact-info>li>.title,h6 { line-height:1.25rem }
+@media (min-width:480px) .adviser-name,.comparison .columns-data--edit-header,.comparison-card__read-more,.comparison-card__title,.customer-action-wrap .cs-action .btn-name,.ffe-calendar__title,.ffe-card-body__title,.ffe-h1,.ffe-h2,.ffe-h3,.ffe-h4,.ffe-h5,.ffe-h6,.ffe-table__caption,.guide-carousel .guide-item .cmp-teaser__title,.h1,.h2,.h3,.h4,.h5,.h6,.login-content .system-messages .error-message .message-content h2,.login-content .system-messages .info-message .message-content h2,.login-content .system-messages .login-message .message-content h2,.login-options__title,.login-shortcuts h1,.login-shortcuts h2,.login-shortcuts h3,.login-shortcuts h4,.office-contact-info>li .big-text,.office-contact-info>li>.title,.price-and-terms--price-large .price-and-terms__after-text,.price-and-terms--price-large .price-and-terms__number-text,.price-and-terms--price-medium .price-and-terms__after-text,.price-and-terms--price-medium .price-and-terms__number-text,.price-and-terms--price-small .price-and-terms__after-text,.price-and-terms--price-small .price-and-terms__number-text,.price-and-terms__before-text,.search-results-wrap .search-results .result-row .result-title,.services__title,.step-small__number,.step__number,.text-tiles-container h1,.text-tiles-container h2,.text-tiles-container h3,.text-tiles-container h4,.text-tiles-container h5,.tip-content .h1,.tip-content .h2,.tip-content .h3,.tip-content .h4,.tip-content .h5,.tip-content h1,.tip-content h2,.tip-content h3,.tip-content h4,.tip-content h5,h1,h2,h3,h4,h5,h6 { margin-bottom:var(--ffe-spacing-sm) }
+@media (min-width:768px) .adviser-name,.comparison .columns-data--edit-header,.comparison-card__read-more,.comparison-card__title,.customer-action-wrap .cs-action .btn-name,.ffe-calendar__title,.ffe-card-body__title,.ffe-h1,.ffe-h2,.ffe-h3,.ffe-h4,.ffe-h5,.ffe-h6,.ffe-table__caption,.guide-carousel .guide-item .cmp-teaser__title,.h1,.h2,.h3,.h4,.h5,.h6,.login-content .system-messages .error-message .message-content h2,.login-content .system-messages .info-message .message-content h2,.login-content .system-messages .login-message .message-content h2,.login-options__title,.login-shortcuts h1,.login-shortcuts h2,.login-shortcuts h3,.login-shortcuts h4,.office-contact-info>li .big-text,.office-contact-info>li>.title,.price-and-terms--price-large .price-and-terms__after-text,.price-and-terms--price-large .price-and-terms__number-text,.price-and-terms--price-medium .price-and-terms__after-text,.price-and-terms--price-medium .price-and-terms__number-text,.price-and-terms--price-small .price-and-terms__after-text,.price-and-terms--price-small .price-and-terms__number-text,.price-and-terms__before-text,.search-results-wrap .search-results .result-row .result-title,.services__title,.step-small__number,.step__number,.text-tiles-container h1,.text-tiles-container h2,.text-tiles-container h3,.text-tiles-container h4,.text-tiles-container h5,.tip-content .h1,.tip-content .h2,.tip-content .h3,.tip-content .h4,.tip-content .h5,.tip-content h1,.tip-content h2,.tip-content h3,.tip-content h4,.tip-content h5,h1,h2,h3,h4,h5,h6 { margin-bottom:var(--ffe-spacing-md) }
+.comparison-card__title,.h4,.text-tiles-container h1,.text-tiles-container h2,.text-tiles-container h3,.text-tiles-container h4,.text-tiles-container h5,h4 { line-height:28px }
+.opening-hours-section>.aem-main-container+.parbase.title,.opening-hours-section>.aem-main-container>*,.opening-hours-section>.parbase.banner-top-quicklinks,.opening-hours-section>.parbase.base-component,.opening-hours-section>.parbase.button,.opening-hours-section>.parbase.button-list-container,.opening-hours-section>.parbase.campaign,.opening-hours-section>.parbase.campaign-carousel,.opening-hours-section>.parbase.color-fillable+.hr+.parbase.color-fillable,.opening-hours-section>.parbase.color-fillable+.parbase.color-fillable,.opening-hours-section>.parbase.color-fillable+.parbase.reference,.opening-hours-section>.parbase.color-fillable:first-child,.opening-hours-section>.parbase.download,.opening-hours-section>.parbase.hr,.opening-hours-section>.parbase.navigation,.opening-hours-section>.parbase.product-banner,.opening-hours-section>.parbase.progressive-disclosure,.opening-hours-section>.parbase.reference+.parbase.color-fillable,.opening-hours-section>.parbase.tabs-component,.opening-hours-section>.parbase.text+.parbase.table,.opening-hours-section>.parbase.usp,.opening-hours-section>.text,.opening-hours-section>.text+.parbase.accordion,.opening-hours-section>.text+.parbase.comparison,.opening-hours-section>.text+.parbase.guide,.opening-hours-section>.to-parent+.parbase.color-fillable,.reference>.cq-dd-paragraph>.aem-main-container+.parbase.title,.reference>.cq-dd-paragraph>.aem-main-container>*,.reference>.cq-dd-paragraph>.parbase.banner-top-quicklinks,.reference>.cq-dd-paragraph>.parbase.base-component,.reference>.cq-dd-paragraph>.parbase.button,.reference>.cq-dd-paragraph>.parbase.button-list-container,.reference>.cq-dd-paragraph>.parbase.campaign,.reference>.cq-dd-paragraph>.parbase.campaign-carousel,.reference>.cq-dd-paragraph>.parbase.color-fillable+.hr+.parbase.color-fillable,.reference>.cq-dd-paragraph>.parbase.color-fillable+.parbase.color-fillable,.reference>.cq-dd-paragraph>.parbase.color-fillable+.parbase.reference,.reference>.cq-dd-paragraph>.parbase.color-fillable:first-child,.reference>.cq-dd-paragraph>.parbase.download,.reference>.cq-dd-paragraph>.parbase.hr,.reference>.cq-dd-paragraph>.parbase.navigation,.reference>.cq-dd-paragraph>.parbase.product-banner,.reference>.cq-dd-paragraph>.parbase.progressive-disclosure,.reference>.cq-dd-paragraph>.parbase.reference+.parbase.color-fillable,.reference>.cq-dd-paragraph>.parbase.tabs-component,.reference>.cq-dd-paragraph>.parbase.text+.parbase.table,.reference>.cq-dd-paragraph>.parbase.usp,.reference>.cq-dd-paragraph>.text,.reference>.cq-dd-paragraph>.text+.parbase.accordion,.reference>.cq-dd-paragraph>.text+.parbase.comparison,.reference>.cq-dd-paragraph>.text+.parbase.guide,.reference>.cq-dd-paragraph>.to-parent+.parbase.color-fillable,main>.aem-main-container+.parbase.title,main>.aem-main-container>*,main>.parbase.banner-top-quicklinks,main>.parbase.base-component,main>.parbase.button,main>.parbase.button-list-container,main>.parbase.campaign,main>.parbase.campaign-carousel,main>.parbase.color-fillable+.hr+.parbase.color-fillable,main>.parbase.color-fillable+.parbase.color-fillable,main>.parbase.color-fillable+.parbase.reference,main>.parbase.color-fillable:first-child,main>.parbase.download,main>.parbase.hr,main>.parbase.navigation,main>.parbase.product-banner,main>.parbase.progressive-disclosure,main>.parbase.reference+.parbase.color-fillable,main>.parbase.tabs-component,main>.parbase.text+.parbase.table,main>.parbase.usp,main>.text,main>.text+.parbase.accordion,main>.text+.parbase.comparison,main>.text+.parbase.guide,main>.to-parent+.parbase.color-fillable { margin-top:0 }
+.comparison { max-width:1280px;margin:auto;padding-top:16px }
+.comparison__filter-container { margin:16px 8px }
+.comparison__filter-tabgroup { flex-direction:row;width:auto;flex-wrap:wrap;justify-content:center;margin:0 2px }
+.comparison__filter-tabgroup::after { background:0 0 }
+.comparison__filter-button { width:auto;padding:8px;margin:4px }
+.comparison caption { position:absolute;left:-9999999999px }
+.comparison .ffe-table { min-width:100%;margin:auto }
+@media (min-width:768px) .comparison .ffe-table { min-width:auto }
+.comparison .ffe-table__row { border-bottom:solid 1px var(--ffe-farge-lysgraa) }
+.comparison .ffe-table__row-expandable { border-bottom:none }
+.comparison .ffe-table__row-expandable-content .text-wrapper { height:0 }
+.comparison .ffe-table__row-expandable-content--expanded .text-wrapper { height:auto }
+.comparison .ffe-table__cell { font-weight:400 }
+.comparison .ffe-table--breakpoint-none.ffe-table--condensed .ffe-table__cell,.comparison .ffe-table--breakpoint-none.ffe-table--condensed .ffe-table__heading { padding:16px 0 16px 4px }
+.comparison-table__header { width:calc((calc(1280 / 12) * 10) * (1px / 6));vertical-align:bottom }
+.comparison-table__header:first-child { width:calc((calc(1280 / 12) * 10) * (2px / 6));text-align:left }
+.comparison-table__content,.comparison-table__header { text-align:center }
+@media (max-width:768px) .comparison-table__content--icon,.comparison-table__header--icon { width:48px }
+@media (max-width:768px) .comparison-table__content--icon .ffe-table__content,.comparison-table__header--icon .ffe-table__content { max-height:24px }
+.comparison-table__5cols { width:100% }
+@media (min-width:768px) .comparison-table__5cols { max-width:calc(calc(1280 / 12) * 10px) }
+.comparison-table__4cols { width:100% }
+@media (min-width:768px) .comparison-table__4cols { max-width:calc(calc(1280 / 12) * 8px) }
+.comparison-table__4cols .comparison-table__header { width:calc((calc(1280 / 12) * 8) * (1px / 5)) }
+.comparison-table__4cols .comparison-table__header:first-child { width:calc((calc(1280 / 12) * 8) * (2px / 5)) }
+.comparison-table__3cols { width:100% }
+@media (min-width:768px) .comparison-table__3cols { max-width:calc(calc(1280 / 12) * 8px) }
+.comparison-table__3cols .comparison-table__header { width:calc((calc(1280 / 12) * 8) * (1px / 4)) }
+.comparison-table__3cols .comparison-table__header:first-child { width:calc((calc(1280 / 12) * 8) * (2px / 4)) }
+.comparison-table--expand { width:11px;padding:0 0 0 2px!important }
+.comparison-table__expandable--open .comparison-table__expand-icon { transform:rotateX(180deg) }
+.comparison-table__expand-button { height:44px;width:44px;background-color:transparent;border:none;cursor:pointer;border-radius:8px }
+.comparison-table__expand-button:focus,.comparison-table__expand-button:focus-visible,.comparison-table__expand-button:hover { outline:2px solid var(--ffe-v-accordion-focus-border-color) }
+.comparison-table__row-header { padding-left:16px!important }
+@media (min-width:769px) .comparison--hide-desktop { display:none }
+@media (max-width:768px) .comparison--hide-mobile { display:none!important }
+.comparison__link { margin:24px 8px }
+.comparison__link-button { width:-moz-fit-content;width:fit-content;margin:auto }
+.comparison .text-wrapper { margin-left:16px }
+@media (min-width:480px) .comparison .text-wrapper { max-width:768px;margin-left:40px }
+.comparison__icon--on { fill:var(--ffe-farge-koksgraa);width:24px;height:24px }
+.comparison__icon--off { color:var(--ffe-farge-lysgraa);width:24px;height:24px }
+.comparison--sticky-header { position:fixed;left:0;top:0;right:0;overflow:hidden;background:inherit;z-index:10;width:100%;background-color:var(--ffe-farge-hvit);max-width:1280px;margin:auto }
+.comparison .columns-data--edit { border-top:solid 1px var(--ffe-farge-lysgraa);clear:both;min-height:40px }
+.comparison .columns-data--edit>div { float:left;width:17%;text-align:center;min-height:20px }
+.comparison .columns-data--edit>div:first-child { width:32%;text-align:left }
+.comparison .columns-data--edit-nodropdown { margin-left:24px }
+.comparison .columns-data--edit-text { clear:both;background-color:var(--ffe-farge-syrin-30) }
+.comparison .columns-data--edit-header .columns-data--edit-nodropdown { margin-left:0 }
+.comparison .comparison-table__4cols .columns-data--edit>div { width:20% }
+.comparison .comparison-table__4cols .columns-data--edit>div:first-child { width:40% }
+.comparison .comparison-table__3cols .columns-data--edit>div { width:25% }
+.comparison .comparison-table__3cols .columns-data--edit>div:first-child { width:50% }
+.main>.background-container .comparison { margin:0 -16px 32px }
+@media (min-width:768px) .main>.background-container .comparison { margin:inherit }
+.comparison-container { text-align:center }
+.comparison-container .help-text { font-size:18px }
+.comparison-container .ffe-expand-button { display:none }
+@media (min-width:400px) .comparison-container .ffe-expand-button { display:inline-block }
+.comparison-container .card-list { margin:0 -10px }
+.comparison-container .card-list--expanded .comparison-card__compare-content { display:block }
+.comparison-container .card-list--expanded .comparison-card__expander { display:none }
+.comparison-container .card-list.edit { border:3px dotted #005aa4;padding:20px;display:block }
+.comparison-container .card-list.edit .comparison-card { float:left }
+.comparison-card { width:100%;display:block;padding-bottom:30px }
+.comparison-card__inner-wrap { position:relative;text-align:center;border:2px solid #ccc;border-radius:4px;padding:30px 20px 40px 20px;width:100%;background-color:#fff }
+.comparison-card__title { margin-bottom:10px;border-bottom:none }
+.comparison-card__title:focus,.comparison-card__title:hover { border-bottom:1px solid #002776 }
+.comparison-card__lead { margin:10px 0 10px 0;font-size:18px;color:#002776;width:100% }
+@media (max-width:480px) .comparison-card__lead { height:auto!important }
+.comparison-card__read-more { color:#0071cd;border-bottom:none }
+.comparison-card__read-more:focus,.comparison-card__read-more:hover { border-bottom:1px solid #0071cd }
+.comparison-card__compare-content { display:none;text-align:left }
+.comparison-card__compare-content hr { margin:20px 0;border-top:2px solid #f6f6f3 }
+.comparison-card__compare-content ul li:before { color:#262626 }
+.comparison-card__label { position:absolute;left:0;right:0;top:-2px }
+.comparison-card__label-text { color:#fff;display:inline-block;border-bottom-left-radius:3px;border-bottom-right-radius:3px;background-color:#002776;margin:auto;padding:3px 10px }
+.comparison-card__icon { width:100%;max-width:100px;margin:-20px auto 0 auto;height:89px }
+.comparison-card__expander { position:absolute;bottom:-21px;left:0;right:0;margin:auto;display:inline-block;width:38px;height:38px;background:0 0;border:none;padding:0 }
+.comparison-card__expander .arrow-down { width:38px;height:38px;background-color:#fff;border-radius:100%;border:2px solid #ccc;display:inline-block;padding:10px;fill:#0071cd }
+.comparison-card--open { display:block }
+.comparison-card--open .comparison-card__expander .arrow-down { transform:rotate(180deg) }
+.comparison-card--open .comparison-card__compare-content { display:block }
+@media (min-width:480px) .comparison-card { width:50% }
+@media (min-width:1024px) .comparison-card { width:33.33% }
+@media (min-width:1280px) .comparison-card { width:25% }
+.comparison-card .price-and-terms__wrap { display:block }
+.comparison-card .price-and-terms__terms { width:100%;display:block }
+.comparison-card .price-and-terms__term:before { color:#262626;font-size:22px }
+.comparison-card__inner-wrap--highlighted { border:2px solid #005aa4;background-color:#005aa4;color:#fff }
+.comparison-card__inner-wrap--highlighted .comparison-card__lead,.comparison-card__inner-wrap--highlighted .comparison-card__read-more,.comparison-card__inner-wrap--highlighted .comparison-card__title { color:#fff }
+.comparison-card__inner-wrap--highlighted .comparison-card__read-more:focus,.comparison-card__inner-wrap--highlighted .comparison-card__read-more:hover,.comparison-card__inner-wrap--highlighted .comparison-card__title:focus,.comparison-card__inner-wrap--highlighted .comparison-card__title:hover { border-bottom:1px solid #fff }
+.comparison-card__inner-wrap--highlighted .comparison-card__expander:before { background-color:#005aa4;border-color:#005aa4;color:#fff }
+.comparison-card__inner-wrap--highlighted .comparison-card__compare-content { color:#fff }
+.comparison-card__inner-wrap--highlighted .comparison-card__compare-content span { color:#fff }
+.comparison-card__inner-wrap--highlighted .comparison-card__compare-content li:before { color:#fff }
+.comparison-card__inner-wrap--highlighted .comparison-card__compare-content hr { margin:20px 0;border-top:1px solid #7fc6e8 }
+.comparison-card__inner-wrap--highlighted .comparison-card__compare-content .price-and-terms__term:before { color:#fff }

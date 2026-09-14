@@ -7,7 +7,10 @@ import { el, icon, inlineIcons, uid, text } from '../../scripts/sb1.js';
  */
 export default function decorate(block) {
   const variants = [...block.classList].filter((c) => /^lg-\d+/.test(c));
+  const linkList = block.classList.contains('link-list'); // additive variant: plain link paragraphs stay a list, never a button row
   const row = block.querySelector(':scope > div'); if (!row) return;
+  // additive (utility/tool): identical authored tokens (`lg-3, lg-3`) collapse in the DOM classList — a short list fills its tail from the last token
+  while (variants.length && variants.length < row.children.length) variants.push(variants[variants.length - 1]);
   const grid = el('div', { class: 'grid-row' });
   [...row.children].forEach((cell, i) => {
     const v = variants[i] || 'lg-12';
@@ -19,7 +22,7 @@ export default function decorate(block) {
     while (cell.firstChild) content.append(cell.firstChild);
     // consecutive CTA paragraphs (a paragraph that is only a link) form one button row, as the live button-list does;
     // the text between CTA rows is grouped in a block wrapper (live .richtext) so heading/paragraph margins collapse
-    const isCta = (n) => n.tagName === 'P' && n.children.length === 1 && n.firstElementChild.tagName === 'A' && n.textContent.trim() === n.firstElementChild.textContent.trim();
+    const isCta = (n) => !linkList && n.tagName === 'P' && n.children.length === 1 && n.firstElementChild.tagName === 'A' && n.textContent.trim() === n.firstElementChild.textContent.trim();
     let run = []; let text = null;
     const flush = () => { if (run.length > 1) { const list = el('div', { class: 'button-list' }); run[0].before(list); run.forEach((n) => list.append(n)); } run = []; };
     [...content.children].forEach((n) => {

@@ -1,0 +1,127 @@
+{
+ "slug": "nb-bank-privat-forsikring-html",
+ "daPath": "/nb/bank/privat/forsikring",
+ "file": "content/nb/bank/privat/forsikring.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "intro",
+   "blocks": []
+  },
+  {
+   "module": "button-list button-list--left",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "banner-small",
+   "blocks": [
+    "banner"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "static-cards",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "image",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "module",
+   "blocks": []
+  },
+  {
+   "module": "static-cards",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": []
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "reference",
+   "blocks": []
+  },
+  {
+   "module": "shortcuts",
+   "blocks": [
+    "shortcuts"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "columns",
+  "banner",
+  "cards",
+  "shortcuts",
+  "feedback"
+ ],
+ "notes": [
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-koffert-reise-rosa.svg is 47074 bytes of SVG (> 40000) — authored as DA media dame-koffert-reise-rosa.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/barekraft-skifte-sykkeldekk-lys-bakgrunn.svg is 52880 bytes of SVG (> 40000) — authored as DA media barekraft-skifte-sykkeldekk-lys-bakgrunn.png (rasterised)",
+  "lint D3 banner columns: one row per half — [illustration][heading, line, CTA(, partner logo)]; the colour variants are read in row order (like the columns lg-* cell model)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/Mennesker_personer_voksen_forelder_barn.svg is 77637 bytes of SVG (> 40000) — authored as DA media Mennesker_personer_voksen_forelder_barn.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/barn_spiller_fotball.svg is 93129 bytes of SVG (> 40000) — authored as DA media barn_spiller_fotball.png (rasterised)",
+  "lint D1 shortcuts: one cell with a plain list of links (D5 simple list) — the block renders the live pill buttons with chevrons; the heading above stays default content",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [
+  "module button-list.button-list--left emitted as prose",
+  "no encoder for module button-list button-list--left",
+  "module image.image--center emitted as prose",
+  "module module.module--progressive-disclosure emitted as prose"
+ ],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-koffert-reise-rosa.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/barekraft-skifte-sykkeldekk-lys-bakgrunn.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/Mennesker_personer_voksen_forelder_barn.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/barn_spiller_fotball.svg"
+ ],
+ "writtenAt": "2026-09-14T19:43:47.807Z"
+}

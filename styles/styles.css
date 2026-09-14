@@ -530,3 +530,66 @@ main .section.question .feedback-wrapper { margin-top: 0; }
   main .section.question .default-content-wrapper ul li { margin-left: 32px; }
 }
 /* ===== /faq ===== */
+
+/* ===== utility / tool (service families) ===== */
+/* service — every band/cols section of the kontakt / verktøy pages: live h3 is the medium face (utility.css/tool.css .page--* h3) */
+main .section.service h3 { font-family: var(--font-medium); }
+/* table-band — the sand band holding the AEM table module + its trailing richtext (live .band .richtext: flow-root, 810px centred ≥768, first child margin-top 16) */
+main .section.table-band .default-content-wrapper { display: flow-root; max-width: none; padding-bottom: 0; } /* the core band skin pads prose wrappers 16px; the live band richtext has none */
+main .section.table-band .default-content-wrapper > :first-child { margin-top: 16px; }
+@media (width >= 768px) { main .section.table-band .default-content-wrapper { max-width: 810px; margin: 0 auto; } }
+/* module rhythm inside a service cols/band section: a centred heading row above a columns row (live: h3 margin 24 + col padding 16 + p margin 16) */
+main .section.service .default-content-wrapper + .columns-wrapper { margin-top: 24px; } /* collapses with the heading's 8/24px; the col's own 16px first-paragraph margin (cols-9) completes the live 40/56 */
+main .section.service.cols .default-content-wrapper { padding: 0 8px; } /* the centred heading row sits in a grid column (live .col__content padding 8 → 16) */
+@media (width <= 767px) { main .section.service.cols .default-content-wrapper h3 { text-wrap: balance; padding: 0 2px; } } /* live h3 balances onto two lines at 360 (glyphs a hair wider) — as the gated replica */
+@media (width >= 768px) { main .section.service .default-content-wrapper + .columns-wrapper { margin-top: 40px; } }
+@media (width >= 1024px) { main .section.service.cols .default-content-wrapper { padding: 0 16px; } }
+/* the live author spacer: N leading <p>&nbsp;</p> in a richtext (24px line + 16px margin each) — the pipeline drops empty paragraphs */
+main .section.spacer-1 .default-content-wrapper > :first-child { margin-top: 56px; }
+main .section.spacer-2 .default-content-wrapper > :first-child { margin-top: 96px; }
+/* live .main > .tip + .cols (and + .rule + .cols): 48px, 72px from 1024 */
+main .section:has(> .callout-wrapper) + .section.service.cols { margin-top: 48px; }
+@media (width >= 1024px) { main .section:has(> .callout-wrapper) + .section.service.cols { margin-top: 72px; } }
+/* title — the AEM page-title module (live .main > .title h1: full width, centred, margin 16 0 8 → 16 0 24); the wrapper is a flow-root so the
+   following lead keeps its own 16px top margin like the live .text-wrapper */
+main .section.title > div { display: flow-root; }
+main .section.title .default-content-wrapper h1 { margin: 16px 0 8px; text-align: center; }
+/* lead-intro — the page lead (live .main > .richtext: 700px centred flow-root; p > span.main-lead 18/24 → 24/32 fjell centred) */
+main .section.lead-intro > div { display: flow-root; max-width: 700px; }
+main .section.lead-intro .default-content-wrapper p { margin: 16px 0 18px; font-size: 18px; line-height: 24px; color: var(--fjell); text-align: center; }
+main .section.lead-intro + .section.service.cols { margin-top: 48px; }
+/* numbered steps (live .text-wrapper ol on the verktøy pages): custom counter, no markers, li margin 16 0 0 32, fjell number at -1.8em */
+main .section.service ol { margin: 0 0 16px; padding: 0; list-style: none; text-align: left; counter-reset: list-elements; }
+main .section.service ol li { position: relative; margin: 16px 0 0 32px; line-height: 1.5em; counter-increment: list-elements; }
+main .section.service ol li::before { content: counter(list-elements); display: block; position: absolute; left: -1.8em; top: 0.05em; font-size: 1.1em; color: var(--fjell); }
+
+@media (width >= 768px) {
+  main .section.title .default-content-wrapper h1 { margin-bottom: 24px; }
+  main .section.lead-intro .default-content-wrapper p { margin-bottom: 24px; font-size: 24px; line-height: 32px; }
+}
+
+@media (width >= 1024px) { main .section.lead-intro + .section.service.cols { margin-top: 72px; } }
+/* top-level CTA row / image module on the utility siblings (live .button-wrap--center, .image--center --w:600px rounded); an all-empty
+   trailing richtext (N × <p>&nbsp;</p>) is authored as an empty section that keeps the live 40px per paragraph */
+main .section.cta .default-content-wrapper p.button-wrapper { margin: 8px 0; }
+main .section.image .default-content-wrapper p { margin: 0; }
+main .section.image .default-content-wrapper img { border-radius: 30px; }
+main .section.w-600 .default-content-wrapper img { width: 600px; max-width: 100%; }
+main .section.spacer-only-1:empty { display: block; height: 40px; }
+main .section.spacer-only-2:empty { display: block; height: 80px; }
+/* ===== /utility / tool ===== */
+
+/* ===== market-landing ===== */
+/* full: a full-bleed module (campaign carousel, two-tone banner) — the section adds no gutter, the wrapper no max-width */
+main .section.full { padding: 0; }
+main .section.full > div { max-width: none; }
+/* the header grows by the mobile market strip on market landings (live: body-level .market-nav, 52px) */
+header:has(.header__market-strip) { height: auto; }
+/* market-compare: the "Sammenlign priser" block — h2 at h2 size in the medium face, 14px line (live .main > .richtext) */
+main .section.market-compare .default-content-wrapper h2 { margin-bottom: 8px; font-family: var(--font-medium); font-size: 24px; line-height: 28px; }
+main .section.market-compare .default-content-wrapper p { margin: 16px auto; font-size: 14px; line-height: 24px; }
+
+@media (width >= 768px) {
+  main .section.market-compare .default-content-wrapper h2 { margin-bottom: 24px; font-size: 36px; line-height: 44px; }
+}
+/* ===== /market-landing ===== */

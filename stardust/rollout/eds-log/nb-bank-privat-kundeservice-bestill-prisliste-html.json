@@ -1,0 +1,45 @@
+{
+ "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
+ "daPath": "/nb/bank/privat/kundeservice/bestill/prisliste",
+ "file": "content/nb/bank/privat/kundeservice/bestill/prisliste.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "title",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "module",
+   "blocks": []
+  },
+  {
+   "module": "button-wrap",
+   "blocks": []
+  },
+  {
+   "module": "image",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  }
+ ],
+ "blocks": [],
+ "notes": [
+  "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style",
+  "module accordion-list-container: empty in the capture (client-rendered bank chooser — dynamics; nothing authored, no gap)",
+  "richtext: 2 empty paragraph(s) only (the live author spacer) → an empty section styled spacer-only-2"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T19:42:21.414Z"
+}

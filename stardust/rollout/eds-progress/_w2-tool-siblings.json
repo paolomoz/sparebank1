@@ -1,0 +1,103 @@
+[
+ {
+  "slug": "nb-bank-privat-forsikring-meld-skade-html",
+  "daPath": "/nb/bank/privat/forsikring/meld-skade",
+  "blocks": [
+   "breadcrumbs",
+   "cards",
+   "columns",
+   "feedback"
+  ],
+  "gaps": [
+   "module module.module--accordion emitted as prose"
+  ],
+  "lint": {
+   "red": 2,
+   "yellow": 3
+  },
+  "notes": [
+   "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style",
+   "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style",
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-hjemmekontor.svg is 45095 bytes of SVG (> 40000) — authored as DA media dame-hjemmekontor.png (rasterised)"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+  "daPath": "/nb/bank/privat/kundeservice/verktoy/iban-og-swift",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "cards",
+   "feedback"
+  ],
+  "gaps": [
+   "module module.module--progressive-disclosure emitted as prose",
+   "module module.module--progressive-disclosure emitted as prose"
+  ],
+  "lint": {
+   "red": 0,
+   "yellow": 3
+  },
+  "notes": [
+   "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-kundeservice-verktoy-klager-html",
+  "daPath": "/nb/bank/privat/kundeservice/verktoy/klager",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs"
+  ],
+  "gaps": [
+   "module title emitted as prose",
+   "module module.module--step-by-step emitted as prose",
+   "module title emitted as prose",
+   "module module.module--accordion-list-container emitted as prose"
+  ],
+  "lint": {
+   "red": 0,
+   "yellow": 2
+  },
+  "notes": [
+   "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
+  "daPath": "/nb/bank/privat/kundeservice/verktoy/sparekalkulator",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "cards",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 3
+  },
+  "notes": []
+ },
+ {
+  "slug": "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html",
+  "daPath": "/nb/bank/privat/kundeservice/verktoy/valutakalkulator",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "columns",
+   "accordion",
+   "feedback"
+  ],
+  "gaps": [
+   "module module.module--currency-converter emitted as prose"
+  ],
+  "lint": {
+   "red": 0,
+   "yellow": 4
+  },
+  "notes": [
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-liten-penger.svg is 95992 bytes of SVG (> 40000) — authored as DA media illustrasjon-liten-penger.png (rasterised)"
+  ]
+ }
+]

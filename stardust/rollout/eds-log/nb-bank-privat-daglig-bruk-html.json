@@ -1,0 +1,89 @@
+{
+ "slug": "nb-bank-privat-daglig-bruk-html",
+ "daPath": "/nb/bank/privat/daglig-bruk",
+ "file": "content/nb/bank/privat/daglig-bruk.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "intro",
+   "blocks": []
+  },
+  {
+   "module": "vnav",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "vnav",
+   "blocks": []
+  },
+  {
+   "module": "vnav",
+   "blocks": []
+  },
+  {
+   "module": "vnav",
+   "blocks": []
+  },
+  {
+   "module": "vnav",
+   "blocks": []
+  },
+  {
+   "module": "vnav",
+   "blocks": []
+  },
+  {
+   "module": "vnav",
+   "blocks": []
+  },
+  {
+   "module": "vnav",
+   "blocks": []
+  },
+  {
+   "module": "shortcuts",
+   "blocks": [
+    "shortcuts"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "cards",
+  "shortcuts",
+  "feedback"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "cards nav: 8 visual-nav modules (6 photo, 2 icon) folded into one block — one row per card",
+  "lint D1 shortcuts: one cell with a plain list of links (D5 simple list) — the block renders the live pill buttons with chevrons; the heading above stays default content",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T19:43:47.786Z"
+}

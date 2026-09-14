@@ -44,18 +44,28 @@
    "archetypeFamily": "theme",
    "aemPageType": "Tema",
    "clientlib": "base",
-   "status": "extracted",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
      "at": "2026-09-14T14:58:08.650Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T19:52:05Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T19:52:05Z",
+     "approvedBy": "hands-off",
+     "gate": "stardust/replica/progress/theme.json"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-bedrift-bedriftsforsikring-bransjer-borettslag-sameie-html-proposed.html",
    "migratedPath": null,
    "fidelityTier": "archetype",
    "archetypeSource": null,
@@ -1428,18 +1438,28 @@
    "archetypeFamily": "om-oss",
    "aemPageType": "Om oss",
    "clientlib": "base",
-   "status": "extracted",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
      "at": "2026-09-14T14:57:21.346Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T19:52:05Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T19:52:05Z",
+     "approvedBy": "hands-off",
+     "gate": "stardust/replica/progress/om-oss.json"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-om-oss-presse-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-om-oss-presse-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-om-oss-presse-html-proposed.html",
    "migratedPath": null,
    "fidelityTier": "archetype",
    "archetypeSource": null,
@@ -2793,18 +2813,28 @@
    "archetypeFamily": "markedsnytt-listing",
    "aemPageType": "Produkt",
    "clientlib": "base",
-   "status": "extracted",
+   "status": "approved",
    "history": [
     {
      "status": "extracted",
      "at": "2026-09-14T15:03:40.598Z"
+    },
+    {
+     "status": "prototyped",
+     "at": "2026-09-14T19:52:05Z"
+    },
+    {
+     "status": "approved",
+     "at": "2026-09-14T19:52:05Z",
+     "approvedBy": "hands-off",
+     "gate": "stardust/replica/progress/markedsnytt-listing.json"
     }
    ],
    "stale": false,
    "staleReason": null,
    "currentStatePath": "stardust/current/pages/nb-bank-privat-sparing-markedsnytt-html.json",
    "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-sparing-markedsnytt-html.html",
-   "prototypePath": null,
+   "prototypePath": "stardust/prototypes/nb-bank-privat-sparing-markedsnytt-html-proposed.html",
    "migratedPath": null,
    "fidelityTier": "archetype",
    "archetypeSource": null,

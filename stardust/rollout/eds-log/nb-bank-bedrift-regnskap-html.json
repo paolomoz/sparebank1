@@ -1,0 +1,100 @@
+{
+ "slug": "nb-bank-bedrift-regnskap-html",
+ "daPath": "/nb/bank/bedrift/regnskap",
+ "file": "content/nb/bank/bedrift/regnskap.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "title",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "button-list button-list--left",
+   "blocks": []
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards",
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "tip",
+   "blocks": [
+    "callout"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "breadcrumbs",
+  "cards",
+  "columns",
+  "callout",
+  "feedback"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "cards grid: consecutive same-shaped card rows folded into one block (D9)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/mann-viser-og-forklarer.svg is 77587 bytes of SVG (> 40000) — authored as DA media mann-viser-og-forklarer.png (rasterised)",
+  "lint D1 callout: the FFE message box (round icon overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [
+  "module title emitted as prose",
+  "module button-list.button-list--left emitted as prose",
+  "no encoder for module button-list button-list--left"
+ ],
+ "assets": [
+  "chevron.svg"
+ ],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/mann-viser-og-forklarer.svg"
+ ],
+ "writtenAt": "2026-09-14T19:43:47.762Z"
+}

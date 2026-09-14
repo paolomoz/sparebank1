@@ -1,5 +1,5 @@
 // markedsnytt-listing family — the Markedsnytt hub (PRIVAT chrome, productpage main). Handlers: `video` (YouTube embed mirrored
-// as captured: placeholder + iframe whose src is the loaded src or the lazyload data-video-url) and the CSS contract for
+// as captured: placeholder + iframe; only the iframe that had a src in the captured DOM loads, the lazy ones keep data-video-url) and the CSS contract for
 // market-landing's `image` handler (`--w` max-width, `image--center`).
 // Featured article cards and the columns-grid reference block are handled by modules/theme.mjs (shared registry key, family-gated).
 export default {
@@ -7,7 +7,8 @@ export default {
     const wrap = node.querySelector('.video-wrap'); const ph = wrap?.querySelector('img.video-placeholder'); const fr = wrap?.querySelector('iframe');
     const s = el('section', { class: 'video' }); const w = el('div', { class: 'video__wrap' });
     if (ph) w.append(el('img', { class: 'video__placeholder', src: abs(ph.getAttribute('src')), alt: ph.getAttribute('alt') || '' }));
-    if (fr) { const src = fr.getAttribute('src') || fr.getAttribute('data-video-url'); if (src) w.append(el('iframe', { class: 'video__frame', src, title: fr.getAttribute('title'), allowfullscreen: true, loading: 'lazy', frameborder: '0' })); }
+    // captured state: the lazyloader only fills `src` once the player scrolls into view — the live capture shows the placeholder for the others, so only a captured src loads
+    if (fr) { const src = fr.getAttribute('src') || null; w.append(el('iframe', { class: 'video__frame', src, 'data-video-url': fr.getAttribute('data-video-url'), title: fr.getAttribute('title'), allowfullscreen: true, loading: 'lazy', frameborder: '0' })); }
     s.append(w); return s;
   },
   // related-topics — canon's newsfeed rail verbatim, plus (markedsnytt-listing only) the publication date canon card() drops.

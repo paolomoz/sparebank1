@@ -1,0 +1,29 @@
+nb-bank-bedrift-bedriftskort-kredittkort-html | modules 12 · gaps 2 (module module.module--price-and-terms emitted as prose; module module.module--progressive-disclosure emitted as prose)
+nb-bank-bedrift-betaling-utenlandsbetaling-html | modules 13 · gaps 2 (module module.module--step-by-step emitted as prose; module module.module--accordion emitted as prose)
+nb-bank-bedrift-konto-bedriftskonto-html | modules 8 · gaps 1 (module module.module--price-and-terms emitted as prose)
+nb-bank-bedrift-lan-finansiering-bedriftslan-html | modules 14 · gaps 3 (module module.module--price-and-terms emitted as prose; module button-wrap.button-wrap--center emitted as prose; no encoder for module button-wrap button-wrap--center)
+nb-bank-bedrift-lan-finansiering-kassekreditt-html | modules 10 · gaps 1 (module module.module--price-and-terms emitted as prose)
+nb-bank-bedrift-lan-finansiering-leasing-html | modules 9 · gaps 1 (module module.module--price-and-terms emitted as prose)
+nb-bank-bedrift-open-api-html | modules 3 · gaps 0
+nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html | modules 9 · gaps 0
+nb-bank-om-oss-vare-eksperter-html | modules 5 · gaps 4 (module title emitted as prose; no encoder for module title; module module.module--contentfragmentlist emitted as prose; module module module--contentfragmentlist produced no content)
+nb-bank-privat-daglig-bruk-bankid-html | modules 14 · gaps 0
+nb-bank-privat-daglig-bruk-bankkonto-html | modules 12 · gaps 0
+nb-bank-privat-daglig-bruk-bankkort-html | modules 17 · gaps 1 (module module.module--progressive-disclosure emitted as prose)
+nb-bank-privat-daglig-bruk-kredittkort-html | modules 17 · gaps 0
+nb-bank-privat-daglig-bruk-mobilbank-html | modules 11 · gaps 1 (module module.module--guide-carousel emitted as prose)
+nb-bank-privat-forsikring-barneforsikring-html | modules 20 · gaps 5 (module module.module--progressive-disclosure emitted as prose; module image.image--center emitted as prose; no encoder for module image image--center; module button-wrap.button-wrap--center emitted as prose; no encoder for module button-wr
+nb-bank-privat-forsikring-bilforsikring-html | modules 27 · gaps 11 (module button-wrap.button-wrap--center emitted as prose; no encoder for module button-wrap button-wrap--center; module module.module--progressive-disclosure emitted as prose; module image.image--center emitted as prose; no encoder for mod
+nb-bank-privat-forsikring-innboforsikring-html | modules 19 · gaps 3 (module button-wrap.button-wrap--center emitted as prose; no encoder for module button-wrap button-wrap--center; module module.module--progressive-disclosure emitted as prose)
+nb-bank-privat-forsikring-kundehistorier-html | modules 4 · gaps 0
+nb-bank-privat-forsikring-reiseforsikring-html | modules 24 · gaps 8 (module module.module--progressive-disclosure emitted as prose; module button-wrap.button-wrap--center emitted as prose; no encoder for module button-wrap button-wrap--center; module image.image--center emitted as prose; no encoder for modu
+nb-bank-privat-kundeservice-bestill-bli-kunde-html | modules 8 · gaps 2 (module title emitted as prose; no encoder for module title)
+nb-bank-privat-lan-billan-html | modules 14 · gaps 1 (module module.module--price-and-terms emitted as prose)
+nb-bank-privat-lan-forbrukslan-html | modules 14 · gaps 3 (module module.module--price-and-terms emitted as prose; module button-wrap.button-wrap--center emitted as prose; no encoder for module button-wrap button-wrap--center)
+nb-bank-privat-lan-gronne-lan-html | modules 9 · gaps 2 (module title emitted as prose; no encoder for module title)
+nb-bank-privat-lan-lanekalkulator-html | modules 12 · gaps 0
+nb-bank-privat-lan-refinansiering-html | modules 10 · gaps 0
+nb-bank-privat-pensjon-egen-pensjonskonto-html | modules 17 · gaps 4 (module module.module--price-and-terms emitted as prose; module module.module--progressive-disclosure emitted as prose; module module.module--progressive-disclosure emitted as prose; module module.module--progressive-disclosure emitted as p
+nb-bank-privat-sparing-spare-i-fond-html | modules 16 · gaps 1 (module module module--columns produced no content)
+nb-bank-privat-sparing-spare-pa-konto-html | modules 14 · gaps 0
+nb-bank-privat-sparing-spare-til-barn-html | modules 12 · gaps 0

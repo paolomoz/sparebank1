@@ -79,4 +79,38 @@
 .columns .col--illustration.col--media p { text-align: center; }
 .columns .col--illustration.col--media picture { display: block; width: 100%; height: auto; aspect-ratio: auto; border-radius: 0; }
 .columns .col--illustration.col--media img { display: block; width: 100%; max-width: var(--w, 100%); height: auto; margin: 0 auto; border-radius: 0; aspect-ratio: auto; object-fit: contain; }
+/* link-list: the market-landing band columns — an inline illustration (its authored width via wN), a 22px medium heading on a 44px line
+   linking to the section, then plain link paragraphs (stardust/prototypes/css/market-landing.css .band .richtext*) */
+.columns.link-list .col__text > p:first-child { margin-top: 16px; }
+.columns.link-list .col__text > p:has(> :is(img, picture):only-child) { margin: 0; line-height: 24px; text-align: left; }
+.columns.link-list .col__text > p:has(> :is(img, picture):only-child) picture { display: inline; }
+.columns.link-list .col__text > p:has(> :is(img, picture):only-child) img { display: inline; width: 100%; max-width: var(--w, 100%); height: auto; border-radius: 0; vertical-align: baseline; }
+.columns.link-list .col__text :is(h2, h3) { margin: 0 0 8px; font-family: var(--font-medium); font-size: 22px; line-height: 30px; color: var(--fjell); }
+.columns.link-list .col__text :is(h2, h3) a:any-link { color: var(--fjell); border: 0; text-decoration: none; }
+.columns.link-list .col__text :is(h2, h3) a:hover { text-decoration: underline; }
+.columns.link-list .col__text p { margin: 16px 0; }
+.columns.link-list .col__text > p:not(:has(a)):not(:has(img, picture)) { margin-bottom: 32px; } /* the uppercase label sits in its own live text block */
+@media (width >= 768px) { .columns.link-list .col__text :is(h2, h3) { margin-bottom: 24px; line-height: 44px; } }
 /* ===== /kundeservice-hub / market-landing ===== */
+
+/* ===== utility / tool (additive variants) =====
+   cols-9 — the live 9-column centred row (kontakt address columns); text-center — every paragraph of the row is a live
+   p.ta-center; media-plain — the media column's image is NOT the rounded 3/2 photo (a square PNG / an SVG illustration:
+   natural aspect, no radius). Values: stardust/prototypes/css/utility.css, tool.css. */
+.columns.text-center .col__content { text-align: center; }
+.columns.media-plain .col--media picture, .columns.media-plain .col--media img { border-radius: 0; aspect-ratio: auto; object-fit: fill; }
+@media (width >= 768px) { .columns.cols-9 .grid-row { grid-template-columns: repeat(9, 1fr); max-width: min(75%, 960px); } }
+.columns.cols-9 .col__text > :first-child { margin-top: 16px; } /* live utility.css .grid-row--cols-9 .richtext > :first-child keeps its 16px */
+/* ===== /utility / tool ===== */
+
+/* ===== tool (additive variants) =====
+   media-illustration — an inline SVG illustration column (live .col__content > .image without --ratio: inline, 250px max, no radius);
+   media-4-3 — the live 1920/1440 rounded photo; text-gap — live .richtext blocks that keep their 16px margin (heading-only block
+   before text; text after a CTA row). Values: stardust/prototypes/css/tool.css */
+.columns.media-illustration .col--media picture, .columns.media-illustration .col--media img { display: inline; width: 100%; max-width: 250px; border-radius: 0; aspect-ratio: auto; object-fit: fill; vertical-align: baseline; }
+.columns.media-4-3 .col--media picture, .columns.media-4-3 .col--media img { aspect-ratio: 4 / 3; }
+.columns.text-gap .col__text :is(h1, h2, h3) + p { margin-top: 24px; }
+@media (width >= 768px) { .columns.text-gap .col__text :is(h1, h2, h3) + p { margin-top: 40px; } }
+.columns.text-gap .col__text > :first-child:not(:is(h1, h2, h3)) { margin-top: 16px; }
+.columns.text-gap .col__content > .col__text:first-child > :first-child { margin-top: 0; }
+/* ===== /tool ===== */

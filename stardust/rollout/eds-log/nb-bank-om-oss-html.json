@@ -1,0 +1,75 @@
+{
+ "slug": "nb-bank-om-oss-html",
+ "daPath": "/nb/bank/om-oss",
+ "file": "content/nb/bank/om-oss.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "send-to-bank-modal",
+   "blocks": []
+  },
+  {
+   "module": "send-to-bank__loading",
+   "blocks": []
+  },
+  {
+   "module": "visually-hidden",
+   "blocks": []
+  },
+  {
+   "module": "campaign",
+   "blocks": []
+  },
+  {
+   "module": "static-cards",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "cards",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "send-to-bank-modal: client-rendered dialog shell (dynamics) — no authored content",
+  "send-to-bank__loading: client-rendered spinner shell (dynamics) — no authored content",
+  "h1: live hides the page title visually — default content in a section styled visually-hidden",
+  "campaign: the empty second carousel instance renders 0px on live — nothing to author",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T19:50:54.236Z"
+}

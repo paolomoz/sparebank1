@@ -64,12 +64,15 @@
 
 /* shortcut button (live ffe-button--shortcut = secondary look, single line) */
 .page--markedsnytt-listing .btn--shortcut { display: inline-flex; padding: 8px 24px; border: 2px solid var(--vann); border-radius: 96px; background: var(--white); color: var(--vann); white-space: nowrap; }
+.page--markedsnytt-listing .btn--shortcut svg { width: 16px; height: 16px; margin-left: 8px; fill: currentColor; transition: all .2s cubic-bezier(.25, .1, .25, 1); }
 .page--markedsnytt-listing .btn--shortcut:hover { background: var(--vann); border-color: var(--vann); color: var(--white); }
-@media (max-width: 767px) { .page--markedsnytt-listing .btn--shortcut { display: flex; width: 100%; white-space: normal; } }
+.page--markedsnytt-listing .btn--shortcut:hover svg { transform: rotate(-90deg) translate(12px, 0); color: var(--white); }
+.page--markedsnytt-listing .btn--shortcut .btn__label { white-space: nowrap; }
+@media (max-width: 767px) { .page--markedsnytt-listing .btn--shortcut { display: flex; width: 100%; } }
 .page--markedsnytt-listing .image:not([style*="--ratio"]) picture { display: inline; }
 .page--markedsnytt-listing .image:not([style*="--ratio"]) .image__img { display: inline; vertical-align: baseline; width: 100%; }
 /* live h4 keeps a 28px line-height on mobile */
-@media (max-width: 767px) { .page--markedsnytt-listing .richtext h4 { line-height: 28px; } }
+@media (max-width: 767px) { .page--markedsnytt-listing .richtext h4 { margin-bottom: 8px; line-height: 28px; } }
 
 /* reference block = white band with a columns-grid (theme.mjs referance handler) */
 .page--markedsnytt-listing .main > .reference { max-width: none; margin: 48px 0 0; padding: 0; text-align: left; }

@@ -1,0 +1,65 @@
+{
+ "slug": "nb-bank-privat-kundeservice-verktoy-klager-html",
+ "daPath": "/nb/bank/privat/kundeservice/verktoy/klager",
+ "file": "content/nb/bank/privat/kundeservice/verktoy/klager.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "title",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "title",
+   "blocks": []
+  },
+  {
+   "module": "module",
+   "blocks": []
+  },
+  {
+   "module": "title",
+   "blocks": []
+  },
+  {
+   "module": "module",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "breadcrumbs"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style"
+ ],
+ "gaps": [
+  "module title emitted as prose",
+  "module module.module--step-by-step emitted as prose",
+  "module title emitted as prose",
+  "module module.module--accordion-list-container emitted as prose"
+ ],
+ "assets": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T19:45:40.374Z"
+}

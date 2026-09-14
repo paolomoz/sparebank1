@@ -16,6 +16,9 @@ const FAMILY = (() => { try { return Object.fromEntries(JSON.parse(fs.readFileSy
 export const familyOf = (ctx) => FAMILY[ctx.slug] || '';
 export const HUB_FAMILIES = new Set(['category-hub', 'kundeservice-hub']);
 export const isHub = (ctx) => HUB_FAMILIES.has(familyOf(ctx));
+/** Families whose bands go through the document-order walker (hub families + the market landings). */
+export const WALKER_FAMILIES = new Set([...HUB_FAMILIES, 'market-landing']);
+export const usesWalker = (ctx) => WALKER_FAMILIES.has(familyOf(ctx));
 
 /** AEM-internal resource paths (/content/sites/sb1/<path>) ARE the public <path>: normalised before lib.href resolves roster vs bounce. */
 const SITES = /^(?:https?:\/\/www\.sparebank1\.no)?\/content\/sites\/sb1\//;
@@ -40,9 +43,17 @@ const gridCols = (row) => { const m = /grid-row--cols-(\d+)/.exec(row.getAttribu
  *  the prototype carries it as `--w` on .image (market-landing); the hub illustration (kundeservice cols) is the lifted 400px. → cell model token `wN`. */
 function illustrationWidth(col) {
   const cc = q(col, ':scope > .col__content'); if (!cc) return null;
-  const imgs = qa(cc, 'img'); if (!imgs.length || [...cc.children].some((ch) => !/\bimage\b/.test(ch.getAttribute('class') || ''))) return null;
-  const src = imgs[0].getAttribute('src') || ''; if (!/\.svg(\?|$)/i.test(src)) return null;
-  const m = /--w:\s*(\d+)px/.exec(q(cc, '.image')?.getAttribute('style') || ''); return `w${m ? m[1] : 400}`;
+  const image = q(cc, ':scope > .image'); const img = image && q(image, 'img'); if (!img) return null;
+  const m = /--w:\s*(\d+)px/.exec(image.getAttribute('style') || ''); if (m) return `w${m[1]}`; // authored max-width (live img style)
+  const imageOnly = [...cc.children].every((ch) => /\bimage\b/.test(ch.getAttribute('class') || ''));
+  return imageOnly && /\.svg(\?|$)/i.test(img.getAttribute('src') || '') ? 'w400' : null; // hub illustration column (lifted 400px)
+}
+/** A link-list column: a heading / label followed by ≥2 paragraphs that are each a single plain link (market-landing bands). */
+function isLinkList(col) {
+  const cc = q(col, ':scope > .col__content'); if (!cc || q(cc, 'a.btn, .button-wrap')) return false;
+  const ps = qa(cc, '.richtext > p').filter((p) => p.textContent.trim());
+  const links = ps.filter((p) => p.children.length === 1 && p.children[0].tagName === 'A' && p.textContent.trim() === p.children[0].textContent.trim());
+  return links.length >= 2 && links.length >= ps.length - 1;
 }
 
 /** One live .grid-row → { kind: 'cards' | 'columns' | 'prose' } — mirrors core band(): card-grid row, single centred heading row, text/image columns.
@@ -62,6 +73,7 @@ export function gridRow(row, ctx) {
     if (chat) { html += `<p>${esc(q(chat, 'textarea')?.getAttribute('placeholder') || q(chat, 'label')?.textContent.trim() || '')}</p>`; variants.push('chat'); ctx.notes.push('columns chat: the boost.ai entry field (dynamics #6 interim, no backend) — the trailing paragraph of the last cell is the field label (EW8: the authored <p> moves into the <label>); "Send melding" is fixed control chrome'); }
     return html;
   });
+  if (cols.some(isLinkList)) variants.push('link-list');
   if (q(row, '.lead-blue')) { const ps = qa(row, '.col__content .richtext p').filter((p) => p.textContent.trim()); const leads = ps.filter((p) => q(p, '.lead-blue')); variants.push(leads.length === ps.length ? 'lead-all' : 'lead'); } // lead-all: every text paragraph is a lead (live h2 + .lead-blue ×N)
   const gc = gridCols(row); if (gc) variants.push(gc);
   return { kind: 'columns', variants, cells };
@@ -160,6 +172,6 @@ export default {
 
   // band / cols: the hub walker only where the core encoder mis-encodes (document order, nested bands, related icon lists, cols-N grids, syrin tint)
   // + the hub module rhythm: live category-hub .main > .band/.cols carry margin-top 48/72; kundeservice-hub bands sit flush (its top band opens the page), its cols carry it
-  band: (root, ctx) => { const r = isHub(ctx) && needsHubBand(root) ? hubBand(root, ctx) : CORE.band(root, ctx); return familyOf(ctx) === 'category-hub' ? withStyle(r, 'gap-48') : r; },
-  cols: (root, ctx) => { const r = isHub(ctx) && needsHubBand(root) ? hubBand(root, ctx, { topLevelCols: true }) : CORE.cols(root, ctx); return isHub(ctx) ? withStyle(r, 'gap-48') : r; },
+  band: (root, ctx) => { const r = usesWalker(ctx) && needsHubBand(root) ? hubBand(root, ctx) : CORE.band(root, ctx); return familyOf(ctx) === 'category-hub' ? withStyle(r, 'gap-48') : r; },
+  cols: (root, ctx) => { const r = usesWalker(ctx) && needsHubBand(root) ? hubBand(root, ctx, { topLevelCols: true }) : CORE.cols(root, ctx); return isHub(ctx) ? withStyle(r, 'gap-48') : r; },
 };

@@ -34,6 +34,8 @@ export default function decorate(block) {
       // the tag line: a short link-less paragraph before the title (live renders it uppercase)
       const t = node.textContent.trim();
       if (node.tagName === 'P' && t && t.length < 30 && !node.querySelector('a') && !content.querySelector('.card__title') && (news || t === t.toUpperCase())) { node.classList.add('card__tag'); content.append(node); return; }
+      // news rail: the short date-shaped paragraph after the title is the publication date (live .card__date) — additive
+      if (news && node.tagName === 'P' && content.querySelector('.card__title') && /^\d{1,2}\.\s*\p{L}+\s+\d{4}$/u.test(t)) { node.classList.add('card__date'); content.append(node); return; }
       node.classList.add('card__text'); content.append(node);
     });
     bodyEl.append(content, el('div', { class: 'card__arrow' }, icon('arrow')));

@@ -1,7 +1,9 @@
 {
   "detector": {
     "ignoreRules": [],
-    "ignoreFiles": [],
+    "ignoreFiles": [
+      "stardust/prototypes/css/canon.css"
+    ],
     "ignoreValues": [
       {
         "rule": "design-system-font",
@@ -25,8 +27,23 @@
         "rule": "design-system-font",
         "value": "sparebank1-italic",
         "createdAt": "2026-09-14T16:56:09.741Z",
-        "reason": "mirrors the live site's stack: clientlib declares SpareBank1-italic for <i>/<em> but never loads it (falls back to arial italic) — content-diff font-fork parity, replica fidelity"
+        "reason": "mirrors the live site's stack: clientlib declares SpareBank1-italic for <i>/<em> but never loads it (falls back to arial italic) \u2014 content-diff font-fork parity, replica fidelity"
+      },
+      {
+        "rule": "bounce-easing",
+        "value": "cubic-bezier(.46, -.265, .48, 1.38)",
+        "createdAt": "2026-09-14T19:28:44.722712Z",
+        "reason": "same-design replica: the value is the live site's FFE --ease-back token (clientlib sb1/nettsider), mirrored verbatim so motion parity holds; not a design choice of ours"
+      },
+      {
+        "rule": "bounce-easing",
+        "value": "cubic-bezier(0.46, -0.265, 0.48, 1.38)",
+        "createdAt": "2026-09-14T19:28:44.722712Z",
+        "reason": "same-design replica: the value is the live site's FFE --ease-back token (clientlib sb1/nettsider), mirrored verbatim so motion parity holds; not a design choice of ours"
       }
-    ]
+    ],
+    "ignoreFilesReasons": {
+      "stardust/prototypes/css/canon.css": "replica canon = the live site's own CSS lifted verbatim (incl. accordion height/margin transitions, canon-requests.md); design-rule linting applies to the target styles/ and blocks/, not to the mirror"
+    }
   }
 }

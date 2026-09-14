@@ -313,3 +313,12 @@ header .header {
   .header .header__mainnav a:hover { color: var(--fjell); }
 }
 
+
+/* ===== market-landing (additive) =====
+   the mobile market strip under the header ("Privat" · "Gå til bedrift"), stardust/prototypes/css/market-landing.css .market-nav */
+.header .header__market-strip { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; color: var(--text); }
+.header .header__market-strip .header__market-active { display: block; font: 400 24px/28px var(--font-heading); color: var(--fjell); }
+.header .header__market-strip a.header__market-goto:any-link { display: block; font: 400 16px/24px var(--font); color: var(--text); border: 0; text-decoration: underline; }
+.header .header__market-strip a.header__market-goto:hover { color: var(--fjell); }
+@media (width >= 1024px) { .header .header__market-strip { display: none; } }
+/* ===== /market-landing ===== */

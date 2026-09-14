@@ -1,0 +1,60 @@
+{
+  "pageType": "markedsnytt-listing",
+  "family": "markedsnytt-listing",
+  "archetype": "nb-bank-privat-sparing-markedsnytt-html",
+  "liveUrl": "https://www.sparebank1.no/nb/bank/privat/sparing/markedsnytt.html",
+  "prototype": "stardust/prototypes/nb-bank-privat-sparing-markedsnytt-html-proposed.html",
+  "css": ["css/ffe-tokens.css", "css/canon.css", "css/markedsnytt-listing.css"],
+  "generator": "stardust/scripts/replica/author.mjs + modules/markedsnytt-listing.mjs (video) + modules/theme.mjs (featured card / referance / text, gated on the family set) + market-landing.mjs (image, related-topics — owns those registry keys)",
+  "chromeVariant": "PRIVAT (canon header/footer + bank-choice band) — nothing variant-specific",
+  "liveHits": 14,
+  "breakpoints": {
+    "1440": {
+      "pixelRounds": 9,
+      "liveGateIterations": 1,
+      "result": { "structuralRed": 0, "structuralRedJustified": 0, "yellow": 3, "visualFlags": 6, "pixelPct": 6.97, "heightDelta": 24, "pixelPctIfDatesRestored": 4.30, "heightDeltaIfDatesRestored": -3, "chromeHeaderPct": 99.58, "chromeFooterPct": 99.69, "pass": true },
+      "justified": [
+        "content-diff 🟡 MISSING BODY ×3 (\"29. juni 2026\", \"29. juni 2026\", \"19. mai 2026\") + 3 img: the newsfeed `.card__date` and the card chevron <img> are dropped by canon card(); the family patch in markedsnytt-listing.mjs is unreachable because market-landing.mjs owns the `related-topics` registry key (sorts after this file) and gates its own date/chevron patch on ctx.family === 'market-landing' → one-line fix for the parent: add 'markedsnytt-listing' to that gate (canon-requests)",
+        "Δh 24 = the three 27px card dates (padded diagnostic: Δ-3, 4.30 %)",
+        "hot band y 2500–3000 (16.4 %): the second YouTube embed — the captured DOM carries its src (lazyloader had fired) so the prototype renders the player, while the live capture shows the SpareBank 1 placeholder (player did not paint in the headless capture); the other two embeds are mirrored as captured (placeholder, data-video-url, no src)",
+        "visual-diff STRETCHED IMAGE ×6: article cards 302x270 and newsfeed 298x200 are object-fit:cover crops on live too",
+        "chrome-parity header Δh +2 topnav line-height, footer social icon deltas: canon (canon-requests)"
+      ],
+      "residuals": ["card dates (collision, see above)", "second video embed renders the player where the live capture shows the placeholder"]
+    },
+    "360": {
+      "pixelRounds": 9,
+      "liveGateIterations": 1,
+      "result": { "structuralRed": 0, "structuralRedJustified": 0, "yellow": 3, "visualFlags": 3, "pixelPct": 12.59, "heightDelta": 28, "pixelPctIfDatesRestored": 5.33, "heightDeltaIfDatesRestored": 1, "chromeHeaderPct": 96.42, "chromeHeaderPctExcludingSkipLink": 99.90, "chromeFooterPct": 98.97, "pass": false, "passIfDatesRestored": true },
+      "justified": [
+        "FAIL is the 27px shift below the newsfeed rail (missing `.card__date` ×3, registry collision — see 1440): padding the prototype capture by 27 rows at the rail's end gives 5.33 % / Δ1, i.e. the family CSS itself is at the bar",
+        "hot band y 1500–2000 (15.9 %): article card photos (310x200 cover crops, JPEG rescale noise) — same geometry",
+        "hot band y 3000–3500 (26.8 %): the second YouTube embed (see 1440)",
+        "content-diff 🟡 ×3 dates (same), visual-diff STRETCHED IMAGE ×3 newsfeed cover crops"
+      ],
+      "residuals": ["card dates (collision)", "header skip link x<115 (99.90 % excluding it)", "video #2 player vs placeholder"]
+    }
+  },
+  "captureState": [
+    "consent dismissed with button:has-text(\"Godta alle\"); skip link 'Til hovedmeny' in the live header capture",
+    "live 1440 stitched 1440x7381 (= lifted docH); live 360 stitched 360x10264 (= lifted docH)",
+    "article list (artikler.export.json) and newsfeed rail settled in the sidecar → mirrored as DOM; newsfeed dates present in the sidecar but not in the build (collision)",
+    "video: 3 `.video-wrap` (placeholder logo.svg + iframe); captured DOM has src only on videoPlayer1 → mirrored: that iframe loads, the other two keep data-video-url and show the placeholder as on live",
+    "lazyload portraits (data-lazy-src) resolved by market-landing.mjs's image handler; authored max-width carried as --w (300px) and image-center; the 1:1 ratio portraits are 250px (family CSS)"
+  ],
+  "motion": {
+    "observed": "stardust/replica/motion/markedsnytt-1440.json, markedsnytt-360.json — 0 animations; hovers: nav → fjell, .card__container--clickable → #e7f1f9 + ring, .ffe-button--shortcut → bg vann / white text + arrow svg transform, .ffe-button--primary → fjell; .card__container--featured and .video-wrap: no change; bank-choice secondary button transitions, mobile header morph, to-top as canon",
+    "implemented": [".btn--shortcut:hover (bg vann, white text) and .btn--shortcut:hover svg { transform: rotate(-90deg) translate(12px,0) } in markedsnytt-listing.css (category-hub.css carries the same lifted rule for its family)"],
+    "canonCovers": ["nav hover", ".card--clickable:hover", ".btn--primary:hover", "mobile header morph", "to-top", "bank-choice"],
+    "dead": [".card__container--featured hover", ".video-wrap hover"],
+    "pixelAfterMotion": { "1440": 6.97, "360": 12.59 }
+  },
+  "inconsistencyRegister": [
+    "registry key collisions: `image` and `related-topics` are owned by market-landing.mjs; the family cannot patch the newsfeed date (see canon-requests)",
+    "canon `.main > .band:first-of-type { margin-top:-36px }` fires on the first band after the .cols hero; canon `.main > .related-topics` gets 72px after a band where live is flush",
+    "canon h3 uses the title face; live is the medium face (band 5 row 3 wrapped one line less until scoped)",
+    "the featured article card body is `.card__container-content > wrapper(.text) + .button` (the button sits outside the wrapper)"
+  ],
+  "approvedBy": "worker C (fork) — gate per ARCHETYPE-BRIEF.md; 360 fails only on the registry-collision shift",
+  "approvedAt": "2026-09-14T23:40:00+02:00"
+}

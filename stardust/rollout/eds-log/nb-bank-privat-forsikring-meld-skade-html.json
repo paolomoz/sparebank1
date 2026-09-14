@@ -1,0 +1,80 @@
+{
+ "slug": "nb-bank-privat-forsikring-meld-skade-html",
+ "daPath": "/nb/bank/privat/forsikring/meld-skade",
+ "file": "content/nb/bank/privat/forsikring/meld-skade.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "module",
+   "blocks": []
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "breadcrumbs",
+  "cards",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style",
+  "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-hjemmekontor.svg is 45095 bytes of SVG (> 40000) — authored as DA media dame-hjemmekontor.png (rasterised)",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [
+  "module module.module--accordion emitted as prose"
+ ],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-hjemmekontor.svg"
+ ],
+ "writtenAt": "2026-09-14T19:45:39.923Z"
+}

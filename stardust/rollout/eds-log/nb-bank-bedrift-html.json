@@ -1,0 +1,105 @@
+{
+ "slug": "nb-bank-bedrift-html",
+ "daPath": "/nb/bank/bedrift",
+ "file": "content/nb/bank/bedrift.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "send-to-bank-modal",
+   "blocks": []
+  },
+  {
+   "module": "send-to-bank__loading",
+   "blocks": []
+  },
+  {
+   "module": "visually-hidden",
+   "blocks": []
+  },
+  {
+   "module": "campaign",
+   "blocks": [
+    "carousel"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "static-cards",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "banner-small",
+   "blocks": [
+    "banner"
+   ]
+  },
+  {
+   "module": "campaign",
+   "blocks": [
+    "carousel"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards"
+   ]
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "carousel",
+  "columns",
+  "cards",
+  "banner"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "send-to-bank-modal: client-rendered dialog shell (dynamics) — no authored content",
+  "send-to-bank__loading: client-rendered spinner shell (dynamics) — no authored content",
+  "h1: live hides the page title visually — default content in a section styled visually-hidden",
+  "lint D11 carousel: the campaign hero carousel (Block Collection carousel shape) — one row per slide [image][heading, lead, text, CTA]; the live capture shows one slide (campaign rotation = permanent residual); the decorative image link duplicates the CTA and is not authored",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/bonde-ku-landbruk-mork.svg is 56362 bytes of SVG (> 40000) — authored as DA media bonde-ku-landbruk-mork.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2023/folk-med-sportsutstyr-dame-gutt-basketball-hockey-lys.svg is 49883 bytes of SVG (> 40000) — authored as DA media folk-med-sportsutstyr-dame-gutt-basketball-hockey-lys.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2025/mobilbank-bedrift.svg is 43191 bytes of SVG (> 40000) — authored as DA media mobilbank-bedrift.png (rasterised)",
+  "lint D11 carousel: the campaign hero carousel (Block Collection carousel shape) — one row per slide [image][heading, lead, text, CTA]; the live capture shows one slide (campaign rotation = permanent residual); the decorative image link duplicates the CTA and is not authored",
+  "cards grid: consecutive same-shaped card rows folded into one block (D9)",
+  "cards grid: consecutive same-shaped card rows folded into one block (D9)"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/bonde-ku-landbruk-mork.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2023/folk-med-sportsutstyr-dame-gutt-basketball-hockey-lys.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2025/mobilbank-bedrift.svg"
+ ],
+ "writtenAt": "2026-09-14T19:50:54.227Z"
+}

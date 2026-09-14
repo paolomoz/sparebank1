@@ -17,3 +17,18 @@ main .section .callout-wrapper { max-width: 640px; }
   .callout .callout__body :is(h2, h3, h4) { margin-bottom: 24px; font-size: 18px; line-height: 24px; }
   .callout .callout__body a.button:any-link { display: inline-flex; width: auto; margin: 0 -4px; }
 }
+
+/* ===== tool (additive variants) =====
+   left — the live tip--left box (text left-aligned); lg-8 / lg-10 — the live message-box column width (col-lg-8 = 853.33px, col-lg-10 = 1066.67px;
+   the box fills the column unless `small`). Values: stardust/prototypes/css/tool.css */
+.callout.left .callout__body, .callout.left .callout__body :is(h2, h3, h4, p) { text-align: left; }
+.callout.left .callout__body h3 { margin: 0 0 8px; }
+.callout:is(.lg-8, .lg-10) .callout__box { max-width: none; }
+.callout.small .callout__box { max-width: 480px; }
+main .section .callout-wrapper:has(> .callout.lg-8) { max-width: 853.33px; }
+main .section .callout-wrapper:has(> .callout.lg-10) { max-width: 1066.67px; }
+@media (width >= 768px) { .callout.left .callout__body h3 { margin-bottom: 24px; } }
+/* spacer-N — N trailing <p>&nbsp;</p> author spacers in the live box (24px line + 16px margin each); the pipeline drops empty paragraphs */
+.callout.spacer-1 .callout__body::after { content: ''; display: block; height: 40px; }
+.callout.spacer-2 .callout__body::after { content: ''; display: block; height: 80px; }
+/* ===== /tool ===== */

@@ -1,0 +1,132 @@
+{
+ "slug": "nb-bank-privat-pensjon-html",
+ "daPath": "/nb/bank/privat/pensjon",
+ "file": "content/nb/bank/privat/pensjon.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "title",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "cobranding",
+   "blocks": [
+    "cobranding"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "shortcuts"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "faq",
+   "blocks": [
+    "accordion"
+   ]
+  },
+  {
+   "module": "related-products",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "reference",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "cards",
+  "cobranding",
+  "columns",
+  "shortcuts",
+  "accordion",
+  "feedback"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/stable-penger-lys-hand.svg is 55566 bytes of SVG (> 40000) — authored as DA media stable-penger-lys-hand.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/sparing-2.svg is 44279 bytes of SVG (> 40000) — authored as DA media sparing-2.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/dame-tenker-okonomi-sammenlikner.svg is 51143 bytes of SVG (> 40000) — authored as DA media dame-tenker-okonomi-sammenlikner.png (rasterised)",
+  "cards grid: consecutive same-shaped card rows folded into one block (D9)",
+  "lint D3 cobranding: single-cell rows read by position — row 1 heading + toggle label (EW8: the label moves into the expand button), row 2 partner logo + title, rows 3+ one panel column each; the panel is closed at rest (dynamics #14 static snapshot)",
+  "media: https://www.sparebank1.no/privat/forsikring/pensjon/assets/menneske_person_tenaaring_2-CZfMiezN.svg is 50135 bytes of SVG (> 40000) — authored as DA media menneske_person_tenaaring_2-CZfMiezN.png (rasterised)",
+  "cards grid: consecutive same-shaped card rows folded into one block (D9)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg is 860616 bytes of SVG (> 40000) — authored as DA media illustrasjon-sporsmal-sand-sirkel-usymmetrisk.png (rasterised)",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [
+  "module title emitted as prose"
+ ],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/stable-penger-lys-hand.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/sparing-2.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/dame-tenker-okonomi-sammenlikner.svg",
+  "https://www.sparebank1.no/privat/forsikring/pensjon/assets/menneske_person_tenaaring_2-CZfMiezN.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg"
+ ],
+ "writtenAt": "2026-09-14T19:43:47.827Z"
+}

@@ -22,3 +22,42 @@ main .section .banner-wrapper { max-width: var(--container); }
   .banner .banner-small__heading { font-size: 28px; line-height: 36px; }
   .banner .banner-small__bottom { flex-direction: row; justify-content: flex-start; height: 60px; min-height: 0; }
 }
+
+/* ===== market-landing (additive variant) =====
+   columns — the two-tone banner (stardust/prototypes/css/market-landing.css .banner-small--columns*): two halves, frost / sand,
+   600px inner boxes (row-reverse: text left, illustration right), the second half text-only with the partner logo after its CTA. */
+.banner.columns { display: block; max-width: none; padding: 0; }
+.banner.columns .banner-small__columns { display: flex; flex-direction: column; }
+.banner.columns .banner-small__column { display: flex; flex: 1 1 50%; justify-content: center; padding: 54px 16px 0; }
+.banner.columns .banner-small__column--two { padding: 0 16px; }
+.banner.columns .banner-small__column--color2 { background: var(--frost-30); }
+.banner.columns .banner-small__column--color4 { background: var(--sand-30); }
+.banner.columns .banner-small__column--color7 { background: var(--white); }
+.banner.columns .banner-small__inner--col { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; max-width: 768px; padding: 0; }
+.banner.columns .banner-small__inner--col > .banner-small__media { display: block; width: 200px; max-width: 200px; height: 150px; margin: -60px 0 -90px; }
+.banner.columns .banner-small__inner--col > .banner-small__media picture, .banner.columns .banner-small__inner--col > .banner-small__media img { display: block; width: 200px; height: 150px; margin: 0; border-radius: 0; object-fit: contain; }
+.banner.columns .banner-small__inner--col > .banner-small__text { width: 100%; padding: 100px 0 20px; text-align: center; color: var(--fjell); }
+.banner.columns .banner-small__inner--col > .banner-small__text--wide { padding: 20px 0; }
+.banner.columns .banner-small__heading { margin: 0; font-size: 20px; line-height: 24px; }
+.banner.columns .banner-small__info { margin: 0; }
+.banner.columns .banner-small__bottom { display: flex; flex-direction: column-reverse; align-items: center; justify-content: center; min-height: 0; }
+.banner.columns .banner-small__bottom p { margin: 8px 0; }
+.banner.columns .banner-small__bottom p.banner-small__bottom-image, .banner.columns .banner-small__bottom-image { margin: 20px 0 0; line-height: 24px; }
+.banner.columns .banner-small__bottom-image:not(:empty) { height: 37px; }
+.banner.columns .banner-small__bottom-image picture { display: inline; }
+.banner.columns .banner-small__bottom-image img { display: inline; width: auto; height: 30px; vertical-align: baseline; }
+
+@media (width >= 768px) {
+  .banner.columns .banner-small__columns { flex-direction: row; }
+  .banner.columns .banner-small__column { height: 190px; padding: 0 16px; justify-content: flex-start; }
+  .banner.columns .banner-small__inner--col { flex-direction: row-reverse; width: 600px; max-width: 600px; height: 190px; }
+  .banner.columns .banner-small__inner--right { margin-left: auto; }
+  .banner.columns .banner-small__inner--col > .banner-small__media { display: flex; justify-content: flex-start; width: 200px; height: 190px; margin: 0; }
+  .banner.columns .banner-small__inner--col > .banner-small__media picture, .banner.columns .banner-small__inner--col > .banner-small__media img { width: auto; height: 190px; }
+  .banner.columns .banner-small__inner--col > .banner-small__text { width: 400px; padding: 20px; text-align: left; }
+  .banner.columns .banner-small__inner--col > .banner-small__text--wide { width: 600px; align-self: flex-start; padding: 20px; }
+  .banner.columns .banner-small__heading { font-size: 28px; line-height: 36px; }
+  .banner.columns .banner-small__bottom { flex-direction: row; justify-content: flex-start; align-items: center; height: 60px; }
+  .banner.columns .banner-small__bottom p.banner-small__bottom-image, .banner.columns .banner-small__bottom-image { margin: 5px 0 0 20px; }
+}
+/* ===== /market-landing ===== */

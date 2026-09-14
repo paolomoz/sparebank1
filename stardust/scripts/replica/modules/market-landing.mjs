@@ -35,7 +35,7 @@ export default {
     const feed = ctx.el('div', { class: 'newsfeed' }); const track = ctx.el('div', { class: 'newsfeed__track' });
     for (const c of node.querySelectorAll('.card')) {
       const card = ctx.card(c, 'card--news');
-      if (ctx.family === 'market-landing') {
+      if (ctx.family === 'market-landing' || ctx.family === 'markedsnytt-listing') { // both families carry the live .card__date (registry key owned here; markedsnytt-listing.mjs sorts before this file)
         const d = c.querySelector('.card__date'); if (d) card.querySelector('.card__content')?.append(ctx.el('span', { class: 'card__date' }, [ctx.txt(d)]));
         const arrowImg = c.querySelector('.card__container-content-arrow img'); if (arrowImg && !card.querySelector('.card__arrow')) card.querySelector('.card__body')?.append(ctx.el('div', { class: 'card__arrow' }, [ctx.cleanCopy(arrowImg)])); // live chevron is an <img>, canon only carries <svg> arrows
       }

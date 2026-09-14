@@ -14,12 +14,22 @@
    ]
   },
   {
+   "module": "send-to-bank-modal",
+   "blocks": []
+  },
+  {
+   "module": "send-to-bank__loading",
+   "blocks": []
+  },
+  {
    "module": "visually-hidden",
    "blocks": []
   },
   {
    "module": "campaign",
-   "blocks": []
+   "blocks": [
+    "carousel"
+   ]
   },
   {
    "module": "band",
@@ -32,6 +42,10 @@
    "blocks": [
     "banner"
    ]
+  },
+  {
+   "module": "campaign",
+   "blocks": []
   },
   {
    "module": "related-topics",
@@ -52,22 +66,26 @@
  ],
  "blocks": [
   "bank-choice",
+  "carousel",
   "columns",
   "banner",
   "cards"
  ],
  "notes": [
-  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally"
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "send-to-bank-modal: client-rendered dialog shell (dynamics) — no authored content",
+  "send-to-bank__loading: client-rendered spinner shell (dynamics) — no authored content",
+  "h1: live hides the page title visually — default content in a section styled visually-hidden",
+  "lint D11 carousel: the campaign hero carousel (Block Collection carousel shape) — one row per slide [image][heading, lead, text, CTA]; the live capture shows one slide (campaign rotation = permanent residual); the decorative image link duplicates the CTA and is not authored",
+  "lint D3 banner columns: one row per half — [illustration][heading, line, CTA(, partner logo)]; the colour variants are read in row order (like the columns lg-* cell model)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/jubelkor-lys-bakgrunn.svg is 52845 bytes of SVG (> 40000) — authored as DA media jubelkor-lys-bakgrunn.png (rasterised)",
+  "campaign: the empty second carousel instance renders 0px on live — nothing to author",
+  "cards news: a news card carries its publication date as the paragraph after the title (live .card__date)"
  ],
- "gaps": [
-  "module send-to-bank-modal produced no content",
-  "module send-to-bank__loading produced no content",
-  "module visually-hidden emitted as prose",
-  "no encoder for module visually-hidden",
-  "module campaign emitted as prose",
-  "no encoder for module campaign",
-  "module campaign campaign--empty produced no content"
- ],
+ "gaps": [],
  "assets": [],
- "writtenAt": "2026-09-14T18:34:31.590Z"
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/jubelkor-lys-bakgrunn.svg"
+ ],
+ "writtenAt": "2026-09-14T19:42:58.331Z"
 }

@@ -109,6 +109,7 @@
 .cards.small .card__body { padding: 16px 8px 16px 16px; }
 .cards.small .card__title { font-size: 17px; line-height: 20px; }
 .cards.grid.cols-8 .card--no-image .card__title { font-size: 20px; line-height: 20px; } /* live card--medium title (no image) */
+.cards.grid.cols-8 .card { height: auto; } /* live: the card sits on its 16px margin inside the row, it does not stretch */
 
 @media (width >= 768px) {
   .cards.nav .card-list li { margin-top: 10px; }
@@ -132,7 +133,6 @@
   .cards.small .card__title { font-size: 18px; line-height: 24px; }
   .cards.grid.cols-8 .card-list { grid-template-columns: repeat(2, 1fr); max-width: min(66.6667%, 853.33px); }
   .cards.grid.cols-8 .card--no-image .card__title { font-size: 20px; line-height: 24px; }
-  .cards.grid.cols-8 .card { height: auto; } /* live: the 88px card sits on its 16px margin inside the 120px row, it does not stretch */
   .cards.grid.cols-10 .card-list { max-width: min(83.3333%, 1066.67px); }
 }
 
@@ -140,4 +140,6 @@
   .cards.small .card-list li { width: 33.333%; max-width: 400px; }
   .cards.grid.cols-8 .card-list { grid-template-columns: repeat(2, 1fr); }
 }
+/* news date line (market-landing rail): under the title, tag-sized */
+.cards.news .card__date { display: block; max-width: fit-content; margin: 0; padding: 4px 0; font-size: 14px; line-height: 1.4; }
 /* ===== /category-hub / kundeservice-hub ===== */

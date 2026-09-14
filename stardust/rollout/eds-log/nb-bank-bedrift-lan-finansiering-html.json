@@ -1,0 +1,94 @@
+{
+ "slug": "nb-bank-bedrift-lan-finansiering-html",
+ "daPath": "/nb/bank/bedrift/lan-finansiering",
+ "file": "content/nb/bank/bedrift/lan-finansiering.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "title",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "vnav",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "vnav",
+   "blocks": []
+  },
+  {
+   "module": "vnav",
+   "blocks": []
+  },
+  {
+   "module": "vnav",
+   "blocks": []
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "breadcrumbs",
+  "cards",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "cards nav: 4 visual-nav modules (0 photo, 4 icon) folded into one block — one row per card",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [
+  "module title emitted as prose"
+ ],
+ "assets": [
+  "chevron.svg"
+ ],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T19:43:47.748Z"
+}

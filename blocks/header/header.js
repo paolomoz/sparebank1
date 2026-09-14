@@ -75,6 +75,16 @@ export default async function decorate(block) {
   wrap.append(content);
   block.replaceChildren(wrap); inlineIcons(block);
 
+  // market landings (privat / bedrift) show the live mobile market strip under the header — the active market and the way over to
+  // the other one — derived from the authored /nav market list (additive; om-oss has no strip on live)
+  if (getMetadata('template') === 'market-landing' && marketUl) {
+    const isMarketPath = (a) => { try { return /\/nb\/bank\/(privat|bedrift)$/.test(new URL(a.getAttribute('href'), window.location.href).pathname.replace(/\/$/, '')); } catch { return false; } };
+    const active = marketUl.querySelector('li.is-active a'); const other = [...marketUl.querySelectorAll('li:not(.is-active) a')].find(isMarketPath);
+    if (active && other && isMarketPath(active)) {
+      block.append(el('nav', { class: 'header__market-strip', 'aria-label': 'Marked' }, el('span', { class: 'header__market-active' }, text(active)), el('a', { class: 'header__market-goto', href: other.getAttribute('href') }, `Gå til ${text(other).toLowerCase()}`)));
+    }
+  }
+
   // behaviour (observed) — mobile scroll morph + hamburger
   const THRESHOLD = 130; let bottomScrollPoint = 0; let last = 0;
   const onScroll = () => {

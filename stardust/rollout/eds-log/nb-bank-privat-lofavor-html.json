@@ -1,0 +1,75 @@
+{
+ "slug": "nb-bank-privat-lofavor-html",
+ "daPath": "/nb/bank/privat/lofavor",
+ "file": "content/nb/bank/privat/lofavor.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns",
+    "cards"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  },
+  {
+   "module": "reference",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "breadcrumbs",
+  "columns",
+  "cards",
+  "feedback"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "band: the empty nested band (live 48/32px spacer under the h1) is layout → section style hub-head",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/mann-sofa-lese.svg is 43614 bytes of SVG (> 40000) — authored as DA media mann-sofa-lese.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/sparing-2.svg is 44279 bytes of SVG (> 40000) — authored as DA media sparing-2.png (rasterised)",
+  "cards grid: consecutive same-shaped card rows folded into one block (D9)",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/mann-sofa-lese.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/sparing-2.svg"
+ ],
+ "writtenAt": "2026-09-14T19:43:47.813Z"
+}

@@ -15,7 +15,9 @@
   },
   {
    "module": "band",
-   "blocks": []
+   "blocks": [
+    "table"
+   ]
   },
   {
    "module": "tip",
@@ -32,10 +34,18 @@
  ],
  "blocks": [
   "columns",
+  "table",
   "callout"
  ],
- "notes": [],
+ "notes": [
+  "table: the live caption \"Finn din bank\" is visually hidden (accessible name) — not authored (EW5 text-as-metadata would be the alternative; the heading context names the table)",
+  "lint D11 table: the Block Collection data-table block — one row per table row, first row = header (the live header cells are bold td); the EDS pipeline turns any authored <table> into a block, so this IS the native table",
+  "richtext: 1 leading empty paragraph(s) (the live author spacer <p>&nbsp;</p>) → section style spacer-1; the pipeline drops empty paragraphs",
+  "lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+  "columns text-center: every paragraph of the row is a live p.ta-center — centred by the block variant (David's Model has no inline alignment)"
+ ],
  "gaps": [],
  "assets": [],
- "writtenAt": "2026-09-14T18:34:57.722Z"
+ "rasterise": [],
+ "writtenAt": "2026-09-14T19:40:02.056Z"
 }
