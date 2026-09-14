@@ -26,8 +26,10 @@ if (fs.existsSync(encDir)) for (const f of fs.readdirSync(encDir).filter((x) => 
 const FAMILY_GROUPS = [['category-hub', 'kundeservice-hub', 'market-landing'], ['utility', 'tool']];
 const encodersFor = (family) => {
   const group = FAMILY_GROUPS.find((g) => g.includes(family)) || [family];
-  const out = { ...CORE_ENCODERS };
-  for (const [fam, enc] of Object.entries(FAMILY_ENCODERS)) if (!group.includes(fam)) for (const [k, v] of Object.entries(enc)) if (!(k in CORE_ENCODERS) && !(k in out)) out[k] = v;
+  const out = { ...CORE_ENCODERS }; const shared = {};
+  for (const [fam, enc] of Object.entries(FAMILY_ENCODERS)) if (!group.includes(fam)) for (const [k, v] of Object.entries(enc)) if (!(k in CORE_ENCODERS)) (shared[k] ||= []).push(v);
+  // several families may own the same new key with their own family gate (title: category-hub, tool) — try each until one answers
+  for (const [k, fns] of Object.entries(shared)) out[k] = fns.length === 1 ? fns[0] : (root, ctx) => { for (const fn of fns) { const r = fn(root, ctx); if (r) return r; } return null; };
   for (const fam of group) Object.assign(out, FAMILY_ENCODERS[fam] || {});
   return out;
 };
@@ -49,8 +51,11 @@ function metadataBlock(pg, doc, chrome) {
   const cap = JSON.parse(fs.readFileSync(`stardust/current/pages/${pg.slug}.json`, 'utf8'));
   const rows = [['title', title], ['description', meta('description') || cap.metaDescription || ''], ['image', cap.og?.image || ''], ['template', pg.archetypeFamily], ['market', /\/nb\/bank\/bedrift/.test(pg.url) ? 'bedrift' : /\/nb\/bank\/om-oss/.test(pg.url) ? 'om-oss' : 'privat'], ['source', pg.url]];
   if (cap.og?.type) rows.push(['og:type', cap.og.type]);
-  if (chrome?.nav && chrome.nav !== '/nav') rows.push(['nav', chrome.nav]);
-  if (chrome?.footer && chrome.footer !== '/footer') rows.push(['footer', chrome.footer]);
+  // header.js/footer.js fall back to the market chrome (bedrift / om-oss) when a page has no explicit row — so a non-privat page that
+  // genuinely uses the privat documents (om-oss/vare-eksperter → /footer) must say so explicitly
+  const market = /\/nb\/bank\/bedrift/.test(pg.url) ? 'bedrift' : /\/nb\/bank\/om-oss/.test(pg.url) ? 'om-oss' : 'privat';
+  if (chrome?.nav && (chrome.nav !== '/nav' || market !== 'privat')) rows.push(['nav', chrome.nav]);
+  if (chrome?.footer && (chrome.footer !== '/footer' || market !== 'privat')) rows.push(['footer', chrome.footer]);
   return L.block('metadata', [], rows.filter(([, v]) => v).map(([k, v]) => [k, L.esc(v)]));
 }
 

@@ -18,17 +18,12 @@
  ],
  "newBlocks": [],
  "sectionStyles": "styles.css /* ===== theme ===== */: title (W2 skin reused), theme-intro (+max-900), theme-lead, theme-image (+w-250), band-tail, theme-ref + rule / rule-72 (hr-driven 48|64 → 64|72), theme-cols, cta",
- "chrome": { "nav": "/nav-bedrift", "footer": "/footer-bedrift" },
+ "chrome": {
+  "nav": "/nav-bedrift",
+  "footer": "/footer-bedrift"
+ },
  "iterations": 4,
  "breakpoints": {
-  "1440": {
-   "pixelPct": 3.66,
-   "heightDelta": 5,
-   "chromeHeaderPct": 0.42,
-   "chromeFooterPct": 1.22,
-   "pass": true,
-   "evidence": "stardust/replica/gates/borettslag-eds-1440/ (pixel-iter4.txt, chrome-header.txt, chrome-footer.txt [--y-b 4240], content-diff.txt, content-diff-live.txt)"
-  },
   "360": {
    "pixelPct": 3.79,
    "heightDelta": 1,
@@ -37,14 +32,42 @@
    "chromeFooterPct": 1.03,
    "pass": true,
    "evidence": "stardust/replica/gates/borettslag-eds-360/ (pixel-iter3.txt, chrome-header.txt, chrome-header-x115.txt, chrome-footer.txt [--y-b 6401])"
+  },
+  "1440": {
+   "pixelPct": 3.66,
+   "heightDelta": 5,
+   "chromeHeaderPct": 0.42,
+   "chromeFooterPct": 1.22,
+   "pass": true,
+   "evidence": "stardust/replica/gates/borettslag-eds-1440/ (pixel-iter4.txt, chrome-header.txt, chrome-footer.txt [--y-b 4240], content-diff.txt, content-diff-live.txt)"
   }
  },
  "justified": [
-  { "flag": "1440 hot band y3500–4000 17.2%", "why": "the three 'Anbefalt' card photos (JPEG rescale / cover crop) on a 3–5px offset — the replica gate carried the same band at 15%; no layout delta beyond Δh 5", "permanent": true },
-  { "flag": "1440 Δh 5 / 360 Δh 1", "why": "the reference photo is authored --ratio 1211/903 (1.341); the nearest cell model is 4:3 (1.333) → 3px at 608px width; the rest is sub-pixel line rounding", "permanent": true },
-  { "flag": "360 header crop 3.58%", "why": "live focused skip link at x<115; 0.10% for x≥115", "permanent": true },
-  { "flag": "footer crops measured with --y-b", "why": "the Δh offset (5 / 1 px) is removed before comparing the footer band; unaligned they read 96.89 / 94.65 (pure offset)", "permanent": false },
-  { "flag": "content-diff 🟡 EDITABLE COUNT 21 vs 24", "why": "the three featured-card list items are one <ul> per card in EDS (live: one .checked-list wrapper per card holding the same ul) and the tip CTA moved into the callout cell — no text rebuilt; Ja/Nei = feedback chrome", "permanent": true }
+  {
+   "flag": "1440 hot band y3500–4000 17.2%",
+   "why": "the three 'Anbefalt' card photos (JPEG rescale / cover crop) on a 3–5px offset — the replica gate carried the same band at 15%; no layout delta beyond Δh 5",
+   "permanent": true
+  },
+  {
+   "flag": "1440 Δh 5 / 360 Δh 1",
+   "why": "the reference photo is authored --ratio 1211/903 (1.341); the nearest cell model is 4:3 (1.333) → 3px at 608px width; the rest is sub-pixel line rounding",
+   "permanent": true
+  },
+  {
+   "flag": "360 header crop 3.58%",
+   "why": "live focused skip link at x<115; 0.10% for x≥115",
+   "permanent": true
+  },
+  {
+   "flag": "footer crops measured with --y-b",
+   "why": "the Δh offset (5 / 1 px) is removed before comparing the footer band; unaligned they read 96.89 / 94.65 (pure offset)",
+   "permanent": false
+  },
+  {
+   "flag": "content-diff 🟡 EDITABLE COUNT 21 vs 24",
+   "why": "the three featured-card list items are one <ul> per card in EDS (live: one .checked-list wrapper per card holding the same ul) and the tip CTA moved into the callout cell — no text rebuilt; Ja/Nei = feedback chrome",
+   "permanent": true
+  }
  ],
  "fixesThisRound": [
   "cards featured variant: contain-fit 200/270 illustration, richtext body (h2 heading size, 17/24 → 18/28 lead paragraphs with 1em bottom margin, checked list: bold link titles top-aligned in a 24px strut, 14px notes), no arrow, not clickable (cards.js: three `featured` conditionals)",
@@ -54,10 +77,22 @@
   "walker: text-N (richtext--max), nearest-ratio media-W-H cell models, media-plain+baseline for width-less non-ratio illustrations, single-column grid-row heading rows → default content, richtext children never dispatched as nested sections",
   "theme.mjs reference: fallback captured before gating (the gate wrapper re-entered itself → stack overflow on bedriftsforsikring)"
  ],
- "productRegression": { "documentDiff": "boliglan differs ONLY through the external lib.mjs change of 22:32 (<br> moved out of inline formatting): converting with the W4 encoder files removed yields a byte-identical document (proof run 23:05)", "pixel1440": 0.65, "heightDelta": 0 },
+ "productRegression": {
+  "documentDiff": "boliglan differs ONLY through the external lib.mjs change of 22:32 (<br> moved out of inline formatting): converting with the W4 encoder files removed yields a byte-identical document (proof run 23:05)",
+  "pixel1440": 0.65,
+  "heightDelta": 0
+ },
  "siblings": {
-  "converted": ["nb-bank-bedrift-bedriftsforsikring-html", "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html", "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html"],
-  "gaps": { "bedrift/bedriftsforsikring": 0, "privat/daglig-bruk/kredittkort/netthandel-kredittkort": 0, "privat/forsikring/hvilke-forsikringer-trenger-man": 0 },
+  "converted": [
+   "nb-bank-bedrift-bedriftsforsikring-html",
+   "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html",
+   "nb-bank-privat-forsikring-hvilke-forsikringer-trenger-man-html"
+  ],
+  "gaps": {
+   "bedrift/bedriftsforsikring": 0,
+   "privat/daglig-bruk/kredittkort/netthandel-kredittkort": 0,
+   "privat/forsikring/hvilke-forsikringer-trenger-man": 0
+  },
   "lint": "all 4 documents PASS — 0 🔴; 🟡 = callout/feedback/breadcrumbs D1 (justified in the logs), bank-choice D3, D4 SVG advisory",
   "eyeball": {
    "page": "nb-bank-privat-daglig-bruk-kredittkort-netthandel-kredittkort-html @1440 (stardust/replica/gates/netthandel-eds-1440/{proto,eds}.png, content-diff.txt)",
@@ -67,5 +102,13 @@
     "static-cards (`cards static`) has no dedicated rules yet — renders as bordered medium cards (title inside the body) where the prototype shows borderless image + title rows; no lifted values exist for it (canon has none) → left for the owner of the static variant"
    ]
   }
+ },
+ "postGateNote": {
+  "at": "2026-09-14T23:50:00Z",
+  "borettslag1440": {
+   "pixelPct": 7.94,
+   "heightDelta": 33
+  },
+  "why": "external lib.mjs change (22:54) drops the trailing <br>&nbsp; of the two featured-card lead paragraphs (live blank 28px line each) — pipeline-faithful, not expressible by an author; eds-requests W4 #14. The gated figures above stand for the encoder/blocks; re-baseline after the orchestrator rules on #14."
  }
 }

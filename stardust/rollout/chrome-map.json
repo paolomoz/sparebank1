@@ -144,6 +144,11 @@
   "nb-bank-om-oss-presse-html": {
    "nav": "/nav-om-oss-2",
    "footer": "/footer-om-oss"
+  },
+  "nb-bank-om-oss-vare-eksperter-html": {
+   "nav": "/nav-om-oss",
+   "footer": "/footer",
+   "note": "orchestrator: om-oss page with the privat footer (contact section present on live); chrome.mjs never hashed this sibling"
   }
  }
 }

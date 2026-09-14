@@ -66,10 +66,8 @@
   "cards nav: 3 visual-nav modules (3 photo, 0 icon) folded into one block — one row per card",
   "related-products: the live icon-card list (\"Se også\") → heading + cards small (hub model); the core newsfeed reader would drop the cards"
  ],
- "gaps": [
-  "module title emitted as prose"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T21:27:46.022Z"
+ "writtenAt": "2026-09-14T21:29:27.286Z"
 }

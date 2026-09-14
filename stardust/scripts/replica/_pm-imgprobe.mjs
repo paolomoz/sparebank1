@@ -1,0 +1,6 @@
+import { chromium } from 'playwright';
+const [url, w] = process.argv.slice(2); const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: +w, height: 844 } });
+await p.goto(url, { waitUntil: 'networkidle' });
+await p.evaluate(async () => { for (let y = 0; y < document.documentElement.scrollHeight; y += 500) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 120)); } window.scrollTo(0, 0); }); await p.waitForTimeout(1500);
+const r = await p.evaluate(() => [...document.querySelectorAll('main img')].map((i) => { const r = i.getBoundingClientRect(); const cs = getComputedStyle(i); const hidden = (() => { let e = i; while (e && e !== document.body) { const s = getComputedStyle(e); if (s.display === 'none' || s.visibility === 'hidden') return e.tagName.toLowerCase() + '.' + String(e.className).split(' ')[0]; e = e.parentElement; } return ''; })(); return `${Math.round(r.y + scrollY)} ${Math.round(r.width)}x${Math.round(r.height)} complete=${i.complete} nat=${i.naturalWidth} ${hidden ? 'HIDDEN-BY ' + hidden : ''} block=${i.closest('.block')?.className.split(' ').slice(0, 2).join('.') || 'default'} src=${(i.currentSrc || i.src).split('/').pop().slice(0, 50)}`; }));
+console.log(r.join('\n')); await b.close();

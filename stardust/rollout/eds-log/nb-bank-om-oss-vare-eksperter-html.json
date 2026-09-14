@@ -3,8 +3,9 @@
  "daPath": "/nb/bank/om-oss/vare-eksperter",
  "file": "content/nb/bank/om-oss/vare-eksperter.html",
  "chrome": {
-  "nav": "/nav",
-  "footer": "/footer"
+  "nav": "/nav-om-oss",
+  "footer": "/footer",
+  "note": "orchestrator: om-oss page with the privat footer (contact section present on live); chrome.mjs never hashed this sibling"
  },
  "modules": [
   {
@@ -45,10 +46,8 @@
   "richtext main-lead: the live page lead (span.main-lead, 24/32 fjell centred) — carried as a section token",
   "cards people: the experts list (bio cards) — one row per expert [portrait][name h3, role, bio, \"Les mer om …\" link]; card-as-link via the trailing link (EW6)"
  ],
- "gaps": [
-  "module title emitted as prose"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T21:27:45.826Z"
+ "writtenAt": "2026-09-14T21:39:58.460Z"
 }
