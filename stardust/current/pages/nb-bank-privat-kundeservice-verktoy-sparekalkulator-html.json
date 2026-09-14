@@ -3302,5 +3302,105 @@
     "hasFeedback": true,
     "hasContactRow": true,
     "hasBankChoice": true
-  }
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/nettsider/ressurser/bank/user",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "status": 200,
+        "bytes": 49,
+        "hits": 1,
+        "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/bank/nettsider-privat/fond/toggles",
+        "query": [
+          "bankShortName"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://www.sparebank1.no/bank/nettsider-privat/fond/toggles",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/personal/banking/savingscalculator/expected-performance",
+        "query": [
+          "initialValue",
+          "periodicInvestment",
+          "risk",
+          "years"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "status": 200,
+        "bytes": 98,
+        "hits": 1,
+        "example": "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/expected-performance",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/personal/banking/savingscalculator/suggested-savings-product",
+        "query": [
+          "risk",
+          "years"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "status": 200,
+        "bytes": 175,
+        "hits": 1,
+        "example": "https://www.sparebank1.no/openapi/personal/banking/savingscalculator/suggested-savings-product",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/personal/banking/fund/products/available",
+        "query": [
+          "fid"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v3+json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://www.sparebank1.no/openapi/personal/banking/fund/products/available",
+        "sameSite": true
+      }
+    ],
+    "thirdPartyScriptHosts": [],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 14,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 5,
+      "thirdPartyEndpoints": 0,
+      "thirdPartyScriptHosts": 0,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "renderedHtml": "pages/nb-bank-privat-kundeservice-verktoy-sparekalkulator-html.html"
 }

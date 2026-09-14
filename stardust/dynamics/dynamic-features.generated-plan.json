@@ -1,7 +1,7 @@
 {
  "_provenance": {
   "writtenBy": "stardust:dynamics plan",
-  "writtenAt": "2026-09-14T15:16:32.167Z",
+  "writtenAt": "2026-09-14T15:23:33.139Z",
   "input": "stardust/current/_dynamics.json",
   "target": "https://main--sparebank1--paolomoz.aem.page",
   "migrated": null
@@ -11,8 +11,8 @@
    "id": "a-cms-app-settings-object-digitaldata",
    "class": "A",
    "feature": "CMS / app settings object digitalData",
-   "pages": 5,
-   "probed": 6,
+   "pages": 10,
+   "probed": 13,
    "reach": null,
    "evidence": [],
    "pattern": "read-settings",
@@ -26,9 +26,12 @@
    "id": "a-first-party-api-get-bin-sb1-components-footer",
    "class": "A",
    "feature": "first-party API GET /bin/sb1/components/footer",
-   "pages": 1,
-   "probed": 6,
-   "reach": null,
+   "pages": 3,
+   "probed": 13,
+   "reach": {
+    "pages": 12,
+    "of": 100
+   },
    "evidence": [
     "GET /bin/sb1/components/footer?bank,lang,market → 200"
    ],
@@ -41,50 +44,57 @@
    "hostBound": "dead on target (404)"
   },
   {
-   "id": "cr-client-rendered-slot-tab-js-tab-content-default",
-   "class": "CR",
-   "feature": "client-rendered slot tab js-tab-content default",
+   "id": "a-first-party-api-post-api-personal-banking-boliglan-kalkula",
+   "class": "A",
+   "feature": "first-party API POST /api/personal/banking/boliglan-kalkulator/economy",
    "pages": 1,
-   "probed": 6,
-   "reach": null,
+   "probed": 13,
+   "reach": {
+    "pages": 2,
+    "of": 100
+   },
    "evidence": [
-    "SpareBank 1 Gruppen 2026 2. kvartal Kvartalsrapport (PDF) 1."
+    "POST /api/personal/banking/boliglan-kalkulator/economy → 200"
    ],
-   "pattern": "settled-dom-snapshot",
-   "disposition": "static-snapshot",
-   "reproducibility": "self",
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
    "status": "pending",
-   "phase": "capture",
-   "decision": "inspect the consumer"
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
   },
   {
-   "id": "cr-client-rendered-slot-tab-js-tab-content",
-   "class": "CR",
-   "feature": "client-rendered slot tab js-tab-content ",
+   "id": "a-first-party-api-post-api-personal-banking-boliglan-kalkula",
+   "class": "A",
+   "feature": "first-party API POST /api/personal/banking/boliglan-kalkulator/annuity-loan",
    "pages": 1,
-   "probed": 6,
-   "reach": null,
+   "probed": 13,
+   "reach": {
+    "pages": 2,
+    "of": 100
+   },
    "evidence": [
-    "Fremtind Forsikring 2026 2. kvartal Kvartalsrapport Fremtind",
-    "SpareBank 1 Forsikring 2026 2. kvartal Kvartalsrapport (PDF)",
-    "SpareBank 1 Factoring 2026 2. kvartal Kvartalsrapport (PDF) ",
-    "Other companies Kredittbanken (tidl. SpareBank 1 Kreditt) Fi"
+    "POST /api/personal/banking/boliglan-kalkulator/annuity-loan → 200"
    ],
-   "pattern": "settled-dom-snapshot",
-   "disposition": "static-snapshot",
-   "reproducibility": "self",
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
    "status": "pending",
-   "phase": "capture",
-   "decision": "inspect the consumer"
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
   },
   {
    "id": "cr-main-empty-at-load-filled-after-client-rendered-page",
    "class": "CR",
    "feature": "main empty at load, filled after (client-rendered page)",
-   "pages": 1,
-   "probed": 6,
+   "pages": 3,
+   "probed": 13,
    "reach": null,
    "evidence": [
+    "text at load 0 → settled 2401",
+    "text at load 0 → settled 4359",
     "text at load 0 → settled 2798"
    ],
    "pattern": "client-rendered-page",
@@ -95,12 +105,130 @@
    "decision": "human-browser capture; never migrate blank"
   },
   {
+   "id": "cr-client-rendered-slot-main-js-productpage-productpage",
+   "class": "CR",
+   "feature": "client-rendered slot main js-productpage productpage",
+   "pages": 2,
+   "probed": 13,
+   "reach": null,
+   "evidence": [
+    "Låne Boliglån Skal du kjøpe ny bolig? Eller kanskje du drømm",
+    "Spare Markedsnytt Forstå mer om markedet, og hvordan du kan "
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-cobranding-content-js-cobranding-con",
+   "class": "CR",
+   "feature": "client-rendered slot cobranding__content js-cobranding-content ",
+   "pages": 1,
+   "probed": 13,
+   "reach": null,
+   "evidence": [
+    "LOfavør Som medlem i et LO-forbund gir fordelsprogrammet LOf"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-js-faq-toggle-faq-button-more-ffe-bu",
+   "class": "CR",
+   "feature": "client-rendered slot js-faq-toggle faq-button--more ffe-button",
+   "pages": 1,
+   "probed": 13,
+   "reach": null,
+   "evidence": [
+    "Se flere spørsmål og svar"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "d-first-party-data-file-get-nb-bank-privat-sparing-markedsny",
+   "class": "D",
+   "feature": "first-party data file GET /nb/bank/privat/sparing/markedsnytt/artikler.export.json",
+   "pages": 2,
+   "probed": 13,
+   "reach": {
+    "pages": 6,
+    "of": 100
+   },
+   "evidence": [
+    "GET /nb/bank/privat/sparing/markedsnytt/artikler.export.json?limit,offset,temaFilter → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "d-first-party-data-file-get-nb-bank-om-oss-hjemme-export-jso",
+   "class": "D",
+   "feature": "first-party data file GET /nb/bank/om-oss/hjemme.export.json",
+   "pages": 1,
+   "probed": 13,
+   "reach": {
+    "pages": 1,
+    "of": 100
+   },
+   "evidence": [
+    "GET /nb/bank/om-oss/hjemme.export.json?limit,offset → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "d-first-party-data-file-get-nb-bank-om-oss-nyheter-bankkort-",
+   "class": "D",
+   "feature": "first-party data file GET /nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.export.json",
+   "pages": 1,
+   "probed": 13,
+   "reach": {
+    "pages": 1,
+    "of": 100
+   },
+   "evidence": [
+    "GET /nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.export.json?limit,offset → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
    "id": "d-first-party-data-file-get-nb-bank-om-oss-nyheter-export-js",
    "class": "D",
    "feature": "first-party data file GET /nb/bank/om-oss/nyheter.export.json",
    "pages": 1,
-   "probed": 6,
-   "reach": null,
+   "probed": 13,
+   "reach": {
+    "pages": 3,
+    "of": 100
+   },
    "evidence": [
     "GET /nb/bank/om-oss/nyheter.export.json?limit,offset → 200"
    ],
@@ -116,14 +244,14 @@
    "id": "i18n-locale-variants-nn-nn-nn-nn-nn",
    "class": "I18N",
    "feature": "locale variants nn,nn,nn,nn,nn",
-   "pages": 3,
-   "probed": 6,
+   "pages": 9,
+   "probed": 13,
    "reach": null,
    "evidence": [
     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html",
     "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftsforsikring/bransjer/borettslag-sameie.html#meeting",
-    "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftskort.html",
-    "https://www.sparebank1.no/nn/sogn-fjordane/bedrift/bedriftskort.html#meeting"
+    "https://www.sparebank1.no/nn/sogn-fjordane/privat/lan.html",
+    "https://www.sparebank1.no/nn/sogn-fjordane/privat/lan.html#meeting"
    ],
    "pattern": "locale-tree",
    "disposition": "rebuild-native",
@@ -137,10 +265,10 @@
    "class": "I18N",
    "feature": "locale variants no",
    "pages": 1,
-   "probed": 6,
+   "probed": 13,
    "reach": null,
    "evidence": [
-    "https://publish.mynewsdesk.com/no/analyze/materials/pressrelease/2710291"
+    "https://www.mynewsdesk.com/no/sparebank-1"
    ],
    "pattern": "locale-tree",
    "disposition": "rebuild-native",
@@ -150,11 +278,11 @@
    "decision": "scope of the locale trees"
   },
   {
-   "id": "l-listing-candidate-tabs-content-aem-main-container-5-cards",
+   "id": "l-listing-candidate-shortcuts-list-container-7-cards",
    "class": "L",
-   "feature": "listing candidate tabs__content aem-main-container (5 cards)",
+   "feature": "listing candidate shortcuts-list__container (7 cards)",
    "pages": 1,
-   "probed": 6,
+   "probed": 13,
    "reach": null,
    "evidence": [],
    "pattern": "listing-index-backed",
@@ -165,11 +293,11 @@
    "decision": "index-driven or editorially curated?"
   },
   {
-   "id": "l-listing-candidate-ul-12-cards",
+   "id": "l-listing-candidate-card-list-card-list-small-12-cards",
    "class": "L",
-   "feature": "listing candidate ul (12 cards)",
+   "feature": "listing candidate card-list card-list__small (12 cards)",
    "pages": 1,
-   "probed": 6,
+   "probed": 13,
    "reach": null,
    "evidence": [],
    "pattern": "listing-index-backed",
@@ -180,11 +308,11 @@
    "decision": "index-driven or editorially curated?"
   },
   {
-   "id": "l-listing-candidate-text-wrapper-4-cards",
+   "id": "l-listing-candidate-card-list-card-list-price-10-cards",
    "class": "L",
-   "feature": "listing candidate text-wrapper  (4 cards)",
+   "feature": "listing candidate card-list card-list__price (10 cards)",
    "pages": 1,
-   "probed": 6,
+   "probed": 13,
    "reach": null,
    "evidence": [],
    "pattern": "listing-index-backed",
@@ -195,11 +323,11 @@
    "decision": "index-driven or editorially curated?"
   },
   {
-   "id": "l-listing-candidate-text-wrapper-5-cards",
+   "id": "l-listing-candidate-ffe-accordion-15-cards",
    "class": "L",
-   "feature": "listing candidate text-wrapper  (5 cards)",
+   "feature": "listing candidate ffe-accordion (15 cards)",
    "pages": 1,
-   "probed": 6,
+   "probed": 13,
    "reach": null,
    "evidence": [],
    "pattern": "listing-index-backed",
@@ -210,26 +338,11 @@
    "decision": "index-driven or editorially curated?"
   },
   {
-   "id": "l-listing-candidate-text-wrapper-9-cards",
+   "id": "l-listing-candidate-card-list-card-list-small-9-cards",
    "class": "L",
-   "feature": "listing candidate text-wrapper  (9 cards)",
+   "feature": "listing candidate card-list card-list__small (9 cards)",
    "pages": 1,
-   "probed": 6,
-   "reach": null,
-   "evidence": [],
-   "pattern": "listing-index-backed",
-   "disposition": "index-backed",
-   "reproducibility": "needs-business-decision",
-   "status": "pending",
-   "phase": "listings",
-   "decision": "index-driven or editorially curated?"
-  },
-  {
-   "id": "l-listing-candidate-text-wrapper-3-cards",
-   "class": "L",
-   "feature": "listing candidate text-wrapper  (3 cards)",
-   "pages": 1,
-   "probed": 6,
+   "probed": 13,
    "reach": null,
    "evidence": [],
    "pattern": "listing-index-backed",
@@ -244,7 +357,22 @@
    "class": "L",
    "feature": "listing candidate newscards (32 cards)",
    "pages": 1,
-   "probed": 6,
+   "probed": 13,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "l-listing-candidate-newsfeed-list-newsfeed-wrap-3-cards",
+   "class": "L",
+   "feature": "listing candidate newsfeed-list newsfeed-wrap (3 cards)",
+   "pages": 1,
+   "probed": 13,
    "reach": null,
    "evidence": [],
    "pattern": "listing-index-backed",
@@ -258,13 +386,14 @@
    "id": "m-modal-trigger-overlay-btn-target-outside-dom-at-capture",
    "class": "M",
    "feature": "modal trigger overlay-btn → target outside DOM at capture",
-   "pages": 2,
-   "probed": 6,
+   "pages": 5,
+   "probed": 13,
    "reach": null,
    "evidence": [
-    "https://www.sparebank1.no/nb/bank/bedrift/bedriftskort.html#",
-    "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html",
-    "https://www.sparebank1.no/nb/bank/om-oss/investor.html"
+    "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat",
+    "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lofavor-fordeler.html",
+    "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bestill-mote-med-radgiver.html",
+    "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start"
    ],
    "pattern": "modal-loader",
    "disposition": "rebuild-native",
@@ -277,8 +406,8 @@
    "id": "m-modal-trigger-overlay-btn-chrome-only-target-outside-dom-a",
    "class": "M",
    "feature": "modal trigger overlay-btn (chrome only) → target outside DOM at capture",
-   "pages": 1,
-   "probed": 6,
+   "pages": 4,
+   "probed": 13,
    "reach": null,
    "evidence": [
     "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/bli-kunde.html?icid=forside;;blikunde;;knappuniversal;;bankblikunde;;privat"
@@ -291,13 +420,105 @@
    "decision": "none (motion-observe evidence)"
   },
   {
+   "id": "m-modal-trigger-js-overlay-btn-a-content",
+   "class": "M",
+   "feature": "modal trigger js-overlay-btn → a:content",
+   "pages": 1,
+   "probed": 13,
+   "reach": null,
+   "evidence": [
+    "https://www.sparebank1.no/bank/nettbank-privat/finansiering/lan#",
+    "https://www.sparebank1.no/nb/bank/privat/lan.html#"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none"
+  },
+  {
+   "id": "m-modal-trigger-loginmodal-target-outside-dom-at-capture",
+   "class": "M",
+   "feature": "modal trigger loginModal → target outside DOM at capture",
+   "pages": 1,
+   "probed": 13,
+   "reach": {
+    "pages": 16,
+    "of": 100
+   },
+   "evidence": [
+    "https://www.sparebank1.no/bank/nettbank-privat/kort/"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none"
+  },
+  {
+   "id": "t-analytics-adobe-analytics-experience-cloud-id",
+   "class": "T",
+   "feature": "analytics: Adobe Analytics / Experience Cloud ID",
+   "pages": 2,
+   "probed": 13,
+   "reach": null,
+   "evidence": [
+    "adobedc.demdex.net",
+    "edge.adobedc.net"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "v-video-youtube",
+   "class": "V",
+   "feature": "video: YouTube",
+   "pages": 1,
+   "probed": 13,
+   "reach": null,
+   "evidence": [
+    "www.youtube.com"
+   ],
+   "pattern": "media-as-url",
+   "disposition": "embed-passthrough",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "media",
+   "decision": "none (player ids are public)"
+  },
+  {
+   "id": "v-iframe-without-src-runtime-injected-embed",
+   "class": "V",
+   "feature": "iframe without src (runtime-injected embed)",
+   "pages": 1,
+   "probed": 13,
+   "reach": null,
+   "evidence": [
+    "Verdier og verdensbilder",
+    "What the fond?\" – Episode 1"
+   ],
+   "pattern": "embed-passthrough",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "embeds",
+   "decision": "resolve the runtime src from a rendered capture"
+  },
+  {
    "id": "x-sign-in-account-links",
    "class": "X",
    "feature": "sign-in / account links",
-   "pages": 1,
-   "probed": 6,
+   "pages": 2,
+   "probed": 13,
    "reach": null,
    "evidence": [
+    "https://www.sparebank1.no/nb/bank/privat/kundeservice/nettbank/glemt-passord-bankid.html",
     "https://www.sparebank1.no/content/sites/sb1/nb/bank/om-oss/nyheter/faerre-deler-passord-til-nettbank--fortsatt-for-mange--mener-svi.html"
    ],
    "pattern": "decided-out",

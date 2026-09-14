@@ -2284,22 +2284,49 @@
       "archetypeFamily": "product",
       "aemPageType": "Produkt",
       "clientlib": "base",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-14T14:57:32.928Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-14T16:24:37Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-14T16:24:37Z",
+          "approvedBy": "hands-off",
+          "gate": {
+            "360": {
+              "pixelPct": 1.54,
+              "heightDelta": 0
+            },
+            "1440": {
+              "pixelPct": 0.37,
+              "heightDelta": 0
+            }
+          }
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/nb-bank-privat-lan-boliglan-html.json",
       "renderedHtmlPath": "stardust/current/pages/nb-bank-privat-lan-boliglan-html.html",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/nb-bank-privat-lan-boliglan-html-proposed.html",
       "migratedPath": null,
       "fidelityTier": "archetype",
       "archetypeSource": null,
-      "gatesPassed": [],
+      "gatesPassed": [
+        "content-diff (2 justified)",
+        "visual-diff",
+        "pixel 1440 0.37%",
+        "pixel 360 1.54%",
+        "chrome-crop 1440",
+        "chrome-crop 360 (header residual: focused skip link)",
+        "motion-observe parity"
+      ],
       "contentGap": null,
       "screenshot": "stardust/current/assets/screenshots/nb-bank-privat-lan-boliglan-html.png",
       "visionCheck": "ok"

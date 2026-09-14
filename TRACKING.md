@@ -6,9 +6,9 @@ Updated: 2026-09-14T14:58:23Z
 |---|---|---|
 | 0 EDS repo | done | fstab.yaml, status.jsonl (eds-new-site), https://main--sparebank1--paolomoz.aem.live/ 200 |
 | 1 extract (100 pages) | done | stardust/current/_prep-summary.md · 100/100 live · vision 95 ok / 5 recaptured |
-| 2 preserve direction + dynamics triage | promotion done; dynamics triage running | stardust/direction.md · stardust/replica/inconsistency-register.md |
-| 3 recreate archetypes | pending | |
-| 4 source-fidelity gates | pending | |
+| 2 preserve direction + dynamics triage | done | stardust/direction.md · stardust/replica/inconsistency-register.md · stardust/dynamic-features.md (20 features, decision batch) |
+| 3 recreate archetypes | 1/13 (product) | stardust/prototypes/*-proposed.html · scripts/replica/author.mjs |
+| 4 source-fidelity gates | product PASS 1440 0.37% / 360 1.54% | stardust/replica/progress.json · gates/boliglan-* |
 | 5 migrate → deploy → rollout → qa | pending | |
 | Flow B redesign (sibling project) | pending | ../sparebank1-redesign |
 

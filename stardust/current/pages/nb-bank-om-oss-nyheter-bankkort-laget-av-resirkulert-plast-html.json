@@ -2891,5 +2891,74 @@
       "RELATERTE ARTIKLER",
       "RELATERTE TEMA"
     ]
-  }
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/openapi/nettsider/ressurser/bank/user",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.sparebank1.v1+json",
+        "status": 200,
+        "bytes": 49,
+        "hits": 1,
+        "example": "https://www.sparebank1.no/openapi/nettsider/ressurser/bank/user",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.export.json",
+        "query": [
+          "limit",
+          "offset"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 3496,
+        "hits": 1,
+        "example": "https://www.sparebank1.no/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.export.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "www.sparebank1.no",
+        "path": "/bin/sb1/components/footer",
+        "query": [
+          "bank",
+          "lang",
+          "market"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 759,
+        "hits": 1,
+        "example": "https://www.sparebank1.no/bin/sb1/components/footer",
+        "sameSite": true
+      }
+    ],
+    "thirdPartyScriptHosts": [],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 3,
+      "thirdPartyEndpoints": 0,
+      "thirdPartyScriptHosts": 0,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "renderedHtml": "pages/nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html.html"
 }

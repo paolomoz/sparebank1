@@ -1,0 +1,165 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica (Phase 3–4 ledger)",
+    "writtenAt": "2026-09-14T16:24:37Z",
+    "againstInput": "https://www.sparebank1.no/nb/bank/ — 100-page roster, 13 archetype families",
+    "readArtifacts": [
+      "stardust/current/_page-types.json",
+      "stardust/replica/gates/*",
+      "stardust/replica/motion/*",
+      "stardust/replica/lift/*"
+    ]
+  },
+  "regime": "prototype (standalone prototype vs live page)",
+  "breakpoints": [
+    1440,
+    360
+  ],
+  "liveHitsBudget": {
+    "note": "live navigations per archetype recorded below"
+  },
+  "archetypes": {
+    "product": {
+      "pageType": "program",
+      "family": "product",
+      "archetype": "nb-bank-privat-lan-boliglan-html",
+      "liveUrl": "https://www.sparebank1.no/nb/bank/privat/lan/boliglan.html",
+      "prototype": "stardust/prototypes/nb-bank-privat-lan-boliglan-html-proposed.html",
+      "css": [
+        "css/ffe-tokens.css",
+        "css/canon.css",
+        "css/product.css"
+      ],
+      "generator": "stardust/scripts/replica/author.mjs",
+      "liveHits": {
+        "stitch": 2,
+        "anchor": 1,
+        "geometryProbes": 6,
+        "contentDiff": 4,
+        "visualDiff": 2,
+        "chromeParity": 1,
+        "motionObserve": 2,
+        "calculatorShadow": 2
+      },
+      "breakpoints": {
+        "360": {
+          "pixelRounds": 7,
+          "liveGateIterations": 2,
+          "result": {
+            "structuralRed": 2,
+            "structuralRedJustified": 2,
+            "visualFlags": "4 justified (same as 1440 + mobile bg svg now loaded)",
+            "pixelPct": 1.54,
+            "heightDelta": 0,
+            "chromeHeaderPct": 3.58,
+            "chromeHeaderPctExcludingSkipLink": 0.14,
+            "chromeFooterPct": 0.88,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "chrome-crop",
+              "flag": "header 3.58% > 2% bar",
+              "why": "96% of the differing pixels are the live focused skip link \"Til hovedmeny\" (rendered visible in the live capture because focus lands on it after the consent click — instrument-induced state); the header excluding that box measures 0.14%. Recorded as residual, not a pass.",
+              "permanent": true
+            }
+          ],
+          "residuals": [
+            {
+              "band": "y 7000–7500",
+              "pct": 8.2,
+              "cause": "to-top button seam repeat at a chunk boundary (fixed chrome, symmetric) + newsfeed scroll row edge",
+              "flaggedFor": "none"
+            },
+            {
+              "band": "y 6500–7000",
+              "pct": 4,
+              "cause": "accordion glyph antialiasing",
+              "flaggedFor": "none"
+            }
+          ]
+        },
+        "1440": {
+          "pixelRounds": 14,
+          "liveGateIterations": 3,
+          "result": {
+            "structuralRed": 2,
+            "structuralRedJustified": 2,
+            "visualFlags": "3 justified",
+            "pixelPct": 0.37,
+            "heightDelta": 0,
+            "chromeHeaderPct": 0.42,
+            "chromeFooterPct": 0.35,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🔴 MISSING CTA ×2 (\"Søk om avdragsfrihet\", \"Søk om refinansiering av boliglån\")",
+              "why": "both CTAs exist in the build with the authored hrefs (# / /nb/bank/privat/lan/boliglan/refinansiering-av-boliglan.html); the live runtime rewrites them to the lenker.sparebank1.no tracking redirector, which content-diff reads as a different link. Link destinations are preserved per content-preservation.md; redirector rewriting is a tag concern (dynamics #15).",
+              "permanent": true
+            },
+            {
+              "probe": "content",
+              "flag": "🟠 font fork \"bør\" italic",
+              "why": "live declares SpareBank1-italic which never loads (→ system italic); the build declares the same stack and falls back identically",
+              "permanent": true
+            },
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×3 (card photos 1067×800 → 302×200)",
+              "why": "the live cards render the same renditions at the same box with object-fit:cover 50% 0 — mirrored; the flag fires on both sides"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "y 500–1000",
+              "pct": 1.7,
+              "cause": "bank-choice illustration anti-aliasing + hero photo decode",
+              "flaggedFor": "none"
+            },
+            {
+              "region": "header",
+              "pct": 0.42,
+              "cause": "live capture shows the focused skip link \"Til hovedmeny\" (focus lands on it after the consent click — instrument-induced state); glyph antialiasing",
+              "flaggedFor": "none"
+            }
+          ]
+        }
+      },
+      "captureState": [
+        {
+          "what": "loan calculator (#boliglan-kalkulator) — client-rendered React widget in a shadow root",
+          "where": "calculator section",
+          "how": "static snapshot of the hydrated shadow DOM (declarative shadow DOM) + CSS portation of sb1-lanekalkulator.css scoped to the shadow root (recreation-procedure § Fallback criterion 2); dynamics #7 interim tier — computation disabled until the API is exposed"
+        },
+        {
+          "what": "lazy illustrations (data-lazy-src)",
+          "where": "banner-small, icons",
+          "how": "real URLs read from the rendered DOM; rendered as plain <img>"
+        }
+      ],
+      "motion": {
+        "observed": "stardust/replica/motion/boliglan-1440.json, boliglan-360.json (0 animations; transitions on to-top and card/contact hovers; header__wrap scroll/show morph ≤1024 from clientlib module 2741; accordion + faq-more + bank list + hamburger + contact tabs class mutations)",
+        "implemented": [
+          "header scroll/show morph (threshold 130, show when scrolled up ≥400 from the furthest point) — mirrored state machine in js/canon.js",
+          "to-top show/hide + smooth scroll",
+          "FAQ accordion (aria-expanded, height collapse like ffe-collapse)",
+          "\"Se flere spørsmål og svar\" reveal",
+          "bank list expand/collapse",
+          "hamburger → header__wrap--active",
+          "contact tabs → panels (captured verbatim, hidden)",
+          "hover: card tint #e7f1f9 + 1px ring; contact icon fjell; buttons fjell/green"
+        ],
+        "dead": [
+          "ffe-button label transform transition (declared, never fired)",
+          ".hamburger.open animation (not reachable in capture)"
+        ],
+        "pixelAfterMotion": "unchanged (0.37 / 1.54)"
+      },
+      "inconsistencyRegister": "empty (pure replica)",
+      "approvedBy": "hands-off",
+      "approvedAt": "2026-09-14T16:24:37Z"
+    }
+  }
+}

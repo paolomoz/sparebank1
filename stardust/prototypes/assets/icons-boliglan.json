@@ -1,0 +1,328 @@
+{
+ "icon-1": {
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -960 960 960\"> <path aria-hidden=\"true\" fill=\"currentColor\" d=\"M378.67-326q-108.44 0-183.56-75.17Q120-476.33 120-583.33t75.17-182.17q75.16-75.17 182.5-75.17 107.33 0 182.16 75.17 74.84 75.17 74.84 182.27 0 43.23-14 82.9-14 39.66-40.67 73l236 234.66q9.67 9.37 9.67 23.86 0 14.48-9.67 24.14-9.67 9.67-24.15 9.67-14.48 0-23.85-9.67L532.67-380q-30 25.33-69.64 39.67Q423.39-326 378.67-326Zm-.67-66.67q79.17 0 134.58-55.83Q568-504.33 568-583.33q0-79-55.42-134.84Q457.17-774 378-774q-79.72 0-135.53 55.83-55.8 55.84-55.8 134.84t55.8 134.83q55.81 55.83 135.53 55.83Z\" /> </svg>",
+  "contexts": [
+   "header__search-mobile search-toggle | Søk",
+   "header__search-desktop search-toggle | Søk | Søk",
+   "search-button | Søk"
+  ],
+  "w": null,
+  "h": null,
+  "viewBox": "0 -960 960 960"
+ },
+ "icon-2": {
+  "svg": "<svg aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -960 960 960\" class=\"header__search-icon header__search-icon--close\"> <path fill=\"currentColor\" d=\"M480-433.33 274.67-228q-9.67 9.67-23.34 9.67-13.66 0-23.33-9.67-9.67-9.67-9.67-23.33 0-13.67 9.67-23.34L433.33-480 228-685.33q-9.67-9.67-9.67-23.34 0-13.66 9.67-23.33 9.67-9.67 23.33-9.67 13.67 0 23.34 9.67L480-526.67 685.33-732q9.67-9.67 23.34-9.67 13.66 0 23.33 9.67 9.67 9.67 9.67 23.33 0 13.67-9.67 23.34L526.67-480 732-274.67q9.67 9.67 9.67 23.34 0 13.66-9.67 23.33-9.67 9.67-23.33 9.67-13.67 0-23.34-9.67L480-433.33Z\" /> </svg>",
+  "contexts": [
+   "header__search-icon header__search-icon--close | header__search-mobile search-toggle | Søk"
+  ],
+  "w": null,
+  "h": null,
+  "viewBox": "0 -960 960 960"
+ },
+ "icon-3": {
+  "svg": "<svg aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -960 960 960\"> <path fill=\"currentColor\" d=\"M480-433.33 274.67-228q-9.67 9.67-23.34 9.67-13.66 0-23.33-9.67-9.67-9.67-9.67-23.33 0-13.67 9.67-23.34L433.33-480 228-685.33q-9.67-9.67-9.67-23.34 0-13.66 9.67-23.33 9.67-9.67 23.33-9.67 13.67 0 23.34 9.67L480-526.67 685.33-732q9.67-9.67 23.34-9.67 13.66 0 23.33 9.67 9.67 9.67 9.67 23.33 0 13.67-9.67 23.34L526.67-480 732-274.67q9.67 9.67 9.67 23.34 0 13.66-9.67 23.33-9.67 9.67-23.33 9.67-13.67 0-23.34-9.67L480-433.33Z\" /> </svg>",
+  "contexts": [
+   "search-overlay__close-btn js-search-close | Lukk"
+  ],
+  "w": null,
+  "h": null,
+  "viewBox": "0 -960 960 960"
+ },
+ "icon-4": {
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewBox=\"0 -960 960 960\" width=\"24px\" fill=\"#002776\"><path d=\"M380-320q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l224 224q11 11 11 28t-11 28q-11 11-28 11t-28-11L532-372q-30 24-69 38t-83 14Zm0-80q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z\" /></svg>",
+  "contexts": [
+   "ffe-button ffe-button--primary search__field__icon__search | Søk"
+  ],
+  "w": "24px",
+  "h": "24px",
+  "viewBox": "0 -960 960 960"
+ },
+ "icon-5": {
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\" class=\"ffe-button__icon ffe-button__icon--left\"><title>Pin</title><path d=\"M20 24.042C21.222 24.042 22.34 23.771 23.354 23.229C24.368 22.6877 25.2083 21.9587 25.875 21.042C25.0137 20.4587 24.09 20.021 23.104 19.729C22.118 19.4377 21.0833 19.292 20 19.292C18.9167 19.292 17.882 19.4377 16.896 19.729C15.91 20.021 14.9863 20.4587 14.125 21.042C14.7917 21.9587 15.632 22.6877 16.646 23.229C17.66 23.771 18.778 24.042 20 24.042ZM20 15.708C20.6667 15.708 21.2293 15.479 21.688 15.021C22.146 14.5623 22.375 13.9997 22.375 13.333C22.375 12.6663 22.146 12.104 21.688 11.646C21.2293 11.1873 20.6667 10.958 20 10.958C19.3333 10.958 18.7707 11.1873 18.312 11.646C17.854 12.104 17.625 12.6663 17.625 13.333C17.625 13.9997 17.854 14.5623 18.312 15.021C18.7707 15.479 19.3333 15.708 20 15.708ZM20 34.083C23.5553 30.9997 26.2913 27.9093 28.208 24.812C30.1247 21.7153 31.083 19.1113 31.083 17C31.083 13.6387 30.0207 10.8957 27.896 8.77099C25.7707 6.64566 23.1387 5.58299 20 5.58299C16.8613 5.58299 14.2293 6.64566 12.104 8.77099C9.97933 10.8957 8.917 13.6387 8.917 17C8.917 19.1113 9.882 21.7153 11.812 24.812C13.7427 27.9093 16.472 30.9997 20 34.083ZM20 36.042C15.778 32.292 12.639 28.8197 10.583 25.625C8.52767 22.4303 7.5 19.5553 7.5 17C7.5 13.0833 8.757 9.96533 11.271 7.64599C13.785 5.32666 16.6947 4.16699 20 4.16699C23.3053 4.16699 26.215 5.32666 28.729 7.64599C31.243 9.96533 32.5 13.0833 32.5 17C32.5 19.5553 31.4723 22.4303 29.417 25.625C27.361 28.8197 24.222 32.292 20 36.042Z\" fill=\"\" /></svg>",
+  "contexts": [
+   "ffe-button__icon ffe-button__icon--left | ffe-button ffe-button--secondary bank-choice__myposition-button | PinBruk min posisjon"
+  ],
+  "w": "40",
+  "h": "40",
+  "viewBox": "0 0 40 40"
+ },
+ "icon-6": {
+  "svg": "<svg viewBox=\"0 0 200 200\" class=\"ffe-inline-button__icon ffe-inline-button__icon--right\"><path d=\"m16.171492,41.999998c-4.143269,0-8.2852797,1.57464-11.4277496,4.706478-6.3249899,6.283609-6.3249899,16.499474,0,22.803034l84.0286676,83.76282c6.30496,6.30356,16.54928,6.30356,22.87426,0l83.60959-83.26412c6.32499-6.28361,6.32499-16.499477,0-22.803038-6.30496-6.30356-16.55553-6.30356-22.88051,0l-72.13806,71.893768-72.613438-72.373767c-3.14247-3.151781-7.29074-4.725174-11.433999-4.725174h-0.0188z\" /></svg>",
+  "contexts": [
+   "ffe-inline-button__icon ffe-inline-button__icon--right | ffe-inline-button ffe-inline-button--tertiary bank-choice__expand | Se alle banker"
+  ],
+  "w": null,
+  "h": null,
+  "viewBox": "0 0 200 200"
+ },
+ "icon-7": {
+  "svg": "<svg viewBox=\"0 0 200 200\" class=\"ffe-inline-button__icon bank-choice__all-list--chevron\"><path d=\"m16.171492,41.999998c-4.143269,0-8.2852797,1.57464-11.4277496,4.706478-6.3249899,6.283609-6.3249899,16.499474,0,22.803034l84.0286676,83.76282c6.30496,6.30356,16.54928,6.30356,22.87426,0l83.60959-83.26412c6.32499-6.28361,6.32499-16.499477,0-22.803038-6.30496-6.30356-16.55553-6.30356-22.88051,0l-72.13806,71.893768-72.613438-72.373767c-3.14247-3.151781-7.29074-4.725174-11.433999-4.725174h-0.0188z\" /></svg>",
+  "contexts": [
+   "ffe-inline-button__icon bank-choice__all-list--chevron | bank-choice__all-list--item | SpareBank 1 GudbrandsdalSkaper verdier f",
+   "ffe-inline-button__icon bank-choice__all-list--chevron | bank-choice__all-list--item | SpareBank 1 Hallingdal ValdresFjellstøtt",
+   "ffe-inline-button__icon bank-choice__all-list--chevron | bank-choice__all-list--item | SpareBank 1 HelgelandEn drivkraft for ve",
+   "ffe-inline-button__icon bank-choice__all-list--chevron | bank-choice__all-list--item | SpareBank 1 Lom og SkjåkLokalbanken din ",
+   "ffe-inline-button__icon bank-choice__all-list--chevron | bank-choice__all-list--item | SpareBank 1 Nord-NorgeFor Nord-Norge.",
+   "ffe-inline-button__icon bank-choice__all-list--chevron | bank-choice__all-list--item | SpareBank 1 NordmøreTett på kundenes beh",
+   "ffe-inline-button__icon bank-choice__all-list--chevron | bank-choice__all-list--item | SpareBank 1 Ringerike HadelandStolt støt",
+   "ffe-inline-button__icon bank-choice__all-list--chevron | bank-choice__all-list--item | SpareBank 1 SMNSammen får vi ting til å ",
+   "ffe-inline-button__icon bank-choice__all-list--chevron | bank-choice__all-list--item | SpareBank 1 Sogn og FjordaneVi er med he",
+   "ffe-inline-button__icon bank-choice__all-list--chevron | bank-choice__all-list--item | SpareBank 1 Sør-NorgeHjelper driftige fo",
+   "ffe-inline-button__icon bank-choice__all-list--chevron | bank-choice__all-list--item | SpareBank 1 Østfold AkershusSammen får v",
+   "ffe-inline-button__icon bank-choice__all-list--chevron | bank-choice__all-list--item | SpareBank 1 ØstlandetBanken med kundeutb"
+  ],
+  "w": null,
+  "h": null,
+  "viewBox": "0 0 200 200"
+ },
+ "icon-8": {
+  "svg": "<svg aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -960 960 960\" class=\"to-parent__link-icon\"> <path fill=\"currentColor\" d=\"M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z\" /> </svg>",
+  "contexts": [
+   "to-parent__link-icon | ffe-link-text to-parent__link | Låne"
+  ],
+  "w": null,
+  "h": null,
+  "viewBox": "0 -960 960 960"
+ },
+ "icon-9": {
+  "svg": "<svg aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -960 960 960\" class=\"arrow-right\"> <path fill=\"currentColor\" d=\"M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z\" /> </svg>",
+  "contexts": [
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow",
+   "arrow-right | card__container-content-arrow"
+  ],
+  "w": null,
+  "h": null,
+  "viewBox": "0 -960 960 960"
+ },
+ "icon-10": {
+  "svg": "<svg viewBox=\"0 0 200 200\" class=\"ffe-accordion-item__heading-icon\"> <path d=\"m16.171492,41.999998c-4.143269,0-8.2852797,1.57464-11.4277496,4.706478-6.3249899,6.283609-6.3249899,16.499474,0,22.803034l84.0286676,83.76282c6.30496,6.30356,16.54928,6.30356,22.87426,0l83.60959-83.26412c6.32499-6.28361,6.32499-16.499477,0-22.803038-6.30496-6.30356-16.55553-6.30356-22.88051,0l-72.13806,71.893768-72.613438-72.373767c-3.14247-3.151781-7.29074-4.725174-11.433999-4.725174h-0.0188z\" /> </svg>",
+  "contexts": [
+   "ffe-accordion-item__heading-icon | ffe-accordion-item__heading-button faq-item__heading-button | Hvor mye kan jeg få i boliglån?",
+   "ffe-accordion-item__heading-icon | ffe-accordion-item__heading-button faq-item__heading-button | Hvor mye egenkapital må jeg ha for å kjø",
+   "ffe-accordion-item__heading-icon | ffe-accordion-item__heading-button faq-item__heading-button | Hva betyr en renteøkning for mitt boligl",
+   "ffe-accordion-item__heading-icon | ffe-accordion-item__heading-button faq-item__heading-button | Kan jeg kjøpe ny bolig før den gamle er ",
+   "ffe-accordion-item__heading-icon | ffe-accordion-item__heading-button faq-item__heading-button | Hva er et flexilån?",
+   "ffe-accordion-item__heading-icon | ffe-accordion-item__heading-button faq-item__heading-button | Hva er forskjellen på fast og flytende r",
+   "ffe-accordion-item__heading-icon | ffe-accordion-item__heading-button faq-item__heading-button | Hvordan kan jeg øke boliglånet?",
+   "ffe-accordion-item__heading-icon | ffe-accordion-item__heading-button faq-item__heading-button | Hva er et finansieringsbevis?",
+   "ffe-accordion-item__heading-icon | ffe-accordion-item__heading-button faq-item__heading-button | Hva er avdragsfrihet?",
+   "ffe-accordion-item__heading-icon | ffe-accordion-item__heading-button faq-item__heading-button | Hva er en kausjonist?",
+   "ffe-accordion-item__heading-icon | ffe-accordion-item__heading-button faq-item__heading-button | Hva betyr priseksemplet?",
+   "ffe-accordion-item__heading-icon | ffe-accordion-item__heading-button faq-item__heading-button | Hva er forskjellen på nominell og effekt",
+   "ffe-accordion-item__heading-icon | ffe-accordion-item__heading-button faq-item__heading-button | Hva er forskjellen på annuitetslån og se",
+   "ffe-accordion-item__heading-icon | ffe-accordion-item__heading-button faq-item__heading-button | Hva vil det si å refinansiere boliglånet",
+   "ffe-accordion-item__heading-icon | ffe-accordion-item__heading-button faq-item__heading-button | Må jeg bruke min BSU når jeg skal kjøpe "
+  ],
+  "w": null,
+  "h": null,
+  "viewBox": "0 0 200 200"
+ },
+ "icon-11": {
+  "svg": "<svg viewBox=\"0 0 200 200\" class=\"feedback-thumbs__icon\"><title>Ja</title><path d=\"M191 90.2c.8-2 1.3-4.4 1.3-6.6V80c0-10.6-8.5-19-19-19h-35.7c1.3-7.3 3-18 3.3-27.2 0-8.8-3-16.7-9-22.4-5-5-12-7.8-19-7.8-9 0-15 6-16 15.7v.7c0 .2 0 11-4 26.4-7 23.6-24 35.2-34 40V86c0-3.5-3-6-6-6H13C6.3 80 .7 85.3.7 92.3V182c0 7 5.5 12.6 12.5 12.6h34c7 0 12.5-5.5 12.5-12.5v-4c7.5 2 18.4 5 29 5H164c12 0 21.3-9 21.3-21v-7c5.5-3.3 9.2-9.2 9.2-16.2V136c0-3.4-1-6.5-2.4-9.3 6-3.5 9-9.4 9-16.2V107c0-7.5-4-13.7-10-16.7zM46.4 181.4H13.8V93h32.6v88.4zM172.2 161c0 4.4-3.7 8-8 8h-76c-10.6 0-22.6-3-29-5v-63c13.4-5 38-19.8 46.6-51 4-15.6 4.5-27.2 4.5-29.6.4-3.7 2.2-3.7 2.8-3.7 4 0 8 1.3 10 4 3 3 5 7.4 5 12.6 0 13.6-4.2 32.2-4.2 32.4l-2 8h52c3.3 0 6 2.7 6 6v3.7c0 2.6-2 4.6-4.6 4.6h-32v13h39.5c3 0 5.5 2.5 5.5 5.6v3.5c0 4-3 7-7 7h-39v13h33c3.2 0 6 3 6 6v3c0 3.7-3 6-6 6h-32v13h29v4z\" /></svg>",
+  "contexts": [
+   "feedback-thumbs__icon | feedback-thumbs__link | Ja",
+   "feedback-thumbs__icon | feedback-thumbs__link | Ja",
+   "feedback-thumbs__icon | feedback-thumbs__link | Ja",
+   "feedback-thumbs__icon | feedback-thumbs__link | Ja",
+   "feedback-thumbs__icon | feedback-thumbs__link | Ja",
+   "feedback-thumbs__icon | feedback-thumbs__link | Ja",
+   "feedback-thumbs__icon | feedback-thumbs__link | Ja",
+   "feedback-thumbs__icon | feedback-thumbs__link | Ja",
+   "feedback-thumbs__icon | feedback-thumbs__link | Ja",
+   "feedback-thumbs__icon | feedback-thumbs__link | Ja",
+   "feedback-thumbs__icon | feedback-thumbs__link | Ja",
+   "feedback-thumbs__icon | feedback-thumbs__link | Ja",
+   "feedback-thumbs__icon | feedback-thumbs__link | Ja",
+   "feedback-thumbs__icon | feedback-thumbs__link | Ja",
+   "feedback-thumbs__icon | feedback-thumbs__link | Ja",
+   "feedback-thumbs__icon | ffe-button ffe-button--secondary | Ja"
+  ],
+  "w": null,
+  "h": null,
+  "viewBox": "0 0 200 200"
+ },
+ "icon-12": {
+  "svg": "<svg viewBox=\"0 0 200 200\" class=\"feedback-thumbs__icon feedback-thumbs__icon--down\"><title>Nei</title><path d=\"M191 90.2c.8-2 1.3-4.4 1.3-6.6V80c0-10.6-8.5-19-19-19h-35.7c1.3-7.3 3-18 3.3-27.2 0-8.8-3-16.7-9-22.4-5-5-12-7.8-19-7.8-9 0-15 6-16 15.7v.7c0 .2 0 11-4 26.4-7 23.6-24 35.2-34 40V86c0-3.5-3-6-6-6H13C6.3 80 .7 85.3.7 92.3V182c0 7 5.5 12.6 12.5 12.6h34c7 0 12.5-5.5 12.5-12.5v-4c7.5 2 18.4 5 29 5H164c12 0 21.3-9 21.3-21v-7c5.5-3.3 9.2-9.2 9.2-16.2V136c0-3.4-1-6.5-2.4-9.3 6-3.5 9-9.4 9-16.2V107c0-7.5-4-13.7-10-16.7zM46.4 181.4H13.8V93h32.6v88.4zM172.2 161c0 4.4-3.7 8-8 8h-76c-10.6 0-22.6-3-29-5v-63c13.4-5 38-19.8 46.6-51 4-15.6 4.5-27.2 4.5-29.6.4-3.7 2.2-3.7 2.8-3.7 4 0 8 1.3 10 4 3 3 5 7.4 5 12.6 0 13.6-4.2 32.2-4.2 32.4l-2 8h52c3.3 0 6 2.7 6 6v3.7c0 2.6-2 4.6-4.6 4.6h-32v13h39.5c3 0 5.5 2.5 5.5 5.6v3.5c0 4-3 7-7 7h-39v13h33c3.2 0 6 3 6 6v3c0 3.7-3 6-6 6h-32v13h29v4z\" /></svg>",
+  "contexts": [
+   "feedback-thumbs__icon feedback-thumbs__icon--down | feedback-thumbs__link feedback-thumbs__link--down | Nei",
+   "feedback-thumbs__icon feedback-thumbs__icon--down | feedback-thumbs__link feedback-thumbs__link--down | Nei",
+   "feedback-thumbs__icon feedback-thumbs__icon--down | feedback-thumbs__link feedback-thumbs__link--down | Nei",
+   "feedback-thumbs__icon feedback-thumbs__icon--down | feedback-thumbs__link feedback-thumbs__link--down | Nei",
+   "feedback-thumbs__icon feedback-thumbs__icon--down | feedback-thumbs__link feedback-thumbs__link--down | Nei",
+   "feedback-thumbs__icon feedback-thumbs__icon--down | feedback-thumbs__link feedback-thumbs__link--down | Nei",
+   "feedback-thumbs__icon feedback-thumbs__icon--down | feedback-thumbs__link feedback-thumbs__link--down | Nei",
+   "feedback-thumbs__icon feedback-thumbs__icon--down | feedback-thumbs__link feedback-thumbs__link--down | Nei",
+   "feedback-thumbs__icon feedback-thumbs__icon--down | feedback-thumbs__link feedback-thumbs__link--down | Nei",
+   "feedback-thumbs__icon feedback-thumbs__icon--down | feedback-thumbs__link feedback-thumbs__link--down | Nei",
+   "feedback-thumbs__icon feedback-thumbs__icon--down | feedback-thumbs__link feedback-thumbs__link--down | Nei",
+   "feedback-thumbs__icon feedback-thumbs__icon--down | feedback-thumbs__link feedback-thumbs__link--down | Nei",
+   "feedback-thumbs__icon feedback-thumbs__icon--down | feedback-thumbs__link feedback-thumbs__link--down | Nei",
+   "feedback-thumbs__icon feedback-thumbs__icon--down | feedback-thumbs__link feedback-thumbs__link--down | Nei",
+   "feedback-thumbs__icon feedback-thumbs__icon--down | feedback-thumbs__link feedback-thumbs__link--down | Nei",
+   "feedback-thumbs__icon feedback-thumbs__icon--down | ffe-button ffe-button--secondary | Nei"
+  ],
+  "w": null,
+  "h": null,
+  "viewBox": "0 0 200 200"
+ },
+ "icon-13": {
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -960 960 960\" class=\"faq__new-window\"> <path fill=\"currentColor\" d=\"M186.67-120q-27 0-46.84-19.83Q120-159.67 120-186.67v-586.66q0-27 19.83-46.84Q159.67-840 186.67-840h246q14.16 0 23.75 9.62 9.58 9.61 9.58 23.83 0 14.22-9.58 23.72-9.59 9.5-23.75 9.5h-246v586.66h586.66v-246q0-14.16 9.62-23.75 9.62-9.58 23.83-9.58 14.22 0 23.72 9.58 9.5 9.59 9.5 23.75v246q0 27-19.83 46.84Q800.33-120 773.33-120H186.67Zm586.66-606-366 366q-9.66 9.67-23.33 9.33-13.67-.33-23.33-10Q351-370.33 351-384q0-13.67 9.67-23.33l366-366H566q-14.17 0-23.75-9.62t-9.58-23.83q0-14.22 9.58-23.72 9.58-9.5 23.75-9.5h240.67q14.16 0 23.75 9.58 9.58 9.59 9.58 23.75V-566q0 14.17-9.62 23.75-9.61 9.58-23.83 9.58-14.22 0-23.72-9.58-9.5-9.58-9.5-23.75v-160Z\" /> </svg>",
+  "contexts": [
+   "faq__new-window | faq-link | Hvor mye kan jeg få i boliglån?",
+   "faq__new-window | faq-link | Hvor mye egenkapital må jeg ha for å kjø",
+   "faq__new-window | faq-link | Hva betyr en renteøkning for mitt boligl",
+   "faq__new-window | faq-link | Kan jeg kjøpe ny bolig før den gamle er ",
+   "faq__new-window | faq-link | Hva er et flexilån?",
+   "faq__new-window | faq-link | Hva er forskjellen på fast og flytende r",
+   "faq__new-window | faq-link | Hvordan kan jeg øke boliglånet?",
+   "faq__new-window | faq-link | Hva er et finansieringsbevis?",
+   "faq__new-window | faq-link | Hva er avdragsfrihet?",
+   "faq__new-window | faq-link | Hva er en kausjonist?",
+   "faq__new-window | faq-link | Hva betyr priseksemplet?",
+   "faq__new-window | faq-link | Hva er forskjellen på nominell og effekt",
+   "faq__new-window | faq-link | Hva er forskjellen på annuitetslån og se",
+   "faq__new-window | faq-link | Hva vil det si å refinansiere boliglånet",
+   "faq__new-window | faq-link | Må jeg bruke min BSU når jeg skal kjøpe "
+  ],
+  "w": null,
+  "h": null,
+  "viewBox": "0 -960 960 960"
+ },
+ "icon-14": {
+  "svg": "<svg focusable=\"false\" class=\"ffe-button__icon hide\" viewBox=\"0 0 200 200\" width=\"150\" height=\"150\" x=\"1200\" y=\"1200\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M18.77 0c-3.562 0-7.125 1.347-9.834 4.044L4.507 8.483c-5.381 5.394-5.381 14.25 0 19.68l71.19 71.83-71.66 71.83c-5.381 5.394-5.381 14.25 0 19.68l4.429 4.439c5.381 5.394 14.22 5.394 19.64 0l71.66-71.83 71.65 71.83c5.381 5.394 14.23 5.394 19.65 0l4.429-4.439c5.381-5.394 5.381-14.25 0-19.68l-71.19-71.83 71.66-71.83c5.381-4.914 5.381-13.78 0-19.21l-4.429-4.423c-5.381-5.394-14.22-5.394-19.64 0l-72.13 71.34-71.17-71.83c-2.691-2.697-6.257-4.044-9.819-4.044z\" /> </svg>",
+  "contexts": [
+   "ffe-button__icon hide | js-faq-toggle faq-button--more ffe-button ffe-button--expand faq-button--expand | Se flere spørsmål og svar"
+  ],
+  "w": "150",
+  "h": "150",
+  "viewBox": "0 0 200 200"
+ },
+ "icon-15": {
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" viewBox=\"0 -960 960 960\" width=\"24\"><path d=\"M800-480q-16 0-28.5-11.5T757-520q-13-93-78.5-158.5T520-757q-17-2-28.5-14T480-800q0-17 12-28.5t28-9.5q126 14 215 103t103 215q2 16-9.5 28T800-480Zm-167 0q-13 0-23-9t-15-24q-8-29-30.5-51.5T513-595q-15-5-24-15t-9-24q0-20 14-32.5t31-8.5q56 13 96.5 53.5T675-525q4 17-9 31t-33 14Zm165 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z\" /></svg>",
+  "contexts": [
+   "icon-circle"
+  ],
+  "w": "24",
+  "h": "24",
+  "viewBox": "0 -960 960 960"
+ },
+ "icon-16": {
+  "svg": "<svg aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -960 960 960\" class=\"arrow-down\"> <path fill=\"currentColor\" d=\"M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z\" /> </svg>",
+  "contexts": [
+   "arrow-down | icon",
+   "arrow-down | icon",
+   "arrow-down | icon",
+   "arrow-down | icon",
+   "arrow-down | icon"
+  ],
+  "w": null,
+  "h": null,
+  "viewBox": "0 -960 960 960"
+ },
+ "icon-17": {
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" viewBox=\"0 -960 960 960\" width=\"24\"><path d=\"M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z\" /></svg>",
+  "contexts": [
+   "icon-circle"
+  ],
+  "w": "24",
+  "h": "24",
+  "viewBox": "0 -960 960 960"
+ },
+ "icon-18": {
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" viewBox=\"0 -960 960 960\" width=\"24\"><path d=\"M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z\" /></svg>",
+  "contexts": [
+   "icon-circle"
+  ],
+  "w": "24",
+  "h": "24",
+  "viewBox": "0 -960 960 960"
+ },
+ "icon-19": {
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" viewBox=\"0 -960 960 960\" width=\"24\"><path d=\"M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z\" /></svg>",
+  "contexts": [
+   "icon-circle"
+  ],
+  "w": "24",
+  "h": "24",
+  "viewBox": "0 -960 960 960"
+ },
+ "icon-20": {
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" viewBox=\"0 -960 960 960\" width=\"24\"><path d=\"M80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z\" /></svg>",
+  "contexts": [
+   "icon-circle"
+  ],
+  "w": "24",
+  "h": "24",
+  "viewBox": "0 -960 960 960"
+ },
+ "icon-21": {
+  "svg": "<svg viewBox=\"0 0 200 200\" class=\"ffe-inline-button__icon ffe-inline-button__icon--right\" style=\"margin-left: 5px; transform: none;\"><path d=\"m16.171492,41.999998c-4.143269,0-8.2852797,1.57464-11.4277496,4.706478-6.3249899,6.283609-6.3249899,16.499474,0,22.803034l84.0286676,83.76282c6.30496,6.30356,16.54928,6.30356,22.87426,0l83.60959-83.26412c6.32499-6.28361,6.32499-16.499477,0-22.803038-6.30496-6.30356-16.55553-6.30356-22.88051,0l-72.13806,71.893768-72.613438-72.373767c-3.14247-3.151781-7.29074-4.725174-11.433999-4.725174h-0.0188z\" /></svg>",
+  "contexts": [
+   "ffe-inline-button__icon ffe-inline-button__icon--right | js-contact-bankpicker__toggle ffe-inline-button ffe-inline-button--expand | velg banken",
+   "ffe-inline-button__icon ffe-inline-button__icon--right | js-contact-bankpicker__toggle ffe-inline-button ffe-inline-button--expand | velg banken",
+   "ffe-inline-button__icon ffe-inline-button__icon--right | js-contact-bankpicker__toggle ffe-inline-button ffe-inline-button--expand | velg banken",
+   "ffe-inline-button__icon ffe-inline-button__icon--right | js-contact-bankpicker__toggle ffe-inline-button ffe-inline-button--expand | velg banken"
+  ],
+  "w": null,
+  "h": null,
+  "viewBox": "0 0 200 200"
+ },
+ "icon-22": {
+  "svg": "<svg aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -960 960 960\" class=\"listbanks\"> <path fill=\"currentColor\" d=\"M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z\" /> </svg>",
+  "contexts": [
+   "listbanks | icon",
+   "listbanks | icon",
+   "listbanks | icon",
+   "listbanks | icon"
+  ],
+  "w": null,
+  "h": null,
+  "viewBox": "0 -960 960 960"
+ },
+ "icon-23": {
+  "svg": "<svg focusable=\"false\" class=\"ffe-button__icon\" viewBox=\"0 0 200 200\" width=\"150\" height=\"150\" x=\"1200\" y=\"1200\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M18.77 0c-3.562 0-7.125 1.347-9.834 4.044L4.507 8.483c-5.381 5.394-5.381 14.25 0 19.68l71.19 71.83-71.66 71.83c-5.381 5.394-5.381 14.25 0 19.68l4.429 4.439c5.381 5.394 14.22 5.394 19.64 0l71.66-71.83 71.65 71.83c5.381 5.394 14.23 5.394 19.65 0l4.429-4.439c5.381-5.394 5.381-14.25 0-19.68l-71.19-71.83 71.66-71.83c5.381-4.914 5.381-13.78 0-19.21l-4.429-4.423c-5.381-5.394-14.22-5.394-19.64 0l-72.13 71.34-71.17-71.83c-2.691-2.697-6.257-4.044-9.819-4.044z\" /></svg>",
+  "contexts": [
+   "ffe-button__icon | contact-bankpicker__bankList--close ffe-button ffe-button--expand ffe-button--expanded | Lukk bankliste",
+   "ffe-button__icon | contact-bankpicker__bankList--close ffe-button ffe-button--expand ffe-button--expanded | Lukk bankliste",
+   "ffe-button__icon | contact-bankpicker__bankList--close ffe-button ffe-button--expand ffe-button--expanded | Lukk bankliste",
+   "ffe-button__icon | contact-bankpicker__bankList--close ffe-button ffe-button--expand ffe-button--expanded | Lukk bankliste"
+  ],
+  "w": "150",
+  "h": "150",
+  "viewBox": "0 0 200 200"
+ },
+ "icon-24": {
+  "svg": "<svg aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -960 960 960\" class=\"icon-search-clear\"> <path fill=\"currentColor\" d=\"M480-433.33 274.67-228q-9.67 9.67-23.34 9.67-13.66 0-23.33-9.67-9.67-9.67-9.67-23.33 0-13.67 9.67-23.34L433.33-480 228-685.33q-9.67-9.67-9.67-23.34 0-13.66 9.67-23.33 9.67-9.67 23.33-9.67 13.67 0 23.34 9.67L480-526.67 685.33-732q9.67-9.67 23.34-9.67 13.66 0 23.33 9.67 9.67 9.67 9.67 23.33 0 13.67-9.67 23.34L526.67-480 732-274.67q9.67 9.67 9.67 23.34 0 13.66-9.67 23.33-9.67 9.67-23.33 9.67-13.67 0-23.34-9.67L480-433.33Z\" /> </svg>",
+  "contexts": [
+   "icon-search-clear | search-clear-button hide | Fjern søketekst"
+  ],
+  "w": null,
+  "h": null,
+  "viewBox": "0 -960 960 960"
+ },
+ "icon-25": {
+  "svg": "<svg aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -960 960 960\" class=\"arrow-up\"> <path fill=\"currentColor\" d=\"M480-357.67q-6.67 0-12.33-2.16-5.67-2.17-11-7.5L263.33-560.67q-9.66-9.66-9.33-23.66.33-14 10-23.67 9.67-9.67 23.67-9.67 14 0 23.66 9.67L480-438.67 649.33-608q9.67-9.67 23.34-9.33 13.66.33 23.33 10 9.67 9.66 9.67 23.66T696-560L503.33-367.33q-5.33 5.33-11 7.5-5.66 2.16-12.33 2.16Z\" /> </svg>",
+  "contexts": [
+   "arrow-up | to-top | Til toppen"
+  ],
+  "w": null,
+  "h": null,
+  "viewBox": "0 -960 960 960"
+ }
+}

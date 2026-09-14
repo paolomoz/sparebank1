@@ -1,0 +1,59 @@
+/* product.css — archetype "product" (Produkt / Underkategori pages such as /privat/lan/boliglan.html).
+   Modules that are unique to this archetype: hero band composition, banner-small, prices, calculator. */
+
+/* hero: the first band (white) with a 4-col text column offset by 1 and a 7-col rounded photo */
+.page--product .main > .band:first-of-type .grid-row { align-items: stretch; }
+.page--product .band .image--rounded .image__img { border-radius: 30px; }
+.band .col-lg-7 .image { position: relative; }
+
+/* banner-small (tinted call-out with illustration, inside a band) */
+.banner-small { display: flex; justify-content: center; max-width: var(--container); margin: 0 auto; padding: 54px 0 0; }
+.banner-small--color4 .banner-small__inner { background: var(--sand-30); }
+.banner-small--color1 .banner-small__inner { background: var(--vann); color: var(--white); }
+.banner-small__inner { display: flex; justify-content: center; align-items: center; flex-direction: column; position: relative; width: 100%; margin: 0; padding: 0 16px; }
+.banner-small__media { display: flex; position: relative; width: 200px; max-width: 200px; height: 150px; margin: -60px 0 -90px; }
+.banner-small__img { width: auto; max-width: 100%; height: 150px; margin: 0 auto; border-radius: 30px; }
+.banner-small__text { width: 100%; padding: 100px 0 20px; text-align: center; color: var(--fjell); }
+.banner-small__heading { margin: 0; font-family: var(--font-medium); font-size: 20px; line-height: 24px; color: var(--fjell); }
+.banner-small__info { margin: 0; color: var(--fjell); }
+.banner-small__bottom { display: flex; flex-direction: column-reverse; align-items: center; justify-content: center; min-height: 80px; }
+.banner-small__bottom .button-wrap { margin: 8px 0; }
+.banner-small__bottom-image img { width: auto !important; height: 30px; }
+@media (min-width: 768px) {
+  .banner-small { padding: 0; }
+  .banner-small__inner { flex-direction: row; width: 100%; max-width: none; margin: 0; padding: 0; }
+  .banner-small__bottom { min-height: 0; }
+  .banner-small__inner { justify-content: center; }
+  .banner-small__inner > * { flex: 0 0 auto; }
+  .banner-small__media { width: 200px; height: 190px; margin: -25px 0 0; }
+  .banner-small__img { height: 190px; }
+  .banner-small__text { width: 568px; padding: 20px; text-align: left; }
+  .banner-small__heading { font-size: 28px; line-height: 36px; }
+  .banner-small__bottom { flex-direction: row; justify-content: flex-start; height: 60px; }
+}
+/* the banner sits after a rule inside the sand band: the band content is 1280 wide, the banner grid is 8/12 offset 2 */
+
+
+/* prices: tinted band with a heading, 4-up small cards, a secondary button and the rate example */
+.prices { padding: 32px 10px 12px; background: var(--band-bg, var(--sand-30)); }
+.prices__title { max-width: 640px; margin: 0 auto; text-align: center; }
+@media (min-width: 768px) { .prices__title h2 { margin-bottom: 24px; } }
+.card-list--price .card { padding: 8px; }
+.prices .card-list { margin-bottom: 8px; }
+.card-list--price .card > .card__body { align-items: center; align-content: start; }
+.prices__bottom { display: flow-root; max-width: 640px; margin: 0 auto; text-align: center; }
+.prices__bottom .button-wrap { margin: 8px 0; }
+.prices__bottom p { margin: 16px 0; }
+@media (min-width: 768px) { .prices { padding: 64px 10px 42px; } }
+
+/* centred standalone heading between modules ("Hvor mye kan jeg låne?") */
+.main > .richtext { display: flow-root; max-width: 640px; margin: 48px auto 0; padding: 0 10px; text-align: center; }
+@media (min-width: 1024px) { .main > .richtext { margin-top: 72px; } }
+
+
+/* loan calculator — static snapshot of the hydrated widget (dynamics #7, interim) */
+.calculator { width: 100%; max-width: 100%; }
+.calculator__host { display: block; line-height: 18.4px; }
+
+/* related-topics on product pages carries a transparent wrap */
+.page--product .related-topics { background: transparent; }

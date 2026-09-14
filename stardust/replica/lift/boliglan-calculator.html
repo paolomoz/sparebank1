@@ -1,0 +1,73 @@
+<div class="calculator-loan parbase">
+
+
+
+
+
+
+
+
+
+<div id="boliglan-kalkulator" data-process="boliglan-kalkulator"></div>
+<script type="module" src="/bank/nettbank-privat/boliglan-kalkulator/static/sb1-lanekalkulator.js"></script>
+    
+<script>
+    var sparebank1Config = {
+        
+        bankAffiliate: "bank",
+        bankName: "SpareBank 1 Bank",
+        apiBaseUrl: "/api/personal/banking/boliglan-kalkulator",
+        authenticationUrl: "/nb/bank/privat/innlogging/identifisering.html",
+        authorizationPMUrl: "/nb/bank/privat/innlogging/logg-inn.html?goto=https://www.sparebank1.no/bank/nettbank-privat/avtale/velg-avtale",
+        basename: "/nb/bank/privat/lan/boliglan/ny-lanekalkulator.html",
+        lang: "nb",
+        text: {
+            priceExample: "Nominell rente 5,33 %. Effektiv rente 5,52 %. Låner du 2 millioner over 25 år koster lånet 1.644.115 og du betaler totalt 3.644.115 kroner.",
+            loanContact: "Kontakt meg om lån",
+            loanApply: "Søk lån"
+        },
+        initialTabIndex: "0",
+        costOfLoan: {   
+            url: {
+                applyForLoan: "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start",
+                contactLoan: "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lan.html"
+            },
+            number: {
+                annualNominalInterestRate: Number("5.33"),
+                establishmentFee: Number("2900"),
+                paymentFee: Number("50"),
+                housingPrice: Number("3000000"),
+                equity: Number("300000"),
+                repaymentPeriod: Number("25"),
+                fixedInterestRate: Number("2.8"),
+                fixedInterestRateBindingPeriod: Number("5")
+            }
+        },
+        howMuchLoan: {
+            url: {
+                applyForLoan: "https://www.sparebank1.no/bank/nettbank-privat/boliglan-soknad/start",
+                contactLoan: "https://www.sparebank1.no/nb/bank/privat/kundeservice/bestill/kontakt-meg-om-lan.html"
+            },
+            number: {
+                arrangementFee: Number("1500"),
+                grossAnnualIncome: Number("400000"),
+                existingLoan: Number("200000"),
+                annualNominalInterestRate: Number("5.33"),
+                paymentFee: Number("50"),
+                repaymentPeriod: Number("25")
+            }
+        }
+    };
+</script>
+
+
+<div class="js-overlay-apply">
+    
+</div>
+<div class="js-overlay-contact">
+    
+</div>
+
+
+
+</div>

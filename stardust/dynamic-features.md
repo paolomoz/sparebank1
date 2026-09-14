@@ -1,0 +1,57 @@
+<!-- _provenance: writtenBy stardust:dynamics (Phase 3 triage, curated under hands-off — replica Phase 2 gate); writtenAt 2026-09-14T16:05:00Z; againstInput stardust/current/_dynamics.json (13 archetypes + reach from 100 crawled pages), stardust/dynamics/dynamic-features.generated-plan.md (29 drafted rows); targetOrigin https://main--sparebank1--paolomoz.aem.page -->
+
+# Dynamic features — sparebank1.no (/nb/bank/, iteration 1)
+
+## Listings contract
+
+Content types that feed listing blocks. Every migrated page emits these `<meta name>` fields so the
+query index (`helix-query.yaml`, written at rollout) can drive the listing blocks:
+
+| content type | pages | meta fields | index | consumers |
+|---|---|---|---|---|
+| news-article (`/nb/bank/om-oss/nyheter/*`) | 6 in roster (560 on site) | `title`, `description`, `image`, `published-time` (from `article:published_time`), `category` (kicker, e.g. SVINDEL), `template: news-article` | `/nb/bank/om-oss/nyheter/query-index.json` | news-listing (`nyheter.html`, 32 cards), "Nyheter fra SpareBank 1" rail on om-oss, "Relaterte artikler" rail on articles |
+| markedsnytt article (`/privat/sparing/markedsnytt/artikler/*`) | 2 in roster | same + `tema` (temaFilter) | `/nb/bank/privat/sparing/markedsnytt/query-index.json` | markedsnytt-listing, "Markedsnytt" rail on privat / sparing / pensjon hubs |
+| FAQ (`Spørsmål`, `/kundeservice/**`) | 12 in roster (~1,300 on site) | `title`, `description`, `category` (kundeservice section), `template: faq` | `/nb/bank/query-index.json` | "Hva lurer andre på?" accordions are **editorially curated** (each product page picks its questions) → authored rows, not index-driven; "Se flere spørsmål og svar" links to the kundeservice hub |
+| product / hub cards (visual-nav, static-cards, related-products, prices) | — | none | none | **editorially curated** on the live site (AEM authors pick cards) → authored block rows, verbatim |
+
+## Features
+
+| # | id | feature | class | reach | disposition | reproducibility | status | pattern | decision / owner | evidence |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | bank-choice | "Vi er flere banker i hele Norge" bank selector: postcode → regional bank, "Bruk min posisjon" (geolocation), "Se alle banker" expandable list of 12 banks (links to the same path under `/nb/<bank>/`) | F+A | 70/100 | rebuild-native (interim) | needs-backend (postcode→bank lookup lives in `/openapi/nettsider/ressurser/bank/*`, host-bound) | interim | search-control + collapse | **owner: SB1 — expose the postcode→bank service cross-origin or ship a static postcode table.** Interim tier: the 12-bank list renders and links (static, verbatim); the postcode field validates 4 digits and, until the service is available, expands the bank list; "Bruk min posisjon" hidden when geolocation is unavailable | `_dynamics.json` rows 22/23 (overlay-btn), `bank-choice-wrap` DOM, endpoint `/openapi/nettsider/ressurser/bank/user` on 100/100 |
+| 2 | overlay-btn bank-choice modal | Product CTAs ("Søk boliglån", "Bli kunde", "Søk finansieringsbevis", `href="#"` / `.overlay-btn`) open a bank-choice dialog before redirecting to the chosen bank's flow | M | 66/100 | rebuild-native | self | pending → Phase 5 (rollout D2) | modal-loader | none — the dialog is the same 12-bank list as #1; CTA keeps its href (application app URL) as the no-JS path | rows 22, 23, 24; `.bank-choice-overlay[role=dialog]` per button |
+| 3 | login modal | "Logg inn" header button opens a login-choice dialog (nettbank privat / bedrift / forsikring) | M+X | 100/100 | rebuild-native | self | pending → Phase 5 | modal-loader | none — links to the existing authenticated apps (`/bank/nettbank-privat/*`, kundeforsikring) which stay on the source host (decided-out below) | row 25 (`loginModal`, reach 16/100 explicit), `#login-choices` DOM |
+| 4 | FAQ accordion | `.ffe-accordion` items expand/collapse (`aria-expanded`), "Se flere spørsmål og svar" toggles 8→15 items | M | 27/100 | rebuild-native | self | pending → Phase 3 (prototype) | accordion | none | row 8 (`js-faq-toggle`), row 18 |
+| 5 | page feedback | "Hva synes du om denne siden?" / "Var dette nyttig?" thumbs → POST to `/LogServlet` | F | 74/100 | rebuild-native (interim) | needs-backend | scaffolded-awaiting-owner | feedback-control | **owner: SB1 — analytics endpoint on the new host.** Interim: thumbs render, click shows the live site's "Takk for tilbakemeldingen" state locally, no network | `feedback--layout1/faq` on 58+39 pages; `LogServlet` in `SB1.config.urlList` |
+| 6 | contact tabs | "Kontakt oss" 5 channels: Ring oss (bank picker by postcode → phone numbers), Avtal møte, Skriv til oss, Finn kontor, Chat (boost.ai) | M+F+T | 100/100 | rebuild-native (tabs + static panels) / embed-passthrough (chat) | self (tabs, panels with the 12 banks' phone numbers — captured verbatim) · needs-business-decision (chat vendor on new host) | interim | tabs + static-snapshot | **owner: SB1 — boost.ai chat on the new host.** Interim: chat tab links to the live chat page | `#contact-us` DOM: 5 tabs, 5 hidden panels incl. per-bank phone list |
+| 7 | loan calculator (`#boliglan-kalkulator`) | React widget: "Hvor mye kan jeg låne?" / "Hvor mye koster lånet?" → POST `/api/personal/banking/boliglan-kalkulator/{economy,annuity-loan}` | CR+A | 2/100 (boliglan, lanekalkulator) | client-only (interim: embed-passthrough of the widget bundle is not possible cross-origin) | needs-backend (API dead on target, 404) | scaffolded-awaiting-owner | calculator | **owner: SB1 — expose calculator API cross-origin (CORS) or approve a client-side annuity formula.** Interim: the widget's static shell (tabs, sliders, inputs, result "Vi tror du kan låne", CTAs) renders with the captured example values; computation disabled with a note | rows 3, 4 (host-bound); `sb1-lanekalkulator.js` |
+| 8 | savings calculator (`sparekalkulator.js`) | React widget on sparekalkulator + spare-i-fond: sliders → projected savings | CR | 2/100 | client-only | self (pure client compute: compound interest; formula lifted from captured outputs) | pending → Phase 5 | calculator | none | `/bank/nettsider-privat/fond/static/sparekalkulator.js` |
+| 9 | currency converter | valutakalkulator NOK⇄EUR with live rates | CR+A | 1/100 | client-only (interim static-snapshot of captured rates) | needs-backend (rate service) | interim | calculator | **owner: SB1 — rate feed.** Interim: captured rates frozen with "Kurs per <capture date>" | `currency-converter` component |
+| 10 | price cards / rate examples | "Finn boliglånet som passer deg" cards + "Priseksempel: Nominell rente 5,33 %…" | D | 10+ | static-snapshot | self | delivered-by-capture | snapshot | none — rates are authored copy on the live page (change with bank choice via #1) | prices component; row 17 |
+| 11 | news / markedsnytt listings | `nyheter.export.json`, `artikler.export.json`, `hjemme.export.json` feed card rails (limit/offset/temaFilter) | D+L | 12/100 | index-backed | self | pending → Phase 5 (rollout, query-index) | listing-index-backed | none — listings contract above; the 6+2 roster articles seed the index, the remaining 554 news articles are content-pending (later iteration) | rows 9–12 (dead on target = expected: replaced by query-index), 20, 21 |
+| 12 | footer JSON | `/bin/sb1/components/footer?bank,lang,market` (frontend-clientlib pages fetch the footer) | A | 12/100 | static-snapshot | self | delivered-by-capture | snapshot | none — footer is authored once as the shared `/footer` fragment (captured verbatim) | row 2 |
+| 13 | `digitalData` / `SB1.config` | CMS settings object (bank, market, pageType, ids) | A | 100/100 | static-snapshot → page metadata | self | pending → Phase 5 | read-settings | none — `market`, `pageType`, `bank` become page `<meta>` (template, market) | row 1 |
+| 14 | client-rendered main (news / campaign / nyheter listing) | `nettsider-frontend` pages render `<main>` client-side (0 → 2,400–4,400 chars) | CR | 12/100 | static-snapshot | self (settled DOM captured on all 12 — none blank) | delivered-by-capture | settled-dom-snapshot | none — the 12 captured settled DOMs are complete; **no human-capture batch needed** (verified text lengths 2,401 / 2,798 / 4,359) | rows 5, 6, 7 |
+| 15 | Adobe Analytics / Target / Edge (`adobedc.demdex.net`, `edge.adobedc.net`), consent dialog (`optin`) | T | 100/100 | embed-passthrough (deferred) | needs-business-decision | decided (interim: none) | consent-gated-tags | **owner: SB1/Adobe — Launch/Web SDK property + CMP for the pilot host.** Interim: no tags, no consent dialog (pilot); documented in the register | row 26 |
+| 16 | YouTube embeds | iframes (4 pages) + runtime-injected podcast/video embed on markedsnytt | V | 8/100 | embed-passthrough | self (public ids) · needs-human-capture for the src-less iframe | pending → Phase 5 | media-as-url | resolve the runtime src from the settled DOM at deploy; else link | rows 27, 28 |
+| 17 | glossary modal | `glossary-modal` term pop-ups (81 instances) | M | ~20/100 | rebuild-native | self | pending → Phase 5 | modal-loader | none | `_modules.json` |
+| 18 | locale trees | nynorsk `/nn/sogn-fjordane/*` alternates on 9/13 archetypes; 12 regional-bank alternates in the bank list | I18N | 100/100 | rebuild-native (later iteration) | needs-business-decision | decided: **out of iteration 1** | locale-tree | scope: iteration 1 = `/nb/bank/` only (A1); alternates link to the live regional pages | rows 13, 14 |
+| 19 | sign-in / account links | Logg inn → `/bank/nettbank-privat/*`, `kundeforsikring.sparebank1.no` | X | 100/100 | decided-out | needs-backend | decided-out | — | authenticated apps stay on the source host; every link preserved | row 29 |
+| 20 | search (`Søk` header button → `?search=`) | Site search results page | S | 100/100 | rebuild-native (later) | needs-business-decision | decided: **interim link** to live search | search + results | **owner: decide index-backed EDS search vs. Solr passthrough.** Interim: the Søk button links to `https://www.sparebank1.no/nb/bank/privat/kundeservice.html?search=` | header DOM `search-toggle`; robots `Disallow: /*?search*` |
+
+## Decision batch (one message to the owner — SpareBank 1 / Bertrand)
+
+Everything below ships in an **interim tier** now and is upgraded when the decision lands:
+
+- **Backend / APIs (CORS or proxy on the EDS host):** bank lookup by postcode (#1), loan-calculator API (#7), currency rates (#9), page-feedback logging (#5).
+- **Vendors on the new host:** boost.ai chat (#6), Adobe Launch / Web SDK + consent (CMP) (#15).
+- **Product decisions:** site search — EDS index-backed vs. Solr passthrough (#20); locale/regional-bank trees — later iterations (#18).
+- **Content:** runtime-injected podcast embed src on markedsnytt (#16) — one human capture, or link.
+
+## Register (decided-out)
+
+| feature | reason | production statement |
+|---|---|---|
+| Nettbank / mobilbank / forsikring log-in and application flows (`/bank/nettbank-privat/*`, `kundeforsikring.sparebank1.no`) | authenticated first-party apps, session-bound | Links preserved verbatim to the current host; not part of the public-site migration. |
+| Adobe Analytics / Target / consent dialog (pilot) | tag property and CMP are owner-configured; a pilot host must not fire production tags | No tracking on the pilot origin. Re-add via Launch/Web SDK at go-live (owner decision). |
+| Regional-bank and nynorsk trees | out of iteration-1 scope (A1) | Alternates link to the live regional pages until those properties migrate. |
