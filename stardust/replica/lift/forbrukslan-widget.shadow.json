@@ -1,0 +1,13 @@
+{
+ "url": "https://www.sparebank1.no/nb/bank/privat/lan/forbrukslan.html",
+ "hostSel": "#credit-open-web-calculator-forbruk",
+ "shadow": true,
+ "rect": {
+  "w": 1280,
+  "h": 268
+ },
+ "hostClass": "",
+ "hostId": "credit-open-web-calculator-forbruk",
+ "capturedAt": "2026-09-14T20:25:53.586Z",
+ "bytes": 150544
+}

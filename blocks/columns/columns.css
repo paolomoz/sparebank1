@@ -137,3 +137,14 @@
   .columns.lead-2 .col__text h2 + p { margin-bottom: 24px; font-size: 24px; line-height: 32px; text-wrap: pretty; }
 }
 /* ===== /om-oss ===== */
+
+/* ===== theme (additive variant) =====
+   text-700 — the live richtext--max:700px text column (centred inside its grid column; the CTA row keeps the column width). */
+.columns.text-700 .col__text { width: 100%; max-width: 700px; margin-left: auto; margin-right: auto; }
+/* ===== /theme ===== */
+
+/* ===== product siblings (additive variant) =====
+   photo-cells — every column opens with a rounded 3:2 photo followed by heading/text/link (the live 4-up "reasons" grid, forbrukslan 1440 crop) */
+.columns.photo-cells .col__text > p:first-child { margin: 0 0 24px; line-height: 0; }
+.columns.photo-cells .col__text > p:first-child img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 30px; }
+/* ===== /product siblings ===== */

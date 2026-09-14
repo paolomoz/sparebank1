@@ -53,19 +53,22 @@ export function adviserList(root, ctx, opts = {}) {
  */
 export function omBand(root, ctx, opts = {}) {
   const tint = bgToken(bandBg(root) || bandBg(q(root, '.cols')));
-  const parts = []; const blocks = []; let extraStyle = opts.topLevelCols ? 'cols' : 'band';
+  const parts = []; const blocks = []; let extraStyle = styleOf(opts.topLevelCols ? 'cols' : 'band', opts.style);
   const encodeRow = (row) => {
     const cols = qa(row, ':scope > .col');
+    if (opts.rowHook) { const r = opts.rowHook(row, cols, ctx); if (r) { parts.push(r.html); blocks.push(...r.blocks); return; } } // family hook (theme featured cards)
     const cards = cols.filter((c) => q(c, ':scope > .col__content > .card'));
     const grid = gridCols(row);
     if (cards.length && cards.length === cols.length) { const span = (cls(cols[0]).find((c) => /^col-lg-\d+$/.test(c)) || 'col-lg-3').replace('col-', ''); parts.push(block('cards', ['grid', span, grid], cardRows(cols.map((c) => q(c, '.card')), ctx))); blocks.push('cards'); return; }
-    if (cols.length === 1 && grid) { parts.push(richtext(q(cols[0], '.col__content'), ctx)); return; }
+    if (cols.length === 1 && /grid-row--cols-/.test(row.className)) { parts.push(richtext(q(cols[0], '.col__content'), ctx)); return; }
     const variants = cols.map((c) => { const k = cls(c); const span = (k.find((x) => /^col-lg-\d+$/.test(x)) || 'col-lg-12').replace('col-', ''); const off = k.find((x) => /^col-lg-offset-\d+$/.test(x)); const first = k.includes('col--first') ? 'first' : null; const align = (k.find((x) => /^col--(middle|center|bottom)$/.test(x)) || '').replace('col--', ''); return [span, off ? off.replace('col-lg-offset-', 'offset-') : null, first, align, illustrationWidth(c)].filter(Boolean).join('-'); });
     const cells = cols.map((c) => richtext(q(c, ':scope > .col__content'), ctx));
     const lead = q(row, '.lead-blue'); if (lead) { const p = lead.closest('p'); const prev = p?.previousElementSibling; variants.push(prev && prev.tagName === 'H2' ? 'lead-2' : 'lead'); }
     if (q(row, '.subtle-text')) variants.push('subtle');
     if (cols.some((c) => illustrationWidth(c) && !/--ratio/.test(q(c, ':scope > .col__content > .image')?.getAttribute("style") || ''))) variants.push('baseline'); // live inline <picture> (7px tail)
     if (q(row, '.button-list')) variants.push('button-gap'); // live desktop 8px under each button
+    const tmax = /--max:\s*(\d+)px/.exec(qa(row, '.col__content > .richtext').map((r) => r.getAttribute('style') || '').join(' '))?.[1]; if (tmax) variants.push(`text-${tmax}`); // live richtext--max text column
+    const ratio = /--ratio:\s*([\d.]+)\/([\d.]+)/.exec(qa(row, '.col__content > .image').map((i) => i.getAttribute('style') || '').join(' ')); if (ratio && Math.abs(ratio[1] / ratio[2] - 4 / 3) < 0.05) variants.push('media-4-3'); // live 4:3 photo (default model is 3:2)
     // an image-only column holding a non-ratio illustration WITHOUT an authored width (live: natural aspect at column width, inline picture) → media-plain + baseline
     if (cols.some((c) => { const im = q(c, ':scope > .col__content > .image'); const st = im?.getAttribute('style') || ''; return im && q(im, 'img') && !/--ratio/.test(st) && !/--w:/.test(st) && [...q(c, ':scope > .col__content').children].every((ch) => /\bimage\b/.test(ch.getAttribute('class') || '')); })) variants.push('media-plain', 'baseline');
     if (grid) { variants.push(grid); if (grid === 'cols-9') variants.push('flush'); }
@@ -78,8 +81,8 @@ export function omBand(root, ctx, opts = {}) {
       if (ch.classList.contains('cols')) { walk([...ch.children]); continue; }
       if (ch.classList.contains('grid-row')) { encodeRow(ch); continue; }
       if (ch.classList.contains('adviser-list')) { const r = adviserList(ch, ctx, { inline: true }); if (r) { parts.push(r.html); blocks.push(...r.blocks); } continue; }
-      const enc = CORE[[...ch.classList].find((c) => CORE[c] && c !== 'band' && c !== 'cols')]; if (enc) { const r = enc(ch, ctx, { inline: true }); if (r) { parts.push(r.html); blocks.push(...r.blocks); } continue; }
-      if (ch.classList.contains('richtext')) parts.push(richtext(ch, ctx));
+      const enc = CORE[[...ch.classList].find((c) => CORE[c] && c !== 'band' && c !== 'cols' && c !== 'richtext')]; if (enc) { const r = enc(ch, ctx, { inline: true }); if (r) { parts.push(r.html); blocks.push(...r.blocks); } continue; }
+      if (ch.classList.contains('richtext')) { parts.push(richtext(ch, ctx)); if (opts.tailToken && parts.length > 1) extraStyle = styleOf(extraStyle, opts.tailToken); }
     }
   };
   walk([...root.children]);

@@ -11,6 +11,7 @@ import { el, icon, inlineIcons } from '../../scripts/sb1.js';
 export default function decorate(block) {
   if (block.classList.contains('disclosure')) { decorateDisclosure(block); return; } // additive variant (product siblings: progressive-disclosure)
   if (block.classList.contains('steps')) { decorateSteps(block); return; } // additive variant (product siblings: step-by-step)
+  if (block.classList.contains('tabs')) { decorateTabs(block); return; } // additive variant (product siblings: the AEM "section" master/detail list)
   const showN = +([...block.classList].find((c) => /^show-\d+$/.test(c)) || '').replace('show-', '') || Infinity;
   const faq = block.classList.contains('faq');
   const acc = el('div', { class: 'accordion__list' });
@@ -88,5 +89,28 @@ function decorateSteps(block) {
   const first = list.querySelector('.steps__item--active .steps__content'); if (first) info.replaceChildren(...[...first.children].map((c) => c.cloneNode(true)));
   listCol.append(list); infoCol.append(info); grid.append(listCol, infoCol);
   block.replaceChildren(grid);
+  inlineIcons(block);
+}
+
+/**
+ * `tabs` variant — the live AEM "section" module's item list: one row per item [item title][content]. Desktop: a list of
+ * underlined text buttons (active: fjell 2px rule + chevron) beside a detail panel with the active content; mobile: inline.
+ * The authored title <p> moves into the button (EW8); item 1 is active at rest.
+ */
+function decorateTabs(block) {
+  const rows = [...block.children];
+  const body = el('div', { class: 'seclist__body' }); const list = el('div', { class: 'seclist__list' }); const detail = el('div', { class: 'seclist__detail' });
+  const items = rows.map((row, i) => {
+    const [titleCell, contentCell] = [...row.children]; const id = `${block.dataset.blockName || 'tabs'}-${i}-${Math.random().toString(36).slice(2, 6)}`;
+    const item = el('div', { class: `seclist__item${i === 0 ? ' seclist__item--active' : ''}` });
+    const btn = el('button', { type: 'button', class: 'seclist__btn', 'aria-expanded': String(i === 0), 'aria-controls': id });
+    const text = el('span', { class: 'seclist__text' }); while (titleCell?.firstChild) text.append(titleCell.firstChild); btn.append(text, el('span', { class: 'seclist__icon' }, icon('chevron')));
+    const content = el('div', { class: 'seclist__content', id }); while (contentCell?.firstChild) content.append(contentCell.firstChild);
+    item.append(btn, content); list.append(item);
+    btn.addEventListener('click', () => { items.forEach((it) => { const on = it === item; it.classList.toggle('seclist__item--active', on); it.querySelector('.seclist__btn').setAttribute('aria-expanded', String(on)); }); detail.replaceChildren(...[...content.children].map((c) => c.cloneNode(true))); });
+    return item;
+  });
+  const first = list.querySelector('.seclist__item--active .seclist__content'); if (first) detail.replaceChildren(...[...first.children].map((c) => c.cloneNode(true)));
+  body.append(list, detail); block.replaceChildren(body);
   inlineIcons(block);
 }

@@ -57,6 +57,8 @@
   "band: the empty nested band (live 48/32px spacer under the h1) is layout → section style hub-head",
   "columns chat: the boost.ai entry field (dynamics #6 interim, no backend) — the trailing paragraph of the last cell is the field label (EW8: the authored <p> moves into the <label>); \"Send melding\" is fixed control chrome",
   "cards grid: consecutive same-shaped card rows folded into one block (D9)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/samtale-2.svg is 71813 bytes of SVG (> 40000) — authored as DA media samtale-2.png (rasterised)"
  ],
  "gaps": [],
@@ -64,5 +66,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/samtale-2.svg"
  ],
- "writtenAt": "2026-09-14T20:18:00.574Z"
+ "writtenAt": "2026-09-14T20:32:57.737Z"
 }

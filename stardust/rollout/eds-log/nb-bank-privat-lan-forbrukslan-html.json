@@ -53,7 +53,15 @@
   },
   {
    "module": "band",
-   "blocks": []
+   "blocks": [
+    "calculator"
+   ]
+  },
+  {
+   "module": "seclist",
+   "blocks": [
+    "accordion"
+   ]
   },
   {
    "module": "cols",
@@ -91,20 +99,26 @@
   "columns",
   "price-terms",
   "callout",
-  "cards",
+  "calculator",
   "accordion",
+  "cards",
   "feedback"
  ],
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
-  "lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+  "lint D1 callout: the FFE message box (round glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+  "callout tips lightbulb: the live message box is the `tips` kind (lightbulb glyph, sol ring, sand box) — carried as block variants",
+  "lint D1 calculator: bespoke widget (shadow-root snapshot of the loan calculator; dynamics #7 interim) — the link names the snapshot",
+  "calculator: static snapshot served from /data/calculator/privat-lan-forbrukslan.html (dynamics #7 interim — computation disabled until the API is exposed)",
+  "lint D1 accordion tabs: the live \"section\" master/detail module (list of section-items, active item shown in a detail panel; inline on mobile) — one row per item [item title][content]; item 1 open at rest",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
   "band: nested faq module — its own section style (faq, gap-48) is dropped inside a band that holds other modules",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:18:53.592Z"
+ "writtenAt": "2026-09-14T20:33:24.380Z"
 }

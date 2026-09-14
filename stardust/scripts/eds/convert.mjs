@@ -15,9 +15,23 @@ import { ENCODERS as CORE_ENCODERS } from './encoders.mjs';
 
 // family encoders: stardust/scripts/eds/encoders/<family>.mjs → `export default { '<module-class>': (root, ctx) => ({ html, blocks }) }`
 // merged over the core map (alphabetical file order; a family file may override a core key only if the product page still gates clean)
-const ENCODERS = { ...CORE_ENCODERS };
+// family dispatch (eds-requests W1-0): a family file applies ONLY to pages of its family — several families override the same
+// core keys (band, cols, tip, richtext) with family-gated walkers, so a global merge let the alphabetically-last file win everywhere.
+const FAMILY_ENCODERS = {};
 const encDir = path.resolve('stardust/scripts/eds/encoders');
-if (fs.existsSync(encDir)) for (const f of fs.readdirSync(encDir).filter((x) => x.endsWith('.mjs')).sort()) Object.assign(ENCODERS, (await import(path.join(encDir, f))).default || {});
+if (fs.existsSync(encDir)) for (const f of fs.readdirSync(encDir).filter((x) => x.endsWith('.mjs') && !x.startsWith('_')).sort()) FAMILY_ENCODERS[f.replace(/\.mjs$/, '')] = (await import(path.join(encDir, f))).default || {};
+// genuinely new module kinds (keys the core map does not have: title, qp, product-nav, …) are shared across families; family-gated
+// overrides of CORE keys (band, cols, tip, richtext, …) apply only to the family that wrote them
+// families whose encoder files were written as one walker set (a worker's group) apply together, in this order
+const FAMILY_GROUPS = [['category-hub', 'kundeservice-hub', 'market-landing'], ['utility', 'tool']];
+const encodersFor = (family) => {
+  const group = FAMILY_GROUPS.find((g) => g.includes(family)) || [family];
+  const out = { ...CORE_ENCODERS };
+  for (const [fam, enc] of Object.entries(FAMILY_ENCODERS)) if (!group.includes(fam)) for (const [k, v] of Object.entries(enc)) if (!(k in CORE_ENCODERS) && !(k in out)) out[k] = v;
+  for (const fam of group) Object.assign(out, FAMILY_ENCODERS[fam] || {});
+  return out;
+};
+let ENCODERS = { ...CORE_ENCODERS };
 
 const args = process.argv.slice(2);
 const state = JSON.parse(fs.readFileSync('stardust/state.json', 'utf8'));
@@ -42,7 +56,7 @@ function metadataBlock(pg, doc, chrome) {
 for (const slug of slugs) {
   const pg = state.pages.find((p) => p.slug === slug); if (!pg) { console.error(`no page ${slug}`); continue; }
   const protoFile = path.join(L.PROTO_DIR, `${slug}-proposed.html`); if (!fs.existsSync(protoFile)) { console.error(`no prototype for ${slug}`); continue; }
-  const { document } = L.loadProto(slug); const ctx = L.makeCtx(slug); ctx.notes = []; ctx.gaps = [];
+  const { document } = L.loadProto(slug); const ctx = L.makeCtx(slug); ctx.notes = []; ctx.gaps = []; ctx.family = pg.archetypeFamily; ENCODERS = encodersFor(pg.archetypeFamily);
   const chrome = chromeMap[slug] || { nav: '/nav', footer: '/footer' };
   const sections = [L.section([metadataBlock(pg, document, chrome)])];
   const map = [];

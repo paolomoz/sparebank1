@@ -117,8 +117,10 @@ export function inline(el, ctx) {
     }
     if (t === 'sup' || t === 'sub' || t === 'strong' || t === 'em' || t === 'b' || t === 'i' || t === 'u' || t === 's' || t === 'code' || t === 'small') {
       // the pipeline drops a <br> that sits inside inline formatting (<b>Telefon<br></b>) — move leading/trailing breaks outside the element
+      // …and, like the pipeline, edge whitespace moves outside the element (<b>Mer </b>og → <b>Mer</b> og) so words never merge
       let inner = inline(n, ctx); let lead = ''; let tail = '';
-      while (inner.startsWith('<br>')) { inner = inner.slice(4); lead += '<br>'; } while (inner.endsWith('<br>')) { inner = inner.slice(0, -4); tail += '<br>'; }
+      const strip = () => { let m; while ((m = /^(\s+|&nbsp;|<br>)/.exec(inner))) { inner = inner.slice(m[0].length); lead += m[0] === '<br>' ? '<br>' : ' '; } while ((m = /(\s+|&nbsp;|<br>)$/.exec(inner))) { inner = inner.slice(0, -m[0].length); tail = (m[0] === '<br>' ? '<br>' : ' ') + tail; } };
+      strip(); lead = lead.replace(/ +/g, ' '); tail = tail.replace(/ +/g, ' ');
       out += inner.trim() ? `${lead}<${t}>${inner}</${t}>${tail}` : lead + inner + tail; continue;
     }
     if (t === 'svg' || t === 'canvas' || t === 'script' || t === 'style' || t === 'button' || t === 'input') continue;

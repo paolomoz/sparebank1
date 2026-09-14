@@ -79,12 +79,13 @@
   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
   "price-terms: the overlay link targets its own module anchor on live (bank chooser dialog) — kept verbatim, no-op until the dialog dynamic exists",
   "href: \"${linksbm.leasingbillan.sok}\" is an unresolved live link placeholder (client-side rewrite, like lenker.sparebank1.no) — bounced to the source page https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering/leasing.html",
-  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/innhosting-korn-bonde-landbruk-bedrift-lys-bakgrunn.svg is 719982 bytes of SVG (> 40000) — authored as DA media innhosting-korn-bonde-landbruk-bedrift-lys-bakgrunn.png (rasterised)"
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/innhosting-korn-bonde-landbruk-bedrift-lys-bakgrunn.svg is 719982 bytes of SVG (> 40000) — authored as DA media innhosting-korn-bonde-landbruk-bedrift-lys-bakgrunn.png (rasterised)",
+  "spacer: blank <p> dropped (live renders it as vertical space)"
  ],
  "gaps": [],
  "assets": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/innhosting-korn-bonde-landbruk-bedrift-lys-bakgrunn.svg"
  ],
- "writtenAt": "2026-09-14T20:13:57.092Z"
+ "writtenAt": "2026-09-14T20:33:22.184Z"
 }

@@ -151,6 +151,11 @@
   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-dame-sand-sirkel-usymmetrisk.svg is 1012845 bytes of SVG (> 40000) — authored as DA media illustrasjon-dame-sand-sirkel-usymmetrisk.png (rasterised)",
   "faq: a coverage comparison table sits inside this answer on live — flattened to default content (feature, covered-by list, details); a table/block cannot nest inside an accordion row",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
@@ -158,5 +163,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-dame-sand-sirkel-usymmetrisk.svg"
  ],
- "writtenAt": "2026-09-14T20:13:59.382Z"
+ "writtenAt": "2026-09-14T20:33:23.485Z"
 }

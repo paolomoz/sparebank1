@@ -77,8 +77,7 @@
   {
    "module": "band",
    "blocks": [
-    "cards",
-    "columns"
+    "cards"
    ]
   },
   {
@@ -101,7 +100,7 @@
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
   "lint D1 accordion steps: the live step-by-step widget (numbered master list + detail panel; mobile: inline expansion) — one row per step [linked step title][content]; step 1 open at rest",
-  "lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+  "lint D1 callout: the FFE message box (round glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2025/verdenskart-verden-lys-bakgrunn.svg is 64250 bytes of SVG (> 40000) — authored as DA media verdenskart-verden-lys-bakgrunn.png (rasterised)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
@@ -110,5 +109,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2025/verdenskart-verden-lys-bakgrunn.svg"
  ],
- "writtenAt": "2026-09-14T20:13:56.387Z"
+ "writtenAt": "2026-09-14T20:33:21.666Z"
 }

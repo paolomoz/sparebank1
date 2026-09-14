@@ -88,3 +88,43 @@ grouping (or on `.col__text`'s children).
 - **`title` module (W2)**: vare-eksperter, bli-kunde, gronne-lan still report `module title emitted as prose` — the `title` key is owned by category-hub/tool (family-gated → prose fallback for product). Left for the owner; the h1 is in the document as prose.
 - **Live link placeholders**: leasing carries `<a href="${linksbm.leasingbillan.sok}">` (an AEM link resolved client-side). Lint D4 🔴 on the raw href; `product.mjs` bounces it to the source page with a note — the same justified class as the `lenker.sparebank1.no` runtime rewrites; a site-wide rule in `lib.href()` would be cleaner.
 - **Chrome text in blocks**: `carousel` generates "N av M" (counter) and the Forrige/Neste controls; `accordion steps` generates the step numbers. Fixed strings like the accordion's "Åpne" / faq "Var dette nyttig?" — flagging for the i18n/label policy if one lands.
+
+## W4 (om-oss · theme · markedsnytt-listing) — 2026-09-14
+
+1. **Loader collision (= W1 #0), W4 workaround.** `utility.mjs`/`tool.mjs` win `band`, `cols`, `richtext`, `module`, `title`, `image`,
+   `button-wrap` for EVERY page and delegate to `CORE.*` outside their family (or return null → prose + gap). om-oss/theme/markedsnytt
+   install their overrides as family-gated wrappers ON the core map (`encoders/om-oss.mjs gateCore`) so the official convert.mjs
+   works and other families are untouched (boliglan byte-identical). Request stands: dispatch `encoders/<family>.mjs` per page.
+2. **`blocks/carousel/carousel.js` was rewritten non-additively** (W3 guide carousel, 22:07): W1's `campaign` decorate + the
+   `.carousel.campaign*` CSS vanished; the market-landing and presse heroes rendered as guide slides ("1 av 1", Forrige/Neste).
+   W4 restored `campaign` as a variant branch (dispatch on `classList.contains('campaign')`; guide flow untouched) and re-added the
+   CSS. Request: arbitrate ownership — lock the dispatch, or move `guide` to its own block.
+3. **`cols-9` token couples a grid width with a family quirk**: `.columns.cols-9 .col__text > :first-child { margin-top: 16px }`
+   (utility) — the presse frost band (live grid-row--cols-9) has no such margin (h2 flush at y601 = band top + 72). W4 adds `flush`
+   to cancel it; the 16px should be its own token (`text-gap`-style) so `cols-N` means only the width.
+4. **`lib.mjs rasterName` keeps URL-encoding in the PNG name**: `…/Innovasjons%20workshop%202%20lys%20bakgrunn.svg` →
+   `Innovasjons%20workshop%202%20lys%20bakgrunn.png` uploaded literally, while the authored URL decodes to spaces (and serve.mjs
+   decodes the request → 404 locally). Request: `decodeURIComponent` + slugify the basename before upload/authoring.
+5. **chrome-map covers archetypes only.** om-oss siblings got `/nav` + `/footer` (privat). W4 added the additive `market=om-oss`
+   fallback in header.js/footer.js (like bedrift). Still open: the live jobb-og-karriere footer carries the "Kontakt oss" contact
+   block that `/footer-om-oss` (presse) lacks → per-page footer documents / a `footer` metadata row for siblings.
+6. **content-diff justified class**: ROLE SWAP fires for `<h1><span class="h1">` / `<h2><span class="h2">` (span at the SAME rank),
+   not only `.h2–.h6` pseudo-headings at another rank — extend the site-wide justified pattern.
+7. **Live desktop `button-list` items keep `margin-bottom: 8px`** (om-oss/theme/markedsnytt replica CSS all carry it); columns.css
+   has it on mobile only → W4 `button-gap` variant. Probably site-wide (canon-level): verify on the product page before folding in.
+8. **Inline `<picture>` baseline tail (7px)** under illustration/portrait images is a live-wide behaviour (replica inconsistency
+   register, all three W4 families) — columns.css `wN` model renders block images. W4 `baseline` variant; consider making it the
+   default of the `wN` / `media-plain` cell models after checking the hub pages.
+
+### W1 — 11. replica: kundeservice-hub / canon image module drops the authored image width (sibling bedrift-kundeservice)
+Live authors illustration sizes inline (`<img style="max-width:140px;width:100%">`, `style="width:100%;height:200px"`, `max-width:200px`);
+`stardust/scripts/replica/modules/market-landing.mjs` carries it as `--w` on `.image`, the kundeservice-hub / canon path does not. The
+bedrift-kundeservice prototype therefore renders `dame-kikkert-hoyre.svg` at 1280×1475 (its own eyeball fails) and the EDS document
+has nothing to carry into the `wN` cell model. Request: carry `--w` (and `height`) in canon's image module; then convert.mjs receives it.
+Also from the sibling round: `author.mjs` unknown modules `progressive-disclosure`, `text-and-image`, `brand-logo`, `product-nav`,
+`base-component` reach the prototype as richtext only (W1 encodes them as default content and notes it).
+
+### W1 — 12. rasterise-svg.mjs writes 2× PNGs whose intrinsic size is 2× the SVG box
+`serve.mjs` (and the DA pipeline) emit `width/height` from the file, so a rasterised illustration that is not sized by CSS renders at
+twice its live size (e.g. `samtale-2` 763×382 → constrained only by the W1 `wN` cell model). Request: rasterise at 1× (or emit the
+1× width/height attributes) so prose-placed illustrations keep their live size.

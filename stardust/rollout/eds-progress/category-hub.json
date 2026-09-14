@@ -1,7 +1,7 @@
 {
  "_provenance": {
   "writtenBy": "W1 (stardust:rollout EDS worker — category-hub)",
-  "writtenAt": "2026-09-14T20:10:43.077Z",
+  "writtenAt": "2026-09-14T20:27:02.310Z",
   "converter": "stardust/scripts/eds/_w1-convert.mjs (convert.mjs + W1 family files re-applied last; see eds-requests.md W1-0)"
  },
  "family": "category-hub",
@@ -334,7 +334,14 @@
     ],
     "lint": "0 🔴"
    }
-  ]
+  ],
+  "note": "sparing eyeball: content-diff 2 🔴 (pseudo-heading ranks); proto↔EDS pixel differs where the prototype is not live-shaped (replica request W1-11)",
+  "eyeball": {
+   "page": "nb-bank-privat-sparing-html",
+   "contentDiff": "2 🔴 (pseudo-heading ranks \"Usikker på hva du skal velge?\", \"Sammenlign priser\") — justified",
+   "pixelVsProto": "17.66 % / Δh 151 before the w400 fallback was gated to kundeservice-hub (the sparing illustration now fills its column like the prototype)",
+   "evidence": "stardust/replica/gates/sibling-sparing-eds-1440/"
+  }
  },
  "requests": [
   "eds-requests.md W1-0 (convert.mjs loader collision — BLOCKING)",

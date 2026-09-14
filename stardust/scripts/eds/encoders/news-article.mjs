@@ -32,6 +32,19 @@ export function heroBlock(head, ctx) {
 
 const figureHtml = (fig, ctx) => { const img = q(fig, 'img'); const cap = q(fig, 'figcaption'); return (img ? pic(img, ctx) : '') + (cap && txt(cap) ? `<p><em>${inline(cap, ctx)}</em></p>` : ''); };
 
+/** The live `quote` component (bio quote: portrait, quote text, name, a "Les mer om …" bio-modal button) → default content:
+ *  the portrait as an image paragraph, then a <blockquote> with the quote and the attribution paragraphs. */
+function quoteHtml(node, ctx) {
+  const bq = q(node, 'blockquote') || node; const img = q(bq, 'img');
+  const spans = qa(bq, 'span').filter((sp) => txt(sp) && !sp.closest('figure') && !qa(sp, 'span').length);
+  const [quote, ...rest] = spans.length ? spans : [null];
+  const btn = q(bq, 'button');
+  ctx.notes.push(`quote: the live bio-quote component is default content — portrait image paragraph + <blockquote> (quote, attribution)${btn ? `; the "${txt(btn).slice(0, 40)}" bio-modal trigger is client UI without captured content (dynamics) — not authored` : ''}`);
+  let out = img ? pic(img, ctx) : '';
+  out += `<blockquote>${quote ? `<p>${inline(quote, ctx)}</p>` : ''}${rest.map((r) => `<p>${inline(r, ctx)}</p>`).join('')}</blockquote>`;
+  return out;
+}
+
 export function bodySections(content, ctx) {
   const out = []; const blocks = new Set();
   let parts = []; let style = 'article-body'; let floatOpen = 0; // floatOpen: modules still to absorb into the float section
@@ -52,6 +65,7 @@ export function bodySections(content, ctx) {
       if (floatOpen) floatOpen -= 1; if (!floatOpen && /figure-/.test(style)) flush();
       continue;
     }
+    if (k.includes('module--quote') || q(ch, 'blockquote')) { parts.push(quoteHtml(ch, ctx)); if (floatOpen) { floatOpen -= 1; if (!floatOpen) flush(); } continue; }
     const html = richtext(ch, ctx); if (html.trim()) parts.push(html);
     if (floatOpen) { floatOpen -= 1; if (!floatOpen) flush(); }
   }

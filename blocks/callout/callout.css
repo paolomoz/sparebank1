@@ -58,3 +58,20 @@ main .section .callout-wrapper:has(> .callout.infobox) { max-width: none; margin
   .callout.infobox .callout__body :is(h2, h3, h4) { margin-bottom: 8px; font-size: 22px; line-height: 28px; }
 }
 /* ===== /news-article ===== */
+
+/* ===== theme (additive variant) =====
+   warm — the live ffe-message-box--tips (stardust/prototypes/css/theme.css .tip*): sand (#f8e9dd) body, orange (#dc8000) ring + lightbulb
+   40px glyph; the ring's line box puts the body 59px under the box top (icon 64, overlap 16, +11 line-box tail). */
+.callout.warm .callout__box { padding-top: 0; }
+.callout.warm .callout__icon { bottom: -16px; margin-bottom: -5px; border-color: #dc8000; color: #dc8000; }
+.callout.warm .callout__icon svg { width: 40px; height: 40px; }
+.callout.warm .callout__body { background: var(--sand); }
+/* ===== /theme ===== */
+
+/* ===== product siblings (additive variant) =====
+   lightbulb — the live ffe-message-box--tips: Material lightbulb glyph (icons/lightbulb.svg, verbatim live path) in a sol #dc8000 ring, 40px,
+   sand #f8e9dd box (stardust/prototypes/css/product.css .tip:has(path[d^=…]) rules; theme.css tips values) */
+.callout.lightbulb .callout__icon { border-color: #dc8000; color: #dc8000; }
+.callout.lightbulb .callout__icon svg { width: 40px; height: 40px; }
+.callout.lightbulb .callout__body { background: #f8e9dd; }
+/* ===== /product siblings ===== */

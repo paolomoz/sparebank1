@@ -1,0 +1,35 @@
+{
+ "slug": "nb-bank-privat-forsikring-kundehistorier-sikrer-seg-mot-vannlekkasje-klok-av-skade-html",
+ "daPath": "/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade",
+ "file": "content/nb/bank/privat/forsikring/kundehistorier/sikrer-seg-mot-vannlekkasje-klok-av-skade.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "story",
+   "blocks": []
+  }
+ ],
+ "blocks": [],
+ "notes": [
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)"
+ ],
+ "gaps": [
+  "module story emitted as prose",
+  "no encoder for module story"
+ ],
+ "assets": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T20:30:20.858Z"
+}

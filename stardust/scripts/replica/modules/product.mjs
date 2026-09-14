@@ -10,6 +10,7 @@
 //   contentfragmentlist   → section.experts        (bio cards, 2-up ≥1280)
 //   comparison            → div.comparison         (coverage table inside a FAQ answer, verbatim table + mobile filter tabs)
 //   columns / base-component → null (empty live placeholders: spare-i-fond `.columns`, forbrukslan's unhydrated credit-calculator host)
+import { existsSync, readFileSync } from 'node:fs';
 import marketLanding from './market-landing.mjs';
 
 const FAMILY = 'product';
@@ -48,6 +49,32 @@ function accordionItems(items, ctx) {
   return acc;
 }
 
+function sectionList(node, ctx) {
+  const { el, txt, cleanCopy, svgOf } = ctx; const wrap = node.querySelector('.section__wrapper'); const bg = ctx.bgStyle(wrap);
+  const small = !!node.querySelector('.section__header--small-img');
+  const s = el('section', { class: 'seclist ' + (small ? 'seclist--small-img' : 'seclist--layout2'), style: bg }); const grid = el('div', { class: 'seclist__grid' });
+  const hdr = node.querySelector('.section__header-content'); const imgWrap = node.querySelector('.section__image, .section__header-image');
+  const pic = imgWrap ? ctx.picture(imgWrap, 'seclist__img') : null;
+  const header = el('header', { class: 'seclist__header' }); if (small && pic) header.append(el('div', { class: 'seclist__image' }, [pic]));
+  const hc = el('div', { class: 'seclist__header-content' });
+  const h = hdr?.querySelector('h1, h2, h3, h4'); if (h) { const hh = cleanCopy(h); hh.setAttribute('class', 'seclist__title'); hc.append(hh); }
+  const sub = hdr?.querySelector('.ffe-sub-lead-paragraph'); if (sub) hc.append(el('p', { class: 'sub-lead' }, [...sub.childNodes].map(cleanCopy).filter(Boolean)));
+  header.append(hc);
+  const list = el('div', { class: 'seclist__list' }); let active = null;
+  for (const item of node.querySelectorAll('.section-item__wrapper')) {
+    const btn = item.querySelector('.section-item__button'); const isActive = item.classList.contains('section-item__wrapper--active'); const id = nextId('seclist');
+    const it = el('div', { class: 'seclist__item' + (isActive ? ' seclist__item--active' : '') });
+    const b = el('button', { type: 'button', class: 'seclist__btn', 'aria-expanded': String(isActive), 'aria-controls': id }, [el('span', { class: 'seclist__text' }, [txt(btn?.querySelector('.section-item__text')) || txt(btn)]), el('span', { class: 'seclist__icon' }, [svgOf(btn?.querySelector('svg'))])]);
+    const content = el('div', { class: 'seclist__content', id }); for (const ch of (item.querySelector('.section-item__content')?.children || [])) { const m = ctx.moduleOf(ch); if (m) content.append(m); }
+    it.append(b, content); list.append(it); if (isActive) active = content;
+  }
+  const detail = el('div', { class: 'seclist__detail' }); if (active) for (const ch of active.children) detail.append(ch.cloneNode(true));
+  const body = el('div', { class: 'seclist__body' }, [list, detail]);
+  if (!small && pic) grid.append(el('div', { class: 'seclist__side' }, [pic]));
+  grid.append(el('div', { class: 'seclist__main' }, [header, body])); s.append(grid);
+  ctx.log.notes.push(`section: master/detail list (${small ? 'small-img' : 'layout2'}) — static snapshot, item 1 active (product.js switches items)`);
+  return s;
+}
 const richFrom = (ctx, wrapper, cls) => { const rt = ctx.richtext(wrapper, cls); return ctx.txt(rt) || rt.querySelector('img,picture') ? rt : null; };
 
 export default {
@@ -197,9 +224,24 @@ export default {
     return s;
   },
 
+  // section — the AEM "section" master/detail module (main > .section — author.mjs treats `section` as a wrapper class, so k is '' and the
+  // registry is consulted under the empty key): header (title + sub-lead, with a side illustration [layout2] or a small round one [small-img])
+  // and a list of section-items whose active content shows in a detail panel (desktop) / inline (mobile). Static snapshot: item 1 active.
+  '': (node, ctx) => (node.classList.contains('section') && node.querySelector(':scope > .section__wrapper') ? sectionList(node, ctx) : null),
+
   // empty live placeholders — nothing to author
   columns: (node, ctx) => { if (node.children.length === 0 && !ctx.txt(node)) { ctx.log.notes.push('columns: empty live placeholder omitted'); return null; } return ctx.richtext(node); },
-  'base-component': (node, ctx) => { const host = node.querySelector('.external-component > *'); ctx.log.notes.push(`base-component: external widget host${host ? ' #' + host.getAttribute('id') : ''} is empty in the settled DOM (client-rendered, not hydrated at capture) — omitted`); return null; },
+  'base-component': (node, ctx) => {
+    const host = node.querySelector('.external-component > *'); const short = ctx.slug.replace(/^nb-bank-(privat|bedrift|om-oss)-/, '').replace(/-html$/, '').split('-').pop();
+    const snap = `stardust/replica/lift/${short}-widget.shadow.html`;
+    if (existsSync(snap)) { // hydrated widget re-captured from live (_w3-snap-widget.mjs): static snapshot in a shadow root, tokens embedded
+      const tokens = existsSync('stardust/prototypes/css/ffe-tokens.css') ? readFileSync('stardust/prototypes/css/ffe-tokens.css', 'utf8').replace(/:root/g, ':host') : '';
+      const hostEl = ctx.el('div', { class: 'calculator__host', role: 'region', 'aria-label': 'Kalkulator' }); const tpl = ctx.O.createElement('template'); tpl.setAttribute('shadowrootmode', 'open'); tpl.innerHTML = `<style>${tokens}</style>` + readFileSync(snap, 'utf8'); hostEl.append(tpl);
+      ctx.log.notes.push(`base-component: #${host?.getAttribute('id')} — static snapshot of the hydrated widget (${snap}; dynamics interim, computation disabled)`);
+      return ctx.el('section', { class: 'calculator calculator--widget' }, [hostEl]);
+    }
+    ctx.log.notes.push(`base-component: external widget host${host ? ' #' + host.getAttribute('id') : ''} is empty in the settled DOM (client-rendered, not hydrated at capture) — omitted`); return null;
+  },
 
   // image — delegate to market-landing's handler (the registry key is shared); product pages add the authored fixed height (`style="height:100px"`) as --h
   image: (node, ctx) => {

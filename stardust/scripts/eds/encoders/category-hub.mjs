@@ -114,10 +114,11 @@ export function hubBand(root, ctx, { topLevelCols = false } = {}) {
       if (k.includes('band')) { if (!ch.textContent.trim()) { styles.push('hub-head'); ctx.notes.push('band: the empty nested band (live 48/32px spacer under the h1) is layout → section style hub-head'); } else walk(ch); continue; }
       if (k.includes('cols')) { qa(ch, ':scope > .grid-row').forEach((row) => push(gridRow(row, ctx))); continue; }
       if (k.includes('grid-row')) { push(gridRow(ch, ctx)); continue; }
-      const encKey = k.find((c) => c !== 'band' && c !== 'cols' && (OWN[c] || CORE[c])); // a module inside the band (faq, tip, prices…): its encoder's parts, inlined
+      const encKey = k.find((c) => !['band', 'cols', 'richtext', 'image', 'module', 'banner-small'].includes(c) && (OWN[c] || CORE[c])); // prose-shaped children keep the richtext path below // a module inside the band (faq, tip, prices…): its encoder's parts, inlined
       if (encKey) {
         const r = (OWN[encKey] || CORE[encKey])(ch, ctx); lastCards = null;
-        if (r && r.html) { const style = /<div class="section-metadata"><div><div>style<\/div><div>([^<]*)<\/div>/.exec(r.html)?.[1] || ''; style.split(',').map((t) => t.trim()).filter((t) => t && !/^gap-/.test(t)).forEach((t) => styles.push(t)); parts.push(r.html.replace(/^<div>/, '').replace(/<div class="section-metadata">[\s\S]*$/, '').replace(/<\/div>\s*$/, '')); (r.blocks || []).forEach((b) => blocks.add(b)); }
+        if (r && r.html) { const style = /<div class="section-metadata"><div><div>style<\/div><div>([^<]*)<\/div>/.exec(r.html)?.[1] || ''; style.split(',').map((t) => t.trim()).filter((t) => t && !/^gap-/.test(t)).forEach((t) => styles.push(t)); let inner = r.html.replace(/^<div>/, ''); inner = /<div class="section-metadata">/.test(inner) ? inner.replace(/<div class="section-metadata">[\s\S]*$/, '') : inner.replace(/<\/div>\s*$/, ''); parts.push(inner); (r.blocks || []).forEach((b) => blocks.add(b)); }
+        else { const html = richtext(normaliseHrefs(ch, ctx), ctx); if (html) parts.push(html); } // the module's encoder declined (family gate) → its prose stays in the band (e.g. a CTA row)
         continue;
       }
       if (k.includes('related-products') || k.includes('related-topics')) { const r = hubRelated(ch, ctx); lastCards = null; parts.push(...r.parts); r.blocks.forEach((b) => blocks.add(b)); styles.push('hub-related'); continue; }
@@ -135,8 +136,7 @@ export function hubBand(root, ctx, { topLevelCols = false } = {}) {
 const needsHubBand = (root) => !!q(root, ':scope > .band__content > :not(.cols):not(.grid-row):not(hr):not(.banner-small), :scope > .band__content > .cols > .grid-row[class*="grid-row--cols-"]:not([class*="cols-12"]), :scope > .grid-row[class*="grid-row--cols-"]:not([class*="cols-12"]), form.chat-field, :scope > .richtext, :scope > .band')
   || (!!bandBg(root) && bgToken(bandBg(root)) == null && !!TINT[bandBg(root)]);
 
-const OWN = {};
-export default {
+const OWN = {
   // intro: h1 + centred lead → default content (section skin `intro`; `lead` types the paragraph 24/32 fjell as the live .main-lead)
   intro: (root, ctx) => ({ html: section([richtext(root, ctx)], { style: 'intro, lead' }), blocks: [] }),
 
@@ -193,7 +193,7 @@ export default {
   },
   // replica-level unknowns (module--text-and-image, module--progressive-disclosure): the prototype carries their richtext only → default content, noted
   module: (root, ctx) => {
-    if (!isHub(ctx)) return CORE.module(root, ctx);
+    if (!usesWalker(ctx)) return CORE.module(root, ctx);
     const kind = (cls(root).find((c) => /^module--/.test(c)) || 'module').replace('module--', '');
     const html = richtext(normaliseHrefs(root, ctx), ctx); if (!html.trim()) return null;
     ctx.notes.push(`module ${kind}: the replica prototype carries this module as richtext only (author.mjs unknown) — authored as default content; replica request filed`);
@@ -211,4 +211,4 @@ export default {
   band: (root, ctx) => { if (usesWalker(ctx)) normaliseHrefs(root, ctx); const r = usesWalker(ctx) && needsHubBand(root) ? hubBand(root, ctx) : CORE.band(root, ctx); return familyOf(ctx) === 'category-hub' ? withStyle(r, 'gap-48') : r; },
   cols: (root, ctx) => { if (usesWalker(ctx)) normaliseHrefs(root, ctx); const r = usesWalker(ctx) && needsHubBand(root) ? hubBand(root, ctx, { topLevelCols: true }) : CORE.cols(root, ctx); return isHub(ctx) ? withStyle(r, 'gap-48') : r; },
 };
-Object.assign(OWN, (await import(import.meta.url)).default);
+export default OWN;

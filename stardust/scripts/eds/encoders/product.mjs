@@ -133,8 +133,11 @@ function gridRow(row, ctx) {
   const cols = qa(row, ':scope > .col'); const after = []; const blocks = [];
   const cards = cols.filter((c) => q(c, ':scope > .col__content > .card'));
   if (cards.length && cards.length === cols.length) { const span = (cls(cols[0]).find((c) => /^col-lg-\d+$/.test(c)) || 'col-lg-3').replace('col-', ''); return { parts: [block('cards', ['grid', span], cardRows(cols.map((c) => q(c, '.card')), ctx))], blocks: ['cards'], after }; }
-  if (cols.length === 1 && /grid-row--cols-/.test(row.className)) return { parts: [richtext(q(cols[0], '.col__content'), ctx)], blocks: [], after };
-  const variants = cols.map((c) => { const k = cls(c); const span = (k.find((x) => /^col-lg-\d+$/.test(x)) || 'col-lg-12').replace('col-', ''); const off = k.find((x) => /^col-lg-offset-\d+$/.test(x)); const first = k.includes('col--first') ? 'first' : null; const align = (k.find((x) => /^col--(middle|center|bottom)$/.test(x)) || '').replace('col--', ''); return [span, off ? off.replace('col-lg-offset-', 'offset-') : null, first, align].filter(Boolean).join('-'); });
+  if (cols.length === 1 && /grid-row--cols-/.test(row.className)) { const n = (/grid-row--cols-(\d+)/.exec(row.className) || [])[1]; return { parts: [richtext(q(cols[0], '.col__content'), ctx)], blocks: [], after, style: n && n !== '12' ? `head-w${n}` : null }; }
+  const illo = (c) => { const cc = q(c, ':scope > .col__content'); if (!cc) return null; const kids = [...cc.children]; if (!kids.length || !kids.every((k) => /\bimage\b/.test(k.className))) return null; const src = q(cc, 'img')?.getAttribute('src') || ''; if (!/\.svg(\?|$)/i.test(src)) return null; const m = /--w:\s*(\d+)px/.exec(q(cc, '.image')?.getAttribute('style') || ''); return `w${m ? m[1] : 400}`; };
+  const variants = cols.map((c) => { const k = cls(c); const span = (k.find((x) => /^col-lg-\d+$/.test(x)) || 'col-lg-12').replace('col-', ''); const off = k.find((x) => /^col-lg-offset-\d+$/.test(x)); const first = k.includes('col--first') ? 'first' : null; const align = (k.find((x) => /^col--(middle|center|bottom)$/.test(x)) || '').replace('col--', ''); return [span, off ? off.replace('col-lg-offset-', 'offset-') : null, first, align, illo(c)].filter(Boolean).join('-'); });
+  // photo cells: every column opens with a rounded photo followed by text (the live 4-up "reasons" grid) → the block keeps the 30px radius / 3:2 crop
+  if (cols.length > 1 && cols.every((c) => { const cc = q(c, ':scope > .col__content'); return cc && cc.children.length > 1 && /\bimage--rounded\b/.test(cc.children[0].className); })) variants.push('photo-cells');
   const cells = cols.map((c) => {
     const cc = q(c, ':scope > .col__content'); if (!cc) return ''; fixPlaceholderHrefs(cc, ctx);
     for (const m of qa(cc, ':scope > .price-terms, :scope > .disclosure')) { const enc = m.classList.contains('price-terms') ? priceTerms : disclosure; const r = enc(m, ctx, { inline: true }); after.push(r.html); blocks.push(...r.blocks); m.remove(); ctx.notes.push(`${m.classList[0]}: authored inside a columns-grid column on live — a columns cell cannot hold a block, so it follows the columns block as a sibling (layout stacks; content complete)`); }
@@ -142,7 +145,7 @@ function gridRow(row, ctx) {
   });
   if (q(row, '.lead-blue')) variants.push('lead');
   const parts = cells.some((c) => c.trim()) ? [block('columns', variants, [cells])] : [];
-  return { parts, blocks: [...(parts.length ? ['columns'] : []), ...blocks], after };
+  return { parts, blocks: [...(parts.length ? ['columns'] : []), ...blocks], after, style: null };
 }
 /** a core encoder called inline still returns a whole section (`<div>…<div class="section-metadata">…</div></div>`): unwrap it — a nested
  *  section is not decorated by the EDS runtime (its block stays raw rows). Returns the inner html + the section's style tokens. */
@@ -152,14 +155,14 @@ function unwrapSection(html) {
   return { html: m[1], style };
 }
 export function productBand(root, ctx, { topLevelCols = false } = {}) {
-  const parts = []; const blocks = new Set(); let style = topLevelCols ? 'cols' : 'band';
+  const parts = []; const blocks = new Set(); let style = styleOf(topLevelCols ? 'cols' : 'band', 'product');
   const content = q(root, ':scope > .band__content') || root; const single = [...content.children].filter((c) => c.tagName !== 'HR').length === 1;
   const walk = (el) => {
     for (const ch of el.children) {
       const k = cls(ch);
       if (ch.tagName === 'HR') { if (k.includes('rule--extra-top')) style = styleOf(style, 'rule-after'); continue; }
       if (k.includes('band__content')) { walk(ch); continue; }
-      if (k.includes('cols') || k.includes('grid-row')) { for (const row of (k.includes('cols') ? qa(ch, ':scope > .grid-row') : [ch])) { const r = gridRow(row, ctx); parts.push(...r.parts, ...r.after); r.blocks.forEach((b) => blocks.add(b)); } continue; }
+      if (k.includes('cols') || k.includes('grid-row')) { for (const row of (k.includes('cols') ? qa(ch, ':scope > .grid-row') : [ch])) { const r = gridRow(row, ctx); parts.push(...r.parts, ...r.after); r.blocks.forEach((b) => blocks.add(b)); if (r.style) style = styleOf(style, r.style); } continue; }
       if (k.includes('banner-small')) { parts.push(bannerSmall(ch, ctx, { inline: true }).html); blocks.add('banner'); continue; }
       const key = k.find((c) => CORE[c] && !['band', 'cols', 'module', 'richtext'].includes(c));
       if (key) { const r = CORE[key](ch, ctx, { inline: true }); if (r) { const u = unwrapSection(r.html); parts.push(u.html); r.blocks.forEach((b) => blocks.add(b)); const tok = r.style || (single ? u.style : null); if (tok) style = styleOf(style, tok); if (!single && u.style) ctx.notes.push(`band: nested ${key} module — its own section style (${u.style}) is dropped inside a band that holds other modules`); } continue; }
@@ -206,18 +209,35 @@ export function productFaq(root, ctx) {
   return { html: section(parts, { style: 'faq, gap-48' }), blocks: ['accordion'] };
 }
 
-const ENC_INLINE = { 'price-terms': priceTerms, disclosure, steps, 'accordion-module': accordionModule, gcarousel: carousel, experts };
+/* ------------------------------------------------------------------ section (master/detail list) ------------------------------------------------------------------ */
+export function sectionList(root, ctx, opts = {}) {
+  const small = root.classList.contains('seclist--small-img'); const parts = [];
+  const img = q(root, '.seclist__img'); if (img) parts.push(pic(img, ctx));
+  const h = q(root, '.seclist__title'); if (h) parts.push(heading(h, ctx));
+  const sub = q(root, '.seclist__header .sub-lead'); if (sub) parts.push(`<p>${inline(sub, ctx)}</p>`);
+  const rows = qa(root, '.seclist__item').map((it) => [`<p>${inline(q(it, '.seclist__text'), ctx)}</p>`, richtext(q(it, '.seclist__content'), ctx)]);
+  parts.push(block('accordion', ['tabs'], rows));
+  ctx.notes.push('lint D1 accordion tabs: the live "section" master/detail module (list of section-items, active item shown in a detail panel; inline on mobile) — one row per item [item title][content]; item 1 open at rest');
+  const style = styleOf('section-list', small ? 'small-img' : 'layout2', tintOf(root));
+  return { html: opts.inline ? parts.join('') : section(parts, { style }), blocks: ['accordion'], style: opts.inline ? style : undefined };
+}
+const ENC_INLINE = { 'price-terms': priceTerms, disclosure, steps, 'accordion-module': accordionModule, gcarousel: carousel, experts, seclist: sectionList };
 const hasNew = (root) => !!q(root, NEW_KINDS);
 
 // family-gated wrappers installed on the CORE map (see header): the original core encoders stay the fallback for every other page
-const coreBand = CORE.band, coreCols = CORE.cols, coreFaq = CORE.faq, coreTip = CORE.tip, coreModule = CORE.module;
+const coreBand = CORE.band, coreCols = CORE.cols, coreFaq = CORE.faq, coreTip = CORE.tip, coreModule = CORE.module, coreReference = CORE.reference, coreCalculator = CORE.calculator;
 const wrapped = {
   // top-level image / CTA modules: tool.mjs owns the `image` and `button-wrap` keys (family-gated → null off its family) and convert.mjs then falls back to `module`
   module: (root, ctx, opts) => { if (isProductSibling(ctx) && root.parentElement?.tagName === 'MAIN') { if (root.classList.contains('image')) { const r = topImage(root, ctx); if (r) return r; } if (root.classList.contains('button-wrap')) { const r = topCta(root, ctx); if (r) return r; } } return coreModule(root, ctx, opts); },
-  band: (root, ctx, opts) => (isProductSibling(ctx) && hasNew(root) ? productBand(root, ctx) : coreBand(root, ctx, opts)),
-  cols: (root, ctx, opts) => (isProductSibling(ctx) && hasNew(root) ? productBand(root, ctx, { topLevelCols: true }) : coreCols(root, ctx, opts)),
+  band: (root, ctx, opts) => (isProductSibling(ctx) ? productBand(root, ctx) : coreBand(root, ctx, opts)),
+  cols: (root, ctx, opts) => (isProductSibling(ctx) ? productBand(root, ctx, { topLevelCols: true }) : coreCols(root, ctx, opts)),
+  // reference: the core hardcodes the archetype's `rule-visible` (hr.show-hr before the module); siblings without the rule get the module's own 72px gap
+  reference: (root, ctx, opts) => { const r = coreReference(root, ctx, opts); if (r && isProductSibling(ctx) && !(root.previousElementSibling?.tagName === 'HR' && /rule--visible/.test(root.previousElementSibling.className))) r.html = r.html.replace('reference, center, rule-visible', 'reference, center, gap-72'); return r; },
+  // calculator: the core labels every snapshot "Boliglånskalkulator"; the product siblings name theirs by product
+  calculator: (root, ctx, opts) => { const r = coreCalculator(root, ctx, opts); if (r && isProductSibling(ctx)) { const label = /forbrukslan/.test(ctx.slug) ? 'Forbrukslånskalkulator' : 'Lånekalkulator'; r.html = r.html.replace('>Boliglånskalkulator<', `>${label}<`); } return r; },
+  // tip: the live `ffe-message-box--tips` (lightbulb in a sol ring, sand box) is recognised by its Material icon path → callout variant `tips lightbulb`
+  tip: (root, ctx, opts) => { const r = coreTip(root, ctx, opts); if (r && isProductSibling(ctx)) { ctx.notes.push('lint D1 callout: the FFE message box (round glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell'); if (q(root, '.tip__icon svg path[d^="M480-80q-33.67"]')) { r.html = r.html.replace('class="callout tip"', 'class="callout tips lightbulb"'); ctx.notes.push('callout tips lightbulb: the live message box is the `tips` kind (lightbulb glyph, sol ring, sand box) — carried as block variants'); } } return r; },
   faq: (root, ctx, opts) => (isProductSibling(ctx) && q(root, '.comparison, .gcarousel, .accordion__body > .cols') ? productFaq(root, ctx) : coreFaq(root, ctx, opts)),
-  tip: (root, ctx, opts) => { const r = coreTip(root, ctx, opts); if (r && isProductSibling(ctx)) ctx.notes.push('lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell'); return r; },
 };
 if (!CORE.__productWrapped) { Object.assign(CORE, wrapped, ENC_INLINE); Object.defineProperty(CORE, '__productWrapped', { value: true, enumerable: false }); }
 

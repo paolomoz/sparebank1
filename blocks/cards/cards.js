@@ -10,20 +10,21 @@ import { el, icon, inlineIcons } from '../../scripts/sb1.js';
 export default function decorate(block) {
   const news = block.classList.contains('news'); const price = block.classList.contains('price');
   const nav = block.classList.contains('nav'); const smallList = block.classList.contains('small'); // additive variants (hub visual-nav, hub icon list)
+  const featured = block.classList.contains('featured'); // additive variant (theme / markedsnytt featured card): full richtext body, not clickable, the illustration is never an icon
   const listing = block.classList.contains('listing'); // additive variant (news-listing): tag eyebrow + d/m/yyyy date paragraphs, first row = the featured headline
   const list = el('ul', { class: 'card-list' });
   [...block.children].forEach((row) => {
     const cells = [...row.children];
     const media = cells.find((c) => c.querySelector('picture, img') && !c.querySelector('h1,h2,h3,h4,h5,h6'));
     const body = cells.find((c) => c !== media && c.textContent.trim()) || cells[cells.length - 1]; // rows are [media][body]; the media cell may be empty
-    const title = body.querySelector('h1,h2,h3,h4,h5,h6'); const link = title?.querySelector('a') || body.querySelector('a');
+    const title = body.querySelector('h1,h2,h3,h4,h5,h6'); const link = featured ? null : (title?.querySelector('a') || body.querySelector('a')); // featured: not clickable on live
     const href = link?.getAttribute('href');
     // live model: the card is a <div>; the authored title link is the link (EW1/EW6 — moved, never rebuilt); the whole card is clickable via JS
     const card = el('div', { class: `card ${media ? 'card--medium' : 'card--small card--no-image'}${price ? ' card--price' : ''}${news ? ' card--news' : ''}${href ? ' card--clickable' : ''}` });
     const bodyEl = el('div', { class: 'card__body' }); const content = el('div', { class: 'card__content' });
     if (media) {
       const pic = media.querySelector('picture, img'); const img = media.querySelector('img');
-      const src = img?.getAttribute('src') || ''; const small = img && ((img.getAttribute('width') && +img.getAttribute('width') <= 80) || /\/ikoner\//.test(src) || (/\.svg(\?|$)/.test(src) && !/bankchoice/.test(src)));
+      const src = img?.getAttribute('src') || ''; const small = !featured && img && ((img.getAttribute('width') && +img.getAttribute('width') <= 80) || /\/ikoner\//.test(src) || (/\.svg(\?|$)/.test(src) && !/bankchoice/.test(src)));
       const iconColumn = small && (nav || smallList); // nav / small: the icon is a left column beside a visible title (live visual-nav icon row, hub related icon card)
       const m = el('div', { class: small && !iconColumn ? 'card__iconwrap' : 'card__media' }); m.append(pic);
       // a photo heads the card; a small icon sits inside the body above the title (live card--small)

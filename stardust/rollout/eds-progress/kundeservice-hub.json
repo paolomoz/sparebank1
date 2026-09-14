@@ -1,7 +1,7 @@
 {
  "_provenance": {
   "writtenBy": "W1 (stardust:rollout EDS worker — category-hub)",
-  "writtenAt": "2026-09-14T20:10:43.077Z",
+  "writtenAt": "2026-09-14T20:27:02.309Z",
   "converter": "stardust/scripts/eds/_w1-convert.mjs (convert.mjs + W1 family files re-applied last; see eds-requests.md W1-0)"
  },
  "family": "kundeservice-hub",
@@ -101,7 +101,14 @@
     ],
     "lint": "0 🔴"
    }
-  ]
+  ],
+  "note": "bedrift-kundeservice: FAQ nested in a tinted band — walker inlines the accordion (band, faq); the prototype carries unconstrained illustrations (W1-11)",
+  "eyeball": {
+   "page": "nb-bank-bedrift-kundeservice-html",
+   "contentDiff": "23 🔴 — 3 MISSING CTA are the related icon cards (card-as-link, EW6: href on a.card, h3 kept) + 20 pseudo-heading rank swaps in collapsed FAQ bodies; all justified",
+   "pixelVsProto": "not comparable — the prototype renders unconstrained 1280px illustrations (W1-11); EDS main 3402px, accordion collapsed 239px",
+   "evidence": "stardust/replica/gates/sibling-bedrift-ks-eds-1440/"
+  }
  },
  "requests": [
   "W1-0 loader collision",

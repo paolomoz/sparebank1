@@ -130,7 +130,11 @@
   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
   "lint D3 cobranding: single-cell rows read by position — row 1 heading + toggle label (EW8: the label moves into the expand button), row 2 partner logo + title, rows 3+ one panel column each; the panel is closed at rest (dynamics #14 static snapshot)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/pall.svg is 86953 bytes of SVG (> 40000) — authored as DA media pall.png (rasterised)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
   "faq: a guide-carousel sits inside this answer on live — its slides are authored as prose (title, copy, screenshot); no nested blocks",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
   "faq: a columns-grid sits inside this answer on live — cells authored in order as prose (no nested blocks)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
@@ -141,5 +145,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/pall.svg"
  ],
- "writtenAt": "2026-09-14T20:13:58.315Z"
+ "writtenAt": "2026-09-14T20:33:22.940Z"
 }

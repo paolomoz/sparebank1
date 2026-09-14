@@ -21,10 +21,11 @@
  ],
  "notes": [
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron, back-link) — not default content; variant `question` = the question-page geometry",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only; variant `inline` = the live left-aligned row under the answer"
  ],
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T19:21:05.705Z"
+ "writtenAt": "2026-09-14T20:32:58.395Z"
 }

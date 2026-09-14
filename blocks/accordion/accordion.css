@@ -112,4 +112,24 @@ main .section.faq .default-content-wrapper h2 { text-align: center; }
   .accordion.steps .steps__info { display: block; }
 }
 @media (width >= 1024px) { .accordion.steps .col-lg-4 { grid-column: auto / span 4; } .accordion.steps .col-lg-6 { grid-column: auto / span 6; } .accordion.steps .col-lg-offset-1.col-lg-4 { grid-column: 2 / span 4; } }
+/* tabs — the AEM "section" item list (mirrors stardust/prototypes/css/product.css .seclist*) */
+.accordion.tabs { text-align: left; }
+.accordion.tabs .seclist__body { min-height: 144px; }
+.accordion.tabs .seclist__btn { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 8px; margin: 0; padding: 18px 0; border: 0; border-bottom: 1px solid #ccc; border-radius: 0; background: none; color: var(--vann); font: inherit; text-align: left; cursor: pointer; }
+.accordion.tabs .seclist__btn p { margin: 0; }
+.accordion.tabs .seclist__item--active .seclist__btn { border-bottom: 2px solid var(--fjell); color: var(--fjell); }
+.accordion.tabs .seclist__icon { display: none; flex: 0 0 24px; width: 24px; height: 24px; line-height: 0; }
+.accordion.tabs .seclist__item--active .seclist__icon { display: block; }
+.accordion.tabs .seclist__icon svg { width: 24px; height: 24px; color: var(--fjell); fill: currentColor; transform: rotate(-90deg); }
+.accordion.tabs .seclist__content { display: none; padding: 16px 0; }
+.accordion.tabs .seclist__item--active .seclist__content { display: block; }
+.accordion.tabs .seclist__detail { display: none; }
+.accordion.tabs .seclist__detail > :first-child, .accordion.tabs .seclist__content > :first-child { margin-top: 0; }
+.accordion.tabs .seclist__detail p.button-wrapper { margin: 16px 0 0; }
+@media (width >= 768px) {
+  .accordion.tabs .seclist__body { display: grid; grid-template-columns: 5fr 7fr; }
+  main .section.small-img .accordion.tabs .seclist__body { grid-template-columns: 4fr 8fr; }
+  .accordion.tabs .seclist__content { display: none !important; }
+  .accordion.tabs .seclist__detail { display: block; padding: 0 0 0 40px; }
+}
 /* ===== /product siblings ===== */

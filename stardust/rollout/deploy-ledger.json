@@ -1,17 +1,17 @@
 {
-  "/nb/bank/privat/kundeservice/kontakt": {
+  "/footer-2": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T20:19:42.935Z",
-    "put": 200,
+    "ts": "2026-09-14T20:31:45.338Z",
+    "put": 201,
     "preview": 200,
     "live": 200,
     "verify": "ok"
   },
-  "/nb/bank/privat/kundeservice/verktoy/sperre-kort": {
+  "/footer-bedrift": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T20:19:42.936Z",
+    "ts": "2026-09-14T20:31:45.338Z",
     "put": 200,
     "preview": 200,
     "live": 200,

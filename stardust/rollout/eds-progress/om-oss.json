@@ -1,0 +1,71 @@
+{
+ "regime": "published-origin (local EDS emulation :3014, content/nb/bank/om-oss/presse.html + blocks) vs live capture (stardust/replica/gates/presse-{1440,360}/live.png)",
+ "at": "2026-09-14T22:40:00Z",
+ "worker": "W4",
+ "family": "om-oss",
+ "archetype": "nb-bank-om-oss-presse-html",
+ "document": "content/nb/bank/om-oss/presse.html",
+ "encoder": "stardust/scripts/eds/encoders/om-oss.mjs (campaign → carousel campaign; adviser-list; family band walker with cols-9/10/11, wN, lead-2, subtle, flush, baseline, button-gap, media-plain; title / table-block / tabs-component via the family-gated module fallback; narrow left-aligned top-level richtext)",
+ "blocks": [
+  "carousel campaign reverse white lead (reused W1 block + additive white/lead variants; campaign branch restored after the W3 guide rewrite)",
+  "columns (reused; additive variants cols-11, lead-2, subtle, flush, baseline, button-gap)",
+  "adviser-list (NEW — press contacts: one row per contact [portrait][bold name, role, phone, e-post link])",
+  "feedback",
+  "header (/nav-om-oss-2)",
+  "footer (/footer-om-oss)"
+ ],
+ "newBlocks": ["adviser-list", "(siblings) table full variant on the table block"],
+ "chrome": { "nav": "/nav-om-oss-2", "footer": "/footer-om-oss", "note": "header.js/footer.js: additive market=om-oss fallback (/nav-om-oss, /footer-om-oss) for siblings absent from chrome-map" },
+ "iterations": 3,
+ "breakpoints": {
+  "1440": {
+   "pixelPct": 0.68,
+   "heightDelta": 0,
+   "chromeHeaderPct": 1.49,
+   "chromeFooterPct": 1.17,
+   "pass": true,
+   "evidence": "stardust/replica/gates/presse-eds-1440/ (pixel-iter3.txt, chrome-header.txt, chrome-footer.txt, content-diff.txt, content-diff-live.txt)"
+  },
+  "360": {
+   "pixelPct": 3.37,
+   "heightDelta": 0,
+   "chromeHeaderPct": 3.58,
+   "chromeHeaderPctExcludingSkipLink": 0.1,
+   "chromeFooterPct": 2.11,
+   "chromeFooterPctExcludingToTopDisc": 1.58,
+   "pass": true,
+   "evidence": "stardust/replica/gates/presse-eds-360/ (pixel-iter2.txt, chrome-header.txt, chrome-header-x115.txt, chrome-footer.txt, chrome-footer-nodisc.txt)"
+  }
+ },
+ "justified": [
+  { "flag": "360 header crop 3.58% > 2%", "why": "live focused skip link 'Til hovedmeny' (x<115); 0.10% for x≥115 (chrome-header-x115.txt) — same as the replica gate (96.42 / 99.90)", "permanent": true },
+  { "flag": "360 footer crop 2.11% > 2%", "why": "the to-top disc captured at the chunk seam (y≈4550); 1.58% for the crop above it (chrome-footer-nodisc.txt); layout identical, remainder = footer social icon antialiasing (canon)", "permanent": true },
+  { "flag": "360 pixel band y0–500 17.1%", "why": "skip link + the hero: live serves a differently framed 768px <source> rendition and shows the lead left-aligned; the gated replica renders exactly like EDS (centred per the lifted textAlign:center, single 1280 rendition) — inherited replica residual, no layout delta (Δh 0)", "permanent": true },
+  { "flag": "content-diff 🔴 ROLE SWAP ×4 (Presse, Pressekontakter ×2, Presserom)", "why": "live pseudo-heading spans (<h1><span class=h1>, <h2><span class=h2>) classified body in the prototype, authored as the real heading in EDS — the site-wide justified class (changelog 20:40Z)", "permanent": true },
+  { "flag": "content-diff 🟠 FONT FORK 'Presse' 13% / '911 11 555' -12%", "why": "matcher artefact of the ROLE SWAP (the h1 renders SpareBank1-title-medium 46/56 on both sides per _probe-eds) and the tabular-digits canon item from the replica ledger", "permanent": true },
+  { "flag": "content-diff 🟡 MISSING BODY Ja/Nei", "why": "feedback thumbs are block chrome (aria-labels) — as on the product page", "permanent": true }
+ ],
+ "fixesThisRound": [
+  "campaign: family-gated encoder (market-landing's swallowed the presse hero as an empty second carousel → silent loss); one slide of carousel campaign reverse white lead; carousel.css white/lead variants",
+  "adviser-list: new block + encoder; reached from the band walker (core band() dispatches band children on the CORE map only)",
+  "band walker: cols-9/10/11 grid width (core emits 12-col), w200 illustration cell, lead-2 (h2 + lead), subtle (14px in the 24px strut: live p 48 for two lines), flush (cancels the utility cols-9 16px first-child quirk), baseline (inline <picture> 7px tail — replica inconsistency register), button-gap (live desktop 8px under button-list items), media-plain+baseline for width-less illustration columns",
+  "carousel.js: campaign variant branch restored (W3's guide rewrite had removed it) — variant dispatch, guide flow untouched",
+  "header.js/footer.js: market=om-oss fallback chrome for siblings",
+  "table block: full variant (100% width, wrapping cells) for the AEM table module on selskapsinformasjon"
+ ],
+ "productRegression": { "documentDiff": "empty (content/nb/bank/privat/lan/boliglan.html byte-identical after re-running convert)", "pixel1440": 0.65, "heightDelta": 0, "evidence": "/tmp/_w4-boliglan-1440.png vs stardust/replica/gates/boliglan-eds-1440/live.png" },
+ "siblings": {
+  "converted": ["nb-bank-om-oss-investor-html", "nb-bank-om-oss-jobb-og-karriere-html", "nb-bank-om-oss-om-banken-selskapsinformasjon-html", "nb-bank-om-oss-personvern-generelle-vilkar-html", "nb-bank-om-oss-personvern-html", "nb-bank-om-oss-samfunnsansvar-html", "nb-bank-om-oss-selskaper-html"],
+  "gaps": { "investor": 0, "jobb-og-karriere": 0, "om-banken/selskapsinformasjon": 0, "personvern/generelle-vilkar": 0, "personvern": 0, "samfunnsansvar": 0, "selskaper": 0 },
+  "lint": "all 8 documents PASS — 0 🔴; 🟡 only feedback/breadcrumbs/bank-choice D1/D3 (justified in the conversion logs) and the D4 SVG batch-verify advisory",
+  "eyeball": {
+   "page": "nb-bank-om-oss-jobb-og-karriere-html @1440 (stardust/replica/gates/jobb-eds-1440/{proto,eds}.png, content-diff.txt)",
+   "verdict": "hero, three cols bands (illustration / photo / map), CTAs and feedback match the prototype; content-diff 0 unexplained 🔴 (4 ROLE SWAP pseudo-heading spans, Ja/Nei)",
+   "residuals": [
+    "live footer of this sibling carries the 'Kontakt oss' contact block; /footer-om-oss (presse) does not — per-page footer document needed (chrome-map lists archetypes only; request filed)",
+    "the oversize workshop SVG is authored as DA media 'Innovasjons%20workshop%202%20lys%20bakgrunn.png' — rasterName keeps the literal %20 (request filed); mirrored locally under the decoded name for the emulation"
+   ]
+  },
+  "rasterise": ["https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2025/Innovasjons%20workshop%202%20lys%20bakgrunn.svg (uploaded 201, raster-ledger)"]
+ }
+}

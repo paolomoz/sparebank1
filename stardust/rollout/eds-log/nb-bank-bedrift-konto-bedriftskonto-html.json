@@ -72,8 +72,10 @@
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-liten-glad.svg is 46265 bytes of SVG (> 40000) — authored as DA media illustrasjon-liten-glad.png (rasterised)",
-  "lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+  "lint D1 callout: the FFE message box (round glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+  "callout tips lightbulb: the live message box is the `tips` kind (lightbulb glyph, sol ring, sand box) — carried as block variants",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/Nettbank.svg is 46742 bytes of SVG (> 40000) — authored as DA media Nettbank.png (rasterised)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
@@ -83,5 +85,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-liten-glad.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/Nettbank.svg"
  ],
- "writtenAt": "2026-09-14T20:13:56.564Z"
+ "writtenAt": "2026-09-14T20:33:21.790Z"
 }

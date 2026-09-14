@@ -23,7 +23,6 @@
   {
    "module": "band",
    "blocks": [
-    "columns",
     "accordion"
    ]
   },
@@ -65,10 +64,11 @@
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "columns chat: the boost.ai entry field (dynamics #6 interim, no backend) — the trailing paragraph of the last cell is the field label (EW8: the authored <p> moves into the <label>); \"Send melding\" is fixed control chrome",
   "cards grid: consecutive same-shaped card rows folded into one block (D9)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
   "lint D1 callout: the FFE message box (round icon overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell"
  ],
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:18:00.561Z"
+ "writtenAt": "2026-09-14T20:32:57.638Z"
 }

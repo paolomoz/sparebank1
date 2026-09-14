@@ -176,6 +176,11 @@
   .cards.people .card__title, .cards.people .card__title + .card__text { font-size: 18px; line-height: 24px; }
 }
 @media (width >= 1280px) { .cards.people .card-list { max-width: 1280px; grid-template-columns: repeat(2, 1fr); } }
+/* static — the "Les også" static-cards module: 304px cards, 16px gaps, centred, 200px photo (live forbrukslan 1440 crop) */
+.cards.static .card-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; max-width: var(--container); margin: 0 auto; }
+.cards.static .card-list li { width: 304px; margin: 0 0 16px; }
+.cards.static .card--medium { grid-template-rows: 200px 1fr; }
+.cards.static .card__media, .cards.static .card__media picture, .cards.static .card__media img { height: 200px; }
 /* ===== /product siblings ===== */
 
 /* ===== news-article (additive variant) =====
@@ -204,3 +209,87 @@
   .cards.related .card-list li { width: 100%; padding: 0; }
 }
 /* ===== /news-article ===== */
+
+/* ===== theme / markedsnytt-listing (additive variant) =====
+   featured — the live card--featured (stardust/prototypes/css/theme.css): a contain-fit illustration row (200px, 270px from 768; 8px side
+   padding), a full richtext body (h2 at heading size, sub-lead paragraphs 17/24 → 18/28, checked list: bold link title + 14px note), no arrow,
+   not clickable. */
+.cards.featured .card { grid-template-rows: 200px 1fr; border-radius: 16px; }
+.cards.featured .card__media { height: auto; max-height: 200px; border-radius: 15px 15px 0 0; overflow: hidden; line-height: 24px; text-align: center; }
+.cards.featured .card__media p { margin: 0; }
+.cards.featured .card__media picture { display: inline; }
+.cards.featured .card__media img { display: inline; box-sizing: border-box; width: 100%; height: 200px; max-height: 200px; padding: 8px 8px 0; object-fit: contain; object-position: 50% 50%; vertical-align: baseline; }
+.cards.featured .card__body { display: grid; grid-template-columns: 1fr; align-content: space-between; padding: 16px; }
+.cards.featured .card__arrow { display: none; }
+.cards.featured .card__content { display: flow-root; }
+.cards.featured .card__content > :first-child { margin-top: 0; }
+.cards.featured .card__title { display: block; margin: 0 0 8px; font-family: var(--font-heading); font-size: var(--heading-font-size-xl); line-height: 28px; color: var(--fjell); }
+.cards.featured .card__text { margin: 16px 0 18px; font-size: 17px; line-height: 24px; color: var(--text); }
+.cards.featured .card__text a:any-link { color: var(--vann); border-bottom: 1px solid var(--vann); }
+.cards.featured ul.card__text { margin: 0 0 16px; padding: 0; list-style: none; font-size: 14px; line-height: 24px; text-align: left; }
+.cards.featured ul.card__text li { position: relative; margin: 16px 0 0 32px; padding: 0; line-height: 24px; }
+.cards.featured ul.card__text li::before { content: ''; position: absolute; left: -2em; top: .15em; width: 1em; height: 1em; font-size: 16px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200' width='200' height='200'%3E%3Cpath fill='%23002776' d='M176.56-8.325E-7c-4.403,0-8.307,2.46595-10.288,5.89248l-90.5448,156.336-42.6109-59.77c-2.46172-2.94562-5.88534-4.89058-9.78806-4.89058h-7.3426c-4.40307,0-8.30704,2.46094-10.2884,6.36839-1.94136,3.94753-1.46102,8.8406,1.0007,12.2671l54.8007,75.963c3.4224,4.89,9.3077,7.834,15.1918,7.834,6.84477,0,12.7076-3.42654,16.13-9.31777l100.827-173.487c2.46172-3.4666,2.46547-7.83618,0.0438-11.3028-1.942-3.94755-5.886-5.8925-10.289-5.8925h-6.84226z'/%3E%3C/svg%3E") center / 1em 1em no-repeat; }
+.cards.featured ul.card__text li > strong { font-family: var(--font-medium); font-size: 17px; line-height: 24px; color: var(--fjell); vertical-align: top; } /* top-aligned: the 17/18px title must not stretch the 14px strut line box beyond the live 24px */
+.cards.featured ul.card__text li > strong a:any-link { color: var(--fjell); border-bottom: 0; }
+
+@media (width >= 768px) {
+  .cards.featured .card { grid-template-rows: 270px 1fr; }
+  .cards.featured .card__media { max-height: 270px; }
+  .cards.featured .card__media img { height: 270px; max-height: 270px; }
+  .cards.featured .card__title { margin-bottom: 24px; line-height: 44px; }
+  .cards.featured .card__text { font-size: 18px; line-height: 28px; }
+  .cards.featured ul.card__text li > strong { font-size: 18px; line-height: 24px; }
+}
+/* ===== /theme / markedsnytt-listing ===== */
+
+/* ===== news-listing (additive variant) =====
+   listing — the nettsider-frontend news listing (stardust/prototypes/css/news-listing.css .newscards / .newscard*): white cards with a
+   4px vann top rule (bordered + shadowed on their own at <768, inside the white listing box from 768), 49 % / 32 % / 339px wide;
+   the first card is the featured headline (full width, centred, 488px photo at ≥1024). Card hover: no change (motion: dead). */
+.cards.listing .card-list { display: flex; flex-wrap: wrap; justify-content: space-between; }
+.cards.listing .card-list li { width: 100%; margin: 0 0 16px; padding: 0; background: var(--white); border: 1px solid var(--lysgraa); border-radius: 4px; box-shadow: 0 0 3px #aaa; }
+.cards.listing .card, .cards.listing .card--medium { display: block; height: 100%; border: 0; border-top: 4px solid var(--vann); border-radius: 0 4px 4px 4px; background: var(--white); color: var(--fjell); grid-template-rows: none; overflow: auto; }
+.cards.listing .card--clickable:hover { background: var(--white); box-shadow: none; }
+.cards.listing .card--clickable:hover .card__title, .cards.listing .card--clickable:hover .card__title a:any-link { text-decoration: none; }
+.cards.listing .card__media { height: auto; border-radius: 0; overflow: visible; }
+.cards.listing .card__media picture, .cards.listing .card__media img { display: inline; width: 100%; height: auto; border-radius: 0; object-fit: fill; object-position: 50% 50%; vertical-align: top; }
+.cards.listing .card__body { display: block; padding: 0; }
+.cards.listing .card__content { padding: 16px 8px 0; font-size: 14px; line-height: 24px; text-align: left; }
+.cards.listing .card__arrow { display: none; }
+.cards.listing .card__tag { display: block; max-width: none; margin: 0; padding: 0; font-size: 12px; font-weight: 700; line-height: 24px; letter-spacing: 1.5px; color: var(--vann); text-transform: uppercase; }
+.cards.listing .card__title { display: block; margin: 8px 0; font-family: var(--font-heading); font-size: 1.375rem; line-height: 1.625rem; font-weight: 400; color: var(--fjell); }
+.cards.listing .card__title a:any-link { color: var(--fjell); border: 0; }
+.cards.listing .card__date { display: block; max-width: none; margin: 0 0 16px; padding: 0; font-size: 12px; line-height: 24px; color: var(--vann); }
+/* the featured headline card */
+.cards.listing li:has(> .card--headline) { width: 100%; margin-bottom: 24px; border: 0; border-radius: 0; box-shadow: none; background: transparent; text-align: center; }
+.cards.listing .card--headline { border: 1px solid var(--lysgraa); border-radius: 4px; box-shadow: 0 0 3px #aaa; }
+.cards.listing .card--headline .card__content { padding: 0 20px; text-align: center; }
+.cards.listing .card--headline .card__tag { display: inline-block; min-width: 150px; padding: 0 10px; background: var(--vann); color: var(--white); line-height: 26px; }
+.cards.listing .card--headline .card__title { margin: 24px 0 16px; font-size: 32px; line-height: 36px; font-weight: lighter; }
+.cards.listing .card--headline .card__date { margin-bottom: 16px; }
+
+@media (width >= 768px) {
+  .cards.listing .card-list li { width: 49%; background: transparent; border: 0; border-radius: 0; box-shadow: none; }
+  .cards.listing .card__media picture, .cards.listing .card__media img { display: block; height: 190px; object-fit: cover; }
+  .cards.listing .card__title { font-size: 1.5rem; line-height: 32px; }
+  .cards.listing .card__date { margin-bottom: 0; font-size: 14px; }
+  .cards.listing li:has(> .card--headline) { width: 100%; }
+  .cards.listing .card--headline .card__media picture, .cards.listing .card--headline .card__media img { height: 300px; }
+  .cards.listing .card--headline .card__title { margin: 24px 0; font-size: 42px; line-height: 52px; }
+  .cards.listing .card--headline .card__date { margin-bottom: 16px; }
+}
+
+@media (width >= 1024px) {
+  .cards.listing .card-list li { width: 32%; margin-bottom: 24px; }
+  .cards.listing .card__title { font-size: 1.625rem; line-height: 34px; }
+  .cards.listing li:has(> .card--headline) { width: 100%; margin-bottom: 40px; }
+  .cards.listing .card--headline .card__media picture, .cards.listing .card--headline .card__media img { height: 488px; }
+  .cards.listing .card--headline .card__title { margin: 40px 0; font-size: 62px; line-height: 64px; }
+  .cards.listing .card--headline .card__tag { line-height: 32px; }
+}
+
+@media (width >= 1280px) {
+  .cards.listing .card-list li { width: 339px; }
+  .cards.listing li:has(> .card--headline) { width: 100%; }
+}
+/* ===== /news-listing ===== */

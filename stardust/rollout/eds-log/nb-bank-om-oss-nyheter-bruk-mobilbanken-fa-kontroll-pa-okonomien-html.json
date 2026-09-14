@@ -1,0 +1,36 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-bruk-mobilbanken-fa-kontroll-pa-okonomien-html",
+ "daPath": "/nb/bank/om-oss/nyheter/bruk_mobilbanken_fa_kontroll_pa_okonomien",
+ "file": "content/nb/bank/om-oss/nyheter/bruk_mobilbanken_fa_kontroll_pa_okonomien.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "article",
+   "blocks": [
+    "hero",
+    "cards"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "cards"
+ ],
+ "notes": [
+  "lint D1 hero: the article header is a designed composition (cover figure + caption, eyebrow tag, centred title, the author/date box that overlaps the aside at ≥1024, the fixed share bar) — Block Collection `hero` shape (D11), one row [media][text]; the share buttons are template chrome, not content",
+  "teaser: the live 24/32 fjell lead paragraph is its own `article-body, lead` section (the existing `lead` section skin)",
+  "quote: the live bio-quote component is default content — portrait image paragraph + <blockquote> (quote, attribution); the \"Les mer om Thomas Allan Nygaard\" bio-modal trigger is client UI without captured content (dynamics) — not authored",
+  "figure: a floated photo (live right-adjust/left-adjust) is default content — the image paragraph + an italic caption paragraph — in a `figure-right|figure-left` section together with the text block that wraps beside it (David's Model has no inline float; the section boundary is the live clear boundary)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T20:30:20.716Z"
+}

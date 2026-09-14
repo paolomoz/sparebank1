@@ -1,0 +1,32 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-html",
+ "daPath": "/nb/bank/om-oss/nyheter",
+ "file": "content/nb/bank/om-oss/nyheter.html",
+ "chrome": {
+  "nav": "/nav-om-oss",
+  "footer": "/footer-frontend-om-oss"
+ },
+ "modules": [
+  {
+   "module": "articles",
+   "blocks": [
+    "cards"
+   ]
+  }
+ ],
+ "blocks": [
+  "cards"
+ ],
+ "notes": [
+  "listing: \"La humla suse i sommer – men ikke glem s\" carries a live top-crop focus (DAM rendition setting) — not authored; the card renders the centre crop",
+  "listing: \"Advarer mot ny svindelbølge: – Eldre og \" carries a live top-crop focus (DAM rendition setting) — not authored; the card renders the centre crop",
+  "listing: \"Unngå skadedyr i borettslag og sameier\" carries a live top-crop focus (DAM rendition setting) — not authored; the card renders the centre crop",
+  "listing: \"“Det kunne gått mye verre” – Bamses hist\" carries a live top-crop focus (DAM rendition setting) — not authored; the card renders the centre crop",
+  "lint D5 cards listing: one row per article (picture · tag · title link · date); the first row is the featured headline (live: newest feed item, `newscard__headline`); card-as-link keeps the authored h2 link inside (EW6)",
+  "pager: \"Se flere artikler\" is a secondary CTA in default content pointing at the live feed page (?limit=31&offset=31, fully-qualified — D4; rollout E2: a bounce beats a 404 until the index-backed listing is configured); the arrow glyph is the pager's own chrome (CSS), not authored"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T20:26:32.435Z"
+}

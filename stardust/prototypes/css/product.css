@@ -265,4 +265,71 @@
 .page--product .col__content > .image--center[style*="--ratio"] .image__img { display: block; margin: 0 auto; }
 .main > .button-wrap { padding: 0 var(--gutter); }
 @media (min-width: 1024px) { .main > .image { margin-top: 72px; } }
+
+/* tip — the FFE message box on product pages (utility.mjs handler markup: .tip > .tip__col > .tip__box > .tip__icon + .tip__body); info = frost/vann,
+   tips (lightbulb — matched on the live Material path) = sand #f8e9dd with a sol #dc8000 ring, 40px glyph (theme.css values) */
+.page--product .main > .tip { max-width: none; margin: 48px 0 0; padding: 0 20px; border-radius: 0; background: transparent; text-align: center; }
+.page--product .tip__col { display: flex; justify-content: center; max-width: var(--container); margin: 0 auto; }
+.page--product .tip__box { width: 100%; text-align: center; }
+.page--product .tip--small .tip__box, .page--product .tip:not(.tip--left) .tip__box { max-width: 480px; }
+.page--product .tip__icon { display: inline-flex; position: relative; align-items: center; justify-content: center; width: 64px; height: 64px; margin: 0 0 -16px; border: 2px solid var(--vann); border-radius: 50%; background: var(--white); color: var(--vann); }
+.page--product .tip__icon svg { width: 56px; height: 56px; fill: currentColor; }
+.page--product .tip__body { display: flow-root; padding: 40px 32px; border-radius: 8px; background: var(--frost-30); text-align: center; }
+.page--product .tip__body h2, .page--product .tip__body h3 { margin: 0 0 8px; font-family: var(--font-medium); font-size: 17px; line-height: 20px; color: var(--text); }
+.page--product .tip__body p { margin: 16px 0; }
+.page--product .tip__body > :first-child { margin-top: 0; }
+.page--product .tip--left .tip__body, .page--product .tip--left .tip__body h2, .page--product .tip--left .tip__body h3, .page--product .tip--left .tip__body p { text-align: left; }
+.page--product .tip:has(.tip__icon svg path[d^="M480-80q-33.67"]) .tip__icon { border-color: #dc8000; color: #dc8000; }
+.page--product .tip:has(.tip__icon svg path[d^="M480-80q-33.67"]) .tip__icon svg { width: 40px; height: 40px; }
+.page--product .tip:has(.tip__icon svg path[d^="M480-80q-33.67"]) .tip__body { background: #f8e9dd; }
+@media (min-width: 768px) { .page--product .tip__body h2, .page--product .tip__body h3 { margin-bottom: 24px; font-size: 18px; line-height: 24px; } }
+@media (min-width: 1024px) { .page--product .main > .tip { margin-top: 72px; } }
+
+/* static-cards — "Les også": heading in a 640px centred column (left-aligned), 304px cards 3-up */
+.page--product .static-cards { padding: 56px 8px 24px; }
+.page--product .static-cards__title { max-width: 640px; margin: 0 auto; text-align: left; }
+.page--product .card-list--static-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; max-width: var(--container); margin: 0 auto; }
+.page--product .card-list--static-cards .card { width: 304px; margin: 0 0 16px; }
+
+/* section — master/detail list module (layout2: side illustration cols 2-3, content cols 4-11; small-img: round 80px illustration beside the title) */
+.seclist { display: flow-root; padding: 48px 8px 32px; background: var(--band-bg, transparent); }
+.seclist__grid { max-width: var(--container); margin: 0 auto; }
+.seclist__header { display: flex; gap: 16px; align-items: flex-start; }
+.seclist__image { flex: 0 0 80px; width: 80px; }
+.seclist__image .seclist__img { display: block; width: 80px; height: auto; }
+.seclist__side .seclist__img { display: block; width: 100%; height: auto; }
+.seclist__title { margin: 0 0 8px; font-family: var(--font-medium); font-size: 20px; line-height: 24px; color: var(--fjell); }
+.seclist__header .sub-lead { margin: 16px 0 24px; font-size: 17px; line-height: 24px; }
+.seclist__body { min-height: 144px; }
+.seclist__list { text-align: left; }
+.seclist__btn { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 8px; padding: 18px 0; border: 0; border-bottom: 1px solid #ccc; background: none; color: var(--vann); font: inherit; text-align: left; cursor: pointer; }
+.seclist__item--active .seclist__btn { border-bottom: 2px solid var(--fjell); color: var(--fjell); }
+.seclist__icon { display: none; flex: 0 0 24px; width: 24px; height: 24px; line-height: 0; }
+.seclist__item--active .seclist__icon { display: block; }
+.seclist__icon svg { width: 24px; height: 24px; fill: currentColor; color: var(--fjell); transform: rotate(-90deg); }
+.seclist__content { display: none; padding: 16px 0; }
+.seclist__item--active .seclist__content { display: block; }
+.seclist__detail { display: none; }
+@media (min-width: 768px) {
+  .seclist { padding: 72px 0 56px; }
+  .seclist__grid { display: grid; grid-template-columns: repeat(12, 1fr); }
+  .seclist--layout2 .seclist__side { grid-column: 2 / span 2; padding: 0 16px; }
+  .seclist--layout2 .seclist__main { grid-column: 4 / span 8; padding: 0 16px; }
+  .seclist--small-img .seclist__main { grid-column: 2 / span 11; padding: 0 16px; }
+  .seclist__title { margin-bottom: 24px; font-size: 28px; line-height: 36px; }
+  .seclist__header .sub-lead { margin: 0 0 18px; font-size: 18px; line-height: 28px; }
+  .seclist__body { display: grid; grid-template-columns: 5fr 7fr; }
+  .seclist--small-img .seclist__body { grid-template-columns: 4fr 8fr; }
+  .seclist__content { display: none !important; }
+  .seclist__detail { display: block; padding: 0 0 0 40px; }
+  .seclist__detail .richtext > :first-child { margin-top: 0; }
+  .seclist__detail .cols { padding: 0; }
+  .seclist__detail .cols > .grid-row { max-width: none; }
+}
+
+/* reference right after feedback (no rule between them on live): the module's own 72/48px top margin */
+.page--product .main > .feedback + .reference { margin-top: 48px; }
+@media (min-width: 1024px) { .page--product .main > .feedback + .reference { margin-top: 72px; } }
+/* calculator snapshot host of a re-captured widget (forbrukslan credit calculator) */
+.calculator--widget { max-width: var(--container); margin: 0 auto; }
 /* ===== /product siblings ===== */

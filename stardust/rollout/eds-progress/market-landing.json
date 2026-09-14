@@ -1,0 +1,134 @@
+{
+ "_provenance": {
+  "writtenBy": "W1 (stardust:rollout EDS worker — market-landing)",
+  "writtenAt": "2026-09-14T20:27:44.932Z",
+  "converter": "stardust/scripts/eds/_w1-convert.mjs (convert.mjs + W1 family files re-applied last; see eds-requests.md W1-0)"
+ },
+ "family": "market-landing",
+ "archetype": "nb-bank-privat-html",
+ "short": "privat",
+ "regime": "published-origin (local EDS emulation, serve.mjs :3011, content/nb/bank/privat.html + blocks) vs the cached live captures stardust/replica/gates/privat-{1440,360}/live.png",
+ "document": "content/nb/bank/privat.html",
+ "encoder": "stardust/scripts/eds/encoders/market-landing.mjs (+ the band walker in category-hub.mjs)",
+ "blocks": {
+  "reused": [
+   "bank-choice",
+   "columns",
+   "cards",
+   "banner",
+   "header",
+   "footer"
+  ],
+  "reusedNewVariants": [
+   "columns link-list + cols-10/cols-6 + wN illustration cells",
+   "banner columns color2 color4 (two-tone banner, rows in colour order)",
+   "cards news with the publication date paragraph",
+   "header: mobile market strip on template=market-landing (derived from the /nav market list)"
+  ],
+  "new": [
+   "carousel campaign (shared with W3's guide carousel via variant dispatch — one block, D9)"
+  ]
+ },
+ "iterations": 6,
+ "breakpoints": {
+  "360": {
+   "pixelPct": 8.32,
+   "heightDelta": 0,
+   "chromeHeaderPct": 3.58,
+   "chromeHeaderPctExcludingSkipLink": 0.1,
+   "chromeFooterPct": 4.28,
+   "pass": "pixel + height pass; footer crop 5.09% > 2% — open residual (see justified)",
+   "evidence": "stardust/replica/gates/privat-eds-360/ (pixel-iter5.txt = final state; chrome-header.txt, chrome-footer.txt)"
+  },
+  "1440": {
+   "pixelPct": 5.56,
+   "pixelPctExcludingHero": "≈0.5 (every band ≤ 1.6% outside y500–1000)",
+   "heightDelta": 0,
+   "chromeHeaderPct": 0.42,
+   "chromeFooterPct": 1.19,
+   "contentDiffRed": 2,
+   "contentDiffRedJustified": 2,
+   "liveContentDiffRed": 2,
+   "pass": true,
+   "evidence": "stardust/replica/gates/privat-eds-1440/ (pixel-iter3.txt, chrome-header.txt, chrome-footer.txt, content-diff-iter1.txt, content-diff-live.txt)"
+  }
+ },
+ "justified": [
+  {
+   "flag": "band y500–1000 43–44% (both widths)",
+   "why": "campaign rotation: the live capture shows a different campaign than the sidecar — identical to the replica gate (43.3% / 42.9%)",
+   "permanent": true
+  },
+  {
+   "flag": "360 band y2500–3000 14.1%",
+   "why": "two-tone banner: rasterised illustration + LO logo antialiasing (replica 10.9%)",
+   "permanent": true
+  },
+  {
+   "flag": "360 header 3.58%",
+   "why": "skip link artefact; 0.10% excluding x<115",
+   "permanent": true
+  },
+  {
+   "flag": "360 footer crop 5.09% (bar 2%) and 3.5–6% in every band below the hero",
+   "why": "uniform ~1px horizontal double-strike of all text/icons in the diff while every measured rect (footer 4833/867/5700, strip, campaign, bands) equals the prototype/live to the pixel; page scrollWidth 364 (news rail −20px margins) is identical on the gated prototype. Not reproduced on lan-360 (footer 1.40%). Open — recorded for the orchestrator; suspected sub-pixel text positioning on this page at 360",
+   "permanent": false
+  },
+  {
+   "flag": "content-diff 🔴 \"Refinansier forbrukslån…\" / \"Sammenlign priser\"",
+   "why": "pseudo-heading spans (.h5) authored at their visual rank / the live h2 styled 36-44 medium — the tool classifies by computed size",
+   "permanent": true
+  }
+ ],
+ "fixesThisRound": [
+  "market-landing encoder: hidden h1 section, send-to-bank shells, carousel campaign (one row per slide), banner columns, dated news rail (market-news token), compare block (market-compare), band link-list detection + wN per-cell illustration widths",
+  "header.js additive: market strip from the /nav market list; header block keeps 112px with the strip (fixed-wrap scroll)",
+  "banner.js additive columns variant + CSS",
+  "columns.js link-list (no CTA grouping) + CSS; cards.js news date",
+  "styles: full, market-compare, market-news, header:has(strip)"
+ ],
+ "siblings": {
+  "count": 2,
+  "converted": 2,
+  "gapsTotal": 0,
+  "lint": "0 🔴",
+  "eyeballGated": "nb-bank-bedrift-html @1440 vs prototype (stardust/replica/gates/sibling-bedrift-eds-1440/) — prototype-level unknown module product-nav; om-oss converts 0 gaps (no strip on live, none rendered)",
+  "pages": [
+   {
+    "slug": "nb-bank-bedrift-html",
+    "file": "content/nb/bank/bedrift.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "carousel",
+     "columns",
+     "cards",
+     "banner"
+    ]
+   },
+   {
+    "slug": "nb-bank-om-oss-html",
+    "file": "content/nb/bank/om-oss.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "cards",
+     "columns",
+     "feedback"
+    ]
+   }
+  ],
+  "eyeball": {
+   "page": "nb-bank-bedrift-html",
+   "contentDiff": "1 🔴 — the <br>-split hero heading (\"NYHET!<br>Ny oversikt i nettbanken\" is the same h2 in the build); the product-nav CTA row is now carried (walker prose fallback)",
+   "pixelVsProto": "18.16 % / Δh 87 — the prototype renders the second campaign and the product-nav module unlike live (replica unknowns); EDS renders both as authored",
+   "evidence": "stardust/replica/gates/sibling-bedrift-eds-1440/"
+  }
+ },
+ "requests": [
+  "W1-0 loader collision (BLOCKING)",
+  "W1-4 /content/sites/sb1 hrefs",
+  "W1-10 columns col--media detection",
+  "W1-12 raster 2× dimensions"
+ ]
+}

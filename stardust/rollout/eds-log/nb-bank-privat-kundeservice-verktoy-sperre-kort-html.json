@@ -64,6 +64,9 @@
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
   "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style",
   "columns text-gap: the live column holds several .richtext blocks (flow-roots) — a heading-only block before text, or text after a CTA row, keeps its 16px margin instead of collapsing",
+  "spacer: blank <h3> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
   "lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
   "callout: 2 trailing empty paragraph(s) in the live message box (author spacer) → variant spacer-2",
   "columns text-gap: the live column holds several .richtext blocks (flow-roots) — a heading-only block before text, or text after a CTA row, keeps its 16px margin instead of collapsing",
@@ -72,5 +75,5 @@
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:14:36.059Z"
+ "writtenAt": "2026-09-14T20:32:59.740Z"
 }

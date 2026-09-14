@@ -35,7 +35,9 @@
   },
   {
    "module": "reference",
-   "blocks": []
+   "blocks": [
+    "columns"
+   ]
   },
   {
    "module": "image",
@@ -51,7 +53,9 @@
   },
   {
    "module": "reference",
-   "blocks": []
+   "blocks": [
+    "columns"
+   ]
   },
   {
    "module": "cols",
@@ -70,17 +74,20 @@
   "breadcrumbs",
   "cards",
   "callout",
+  "columns",
   "feedback"
  ],
  "notes": [
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "lint D5 cards featured: the live featured card (contain-fit illustration + h2 + lead paragraphs + checked list of bold link titles) — one row per card [illustration][body]; not clickable on live, the block keeps the authored links as the only links",
+  "lint D1 callout: the FFE message box (round glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell; warm = the live tips colours",
+  "reference: on theme/markedsnytt pages the live reference block holds a tinted columns-grid (text + CTAs + image) — authored as the grid's columns block in a cols section, not as the small-print reference",
+  "image: the live top-level centred illustration (inline picture, authored max-width) → default content picture in a theme-image section",
+  "reference: on theme/markedsnytt pages the live reference block holds a tinted columns-grid (text + CTAs + image) — authored as the grid's columns block in a cols section, not as the small-print reference",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module image.image--center emitted as prose",
-  "module button-wrap.button-wrap--center emitted as prose"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T19:55:43.956Z"
+ "writtenAt": "2026-09-14T20:28:19.854Z"
 }
