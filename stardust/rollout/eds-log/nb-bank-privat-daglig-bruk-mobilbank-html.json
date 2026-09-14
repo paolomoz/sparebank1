@@ -44,8 +44,10 @@
    ]
   },
   {
-   "module": "module",
-   "blocks": []
+   "module": "gcarousel",
+   "blocks": [
+    "carousel"
+   ]
   },
   {
    "module": "cols",
@@ -77,6 +79,7 @@
   "breadcrumbs",
   "columns",
   "banner",
+  "carousel",
   "accordion",
   "cards",
   "feedback"
@@ -86,15 +89,14 @@
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/pengene-vokser-dame-mater-fisk-lys-bakgrunn.svg is 320828 bytes of SVG (> 40000) — authored as DA media pengene-vokser-dame-mater-fisk-lys-bakgrunn.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg is 69217 bytes of SVG (> 40000) — authored as DA media mann-bil-tre.png (rasterised)",
+  "lint D1 carousel: the live guide-carousel (one slide visible, \"1 av N\", prev/next) — one row per slide [screenshot][title + copy][slide name (the visually-hidden tab label)]; the counter and the Forrige/Neste controls are block chrome",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module module.module--guide-carousel emitted as prose"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/pengene-vokser-dame-mater-fisk-lys-bakgrunn.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg"
  ],
- "writtenAt": "2026-09-14T19:24:58.059Z"
+ "writtenAt": "2026-09-14T20:13:58.853Z"
 }

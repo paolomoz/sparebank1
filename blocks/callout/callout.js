@@ -11,7 +11,7 @@ export default function decorate(block) {
   const ic = el('span', { class: 'callout__icon' }, icon('info'));
   const body = el('div', { class: 'callout__body' });
   while (cell.firstChild) body.append(cell.firstChild);
-  box.append(ic, body);
+  if (block.classList.contains('infobox')) box.append(body); else box.append(ic, body); // additive (news-article): the infoBox variant has no icon
   block.replaceChildren(box);
   inlineIcons(block);
 }

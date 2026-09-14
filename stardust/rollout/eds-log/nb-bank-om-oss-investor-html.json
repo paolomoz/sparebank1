@@ -1,0 +1,50 @@
+{
+ "slug": "nb-bank-om-oss-investor-html",
+ "daPath": "/nb/bank/om-oss/investor",
+ "file": "content/nb/bank/om-oss/investor.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "campaign",
+   "blocks": [
+    "carousel"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "module",
+   "blocks": []
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "carousel",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "lint D11 carousel: the presse split hero is the live .campaign component (7/12 photo + 5/12 text) authored as one slide of `carousel campaign` (D9 — same block as the market-landing hero); `white` = untinted, `lead` = h1 + lead paragraph",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2024/lyspare-og-mobilskjerm-med-data-mobil-grafer-lys-mork-bakgrunn.svg is 273127 bytes of SVG (> 40000) — authored as DA media lyspare-og-mobilskjerm-med-data-mobil-grafer-lys-mork-bakgrunn.png (rasterised)",
+  "module tabs-component: the live tabs chrome is client-rendered — the capture holds the panel richtext (pseudo-heading h4 per period + PDF links) → default content (D1), section style module-prose",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2024/lyspare-og-mobilskjerm-med-data-mobil-grafer-lys-mork-bakgrunn.svg"
+ ],
+ "writtenAt": "2026-09-14T20:17:28.988Z"
+}

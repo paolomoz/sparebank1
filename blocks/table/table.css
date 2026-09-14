@@ -29,3 +29,10 @@
 .table.disclosure table { width: 100%; margin: 16px 0 0; }
 .table.disclosure td, .table.disclosure th { white-space: normal; vertical-align: top; }
 @media (width >= 768px) { .table.disclosure .table__head :is(h2, h3) { margin-bottom: 24px; } }
+
+/* ===== om-oss (additive variant) =====
+   full — the live full-width AEM table (selskapsinformasjon: table width=100%, wrapping multi-line address cells, first-column row
+   headers in the medium face via the authored <strong>). */
+.table.full table { width: 100%; }
+.table.full td, .table.full th { white-space: normal; vertical-align: top; }
+/* ===== /om-oss ===== */

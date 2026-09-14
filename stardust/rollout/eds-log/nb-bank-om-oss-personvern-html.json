@@ -1,0 +1,97 @@
+{
+ "slug": "nb-bank-om-oss-personvern-html",
+ "daPath": "/nb/bank/om-oss/personvern",
+ "file": "content/nb/bank/om-oss/personvern.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns",
+    "cards"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns"
+   ]
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "columns",
+  "cards"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/mote-spisebord-kaffe.svg is 61476 bytes of SVG (> 40000) — authored as DA media mote-spisebord-kaffe.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/person-med-signert-papir-i-handa-lys-bakgrunn.svg is 55023 bytes of SVG (> 40000) — authored as DA media person-med-signert-papir-i-handa-lys-bakgrunn.png (rasterised)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/menneske-person-voksen-med-hund-i-lenestol-sjekker-mobilen.svg is 41470 bytes of SVG (> 40000) — authored as DA media menneske-person-voksen-med-hund-i-lenestol-sjekker-mobilen.png (rasterised)"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/mote-spisebord-kaffe.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/person-med-signert-papir-i-handa-lys-bakgrunn.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/menneske-person-voksen-med-hund-i-lenestol-sjekker-mobilen.svg"
+ ],
+ "writtenAt": "2026-09-14T20:17:29.081Z"
+}

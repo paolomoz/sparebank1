@@ -127,6 +127,9 @@
 .columns.baseline .col--illustration.col--media p { line-height: 24px; }
 .columns.baseline .col--illustration.col--media picture { display: inline; }
 .columns.baseline .col--illustration.col--media img { display: inline; vertical-align: baseline; }
+.columns.baseline.media-plain .col--media p { margin: 0; line-height: 24px; text-align: center; }
+.columns.baseline.media-plain .col--media picture { display: inline; }
+.columns.baseline.media-plain .col--media img { display: inline; width: 100%; vertical-align: baseline; }
 .columns.cols-9.flush .col__text > :first-child { margin-top: 0; }
 @media (width >= 768px) {
   .columns.cols-11 .grid-row { grid-template-columns: repeat(11, 1fr); max-width: min(91.6667%, 1173.33px); }

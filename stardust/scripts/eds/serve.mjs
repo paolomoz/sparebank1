@@ -25,9 +25,14 @@ function mainOf(file) {
       else sec.setAttribute(`data-${k.toLowerCase().replace(/[^0-9a-z]+/g, '-')}`, v); });
     sm.remove();
   });
+  // like the pipeline: a block cell holding a single paragraph is unwrapped (the cell's children become the paragraph's inline run)
+  [...document.querySelectorAll('main > div > div:not(.section-metadata):not(.default-content-wrapper) > div > div')].forEach((cell) => {
+    const kids = [...cell.childNodes].filter((n) => n.nodeType !== 3 || n.textContent.trim());
+    if (kids.length === 1 && kids[0].nodeType === 1 && kids[0].tagName === 'P') { const p = kids[0]; p.replaceWith(...p.childNodes); }
+  });
   // like the pipeline (markdown has no small/span/empty paragraphs): unwrap <small>/<span>, drop empty <p>
   [...document.querySelectorAll('small, span:not([class])')].forEach((e) => e.replaceWith(...e.childNodes));
-  [...document.querySelectorAll('p')].forEach((p) => { if (!p.textContent.trim() && !p.querySelector('img, picture, a, span')) p.remove(); });
+  [...document.querySelectorAll('p, h1, h2, h3, h4, h5, h6')].forEach((p) => { if (!p.textContent.replace(/\u00a0/g, ' ').trim() && !p.querySelector('img, picture, a, span')) { if (/^H/.test(p.tagName)) p.textContent = ''; else p.remove(); } }); // nbsp-only headings survive as empty (0px) like the pipeline
   // like the pipeline (markdown loose lists): when any item of a list holds a block child, EVERY item's inline run is wrapped in <p>
   [...document.querySelectorAll('ul, ol')].forEach((list) => {
     const items = [...list.children].filter((li) => li.tagName === 'LI'); if (!items.some((li) => [...li.children].some((c) => /^(P|UL|OL|DIV|TABLE|H[1-6])$/.test(c.tagName)))) return;

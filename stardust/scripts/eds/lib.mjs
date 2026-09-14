@@ -115,7 +115,12 @@ export function inline(el, ctx) {
       if (!text.trim() && /disclosure-symbol/.test(cls)) { const al = n.getAttribute('aria-label') || ''; text = esc(al.split(':')[0]); }
       out += `<a href="${esc(h)}">${text}</a>`; continue;
     }
-    if (t === 'sup' || t === 'sub' || t === 'strong' || t === 'em' || t === 'b' || t === 'i' || t === 'u' || t === 's' || t === 'code' || t === 'small') { out += `<${t}>${inline(n, ctx)}</${t}>`; continue; }
+    if (t === 'sup' || t === 'sub' || t === 'strong' || t === 'em' || t === 'b' || t === 'i' || t === 'u' || t === 's' || t === 'code' || t === 'small') {
+      // the pipeline drops a <br> that sits inside inline formatting (<b>Telefon<br></b>) — move leading/trailing breaks outside the element
+      let inner = inline(n, ctx); let lead = ''; let tail = '';
+      while (inner.startsWith('<br>')) { inner = inner.slice(4); lead += '<br>'; } while (inner.endsWith('<br>')) { inner = inner.slice(0, -4); tail += '<br>'; }
+      out += inner.trim() ? `${lead}<${t}>${inner}</${t}>${tail}` : lead + inner + tail; continue;
+    }
     if (t === 'svg' || t === 'canvas' || t === 'script' || t === 'style' || t === 'button' || t === 'input') continue;
     if (t === 'span' && /\bfw-bold\b/.test(n.getAttribute('class') || '')) { out += `<strong>${inline(n, ctx)}</strong>`; continue; } // bold emphasis span → <strong> (David's Model has no inline class; text-transform is lost — justified per page)
     out += inline(n, ctx); // span / div / other wrappers: flatten
@@ -180,6 +185,8 @@ export function prose(el, ctx, opts = {}) {
     if (n.nodeType === 3) { if (n.textContent.trim()) out += `<p>${esc(n.textContent.trim())}</p>`; continue; }
     if (n.nodeType !== 1) continue;
     const t = n.tagName.toLowerCase();
+    // blank spacers (<h3>&nbsp;</h3>, <p>&nbsp;</p>) are authoring debris the pipeline drops anyway — not content; recorded as a residual
+    if (/^(h[1-6]|p)$/.test(t) && !n.textContent.replace(/\u00a0/g, ' ').trim() && !n.querySelector('img, picture, a, br')) { ctx?.notes?.push(`spacer: blank <${t}> dropped (live renders it as vertical space)`); continue; }
     if (/^h[1-6]$/.test(t)) { const ht = headingTag(n); out += `<${ht}>${inline(n, ctx)}</${ht}>`; continue; }
     // live pseudo-headings: <p><span class="h4">…</span></p> (FFE .h2–.h6 classes) → a real heading of that rank
     const pseudo = (e) => { const m = /\b(?:ffe-)?h([2-6])\b/.exec(e.getAttribute('class') || ''); return m ? m[1] : null; };

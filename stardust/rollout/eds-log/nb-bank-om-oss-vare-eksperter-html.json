@@ -28,25 +28,26 @@
    "blocks": []
   },
   {
-   "module": "module",
-   "blocks": []
+   "module": "experts",
+   "blocks": [
+    "cards"
+   ]
   }
  ],
  "blocks": [
   "bank-choice",
-  "breadcrumbs"
+  "breadcrumbs",
+  "cards"
  ],
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
-  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content"
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "cards people: the experts list (bio cards) — one row per expert [portrait][name h3, role, bio, \"Les mer om …\" link]; card-as-link via the trailing link (EW6)"
  ],
  "gaps": [
-  "module title emitted as prose",
-  "no encoder for module title",
-  "module module.module--contentfragmentlist emitted as prose",
-  "module module module--contentfragmentlist produced no content"
+  "module title emitted as prose"
  ],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T19:24:56.741Z"
+ "writtenAt": "2026-09-14T20:13:57.689Z"
 }

@@ -327,3 +327,76 @@ header .header:has(.header__market-strip) { height: calc(var(--nav-height) + 52p
 .header .header__market-strip { margin-top: calc(var(--nav-height) - 57px); }
 @media (width >= 1024px) { header .header:has(.header__market-strip) { height: var(--nav-height); } }
 /* ===== /market-landing ===== */
+
+/* ===== frontend chrome (news-article · news-listing · campaign-landing, additive) =====
+   the nettsider-frontend clientlib header: stardust/prototypes/css/news-article.css .header--frontend (lifted from
+   frontend_clientlib_base + lift/nyhet-*-detail.json). Same authored /nav document; the block adds `header--frontend`
+   (+ `header--story header--no-bottom-links` on the story template) from the page's template metadata. */
+header .header.header--frontend { height: 60px; background: var(--white); box-shadow: 0 2.5px 1.5px -1.5px #adadad; }
+.header.header--frontend .header__wrap { box-shadow: none; }
+.header.header--frontend .header__wrap.scroll, .header.header--frontend .header__wrap.scroll.show { position: relative; top: auto; } /* live: static at every scroll position (motion/nyhet-*.json) */
+.header.header--frontend .header__content { display: flex; flex-direction: column; min-height: 58px; padding: 0 20px; }
+.header.header--frontend .header__top { height: 50px; }
+.header.header--frontend .header__logo { width: 165px; margin: 0 auto; padding: 10px 0 0 10px; }
+.header.header--frontend .header__logo img { width: auto; height: 40px; max-width: 100%; }
+.header.header--frontend .header__search-mobile { top: 23px; left: -4px; color: var(--fjell); }
+.header.header--frontend .header__search-mobile .icon { display: block; width: 24px; height: 24px; }
+.header.header--frontend .header__search-mobile .icon svg { display: none; }
+.header.header--frontend .header__search-mobile .icon::before, .header.header--frontend .header__search .icon::before { content: ''; display: block; width: 24px; height: 24px; background: currentcolor; mask: url('/icons/search-frontend.svg') center / 24px 24px no-repeat; }
+.header.header--frontend .header__mainnav a:any-link { color: var(--fjell); }
+
+@media (width >= 768px) {
+  .header.header--frontend .header__logo { width: 180px; }
+  .header.header--frontend .header__logo img { width: 170px; height: 49px; max-height: 50px; }
+}
+
+@media (width >= 1024px) {
+  header .header.header--frontend { height: 124px; }
+  .header.header--frontend .header__top { height: 59px; }
+  .header.header--frontend .header__user { top: 18px; right: 20px; height: 42px; min-width: 200px; }
+  .header.header--frontend .header__search { height: 42px; margin: 0 10px 0 0; padding: 8px 15px; border: 2px solid #323232; border-radius: 30px; background: none; color: #323232; font: 400 16px/22px var(--font); }
+  .header.header--frontend .header__search .icon { display: block; width: 28px; height: 24px; padding: 0 4px 2px 0; }
+  .header.header--frontend .header__search .icon svg { display: none; }
+  .header.header--frontend .header__search:hover, .header.header--frontend .header__search:focus { background: var(--vann); color: var(--white); border-color: var(--vann); }
+  .header.header--frontend .header__actions { height: 42px; }
+  .header.header--frontend a.header__cta:any-link { display: flex; align-items: center; height: 42px; min-height: 42px; margin: 0 10px 0 0; padding: 8px 16px; border: 2px solid transparent; border-radius: 30px; font: 400 16px/22px var(--font); white-space: nowrap; }
+  .header.header--frontend a.header__login:any-link { min-width: 105px; height: 42px; padding: 8px 16px; border: 2px solid var(--action); border-radius: 30px; background: var(--white); color: var(--action); font: 400 16px/22px var(--font); }
+  .header.header--frontend a.header__login:hover, .header.header--frontend a.header__login:focus { background: var(--action); color: var(--white); }
+  .header.header--frontend .header__topnav { top: 10px; }
+  .header.header--frontend .header__topnav li { margin: 0 2%; padding: 20px 0; }
+  .header.header--frontend .header__topnav a:any-link { line-height: normal; border-bottom: none; }
+  .header.header--frontend .header__topnav li.is-active a:any-link { color: var(--fjell); border-bottom: 2px solid var(--fjell); }
+  .header.header--frontend .header__mainnav { height: 62px; }
+  .header.header--frontend .header__mainnav a:any-link { color: #323232; }
+  .header.header--frontend .header__mainnav li.is-active a:any-link, .header.header--frontend .header__mainnav a:hover { color: var(--fjell); }
+}
+
+/* mobile menu open (live: header__wrap--active → fixed white panel, the two account buttons in a fixed bottom bar) */
+@media (width <= 1023px) {
+  .header.header--frontend .header__wrap--active { box-shadow: none; z-index: 100000; }
+  .header.header--frontend .header__wrap--active .header__content { position: fixed; top: 0; left: 0; width: 100%; height: 100%; padding-bottom: 100px; overflow: scroll; background: var(--white); }
+  .header.header--frontend .header__wrap--active .header__topnav { display: block; margin: 40px 0; text-align: center; }
+  .header.header--frontend .header__wrap--active .header__topnav a:any-link { color: var(--secondary-text); font-size: 16px; }
+  .header.header--frontend .header__wrap--active .header__topnav li.is-active a:any-link { color: var(--fjell); }
+  .header.header--frontend .header__wrap--active .header__mainnav { display: block; padding-bottom: 30px; }
+  .header.header--frontend .header__wrap--active .header__user { display: flex; justify-content: center; }
+  .header.header--frontend .header__wrap--active .header__search { display: none; }
+  .header.header--frontend .header__wrap--active .header__actions { position: fixed; bottom: 0; left: 0; display: flex; justify-content: center; width: 100%; padding: 16px 20px; background: var(--white); box-shadow: #ccc 0 3px 24px; }
+  .header.header--frontend .header__wrap--active .header__actions p { margin: 0; }
+  .header.header--frontend .header__wrap--active a.header__cta:any-link { display: flex; width: auto; margin-right: 10px; padding: 8px 16px; border-radius: 30px; }
+  .header.header--frontend .header__wrap--active a.header__login:any-link { display: flex; width: auto; min-width: 105px; padding: 8px 16px; border: 2px solid var(--action); border-radius: 30px; background: var(--white); color: var(--action); }
+}
+
+/* story template (campaign-landing): no main-nav row, 78px from 768, the sand canvas shows through */
+.header.header--frontend.header--no-bottom-links .header__mainnav { display: none; }
+header .header.header--frontend.header--story { background: var(--sand-30); box-shadow: none; }
+.header.header--frontend.header--story .header__wrap { background: var(--white); }
+
+@media (width >= 768px) {
+  header .header.header--frontend.header--no-bottom-links { height: 78px; }
+  .header.header--frontend.header--story .header__wrap, .header.header--frontend.header--story .header__content { background: transparent; }
+}
+/* ===== /frontend chrome ===== */
+/* ===== frontend chrome (cont.) ===== the login pill is 42px on the frontend header (the canon one is 44) */
+@media (width >= 1024px) { .header.header--frontend a.header__login:any-link { min-height: 42px; } }
+/* ===== /frontend chrome (cont.) ===== */

@@ -21,7 +21,7 @@ export default function decorate(block) {
   const item = el('div', { class: 'price-terms__item' }); const cta = el('div', { class: 'price-terms__cta' }); const sub = el('div', { class: 'price-terms__sub' });
   [...(c2?.children || [])].forEach((n) => {
     if (n.tagName === 'UL' || n.tagName === 'OL') { n.classList.add('price-terms__terms'); item.append(n); return; }
-    const a = n.querySelector('a'); if (a && n.children.length === 1 && n.textContent.trim() === a.textContent.trim()) { a.classList.add('price-terms__link'); n.classList.add('price-terms__cta-row'); cta.append(n); return; }
+    const a = n.querySelector('a'); if (!cta.children.length && a && n.children.length === 1 && n.textContent.trim() === a.textContent.trim()) { a.classList.add('price-terms__link'); n.classList.add('price-terms__cta-row'); cta.append(n); return; } // the FIRST link-only paragraph is the overlay link; later ones belong to the footnote
     sub.append(n);
   });
   if (item.children.length) grid.append(item);

@@ -35,12 +35,15 @@
   {
    "module": "cols",
    "blocks": [
-    "columns"
+    "columns",
+    "price-terms"
    ]
   },
   {
-   "module": "module",
-   "blocks": []
+   "module": "disclosure",
+   "blocks": [
+    "accordion"
+   ]
   },
   {
    "module": "cobranding",
@@ -85,7 +88,6 @@
   {
    "module": "band",
    "blocks": [
-    "columns",
     "accordion"
    ]
   },
@@ -111,27 +113,33 @@
   "breadcrumbs",
   "columns",
   "usp",
+  "price-terms",
+  "accordion",
   "cobranding",
   "shortcuts",
-  "accordion",
   "cards",
   "feedback"
  ],
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
+  "price-terms: the overlay link targets its own module anchor on live (bank chooser dialog) — kept verbatim, no-op until the dialog dynamic exists",
+  "undefined: authored inside a columns-grid column on live — a columns cell cannot hold a block, so it follows the columns block as a sibling (layout stacks; content complete)",
+  "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)",
+  "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
   "lint D3 cobranding: single-cell rows read by position — row 1 heading + toggle label (EW8: the label moves into the expand button), row 2 partner logo + title, rows 3+ one panel column each; the panel is closed at rest (dynamics #14 static snapshot)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/pall.svg is 86953 bytes of SVG (> 40000) — authored as DA media pall.png (rasterised)",
+  "faq: a guide-carousel sits inside this answer on live — its slides are authored as prose (title, copy, screenshot); no nested blocks",
+  "faq: a columns-grid sits inside this answer on live — cells authored in order as prose (no nested blocks)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module module.module--progressive-disclosure emitted as prose"
- ],
+ "gaps": [],
  "assets": [
   "chevron.svg"
  ],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/pall.svg"
  ],
- "writtenAt": "2026-09-14T19:24:57.524Z"
+ "writtenAt": "2026-09-14T20:13:58.315Z"
 }

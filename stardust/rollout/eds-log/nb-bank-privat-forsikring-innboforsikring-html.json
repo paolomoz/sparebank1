@@ -44,7 +44,7 @@
    "blocks": []
   },
   {
-   "module": "button-wrap button-wrap--center",
+   "module": "button-wrap",
    "blocks": []
   },
   {
@@ -52,8 +52,10 @@
    "blocks": []
   },
   {
-   "module": "module",
-   "blocks": []
+   "module": "disclosure",
+   "blocks": [
+    "accordion"
+   ]
   },
   {
    "module": "static-cards",
@@ -106,23 +108,20 @@
   "breadcrumbs",
   "columns",
   "usp",
-  "cards",
   "accordion",
+  "cards",
   "feedback"
  ],
  "notes": [
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-usymmetrisk-samboer-dame-mann-high-five.svg is 43025 bytes of SVG (> 40000) — authored as DA media illustrasjon-usymmetrisk-samboer-dame-mann-high-five.png (rasterised)",
+  "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module button-wrap.button-wrap--center emitted as prose",
-  "no encoder for module button-wrap button-wrap--center",
-  "module module.module--progressive-disclosure emitted as prose"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-usymmetrisk-samboer-dame-mann-high-five.svg"
  ],
- "writtenAt": "2026-09-14T19:24:58.846Z"
+ "writtenAt": "2026-09-14T20:13:59.596Z"
 }

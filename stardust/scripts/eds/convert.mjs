@@ -26,7 +26,7 @@ const slugs = args.includes('--all') ? state.pages.map((p) => p.slug) : args.fil
 if (!slugs.length) { console.error('usage: convert.mjs <slug…> | --all'); process.exit(1); }
 const chromeMap = fs.existsSync('stardust/rollout/chrome-map.json') ? JSON.parse(fs.readFileSync('stardust/rollout/chrome-map.json', 'utf8')).pages : {};
 
-export const daPath = (url) => { const p = new URL(url).pathname.replace(/\.html$/, '').replace(/\/$/, ''); return p || '/index'; };
+export const daPath = (url) => { const p = new URL(url).pathname.replace(/\.html$/, '').replace(/\/$/, '').toLowerCase(); return p || '/index'; }; // delivery-safe: lowercase (rollout path-safety P0); the original-case URL is a redirects row
 
 function metadataBlock(pg, doc, chrome) {
   const meta = (name) => doc.querySelector(`meta[name="${name}"], meta[property="${name}"]`)?.getAttribute('content') || '';

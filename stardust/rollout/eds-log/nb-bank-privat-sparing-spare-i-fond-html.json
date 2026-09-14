@@ -115,13 +115,11 @@
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2023/dame-star-pa-penger-spare-fond.svg is 51791 bytes of SVG (> 40000) — authored as DA media dame-star-pa-penger-spare-fond.png (rasterised)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module module module--columns produced no content"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/girls-just-want-to-have-fond-med-ameline-usymmetrisk-.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2023/dame-star-pa-penger-spare-fond.svg"
  ],
- "writtenAt": "2026-09-14T19:25:01.317Z"
+ "writtenAt": "2026-09-14T20:14:01.534Z"
 }

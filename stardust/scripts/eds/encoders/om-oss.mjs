@@ -66,6 +66,8 @@ export function omBand(root, ctx, opts = {}) {
     if (q(row, '.subtle-text')) variants.push('subtle');
     if (cols.some((c) => illustrationWidth(c) && !/--ratio/.test(q(c, ':scope > .col__content > .image')?.getAttribute("style") || ''))) variants.push('baseline'); // live inline <picture> (7px tail)
     if (q(row, '.button-list')) variants.push('button-gap'); // live desktop 8px under each button
+    // an image-only column holding a non-ratio illustration WITHOUT an authored width (live: natural aspect at column width, inline picture) → media-plain + baseline
+    if (cols.some((c) => { const im = q(c, ':scope > .col__content > .image'); const st = im?.getAttribute('style') || ''; return im && q(im, 'img') && !/--ratio/.test(st) && !/--w:/.test(st) && [...q(c, ':scope > .col__content').children].every((ch) => /\bimage\b/.test(ch.getAttribute('class') || '')); })) variants.push('media-plain', 'baseline');
     if (grid) { variants.push(grid); if (grid === 'cols-9') variants.push('flush'); }
     parts.push(block('columns', variants, [cells])); blocks.push('columns');
   };
@@ -93,10 +95,46 @@ function omCampaign(root, ctx) {
   return { html: section([block('carousel', variants.filter(Boolean), [[pic(img, ctx), richtext(text, ctx)]])], { style: 'full' }), blocks: ['carousel'] };
 }
 
+/**
+ * Top-level modules the loader routes to the `module` FALLBACK on om-oss pages (tool.mjs wins `title`/`image` and returns null outside
+ * its family): the AEM page title, the AEM table module (`table full`), the tabs component the capture holds as plain richtext.
+ */
+function omModule(root, ctx, opts, orig) {
+  const k = root.classList;
+  if (k.contains('title')) {
+    const h = q(root, 'h1, h2'); if (!h) return null;
+    ctx.notes.push('title: the AEM page-title module → default content h1 in a `title` section (live: centred, margin 16/8 → 16/24)');
+    return { html: section([`<${h.tagName.toLowerCase()}>${inline(h, ctx).trim()}</${h.tagName.toLowerCase()}>`], { style: 'title' }), blocks: [] };
+  }
+  if (k.contains('table-block')) {
+    const t = q(root, 'table'); if (!t) return null;
+    const cellHtml = (c) => { const s = inline(c, ctx).replace(/ /g, ' ').replace(/^(\s|<br>)+|(\s|<br>)+$/g, '').trim(); return `<p>${s && c.tagName === 'TH' ? `<strong>${s}</strong>` : s}</p>`; };
+    const rows = qa(t, 'tr').map((tr) => [...tr.children].map(cellHtml));
+    const cap = q(t, 'caption'); if (cap) ctx.notes.push(`table: the live caption "${cap.textContent.trim()}" is visually hidden (accessible name) — not authored (the page title names the table)`);
+    ctx.notes.push('lint D11 table full: the Block Collection data-table block, one row per table row, first row = header; live row-header cells (th) are authored bold; `full` = the live 100%-width wrapping table');
+    const parts = []; const title = q(root, '.table-block__title'); if (title && title.textContent.trim()) parts.push(richtext(title, ctx));
+    parts.push(block('table', ['full'], rows));
+    for (const tx of qa(root, ':scope > .richtext, .table-block__text')) parts.push(richtext(tx, ctx));
+    return { html: section(parts, { style: 'gap-48' }), blocks: ['table'] };
+  }
+  if (k.contains('module--tabs-component')) {
+    const html = richtext(root, ctx); if (!html.trim()) return null;
+    ctx.notes.push('module tabs-component: the live tabs chrome is client-rendered — the capture holds the panel richtext (pseudo-heading h4 per period + PDF links) → default content (D1), section style module-prose');
+    return { html: section([html], { style: 'module-prose, gap-48' }), blocks: [] };
+  }
+  return orig ? orig(root, ctx, opts) : null;
+}
+/** Top-level richtext on om-oss pages: the live 620px text column, left-aligned (canon core centres it for the product "Sammenlign priser" block). */
+function omRichtext(root, ctx) { return { html: section([richtext(root, ctx)], { style: 'narrow, gap-48' }), blocks: [] }; }
+
+gateCore('module', FAMILY, omModule);
+gateCore('richtext', FAMILY, omRichtext);
 gateCore('band', FAMILY, (root, ctx) => omBand(root, ctx));
 gateCore('cols', FAMILY, (root, ctx) => omBand(root, ctx, { topLevelCols: true }));
 
 export default {
   campaign: (root, ctx) => (isOmOss(ctx) ? omCampaign(root, ctx) : ml.campaign(root, ctx)),
   'adviser-list': (root, ctx, opts) => adviserList(root, ctx, opts),
+  // registers the key so convert.mjs does not log a top-level AEM table as "no encoder" (the om-oss fallback gate renders it); other families keep their fallback
+  'table-block': (root, ctx, opts) => (isOmOss(ctx) ? omModule(root, ctx, opts, null) : null),
 };

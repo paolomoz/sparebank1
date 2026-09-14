@@ -32,3 +32,29 @@ main .section .callout-wrapper:has(> .callout.lg-10) { max-width: 1066.67px; }
 .callout.spacer-1 .callout__body::after { content: ''; display: block; height: 40px; }
 .callout.spacer-2 .callout__body::after { content: ''; display: block; height: 80px; }
 /* ===== /tool ===== */
+
+/* ===== news-article (additive variant) =====
+   infobox — the article infoBox component (stardust/prototypes/css/news-article.css .article__infobox*): a tinted, left-aligned
+   box without the message-box icon, full width of the article column; the tint sub-variant is the FFE colour token the live
+   author picked (sand-70 · frost-30 · nordlys-30 · green-mint). */
+main .section .callout-wrapper:has(> .callout.infobox) { max-width: none; margin: 24px 0; }
+.callout.infobox { display: block; text-align: center; }
+.callout.infobox .callout__box { max-width: none; padding-top: 0; line-height: 24px; text-align: left; }
+.callout.infobox .callout__icon { display: none; }
+.callout.infobox .callout__body { padding: 20px; border-radius: 4px; background: var(--white); color: var(--text); text-align: left; }
+.callout.infobox.sand-70 .callout__body { background: var(--sand-70); }
+.callout.infobox.frost-30 .callout__body { background: var(--frost-30); }
+.callout.infobox.nordlys-30 .callout__body { background: #c2e7da; }
+.callout.infobox.green-mint .callout__body { background: #e3f5ee; }
+.callout.infobox .callout__body :is(h2, h3, h4) { margin: 40px 0 8px; font-family: var(--font-heading); font-size: 22px; line-height: 28px; color: var(--fjell); text-align: left; text-transform: uppercase; }
+.callout.infobox .callout__body > :first-child { margin-top: 40px; }
+.callout.infobox .callout__body p { margin: 0 0 16px; text-align: left; }
+.callout.infobox .callout__body ul { margin: 16px 0; padding: 0 0 0 40px; list-style: disc; }
+.callout.infobox .callout__body li { margin: 16px 0 0; }
+.callout.infobox .callout__body a:any-link { color: var(--vann); border-bottom: 1px solid var(--vann); }
+
+@media (width >= 768px) {
+  main .section .callout-wrapper:has(> .callout.infobox) { margin: 40px 0; }
+  .callout.infobox .callout__body :is(h2, h3, h4) { margin-bottom: 8px; font-size: 22px; line-height: 28px; }
+}
+/* ===== /news-article ===== */

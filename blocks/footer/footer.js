@@ -14,7 +14,7 @@ import { el, icon, sectionsOf, text, inlineIcons } from '../../scripts/sb1.js';
 export default async function decorate(block) {
   const footerMeta = getMetadata('footer');
   // additive fallback (faq siblings): a bedrift-market page without an explicit footer document takes the bedrift chrome (chrome-map lists archetypes only)
-  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : (getMetadata('market') === 'bedrift' ? '/footer-bedrift' : '/footer');
+  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : (getMetadata('market') === 'bedrift' ? '/footer-bedrift' : getMetadata('market') === 'om-oss' ? '/footer-om-oss' : '/footer');
   const fragment = await loadFragment(footerPath);
   if (!fragment) return;
   const sections = sectionsOf(fragment);
@@ -82,6 +82,8 @@ export default async function decorate(block) {
   const addr = byStyle('address')[0]; if (addr) { const p = wrapOf(addr).querySelector('p'); if (p) { p.classList.add('footer__address'); inner.append(p); } }
   bottom.append(inner); root.append(bottom);
   block.replaceChildren(root); inlineIcons(block);
+  // nettsider-frontend chrome (news-article · news-listing · campaign-landing): fjell link columns only — no contact band, no to-top
+  if (['news-article', 'news-listing', 'campaign-landing'].includes(getMetadata('template'))) block.classList.add('footer--frontend');
 
   // behaviour (observed): to-top show/hide + smooth scroll; contact tabs
   const toTop = root.querySelector('.to-top');

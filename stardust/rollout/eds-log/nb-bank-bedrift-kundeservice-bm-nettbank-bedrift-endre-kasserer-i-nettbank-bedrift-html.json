@@ -1,7 +1,7 @@
 {
  "slug": "nb-bank-bedrift-kundeservice-bm-nettbank-bedrift-endre-kasserer-i-nettbank-bedrift-html",
- "daPath": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift",
- "file": "content/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/Endre-kasserer-i-nettbank-bedrift.html",
+ "daPath": "/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/endre-kasserer-i-nettbank-bedrift",
+ "file": "content/nb/bank/bedrift/kundeservice/bm-nettbank-bedrift/endre-kasserer-i-nettbank-bedrift.html",
  "chrome": {
   "nav": "/nav",
   "footer": "/footer"
@@ -34,5 +34,5 @@
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T19:21:06.488Z"
+ "writtenAt": "2026-09-14T20:10:24.277Z"
 }

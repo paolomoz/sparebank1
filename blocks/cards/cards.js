@@ -10,6 +10,7 @@ import { el, icon, inlineIcons } from '../../scripts/sb1.js';
 export default function decorate(block) {
   const news = block.classList.contains('news'); const price = block.classList.contains('price');
   const nav = block.classList.contains('nav'); const smallList = block.classList.contains('small'); // additive variants (hub visual-nav, hub icon list)
+  const listing = block.classList.contains('listing'); // additive variant (news-listing): tag eyebrow + d/m/yyyy date paragraphs, first row = the featured headline
   const list = el('ul', { class: 'card-list' });
   [...block.children].forEach((row) => {
     const cells = [...row.children];
@@ -33,14 +34,16 @@ export default function decorate(block) {
       if (node === title) { node.classList.add('card__title'); content.append(node); return; }
       // the tag line: a short link-less paragraph before the title (live renders it uppercase)
       const t = node.textContent.trim();
-      if (node.tagName === 'P' && t && t.length < 30 && !node.querySelector('a') && !content.querySelector('.card__title') && (news || t === t.toUpperCase())) { node.classList.add('card__tag'); content.append(node); return; }
+      if (node.tagName === 'P' && t && t.length < 30 && !node.querySelector('a') && !content.querySelector('.card__title') && (news || listing || t === t.toUpperCase())) { node.classList.add('card__tag'); content.append(node); return; }
       // news rail: the short date-shaped paragraph after the title is the publication date (live .card__date) — additive
       if (news && node.tagName === 'P' && content.querySelector('.card__title') && /^\d{1,2}\.\s*\p{L}+\s+\d{4}$/u.test(t)) { node.classList.add('card__date'); content.append(node); return; }
+      if (listing && node.tagName === 'P' && content.querySelector('.card__title') && /^\d{1,2}\/\d{1,2}\/\d{4}$/.test(t)) { node.classList.add('card__date'); content.append(node); return; } // additive (news-listing): the feed's d/m/yyyy date
       node.classList.add('card__text'); content.append(node);
     });
     bodyEl.append(content, el('div', { class: 'card__arrow' }, icon('arrow')));
     card.append(bodyEl);
     if (href && link) card.addEventListener('click', (e) => { if (e.target.closest('a')) return; if (e.metaKey || e.ctrlKey) window.open(href, '_blank'); else window.location.href = href; });
+    if (listing && !list.children.length) card.classList.add('card--headline'); // additive (news-listing): the first authored row is the featured headline card (live: the newest feed item)
     list.append(el('li', {}, card));
   });
   block.replaceChildren(list);

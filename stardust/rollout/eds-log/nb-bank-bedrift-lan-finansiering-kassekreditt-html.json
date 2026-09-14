@@ -38,8 +38,10 @@
    ]
   },
   {
-   "module": "module",
-   "blocks": []
+   "module": "price-terms",
+   "blocks": [
+    "price-terms"
+   ]
   },
   {
    "module": "band",
@@ -69,6 +71,7 @@
   "breadcrumbs",
   "columns",
   "usp",
+  "price-terms",
   "accordion",
   "cards",
   "feedback"
@@ -77,14 +80,13 @@
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-penger-sand-sirkel-usymmetrisk.svg is 1026451 bytes of SVG (> 40000) — authored as DA media illustrasjon-penger-sand-sirkel-usymmetrisk.png (rasterised)",
+  "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module module.module--price-and-terms emitted as prose"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-penger-sand-sirkel-usymmetrisk.svg"
  ],
- "writtenAt": "2026-09-14T19:24:55.803Z"
+ "writtenAt": "2026-09-14T20:13:56.920Z"
 }

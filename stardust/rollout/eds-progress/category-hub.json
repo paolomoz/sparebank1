@@ -1,0 +1,350 @@
+{
+ "_provenance": {
+  "writtenBy": "W1 (stardust:rollout EDS worker — category-hub)",
+  "writtenAt": "2026-09-14T20:10:43.077Z",
+  "converter": "stardust/scripts/eds/_w1-convert.mjs (convert.mjs + W1 family files re-applied last; see eds-requests.md W1-0)"
+ },
+ "family": "category-hub",
+ "archetype": "nb-bank-privat-lan-html",
+ "short": "lan",
+ "regime": "published-origin (local EDS emulation, serve.mjs :3011, content/nb/bank/privat/lan.html + blocks) vs the cached live captures stardust/replica/gates/lan-{1440,360}/live.png",
+ "document": "content/nb/bank/privat/lan.html",
+ "encoder": "stardust/scripts/eds/encoders/category-hub.mjs",
+ "blocks": {
+  "reused": [
+   "bank-choice",
+   "columns",
+   "banner",
+   "feedback",
+   "header",
+   "footer"
+  ],
+  "reusedNewVariants": [
+   "cards nav (visual-nav photo + icon rows, one block for 8 modules)",
+   "cards small (hub related icon list)",
+   "banner (hub-banner section token)"
+  ],
+  "new": [
+   "shortcuts",
+   "callout (tip)",
+   "cobranding"
+  ]
+ },
+ "iterations": 3,
+ "breakpoints": {
+  "360": {
+   "pixelPct": 2.09,
+   "heightDelta": 0,
+   "chromeHeaderPct": 3.58,
+   "chromeHeaderPctExcludingSkipLink": 0.1,
+   "chromeFooterPct": 1.4,
+   "pass": true,
+   "evidence": "stardust/replica/gates/lan-eds-360/ (pixel-iter2.txt, chrome-header.txt, chrome-footer.txt)"
+  },
+  "1440": {
+   "pixelPct": 0.53,
+   "heightDelta": 0,
+   "chromeHeaderPct": 0.42,
+   "chromeFooterPct": 1.19,
+   "contentDiffRed": 1,
+   "contentDiffRedJustified": 1,
+   "liveContentDiffRed": 1,
+   "pass": true,
+   "evidence": "stardust/replica/gates/lan-eds-1440/ (pixel-iter3.txt, chrome-header.txt, chrome-footer.txt, content-diff-final.txt, content-diff-live.txt)"
+  }
+ },
+ "justified": [
+  {
+   "flag": "360 header crop 3.58% > 2%",
+   "why": "live focused skip link \"Til hovedmeny\" (instrument-induced); 0.10% excluding x<115 (_w1-crop-x.mjs)",
+   "permanent": true
+  },
+  {
+   "flag": "to-top disc at chunk seams",
+   "why": "footer.js shows the button after 130px; live scroll handler does not fire during capture (~0.3%)",
+   "permanent": true
+  },
+  {
+   "flag": "360 band y1000–1500 6.7%",
+   "why": "visual-nav photo cover-crop (live serves the .thumb.768 variant, EDS the 1280 one) + card shadow antialiasing — as the replica gate (5.9%)",
+   "permanent": true
+  },
+  {
+   "flag": "content-diff 🔴 \"Sammenlign priser\" heading vs body",
+   "why": "live <h2><span class=\"h5\"> authored at its visual rank (h5) by lib.headingTag — the product-page precedent; the tool classifies by computed size",
+   "permanent": true
+  }
+ ],
+ "fixesThisRound": [
+  "family encoder: intro (default content, section intro+lead), vnav → one cards nav block (8 rows), shortcuts (heading + one-cell link list), cobranding (positional single-cell rows), hub band walker (document order, cards small for the related icon list, hub-related token), banner-small/cols/band hub rhythm tokens (gap-48, hub-banner)",
+  "cards.js additive: nav / small variants keep the icon as a left column beside a visible title; cards.css nav/small/grid cols-N rules",
+  "new blocks: shortcuts (pill list), callout (message box; icons/info.svg), cobranding (expander; icons/expand.svg)",
+  "styles.css category-hub block: intro, visual-nav, hub-related, hub-banner (165px inner ≥768), hub-shortcuts (20px h2 margin <768)",
+  "columns.css: image paragraph inside a mixed cell sits flush (live .image has no margin)",
+  "rasterised dame-gar-smiler.svg (51KB) via rasterise-svg.mjs; staged in stardust/prototypes/assets/img for the emulation"
+ ],
+ "siblings": {
+  "count": 19,
+  "converted": 19,
+  "gapsTotal": 0,
+  "lint": "all 0 🔴 (private-banking: 2 live placeholder hrefs → \"#\", noted)",
+  "eyeballGated": "nb-bank-privat-sparing-html @1440 vs prototype (stardust/replica/gates/sibling-sparing-eds-1440/)",
+  "pages": [
+   {
+    "slug": "nb-bank-bedrift-bedriftskort-html",
+    "file": "content/nb/bank/bedrift/bedriftskort.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "cards",
+     "callout",
+     "feedback"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-bedrift-betaling-html",
+    "file": "content/nb/bank/bedrift/betaling.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "cards",
+     "columns",
+     "shortcuts",
+     "feedback"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-bedrift-daglig-drift-html",
+    "file": "content/nb/bank/bedrift/daglig-drift.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "cards",
+     "columns",
+     "shortcuts",
+     "feedback"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-bedrift-konto-html",
+    "file": "content/nb/bank/bedrift/konto.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "cards",
+     "feedback"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-bedrift-lan-finansiering-html",
+    "file": "content/nb/bank/bedrift/lan-finansiering.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "cards",
+     "columns",
+     "feedback"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-bedrift-pensjon-html",
+    "file": "content/nb/bank/bedrift/pensjon.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "cards",
+     "columns",
+     "accordion",
+     "feedback"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-bedrift-regnskap-html",
+    "file": "content/nb/bank/bedrift/regnskap.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "cards",
+     "columns",
+     "callout",
+     "feedback"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-bedrift-sparing-investering-html",
+    "file": "content/nb/bank/bedrift/sparing-investering.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "cards",
+     "shortcuts",
+     "feedback"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-bedrift-starte-bedrift-html",
+    "file": "content/nb/bank/bedrift/starte-bedrift.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "cards",
+     "feedback"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-bedrift-tips-og-rad-html",
+    "file": "content/nb/bank/bedrift/tips-og-rad.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "cards"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-privat-daglig-bruk-html",
+    "file": "content/nb/bank/privat/daglig-bruk.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "cards",
+     "shortcuts",
+     "feedback"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-privat-eiendom-html",
+    "file": "content/nb/bank/privat/eiendom.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "cards",
+     "shortcuts"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-privat-forsikring-html",
+    "file": "content/nb/bank/privat/forsikring.html",
+    "gaps": 0,
+    "blocks": [
+     "columns",
+     "banner",
+     "cards",
+     "shortcuts",
+     "feedback"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-privat-lofavor-html",
+    "file": "content/nb/bank/privat/lofavor.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "cards",
+     "feedback"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-privat-pensjon-html",
+    "file": "content/nb/bank/privat/pensjon.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "cards",
+     "cobranding",
+     "columns",
+     "shortcuts",
+     "accordion",
+     "feedback"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-privat-private-banking-html",
+    "file": "content/nb/bank/privat/private-banking.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "cards",
+     "accordion"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-privat-sparing-html",
+    "file": "content/nb/bank/privat/sparing.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "cards",
+     "columns",
+     "feedback"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-privat-svindel-html",
+    "file": "content/nb/bank/privat/svindel.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "cards",
+     "callout",
+     "feedback"
+    ],
+    "lint": "0 🔴"
+   },
+   {
+    "slug": "nb-bank-privat-tips-og-rad-html",
+    "file": "content/nb/bank/privat/tips-og-rad.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "feedback"
+    ],
+    "lint": "0 🔴"
+   }
+  ]
+ },
+ "requests": [
+  "eds-requests.md W1-0 (convert.mjs loader collision — BLOCKING)",
+  "W1-1 core band() nesting",
+  "W1-2 relatedTopics .card-list",
+  "W1-3 syrin tint",
+  "W1-4 /content/sites/sb1 hrefs",
+  "W1-5 headingTag <br>",
+  "W1-7 serve.mjs raster media",
+  "W1-8 core shortcuts selector",
+  "W1-10 columns col--media detection"
+ ]
+}

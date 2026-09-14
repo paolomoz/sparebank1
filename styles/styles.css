@@ -615,3 +615,145 @@ main .section.hub-cta .default-content-wrapper { margin-top: 24px; }
 main .section.hub-cta .default-content-wrapper p.button-wrapper { margin: 8px 0; }
 @media (width >= 768px) { main .section.hub-cta .default-content-wrapper p.button-wrapper { display: inline-block; margin: 0 16px 0 0; vertical-align: top; } main .section.hub-cta.center .default-content-wrapper p.button-wrapper { margin: 0 8px; } }
 /* ===== /category-hub (siblings) ===== */
+
+/* ===== product (siblings) ===== */
+/* Section skins for the product-sibling modules (values lifted at 1440/360: stardust/replica/lift/_w3-*.json; mirrors
+   stardust/prototypes/css/product.css "product siblings" block). Module wrap rhythm = live colour-fillable wrap 48/8/32 → 72/0/56. */
+main .section.price-terms, main .section.accordion-module, main .section.carousel { padding: 48px 8px 32px; }
+main .section.price-terms { text-align: center; }
+main .section.price-terms-tight { padding: 0 16px 32px; }
+main .section.accordion-module > div { max-width: 768px; }
+main .section.accordion-module .default-content-wrapper h3 { margin: 0 0 8px; font-family: var(--font-medium); font-size: 20px; line-height: 24px; }
+main .section.accordion-module .default-content-wrapper h3 + p { margin: 0 0 18px; font-size: 17px; line-height: 24px; }
+main .section.carousel > div { max-width: 1024px; }
+main .section.carousel .default-content-wrapper h2 { margin: 0 0 24px; text-align: center; }
+main .section.carousel .carousel-wrapper { margin: 0 auto; }
+main .section.experts > div { max-width: 1280px; }
+main .section.disclosure { margin: 16px 0; padding: 0 16px; text-align: center; }
+main .section.disclosure-tight { margin-top: 0; }
+main .section.steps { max-width: var(--container); margin: 0 auto; padding: 32px 10px; background: var(--sand-30); }
+main .section.steps.frost { background: var(--frost-30); }
+main .section.steps.grey { background: rgb(216 216 216 / 30%); }
+main .section.steps .default-content-wrapper { padding: 0 8px; }
+main .section.steps .default-content-wrapper h2 { margin: 0 0 8px; font-family: var(--font-medium); font-size: 20px; line-height: 24px; }
+main .section.icon-image { margin-top: 48px; text-align: center; }
+main .section.icon-image .default-content-wrapper p { margin: 0; }
+main .section.icon-image .default-content-wrapper img { display: inline; width: 100%; max-width: var(--w, 100%); height: var(--h, auto); vertical-align: baseline; }
+main .section.icon-image.rounded .default-content-wrapper img { border-radius: 30px; }
+main .section.w-100 { --w: 100px; }
+main .section.w-250 { --w: 250px; }
+main .section.w-400 { --w: 400px; }
+main .section.h-100 { --h: 100px; }
+main .section.cta.center .default-content-wrapper p.button-wrapper { margin: 8px 0; }
+main .section.cta.center .default-content-wrapper a.button { display: flex; width: 100%; }
+@media (width >= 768px) {
+  main .section.price-terms-tight { padding: 0 0 56px; }
+  main .section.accordion-module .default-content-wrapper h3 { margin-bottom: 24px; font-size: 28px; line-height: 36px; }
+  main .section.accordion-module .default-content-wrapper h3 + p { font-size: 18px; line-height: 28px; }
+  main .section.carousel > div { padding: 0 16px; }
+  main .section.disclosure { padding: 0; }
+  main .section.steps { padding: 72px 0; }
+  main .section.steps .default-content-wrapper { margin-left: 8.3333%; padding: 0 16px; }
+  main .section.steps .default-content-wrapper h2 { margin-bottom: 24px; font-size: 28px; line-height: 36px; }
+  main .section.cta.center .default-content-wrapper a.button { display: inline-flex; width: auto; }
+}
+@media (width >= 1024px) {
+  main .section.price-terms, main .section.accordion-module, main .section.carousel { padding: 72px 0 56px; }
+  main .section.price-terms.price-terms-tight { padding: 0 0 56px; }
+  main .section.icon-image { margin-top: 72px; }
+}
+/* ===== /product (siblings) ===== */
+
+/* ===== news-article =====
+   nettsider-frontend templates (news-article · news-listing · campaign-landing): the grey page canvas, the frontend header
+   heights the <header> reserves (124/60; story 78/60), tabular digits site-wide (live body.ffe-body-text) — and the article card:
+   <main> IS the live `.article` box (white, 1144px, 70 % body column + 30 % aside at ≥1024). Values: stardust/prototypes/css/news-article.css */
+body:is(.news-article, .news-listing, .campaign-landing) { background: rgb(216 216 216 / 30%); font-variant-numeric: tabular-nums; }
+body:is(.news-article, .news-listing) header { height: 60px; }
+body.campaign-landing header { height: 60px; background: var(--sand-30); }
+body.news-article main { display: flow-root; max-width: 1144px; margin: 20px 0; background: var(--white); border-top: 1px solid var(--lysgraa); border-radius: 4px; }
+body.news-article main > .section { margin: 0; padding: 0; }
+body.news-article main > .section > div { max-width: none; margin: 0; }
+body.news-article main a:any-link { color: var(--vann); }
+/* body sections: the live .article__content column (its bottom edge on the last one) */
+body.news-article main > .section.article-body { display: flow-root; padding: 0 16px; border-left: 1px solid #ccc; border-right: 1px solid #ccc; }
+body.news-article main > .section.article-body:has(+ .section.article-aside), body.news-article main > .section.article-body:last-child { padding-bottom: 20px; border-bottom: 1px solid #ccc; }
+body.news-article main .section.article-body .default-content-wrapper p { margin: 0 0 16px; }
+body.news-article main .section.article-body.lead .default-content-wrapper p { margin: 0 0 18px; text-align: left; }
+body.news-article main .section.article-body .default-content-wrapper h2 { margin: 40px 0 8px; font-family: var(--font-heading); font-size: 22px; line-height: 28px; color: var(--fjell); }
+body.news-article main .section.article-body .default-content-wrapper ul { margin: 16px 0; padding: 0 0 0 40px; list-style: disc; }
+body.news-article main .section.article-body .default-content-wrapper li { margin: 16px 0 0; }
+body.news-article main .section.article-body .default-content-wrapper a:any-link { color: var(--vann); text-decoration: none; border-bottom: 1px solid var(--vann); }
+body.news-article main .section.article-body .default-content-wrapper a:hover { color: var(--fjell); border-bottom-color: var(--fjell); }
+/* figures: an image paragraph (+ its italic caption paragraph) */
+body.news-article main .section.article-body .default-content-wrapper p:has(> picture, > img) { margin: 24px 0 0; line-height: 0; }
+body.news-article main .section.article-body .default-content-wrapper p:has(> picture, > img) img { display: inline; width: 100%; height: auto; max-width: 100%; }
+body.news-article main .section.article-body .default-content-wrapper p:has(> picture, > img) + p:has(> em:only-child) { margin: 0 0 24px; padding: 20px 10px; font-size: 0.9rem; line-height: 1.2rem; color: var(--moerkgraa); text-align: center; }
+body.news-article main .section.article-body .default-content-wrapper p:has(> picture, > img) + p:has(> em:only-child) em { font-family: var(--font); font-style: normal; }
+body.news-article main .section.article-body .default-content-wrapper p:has(> picture, > img):not(:has(+ p > em:only-child)) { margin-bottom: 24px; }
+/* aside */
+body.news-article main > .section.article-aside { display: flow-root; width: 100%; padding: 32px 16px; background: rgb(216 216 216 / 30%); }
+body.news-article main .section.article-aside .default-content-wrapper h2 { margin: 0 0 8px; font-family: var(--font-medium); font-size: 17px; line-height: 20px; color: var(--fjell); text-transform: uppercase; letter-spacing: 2.6px; text-align: left; }
+body.news-article main .section.article-aside .default-content-wrapper p { margin: 0 0 40px; line-height: 17px; }
+body.news-article main .section.article-aside .default-content-wrapper p a:any-link { display: inline-block; margin: 0 8px 0 0; line-height: 17px; color: var(--vann); text-decoration: none; border-bottom: 1px solid var(--vann); }
+
+@media (width >= 768px) {
+  body.campaign-landing header { height: 78px; }
+  body.news-article main { margin: 20px; }
+  body.news-article main .section.article-body.lead .default-content-wrapper p { margin-bottom: 24px; }
+  body.news-article main .section.article-body.figure-right .default-content-wrapper p:has(> picture, > img) { float: right; width: 50%; margin: 24px 0 0 32px; }
+  body.news-article main .section.article-body.figure-right .default-content-wrapper p:has(> picture, > img) + p:has(> em:only-child) { float: right; clear: right; width: 50%; margin: 0 0 16px 32px; }
+  body.news-article main .section.article-body.figure-left .default-content-wrapper p:has(> picture, > img) { float: left; width: 50%; margin: 24px 32px 0 0; }
+  body.news-article main .section.article-body.figure-left .default-content-wrapper p:has(> picture, > img) + p:has(> em:only-child) { float: left; clear: left; width: 50%; margin: 0 32px 16px 0; }
+  body.news-article main > .section.article-aside { padding: 32px; }
+  body.news-article main .section.article-aside .default-content-wrapper h2 { margin-left: 16px; }
+  body.news-article main .section.article-aside .default-content-wrapper p { margin-left: 16px; }
+}
+
+@media (width >= 1024px) {
+  body:is(.news-article, .news-listing) header { height: 124px; }
+  body.news-article main { display: grid; grid-template-columns: 70% 30%; align-items: start; margin: 40px auto; border-left: 1px solid var(--lysgraa); }
+  body.news-article main > .section.article-hero { grid-column: 1 / -1; }
+  body.news-article main > .section.article-body { grid-column: 1; width: 100%; padding: 0 55px; }
+  body.news-article main > .section.article-body:has(+ .section.article-aside), body.news-article main > .section.article-body:last-child { padding-bottom: 40px; }
+  body.news-article main > .section.article-aside { grid-column: 2; grid-row: 2 / span 40; width: 100%; margin-top: 80px; padding: 60px 0 40px 48px; border-left: 1px solid var(--lysgraa); }
+  body.news-article main .section.article-aside .default-content-wrapper h2 { margin: 0 0 24px; font-size: 18px; line-height: 24px; }
+  body.news-article main .section.article-aside .default-content-wrapper p { margin-left: 0; }
+  body.news-article main .section.article-aside .default-content-wrapper p a:any-link { margin: 0 16px 0 0; }
+}
+
+@media (width >= 1280px) {
+  body.news-article main > .section.article-aside { margin-top: 100px; padding: 40px 0 40px 48px; }
+}
+/* ===== /news-article ===== */
+
+/* ===== news-article (cont.) =====
+   margin model across the body sections: the live body is ONE flow (a paragraph's 16px bottom margin collapses with the next
+   h2's 40px / the infobox's 40px; a floated figure's 24px sits after that 16px). A section contains its trailing 16px, so the
+   default-content wrapper is a flow-root and the first child of the next section carries only the difference. */
+body.news-article main .section.article-body .default-content-wrapper { display: flow-root; }
+body.news-article main .section.article-body .default-content-wrapper > h2:first-child { margin-top: 24px; }
+body.news-article main .section.article-body .default-content-wrapper + .callout-wrapper:has(> .callout.infobox) { margin-top: 8px; }
+body.news-article main .section.article-body .callout-wrapper + .default-content-wrapper > h2:first-child { margin-top: 0; }
+
+@media (width >= 768px) {
+  body.news-article main .section.article-body .default-content-wrapper + .callout-wrapper:has(> .callout.infobox) { margin-top: 24px; }
+}
+/* ===== /news-article (cont.) ===== */
+
+/* ===== news-article (cont. 2) ===== the heading right after a figure's paragraphs opens its section the same way as a first-child heading;
+   the aside tag list is inline (live .article__tag-link: inline-block, 16px apart) */
+body.news-article main .section.article-body .default-content-wrapper > p:has(> picture, > img) + h2,
+body.news-article main .section.article-body .default-content-wrapper > p:has(> picture, > img) + p + h2 { margin-top: 24px; }
+body.news-article main .section.article-aside .default-content-wrapper ul { list-style: none; margin: 0 0 40px; padding: 0; line-height: 17px; }
+body.news-article main .section.article-aside .default-content-wrapper li { display: inline-block; margin: 0 16px 0 0; }
+body.news-article main .section.article-aside .default-content-wrapper li a:any-link { display: inline-block; line-height: 17px; color: var(--vann); text-decoration: none; border-bottom: 1px solid var(--vann); }
+
+@media (width >= 768px) {
+  body.news-article main .section.article-aside .default-content-wrapper ul { margin-left: 16px; }
+}
+
+@media (width >= 1024px) {
+  body.news-article main .section.article-aside .default-content-wrapper ul { margin-left: 0; }
+}
+/* ===== /news-article (cont. 2) ===== */

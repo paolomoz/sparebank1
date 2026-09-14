@@ -66,10 +66,9 @@
   "cards nav: 3 visual-nav modules (3 photo, 0 icon) folded into one block — one row per card"
  ],
  "gaps": [
-  "module title emitted as prose",
-  "no encoder for module title"
+  "module title emitted as prose"
  ],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T19:25:00.350Z"
+ "writtenAt": "2026-09-14T20:14:00.798Z"
 }

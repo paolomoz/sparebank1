@@ -31,8 +31,8 @@ function normaliseItems(ul) {
 
 export default async function decorate(block) {
   const navMeta = getMetadata('nav');
-  // additive fallback (faq siblings): a bedrift-market page without an explicit nav document takes the bedrift chrome (chrome-map lists archetypes only)
-  const navPath = navMeta ? new URL(navMeta, window.location).pathname : (getMetadata('market') === 'bedrift' ? '/nav-bedrift' : '/nav');
+  // additive fallback (faq / om-oss siblings): a bedrift- or om-oss-market page without an explicit nav document takes its market chrome (chrome-map lists archetypes only)
+  const navPath = navMeta ? new URL(navMeta, window.location).pathname : (getMetadata('market') === 'bedrift' ? '/nav-bedrift' : getMetadata('market') === 'om-oss' ? '/nav-om-oss' : '/nav');
   const fragment = await loadFragment(navPath);
   if (!fragment) return;
   const [brand, market, main, tools] = sectionsOf(fragment);
@@ -74,6 +74,14 @@ export default async function decorate(block) {
 
   wrap.append(content);
   block.replaceChildren(wrap); inlineIcons(block);
+
+  // nettsider-frontend chrome (news-article · news-listing · campaign-landing): the same authored /nav document, rendered as the
+  // frontend header variant (124/60px, bordered pill controls, no scroll morph); the story template drops the main-nav row (78px, sand canvas)
+  const template = getMetadata('template');
+  if (['news-article', 'news-listing', 'campaign-landing'].includes(template)) {
+    block.classList.add('header--frontend');
+    if (template === 'campaign-landing') block.classList.add('header--story', 'header--no-bottom-links');
+  }
 
   // market landings (privat / bedrift) show the live mobile market strip under the header — the active market and the way over to
   // the other one — derived from the authored /nav market list (additive; om-oss has no strip on live)

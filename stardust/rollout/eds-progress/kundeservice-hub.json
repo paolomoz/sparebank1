@@ -1,0 +1,115 @@
+{
+ "_provenance": {
+  "writtenBy": "W1 (stardust:rollout EDS worker — category-hub)",
+  "writtenAt": "2026-09-14T20:10:43.077Z",
+  "converter": "stardust/scripts/eds/_w1-convert.mjs (convert.mjs + W1 family files re-applied last; see eds-requests.md W1-0)"
+ },
+ "family": "kundeservice-hub",
+ "archetype": "nb-bank-privat-kundeservice-html",
+ "short": "ks",
+ "regime": "published-origin (local EDS emulation, serve.mjs :3011, content/nb/bank/privat/ks.html + blocks) vs the cached live captures stardust/replica/gates/lan-{1440,360}/live.png",
+ "document": "content/nb/bank/privat/kundeservice.html",
+ "encoder": "stardust/scripts/eds/encoders/kundeservice-hub.mjs (+ the hub walker in category-hub.mjs)",
+ "blocks": {
+  "reused": [
+   "bank-choice",
+   "columns",
+   "cards",
+   "accordion",
+   "banner",
+   "header",
+   "footer"
+  ],
+  "reusedNewVariants": [
+   "columns chat (boost.ai entry field, EW8 label)",
+   "columns lead-all",
+   "columns cols-10 + wN illustration cell",
+   "cards grid cols-8",
+   "cards small"
+  ],
+  "new": []
+ },
+ "iterations": 3,
+ "breakpoints": {
+  "360": {
+   "pixelPct": 5.8,
+   "heightDelta": -81,
+   "chromeHeaderPct": 3.58,
+   "chromeHeaderPctExcludingSkipLink": 0.1,
+   "chromeFooterPct": 16.97,
+   "pass": false,
+   "blockedBy": "same footer-2 intro paragraph (+81px); main content bands y0–4000 ≤ 3.7%",
+   "evidence": "stardust/replica/gates/ks-eds-360/ (pixel-iter2.txt, chrome-header.txt, chrome-footer.txt)"
+  },
+  "1440": {
+   "pixelPct": 3.65,
+   "heightDelta": -80,
+   "chromeHeaderPct": 0.42,
+   "chromeFooterPct": 14.05,
+   "contentDiffRed": 15,
+   "contentDiffRedJustified": 15,
+   "liveContentDiffRed": 15,
+   "pass": false,
+   "blockedBy": "chrome: content/footer-2.html carries the live error-state string as the contact intro (+80px) — eds-requests.md W1-6; main content bands y0–3000 ≤ 0.9%",
+   "evidence": "stardust/replica/gates/ks-eds-1440/ (pixel-iter3.txt, chrome-header.txt, chrome-footer.txt, content-diff-iter1.txt, content-diff-live.txt)"
+  }
+ },
+ "justified": [
+  {
+   "flag": "content-diff 15 🔴 role swaps (FAQ bodies)",
+   "why": "live <h2><span class=\"h4\"> / .h5 / .h6 pseudo-headings authored at their visual rank (h4/h5) — product precedent; bodies are collapsed at rest",
+   "permanent": true
+  },
+  {
+   "flag": "360 header crop 3.58%",
+   "why": "skip link artefact; 0.10% excluding x<115",
+   "permanent": true
+  },
+  {
+   "flag": "Δheight −80/−81 and footer crops",
+   "why": "chrome doc defect (footer-2 intro), not page content — see W1-6; expected to close to ~0 once the paragraph is dropped",
+   "permanent": false
+  }
+ ],
+ "fixesThisRound": [
+  "hub band walker in document order (h1 first; empty spacer band → hub-head; inner rule → hub-rule; two 2-card rows folded into one cards grid lg-4 cols-8)",
+  "columns chat variant + chat-field CSS (icons/send.svg)",
+  "columns lead-all (h2 + lead paragraphs)",
+  "columns wN illustration cell model (400px samtale-2, rasterised PNG; picture aspect reset)",
+  "cards small for the top-level related icon list, related+syrin section",
+  "faq override: trailing <br> in pseudo-headings pre-cleaned",
+  "syrin tint token"
+ ],
+ "siblings": {
+  "count": 1,
+  "converted": 1,
+  "gapsTotal": 0,
+  "lint": "0 🔴",
+  "eyeballGated": "nb-bank-bedrift-kundeservice-html @1440 vs prototype (stardust/replica/gates/sibling-bedrift-ks-eds-1440/)",
+  "pages": [
+   {
+    "slug": "nb-bank-bedrift-kundeservice-html",
+    "file": "content/nb/bank/bedrift/kundeservice.html",
+    "gaps": 0,
+    "blocks": [
+     "bank-choice",
+     "columns",
+     "cards",
+     "accordion",
+     "callout",
+     "banner"
+    ],
+    "lint": "0 🔴"
+   }
+  ]
+ },
+ "requests": [
+  "W1-0 loader collision",
+  "W1-1 band nesting",
+  "W1-2 related .card-list",
+  "W1-3 syrin",
+  "W1-5 headingTag <br>",
+  "W1-6 footer-2 intro paragraph",
+  "W1-7 raster media"
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "slug": "nb-bank-om-oss-nyheter-bankkort-laget-av-resirkulert-plast-html",
+ "daPath": "/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast",
+ "file": "content/nb/bank/om-oss/nyheter/bankkort-laget-av-resirkulert-plast.html",
+ "chrome": {
+  "nav": "/nav-frontend-om-oss-2",
+  "footer": "/footer-frontend-om-oss-2"
+ },
+ "modules": [
+  {
+   "module": "article",
+   "blocks": [
+    "hero",
+    "callout",
+    "cards"
+   ]
+  }
+ ],
+ "blocks": [
+  "hero",
+  "callout",
+  "cards"
+ ],
+ "notes": [
+  "lint D1 hero: the article header is a designed composition (cover figure + caption, eyebrow tag, centred title, the author/date box that overlaps the aside at ≥1024, the fixed share bar) — Block Collection `hero` shape (D11), one row [media][text]; the share buttons are template chrome, not content",
+  "teaser: the live 24/32 fjell lead paragraph is its own `article-body, lead` section (the existing `lead` section skin)",
+  "figure: a floated photo (live right-adjust/left-adjust) is default content — the image paragraph + an italic caption paragraph — in a `figure-right|figure-left` section together with the text block that wraps beside it (David's Model has no inline float; the section boundary is the live clear boundary)",
+  "lint D1 callout infobox: the live infoBox component (tinted sand-70 box, full width, no icon) — the FFE message box shape reused as the `infobox` variant; the variant name is the FFE colour token the author picks on live",
+  "related: one live thumbnail carries a top-crop focus (DAM rendition setting) — not authored; the card renders the centre crop"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T20:18:55.769Z"
+}

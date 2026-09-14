@@ -32,3 +32,45 @@
   .carousel .gcarousel__prev, .carousel .gcarousel__next { width: 80px; }
 }
 @media (width >= 1024px) { .carousel .gcarousel__indicators { width: 296px; left: auto; text-align: left; } }
+
+/* ===== campaign variant (market-landing hero, W1 — restored after the guide rewrite; lifted from stardust/prototypes/css/market-landing.css .campaign*) ===== */
+.carousel.campaign .carousel__slide { display: block; }
+.carousel.campaign .carousel__media { width: 100%; line-height: 0; }
+.carousel.campaign .carousel__media p { margin: 0; }
+.carousel.campaign .carousel__media picture, .carousel.campaign .carousel__media img { display: block; width: 100%; height: auto; }
+.carousel.campaign .carousel__dots { display: flex; justify-content: center; gap: 8px; padding: 12px 0; }
+.carousel.campaign .carousel__dot { width: 12px; height: 12px; padding: 0; border: 2px solid var(--vann); border-radius: 50%; background: var(--white); cursor: pointer; }
+.carousel.campaign .carousel__dot--active { background: var(--vann); }
+.carousel.campaign .carousel__slide { background: #f2f2f9; }
+.carousel.campaign.sand .carousel__slide { background: var(--sand-30); }
+.carousel.campaign.frost .carousel__slide { background: var(--frost-30); }
+.carousel.campaign .carousel__media img { aspect-ratio: 360 / 246.53; object-fit: cover; }
+.carousel.campaign .carousel__content { display: flex; flex-direction: column; justify-content: center; }
+.carousel.campaign .carousel__text { display: flow-root; padding: 20px; color: #262626; text-align: center; }
+.carousel.campaign .carousel__text h2 { margin: 0 0 8px; color: var(--fjell); }
+.carousel.campaign .carousel__text h5 { margin: 16px 0; font-family: var(--font-medium); font-size: 17px; line-height: 24px; color: inherit; }
+.carousel.campaign .carousel__text p { margin: 16px 0; line-height: 24px; }
+.carousel.campaign .carousel__text p.button-wrapper { margin: 24px 0 8px; }
+.carousel.campaign .carousel__text a.button:any-link { display: flex; width: 100%; }
+
+@media (width >= 768px) {
+  .carousel.campaign .carousel__slide { display: grid; grid-template-columns: repeat(12, 1fr); height: 400px; }
+  .carousel.campaign .carousel__media { grid-column: 1 / span 7; grid-row: 1; height: 400px; }
+  .carousel.campaign .carousel__content { grid-column: 8 / span 5; grid-row: 1; height: 407px; }
+  .carousel.campaign.reverse .carousel__media { grid-column: 6 / span 7; }
+  .carousel.campaign.reverse .carousel__content { grid-column: 1 / span 5; }
+  .carousel.campaign .carousel__media img { height: 400px; aspect-ratio: auto; }
+  .carousel.campaign .carousel__text { width: 450px; max-width: 450px; margin: 0 0 0 150px; padding: 0 40px 0 10px; text-align: left; }
+  .carousel.campaign .carousel__text h2 { margin-bottom: 24px; }
+  .carousel.campaign .carousel__text h5 { font-size: 18px; line-height: 25px; }
+  .carousel.campaign .carousel__text a.button:any-link { display: inline-flex; width: auto; }
+}
+/* ===== /campaign ===== */
+
+/* ===== om-oss (additive variants) =====
+   white — the presse split hero is untinted (live --campaign-bg:#FFFFFF); lead — h1 + lead paragraph (live .campaign-content
+   h1 + span.lead-blue: 18/24 fjell, 24/32 from 768). Values: stardust/prototypes/css/om-oss.css + canon .lead-blue */
+.carousel.campaign.white .carousel__slide { background: var(--white); }
+.carousel.campaign.lead .carousel__text h1 + p { display: block; margin: 16px 0 18px; font-size: 18px; line-height: 24px; color: var(--fjell); }
+@media (width >= 768px) { .carousel.campaign.lead .carousel__text h1 + p { margin-bottom: 24px; font-size: 24px; line-height: 32px; text-wrap: pretty; } }
+/* ===== /om-oss ===== */

@@ -1,8 +1,17 @@
 {
-  "/nb/bank/privat/lan/boliglan": {
+  "/nb/bank/privat/kundeservice/kontakt": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-09-14T19:14:18.277Z",
+    "ts": "2026-09-14T20:19:42.935Z",
+    "put": 200,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nb/bank/privat/kundeservice/verktoy/sperre-kort": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-14T20:19:42.936Z",
     "put": 200,
     "preview": 200,
     "live": 200,

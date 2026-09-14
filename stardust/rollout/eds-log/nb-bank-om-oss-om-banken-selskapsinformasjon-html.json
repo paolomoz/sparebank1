@@ -1,0 +1,57 @@
+{
+ "slug": "nb-bank-om-oss-om-banken-selskapsinformasjon-html",
+ "daPath": "/nb/bank/om-oss/om-banken/selskapsinformasjon",
+ "file": "content/nb/bank/om-oss/om-banken/selskapsinformasjon.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "bank-choice",
+   "blocks": [
+    "bank-choice"
+   ]
+  },
+  {
+   "module": "breadcrumb",
+   "blocks": [
+    "breadcrumbs"
+   ]
+  },
+  {
+   "module": "title",
+   "blocks": []
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  },
+  {
+   "module": "table-block",
+   "blocks": [
+    "table"
+   ]
+  },
+  {
+   "module": "richtext",
+   "blocks": []
+  }
+ ],
+ "blocks": [
+  "bank-choice",
+  "breadcrumbs",
+  "table"
+ ],
+ "notes": [
+  "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+  "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "title: the AEM page-title module → default content h1 in a `title` section (live: centred, margin 16/8 → 16/24)",
+  "table: the live caption \"SpareBank 1 Gruppen og SpareBank 1 Utvikling\" is visually hidden (accessible name) — not authored (the page title names the table)",
+  "lint D11 table full: the Block Collection data-table block, one row per table row, first row = header; live row-header cells (th) are authored bold; `full` = the live 100%-width wrapping table"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T20:15:08.627Z"
+}

@@ -39,7 +39,9 @@
   },
   {
    "module": "band",
-   "blocks": []
+   "blocks": [
+    "accordion"
+   ]
   },
   {
    "module": "cols",
@@ -56,11 +58,11 @@
    "blocks": []
   },
   {
-   "module": "button-wrap button-wrap--center",
+   "module": "button-wrap",
    "blocks": []
   },
   {
-   "module": "image image--center",
+   "module": "image",
    "blocks": []
   },
   {
@@ -68,7 +70,7 @@
    "blocks": []
   },
   {
-   "module": "button-wrap button-wrap--center",
+   "module": "button-wrap",
    "blocks": []
   },
   {
@@ -94,8 +96,10 @@
    "blocks": []
   },
   {
-   "module": "module",
-   "blocks": []
+   "module": "disclosure",
+   "blocks": [
+    "accordion"
+   ]
   },
   {
    "module": "faq",
@@ -134,29 +138,27 @@
   "usp",
   "cobranding",
   "callout",
-  "cards",
   "accordion",
+  "cards",
   "feedback"
  ],
  "notes": [
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
   "lint D3 cobranding: single-cell rows read by position — row 1 heading + toggle label (EW8: the label moves into the expand button), row 2 partner logo + title, rows 3+ one panel column each; the panel is closed at rest (dynamics #14 static snapshot)",
+  "lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+  "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)",
+  "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-koffert-reise-rosa.svg is 47074 bytes of SVG (> 40000) — authored as DA media dame-koffert-reise-rosa.png (rasterised)",
+  "lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+  "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)",
+  "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
+  "faq: a columns-grid sits inside this answer on live — cells authored in order as prose (no nested blocks)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module module.module--progressive-disclosure emitted as prose",
-  "module button-wrap.button-wrap--center emitted as prose",
-  "no encoder for module button-wrap button-wrap--center",
-  "module image.image--center emitted as prose",
-  "no encoder for module image image--center",
-  "module button-wrap.button-wrap--center emitted as prose",
-  "no encoder for module button-wrap button-wrap--center",
-  "module module.module--progressive-disclosure emitted as prose"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-koffert-reise-rosa.svg"
  ],
- "writtenAt": "2026-09-14T19:24:59.426Z"
+ "writtenAt": "2026-09-14T20:14:00.028Z"
 }

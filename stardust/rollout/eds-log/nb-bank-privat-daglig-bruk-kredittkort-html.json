@@ -52,7 +52,9 @@
   {
    "module": "cols",
    "blocks": [
-    "columns"
+    "columns",
+    "price-terms",
+    "accordion"
    ]
   },
   {
@@ -113,6 +115,7 @@
   "breadcrumbs",
   "columns",
   "usp",
+  "price-terms",
   "accordion",
   "cards",
   "feedback"
@@ -120,6 +123,10 @@
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
+  "undefined: authored inside a columns-grid column on live — a columns cell cannot hold a block, so it follows the columns block as a sibling (layout stacks; content complete)",
+  "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
+  "undefined: authored inside a columns-grid column on live — a columns cell cannot hold a block, so it follows the columns block as a sibling (layout stacks; content complete)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
@@ -127,5 +134,5 @@
   "chevron.svg"
  ],
  "rasterise": [],
- "writtenAt": "2026-09-14T19:24:57.822Z"
+ "writtenAt": "2026-09-14T20:13:58.560Z"
 }

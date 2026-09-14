@@ -1,0 +1,57 @@
+{
+ "slug": "nb-bank-om-oss-jobb-og-karriere-html",
+ "daPath": "/nb/bank/om-oss/jobb-og-karriere",
+ "file": "content/nb/bank/om-oss/jobb-og-karriere.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "campaign",
+   "blocks": [
+    "carousel"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "carousel",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "lint D11 carousel: the presse split hero is the live .campaign component (7/12 photo + 5/12 text) authored as one slide of `carousel campaign` (D9 — same block as the market-landing hero); `white` = untinted, `lead` = h1 + lead paragraph",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2025/Innovasjons%20workshop%202%20lys%20bakgrunn.svg is 49559 bytes of SVG (> 40000) — authored as DA media Innovasjons%20workshop%202%20lys%20bakgrunn.png (rasterised)",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2025/Innovasjons%20workshop%202%20lys%20bakgrunn.svg"
+ ],
+ "writtenAt": "2026-09-14T20:17:28.809Z"
+}

@@ -14,6 +14,12 @@
  *   main > .button-wrap→ default content CTA in a `cta, center` section
  *   FAQ answers holding a comparison table / a carousel / grid columns → flattened to default content (nested blocks are not a thing)
  *   columns-grid columns holding a price-terms/disclosure → the columns block keeps the prose; the modules follow as sibling blocks
+ * Registration: convert.mjs merges family files alphabetically and the LAST file wins a shared key — utility.mjs (sorts after
+ * product.mjs) re-registers band/cols/tip delegating to CORE, which would make the overrides below unreachable, and core band()
+ * resolves nested modules against the CORE map only. So this file installs its family-gated wrappers ON the CORE map
+ * (CORE.band/cols/faq/tip → product wrapper → original core for every other page) and adds its NEW keys to CORE so a
+ * price-terms/steps/… nested in a band is reachable from core band(). Every wrapper is a no-op off the product siblings
+ * (boliglan converts byte-identically). Filed in stardust/rollout/eds-requests.md: chain family overrides in the loader.
  */
 import fs from 'node:fs';
 import * as L from '../lib.mjs';
@@ -24,7 +30,12 @@ const { section, block, heading, q, qa, cls, esc, inline, pic, href, ctaHtml } =
 const FAMILY = (() => { try { return Object.fromEntries(JSON.parse(fs.readFileSync('stardust/state.json', 'utf8')).pages.map((p) => [p.slug, p.archetypeFamily])); } catch { return {}; } })();
 const ARCHETYPE = 'nb-bank-privat-lan-boliglan-html';
 export const isProductSibling = (ctx) => FAMILY[ctx.slug] === 'product' && ctx.slug !== ARCHETYPE;
-const NEW_KINDS = '.price-terms, .disclosure, .steps, .accordion-module, .gcarousel, .experts';
+const NEW_KINDS = '.price-terms, .disclosure, .steps, .accordion-module, .gcarousel, .experts, a[href^="${"], .band__content > .faq, .band__content > .usp, .band__content > .tip, .band__content > .feedback, .band__content > .related-products, .band__content > .related-topics, .band__content > .static-cards, .band__content > .card-list, .band__content > .shortcuts';
+/** live hrefs left as unresolved AEM link placeholders (`${linksbm.x.y}` — resolved client-side on live) → bounce to the source page (lint D4 would 🔴 a document-relative href) */
+function fixPlaceholderHrefs(root, ctx) {
+  for (const a of qa(root, 'a[href^="${"]')) { const src = (() => { try { return JSON.parse(fs.readFileSync('stardust/state.json', 'utf8')).pages.find((p) => p.slug === ctx.slug)?.url; } catch { return null; } })() || 'https://www.sparebank1.no/'; ctx.notes.push(`href: "${a.getAttribute('href')}" is an unresolved live link placeholder (client-side rewrite, like lenker.sparebank1.no) — bounced to the source page ${src}`); a.setAttribute('href', src); }
+  return root;
+}
 const SITES = /^(?:https?:\/\/www\.sparebank1\.no)?\/content\/sites\/sb1\//;
 const normaliseHrefs = (root) => { for (const a of qa(root, 'a[href]')) { const h = a.getAttribute('href') || ''; if (SITES.test(h)) a.setAttribute('href', h.replace(SITES, 'https://www.sparebank1.no/')); } return root; };
 const wrapOrSection = (html, opts, meta) => (opts?.inline ? html : section([html], meta));
@@ -52,7 +63,9 @@ export function priceTerms(root, ctx, opts = {}) {
 export function disclosure(root, ctx, opts = {}) {
   const label = q(root, '.disclosure__btn .btn__label'); const content = q(root, '.disclosure__content'); const inner = q(root, '.disclosure__inner') || content;
   const box = content?.classList.contains('disclosure__content--box'); const bg = bandBg(content);
-  const variants = ['disclosure', box ? 'box' : null, box && bg && /^#fff/i.test(bg) ? 'white' : null, root.classList.contains('disclosure--left') ? 'left' : null].filter(Boolean);
+  const centred = inner && qa(inner, 'h1, h2, h3, h4, p').length > 0 && qa(inner, 'h1, h2, h3, h4, p').every((n) => n.classList.contains('ta-center') || !n.textContent.trim());
+  const variants = ['disclosure', box ? 'box' : null, box && bg && /^#fff/i.test(bg) ? 'white' : null, root.classList.contains('disclosure--left') ? 'left' : null, centred ? 'center' : null].filter(Boolean);
+  if (centred) ctx.notes.push('accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David\'s Model has no inline alignment)');
   ctx.notes.push('lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)');
   const html = block('accordion', variants, [[`<p>${inline(label, ctx)}</p>`, richtext(inner, ctx)]]);
   const tight = root.classList.contains('disclosure--after-text');
@@ -67,7 +80,7 @@ export function steps(root, ctx, opts = {}) {
   parts.push(block('accordion', ['steps'], rows));
   ctx.notes.push('lint D1 accordion steps: the live step-by-step widget (numbered master list + detail panel; mobile: inline expansion) — one row per step [linked step title][content]; step 1 open at rest');
   const styleTint = { sand: 'sand', bluePale: 'frost', white: null, warmLightGrey: 'grey' }[tint] ?? 'sand';
-  return { html: opts.inline ? parts.join('') : section(parts, { style: styleOf('steps', styleTint) }), blocks: ['accordion'] };
+  return { html: opts.inline ? parts.join('') : section(parts, { style: styleOf('steps', styleTint) }), blocks: ['accordion'], style: opts.inline ? styleOf('steps', styleTint) : undefined };
 }
 
 /* ------------------------------------------------------------------ generic accordion module ------------------------------------------------------------------ */
@@ -123,7 +136,7 @@ function gridRow(row, ctx) {
   if (cols.length === 1 && /grid-row--cols-/.test(row.className)) return { parts: [richtext(q(cols[0], '.col__content'), ctx)], blocks: [], after };
   const variants = cols.map((c) => { const k = cls(c); const span = (k.find((x) => /^col-lg-\d+$/.test(x)) || 'col-lg-12').replace('col-', ''); const off = k.find((x) => /^col-lg-offset-\d+$/.test(x)); const first = k.includes('col--first') ? 'first' : null; const align = (k.find((x) => /^col--(middle|center|bottom)$/.test(x)) || '').replace('col--', ''); return [span, off ? off.replace('col-lg-offset-', 'offset-') : null, first, align].filter(Boolean).join('-'); });
   const cells = cols.map((c) => {
-    const cc = q(c, ':scope > .col__content'); if (!cc) return '';
+    const cc = q(c, ':scope > .col__content'); if (!cc) return ''; fixPlaceholderHrefs(cc, ctx);
     for (const m of qa(cc, ':scope > .price-terms, :scope > .disclosure')) { const enc = m.classList.contains('price-terms') ? priceTerms : disclosure; const r = enc(m, ctx, { inline: true }); after.push(r.html); blocks.push(...r.blocks); m.remove(); ctx.notes.push(`${m.classList[0]}: authored inside a columns-grid column on live — a columns cell cannot hold a block, so it follows the columns block as a sibling (layout stacks; content complete)`); }
     return richtext(cc, ctx);
   });
@@ -131,16 +144,25 @@ function gridRow(row, ctx) {
   const parts = cells.some((c) => c.trim()) ? [block('columns', variants, [cells])] : [];
   return { parts, blocks: [...(parts.length ? ['columns'] : []), ...blocks], after };
 }
+/** a core encoder called inline still returns a whole section (`<div>…<div class="section-metadata">…</div></div>`): unwrap it — a nested
+ *  section is not decorated by the EDS runtime (its block stays raw rows). Returns the inner html + the section's style tokens. */
+function unwrapSection(html) {
+  const m = /^<div>([\s\S]*?)(<div class="section-metadata">[\s\S]*?<\/div><\/div><\/div>)?<\/div>$/.exec(html.trim()); if (!m) return { html, style: null };
+  const style = m[2] ? (/<div>style<\/div><div>([^<]*)<\/div>/.exec(m[2]) || [])[1] || null : null;
+  return { html: m[1], style };
+}
 export function productBand(root, ctx, { topLevelCols = false } = {}) {
   const parts = []; const blocks = new Set(); let style = topLevelCols ? 'cols' : 'band';
+  const content = q(root, ':scope > .band__content') || root; const single = [...content.children].filter((c) => c.tagName !== 'HR').length === 1;
   const walk = (el) => {
     for (const ch of el.children) {
       const k = cls(ch);
       if (ch.tagName === 'HR') { if (k.includes('rule--extra-top')) style = styleOf(style, 'rule-after'); continue; }
       if (k.includes('band__content')) { walk(ch); continue; }
       if (k.includes('cols') || k.includes('grid-row')) { for (const row of (k.includes('cols') ? qa(ch, ':scope > .grid-row') : [ch])) { const r = gridRow(row, ctx); parts.push(...r.parts, ...r.after); r.blocks.forEach((b) => blocks.add(b)); } continue; }
-      const key = k.find((c) => ENC_INLINE[c]); if (key) { const r = ENC_INLINE[key](ch, ctx, { inline: true }); if (r) { parts.push(r.html); r.blocks.forEach((b) => blocks.add(b)); } continue; }
       if (k.includes('banner-small')) { parts.push(bannerSmall(ch, ctx, { inline: true }).html); blocks.add('banner'); continue; }
+      const key = k.find((c) => CORE[c] && !['band', 'cols', 'module', 'richtext'].includes(c));
+      if (key) { const r = CORE[key](ch, ctx, { inline: true }); if (r) { const u = unwrapSection(r.html); parts.push(u.html); r.blocks.forEach((b) => blocks.add(b)); const tok = r.style || (single ? u.style : null); if (tok) style = styleOf(style, tok); if (!single && u.style) ctx.notes.push(`band: nested ${key} module — its own section style (${u.style}) is dropped inside a band that holds other modules`); } continue; }
       const html = richtext(ch, ctx); if (html) parts.push(html);
     }
   };
@@ -187,11 +209,20 @@ export function productFaq(root, ctx) {
 const ENC_INLINE = { 'price-terms': priceTerms, disclosure, steps, 'accordion-module': accordionModule, gcarousel: carousel, experts };
 const hasNew = (root) => !!q(root, NEW_KINDS);
 
+// family-gated wrappers installed on the CORE map (see header): the original core encoders stay the fallback for every other page
+const coreBand = CORE.band, coreCols = CORE.cols, coreFaq = CORE.faq, coreTip = CORE.tip, coreModule = CORE.module;
+const wrapped = {
+  // top-level image / CTA modules: tool.mjs owns the `image` and `button-wrap` keys (family-gated → null off its family) and convert.mjs then falls back to `module`
+  module: (root, ctx, opts) => { if (isProductSibling(ctx) && root.parentElement?.tagName === 'MAIN') { if (root.classList.contains('image')) { const r = topImage(root, ctx); if (r) return r; } if (root.classList.contains('button-wrap')) { const r = topCta(root, ctx); if (r) return r; } } return coreModule(root, ctx, opts); },
+  band: (root, ctx, opts) => (isProductSibling(ctx) && hasNew(root) ? productBand(root, ctx) : coreBand(root, ctx, opts)),
+  cols: (root, ctx, opts) => (isProductSibling(ctx) && hasNew(root) ? productBand(root, ctx, { topLevelCols: true }) : coreCols(root, ctx, opts)),
+  faq: (root, ctx, opts) => (isProductSibling(ctx) && q(root, '.comparison, .gcarousel, .accordion__body > .cols') ? productFaq(root, ctx) : coreFaq(root, ctx, opts)),
+  tip: (root, ctx, opts) => { const r = coreTip(root, ctx, opts); if (r && isProductSibling(ctx)) ctx.notes.push('lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell'); return r; },
+};
+if (!CORE.__productWrapped) { Object.assign(CORE, wrapped, ENC_INLINE); Object.defineProperty(CORE, '__productWrapped', { value: true, enumerable: false }); }
+
 export default {
-  'price-terms': priceTerms, disclosure, steps, 'accordion-module': accordionModule, gcarousel: carousel, experts,
+  ...ENC_INLINE, ...wrapped,
   image: (root, ctx) => (isProductSibling(ctx) && root.parentElement?.tagName === 'MAIN' ? topImage(root, ctx) : null),
   'button-wrap': (root, ctx) => (isProductSibling(ctx) && root.parentElement?.tagName === 'MAIN' ? topCta(root, ctx) : null),
-  band: (root, ctx) => (isProductSibling(ctx) && hasNew(root) ? productBand(root, ctx) : CORE.band(root, ctx)),
-  cols: (root, ctx) => (isProductSibling(ctx) && hasNew(root) ? productBand(root, ctx, { topLevelCols: true }) : CORE.cols(root, ctx)),
-  faq: (root, ctx) => (isProductSibling(ctx) && q(root, '.comparison, .gcarousel, .accordion__body > .cols') ? productFaq(root, ctx) : CORE.faq(root, ctx)),
 };

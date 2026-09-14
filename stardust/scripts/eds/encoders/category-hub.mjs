@@ -49,12 +49,12 @@ const gridCols = (row) => { const m = /grid-row--cols-(\d+)/.exec(row.getAttribu
 
 /** An image-only column holding an illustration (SVG, not a /foto/ photo) renders at its authored max-width, centred, uncropped:
  *  the prototype carries it as `--w` on .image (market-landing); the hub illustration (kundeservice cols) is the lifted 400px. → cell model token `wN`. */
-function illustrationWidth(col) {
+function illustrationWidth(col, ctx) {
   const cc = q(col, ':scope > .col__content'); if (!cc) return null;
   const image = q(cc, ':scope > .image'); const img = image && q(image, 'img'); if (!img) return null;
   const m = /--w:\s*(\d+)px/.exec(image.getAttribute('style') || ''); if (m) return `w${m[1]}`; // authored max-width (live img style)
   const imageOnly = [...cc.children].every((ch) => /\bimage\b/.test(ch.getAttribute('class') || ''));
-  return imageOnly && /\.svg(\?|$)/i.test(img.getAttribute('src') || '') ? 'w400' : null; // hub illustration column (lifted 400px)
+  return imageOnly && familyOf(ctx) === 'kundeservice-hub' && /\.svg(\?|$)/i.test(img.getAttribute('src') || '') ? 'w400' : null; // the kundeservice illustration column (lifted 400px; other hubs let the image fill its column)
 }
 /** A link-list column: a heading / label followed by ≥2 paragraphs that are each a single plain link (market-landing bands). */
 function isLinkList(col) {
@@ -74,7 +74,7 @@ export function gridRow(row, ctx) {
     return { kind: 'cards', variants: ['grid', span, gridCols(row)].filter(Boolean), rows: cardRows(cols.map((c) => normaliseHrefs(q(c, '.card'))), ctx) };
   }
   if (cols.length === 1 && /grid-row--cols-/.test(row.getAttribute('class') || '')) return { kind: 'prose', html: richtext(q(cols[0], '.col__content'), ctx) };
-  const variants = cols.map((c) => { const k = cls(c); const span = (k.find((x) => /^col-lg-\d+$/.test(x)) || 'col-lg-12').replace('col-', ''); const off = k.find((x) => /^col-lg-offset-\d+$/.test(x)); const first = k.includes('col--first') ? 'first' : null; const align = (k.find((x) => /^col--(middle|center|bottom)$/.test(x)) || '').replace('col--', ''); return [span, off ? off.replace('col-lg-offset-', 'offset-') : null, first, align, illustrationWidth(c)].filter(Boolean).join('-'); });
+  const variants = cols.map((c) => { const k = cls(c); const span = (k.find((x) => /^col-lg-\d+$/.test(x)) || 'col-lg-12').replace('col-', ''); const off = k.find((x) => /^col-lg-offset-\d+$/.test(x)); const first = k.includes('col--first') ? 'first' : null; const align = (k.find((x) => /^col--(middle|center|bottom)$/.test(x)) || '').replace('col--', ''); return [span, off ? off.replace('col-lg-offset-', 'offset-') : null, first, align, illustrationWidth(c, ctx)].filter(Boolean).join('-'); });
   const cells = cols.map((c) => {
     const cc = q(c, ':scope > .col__content'); let html = richtext(normaliseHrefs(cc, ctx), ctx);
     const chat = q(cc, 'form.chat-field');
@@ -114,6 +114,12 @@ export function hubBand(root, ctx, { topLevelCols = false } = {}) {
       if (k.includes('band')) { if (!ch.textContent.trim()) { styles.push('hub-head'); ctx.notes.push('band: the empty nested band (live 48/32px spacer under the h1) is layout → section style hub-head'); } else walk(ch); continue; }
       if (k.includes('cols')) { qa(ch, ':scope > .grid-row').forEach((row) => push(gridRow(row, ctx))); continue; }
       if (k.includes('grid-row')) { push(gridRow(ch, ctx)); continue; }
+      const encKey = k.find((c) => c !== 'band' && c !== 'cols' && (OWN[c] || CORE[c])); // a module inside the band (faq, tip, prices…): its encoder's parts, inlined
+      if (encKey) {
+        const r = (OWN[encKey] || CORE[encKey])(ch, ctx); lastCards = null;
+        if (r && r.html) { const style = /<div class="section-metadata"><div><div>style<\/div><div>([^<]*)<\/div>/.exec(r.html)?.[1] || ''; style.split(',').map((t) => t.trim()).filter((t) => t && !/^gap-/.test(t)).forEach((t) => styles.push(t)); parts.push(r.html.replace(/^<div>/, '').replace(/<div class="section-metadata">[\s\S]*$/, '').replace(/<\/div>\s*$/, '')); (r.blocks || []).forEach((b) => blocks.add(b)); }
+        continue;
+      }
       if (k.includes('related-products') || k.includes('related-topics')) { const r = hubRelated(ch, ctx); lastCards = null; parts.push(...r.parts); r.blocks.forEach((b) => blocks.add(b)); styles.push('hub-related'); continue; }
       if (k.includes('banner-small')) { lastCards = null; parts.push(bannerSmall(ch, ctx, { inline: true }).html); blocks.add('banner'); continue; }
       lastCards = null; const html = richtext(normaliseHrefs(ch, ctx), ctx); if (html) parts.push(html); // .richtext / .image / other prose
@@ -126,9 +132,10 @@ export function hubBand(root, ctx, { topLevelCols = false } = {}) {
 }
 
 /** Does this band/cols need the hub walker (a case core band() mis-encodes) — otherwise the core encoder runs, byte-identical. */
-const needsHubBand = (root) => !!q(root, ':scope > .band__content > .richtext, :scope > .band__content > .band, :scope > .band__content > .related-products, :scope > .band__content > .related-topics, :scope > .band__content > .cols > .grid-row[class*="grid-row--cols-"]:not([class*="cols-12"]), :scope > .grid-row[class*="grid-row--cols-"]:not([class*="cols-12"]), form.chat-field, :scope > .richtext, :scope > .band')
+const needsHubBand = (root) => !!q(root, ':scope > .band__content > :not(.cols):not(.grid-row):not(hr):not(.banner-small), :scope > .band__content > .cols > .grid-row[class*="grid-row--cols-"]:not([class*="cols-12"]), :scope > .grid-row[class*="grid-row--cols-"]:not([class*="cols-12"]), form.chat-field, :scope > .richtext, :scope > .band')
   || (!!bandBg(root) && bgToken(bandBg(root)) == null && !!TINT[bandBg(root)]);
 
+const OWN = {};
 export default {
   // intro: h1 + centred lead → default content (section skin `intro`; `lead` types the paragraph 24/32 fjell as the live .main-lead)
   intro: (root, ctx) => ({ html: section([richtext(root, ctx)], { style: 'intro, lead' }), blocks: [] }),
@@ -204,3 +211,4 @@ export default {
   band: (root, ctx) => { if (usesWalker(ctx)) normaliseHrefs(root, ctx); const r = usesWalker(ctx) && needsHubBand(root) ? hubBand(root, ctx) : CORE.band(root, ctx); return familyOf(ctx) === 'category-hub' ? withStyle(r, 'gap-48') : r; },
   cols: (root, ctx) => { if (usesWalker(ctx)) normaliseHrefs(root, ctx); const r = usesWalker(ctx) && needsHubBand(root) ? hubBand(root, ctx, { topLevelCols: true }) : CORE.cols(root, ctx); return isHub(ctx) ? withStyle(r, 'gap-48') : r; },
 };
+Object.assign(OWN, (await import(import.meta.url)).default);

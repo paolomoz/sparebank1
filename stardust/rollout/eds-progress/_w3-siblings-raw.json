@@ -1,0 +1,996 @@
+[
+ {
+  "slug": "nb-bank-bedrift-bedriftskort-kredittkort-html",
+  "daPath": "/nb/bank/bedrift/bedriftskort/kredittkort",
+  "blocks": [
+   "bank-choice",
+   "columns",
+   "usp",
+   "cards",
+   "price-terms",
+   "accordion",
+   "callout",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 5,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/bedrift/bedriftskort/kredittkort.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped struc",
+    "🟡 D1 content/nb/bank/bedrift/bedriftskort/kredittkort.html: section (unnamed) → block \"usp\": single-column, 3-row block holding only prose elements — default-c",
+    "🟡 D1 content/nb/bank/bedrift/bedriftskort/kredittkort.html: section (unnamed) → block \"callout\": single-column, 1-row block holding only prose elements — defau",
+    "🟡 D1 content/nb/bank/bedrift/bedriftskort/kredittkort.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — defa",
+    "🟡 D4 content/nb/bank/bedrift/bedriftskort/kredittkort.html: 3 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409"
+   ]
+  },
+  "notes": [
+   "price-terms: the overlay link targets its own module anchor on live (bank chooser dialog) — kept verbatim, no-op until the dialog dynamic exists",
+   "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
+   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
+   "lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-bedrift-betaling-utenlandsbetaling-html",
+  "daPath": "/nb/bank/bedrift/betaling/utenlandsbetaling",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "columns",
+   "cards",
+   "accordion",
+   "callout",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 5,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/bedrift/betaling/utenlandsbetaling.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped str",
+    "🟡 D1 content/nb/bank/bedrift/betaling/utenlandsbetaling.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements —",
+    "🟡 D1 content/nb/bank/bedrift/betaling/utenlandsbetaling.html: section (unnamed) → block \"callout\": single-column, 1-row block holding only prose elements — def",
+    "🟡 D1 content/nb/bank/bedrift/betaling/utenlandsbetaling.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — de",
+    "🟡 D4 content/nb/bank/bedrift/betaling/utenlandsbetaling.html: 7 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 4"
+   ]
+  },
+  "notes": [
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/elementer/2025/verdenskart-verden-lys-bakgrunn.svg is 64250 bytes of SVG (> 40000) — authored as DA media verdenskart-verden-lys-bakgrunn.png (rasterised)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D1 accordion steps: the live step-by-step widget (numbered master list + detail panel; mobile: inline expansion) — one row per step [linked step title][content]; step 1 open at rest",
+   "lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-bedrift-konto-bedriftskonto-html",
+  "daPath": "/nb/bank/bedrift/konto/bedriftskonto",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "columns",
+   "usp",
+   "price-terms",
+   "callout",
+   "cards",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 5,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/bedrift/konto/bedriftskonto.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structure;",
+    "🟡 D1 content/nb/bank/bedrift/konto/bedriftskonto.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — defaul",
+    "🟡 D1 content/nb/bank/bedrift/konto/bedriftskonto.html: section (unnamed) → block \"callout\": single-column, 1-row block holding only prose elements — default-co",
+    "🟡 D1 content/nb/bank/bedrift/konto/bedriftskonto.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — default-c",
+    "🟡 D4 content/nb/bank/bedrift/konto/bedriftskonto.html: 2 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s the"
+   ]
+  },
+  "notes": [
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-liten-glad.svg is 46265 bytes of SVG (> 40000) — authored as DA media illustrasjon-liten-glad.png (rasterised)",
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/Nettbank.svg is 46742 bytes of SVG (> 40000) — authored as DA media Nettbank.png (rasterised)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
+   "lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-bedrift-lan-finansiering-bedriftslan-html",
+  "daPath": "/nb/bank/bedrift/lan-finansiering/bedriftslan",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "columns",
+   "usp",
+   "price-terms",
+   "callout",
+   "accordion",
+   "cards",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 5,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/bedrift/lan-finansiering/bedriftslan.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped s",
+    "🟡 D1 content/nb/bank/bedrift/lan-finansiering/bedriftslan.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements",
+    "🟡 D1 content/nb/bank/bedrift/lan-finansiering/bedriftslan.html: section (unnamed) → block \"usp\": single-column, 2-row block holding only prose elements — defau",
+    "🟡 D1 content/nb/bank/bedrift/lan-finansiering/bedriftslan.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — ",
+    "🟡 D4 content/nb/bank/bedrift/lan-finansiering/bedriftslan.html: 1 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs"
+   ]
+  },
+  "notes": [],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
+   "lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-bedrift-lan-finansiering-kassekreditt-html",
+  "daPath": "/nb/bank/bedrift/lan-finansiering/kassekreditt",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "columns",
+   "usp",
+   "price-terms",
+   "accordion",
+   "cards",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 4,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/bedrift/lan-finansiering/kassekreditt.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped ",
+    "🟡 D1 content/nb/bank/bedrift/lan-finansiering/kassekreditt.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose element",
+    "🟡 D1 content/nb/bank/bedrift/lan-finansiering/kassekreditt.html: section (unnamed) → block \"usp\": single-column, 3-row block holding only prose elements — defa",
+    "🟡 D1 content/nb/bank/bedrift/lan-finansiering/kassekreditt.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements —"
+   ]
+  },
+  "notes": [
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-penger-sand-sirkel-usymmetrisk.svg is 1026451 bytes of SVG (> 40000) — authored as DA media illustrasjon-penger-sand-sirkel-usymmetrisk.png (rasterised)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-bedrift-lan-finansiering-leasing-html",
+  "daPath": "/nb/bank/bedrift/lan-finansiering/leasing",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "columns",
+   "usp",
+   "price-terms",
+   "accordion",
+   "cards"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 3,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/bedrift/lan-finansiering/leasing.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped struc",
+    "🟡 D1 content/nb/bank/bedrift/lan-finansiering/leasing.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — d",
+    "🟡 D4 content/nb/bank/bedrift/lan-finansiering/leasing.html: 2 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409"
+   ]
+  },
+  "notes": [
+   "href: \"${linksbm.leasingbillan.sok}\" is an unresolved live link placeholder (client-side rewrite, like lenker.sparebank1.no) — bounced to the source page https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering/leasing.html",
+   "price-terms: the overlay link targets its own module anchor on live (bank chooser dialog) — kept verbatim, no-op until the dialog dynamic exists",
+   "href: \"${linksbm.leasingbillan.sok}\" is an unresolved live link placeholder (client-side rewrite, like lenker.sparebank1.no) — bounced to the source page https://www.sparebank1.no/nb/bank/bedrift/lan-finansiering/leasing.html",
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/innhosting-korn-bonde-landbruk-bedrift-lys-bakgrunn.svg is 719982 bytes of SVG (> 40000) — authored as DA media innhosting-korn-bonde-landbruk-bedrift-lys-bakgrunn.png (rasterised)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)"
+  ]
+ },
+ {
+  "slug": "nb-bank-bedrift-open-api-html",
+  "daPath": "/nb/bank/bedrift/open-api",
+  "blocks": [
+   "bank-choice",
+   "columns",
+   "cards"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 2,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/bedrift/open-api.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structure; align rows",
+    "🟡 D4 content/nb/bank/bedrift/open-api.html: 2 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s the whole page"
+   ]
+  },
+  "notes": [
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-mann-kontor.svg is 59916 bytes of SVG (> 40000) — authored as DA media dame-mann-kontor.png (rasterised)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally"
+  ]
+ },
+ {
+  "slug": "nb-bank-bedrift-starte-bedrift-selskapsform-as-eller-enk-html",
+  "daPath": "/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "columns",
+   "cards",
+   "accordion",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 4,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — s",
+    "🟡 D1 content/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only pr",
+    "🟡 D1 content/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose",
+    "🟡 D4 content/nb/bank/bedrift/starte-bedrift/selskapsform/as-eller-enk.html: 1 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding rast"
+   ]
+  },
+  "notes": [],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-om-oss-vare-eksperter-html",
+  "daPath": "/nb/bank/om-oss/vare-eksperter",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "cards"
+  ],
+  "gaps": [
+   "module title emitted as prose"
+  ],
+  "lint": {
+   "red": 0,
+   "yellow": 2,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/om-oss/vare-eksperter.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structure; align",
+    "🟡 D1 content/nb/bank/om-oss/vare-eksperter.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — default-cont"
+   ]
+  },
+  "notes": [
+   "cards people: the experts list (bio cards) — one row per expert [portrait][name h3, role, bio, \"Les mer om …\" link]; card-as-link via the trailing link (EW6)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-daglig-bruk-bankid-html",
+  "daPath": "/nb/bank/privat/daglig-bruk/bankid",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "columns",
+   "banner",
+   "accordion",
+   "cards",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 4,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/privat/daglig-bruk/bankid.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structure; a",
+    "🟡 D1 content/nb/bank/privat/daglig-bruk/bankid.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — default-",
+    "🟡 D1 content/nb/bank/privat/daglig-bruk/bankid.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — default-con",
+    "🟡 D4 content/nb/bank/privat/daglig-bruk/bankid.html: 10 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s the "
+   ]
+  },
+  "notes": [
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/hjemmekontor.svg is 49088 bytes of SVG (> 40000) — authored as DA media hjemmekontor.png (rasterised)",
+   "faq: a columns-grid sits inside this answer on live — cells authored in order as prose (no nested blocks)",
+   "faq: a columns-grid sits inside this answer on live — cells authored in order as prose (no nested blocks)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-daglig-bruk-bankkonto-html",
+  "daPath": "/nb/bank/privat/daglig-bruk/bankkonto",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "cards",
+   "shortcuts",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 4,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/privat/daglig-bruk/bankkonto.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structure",
+    "🟡 D1 content/nb/bank/privat/daglig-bruk/bankkonto.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — defau",
+    "🟡 D1 content/nb/bank/privat/daglig-bruk/bankkonto.html: section (unnamed) → block \"shortcuts\": single-column, 1-row block holding only prose elements — default",
+    "🟡 D1 content/nb/bank/privat/daglig-bruk/bankkonto.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — default-"
+   ]
+  },
+  "notes": [
+   "cards nav: 5 visual-nav modules (5 photo, 0 icon) folded into one block — one row per card"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-daglig-bruk-bankkort-html",
+  "daPath": "/nb/bank/privat/daglig-bruk/bankkort",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "columns",
+   "usp",
+   "price-terms",
+   "accordion",
+   "cobranding",
+   "shortcuts",
+   "cards",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 5,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/privat/daglig-bruk/bankkort.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structure;",
+    "🟡 D1 content/nb/bank/privat/daglig-bruk/bankkort.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — defaul",
+    "🟡 D1 content/nb/bank/privat/daglig-bruk/bankkort.html: section (unnamed) → block \"shortcuts\": single-column, 1-row block holding only prose elements — default-",
+    "🟡 D1 content/nb/bank/privat/daglig-bruk/bankkort.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — default-c",
+    "🟡 D4 content/nb/bank/privat/daglig-bruk/bankkort.html: 12 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s th"
+   ]
+  },
+  "notes": [
+   "price-terms: the overlay link targets its own module anchor on live (bank chooser dialog) — kept verbatim, no-op until the dialog dynamic exists",
+   "undefined: authored inside a columns-grid column on live — a columns cell cannot hold a block, so it follows the columns block as a sibling (layout stacks; content complete)",
+   "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)",
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/pall.svg is 86953 bytes of SVG (> 40000) — authored as DA media pall.png (rasterised)",
+   "faq: a guide-carousel sits inside this answer on live — its slides are authored as prose (title, copy, screenshot); no nested blocks",
+   "faq: a columns-grid sits inside this answer on live — cells authored in order as prose (no nested blocks)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
+   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
+   "lint D3 cobranding: single-cell rows read by position — row 1 heading + toggle label (EW8: the label moves into the expand button), row 2 partner logo + title, rows 3+ one panel column each; the panel is closed at rest (dynamics #14 static snapshot)",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-daglig-bruk-kredittkort-html",
+  "daPath": "/nb/bank/privat/daglig-bruk/kredittkort",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "columns",
+   "usp",
+   "price-terms",
+   "accordion",
+   "cards",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 5,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/privat/daglig-bruk/kredittkort.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structu",
+    "🟡 D1 content/nb/bank/privat/daglig-bruk/kredittkort.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — def",
+    "🟡 D1 content/nb/bank/privat/daglig-bruk/kredittkort.html: section (unnamed) → block \"usp\": single-column, 3-row block holding only prose elements — default-con",
+    "🟡 D1 content/nb/bank/privat/daglig-bruk/kredittkort.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — defaul",
+    "🟡 D4 content/nb/bank/privat/daglig-bruk/kredittkort.html: 32 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s"
+   ]
+  },
+  "notes": [
+   "undefined: authored inside a columns-grid column on live — a columns cell cannot hold a block, so it follows the columns block as a sibling (layout stacks; content complete)",
+   "undefined: authored inside a columns-grid column on live — a columns cell cannot hold a block, so it follows the columns block as a sibling (layout stacks; content complete)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
+   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-daglig-bruk-mobilbank-html",
+  "daPath": "/nb/bank/privat/daglig-bruk/mobilbank",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "columns",
+   "banner",
+   "carousel",
+   "accordion",
+   "cards",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 4,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/privat/daglig-bruk/mobilbank.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structure",
+    "🟡 D1 content/nb/bank/privat/daglig-bruk/mobilbank.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — defau",
+    "🟡 D1 content/nb/bank/privat/daglig-bruk/mobilbank.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — default-",
+    "🟡 D4 content/nb/bank/privat/daglig-bruk/mobilbank.html: 5 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s th"
+   ]
+  },
+  "notes": [
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/pengene-vokser-dame-mater-fisk-lys-bakgrunn.svg is 320828 bytes of SVG (> 40000) — authored as DA media pengene-vokser-dame-mater-fisk-lys-bakgrunn.png (rasterised)",
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg is 69217 bytes of SVG (> 40000) — authored as DA media mann-bil-tre.png (rasterised)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D1 carousel: the live guide-carousel (one slide visible, \"1 av N\", prev/next) — one row per slide [screenshot][title + copy][slide name (the visually-hidden tab label)]; the counter and the Forrige/Neste controls are block chrome",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-forsikring-barneforsikring-html",
+  "daPath": "/nb/bank/privat/forsikring/barneforsikring",
+  "blocks": [
+   "breadcrumbs",
+   "columns",
+   "usp",
+   "accordion",
+   "callout",
+   "cards",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 4,
+   "reds": [],
+   "yellows": [
+    "🟡 D1 content/nb/bank/privat/forsikring/barneforsikring.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — ",
+    "🟡 D1 content/nb/bank/privat/forsikring/barneforsikring.html: section (unnamed) → block \"callout\": single-column, 1-row block holding only prose elements — defa",
+    "🟡 D1 content/nb/bank/privat/forsikring/barneforsikring.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — def",
+    "🟡 D4 content/nb/bank/privat/forsikring/barneforsikring.html: 1 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 40"
+   ]
+  },
+  "notes": [
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kyss-sand-sirkel-usymmetrisk.svg is 983750 bytes of SVG (> 40000) — authored as DA media illustrasjon-kyss-sand-sirkel-usymmetrisk.png (rasterised)",
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mobil-lege.svg is 44242 bytes of SVG (> 40000) — authored as DA media mobil-lege.png (rasterised)"
+  ],
+  "lintJustifications": [
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
+   "lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-forsikring-bilforsikring-html",
+  "daPath": "/nb/bank/privat/forsikring/bilforsikring",
+  "blocks": [
+   "breadcrumbs",
+   "columns",
+   "usp",
+   "accordion",
+   "cards",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 3,
+   "reds": [],
+   "yellows": [
+    "🟡 D1 content/nb/bank/privat/forsikring/bilforsikring.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — de",
+    "🟡 D1 content/nb/bank/privat/forsikring/bilforsikring.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — defau",
+    "🟡 D4 content/nb/bank/privat/forsikring/bilforsikring.html: 4 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s"
+   ]
+  },
+  "notes": [
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-dame-sand-sirkel-usymmetrisk.svg is 1012845 bytes of SVG (> 40000) — authored as DA media illustrasjon-dame-sand-sirkel-usymmetrisk.png (rasterised)",
+   "faq: a coverage comparison table sits inside this answer on live — flattened to default content (feature, covered-by list, details); a table/block cannot nest inside an accordion row"
+  ],
+  "lintJustifications": [
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-forsikring-innboforsikring-html",
+  "daPath": "/nb/bank/privat/forsikring/innboforsikring",
+  "blocks": [
+   "breadcrumbs",
+   "columns",
+   "usp",
+   "accordion",
+   "cards",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 4,
+   "reds": [],
+   "yellows": [
+    "🟡 D1 content/nb/bank/privat/forsikring/innboforsikring.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — ",
+    "🟡 D1 content/nb/bank/privat/forsikring/innboforsikring.html: section (unnamed) → block \"usp\": single-column, 3-row block holding only prose elements — default-",
+    "🟡 D1 content/nb/bank/privat/forsikring/innboforsikring.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — def",
+    "🟡 D4 content/nb/bank/privat/forsikring/innboforsikring.html: 2 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 40"
+   ]
+  },
+  "notes": [
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-usymmetrisk-samboer-dame-mann-high-five.svg is 43025 bytes of SVG (> 40000) — authored as DA media illustrasjon-usymmetrisk-samboer-dame-mann-high-five.png (rasterised)"
+  ],
+  "lintJustifications": [
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-forsikring-kundehistorier-html",
+  "daPath": "/nb/bank/privat/forsikring/kundehistorier",
+  "blocks": [
+   "breadcrumbs",
+   "columns",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 3,
+   "reds": [],
+   "yellows": [
+    "🟡 D1 content/nb/bank/privat/forsikring/kundehistorier.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — d",
+    "🟡 D1 content/nb/bank/privat/forsikring/kundehistorier.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — defa",
+    "🟡 D4 content/nb/bank/privat/forsikring/kundehistorier.html: 1 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409"
+   ]
+  },
+  "notes": [],
+  "lintJustifications": [
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-forsikring-reiseforsikring-html",
+  "daPath": "/nb/bank/privat/forsikring/reiseforsikring",
+  "blocks": [
+   "breadcrumbs",
+   "columns",
+   "usp",
+   "cobranding",
+   "callout",
+   "accordion",
+   "cards",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 4,
+   "reds": [],
+   "yellows": [
+    "🟡 D1 content/nb/bank/privat/forsikring/reiseforsikring.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — ",
+    "🟡 D1 content/nb/bank/privat/forsikring/reiseforsikring.html: section (unnamed) → block \"callout\": single-column, 1-row block holding only prose elements — defa",
+    "🟡 D1 content/nb/bank/privat/forsikring/reiseforsikring.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — def",
+    "🟡 D4 content/nb/bank/privat/forsikring/reiseforsikring.html: 2 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 40"
+   ]
+  },
+  "notes": [
+   "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)",
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-koffert-reise-rosa.svg is 47074 bytes of SVG (> 40000) — authored as DA media dame-koffert-reise-rosa.png (rasterised)",
+   "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)",
+   "faq: a columns-grid sits inside this answer on live — cells authored in order as prose (no nested blocks)"
+  ],
+  "lintJustifications": [
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D3 cobranding: single-cell rows read by position — row 1 heading + toggle label (EW8: the label moves into the expand button), row 2 partner logo + title, rows 3+ one panel column each; the panel is closed at rest (dynamics #14 static snapshot)",
+   "lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
+   "lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-kundeservice-bestill-bli-kunde-html",
+  "daPath": "/nb/bank/privat/kundeservice/bestill/bli-kunde",
+  "blocks": [
+   "bank-choice",
+   "columns",
+   "usp",
+   "banner",
+   "cards",
+   "feedback"
+  ],
+  "gaps": [
+   "module title emitted as prose"
+  ],
+  "lint": {
+   "red": 0,
+   "yellow": 2,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/privat/kundeservice/bestill/bli-kunde.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped ",
+    "🟡 D1 content/nb/bank/privat/kundeservice/bestill/bli-kunde.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements —"
+   ]
+  },
+  "notes": [
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-penger-sand-sirkel-usymmetrisk.svg is 1026451 bytes of SVG (> 40000) — authored as DA media illustrasjon-penger-sand-sirkel-usymmetrisk.png (rasterised)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-lan-billan-html",
+  "daPath": "/nb/bank/privat/lan/billan",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "columns",
+   "usp",
+   "price-terms",
+   "cobranding",
+   "cards",
+   "shortcuts",
+   "accordion",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 5,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/privat/lan/billan.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structure; align row",
+    "🟡 D1 content/nb/bank/privat/lan/billan.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — default-content ",
+    "🟡 D1 content/nb/bank/privat/lan/billan.html: section (unnamed) → block \"shortcuts\": single-column, 1-row block holding only prose elements — default-content ca",
+    "🟡 D1 content/nb/bank/privat/lan/billan.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — default-content can",
+    "🟡 D4 content/nb/bank/privat/lan/billan.html: 5 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s the whole pag"
+   ]
+  },
+  "notes": [
+   "price-terms: the overlay link targets its own module anchor on live (bank chooser dialog) — kept verbatim, no-op until the dialog dynamic exists",
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg is 69217 bytes of SVG (> 40000) — authored as DA media mann-bil-tre.png (rasterised)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
+   "lint D3 cobranding: single-cell rows read by position — row 1 heading + toggle label (EW8: the label moves into the expand button), row 2 partner logo + title, rows 3+ one panel column each; the panel is closed at rest (dynamics #14 static snapshot)",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-lan-forbrukslan-html",
+  "daPath": "/nb/bank/privat/lan/forbrukslan",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "columns",
+   "price-terms",
+   "callout",
+   "cards",
+   "accordion",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 5,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/privat/lan/forbrukslan.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structure; alig",
+    "🟡 D1 content/nb/bank/privat/lan/forbrukslan.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — default-con",
+    "🟡 D1 content/nb/bank/privat/lan/forbrukslan.html: section (unnamed) → block \"callout\": single-column, 1-row block holding only prose elements — default-content",
+    "🟡 D1 content/nb/bank/privat/lan/forbrukslan.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — default-conten",
+    "🟡 D4 content/nb/bank/privat/lan/forbrukslan.html: 2 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s the whol"
+   ]
+  },
+  "notes": [],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
+   "lint D1 callout: the FFE message box (round info glyph overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-lan-gronne-lan-html",
+  "daPath": "/nb/bank/privat/lan/gronne-lan",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "cards",
+   "banner"
+  ],
+  "gaps": [
+   "module title emitted as prose"
+  ],
+  "lint": {
+   "red": 0,
+   "yellow": 2,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/privat/lan/gronne-lan.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structure; align",
+    "🟡 D1 content/nb/bank/privat/lan/gronne-lan.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — default-cont"
+   ]
+  },
+  "notes": [
+   "cards nav: 3 visual-nav modules (3 photo, 0 icon) folded into one block — one row per card"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-lan-lanekalkulator-html",
+  "daPath": "/nb/bank/privat/lan/lanekalkulator",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "columns",
+   "cards",
+   "calculator",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 5,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/privat/lan/lanekalkulator.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structure; a",
+    "🟡 D1 content/nb/bank/privat/lan/lanekalkulator.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — default-",
+    "🟡 D1 content/nb/bank/privat/lan/lanekalkulator.html: section (unnamed) → block \"calculator\": single-column, 1-row block holding only prose elements — default-c",
+    "🟡 D1 content/nb/bank/privat/lan/lanekalkulator.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — default-con",
+    "🟡 D4 content/nb/bank/privat/lan/lanekalkulator.html: 3 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s the w"
+   ]
+  },
+  "notes": [
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-kalkulator-sand-sirkel-usymmetrisk.svg is 861599 bytes of SVG (> 40000) — authored as DA media illustrasjon-kalkulator-sand-sirkel-usymmetrisk.png (rasterised)",
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/mann-sparegris.svg is 41078 bytes of SVG (> 40000) — authored as DA media mann-sparegris.png (rasterised)",
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/dame-tenker-okonomi-sammenlikner.svg is 51143 bytes of SVG (> 40000) — authored as DA media dame-tenker-okonomi-sammenlikner.png (rasterised)",
+   "calculator: static snapshot served from /data/calculator/privat-lan-lanekalkulator.html (dynamics #7 interim — computation disabled until the API is exposed)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D1 calculator: bespoke widget (shadow-root snapshot of the loan calculator; dynamics #7 interim) — the link names the snapshot",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-lan-refinansiering-html",
+  "daPath": "/nb/bank/privat/lan/refinansiering",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "columns",
+   "cards",
+   "accordion",
+   "banner",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 4,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/privat/lan/refinansiering.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structure; a",
+    "🟡 D1 content/nb/bank/privat/lan/refinansiering.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — default-",
+    "🟡 D1 content/nb/bank/privat/lan/refinansiering.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — default-con",
+    "🟡 D4 content/nb/bank/privat/lan/refinansiering.html: 3 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s the w"
+   ]
+  },
+  "notes": [
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2025/ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.svg is 55304 bytes of SVG (> 40000) — authored as DA media ung-mobilbankbruker-jente-med-mobil-og-headset-lilla-sirkel.png (rasterised)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-pensjon-egen-pensjonskonto-html",
+  "daPath": "/nb/bank/privat/pensjon/egen-pensjonskonto",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "columns",
+   "usp",
+   "price-terms",
+   "accordion",
+   "cards",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 4,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/privat/pensjon/egen-pensjonskonto.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped stru",
+    "🟡 D1 content/nb/bank/privat/pensjon/egen-pensjonskonto.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — ",
+    "🟡 D1 content/nb/bank/privat/pensjon/egen-pensjonskonto.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — def",
+    "🟡 D4 content/nb/bank/privat/pensjon/egen-pensjonskonto.html: 2 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 40"
+   ]
+  },
+  "notes": [
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/pensjon-forvaltning-aktiv-umerket-uten-bakgrunn.svg is 189273 bytes of SVG (> 40000) — authored as DA media pensjon-forvaltning-aktiv-umerket-uten-bakgrunn.png (rasterised)",
+   "accordion disclosure center: every heading/paragraph of the live content carries an inline text-align:center — carried as the block variant (David's Model has no inline alignment)",
+   "media: https://www.sparebank1.no/content/dam/SB1/vedlegg/pensjon/bilder/avkastningsgraf-pensjon-2026.svg is 242396 bytes of SVG (> 40000) — authored as DA media avkastningsgraf-pensjon-2026.png (rasterised)",
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg is 860616 bytes of SVG (> 40000) — authored as DA media illustrasjon-sporsmal-sand-sirkel-usymmetrisk.png (rasterised)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
+   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
+   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
+   "lint D1 accordion disclosure: the live progressive-disclosure (expand pill + collapsed content box) — one row [pill label][content]; the label <p> moves into the button (EW8)",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-sparing-spare-i-fond-html",
+  "daPath": "/nb/bank/privat/sparing/spare-i-fond",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "cards",
+   "columns",
+   "accordion",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 4,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/privat/sparing/spare-i-fond.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structure;",
+    "🟡 D1 content/nb/bank/privat/sparing/spare-i-fond.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — defaul",
+    "🟡 D1 content/nb/bank/privat/sparing/spare-i-fond.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — default-c",
+    "🟡 D4 content/nb/bank/privat/sparing/spare-i-fond.html: 1 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s the"
+   ]
+  },
+  "notes": [
+   "media: https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/girls-just-want-to-have-fond-med-ameline-usymmetrisk-.svg is 1019801 bytes of SVG (> 40000) — authored as DA media girls-just-want-to-have-fond-med-ameline-usymmetrisk-.png (rasterised)",
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2023/dame-star-pa-penger-spare-fond.svg is 51791 bytes of SVG (> 40000) — authored as DA media dame-star-pa-penger-spare-fond.png (rasterised)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-sparing-spare-pa-konto-html",
+  "daPath": "/nb/bank/privat/sparing/spare-pa-konto",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "cards",
+   "columns",
+   "cobranding",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 4,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/privat/sparing/spare-pa-konto.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structur",
+    "🟡 D1 content/nb/bank/privat/sparing/spare-pa-konto.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — defa",
+    "🟡 D1 content/nb/bank/privat/sparing/spare-pa-konto.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — default",
+    "🟡 D4 content/nb/bank/privat/sparing/spare-pa-konto.html: 11 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s "
+   ]
+  },
+  "notes": [
+   "cards nav: 4 visual-nav modules (4 photo, 0 icon) folded into one block — one row per card",
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-liten-penger.svg is 95992 bytes of SVG (> 40000) — authored as DA media illustrasjon-liten-penger.png (rasterised)"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D3 cobranding: single-cell rows read by position — row 1 heading + toggle label (EW8: the label moves into the expand button), row 2 partner logo + title, rows 3+ one panel column each; the panel is closed at rest (dynamics #14 static snapshot)",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ },
+ {
+  "slug": "nb-bank-privat-sparing-spare-til-barn-html",
+  "daPath": "/nb/bank/privat/sparing/spare-til-barn",
+  "blocks": [
+   "bank-choice",
+   "breadcrumbs",
+   "cards",
+   "feedback"
+  ],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 4,
+   "reds": [],
+   "yellows": [
+    "🟡 D3 content/nb/bank/privat/sparing/spare-til-barn.html: section (unnamed) → block \"bank-choice\": rows have differing cell counts (1, 2) — span-shaped structur",
+    "🟡 D1 content/nb/bank/privat/sparing/spare-til-barn.html: section (unnamed) → block \"breadcrumbs\": single-column, 1-row block holding only prose elements — defa",
+    "🟡 D1 content/nb/bank/privat/sparing/spare-til-barn.html: section (unnamed) → block \"feedback\": single-column, 1-row block holding only prose elements — default",
+    "🟡 D4 content/nb/bank/privat/sparing/spare-til-barn.html: 4 authored SVG media reference(s) — batch-verify pure-vector (an SVG embedding raster data URIs 409s t"
+   ]
+  },
+  "notes": [
+   "cards nav: 6 visual-nav modules (2 photo, 4 icon) folded into one block — one row per card"
+  ],
+  "lintJustifications": [
+   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
+   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+  ]
+ }
+]

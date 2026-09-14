@@ -1,0 +1,58 @@
+{
+ "slug": "nb-bank-om-oss-samfunnsansvar-html",
+ "daPath": "/nb/bank/om-oss/samfunnsansvar",
+ "file": "content/nb/bank/om-oss/samfunnsansvar.html",
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "modules": [
+  {
+   "module": "campaign",
+   "blocks": [
+    "carousel"
+   ]
+  },
+  {
+   "module": "static-cards",
+   "blocks": [
+    "cards"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "carousel",
+  "cards",
+  "columns",
+  "feedback"
+ ],
+ "notes": [
+  "lint D11 carousel: the presse split hero is the live .campaign component (7/12 photo + 5/12 text) authored as one slide of `carousel campaign` (D9 — same block as the market-landing hero); `white` = untinted, `lead` = h1 + lead paragraph",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/visning-familie-mork.svg is 83567 bytes of SVG (> 40000) — authored as DA media visning-familie-mork.png (rasterised)",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/visning-familie-mork.svg"
+ ],
+ "writtenAt": "2026-09-14T20:17:28.904Z"
+}

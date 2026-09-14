@@ -196,3 +196,47 @@ footer .footer {
 .footer .contact__title + .contact__actions { margin-top: 72px; }
 @media (width >= 768px) { .footer .contact__title + .contact__actions { margin-top: 88px; } }
 /* ===== /faq / bedrift chrome ===== */
+
+/* ===== frontend chrome (news-article · news-listing · campaign-landing, additive) =====
+   the nettsider-frontend clientlib footer: stardust/prototypes/css/news-article.css .footer--frontend (lifted). Same authored
+   /footer document shape (columns · small · address), no contact band and no to-top control on this template. The three link
+   groups sit in a 1216px flex row with three auto margins (first group left, the social group centred between). */
+footer .footer.footer--frontend { margin: 0; background: var(--fjell); color: var(--white); }
+.footer.footer--frontend .footer__top { display: none; }
+.footer.footer--frontend .footer__bottom { padding: 75px 0; }
+.footer.footer--frontend .footer__inner { max-width: var(--container); padding: 0; }
+.footer.footer--frontend .footer__columns { display: flex; flex-direction: column; align-items: center; margin: 0 32px; padding: 0; }
+.footer.footer--frontend .footer__column { display: contents; }
+.footer.footer--frontend .footer__links { display: flex; flex-direction: column; width: auto; margin: 0 0 35px; padding: 0 0 0 40px; }
+.footer.footer--frontend .footer__heading { margin: 0 0 8px; font-family: var(--font-medium); font-size: 18px; line-height: 24px; color: var(--white); }
+.footer.footer--frontend .footer__links ul { min-width: 0; margin: 0; padding: 0; }
+.footer.footer--frontend .footer__links li { line-height: 28px; }
+.footer.footer--frontend .footer__links a:any-link { color: var(--white); font-size: 16px; line-height: 16px; text-decoration: none; border-bottom: 1px solid var(--white); }
+.footer.footer--frontend .footer__links a:hover { color: #b3cee4; border-bottom-color: #b3cee4; text-decoration: none; }
+.footer.footer--frontend .footer__links--social .footer__heading { margin-bottom: 8px; }
+.footer.footer--frontend .footer__links--social ul { display: flex; min-width: 0; padding-top: 0; }
+.footer.footer--frontend .footer__links--social li { display: list-item; width: 30px; height: 30px; margin-right: 20px; line-height: 30px; text-align: center; }
+.footer.footer--frontend a.footer__social:any-link { display: inline; height: auto; border: 0; }
+.footer.footer--frontend .footer__social .icon { display: inline-block; width: 30px; height: 30px; vertical-align: top; }
+.footer.footer--frontend .footer__social .icon svg { width: auto; height: 30px; max-width: 35px; vertical-align: top; }
+.footer.footer--frontend .footer__small { display: block; max-width: none; margin: 0 0 35px; padding: 40px calc(16px + (100% - 32px) / 12) 0 calc(56px + (100% - 32px) / 12); border-top: 2px solid var(--vann); text-align: center; } /* the live hr (0 height, 1px borders) + the bottom col at grid 2 / span 10 with 40px inset */
+.footer.footer--frontend .footer__small li { display: list-item; margin: 0 20px 0 0; line-height: 30px; text-align: center; }
+.footer.footer--frontend .footer__small a:any-link { font-size: 16px; line-height: 16px; color: var(--white); text-decoration: none; border-bottom: 1px solid var(--white); }
+.footer.footer--frontend .footer__small a:hover { color: #b3cee4; border-bottom-color: #b3cee4; text-decoration: none; }
+.footer.footer--frontend .footer__address { margin: 0; text-align: center; }
+
+@media (width >= 1024px) {
+  .footer.footer--frontend .footer__columns { flex-direction: row; flex-wrap: wrap; align-items: stretch; justify-content: flex-start; }
+  .footer.footer--frontend .footer__column:first-child > .footer__links:first-child { margin-left: auto; }
+  .footer.footer--frontend .footer__links { min-width: 170px; margin: 0; padding-left: 20px; }
+  .footer.footer--frontend .footer__links--social { width: 178.66px; min-width: 0; margin-left: auto; margin-right: auto; }
+  .footer.footer--frontend .footer__heading { margin-bottom: 24px; font-size: 22px; line-height: 28px; }
+  .footer.footer--frontend .footer__links--social .footer__heading { margin-bottom: 24px; }
+  .footer.footer--frontend .footer__links li { line-height: 30px; }
+  .footer.footer--frontend .footer__small { margin-bottom: 0; }
+  .footer.footer--frontend .footer__small li { display: inline-block; }
+}
+/* ===== /frontend chrome ===== */
+/* ===== frontend chrome (cont.) ===== the live divider hr carries 40px above as well as below */
+.footer.footer--frontend .footer__small { margin-top: 40px; }
+/* ===== /frontend chrome (cont.) ===== */

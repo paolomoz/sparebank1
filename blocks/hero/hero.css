@@ -35,3 +35,49 @@
     padding: 40px 32px;
   }
 }
+
+/* ===== news-article (additive variant) =====
+   `article` — the nettsider-frontend article header (stardust/prototypes/css/news-article.css .article__header / __hero / __tag /
+   __title / __author / __share; lifted from frontend_clientlib_base + lift/nyhet-*-detail.json). Every boilerplate hero rule
+   above is neutralised for the variant (no min-height, no absolute picture, no white title). */
+.hero.article { position: relative; width: 100%; min-height: 0; padding: 8px 8px 0; border-left: 1px solid var(--lysgraa); border-right: 1px solid var(--lysgraa); }
+.hero.article .hero__header { position: relative; }
+.hero.article .hero__figure { margin: 0; }
+.hero.article .hero__figure-container { display: block; line-height: 0; }
+.hero.article picture { position: static; z-index: auto; inset: auto; display: block; }
+.hero.article .hero__figure img { display: inline; width: 100%; height: 175px; object-fit: cover; }
+.hero.article.top .hero__figure img { object-position: top; }
+.hero.article .hero__caption { padding: 20px 10px; font-size: 0.9rem; line-height: 1.2rem; color: var(--moerkgraa); text-align: center; }
+.hero.article .hero__tag { display: flex; justify-content: center; margin: auto; }
+.hero.article .hero__tag-item { min-width: 150px; margin: 0; padding: 0 8px; background: var(--vann); color: var(--white); font-size: 12px; line-height: 24px; text-align: center; text-transform: uppercase; }
+.hero.article .hero__title h1 { max-width: none; margin: 16px 8px; font-family: var(--font-heading); font-size: 28px; line-height: 36px; color: var(--fjell); text-align: center; }
+.hero.article .hero__author { display: flex; flex-direction: column; align-items: center; margin: 0 0 16px; }
+.hero.article .hero__author-text { display: flex; flex-wrap: wrap; justify-content: center; font-size: 14px; letter-spacing: 1.28px; text-align: center; }
+.hero.article .hero__author-text p { margin: 0; }
+.hero.article .hero__date { color: var(--moerkgraa); font-weight: 700; text-transform: uppercase; }
+.hero.article .hero__share { display: flex; justify-content: center; width: 100%; margin: 0 0 16px; }
+.hero.article .hero__share-item { height: 42px; margin: 0 11px; }
+.hero.article .hero__share-btn { display: inline-block; width: 40px; height: 40px; padding: 5px; border: none; background: none; color: var(--vann); cursor: pointer; line-height: 18.4px; }
+.hero.article .hero__share-btn .icon { display: block; width: 30px; height: 30px; }
+.hero.article .hero__share-btn svg { display: block; width: 30px; height: 30px; }
+
+@media (width >= 768px) {
+  .hero.article { padding: 16px 16px 0; }
+  .hero.article .hero__figure img { height: 350px; }
+  .hero.article .hero__title h1 { margin: 24px 32px 16px; font-size: 42px; line-height: 50px; }
+  .hero.article .hero__date { padding-left: 8px; }
+}
+
+@media (width >= 1024px) {
+  .hero.article { display: block; padding: 40px 40px 0; border-left: none; }
+  .hero.article .hero__figure img { height: 488px; }
+  .hero.article .hero__tag-item { line-height: 32px; }
+  .hero.article .hero__title h1 { margin: 40px 16px 32px; font-size: 64px; line-height: 70px; }
+  .hero.article .hero__author { position: absolute; right: -1px; width: calc(30% + 1px); height: 124px; flex-direction: row; align-items: center; margin: 56px 0 16px; padding: 16px 8px 32px 24px; background: var(--white); border-right: 1px solid var(--lysgraa); border-bottom: 1px solid var(--lysgraa); }
+  .hero.article .hero__author-text { flex-direction: column; width: 100%; justify-content: center; text-align: left; }
+  .hero.article .hero__date { padding-left: 0; text-align: left; }
+  .hero.article .hero__share { height: 45px; margin: 0 0 32px; }
+  .hero.article .hero__share-item { height: 45px; }
+  .hero.article .hero__share-btn .icon, .hero.article .hero__share-btn svg { width: 32px; height: 32px; }
+}
+/* ===== /news-article ===== */

@@ -28,7 +28,9 @@
   },
   {
    "module": "band",
-   "blocks": []
+   "blocks": [
+    "price-terms"
+   ]
   },
   {
    "module": "cobranding",
@@ -94,6 +96,7 @@
   "breadcrumbs",
   "columns",
   "usp",
+  "price-terms",
   "cobranding",
   "cards",
   "shortcuts",
@@ -103,16 +106,16 @@
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "lint D3 price-terms: template-slotted like banner — one row [title + price figure][check list, overlay link, footnote]; the live \"Se … hos en av våre banker\" link opens a client-rendered bank-choice overlay (dynamics interim: plain link)",
+  "price-terms: the overlay link targets its own module anchor on live (bank chooser dialog) — kept verbatim, no-op until the dialog dynamic exists",
   "lint D3 cobranding: single-cell rows read by position — row 1 heading + toggle label (EW8: the label moves into the expand button), row 2 partner logo + title, rows 3+ one panel column each; the panel is closed at rest (dynamics #14 static snapshot)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg is 69217 bytes of SVG (> 40000) — authored as DA media mann-bil-tre.png (rasterised)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module module.module--price-and-terms emitted as prose"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mann-bil-tre.svg"
  ],
- "writtenAt": "2026-09-14T19:24:59.899Z"
+ "writtenAt": "2026-09-14T20:14:00.411Z"
 }

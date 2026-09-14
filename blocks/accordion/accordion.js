@@ -9,6 +9,8 @@ import { el, icon, inlineIcons } from '../../scripts/sb1.js';
  * EW7: the question <p> moves into a sibling div; the whole heading row toggles; the button is chevron-only.
  */
 export default function decorate(block) {
+  if (block.classList.contains('disclosure')) { decorateDisclosure(block); return; } // additive variant (product siblings: progressive-disclosure)
+  if (block.classList.contains('steps')) { decorateSteps(block); return; } // additive variant (product siblings: step-by-step)
   const showN = +([...block.classList].find((c) => /^show-\d+$/.test(c)) || '').replace('show-', '') || Infinity;
   const faq = block.classList.contains('faq');
   const acc = el('div', { class: 'accordion__list' });
@@ -41,5 +43,50 @@ export default function decorate(block) {
       btn.addEventListener('click', () => { const open = btn.getAttribute('aria-expanded') === 'true'; btn.setAttribute('aria-expanded', String(!open)); acc.querySelectorAll('.accordion__item--more').forEach((it) => { it.style.display = open ? 'none' : ''; }); });
     }
   }
+  inlineIcons(block);
+}
+
+/**
+ * `disclosure` variant — the live progressive-disclosure: ONE row [pill label][content]. The authored label <p> moves into an
+ * expand pill (EW8, as the faq reveal button does); the content moves into a collapsed box (variant `box` = the tinted 64px-padded
+ * panel; `white` = its inline white colour on some pages; `left` = left-aligned pill). aria-expanded/aria-controls contract as live.
+ */
+function decorateDisclosure(block) {
+  const row = block.querySelector(':scope > div'); if (!row) return;
+  const [labelCell, contentCell] = [...row.children]; const id = `${block.dataset.blockName || 'disclosure'}-${Math.random().toString(36).slice(2, 6)}`;
+  const btn = el('button', { type: 'button', class: 'button secondary disclosure__btn', 'aria-expanded': 'false', 'aria-controls': id });
+  while (labelCell?.firstChild) btn.append(labelCell.firstChild);
+  const inner = el('div', { class: 'disclosure__inner' }); while (contentCell?.firstChild) inner.append(contentCell.firstChild);
+  const content = el('div', { class: `disclosure__content${block.classList.contains('box') ? ' disclosure__content--box' : ''}` }, inner);
+  const panel = el('div', { class: 'disclosure__panel', id, role: 'region', hidden: true }, content);
+  btn.addEventListener('click', () => { const open = btn.getAttribute('aria-expanded') === 'true'; btn.setAttribute('aria-expanded', String(!open)); panel.hidden = open; block.classList.toggle('disclosure--open', !open); });
+  block.replaceChildren(el('div', { class: 'disclosure__toggle' }, btn), panel);
+}
+
+/**
+ * `steps` variant — the live step-by-step: one row per step [linked step title][content]. Desktop: a numbered master list (lg-4,
+ * offset 1) and a detail panel (lg-6) showing the active step; mobile: the active step expands inline. Step 1 is active at rest;
+ * the number circles are chrome (index). The authored title link stays the editable unit (click = select step, no navigation).
+ */
+function decorateSteps(block) {
+  const rows = [...block.children];
+  const grid = el('div', { class: 'grid-row steps__row steps__row--body' });
+  const listCol = el('div', { class: 'col col-sm-12 col-md-5 col-lg-4 col-lg-offset-1' }); const list = el('div', { class: 'steps__list' });
+  const infoCol = el('div', { class: 'col col-sm-12 col-md-7 col-lg-6 steps__info-col' }); const info = el('div', { class: 'steps__info', tabindex: '-1' });
+  const items = rows.map((row, i) => {
+    const [titleCell, contentCell] = [...row.children]; const id = `${block.dataset.blockName || 'steps'}-${i}-${Math.random().toString(36).slice(2, 6)}`;
+    const item = el('div', { class: `steps__item${i === 0 ? ' steps__item--active' : ''}` });
+    const choice = el('div', { class: 'steps__choice', 'aria-expanded': String(i === 0), id, 'aria-controls': `${id}-c` });
+    choice.append(el('div', { class: 'steps__number' }, el('span', {}, String(i + 1))));
+    const title = el('div', { class: 'steps__step-title' }); while (titleCell?.firstChild) title.append(titleCell.firstChild); title.querySelectorAll('a').forEach((a) => a.classList.add('steps__link')); choice.append(title);
+    choice.append(el('div', { class: 'steps__icon' }, icon('chevron')));
+    const content = el('div', { class: 'steps__content', id: `${id}-c` }); const rt = el('div', { class: 'steps__richtext' }); while (contentCell?.firstChild) rt.append(contentCell.firstChild); content.append(rt);
+    item.append(choice, content); list.append(item);
+    choice.addEventListener('click', (e) => { if (e.target.closest('a')) e.preventDefault(); items.forEach((it) => { it.classList.toggle('steps__item--active', it === item); it.querySelector('.steps__choice').setAttribute('aria-expanded', String(it === item)); }); info.replaceChildren(...[...content.children].map((c) => c.cloneNode(true))); });
+    return item;
+  });
+  const first = list.querySelector('.steps__item--active .steps__content'); if (first) info.replaceChildren(...[...first.children].map((c) => c.cloneNode(true)));
+  listCol.append(list); infoCol.append(info); grid.append(listCol, infoCol);
+  block.replaceChildren(grid);
   inlineIcons(block);
 }
