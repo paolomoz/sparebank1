@@ -12,7 +12,7 @@
    "blocks": []
   },
   {
-   "module": "button-list button-list--left",
+   "module": "button-list",
    "blocks": []
   },
   {
@@ -51,7 +51,9 @@
   },
   {
    "module": "image",
-   "blocks": []
+   "blocks": [
+    "columns"
+   ]
   },
   {
    "module": "richtext",
@@ -107,15 +109,12 @@
   "lint D3 banner columns: one row per half — [illustration][heading, line, CTA(, partner logo)]; the colour variants are read in row order (like the columns lg-* cell model)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/Mennesker_personer_voksen_forelder_barn.svg is 77637 bytes of SVG (> 40000) — authored as DA media Mennesker_personer_voksen_forelder_barn.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/barn_spiller_fotball.svg is 93129 bytes of SVG (> 40000) — authored as DA media barn_spiller_fotball.png (rasterised)",
+  "lint D1 columns (image): a standalone illustration authored at 175px — the one-cell columns block carries the wN sizing model the default-content image cannot express",
+  "module progressive-disclosure: the replica prototype carries this module as richtext only (author.mjs unknown) — authored as default content; replica request filed",
   "lint D1 shortcuts: one cell with a plain list of links (D5 simple list) — the block renders the live pill buttons with chevrons; the heading above stays default content",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module button-list.button-list--left emitted as prose",
-  "no encoder for module button-list button-list--left",
-  "module image.image--center emitted as prose",
-  "module module.module--progressive-disclosure emitted as prose"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-koffert-reise-rosa.svg",
@@ -123,5 +122,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/Mennesker_personer_voksen_forelder_barn.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/barn_spiller_fotball.svg"
  ],
- "writtenAt": "2026-09-14T19:43:47.807Z"
+ "writtenAt": "2026-09-14T19:55:17.908Z"
 }

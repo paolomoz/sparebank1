@@ -15,7 +15,8 @@ import { ENCODERS as CORE, richtext, cardRows, bannerSmall, bandBg, bgToken, sty
 
 const { section, block, q, qa, cls, esc, inline } = L;
 
-const FAMILY = (() => { try { return Object.fromEntries(JSON.parse(fs.readFileSync('stardust/state.json', 'utf8')).pages.map((p) => [p.slug, p.archetypeFamily])); } catch { return {}; } })();
+const PAGES = (() => { try { return JSON.parse(fs.readFileSync('stardust/state.json', 'utf8')).pages; } catch { return []; } })();
+const FAMILY = Object.fromEntries(PAGES.map((p) => [p.slug, p.archetypeFamily])); const PAGE_URL = Object.fromEntries(PAGES.map((p) => [p.slug, p.url]));
 export const familyOf = (ctx) => FAMILY[ctx.slug] || '';
 export const SERVICE_FAMILIES = new Set(['utility', 'tool']);
 export const isService = (ctx) => SERVICE_FAMILIES.has(familyOf(ctx));
@@ -28,7 +29,9 @@ export function serviceRow(row, ctx) {
   const cards = cols.filter((c) => q(c, ':scope > .col__content > .card'));
   if (cards.length && cards.length === cols.length) {
     const span = (cls(cols[0]).find((c) => /^col-lg-\d+$/.test(c)) || 'col-lg-3').replace('col-', '');
-    return { kind: 'cards', variants: ['grid', span, gridCols(row)].filter(Boolean), rows: cardRows(cols.map((c) => q(c, '.card')), ctx) };
+    const medium = cards.every((c) => cls(q(c, '.card')).includes('card--medium') && !q(c, '.card__media img, .card__iconwrap img')); // live image-less medium cards keep the 200px image row
+    if (medium) ctx.notes.push('cards medium: image-less live card--medium (the 200px image row stays, 20px title) — block variant');
+    return { kind: 'cards', variants: ['grid', span, gridCols(row), medium ? 'medium' : null].filter(Boolean), rows: cardRows(cols.map((c) => q(c, '.card')), ctx) };
   }
   if (cols.length === 1 && gridCols(row)) return { kind: 'prose', html: richtext(q(cols[0], '.col__content'), ctx) }; // centred heading row → default content
   const variants = cols.map((c) => { const k = cls(c); const span = (k.find((x) => /^col-lg-\d+$/.test(x)) || 'col-lg-12').replace('col-', ''); const off = k.find((x) => /^col-lg-offset-\d+$/.test(x)); const first = k.includes('col--first') ? 'first' : null; const align = (k.find((x) => /^col--(middle|center|bottom)$/.test(x)) || '').replace('col--', ''); return [span, off ? off.replace('col-lg-offset-', 'offset-') : null, first, align].filter(Boolean).join('-'); });
@@ -40,8 +43,10 @@ export function serviceRow(row, ctx) {
   const img = q(row, '.col__content > .image');
   if (img) { // the media column's shape: `media-plain` (fixed ratio, no radius — a square PNG), `media-illustration` (no ratio — an inline SVG, 250px max), `media-4-3` (the live 1920/1440 rounded photo; the block default is 3/2)
     const m = /--ratio:\s*([\d.]+)\/([\d.]+)/.exec(img.getAttribute('style') || ''); const ratio = m ? +m[1] / +m[2] : null;
-    if (!cls(img).includes('image--rounded')) variants.push(ratio ? 'media-plain' : 'media-illustration');
-    else if (ratio && Math.abs(ratio - 4 / 3) < 0.02) variants.push('media-4-3');
+    const rounded = cls(img).includes('image--rounded');
+    if (!ratio) { variants.push('media-illustration'); if (rounded) variants.push('media-rounded'); } // live: every image WITHOUT --ratio is the inline 250px illustration (rounded or not)
+    else if (!rounded) variants.push('media-plain');
+    else if (Math.abs(ratio - 4 / 3) < 0.02) variants.push('media-4-3');
   }
   // live text blocks that do NOT collapse margins: a heading alone in its .richtext before a text .richtext, or a .richtext after a CTA row
   if (cols.some((c) => { const ch = qa(c, ':scope > .col__content > *'); return ch.some((x, i) => i > 0 && x.classList.contains('richtext') && (ch[i - 1].classList.contains('button-wrap') || (ch[i - 1].classList.contains('richtext') && /^H[1-6]$/.test(ch[i - 1].lastElementChild?.tagName || '')))); })) { variants.push('text-gap'); ctx.notes.push('columns text-gap: the live column holds several .richtext blocks (flow-roots) — a heading-only block before text, or text after a CTA row, keeps its 16px margin instead of collapsing'); }
@@ -76,14 +81,17 @@ export function serviceBand(root, ctx, { topLevelCols = false } = {}) {
       if (k.includes('grid-row')) { push(serviceRow(ch, ctx)); continue; }
       if (k.includes('table-block')) { const r = tableBlock(ch, ctx); parts.push(...r.parts); r.blocks.forEach((b) => blocks.add(b)); styles.push('table-band'); continue; }
       if (k.includes('banner-small')) { parts.push(bannerSmall(ch, ctx, { inline: true }).html); blocks.add('banner'); continue; }
+      if (k.includes('module') && !ch.textContent.trim()) { ctx.notes.push(`module ${[...ch.classList].find((c) => c.startsWith('module--')) || 'module'}: empty in the capture (client-rendered widget — dynamics; nothing authored)`); continue; }
       if (k.includes('richtext')) { const sp = [...ch.children].findIndex((c) => c.textContent.trim()); if (sp > 0) { styles.push(`spacer-${sp}`); ctx.notes.push(`richtext: ${sp} leading empty paragraph(s) (the live author spacer <p>&nbsp;</p>) → section style spacer-${sp}; the pipeline drops empty paragraphs`); } }
       const html = richtext(ch, ctx); if (html) parts.push(html); // .richtext / .image / other prose
     }
   };
   walk(root);
+  for (let i = 0; i < parts.length; i++) parts[i] = parts[i].replace(/href="\?([^"]*)"/g, (m, qs) => { ctx.notes.push(`href: document-relative "?${qs}" (the live site search) → fully-qualified on the page URL (D4)`); return `href="${esc((PAGE_URL[ctx.slug] || L.SOURCE_ORIGIN) + '?' + qs)}"`; });
   if (parts.some((p) => /^<h[1-6]>/.test(p)) && !topLevelCols) styles.push('center');
   if (topLevelCols && qa(root, ':scope > .grid-row').some((r) => qa(r, ':scope > .col').length === 1 && gridCols(r))) styles.push('center'); // the single centred heading row
-  return { html: section(parts, { style: styleOf(...styles, bgToken(bandBg(root) || bandBg(q(root, '.cols')))) }), blocks: [...blocks] };
+  const bg = bandBg(root) || bandBg(q(root, '.cols'));
+  return { html: section(parts, { style: styleOf(...styles, bgToken(bg) ?? ({ '#f2f2f9': 'syrin' })[bg] ?? null) }), blocks: [...blocks] };
 }
 
 export default {

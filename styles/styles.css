@@ -557,6 +557,7 @@ main .section.title .default-content-wrapper h1 { margin: 16px 0 8px; text-align
 /* lead-intro — the page lead (live .main > .richtext: 700px centred flow-root; p > span.main-lead 18/24 → 24/32 fjell centred) */
 main .section.lead-intro > div { display: flow-root; max-width: 700px; }
 main .section.lead-intro .default-content-wrapper p { margin: 16px 0 18px; font-size: 18px; line-height: 24px; color: var(--fjell); text-align: center; }
+main .section.lead-intro .default-content-wrapper > :first-child { margin-top: 16px; } /* live .main > .richtext > :first-child (an h1 heading the lead on some verktøy pages) */
 main .section.lead-intro + .section.service.cols { margin-top: 48px; }
 /* numbered steps (live .text-wrapper ol on the verktøy pages): custom counter, no markers, li margin 16 0 0 32, fjell number at -1.8em */
 main .section.service ol { margin: 0 0 16px; padding: 0; list-style: none; text-align: left; counter-reset: list-elements; }
@@ -577,6 +578,15 @@ main .section.image .default-content-wrapper img { border-radius: 30px; }
 main .section.w-600 .default-content-wrapper img { width: 600px; max-width: 100%; }
 main .section.spacer-only-1:empty { display: block; height: 40px; }
 main .section.spacer-only-2:empty { display: block; height: 80px; }
+/* tool siblings: title-h2 (an AEM title module carrying an h2), module-prose (a live module captured as plain richtext — 1280 container,
+   the live .module padding), disclosure (default-content head reabsorbed by the table block) */
+main .section.title-h2 .default-content-wrapper h2 { margin: 16px 0 8px; }
+main .section.module-prose > div { display: flow-root; max-width: 1240px; } /* live .module: 1280 container with a 20px inner padding */
+main .section.module-prose .default-content-wrapper > :first-child { margin-top: 0; }
+main .section.module-prose .default-content-wrapper > :last-child { margin-bottom: 0; }
+main .section.disclosure { margin-top: 48px; }
+main .section.disclosure > div { display: flow-root; }
+@media (width >= 768px) { main .section.title-h2 .default-content-wrapper h2 { margin-bottom: 24px; } }
 /* ===== /utility / tool ===== */
 
 /* ===== market-landing ===== */
@@ -592,4 +602,16 @@ main .section.market-compare .default-content-wrapper p { margin: 16px auto; fon
 @media (width >= 768px) {
   main .section.market-compare .default-content-wrapper h2 { margin-bottom: 24px; font-size: 36px; line-height: 44px; }
 }
+/* market-news: the live rail is a fixed 1248px track (two 620px groups) — card 3 sits 4px closer (live .newsfeed .card:nth-child(3)) */
+@media (width >= 1024px) {
+  main .section.market-news .cards.news .card-list { width: 1248px; max-width: none; margin: 0 auto; justify-content: flex-start; }
+  main .section.market-news .cards.news .card-list li:nth-child(3) { margin-left: 4px; }
+}
 /* ===== /market-landing ===== */
+
+/* ===== category-hub (siblings) ===== */
+/* hub-cta: a standalone CTA row module (live .button-list / .button-wrap at top level): 24px above, pills inline from 768 */
+main .section.hub-cta .default-content-wrapper { margin-top: 24px; }
+main .section.hub-cta .default-content-wrapper p.button-wrapper { margin: 8px 0; }
+@media (width >= 768px) { main .section.hub-cta .default-content-wrapper p.button-wrapper { display: inline-block; margin: 0 16px 0 0; vertical-align: top; } main .section.hub-cta.center .default-content-wrapper p.button-wrapper { margin: 0 8px; } }
+/* ===== /category-hub (siblings) ===== */

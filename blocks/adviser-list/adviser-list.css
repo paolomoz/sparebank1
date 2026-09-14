@@ -1,0 +1,21 @@
+/* adviser-list — lifted from stardust/prototypes/css/om-oss.css (.adviser-list, .adviser*; live presse 1440/360) */
+.adviser-list { padding: 24px 16px 16px; text-align: center; }
+.adviser-list .adviser-list__list { display: flex; flex-wrap: wrap; justify-content: center; max-width: var(--container); margin: 0 auto; }
+.adviser-list .adviser { max-width: 340px; padding: 0 8px 32px; text-align: center; }
+.adviser-list .adviser__image { display: block; width: 180px; height: 180px; margin: 0 auto 10px; border-radius: 100%; overflow: hidden; }
+.adviser-list .adviser__image picture { display: inline; }
+.adviser-list .adviser__image img { display: inline; width: 180px; height: 180px; border-radius: 100%; object-fit: cover; vertical-align: baseline; }
+.adviser-list .adviser__name { margin: 0; font-family: var(--font-medium); font-size: 17px; line-height: 20px; color: var(--fjell); }
+.adviser-list .adviser__name strong { font-family: inherit; }
+.adviser-list .adviser__subtext { margin: 0; font-size: 16px; line-height: 24px; }
+.adviser-list .adviser__phone { font-family: var(--font-medium); }
+.adviser-list .adviser__email a:any-link { color: var(--vann); }
+
+@media (width >= 768px) {
+  .adviser-list .adviser__name { font-size: 18px; line-height: 24px; }
+}
+
+@media (width >= 1024px) {
+  .adviser-list { padding: 40px 16px 16px; }
+  .adviser-list .adviser { width: 25%; max-width: 25%; padding: 0 16px 32px; }
+}

@@ -1,0 +1,195 @@
+{
+ "regime": "published-origin (local EDS emulation :3012, content/nb/bank/privat/kundeservice/verktoy/sperre-kort.html + blocks) vs live capture (stardust/replica/gates/sperrekort-{1440,360}/live.png)",
+ "at": "2026-09-14T20:06:14.685Z",
+ "worker": "W2",
+ "family": "tool",
+ "archetype": "nb-bank-privat-kundeservice-verktoy-sperre-kort-html",
+ "document": "content/nb/bank/privat/kundeservice/verktoy/sperre-kort.html",
+ "encoder": "stardust/scripts/eds/encoders/tool.mjs (title, lead richtext, module wrapper, related-products, button-wrap, image) + utility.mjs (walker, tip)",
+ "blocks": [
+  "bank-choice",
+  "breadcrumbs",
+  "columns (variants cols-10 media-illustration text-gap · media-4-3 — reused + additive)",
+  "callout tip left lg-8 spacer-2 (reused + additive)",
+  "feedback",
+  "header (/nav)",
+  "footer (/footer)"
+ ],
+ "newBlocks": [
+  "(siblings) table disclosure variant on the new table block; calculator currency snapshot"
+ ],
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "iterations": 2,
+ "breakpoints": {
+  "360": {
+   "pixelPct": 1.19,
+   "heightDelta": 0,
+   "chromeHeaderPct": 3.58,
+   "chromeHeaderPctExcludingSkipLink": 0.1,
+   "chromeFooterPct": 1.4,
+   "pass": true,
+   "evidence": "stardust/replica/gates/sperrekort-eds-360/ (pixel-iter2.txt, chrome-header.txt, chrome-header-x115.txt, chrome-footer.txt)"
+  },
+  "1440": {
+   "pixelPct": 0.51,
+   "heightDelta": 0,
+   "chromeHeaderPct": 0.42,
+   "chromeFooterPct": 1.17,
+   "contentDiffRed": 0,
+   "pass": true,
+   "evidence": "stardust/replica/gates/sperrekort-eds-1440/ (pixel-iter2.txt, chrome-header.txt, chrome-footer.txt, content-diff-iter1.txt, content-diff-live.txt)"
+  }
+ },
+ "justified": [
+  {
+   "flag": "360 header crop 3.58% > 2%",
+   "why": "live focused skip link (x<115); 0.10% excluding it",
+   "permanent": true
+  },
+  {
+   "flag": "content-diff 🟡 MISSING BODY Ja / Nei",
+   "why": "icon-only thumbs buttons with aria-labels (live too)",
+   "permanent": true
+  },
+  {
+   "flag": "content-diff 🟠/🟡 EXTRA bank-choice texts",
+   "why": "the prototype renders the bank-choice band outside <main>",
+   "permanent": true
+  },
+  {
+   "flag": "to-top disc at chunk seams",
+   "why": "known permanent residual",
+   "permanent": true
+  }
+ ],
+ "fixesThisRound": [
+  "tool.mjs: title → default content h1 (section title, 16/8 → 16/24, flow-root), page lead → lead-intro (700px, 24/32 fjell centred), spacer-only-N empty sections",
+  "styles.css service: ol counter numbering (no markers, li 16 0 0 32, fjell number −1.8em), lead-intro → cols 48/72, title-h2, module-prose, disclosure",
+  "columns.css additive: media-illustration (SVG 250px inline), media-4-3, text-gap (24/40 heading→text, 16 after a CTA row)",
+  "callout.css additive: left, lg-8/lg-10 box width, small, spacer-1/2 (trailing <p>&nbsp;</p> in the live box — the 80px Δh of iter1)",
+  "siblings: table disclosure variant (progressive-disclosure), calculator currency snapshot (data/calculator/valutakalkulator.html + blocks/calculator/currency.css), module-prose for client-chromed modules, service related-products → cards small, ?search hrefs fully-qualified"
+ ],
+ "productRegression": {
+  "document": "byte-identical after re-convert (final run after every shared-block change)",
+  "pixelPct1440": 0.65,
+  "bar": 0.7,
+  "pass": true
+ },
+ "siblings": {
+  "converted": 5,
+  "gaps": 0,
+  "lint": {
+   "red": 0,
+   "yellowMax": 4
+  },
+  "eyeball": {
+   "slug": "nb-bank-privat-forsikring-meld-skade-html",
+   "width": 1440,
+   "contentDiffRed": 0,
+   "vsPrototype": {
+    "pixelPct": 17.58,
+    "heightDelta": -467,
+    "bands": {
+     "0-500": 1.2,
+     "500-1000": 0.4,
+     "1000-1500": 3.2,
+     "1500-2000": 6.7,
+     "2000-2500": 6.3,
+     "2500-3000": 86.7
+    },
+    "explained": [
+     "y 2500–3078 (86.7%) + Δh −467: the sibling PROTOTYPE footer is ~467px shorter than the gated tool footer (its replica footer lacks the contact channel row); the EDS footer equals the gated sperrekort footer (feedback → page end = 1174px on both)",
+     "y 1500–2500 (6–7%): dame-hjemmekontor.svg (45 KB > 40 KB) is authored as its PNG rasterisation, which exists only on DA media after rasterise-svg.mjs — the emulation shows a broken image box (288×192 vs the live 250×237)",
+     "every main section aligns to the pixel after the round: lead-intro 216/104, cards 362, module-prose 152, cols 370/500/360, feedback at +72 (outline probes in the journal)"
+    ]
+   },
+   "evidence": "stardust/replica/gates/tool-eds-siblings/ (meld-skade-eds-1440.png, meld-skade-proto-1440.png, meld-skade-diff.png, meld-skade-pixel.txt, meld-skade-content-diff.txt; iban-eds-1440.png = table disclosure render)"
+  },
+  "list": [
+   {
+    "slug": "nb-bank-privat-forsikring-meld-skade-html",
+    "daPath": "/nb/bank/privat/forsikring/meld-skade",
+    "blocks": [
+     "breadcrumbs",
+     "cards",
+     "columns",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 3
+    }
+   },
+   {
+    "slug": "nb-bank-privat-kundeservice-verktoy-iban-og-swift-html",
+    "daPath": "/nb/bank/privat/kundeservice/verktoy/iban-og-swift",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "table",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 4
+    }
+   },
+   {
+    "slug": "nb-bank-privat-kundeservice-verktoy-klager-html",
+    "daPath": "/nb/bank/privat/kundeservice/verktoy/klager",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 2
+    }
+   },
+   {
+    "slug": "nb-bank-privat-kundeservice-verktoy-sparekalkulator-html",
+    "daPath": "/nb/bank/privat/kundeservice/verktoy/sparekalkulator",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "cards",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 4
+    }
+   },
+   {
+    "slug": "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html",
+    "daPath": "/nb/bank/privat/kundeservice/verktoy/valutakalkulator",
+    "blocks": [
+     "bank-choice",
+     "breadcrumbs",
+     "columns",
+     "calculator",
+     "accordion",
+     "feedback"
+    ],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 4
+    }
+   }
+  ]
+ },
+ "requests": [
+  "convert.mjs encoder resolution picks `module` before `module--<kind>`",
+  "core relatedTopics reads .newsfeed cards only (0 rows on service pages)",
+  "dynamics: currency converter snapshot (rates frozen), savings calculator + prisliste bank chooser empty in capture"
+ ]
+}

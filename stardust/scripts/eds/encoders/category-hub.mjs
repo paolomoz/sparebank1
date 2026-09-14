@@ -23,7 +23,15 @@ export const usesWalker = (ctx) => WALKER_FAMILIES.has(familyOf(ctx));
 /** AEM-internal resource paths (/content/sites/sb1/<path>) ARE the public <path>: normalised before lib.href resolves roster vs bounce. */
 const SITES = /^(?:https?:\/\/www\.sparebank1\.no)?\/content\/sites\/sb1\//;
 export const href = (h = '') => L.href(h.replace(SITES, '/'));
-export function normaliseHrefs(root) { for (const a of qa(root, 'a[href]')) { const h = a.getAttribute('href') || ''; if (SITES.test(h)) a.setAttribute('href', h.replace(SITES, 'https://www.sparebank1.no/')); } return root; }
+export function normaliseHrefs(root, ctx) {
+  for (const a of qa(root, 'a[href]')) {
+    const h = a.getAttribute('href') || '';
+    if (SITES.test(h)) { a.setAttribute('href', h.replace(SITES, 'https://www.sparebank1.no/')); continue; }
+    // live authoring placeholders ("Legg inn link til …", "${links.x}") are not URLs: authored as "#" (lint D4), recorded
+    if (h && !/^(https?:|\/|#|mailto:|tel:|\?)/.test(h)) { ctx?.notes?.push(`href: live placeholder "${h.slice(0, 60)}" on "${a.textContent.trim().slice(0, 40)}" → "#" (authoring error on the live page)`); a.setAttribute('href', '#'); }
+  }
+  return root;
+}
 
 /** Band tint token: the core palette plus the hub tint the core map lacks (syrin-30 = --ffe-farge-syrin-30). */
 const TINT = { '#f2f2f9': 'syrin' };
@@ -68,7 +76,7 @@ export function gridRow(row, ctx) {
   if (cols.length === 1 && /grid-row--cols-/.test(row.getAttribute('class') || '')) return { kind: 'prose', html: richtext(q(cols[0], '.col__content'), ctx) };
   const variants = cols.map((c) => { const k = cls(c); const span = (k.find((x) => /^col-lg-\d+$/.test(x)) || 'col-lg-12').replace('col-', ''); const off = k.find((x) => /^col-lg-offset-\d+$/.test(x)); const first = k.includes('col--first') ? 'first' : null; const align = (k.find((x) => /^col--(middle|center|bottom)$/.test(x)) || '').replace('col--', ''); return [span, off ? off.replace('col-lg-offset-', 'offset-') : null, first, align, illustrationWidth(c)].filter(Boolean).join('-'); });
   const cells = cols.map((c) => {
-    const cc = q(c, ':scope > .col__content'); let html = richtext(normaliseHrefs(cc), ctx);
+    const cc = q(c, ':scope > .col__content'); let html = richtext(normaliseHrefs(cc, ctx), ctx);
     const chat = q(cc, 'form.chat-field');
     if (chat) { html += `<p>${esc(q(chat, 'textarea')?.getAttribute('placeholder') || q(chat, 'label')?.textContent.trim() || '')}</p>`; variants.push('chat'); ctx.notes.push('columns chat: the boost.ai entry field (dynamics #6 interim, no backend) — the trailing paragraph of the last cell is the field label (EW8: the authored <p> moves into the <label>); "Send melding" is fixed control chrome'); }
     return html;
@@ -108,7 +116,7 @@ export function hubBand(root, ctx, { topLevelCols = false } = {}) {
       if (k.includes('grid-row')) { push(gridRow(ch, ctx)); continue; }
       if (k.includes('related-products') || k.includes('related-topics')) { const r = hubRelated(ch, ctx); lastCards = null; parts.push(...r.parts); r.blocks.forEach((b) => blocks.add(b)); styles.push('hub-related'); continue; }
       if (k.includes('banner-small')) { lastCards = null; parts.push(bannerSmall(ch, ctx, { inline: true }).html); blocks.add('banner'); continue; }
-      lastCards = null; const html = richtext(normaliseHrefs(ch), ctx); if (html) parts.push(html); // .richtext / .image / other prose
+      lastCards = null; const html = richtext(normaliseHrefs(ch, ctx), ctx); if (html) parts.push(html); // .richtext / .image / other prose
     }
   };
   walk(root);
@@ -156,13 +164,34 @@ export default {
     const hdr = q(root, '.cobranding__header'); const content = q(root, '.cobranding__content');
     const headRow = `<p>${inline(q(hdr, '.cobranding__heading'), ctx).trim()}</p><p>${esc((q(hdr, '.btn__label')?.textContent || '').replace(/\s+/g, ' ').trim())}</p>`;
     const intro = `${pic(q(content, '.cobranding__logo img'), ctx)}${heading(q(content, ':scope > h2'), ctx).replace(/>\s+/g, '>').replace(/\s+</g, '<')}`;
-    const colRows = qa(content, ':scope > .cobranding__columns > .cobranding__col').map((col) => [richtext(normaliseHrefs(col), ctx)]);
+    const colRows = qa(content, ':scope > .cobranding__columns > .cobranding__col').map((col) => [richtext(normaliseHrefs(col, ctx), ctx)]);
     const rows = [[headRow], ...(intro ? [[intro]] : []), ...colRows];
     return { html: section([block('cobranding', [tint(bandBg(content))].filter(Boolean), rows)], { style: 'gap-48' }), blocks: ['cobranding'] };
   },
 
   // faq: a live pseudo-heading <h2><span class="h4">…</span><br></h2> must keep its visual rank — the stray trailing <br> defeats lib.headingTag (request filed); pre-cleaned here for hub pages
   faq: (root, ctx) => { if (isHub(ctx)) for (const h of qa(root, '.accordion__body h1, .accordion__body h2, .accordion__body h3, .accordion__body h4')) for (const br of qa(h, 'br')) if (!br.nextSibling || !br.nextSibling.textContent.trim()) br.remove(); return CORE.faq(root, ctx); },
+
+  // standalone modules seen on hub siblings — default content (David's Model D1), family-gated
+  title: (root, ctx) => (isHub(ctx) ? { html: section([richtext(root, ctx)]), blocks: [] } : null),
+  'button-wrap': (root, ctx) => (isHub(ctx) ? { html: section([richtext(normaliseHrefs(root, ctx), ctx)], { style: styleOf('hub-cta', /--center/.test(root.getAttribute('class') || '') ? 'center' : null) }), blocks: [] } : null),
+  'button-list': (root, ctx) => (isHub(ctx) ? { html: section([richtext(normaliseHrefs(root, ctx), ctx)], { style: styleOf('hub-cta', /--center/.test(root.getAttribute('class') || '') ? 'center' : null) }), blocks: [] } : null),
+  // a standalone centred illustration with an authored max-width → one-cell columns block carrying the wN cell model (note: lint D1)
+  image: (root, ctx) => {
+    if (!isHub(ctx)) return null;
+    const img = q(root, 'img'); if (!img) return null;
+    const m = /--w:\s*(\d+)px/.exec(root.getAttribute('style') || '');
+    ctx.notes.push(`lint D1 columns (image): a standalone illustration authored at ${m ? m[1] : 'its'}px — the one-cell columns block carries the wN sizing model the default-content image cannot express`);
+    return { html: section([block('columns', [`lg-12${m ? `-w${m[1]}` : ''}`], [[pic(img, ctx)]])], { style: 'gap-48' }), blocks: ['columns'] };
+  },
+  // replica-level unknowns (module--text-and-image, module--progressive-disclosure): the prototype carries their richtext only → default content, noted
+  module: (root, ctx) => {
+    if (!isHub(ctx)) return CORE.module(root, ctx);
+    const kind = (cls(root).find((c) => /^module--/.test(c)) || 'module').replace('module--', '');
+    const html = richtext(normaliseHrefs(root, ctx), ctx); if (!html.trim()) return null;
+    ctx.notes.push(`module ${kind}: the replica prototype carries this module as richtext only (author.mjs unknown) — authored as default content; replica request filed`);
+    return { html: section([html], { style: 'gap-48' }), blocks: [] };
+  },
 
   // tip → core callout; the note records the D1 justification
   tip: (root, ctx) => { const r = CORE.tip(root, ctx); if (r && isHub(ctx)) ctx.notes.push('lint D1 callout: the FFE message box (round icon overlapping a tinted box) is a designed component — heading/text/CTA stay authored prose in its one cell'); return r; },
@@ -172,6 +201,6 @@ export default {
 
   // band / cols: the hub walker only where the core encoder mis-encodes (document order, nested bands, related icon lists, cols-N grids, syrin tint)
   // + the hub module rhythm: live category-hub .main > .band/.cols carry margin-top 48/72; kundeservice-hub bands sit flush (its top band opens the page), its cols carry it
-  band: (root, ctx) => { const r = usesWalker(ctx) && needsHubBand(root) ? hubBand(root, ctx) : CORE.band(root, ctx); return familyOf(ctx) === 'category-hub' ? withStyle(r, 'gap-48') : r; },
-  cols: (root, ctx) => { const r = usesWalker(ctx) && needsHubBand(root) ? hubBand(root, ctx, { topLevelCols: true }) : CORE.cols(root, ctx); return isHub(ctx) ? withStyle(r, 'gap-48') : r; },
+  band: (root, ctx) => { if (usesWalker(ctx)) normaliseHrefs(root, ctx); const r = usesWalker(ctx) && needsHubBand(root) ? hubBand(root, ctx) : CORE.band(root, ctx); return familyOf(ctx) === 'category-hub' ? withStyle(r, 'gap-48') : r; },
+  cols: (root, ctx) => { if (usesWalker(ctx)) normaliseHrefs(root, ctx); const r = usesWalker(ctx) && needsHubBand(root) ? hubBand(root, ctx, { topLevelCols: true }) : CORE.cols(root, ctx); return isHub(ctx) ? withStyle(r, 'gap-48') : r; },
 };

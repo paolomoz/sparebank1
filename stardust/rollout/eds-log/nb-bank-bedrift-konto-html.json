@@ -24,7 +24,7 @@
    "blocks": []
   },
   {
-   "module": "button-list button-list--left",
+   "module": "button-list",
    "blocks": []
   },
   {
@@ -76,11 +76,8 @@
   "cards nav: 7 visual-nav modules (0 photo, 7 icon) folded into one block — one row per card",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module button-list.button-list--left emitted as prose",
-  "no encoder for module button-list button-list--left"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T19:43:47.736Z"
+ "writtenAt": "2026-09-14T19:55:17.832Z"
 }

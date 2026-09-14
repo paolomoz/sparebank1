@@ -50,11 +50,10 @@
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-familieliv.svg is 61914 bytes of SVG (> 40000) — authored as DA media tips-og-rad-familieliv.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-toffe-tider.svg is 63833 bytes of SVG (> 40000) — authored as DA media tips-og-rad-toffe-tider.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-ung.svg is 128311 bytes of SVG (> 40000) — authored as DA media tips-og-rad-ung.png (rasterised)",
+  "module text-and-image: the replica prototype carries this module as richtext only (author.mjs unknown) — authored as default content; replica request filed",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module module.module--text-and-image emitted as prose"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-hverdagen.svg",
@@ -63,5 +62,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-toffe-tider.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-ung.svg"
  ],
- "writtenAt": "2026-09-14T19:43:47.852Z"
+ "writtenAt": "2026-09-14T19:55:17.966Z"
 }

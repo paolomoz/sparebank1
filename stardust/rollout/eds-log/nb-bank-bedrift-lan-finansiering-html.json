@@ -83,12 +83,10 @@
   "cards nav: 4 visual-nav modules (0 photo, 4 icon) folded into one block — one row per card",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module title emitted as prose"
- ],
+ "gaps": [],
  "assets": [
   "chevron.svg"
  ],
  "rasterise": [],
- "writtenAt": "2026-09-14T19:43:47.748Z"
+ "writtenAt": "2026-09-14T19:55:17.839Z"
 }

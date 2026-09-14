@@ -66,15 +66,17 @@
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
   "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style",
   "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style",
+  "cards medium: image-less live card--medium (the 200px image row stays, 20px title) — block variant",
+  "href: document-relative \"?search\" (the live site search) → fully-qualified on the page URL (D4)",
+  "module accordion: captured as plain richtext (its client-side chrome is not in the DOM) → default content, section style module-prose",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-hjemmekontor.svg is 45095 bytes of SVG (> 40000) — authored as DA media dame-hjemmekontor.png (rasterised)",
+  "href: document-relative \"?search\" (the live site search) → fully-qualified on the page URL (D4)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module module.module--accordion emitted as prose"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-hjemmekontor.svg"
  ],
- "writtenAt": "2026-09-14T19:45:39.923Z"
+ "writtenAt": "2026-09-14T20:05:24.382Z"
 }

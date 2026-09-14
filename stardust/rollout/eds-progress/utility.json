@@ -1,0 +1,110 @@
+{
+ "regime": "published-origin (local EDS emulation :3012, content/nb/bank/privat/kundeservice/kontakt.html + blocks) vs live capture (stardust/replica/gates/kontakt-{1440,360}/live.png)",
+ "at": "2026-09-14T20:06:14.684Z",
+ "worker": "W2",
+ "family": "utility",
+ "archetype": "nb-bank-privat-kundeservice-kontakt-html",
+ "document": "content/nb/bank/privat/kundeservice/kontakt.html",
+ "encoder": "stardust/scripts/eds/encoders/utility.mjs (family-gated band/cols walker serviceBand/serviceRow, table block, tip variants)",
+ "blocks": [
+  "columns (variants cols-8 lead-all media-plain · cols-9 text-center — reused + additive)",
+  "table (NEW — Block Collection data table; variant contact)",
+  "callout tip (reused)",
+  "header (/nav)",
+  "footer (/footer)"
+ ],
+ "newBlocks": [
+  "table"
+ ],
+ "chrome": {
+  "nav": "/nav",
+  "footer": "/footer"
+ },
+ "iterations": 4,
+ "breakpoints": {
+  "360": {
+   "pixelPct": 3.06,
+   "heightDelta": -1,
+   "chromeHeaderPct": 3.58,
+   "chromeHeaderPctExcludingSkipLink": 0.1,
+   "chromeFooterPct": 1.09,
+   "pass": true,
+   "evidence": "stardust/replica/gates/kontakt-eds-360/ (pixel-iter2.txt, chrome-header.txt, chrome-header-x115.txt, chrome-footer.txt)"
+  },
+  "1440": {
+   "pixelPct": 1.74,
+   "heightDelta": -1,
+   "chromeHeaderPct": 0.42,
+   "chromeFooterPct": 1.93,
+   "contentDiffRed": 0,
+   "pass": true,
+   "evidence": "stardust/replica/gates/kontakt-eds-1440/ (pixel-iter4.txt, chrome-header.txt, chrome-footer.txt, content-diff-iter1.txt, content-diff-live.txt)"
+  }
+ },
+ "justified": [
+  {
+   "flag": "360 header crop 3.58% > 2%",
+   "why": "live focused skip link (x<115); 0.10% excluding it",
+   "permanent": true
+  },
+  {
+   "flag": "360 band y1000–1500 7.8%",
+   "why": "the 688px table in the 328px scroller — glyph antialiasing across 13 rows (replica residual 9.6%, same cause)",
+   "permanent": true
+  },
+  {
+   "flag": "content-diff 🟡 MISSING BODY \"Finn din bank\"",
+   "why": "the live table caption is visually hidden (accessible name only) — not authored; the heading context names the table",
+   "permanent": true
+  },
+  {
+   "flag": "to-top disc at chunk seams",
+   "why": "known permanent residual",
+   "permanent": true
+  }
+ ],
+ "fixesThisRound": [
+  "table block (blocks/table): Block Collection model — the pipeline turns every authored <table> into a block, so a default-content table cannot survive deploy; variant contact = live 65% centred table + mobile scroll-indicator pill",
+  "utility.mjs serviceBand: document-order walker (core band() dropped the .table-block silently and nested the richtext as a section inside the section), cols-N, lead-all, text-center, media-plain, spacer-N",
+  "columns.js additive fill: identical variant tokens (lg-3, lg-3) collapse in the DOM classList → the last token repeats for the missing cells",
+  "columns.css additive: cols-9 grid (+ its live first-paragraph 16px), text-center, media-plain",
+  "styles.css service skins: h3 medium face, heading-row → columns rhythm 24/40, centred heading padded like a grid column (balances onto two lines at 360 like live), table-band (810px richtext, no core wrapper padding), spacer-1/2, callout → cols 48/72"
+ ],
+ "productRegression": {
+  "document": "byte-identical after re-convert (final run after every shared-block change)",
+  "pixelPct1440": 0.65,
+  "bar": 0.7,
+  "pass": true
+ },
+ "siblings": {
+  "converted": 1,
+  "gaps": 0,
+  "lint": {
+   "red": 0,
+   "yellowMax": 1
+  },
+  "eyeball": {
+   "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
+   "vsPrototype": "not a visual reference — the utility replica CSS never styled title/lead/image (prototype h1 + image full-width); EDS follows the gated tool geometry; viewed at 1440",
+   "contentDiffRed": 0,
+   "evidence": "stardust/replica/gates/utility-eds-siblings/"
+  },
+  "list": [
+   {
+    "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
+    "daPath": "/nb/bank/privat/kundeservice/bestill/prisliste",
+    "blocks": [],
+    "gaps": 0,
+    "lint": {
+     "red": 0,
+     "yellow": 1
+    }
+   }
+  ]
+ },
+ "requests": [
+  "core band(): .table-block dropped / .richtext nested / cols-N lost / lead-all, ta-center, image shape lost (mirrored family-gated)",
+  "columns variant model: identical tokens collapse (additive fill applied; positional model proposed)",
+  "authored <p>&nbsp;</p> spacers dropped by the pipeline (spacer-N tokens)"
+ ]
+}

@@ -323,7 +323,7 @@ header .header {
 @media (width >= 1024px) { .header .header__market-strip { display: none; } }
 /* ===== /market-landing ===== */
 /* ===== market-landing (additive, cont.) ===== the block grows by the strip; the strip starts under the 60px live header (wrap is 57) */
-header .header:has(.header__market-strip) { height: auto; }
+header .header:has(.header__market-strip) { height: calc(var(--nav-height) + 52px); } /* the block keeps its height when the wrap goes position:fixed on scroll (live: 60 + 52px strip) */
 .header .header__market-strip { margin-top: calc(var(--nav-height) - 57px); }
 @media (width >= 1024px) { header .header:has(.header__market-strip) { height: var(--nav-height); } }
 /* ===== /market-landing ===== */

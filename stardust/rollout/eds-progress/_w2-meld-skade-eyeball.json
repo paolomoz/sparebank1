@@ -1,0 +1,23 @@
+{
+ "slug": "nb-bank-privat-forsikring-meld-skade-html",
+ "width": 1440,
+ "contentDiffRed": 0,
+ "vsPrototype": {
+  "pixelPct": 17.58,
+  "heightDelta": -467,
+  "bands": {
+   "0-500": 1.2,
+   "500-1000": 0.4,
+   "1000-1500": 3.2,
+   "1500-2000": 6.7,
+   "2000-2500": 6.3,
+   "2500-3000": 86.7
+  },
+  "explained": [
+   "y 2500–3078 (86.7%) + Δh −467: the sibling PROTOTYPE footer is ~467px shorter than the gated tool footer (its replica footer lacks the contact channel row); the EDS footer equals the gated sperrekort footer (feedback → page end = 1174px on both)",
+   "y 1500–2500 (6–7%): dame-hjemmekontor.svg (45 KB > 40 KB) is authored as its PNG rasterisation, which exists only on DA media after rasterise-svg.mjs — the emulation shows a broken image box (288×192 vs the live 250×237)",
+   "every main section aligns to the pixel after the round: lead-intro 216/104, cards 362, module-prose 152, cols 370/500/360, feedback at +72 (outline probes in the journal)"
+  ]
+ },
+ "evidence": "stardust/replica/gates/tool-eds-siblings/ (meld-skade-eds-1440.png, meld-skade-proto-1440.png, meld-skade-diff.png, meld-skade-pixel.txt, meld-skade-content-diff.txt; iban-eds-1440.png = table disclosure render)"
+}

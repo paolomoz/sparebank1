@@ -24,7 +24,7 @@
    "blocks": []
   },
   {
-   "module": "button-list button-list--left",
+   "module": "button-list",
    "blocks": []
   },
   {
@@ -110,13 +110,10 @@
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg is 860616 bytes of SVG (> 40000) — authored as DA media illustrasjon-sporsmal-sand-sirkel-usymmetrisk.png (rasterised)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module button-list.button-list--left emitted as prose",
-  "no encoder for module button-list button-list--left"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/illustrasjon-sporsmal-sand-sirkel-usymmetrisk.svg"
  ],
- "writtenAt": "2026-09-14T19:43:47.756Z"
+ "writtenAt": "2026-09-14T19:55:17.847Z"
 }

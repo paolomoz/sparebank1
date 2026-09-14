@@ -51,15 +51,12 @@
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
-  "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style"
+  "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style",
+  "module step-by-step: captured as plain richtext (its client-side chrome is not in the DOM) → default content, section style module-prose",
+  "module accordion-list-container: captured as plain richtext (its client-side chrome is not in the DOM) → default content, section style module-prose"
  ],
- "gaps": [
-  "module title emitted as prose",
-  "module module.module--step-by-step emitted as prose",
-  "module title emitted as prose",
-  "module module.module--accordion-list-container emitted as prose"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T19:45:40.374Z"
+ "writtenAt": "2026-09-14T19:57:29.576Z"
 }

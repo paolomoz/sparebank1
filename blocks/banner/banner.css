@@ -40,7 +40,7 @@ main .section .banner-wrapper { max-width: var(--container); }
 .banner.columns .banner-small__inner--col > .banner-small__text--wide { padding: 20px 0; }
 .banner.columns .banner-small__heading { margin: 0; font-size: 20px; line-height: 24px; }
 .banner.columns .banner-small__info { margin: 0; }
-.banner.columns .banner-small__bottom { display: flex; flex-direction: column-reverse; align-items: center; justify-content: center; min-height: 0; }
+.banner.columns .banner-small__bottom { display: flex; flex-direction: column-reverse; align-items: center; justify-content: center; }
 .banner.columns .banner-small__bottom p { margin: 8px 0; }
 .banner.columns .banner-small__bottom p.banner-small__bottom-image, .banner.columns .banner-small__bottom-image { margin: 20px 0 0; line-height: 24px; }
 .banner.columns .banner-small__bottom-image:not(:empty) { height: 37px; }

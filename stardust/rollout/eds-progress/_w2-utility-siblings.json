@@ -1,0 +1,17 @@
+[
+ {
+  "slug": "nb-bank-privat-kundeservice-bestill-prisliste-html",
+  "daPath": "/nb/bank/privat/kundeservice/bestill/prisliste",
+  "blocks": [],
+  "gaps": [],
+  "lint": {
+   "red": 0,
+   "yellow": 1
+  },
+  "notes": [
+   "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style",
+   "module accordion-list-container: empty in the capture (client-rendered — dynamics; nothing authored, no gap)",
+   "richtext: 2 empty paragraph(s) only (the live author spacer) → an empty section styled spacer-only-2"
+  ]
+ }
+]

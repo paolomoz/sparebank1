@@ -47,3 +47,36 @@ Request: dispatch family overrides by the page's family — load `encoders/<pg.a
 chain: pass the previously merged handler so a family file can delegate to it instead of to CORE). Until then W1 documents are
 produced with `_w1-convert.mjs`; a `convert.mjs --all` run will regress `content/nb/bank/privat.html`, `privat/lan.html`,
 `privat/kundeservice.html` and their siblings.
+
+### W1 — 10. columns.js `col--media` detection sees the text wrapper, not the cell
+`decorate()` groups every non-CTA node of a cell into one `.col__text` div and THEN tests
+`[...content.children].every((c) => c.querySelector('picture, img') …)` — with a single wrapper child that holds an image anywhere,
+every mixed (image + text) cell becomes `col--media` (3/2 cover-crop, 30px radius, `p { margin: 0 }`). Not visible on the product page
+(no mixed cells); on the hubs the "Snakk med rådgiver" photo columns and the market-landing link-list columns hit it (W1 scopes its
+illustration rules with `:not(.link-list)` / `:has()` guards). Request: run the media test on the cell's original children before
+grouping (or on `.col__text`'s children).
+
+## W2 (faq / utility / tool) — cross-cutting requests, not applied
+
+1. **chrome.mjs — hidden contact text scraped into /footer-\*.** `content/footer-bedrift.html` and `content/footer-2.html` carry
+   `<p>Det oppstod en uventet feil. Vennligst prøv på nytt.</p>` as the contact intro: it is the live footer's hidden error fallback
+   (the replica hid `.contact__text` on faq for the same reason; live faq footer crop shows no intro text). Skip `display:none`/error
+   paragraphs when generating the contact section. W2 removed the paragraph from footer-bedrift.html by hand (regeneration would reintroduce it).
+2. **convert.mjs metadataBlock — chrome for pages absent from chrome-map.json.** Siblings get `/nav` + `/footer` (privat) regardless of
+   market; a bedrift sibling rendered the privat footer (+56px, wrong intro link). Derive nav/footer from `market` (bedrift → `/nav-bedrift`,
+   `/footer-bedrift`) when the slug is not mapped. Interim: additive fallback in header.js/footer.js on `market` metadata.
+3. **core band() (encoders.mjs)** on non-hub pages: (a) a `.table-block` child is dropped silently (kontakt lost its 13-row table with 0 gaps
+   logged); (b) a `.richtext` child is emitted through `richtextSection` → a nested section-metadata inside the band section; (c) `grid-row--cols-N`
+   is not carried; (d) `.lead-blue` on every paragraph, `p.ta-center`, non-rounded / 4:3 images lose their shape. Mirrored family-gated in
+   `encoders/utility.mjs` (serviceBand / serviceRow) — the hub walker in category-hub.mjs fixes the same class of defects for the hubs.
+4. **columns variant model — identical tokens collapse.** `Columns (lg-3-offset-1-first, lg-3, lg-3)` reaches the DOM as two classes; the third
+   cell falls back to `lg-12`. W2 added an additive fill in columns.js (a short list repeats its last token). A positional model
+   (`c1-lg-3, c2-lg-3, c3-lg-3`) or per-cell metadata would be the canonical fix; W1's hub documents carry the same shape.
+5. **convert.mjs encoder resolution** picks the FIRST class with an encoder: `module` always wins over `module--<kind>`, so a family cannot key
+   an encoder on a specific module kind without wrapping the core `module` fallback. Prefer the most specific class (or `module--*` before `module`).
+6. **relatedTopics/relatedProducts (core)** read `.newsfeed .card` only: a `.card-list--small` related list on a non-hub page yields a `cards news`
+   block with 0 rows and no gap (sparekalkulator, iban). The hub helper `hubRelated` handles it; W2 gates it for the service families.
+7. **Authored empty paragraphs (`<p>&nbsp;</p>`) are author spacers on live** (40px each: kontakt band, sperre-kort message box, prisliste tail);
+   the pipeline drops them. W2 models them as `spacer-N` style tokens / callout variants; a canon-level convention would avoid per-family tokens.
+8. **Dynamics:** the currency converter (valutakalkulator) is shipped as a static snapshot (`calculator currency`, rates frozen at capture); the
+   savings calculator (sparekalkulator `module--base-component`) and the prisliste bank chooser are empty in the capture — nothing authored.

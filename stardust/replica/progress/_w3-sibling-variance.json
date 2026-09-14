@@ -1,0 +1,421 @@
+{
+  "archetype": "https://www.sparebank1.no/nb/bank/privat/lan/boliglan.html",
+  "width": 1440,
+  "tolerance": 2,
+  "probes": {
+    "hero": "main .columns-grid",
+    "pt": ".price-and-terms",
+    "gc": ".guide-carousel",
+    "bio": ".biolist",
+    "usp": ".usp",
+    "faq": ".faq"
+  },
+  "archetypeRaw": {
+    "sections": [],
+    "probes": {
+      "hero": {
+        "sel": "main .columns-grid",
+        "count": 3,
+        "first": {
+          "rect": {
+            "w": 1280,
+            "h": 492
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(2, 10, 10)",
+          "padding": "0px 0px 0px 0px",
+          "font": "sparebank1-regular 16px/24px 400",
+          "borderRadius": "0px",
+          "heading": "h1 sparebank1-title-medium 46px/56px 400 rgb(0, 39, 118)",
+          "image": {
+            "w": 715,
+            "h": 476
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 3,
+        "text": "Boliglån Skal du kjøpe ny bolig? Eller kanskje du drømmer om"
+      },
+      "pt": {
+        "sel": ".price-and-terms",
+        "count": 0
+      },
+      "gc": {
+        "sel": ".guide-carousel",
+        "count": 0
+      },
+      "bio": {
+        "sel": ".biolist",
+        "count": 0
+      },
+      "usp": {
+        "sel": ".usp",
+        "count": 0
+      },
+      "faq": {
+        "sel": ".faq",
+        "count": 1,
+        "first": {
+          "rect": {
+            "w": 768,
+            "h": 716
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(2, 10, 10)",
+          "padding": "0px 8px 0px 8px",
+          "font": "sparebank1-regular 16px/24px 400",
+          "borderRadius": "0px",
+          "heading": "h2 sparebank1-title-medium 36px/44px 400 rgb(0, 39, 118)",
+          "image": {
+            "w": 0,
+            "h": 0
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 1,
+        "text": "Hva lurer andre på? Hvor mye kan jeg få i boliglån? Det er u"
+      }
+    }
+  },
+  "siblings": [
+    {
+      "url": "https://www.sparebank1.no/nb/bank/privat/lan/forbrukslan.html",
+      "findings": [
+        {
+          "kind": "SECTIONS",
+          "msg": "0 vs 1 top-level sections (archetype: -; sibling: parbase.color-fillable) — a different template family or an extra/missing section"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "hero",
+          "msg": "3 → 4 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "hero",
+          "msg": "3 → 4 distinct style families among matches (a second visual family = a variant class)"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "hero",
+          "msg": "rect{h 492 → 476}; image{w 715 → 608, h 476 → 456}"
+        },
+        {
+          "kind": "EXTRA",
+          "probe": "pt",
+          "msg": "\".price-and-terms\" matches 0 on the archetype, 1 on the sibling"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "faq",
+          "msg": "rect{h 716 → 558}; image [object Object] → null"
+        }
+      ],
+      "raw": {
+        "sections": [
+          {
+            "label": "parbase.color-fillable",
+            "h": 572
+          }
+        ],
+        "probes": {
+          "hero": {
+            "sel": "main .columns-grid",
+            "count": 4,
+            "first": {
+              "rect": {
+                "w": 1280,
+                "h": 476
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(2, 10, 10)",
+              "padding": "0px 0px 0px 0px",
+              "font": "sparebank1-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h1 sparebank1-title-medium 46px/56px 400 rgb(0, 39, 118)",
+              "image": {
+                "w": 608,
+                "h": 456
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 4,
+            "text": "Forbrukslån Uforutsette utgifter på rekke og rad? Forbrukslå"
+          },
+          "pt": {
+            "sel": ".price-and-terms",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 427
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(2, 10, 10)",
+              "padding": "0px 0px 0px 0px",
+              "font": "sparebank1-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h2 sparebank1-title-medium 36px/44px 400 rgb(0, 39, 118)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Rente og betingelser på forbrukslån Eff. rente 16,6 % For de"
+          },
+          "gc": {
+            "sel": ".guide-carousel",
+            "count": 0
+          },
+          "bio": {
+            "sel": ".biolist",
+            "count": 0
+          },
+          "usp": {
+            "sel": ".usp",
+            "count": 0
+          },
+          "faq": {
+            "sel": ".faq",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 768,
+                "h": 558
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(2, 10, 10)",
+              "padding": "0px 8px 0px 8px",
+              "font": "sparebank1-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h2 sparebank1-title-medium 36px/44px 400 rgb(0, 39, 118)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Hva lurer andre på om forbrukslån? Hvor raskt utbetaler dere"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.sparebank1.no/nb/bank/privat/daglig-bruk/mobilbank.html",
+      "findings": [
+        {
+          "kind": "SECTIONS",
+          "msg": "0 vs 1 top-level sections (archetype: -; sibling: parbase.color-fillable) — a different template family or an extra/missing section"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "hero",
+          "msg": "3 → 5 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "hero",
+          "msg": "3 → 5 distinct style families among matches (a second visual family = a variant class)"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "hero",
+          "msg": "rect{w 1280 → 1440, h 492 → 543}; image{w 715 → 501, h 476 → 399}"
+        },
+        {
+          "kind": "EXTRA",
+          "probe": "gc",
+          "msg": "\".guide-carousel\" matches 0 on the archetype, 1 on the sibling"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "faq",
+          "msg": "rect{h 716 → 558}; image [object Object] → null"
+        }
+      ],
+      "raw": {
+        "sections": [
+          {
+            "label": "parbase.color-fillable",
+            "h": 514
+          }
+        ],
+        "probes": {
+          "hero": {
+            "sel": "main .columns-grid",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 543
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(2, 10, 10)",
+              "padding": "0px 0px 0px 0px",
+              "font": "sparebank1-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h1 sparebank1-title-medium 46px/56px 400 rgb(0, 39, 118)",
+              "image": {
+                "w": 501,
+                "h": 399
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 5,
+            "text": "Mobilbank Norges beste mobilbank passer for alle, er enkel å"
+          },
+          "pt": {
+            "sel": ".price-and-terms",
+            "count": 0
+          },
+          "gc": {
+            "sel": ".guide-carousel",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 699
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(2, 10, 10)",
+              "padding": "0px 0px 0px 0px",
+              "font": "sparebank1-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h2 sparebank1-title-medium 36px/44px 400 rgb(0, 39, 118)",
+              "image": {
+                "w": 235,
+                "h": 485
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Ta en titt på mobilbanken 1 av 5 Oversikt Sperre kort Min øk"
+          },
+          "bio": {
+            "sel": ".biolist",
+            "count": 0
+          },
+          "usp": {
+            "sel": ".usp",
+            "count": 0
+          },
+          "faq": {
+            "sel": ".faq",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 768,
+                "h": 558
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(2, 10, 10)",
+              "padding": "0px 8px 0px 8px",
+              "font": "sparebank1-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h2 sparebank1-title-medium 36px/44px 400 rgb(0, 39, 118)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Hva lurer andre på? Hvordan logger jeg inn i mobilbanken? De"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.sparebank1.no/nb/bank/om-oss/vare-eksperter.html",
+      "findings": [
+        {
+          "kind": "MISSING",
+          "probe": "hero",
+          "msg": "\"main .columns-grid\" matches 3 on the archetype, 0 on the sibling"
+        },
+        {
+          "kind": "EXTRA",
+          "probe": "bio",
+          "msg": "\".biolist\" matches 0 on the archetype, 1 on the sibling"
+        },
+        {
+          "kind": "MISSING",
+          "probe": "faq",
+          "msg": "\".faq\" matches 1 on the archetype, 0 on the sibling"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": "main .columns-grid",
+            "count": 0
+          },
+          "pt": {
+            "sel": ".price-and-terms",
+            "count": 0
+          },
+          "gc": {
+            "sel": ".guide-carousel",
+            "count": 0
+          },
+          "bio": {
+            "sel": ".biolist",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1280,
+                "h": 892
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(2, 10, 10)",
+              "padding": "0px 0px 0px 0px",
+              "font": "sparebank1-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h3 sparebank1-medium 18px/24px 400 rgb(0, 39, 118)",
+              "image": {
+                "w": 180,
+                "h": 180
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Magne GundersenForbrukerøkonom i SpareBank 1Magne har vært f"
+          },
+          "usp": {
+            "sel": ".usp",
+            "count": 0
+          },
+          "faq": {
+            "sel": ".faq",
+            "count": 0
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "siblings": 3,
+    "varying": 3,
+    "probesVarying": [
+      "SECTIONS",
+      "hero",
+      "pt",
+      "faq",
+      "gc",
+      "bio"
+    ]
+  }
+}

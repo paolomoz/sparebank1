@@ -53,7 +53,7 @@ export default {
     if (cards.some((c) => q(c, '.card__date'))) ctx.notes.push('cards news: a news card carries its publication date as the paragraph after the title (live .card__date)');
     const parts = [richtext(q(root, '.related-topics__title'), ctx), block('cards', ['news'], rows)];
     const btn = q(root, '.button-wrap a.btn'); if (btn) parts.push(L.ctaHtml(btn, ctx));
-    return { html: section(parts, { style: styleOf('related', 'gap-48', tint(bandBg(root))) }), blocks: ['cards'] };
+    return { html: section(parts, { style: styleOf('related', 'market-news', 'gap-48', tint(bandBg(root))) }), blocks: ['cards'] };
   },
 
   // top-level "Sammenlign priser" text: on market landings the h2 renders at h2 size in the medium face (live .main > .richtext h2), 620px column

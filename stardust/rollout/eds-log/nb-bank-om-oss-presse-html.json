@@ -1,0 +1,57 @@
+{
+ "slug": "nb-bank-om-oss-presse-html",
+ "daPath": "/nb/bank/om-oss/presse",
+ "file": "content/nb/bank/om-oss/presse.html",
+ "chrome": {
+  "nav": "/nav-om-oss-2",
+  "footer": "/footer-om-oss"
+ },
+ "modules": [
+  {
+   "module": "campaign",
+   "blocks": [
+    "carousel"
+   ]
+  },
+  {
+   "module": "band",
+   "blocks": [
+    "columns",
+    "adviser-list"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "cols",
+   "blocks": [
+    "columns"
+   ]
+  },
+  {
+   "module": "feedback",
+   "blocks": [
+    "feedback"
+   ]
+  }
+ ],
+ "blocks": [
+  "carousel",
+  "columns",
+  "adviser-list",
+  "feedback"
+ ],
+ "notes": [
+  "lint D11 carousel: the presse split hero is the live .campaign component (7/12 photo + 5/12 text) authored as one slide of `carousel campaign` (D9 — same block as the market-landing hero); `white` = untinted, `lead` = h1 + lead paragraph",
+  "lint D3 adviser-list: one row per contact [portrait][bold name, role, phone, e-post link] — the block reads the first paragraph as the name, a digits-only paragraph as the phone (live .adviser-name / .adviser-subtext / .adviser-phone)",
+  "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
+ ],
+ "gaps": [],
+ "assets": [],
+ "rasterise": [],
+ "writtenAt": "2026-09-14T20:04:47.849Z"
+}

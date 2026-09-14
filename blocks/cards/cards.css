@@ -143,3 +143,12 @@
 /* news date line (market-landing rail): under the title, tag-sized */
 .cards.news .card__date { display: block; max-width: fit-content; margin: 0; padding: 4px 0; font-size: 14px; line-height: 1.4; }
 /* ===== /category-hub / kundeservice-hub ===== */
+
+/* ===== tool (additive variant) =====
+   medium — image-less cards that are live `card--medium` (meld-skade action cards): the 200px image row stays (grid rows image-height + 1fr,
+   the body fills it, content top-aligned), title 20px. Values: stardust/prototypes/css/canon.css .card--medium / .card__body */
+.cards.medium .card--no-image { grid-template-rows: var(--card-image-height) 1fr; align-items: stretch; }
+.cards.medium .card--no-image .card__body { align-items: start; align-content: start; }
+.cards.medium .card--no-image .card__title { font-size: 20px; line-height: 20px; }
+@media (width >= 768px) { .cards.medium .card--no-image .card__title { font-size: 20px; line-height: 24px; } }
+/* ===== /tool ===== */

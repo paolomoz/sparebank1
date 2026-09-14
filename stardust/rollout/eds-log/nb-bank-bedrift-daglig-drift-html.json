@@ -93,10 +93,8 @@
   "cards grid: consecutive same-shaped card rows folded into one block (D9)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module button-wrap.button-wrap--center emitted as prose"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T19:43:47.731Z"
+ "writtenAt": "2026-09-14T19:55:17.821Z"
 }

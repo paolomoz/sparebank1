@@ -76,7 +76,7 @@
 .columns.lead-all .col__text p { display: block; margin: 16px 0 18px; font-size: 18px; line-height: 24px; color: var(--fjell); }
 @media (width >= 768px) { .columns.lead-all .col__text p { margin-bottom: 24px; font-size: 24px; line-height: 32px; text-wrap: pretty; } }
 /* wN cell model: an illustration column — the image keeps its own aspect, no crop/radius, at most N px wide, centred (live img style="max-width:Npx;width:100%") */
-.columns .col--illustration.col--media p { text-align: center; }
+.columns:not(.link-list) .col--illustration.col--media p { text-align: center; }
 .columns .col--illustration.col--media picture { display: block; width: 100%; height: auto; aspect-ratio: auto; border-radius: 0; }
 .columns .col--illustration.col--media img { display: block; width: 100%; max-width: var(--w, 100%); height: auto; margin: 0 auto; border-radius: 0; aspect-ratio: auto; object-fit: contain; }
 /* link-list: the market-landing band columns — an inline illustration (its authored width via wN), a 22px medium heading on a 44px line
@@ -109,8 +109,28 @@
    before text; text after a CTA row). Values: stardust/prototypes/css/tool.css */
 .columns.media-illustration .col--media picture, .columns.media-illustration .col--media img { display: inline; width: 100%; max-width: 250px; border-radius: 0; aspect-ratio: auto; object-fit: fill; vertical-align: baseline; }
 .columns.media-4-3 .col--media picture, .columns.media-4-3 .col--media img { aspect-ratio: 4 / 3; }
+.columns.media-illustration.media-rounded .col--media img { border-radius: 30px; } /* a rounded illustration without --ratio keeps the live 30px radius */
 .columns.text-gap .col__text :is(h1, h2, h3) + p { margin-top: 24px; }
 @media (width >= 768px) { .columns.text-gap .col__text :is(h1, h2, h3) + p { margin-top: 40px; } }
 .columns.text-gap .col__text > :first-child:not(:is(h1, h2, h3)) { margin-top: 16px; }
 .columns.text-gap .col__content > .col__text:first-child > :first-child { margin-top: 0; }
 /* ===== /tool ===== */
+
+/* ===== om-oss (additive variants) =====
+   cols-11 — the live 11-column centred row (1173.33px); lead-2 — the lead paragraph follows an h2 (live h2 + span.lead-blue);
+   subtle — the last paragraph of the text column is the live .subtle-text (14/20, medium via <b>); flush — the text column's first
+   element sits flush (the cols-9 token carries a 16px live quirk from the utility family).
+   baseline — the live illustration <picture> is inline on the text baseline (7px line-box tail under the image; replica inconsistency register);
+   button-gap — live button-list items keep their 8px bottom margin at desktop (canon has it on mobile only). Values: stardust/prototypes/css/om-oss.css */
+.columns.lead-2 .col__text h2 + p { display: block; margin: 16px 0 18px; font-size: 18px; line-height: 24px; color: var(--fjell); }
+.columns.subtle .col__text > p:last-child { font-size: 14px; line-height: 24px; } /* the 14/20 span sits in the paragraph's 24px line boxes (live p = 48px for two lines) */
+.columns.baseline .col--illustration.col--media p { line-height: 24px; }
+.columns.baseline .col--illustration.col--media picture { display: inline; }
+.columns.baseline .col--illustration.col--media img { display: inline; vertical-align: baseline; }
+.columns.cols-9.flush .col__text > :first-child { margin-top: 0; }
+@media (width >= 768px) {
+  .columns.cols-11 .grid-row { grid-template-columns: repeat(11, 1fr); max-width: min(91.6667%, 1173.33px); }
+  .columns.button-gap .button-list p { margin-bottom: 8px; }
+  .columns.lead-2 .col__text h2 + p { margin-bottom: 24px; font-size: 24px; line-height: 32px; text-wrap: pretty; }
+}
+/* ===== /om-oss ===== */

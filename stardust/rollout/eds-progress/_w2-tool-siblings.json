@@ -8,17 +8,18 @@
    "columns",
    "feedback"
   ],
-  "gaps": [
-   "module module.module--accordion emitted as prose"
-  ],
+  "gaps": [],
   "lint": {
-   "red": 2,
+   "red": 0,
    "yellow": 3
   },
   "notes": [
    "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style",
    "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style",
-   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-hjemmekontor.svg is 45095 bytes of SVG (> 40000) — authored as DA media dame-hjemmekontor.png (rasterised)"
+   "href: document-relative \"?search\" (the live site search) → fully-qualified on the page URL (D4)",
+   "module accordion: captured as plain richtext (its client-side chrome is not in the DOM) → default content, section style module-prose",
+   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-hjemmekontor.svg is 45095 bytes of SVG (> 40000) — authored as DA media dame-hjemmekontor.png (rasterised)",
+   "href: document-relative \"?search\" (the live site search) → fully-qualified on the page URL (D4)"
   ]
  },
  {
@@ -27,16 +28,14 @@
   "blocks": [
    "bank-choice",
    "breadcrumbs",
+   "table",
    "cards",
    "feedback"
   ],
-  "gaps": [
-   "module module.module--progressive-disclosure emitted as prose",
-   "module module.module--progressive-disclosure emitted as prose"
-  ],
+  "gaps": [],
   "lint": {
    "red": 0,
-   "yellow": 3
+   "yellow": 4
   },
   "notes": [
    "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style"
@@ -49,18 +48,15 @@
    "bank-choice",
    "breadcrumbs"
   ],
-  "gaps": [
-   "module title emitted as prose",
-   "module module.module--step-by-step emitted as prose",
-   "module title emitted as prose",
-   "module module.module--accordion-list-container emitted as prose"
-  ],
+  "gaps": [],
   "lint": {
    "red": 0,
    "yellow": 2
   },
   "notes": [
-   "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style"
+   "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style",
+   "module step-by-step: captured as plain richtext (its client-side chrome is not in the DOM) → default content, section style module-prose",
+   "module accordion-list-container: captured as plain richtext (its client-side chrome is not in the DOM) → default content, section style module-prose"
   ]
  },
  {
@@ -75,9 +71,11 @@
   "gaps": [],
   "lint": {
    "red": 0,
-   "yellow": 3
+   "yellow": 4
   },
-  "notes": []
+  "notes": [
+   "module module--base-component: empty in the capture (client-rendered widget — dynamics; nothing authored)"
+  ]
  },
  {
   "slug": "nb-bank-privat-kundeservice-verktoy-valutakalkulator-html",
@@ -86,12 +84,11 @@
    "bank-choice",
    "breadcrumbs",
    "columns",
+   "calculator",
    "accordion",
    "feedback"
   ],
-  "gaps": [
-   "module module.module--currency-converter emitted as prose"
-  ],
+  "gaps": [],
   "lint": {
    "red": 0,
    "yellow": 4

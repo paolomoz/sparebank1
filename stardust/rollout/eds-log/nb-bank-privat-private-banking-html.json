@@ -73,7 +73,9 @@
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
   "media: https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/Her_jobber_jeg_ja_usymmetrisk_multeskygge.svg is 625212 bytes of SVG (> 40000) — authored as DA media Her_jobber_jeg_ja_usymmetrisk_multeskygge.png (rasterised)",
-  "cards grid: consecutive same-shaped card rows folded into one block (D9)"
+  "cards grid: consecutive same-shaped card rows folded into one block (D9)",
+  "href: live placeholder \"${links.private-banking.skjema}\" on \"Kontakt meg om Private Banking\" → \"#\" (authoring error on the live page)",
+  "href: live placeholder \"${links.private-banking.skjema}\" on \"Kontakt meg om Private Banking\" → \"#\" (authoring error on the live page)"
  ],
  "gaps": [],
  "assets": [
@@ -82,5 +84,5 @@
  "rasterise": [
   "https://www.sparebank1.no/content/dam/SB1/foto/Nyhetssenter/Forvaltning/Her_jobber_jeg_ja_usymmetrisk_multeskygge.svg"
  ],
- "writtenAt": "2026-09-14T19:43:47.833Z"
+ "writtenAt": "2026-09-14T19:56:05.655Z"
 }

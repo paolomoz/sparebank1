@@ -33,11 +33,15 @@
   },
   {
    "module": "module",
-   "blocks": []
+   "blocks": [
+    "table"
+   ]
   },
   {
    "module": "module",
-   "blocks": []
+   "blocks": [
+    "table"
+   ]
   },
   {
    "module": "band",
@@ -59,6 +63,7 @@
  "blocks": [
   "bank-choice",
   "breadcrumbs",
+  "table",
   "cards",
   "feedback"
  ],
@@ -66,13 +71,12 @@
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
   "lead-intro: the page lead (live p > span.main-lead / .lead-blue — 24/32 fjell centred in a 700px column) is default content typed by the section style",
+  "lint D11 table disclosure: the live progressive-disclosure (toggle button → heading + data table) — the toggle label and heading are default content the block reabsorbs; the table is the Block Collection table (4 columns)",
+  "lint D11 table disclosure: the live progressive-disclosure (toggle button → heading + data table) — the toggle label and heading are default content the block reabsorbs; the table is the Block Collection table (4 columns)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
- "gaps": [
-  "module module.module--progressive-disclosure emitted as prose",
-  "module module.module--progressive-disclosure emitted as prose"
- ],
+ "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T19:45:40.152Z"
+ "writtenAt": "2026-09-14T19:57:29.433Z"
 }
