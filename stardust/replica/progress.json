@@ -1,7 +1,7 @@
 {
  "_provenance": {
   "writtenBy": "stardust:replica (Phase 3–4 ledger)",
-  "writtenAt": "2026-09-14T21:48:05Z",
+  "writtenAt": "2026-09-15T09:05:23Z",
   "againstInput": "https://www.sparebank1.no/nb/bank/ — 100-page roster, 13 archetype families",
   "readArtifacts": [
    "stardust/current/_page-types.json",
@@ -1845,6 +1845,46 @@
     "notes": [
      "related-products list had been silently dropped (0-row core encoder) — fixed in the hub band walker before this gate"
     ]
+   },
+   "siblingsPublished": {
+    "at": "2026-09-15T09:05:23Z",
+    "after": "W6 fix pass (stardust/rollout/HUB-SIBLINGS-DEFECTS.md)",
+    "ledger": "stardust/rollout/eds-progress/category-hub-siblings.json",
+    "results": {
+     "sparing": {
+      "1440": "3.96% Δ4",
+      "360": "13.44% Δ40"
+     },
+     "daglig-bruk": {
+      "1440": "0.18% Δ0",
+      "360": "9.48% Δ−32"
+     },
+     "pensjon": {
+      "1440": "8.91% Δ14 (56px live blank <p> spacer)",
+      "360": "22.33% Δ−8"
+     },
+     "forsikring": {
+      "1440": "8.26% Δ−29",
+      "360": "29.83% Δ−276 (two-tone banner + featured cards mobile metrics — open)"
+     },
+     "eiendom": {
+      "1440": "0.20% Δ0",
+      "360": "7.60% Δ−8"
+     },
+     "tips-og-rad": {
+      "1440": "4.83% Δ−7",
+      "360": "10.69% Δ8"
+     },
+     "lofavor": {
+      "1440": "3.27% Δ1",
+      "360": "12.91% Δ16"
+     },
+     "lan (archetype regression)": {
+      "1440": "0.41% Δ0"
+     }
+    },
+    "chrome": "header 99.58% (1440) / skip-link artefact (360); footers 98.07–99.59%",
+    "verdict": "desktop within the bar on all seven (forsikring/pensjon Δh outside 8 recorded); mobile open on forsikring and pensjon, borderline on sparing/lofavor/tips — mobile pass W7"
    }
   },
   "kundeservice-hub": {
