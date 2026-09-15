@@ -407,3 +407,25 @@
   .cards.nav.big .card--medium .card__title { font-family: var(--font-heading); font-size: 36px; line-height: 44px; }
 }
 /* ===== /category-hub siblings ===== */
+
+/* ===== category-hub (W7 mobile) ===== */
+.cards.boxed .card__media img { object-position: 50% 50%; } /* live: the 280×150 SVG keeps xMidYMid meet inside the 200px img — content centred (ink 26px down), not the generic photo top-anchor */
+.cards.boxed .card__expand--inline { width: auto; gap: 8px; } /* live: the inline expander is centred in its row at every width (1440: x195 in a 240 box; 360: x135 in 280) — .card__expand's 100% leaked onto it; live button 89 = label 49 + 8 + icon 16 + 2×8 */
+
+@media (width <= 767px) {
+  .cards.grid.boxed .card-list li { padding: 0 8px 16px; } /* live 360: the white box is 312 in the 328 column (x24) */
+  .cards.boxed.subtle-text .card__text:not(:has(a)) { line-height: 24px; } /* 14px glyphs on the paragraph's 24px strut: 2 lines = 48 (live 962 → 1010) */
+  .cards.boxed.subtle-text .card__text:not(:has(a))::after { display: none; } /* the 4px slack modelled the desktop 36px title line, not a mobile metric */
+  .cards.boxed .card__expand { height: auto; } .cards.boxed:not(.inline-expand) .card__expander { margin-top: 16px; } /* live: the last link keeps its 16px before the secondary pill (tips-og-rad boxes) */ /* live 360: the secondary expander pill grows with a wrapping label (tips-og-rad "Flere tips og råd om hverdagen" 68px) */
+  .cards.grid.boxed .card { height: auto; margin-bottom: 0; } /* height:100% resolved against a li that already holds the card's 16px margin: the flex content absorbed it (box 403 vs live 387); the li padding is the 16px gap */
+  .cards.static.featured.hub .card-list li { padding: 8px; margin: 0; } /* live 360 div.card: 8px all round, cards touch (pitch 391) */
+  .cards.featured.hub.photo .card__title, .cards.featured.hub .card--no-image .card__title { line-height: 24px; } /* live h3 20/24 at 360 on the photo cards (forsikring, lofavor) and the text cards (lofavor); pensjon's illustration cards are the live h2 > span.h3 (28px line) */
+  .cards.illustrated .card__title { line-height: 24px; } .cards.illustrated .card__text { margin-top: 4px; } /* live 360 illustrated cards (lofavor "Flere medlemsfordeler"): title 24, 4 to the text → card 310 */
+  .cards.plain .card, .cards.illustrated .card { height: auto; } /* live 360 cards are content-sized (lofavor text 110–112, illustrated 310): height:100% in the grid li absorbs the card's own 16px margin */
+  .cards.static.hub .card-list, .cards.static.featured.hub .card-list { gap: 0; } /* live 360: cards touch (pitch = card + 16) */
+  .cards.static.hub .card-list li { padding: 8px; margin: 0; } /* live div.card 8px all round (Tips og råd: card x24 w312, pitch 282) */
+  .cards.small .card { grid-template-rows: minmax(86px, auto); } .cards.small .card--small .card__media { margin-top: 0; } /* the 1px media margin would grow the auto row (lån: 12 cards × 1px) */ /* live 360 icon cards grow with a 3-line title (pensjon "Se også": 104 vs 88) */
+  .cards.nav .card--small { height: auto; align-items: flex-start; } .cards.nav li:has(.card--small) + li:has(.card--small) { margin-top: 24px; } /* live 360 visual-nav text cards are content-sized (1-line text 114, 2-line 137) with 24 between them: lån pitches 139/162/162, sparing 162 — W1's fixed 114 + 48 matched only the 2-line pitch */
+  .cards.nav .card--small .card__body { grid-template-columns: 1fr; } .cards.nav .card--small .card__arrow { position: absolute; top: 0; right: -1px; } .cards.nav .card--small .card__text { text-wrap: pretty; } /* live: the paragraph spans the whole 285px body (x37–313), the chevron sits on the title row (glyph edge x313); live wraps avoid orphans ("…godt liv / som pensjonist") */ /* live 360 visual-nav text cards: the paragraph spans the whole 285px body (x37–313), the chevron sits on the title row; live wraps avoid orphans ("…godt liv / som pensjonist") */
+}
+/* ===== /category-hub (W7 mobile) ===== */

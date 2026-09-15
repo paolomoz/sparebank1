@@ -1,0 +1,216 @@
+{
+ "_provenance": {
+  "writtenBy": "W7 (stardust:rollout EDS worker — category-hub siblings, 360 fidelity pass)",
+  "writtenAt": "2026-09-15T14:10:00Z",
+  "emulation": "stardust/scripts/eds/serve.mjs :3017 vs cached live captures stardust/replica/gates/<short>-360/live.png"
+ },
+ "family": "category-hub",
+ "scope": "7 defect pages of HUB-SIBLINGS-DEFECTS.md at 360; 1440 must not move",
+ "passBar": "pixel ≤ 10 % with every band ≥ 15 % explained; |Δh| ≤ 8 except the recorded blank-spacer class; footer crop ≥ 98 %",
+ "method": "live 360 PNG ink-row profile (stardust/scripts/replica/_w7-rows.py) + drift trace (_w7-drift.py) vs the emulation stitched the same way; W6 live DOM dumps (/tmp/w6/dump-*-360.txt); prototypes not trusted at 360",
+ "pages": {
+  "forsikring": {
+   "daPath": "/nb/bank/privat/forsikring",
+   "published_before": {
+    "360": {
+     "pixelPct": 29.83,
+     "heightDelta": -276
+    },
+    "1440": {
+     "pixelPct": 8.26,
+     "heightDelta": -29
+    }
+   },
+   "emulation": {
+    "360": {
+     "pixelPct": 5.3,
+     "heightDelta": 4,
+     "hotBands": [
+      "8000–8500 18.1 % — Tips og råd photo cards (live .thumb.768 cover crops; geometry ±1px)"
+     ],
+     "evidence": "stardust/replica/gates/forsikring-w7-360/ (pixel-iter11)"
+    },
+    "1440": {
+     "pixelPct": 8.37,
+     "heightDelta": -29,
+     "note": "W6 emulation 8.23 %; same hot bands; +0.14 in the boxed-cards band: boxes sit 19px low at 1440 (W6 residual), the corrected centred illustration no longer cancels it",
+     "evidence": "stardust/replica/gates/forsikring-w7-1440/"
+    }
+   },
+   "published_after": null
+  },
+  "pensjon": {
+   "daPath": "/nb/bank/privat/pensjon",
+   "published_before": {
+    "360": {
+     "pixelPct": 22.33,
+     "heightDelta": -8
+    },
+    "1440": {
+     "pixelPct": 8.91,
+     "heightDelta": 14
+    }
+   },
+   "emulation": {
+    "360": {
+     "pixelPct": 8.96,
+     "heightDelta": 61,
+     "hotBands": [
+      "6500–7000 17.5 % — photo+caption block (live 16:10 thumb) and question-mark illustration",
+      "8500–9500 28.8/30.7 % — news band shifted by the 56px live spacer",
+      "10000–11000 15.4/22.6 % — footer region shifted by the same 56"
+     ],
+     "evidence": "stardust/replica/gates/pensjon-w7-360/ (pixel-iter8)",
+     "note": "56 of the 61 = live blank <p></p> spacer in the \"Flere saker om pensjon\" band (recorded class); 5 residual"
+    }
+   },
+   "published_after": null
+  },
+  "sparing": {
+   "daPath": "/nb/bank/privat/sparing",
+   "published_before": {
+    "360": {
+     "pixelPct": 13.44,
+     "heightDelta": 40
+    }
+   },
+   "emulation": {
+    "360": {
+     "pixelPct": 2.61,
+     "heightDelta": 0,
+     "hotBands": [
+      "4500–5000 16.3 % — savings-calculator snapshot footnote shifted 24 (panel spacing inside the W6 shadow-root snapshot) + news photo crop"
+     ],
+     "evidence": "stardust/replica/gates/sparing-w7-360/ (pixel-iter6)"
+    }
+   },
+   "published_after": null
+  },
+  "lofavor": {
+   "daPath": "/nb/bank/privat/lofavor",
+   "published_before": {
+    "360": {
+     "pixelPct": 12.91,
+     "heightDelta": 16
+    }
+   },
+   "emulation": {
+    "360": {
+     "pixelPct": 8.38,
+     "heightDelta": 2,
+     "hotBands": [
+      "3500–5500 17–22 % — the five featured photo cards (live .thumb.768 cover crops) with a −5…−9px drift"
+     ],
+     "evidence": "stardust/replica/gates/lofavor-w7-360/ (pixel-iter5)"
+    }
+   },
+   "published_after": null
+  },
+  "tips-og-rad": {
+   "daPath": "/nb/bank/privat/tips-og-rad",
+   "published_before": {
+    "360": {
+     "pixelPct": 10.69,
+     "heightDelta": 8
+    }
+   },
+   "emulation": {
+    "360": {
+     "pixelPct": 1.09,
+     "heightDelta": 0,
+     "hotBands": [],
+     "evidence": "stardust/replica/gates/tips-og-rad-w7-360/ (pixel-iter5)"
+    },
+    "1440": {
+     "pixelPct": 4.76,
+     "heightDelta": -7,
+     "hotBands": [],
+     "evidence": "stardust/replica/gates/tips-og-rad-w7-1440/",
+     "note": "identical to W6 (iter7) — the only other page whose blocks the two general cards.css rules touch"
+    }
+   },
+   "published_after": null
+  },
+  "daglig-bruk": {
+   "daPath": "/nb/bank/privat/daglig-bruk",
+   "published_before": {
+    "360": {
+     "pixelPct": 9.48,
+     "heightDelta": -32
+    }
+   },
+   "emulation": {
+    "360": {
+     "pixelPct": 4.1,
+     "heightDelta": 0,
+     "hotBands": [],
+     "evidence": "stardust/replica/gates/daglig-bruk-w7-360/ (pixel-iter2)"
+    }
+   },
+   "published_after": null
+  },
+  "eiendom": {
+   "daPath": "/nb/bank/privat/eiendom",
+   "published_before": {
+    "360": {
+     "pixelPct": 7.6,
+     "heightDelta": -8
+    }
+   },
+   "emulation": {
+    "360": {
+     "pixelPct": 5.12,
+     "heightDelta": 0,
+     "hotBands": [
+      "2000–2500 19.0 % — news-card photo cover crop"
+     ],
+     "evidence": "stardust/replica/gates/eiendom-w7-360/ (pixel-iter2)"
+    }
+   },
+   "published_after": null
+  }
+ },
+ "archetypeRegression": {
+  "lan360": {
+   "w1Emulation": {
+    "pixelPct": 2.09,
+    "heightDelta": 0,
+    "evidence": "stardust/replica/gates/lan-eds-360/pixel-iter2.txt"
+   },
+   "w7Emulation": {
+    "pixelPct": 1.8,
+    "heightDelta": 0,
+    "evidence": "stardust/replica/gates/lan-w7-360/pixel-iter4.txt",
+    "note": "cards nav text-card model and cards small fixes are shared with the archetype: 2.09 → 1.80 %, Δh 0"
+   }
+  },
+  "lan1440": "not re-run: every W7 rule is @media (width <= 767px) except the two .cards.boxed fixes, and lån has no boxed cards",
+  "boliglan": "document untouched (no conversion in this pass); blocks it uses carry only mobile-scoped W7 rules"
+ },
+ "changedFiles": [
+  "styles/styles.css (appended '===== category-hub (W7 mobile) =====' block)",
+  "blocks/cards/cards.css (W7 block: two general fixes + mobile rules)",
+  "blocks/banner/banner.css",
+  "blocks/accordion/accordion.css",
+  "blocks/columns/columns.css"
+ ],
+ "generalRules": [
+  "cards.css: .cards.boxed .card__expand--inline { width:auto; gap:8px } (live centres the inline expander at 1440 too)",
+  "cards.css: .cards.boxed .card__media img { object-position: 50% 50% } (SVG xMidYMid meet inside the 200px img at every width)"
+ ],
+ "documentsChanged": [],
+ "encoderChanged": false,
+ "liveHits": 0,
+ "deploy": "none needed (CSS only; content/ diff empty)",
+ "pushRequest": "stardust/rollout/W7-PUSH-REQUEST (written 2026-09-15; published gates pending the push)",
+ "residuals": [
+  "forsikring 360: Tips og råd photo cover crops (18 % band); 1440 +0.14 % vs W6 (boxes 19px low at 1440 — W6 band residual — no longer cancelled by the top-anchored illustration)",
+  "pensjon 360: live blank <p></p> spacer 56px (DA drops it); feedback question left-aligned on live (x21) vs centred (x30); calculator snapshot ±2",
+  "sparing 360: savings-calculator snapshot (shadow root, data/calculator/sparing-360.html) 24px shorter than live below the results panel — request W7 #11; calculator default \"Moderat\" (live) vs \"Ingen\" (snapshot)",
+  "lofavor 360: photo cards cover crops; −1px per photo card drift (title 24 vs live 24 + rounding); live capture shows no breadcrumb row while the document has one (no height effect)",
+  "tips-og-rad 360: rasterised SVG canvases smaller ink than the live SVGs (~5px per box) — request W7 #12",
+  "daglig-bruk / eiendom 360: news-card photo cover crops",
+  "to-top disc at chunk seams (~0.3 %)"
+ ],
+ "publishedGates": "PENDING — run `node stardust/scripts/eds/_pm-pubgate.mjs <short> <da-path>` per page after the push; record here under pages.<page>.published_after"
+}

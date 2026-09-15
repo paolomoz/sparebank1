@@ -1040,3 +1040,54 @@ main .section.intro.lead-850 > div { max-width: 850px; }
   main .section.intro.lead-850 .default-content-wrapper h1 + p { max-width: 850px; margin-left: auto; margin-right: auto; }
 }
 /* ===== /category-hub (W6 siblings) ===== */
+
+/* ===== category-hub (W7 mobile) =====
+   360 metrics of the hub sibling modules, lifted from the live 360 captures (ink-row profile of stardust/replica/gates/<short>-360/live.png) and the
+   W6 live DOM dumps (2026-09-15). Additive, mobile-only: the 1440 skins above are untouched. */
+@media (width <= 767px) {
+  main .section.hub-cta .default-content-wrapper { margin-top: 0; } /* live button-list at 360 sits 20px under the lead: the lead's own 18px margin, no module margin (forsikring 278 → 298) */
+  main .section.hub-cta .default-content-wrapper p.button-wrapper { margin: 0 0 8px; } /* live button-wrapper 0/8: pills at 298 and 350 */
+  main .section.hub-cta .default-content-wrapper a.button { display: flex; width: 100%; } /* live ffe-button stretches to the 320px column */
+  main .section.hub-note .default-content-wrapper p { margin: 24px 0 0; } /* live: 8 (button-wrapper) + 16 (p) uncollapsed = 24 under the last pill */
+  main .section.hub-note.subtle .default-content-wrapper p { line-height: 24px; } /* the 14/20 span keeps the paragraph's 24px strut: 2 lines = 48 (live 419 → 467) */
+  main .section.hub-note { padding-bottom: 16px; } /* the note's 16px does not collapse into the next band's 48 (live sand edge 64 below the note) */
+  main .section.band.hub-center .default-content-wrapper h2 + p { max-width: 240px; margin: 8px auto 18px; font-size: 16px; line-height: 24px; }
+  main .section.cols.hub-center .default-content-wrapper h2 + p { margin: 8px auto 18px; font-size: 17px; line-height: 24px; } /* pensjon "Gode råd" sub-lead: live span.sub-lead 17/24 across the 328 column (x30–329) */
+  main .section.hub-center .default-content-wrapper h2 { text-align: center; } /* live centred heading row (pensjon "Gode råd om pensjon" x63–296) */
+  main .section.prose-450 .default-content-wrapper > * { max-width: 316px; margin-left: auto; margin-right: auto; } /* live 360 prose column ≈316: sparing widget intro line x24–336 (312) fits, pensjon "Skal du starte utbetaling av din pensjon?" (318) wraps */
+  main .section.hub-widget.prose-450 .default-content-wrapper { padding-bottom: 0; } main .section.hub-widget.prose-450 .default-content-wrapper p { text-align: center; } /* live: intro paragraph → widget 42 (the 16px paragraph margin only) */ /* live centred widget intro (sparing "Planlegg sparingen din") */
+  main .section.related:has(> .cards-wrapper > .cards.news) .default-content-wrapper h2, main .section.hub-news .default-content-wrapper h2 { margin-bottom: 16px; } /* live 360 news rails: heading box → first card 17 (pensjon 8916 → 8933, sparing 4772 → 4789) */
+  main .section.related.hub-flush { margin-top: 24px; } /* live 360: a white news rail after a tinted band starts 48 under the edge (sparing h2 at +50), not flush */
+  main .section.band.hub-nested > div:first-child { padding-top: 16px; } main .section.band.hub-nested > div:last-child { padding-bottom: 16px; } /* live 360 nested wrap: 16 top/bottom, 24 sides (lofavor heading 63 under the band edge and "Våre beste / boliglånsrenter" wrapping in the 248px column; cards x40 = 16 + 24) */
+  main .section.hub-nested .cards.grid .card-list li { padding-left: 0; padding-right: 0; } /* the nested column is the card (lofavor 280, tips boxes 280) */
+  main .section.hub-h1 .default-content-wrapper { padding-bottom: 0; } main .section.hub-h1 .default-content-wrapper h1 { margin-bottom: 16px; } main .section.hub-open + .section.hub-close.hub-nested > div:first-child { padding-top: 0; } /* live tips-og-rad: title box → first box 17 (the nested chunk continues the open wrap) */
+  main .section.cols.hub-center .default-content-wrapper { padding-bottom: 16px; } /* live: sub-lead → cards 34 (18 + 16) like the band variant (pensjon "Gode råd") */
+  main .section.hub-widget .col__text h5 { line-height: 24px; } /* live h5 17px on a 24 line inside the widget intro (pensjon "Er dette nok for deg?" ink 3182) */
+  main .section.hub-news + .section.prose-450 { margin-top: 0; } /* live 360: news card bottom → prose paragraph 94 (li 8 + rail 24 + band 48 + paragraph 16 − 2) */
+  main .section h1, main .section h2 { text-wrap: balance; } /* live 360 h1/h2 wrap balanced: lofavor "Er du medlem i / et LO-forbund?" */ /* live 360 h2s wrap balanced (forsikring ×3, pensjon "Sjekk pensjonen din…" 246/261/270) */ /* live 360: a plain 16/24 paragraph wrapping "…kjøp det / du trenger." (column ≤ 242), ~34 to the first box */
+  main .section.intro.hub-title-lead { margin-top: 48px; } /* live 360: bank-choice → title module 48 (pensjon h1 box 579, band 530) */
+  main .section.intro.hub-title-lead .default-content-wrapper h1 + p { max-width: none; } /* live main-lead spans the 320 column at 360 (pensjon lines x22–338) */
+  main .section.hub-static:has(> .cards-wrapper > .cards.static) { padding-left: 16px; padding-right: 16px; padding-bottom: 32px; } /* live 360 static-cards: list x16 w328, 32 under the last card */
+  main .section.hub-static .default-content-wrapper h2 { text-align: center; text-wrap: balance; } /* live 360: "Hvilke forsikringer" / "passer for meg?" (balanced, centred) */
+  main .section.hub-static .default-content-wrapper p { font-size: 17px; line-height: 24px; } /* live span.sub-lead at 360: 17.008/24 */
+  main .section.hub-static:has(> .cards-wrapper > .cards.static) .default-content-wrapper h2 { margin-bottom: 8px; text-align: center; text-wrap: balance; } /* outranks the product static skin's :has() rule (text-align left, 24 under); live 360 h2 → card li 16 (8 + li 8) */
+  main .section.hub-static:has(> .cards-wrapper > .cards.static) .default-content-wrapper h2 + p { margin-top: 24px; } /* live: the intro is a second text module (8 + 16 uncollapsed) */
+  main .section.hub-static:has(> .cards-wrapper > .cards.static) { margin-top: 48px; } /* live 360 module gap after the disclosure pill (1440: 72); hub-flush (0,7,0) still wins */
+  main .section.band.faq .default-content-wrapper:first-child { padding-bottom: 0; } /* live 360 faq title → first item 62 (the 8px wrapper slack is a 1440 metric) */
+  main .section.band.faq.hub-open .accordion-wrapper ~ .default-content-wrapper { padding-bottom: 0; }
+
+  main .section.band.faq.hub-close.rule-visible { padding-top: 64px; } /* live 360: rule → "Ordliste" heading 64 (1440: 48) */
+  main .section.band.faq.hub-close .default-content-wrapper { padding-bottom: 0; } /* live: link → band end 64 (16 + 48) */
+  main .section.band.faq.hub-close .default-content-wrapper h3 { font-size: 22px; line-height: 24px; } /* live "Ordliste fra A-Å" 150px wide at 360 (22px title glyphs), link 16 under */
+  main .section.reference-cols .col__text p { font-size: 14px; line-height: 24px; } /* live span.subtle-text Fremtind paragraph: 3 lines of 14px on the 24 strut */
+  main .section.rule-visible:has(> .feedback-wrapper) { position: relative; padding-top: 64px; border-top: 0; } /* live 360: hr module inset 20 (x20–339), 68 to the question */
+  main .section.rule-visible:has(> .feedback-wrapper)::before, main .section.band.faq.hub-close.rule-visible::before { content: ''; position: absolute; top: 0; left: 20px; right: 20px; border-top: 1px solid #ccc; }
+  main .section.band.faq.hub-close.rule-visible { border-top: 0; position: relative; }
+  main .section.band.faq.hub-close.rule-visible::before { left: 16px; right: 16px; } /* live in-band hr spans the 328 column */
+  main .section.hub-tight .default-content-wrapper p { font-size: 17px; line-height: 24px; } /* live span.sub-lead 17/24 ("Bedriftsavtalene som gjør…" 209px line vs 196 at 16px) */
+  main .section.band.faq { padding-left: 24px; padding-right: 24px; } /* live in-band faq at 360: items and "Se flere svar" pill x24–335 (item text x44) */
+  main .section.band.faq.hub-open .accordion-wrapper ~ .default-content-wrapper p { margin-top: 64px; font-size: 14px; line-height: 24px; text-align: center; } /* live span.subtle-text note under the faq ("Se også kundeservice…" one 291px line) */
+  main .section.band.faq.hub-close .default-content-wrapper { text-align: center; } /* live "Ordliste fra A-Å" heading + link centred */
+  main .section.cols.hub-flush .default-content-wrapper h2, main .section.cols.hub-flush .col__text h2, main .section.reference-cols .col__text h2 { text-wrap: balance; } /* live 360 wraps "Blant Norges beste / på skadeoppgjør", "Forsikringsselskapet / vårt er Fremtind" */
+}
+/* ===== /category-hub (W7 mobile) ===== */

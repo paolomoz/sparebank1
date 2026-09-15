@@ -153,3 +153,8 @@ main .section.faq .default-content-wrapper h2 { text-align: center; }
 .accordion.tabs.hub .seclist__body { padding: 0; }
 @media (width >= 768px) { .accordion.tabs.hub { padding: 72px 0; } .accordion.tabs.hub .seclist__body { margin-left: 8.3333%; } }
 /* ===== /category-hub siblings ===== */
+
+/* ===== category-hub (W7 mobile) ===== */
+@media (width <= 767px) { .accordion.disclosure .disclosure__btn { height: auto; } }
+@media (width <= 767px) { .accordion.tabs.hub { margin: 0 8px; } .accordion.tabs.hub .seclist__btn { padding-top: 18px; padding-bottom: 18px; } } /* live 360 lofavor tabs: list x24–335, item 61 (18 + 24 + 18 + rule) */ /* live 360: a wrapping label grows the pill (forsikring "Se bedrifts- og landbruksforsikringer" 68px) */
+/* ===== /category-hub (W7 mobile) ===== */

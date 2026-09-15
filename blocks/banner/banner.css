@@ -66,3 +66,11 @@ main .section .banner-wrapper { max-width: var(--container); }
 .banner.columns .banner-small__column--color6 { background: #c2e7da; } /* live banner-small__bg-color6 rgb(194 231 218) */
 .banner.columns.color6 .banner-small__inner--col { background: transparent; } /* the colour lives on the half, not the inner box (the core color4 inner rule painted a sand box on the mint half at 360) */
 /* ===== /category-hub siblings ===== */
+
+/* ===== category-hub (W7 mobile) ===== */
+@media (width <= 767px) {
+  .banner.columns { padding-top: 54px; } /* live 360: the block starts 54 lower and the column has no top padding — the illustration (margin -60) hangs 60px above the tinted edge (forsikring: mint at 4301, media 4241) */
+  .banner.columns .banner-small__column { padding-top: 0; }
+  .banner.columns .banner-small__bottom { justify-content: flex-start; } /* live 360 mint column: pill 28 under the text, 8 above the column padding (the empty logo slot's 20px sits above the pill) */
+}
+/* ===== /category-hub (W7 mobile) ===== */

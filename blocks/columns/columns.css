@@ -222,3 +222,18 @@
 }
 .columns.rule-after { margin-bottom: 64px; } /* live hr module (extra-margin-top) closing the text column before the widget (pensjon) */
 /* ===== /category-hub siblings ===== */
+
+/* ===== category-hub (W7 mobile) ===== */
+@media (width <= 767px) {
+  .columns.lg-12-w175 .col { padding-bottom: 6px; } /* live 360: the standalone illustration is an inline SVG image module (no column padding), ~6px descender slack to the next heading */
+  .columns.lg-4-offset-1-first-w600 .col--first .col__text p:has(> picture) { padding-bottom: 6px; } /* live 360: inline SVG slack (image 234 + 6 + column 16 → heading) */
+  .columns.media-plain .col--media .col__text > p:last-child { padding-bottom: 7px; } /* live 360: media-plain SVGs are inline images with ~7px descender slack (forsikring "Blant Norges beste" illustration → heading 32 ink-to-ink; Fremtind logo → band end 111) */
+  .columns.lg-3-offset-0-first-w180 .col--first .col__text > p:has(> picture) { padding-bottom: 7px; } /* live 360 inline-SVG slack under the 180px illustration (pensjon "Synes du pensjon er vanskelig?") */
+  .columns.lg-5-offset-0-first.lg-4-middle .col--first { padding-top: 14px; padding-bottom: 30px; } /* live 360: photo 62 under the band edge (48 + 14), caption → heading 30 (pensjon "Pensjonssparing leveres av") */
+  .columns.checked .col__text ul > li:first-child { margin-top: 32px; } /* live 360 lofavor hero: lead → first ✓ item 32 (the li margin collapses through the list top in EDS) */
+  .columns.cta-stack .button-list { padding-bottom: 8px; } /* live button-wrapper margin under the last pill (lofavor: pills → band 72) */
+  .columns.logo-first .col--media { order: -1; } .columns.logo-first .col:not(.col--media) { padding-top: 24px; } /* live 360 tips-og-rad LOfavør box: logo + line illustrations above the heading, text column 24 under them */
+  .columns.lg-5-offset-0-first.lg-4-middle .col--first .col__text > p:has(> picture) picture, .columns.lg-5-offset-0-first.lg-4-middle .col--first .col__text > p:has(> picture) img { aspect-ratio: auto; height: auto; } /* live 360 photo keeps its natural 1.6 aspect (pensjon 328×205), not the 3:2 cover box */
+  .columns.lg-5-offset-0-first.lg-4-middle .col--first .col__text > p:has(> picture) + p { margin-top: 16px; font-size: 14px; line-height: 24px; } /* live caption "Pensjonssparing leveres av …": 14px on the 24 strut, 16 under the photo */
+}
+/* ===== /category-hub (W7 mobile) ===== */

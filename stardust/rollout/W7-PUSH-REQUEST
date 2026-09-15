@@ -1,0 +1,21 @@
+W7 push request — category-hub siblings at 360 (2026-09-15)
+
+Please push the working tree's block/style changes to main so the published origin picks them up:
+  styles/styles.css              (appended block "===== category-hub (W7 mobile) =====", all @media (width <= 767px))
+  blocks/cards/cards.css         (W7 block: two general fixes — .cards.boxed .card__expand--inline width/gap, .cards.boxed .card__media img object-position — plus @media (width <= 767px) rules)
+  blocks/banner/banner.css       (W7 mobile block)
+  blocks/accordion/accordion.css (W7 mobile block)
+  blocks/columns/columns.css     (W7 mobile block)
+No document, encoder or data changes — nothing to deploy to DA. content/ diff is empty.
+
+Emulation gates (:3017 vs the cached 360 captures), all seven under the bar:
+  forsikring  5.30 % Δh +4   (was 29.83 % Δh −276)   1440: 8.37 % Δh −29 (W6 8.23 %, same bands)
+  pensjon     8.96 % Δh +61  (was 22.33 % Δh −8; 56 = the recorded live blank <p> spacer, 5 residual)
+  sparing     2.61 % Δh 0    (was 13.44 % Δh 40)
+  lofavor     8.38 % Δh +2   (was 12.91 % Δh 16)
+  tips-og-rad 1.09 % Δh 0    (was 10.69 % Δh 8)      1440: 4.76 % Δh −7 (= W6)
+  daglig-bruk 4.10 % Δh 0    (was 9.48 % Δh −32)
+  eiendom     5.12 % Δh 0    (was 7.60 % Δh −8)
+  lån (archetype) 360: 1.80 % Δh 0 (W1 emulation 2.09 %) — the shared cards nav / cards small rules improve it.
+After the push I run `node stardust/scripts/eds/_pm-pubgate.mjs <short> <da-path>` for each page (both widths) and record in
+stardust/rollout/eds-progress/category-hub-mobile.json + journal/category-hub-mobile.md.
