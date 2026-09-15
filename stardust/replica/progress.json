@@ -1,7 +1,7 @@
 {
  "_provenance": {
   "writtenBy": "stardust:replica (Phase 3–4 ledger)",
-  "writtenAt": "2026-09-15T09:05:23Z",
+  "writtenAt": "2026-09-15T13:40:28Z",
   "againstInput": "https://www.sparebank1.no/nb/bank/ — 100-page roster, 13 archetype families",
   "readArtifacts": [
    "stardust/current/_page-types.json",
@@ -1884,7 +1884,23 @@
      }
     },
     "chrome": "header 99.58% (1440) / skip-link artefact (360); footers 98.07–99.59%",
-    "verdict": "desktop within the bar on all seven (forsikring/pensjon Δh outside 8 recorded); mobile open on forsikring and pensjon, borderline on sparing/lofavor/tips — mobile pass W7"
+    "verdict": "desktop within the bar on all seven (forsikring/pensjon Δh outside 8 recorded); mobile open on forsikring and pensjon, borderline on sparing/lofavor/tips — mobile pass W7",
+    "mobilePass": {
+     "at": "2026-09-15T13:40:28Z",
+     "ledger": "stardust/rollout/eds-progress/category-hub-mobile.json",
+     "published360After": {
+      "sparing": "2.76% Δ0",
+      "daglig-bruk": "4.22% Δ0",
+      "pensjon": "8.51% Δ52 (56 = recorded live blank <p> spacer)",
+      "forsikring": "9.26% Δ25 (three ~7px inline-image line-box differences between emulation and pipeline DOM; footer crop 96.5% is that drift — aligns at offset)",
+      "eiendom": "5.28% Δ0",
+      "tips-og-rad": "2.27% Δ0",
+      "lofavor": "8.45% Δ2",
+      "lan (archetype)": "1.86% Δ0",
+      "boliglan (product)": "2.33% Δ0 after scoping a leaked news-heading rule to hub-news"
+     },
+     "verdict": "all seven under the 10% bar at 360; Δh explained on pensjon (spacer) and forsikring (inline picture slack, filed)"
+    }
    }
   },
   "kundeservice-hub": {

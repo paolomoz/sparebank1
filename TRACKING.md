@@ -1,6 +1,6 @@
 # Tracking — sparebank1 (Flow A: replica → EDS)
 
-Updated: 2026-09-15T06:20:00Z
+Updated: 2026-09-15T15:10:00Z
 
 | phase | status | evidence |
 |---|---|---|
@@ -27,3 +27,8 @@ Updated: 2026-09-15T06:20:00Z
   title link inside a clickable `div` (live model).
 - D7 known permanent capture residuals: live focused skip link in the 360 header crop; to-top disc at
   chunk seams; card photo cover-crop; market-landing campaign rotation; campaign video frame.
+- D8 2026-09-15 human visual review (Paolo) found systematic loss on category-hub siblings (card bodies/CTAs,
+  news rails, tabs, calculators, hero/lead composition, chevrons, media crops). Fixed in two passes (W6 desktop,
+  W7 mobile); all seven reviewed pages now ≤ 9.3 % at 360 and ≤ 8.4 % at 1440 on the published origin; the
+  general causes and proposed stardust source changes are in stardust/STARDUST-IMPROVEMENTS.md and
+  stardust/learnings.md.
