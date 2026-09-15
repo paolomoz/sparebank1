@@ -4,3 +4,11 @@ main .section:has(> .calculator-wrapper) { padding: 0; }
 .calculator .calculator__host { display: block; width: 100%; line-height: 18.4px; }
 .calculator .calculator__note { max-width: 640px; margin: 8px auto 0; padding: 0 20px; font-size: 14px; line-height: 20px; color: var(--moerkgraa); text-align: center; }
 .calculator .calculator__fallback { text-align: center; }
+
+/* ===== category-hub siblings (W6, additive) =====
+   hub-widget — the pension / savings calculator snapshot inside a hub band: the band keeps its rhythm (the core skin zeroes it for the archetype's full-bleed widget), the host is the 1280 container. */
+main .section.hub-widget:has(> .calculator-wrapper) { padding: 48px 16px; }
+main .section.hub-widget .calculator-wrapper { max-width: var(--container); }
+@media (width >= 768px) { main .section.hub-widget:has(> .calculator-wrapper) { padding: 72px 0; } }
+main .section.hub-widget .calculator.widget-sparing { margin-bottom: 24px; } /* live sparekalkulator app: 24px under the host (sparing 1440 frost band) */
+/* ===== /category-hub siblings ===== */

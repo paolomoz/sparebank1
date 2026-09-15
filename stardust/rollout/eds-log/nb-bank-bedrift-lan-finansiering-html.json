@@ -80,7 +80,8 @@
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
-  "cards nav: 4 visual-nav modules (0 photo, 4 icon) folded into one block — one row per card",
+  "cards nav: 4 visual-nav modules (1 photo, 3 icon) folded into one block — one row per card",
+  "cards nav big: the live \"big\" visual-nav card (photo + card with a 36/44 title-medium heading and a 19.2/32 lead) — variant big",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
@@ -88,5 +89,5 @@
   "chevron.svg"
  ],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:56:50.822Z"
+ "writtenAt": "2026-09-15T08:01:39.159Z"
 }

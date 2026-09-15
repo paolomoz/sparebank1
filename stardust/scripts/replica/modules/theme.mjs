@@ -2,7 +2,7 @@
 // Registry keys below are global; every handler falls back to the canon behaviour (ctx.card / canon referance / canon text)
 // unless ctx.family === 'theme', so other families' output is unchanged. Canon gaps recorded in stardust/replica/canon-requests.md.
 // featured cards also carry the markedsnytt-listing article list; the registry key is global, so the gate is a family set.
-const FEATURED_FAMILIES = new Set(['theme', 'markedsnytt-listing']);
+const FEATURED_FAMILIES = new Set(['theme', 'markedsnytt-listing', 'category-hub']); // category-hub added by W6 (2026-09-15): the registry key `referance` is owned here, and the hub's Fremtind reference wraps a columns-grid (forsikring)
 const LEAD = ['main-lead', 'main-lead-white', 'main-lead-white-left', 'sub-lead-left', 'sub-lead', 'lead', 'lead-white'];
 
 export default {

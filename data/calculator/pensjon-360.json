@@ -1,0 +1,13 @@
+{
+ "url": "https://www.sparebank1.no/nb/bank/privat/pensjon.html",
+ "hostSel": ".base-component .ppm-app",
+ "shadow": false,
+ "rect": {
+  "w": 328,
+  "h": 1075
+ },
+ "hostClass": "ppm-app",
+ "hostId": "",
+ "capturedAt": "2026-09-15T08:12:15.873Z",
+ "bytes": 250754
+}

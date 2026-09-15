@@ -1,137 +1,135 @@
 {
-  "/nb/bank/bedrift/bedriftskort/kredittkort": {
-    "status": "live",
+  "/nb/bank/bedrift/bedriftskort": {
+    "status": "put-fail",
     "attempts": 1,
-    "ts": "2026-09-14T21:54:59.568Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
+    "ts": "2026-09-15T08:22:03.462Z",
+    "put": 401,
+    "lastError": "PUT 401 "
   },
-  "/nb/bank/bedrift/konto/bedriftskonto": {
-    "status": "live",
+  "/nb/bank/bedrift/betaling": {
+    "status": "put-fail",
     "attempts": 1,
-    "ts": "2026-09-14T21:54:59.568Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
+    "ts": "2026-09-15T08:22:03.463Z",
+    "put": 401,
+    "lastError": "PUT 401 "
   },
-  "/nb/bank/bedrift/lan-finansiering/bedriftslan": {
-    "status": "live",
+  "/nb/bank/bedrift/daglig-drift": {
+    "status": "put-fail",
     "attempts": 1,
-    "ts": "2026-09-14T21:54:59.568Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
+    "ts": "2026-09-15T08:22:03.463Z",
+    "put": 401,
+    "lastError": "PUT 401 "
   },
-  "/nb/bank/bedrift/lan-finansiering/kassekreditt": {
-    "status": "live",
+  "/nb/bank/bedrift/konto": {
+    "status": "put-fail",
     "attempts": 1,
-    "ts": "2026-09-14T21:55:05.875Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
+    "ts": "2026-09-15T08:22:03.663Z",
+    "put": 401,
+    "lastError": "PUT 401 "
   },
-  "/nb/bank/bedrift/lan-finansiering/leasing": {
-    "status": "live",
+  "/nb/bank/bedrift/lan-finansiering": {
+    "status": "put-fail",
     "attempts": 1,
-    "ts": "2026-09-14T21:55:05.920Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
+    "ts": "2026-09-15T08:22:03.663Z",
+    "put": 401,
+    "lastError": "PUT 401 "
   },
-  "/nb/bank/privat/daglig-bruk/bankkort": {
-    "status": "live",
+  "/nb/bank/bedrift/pensjon": {
+    "status": "put-fail",
     "attempts": 1,
-    "ts": "2026-09-14T21:55:06.151Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
+    "ts": "2026-09-15T08:22:03.663Z",
+    "put": 401,
+    "lastError": "PUT 401 "
   },
-  "/nb/bank/privat/daglig-bruk/kredittkort": {
-    "status": "live",
+  "/nb/bank/bedrift/regnskap": {
+    "status": "put-fail",
     "attempts": 1,
-    "ts": "2026-09-14T21:55:11.186Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
+    "ts": "2026-09-15T08:22:03.692Z",
+    "put": 401,
+    "lastError": "PUT 401 "
   },
-  "/nb/bank/privat/forsikring/barneforsikring": {
-    "status": "live",
+  "/nb/bank/bedrift/sparing-investering": {
+    "status": "put-fail",
     "attempts": 1,
-    "ts": "2026-09-14T21:55:11.243Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
+    "ts": "2026-09-15T08:22:03.694Z",
+    "put": 401,
+    "lastError": "PUT 401 "
   },
-  "/nb/bank/privat/forsikring/bilforsikring": {
-    "status": "live",
+  "/nb/bank/bedrift/starte-bedrift": {
+    "status": "put-fail",
     "attempts": 1,
-    "ts": "2026-09-14T21:55:12.077Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
+    "ts": "2026-09-15T08:22:03.701Z",
+    "put": 401,
+    "lastError": "PUT 401 "
   },
-  "/nb/bank/privat/forsikring/innboforsikring": {
-    "status": "live",
+  "/nb/bank/bedrift/tips-og-rad": {
+    "status": "put-fail",
     "attempts": 1,
-    "ts": "2026-09-14T21:55:17.642Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
+    "ts": "2026-09-15T08:22:03.724Z",
+    "put": 401,
+    "lastError": "PUT 401 "
   },
-  "/nb/bank/privat/forsikring/reiseforsikring": {
-    "status": "live",
+  "/nb/bank/privat/daglig-bruk": {
+    "status": "put-fail",
     "attempts": 1,
-    "ts": "2026-09-14T21:55:18.617Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
+    "ts": "2026-09-15T08:22:03.728Z",
+    "put": 401,
+    "lastError": "PUT 401 "
   },
-  "/nb/bank/privat/kundeservice/bestill/bli-kunde": {
-    "status": "live",
+  "/nb/bank/privat/eiendom": {
+    "status": "put-fail",
     "attempts": 1,
-    "ts": "2026-09-14T21:55:19.831Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
+    "ts": "2026-09-15T08:22:03.739Z",
+    "put": 401,
+    "lastError": "PUT 401 "
   },
-  "/nb/bank/privat/lan/billan": {
-    "status": "live",
+  "/nb/bank/privat/forsikring": {
+    "status": "put-fail",
     "attempts": 1,
-    "ts": "2026-09-14T21:55:24.269Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
+    "ts": "2026-09-15T08:22:03.760Z",
+    "put": 401,
+    "lastError": "PUT 401 "
   },
-  "/nb/bank/privat/pensjon/egen-pensjonskonto": {
-    "status": "live",
+  "/nb/bank/privat/lofavor": {
+    "status": "put-fail",
     "attempts": 1,
-    "ts": "2026-09-14T21:55:25.415Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
+    "ts": "2026-09-15T08:22:03.765Z",
+    "put": 401,
+    "lastError": "PUT 401 "
+  },
+  "/nb/bank/privat/pensjon": {
+    "status": "put-fail",
+    "attempts": 1,
+    "ts": "2026-09-15T08:22:03.781Z",
+    "put": 401,
+    "lastError": "PUT 401 "
   },
   "/nb/bank/privat/private-banking": {
-    "status": "live",
+    "status": "put-fail",
     "attempts": 1,
-    "ts": "2026-09-14T21:55:25.904Z",
-    "put": 200,
-    "preview": 200,
-    "live": 200,
-    "verify": "ok"
+    "ts": "2026-09-15T08:22:03.801Z",
+    "put": 401,
+    "lastError": "PUT 401 "
+  },
+  "/nb/bank/privat/sparing": {
+    "status": "put-fail",
+    "attempts": 1,
+    "ts": "2026-09-15T08:22:03.806Z",
+    "put": 401,
+    "lastError": "PUT 401 "
+  },
+  "/nb/bank/privat/svindel": {
+    "status": "put-fail",
+    "attempts": 1,
+    "ts": "2026-09-15T08:22:03.822Z",
+    "put": 401,
+    "lastError": "PUT 401 "
+  },
+  "/nb/bank/privat/tips-og-rad": {
+    "status": "put-fail",
+    "attempts": 1,
+    "ts": "2026-09-15T08:22:03.842Z",
+    "put": 401,
+    "lastError": "PUT 401 "
   }
 }

@@ -28,7 +28,8 @@
   {
    "module": "band",
    "blocks": [
-    "cards"
+    "cards",
+    "accordion"
    ]
   },
   {
@@ -54,14 +55,26 @@
   "breadcrumbs",
   "columns",
   "cards",
+  "accordion",
   "feedback"
  ],
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
-  "band: the empty nested band (live 48/32px spacer under the h1) is layout → section style hub-head",
+  "lint D5 cards featured hub: the live featured card (illustration/photo + h2/h3 + paragraphs + link + CTA) — one row per card [media][body]; the body is the live text-wrapper prose, the CTA its emphasised link",
+  "band: a nested band (live wrap padding 24px) → its own flush section chunk (hub-nested)",
+  "lint D5 cards featured hub: the live featured card (illustration/photo + h2/h3 + paragraphs + link + CTA) — one row per card [media][body]; the body is the live text-wrapper prose, the CTA its emphasised link",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "lint D5 cards featured hub: the live featured card (illustration/photo + h2/h3 + paragraphs + link + CTA) — one row per card [media][body]; the body is the live text-wrapper prose, the CTA its emphasised link",
+  "band: a nested band (live wrap padding 24px) → its own flush section chunk (hub-nested)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/mann-sofa-lese.svg is 43614 bytes of SVG (> 40000) — authored as DA media mann-sofa-lese.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/sparing-2.svg is 44279 bytes of SVG (> 40000) — authored as DA media sparing-2.png (rasterised)",
+  "lint D3 accordion tabs: the live AEM section item list (client-chromed master/detail) — one row per item [title][content]; the title moves into the tab button (EW8)",
+  "cards grid: consecutive same-shaped card rows folded into one block (D9)",
+  "lint D5 cards featured hub: the live featured card (illustration/photo + h2/h3 + paragraphs + link + CTA) — one row per card [media][body]; the body is the live text-wrapper prose, the CTA its emphasised link",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "cards grid: consecutive same-shaped card rows folded into one block (D9)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
@@ -71,5 +84,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/mann-sofa-lese.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/sparing-2.svg"
  ],
- "writtenAt": "2026-09-14T20:56:51.762Z"
+ "writtenAt": "2026-09-15T08:01:15.476Z"
 }

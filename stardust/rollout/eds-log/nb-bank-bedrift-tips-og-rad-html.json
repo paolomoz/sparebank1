@@ -34,10 +34,12 @@
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
   "lint D1 breadcrumbs: bespoke navigation widget (nav landmark, chevron separators, current-page state) — not default content",
+  "lint D5 cards featured hub: the live featured card (illustration/photo + h2/h3 + paragraphs + link + CTA) — one row per card [media][body]; the body is the live text-wrapper prose, the CTA its emphasised link",
+  "lint D5 cards featured hub: the live featured card (illustration/photo + h2/h3 + paragraphs + link + CTA) — one row per card [media][body]; the body is the live text-wrapper prose, the CTA its emphasised link",
   "cards grid: consecutive same-shaped card rows folded into one block (D9)"
  ],
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:56:51.287Z"
+ "writtenAt": "2026-09-15T08:01:40.242Z"
 }

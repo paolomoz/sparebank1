@@ -1,0 +1,13 @@
+{
+ "url": "https://www.sparebank1.no/nb/bank/privat/sparing.html",
+ "hostSel": "#sparekalkulator",
+ "shadow": true,
+ "rect": {
+  "w": 1280,
+  "h": 686
+ },
+ "hostClass": "",
+ "hostId": "sparekalkulator",
+ "capturedAt": "2026-09-15T05:21:52.718Z",
+ "bytes": 444037
+}

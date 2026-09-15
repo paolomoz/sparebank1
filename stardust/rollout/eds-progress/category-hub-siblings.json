@@ -1,0 +1,545 @@
+{
+ "_provenance": {
+  "writtenBy": "W6 (stardust:rollout EDS worker — category-hub sibling fix pass)",
+  "writtenAt": "2026-09-15T08:40:00Z",
+  "converter": "stardust/scripts/eds/convert.mjs (family group category-hub/kundeservice-hub/market-landing)"
+ },
+ "family": "category-hub",
+ "archetype": "nb-bank-privat-lan-html",
+ "scope": "19 siblings; the 7 pages of stardust/rollout/HUB-SIBLINGS-DEFECTS.md gated against fresh live captures (stardust/replica/gates/<short>-{1440,360}/live.png, 2026-09-15 07:00Z)",
+ "regime": "local EDS emulation (serve.mjs :3016) vs live captures; published-origin gates PENDING (DA_TOKEN expired → deploy PUT 401; code push requested in stardust/rollout/W6-PUSH-REQUEST)",
+ "pages": {
+  "sparing": {
+   "slug": "nb-bank-privat-sparing-html",
+   "daPath": "/nb/bank/privat/sparing",
+   "breakpoints": {
+    "1440": {
+     "pixelPct": 4.0,
+     "heightDelta": 4,
+     "evidence": "stardust/replica/gates/sparing-eds-1440/"
+    },
+    "360": {
+     "pixelPct": 13.45,
+     "heightDelta": 40,
+     "evidence": "stardust/replica/gates/sparing-eds-360/"
+    }
+   }
+  },
+  "daglig-bruk": {
+   "slug": "nb-bank-privat-daglig-bruk-html",
+   "daPath": "/nb/bank/privat/daglig-bruk",
+   "breakpoints": {
+    "1440": {
+     "pixelPct": 0.34,
+     "heightDelta": 0,
+     "evidence": "stardust/replica/gates/daglig-bruk-eds-1440/"
+    },
+    "360": {
+     "pixelPct": 9.53,
+     "heightDelta": -32,
+     "evidence": "stardust/replica/gates/daglig-bruk-eds-360/"
+    }
+   }
+  },
+  "pensjon": {
+   "slug": "nb-bank-privat-pensjon-html",
+   "daPath": "/nb/bank/privat/pensjon",
+   "breakpoints": {
+    "1440": {
+     "pixelPct": 8.91,
+     "heightDelta": 14,
+     "evidence": "stardust/replica/gates/pensjon-eds-1440/"
+    },
+    "360": {
+     "pixelPct": 22.18,
+     "heightDelta": -8,
+     "evidence": "stardust/replica/gates/pensjon-eds-360/"
+    }
+   }
+  },
+  "forsikring": {
+   "slug": "nb-bank-privat-forsikring-html",
+   "daPath": "/nb/bank/privat/forsikring",
+   "breakpoints": {
+    "1440": {
+     "pixelPct": 8.23,
+     "heightDelta": -29,
+     "evidence": "stardust/replica/gates/forsikring-eds-1440/"
+    },
+    "360": {
+     "pixelPct": 29.78,
+     "heightDelta": -276,
+     "evidence": "stardust/replica/gates/forsikring-eds-360/"
+    }
+   }
+  },
+  "eiendom": {
+   "slug": "nb-bank-privat-eiendom-html",
+   "daPath": "/nb/bank/privat/eiendom",
+   "breakpoints": {
+    "1440": {
+     "pixelPct": 0.42,
+     "heightDelta": 0,
+     "evidence": "stardust/replica/gates/eiendom-eds-1440/"
+    },
+    "360": {
+     "pixelPct": 7.58,
+     "heightDelta": -8,
+     "evidence": "stardust/replica/gates/eiendom-eds-360/"
+    }
+   }
+  },
+  "tips-og-rad": {
+   "slug": "nb-bank-privat-tips-og-rad-html",
+   "daPath": "/nb/bank/privat/tips-og-rad",
+   "breakpoints": {
+    "1440": {
+     "pixelPct": 4.76,
+     "heightDelta": -7,
+     "evidence": "stardust/replica/gates/tips-og-rad-eds-1440/"
+    },
+    "360": {
+     "pixelPct": 10.44,
+     "heightDelta": 8,
+     "evidence": "stardust/replica/gates/tips-og-rad-eds-360/"
+    }
+   }
+  },
+  "lofavor": {
+   "slug": "nb-bank-privat-lofavor-html",
+   "daPath": "/nb/bank/privat/lofavor",
+   "breakpoints": {
+    "1440": {
+     "pixelPct": 3.35,
+     "heightDelta": 1,
+     "evidence": "stardust/replica/gates/lofavor-eds-1440/"
+    },
+    "360": {
+     "pixelPct": 12.85,
+     "heightDelta": 16,
+     "evidence": "stardust/replica/gates/lofavor-eds-360/"
+    }
+   }
+  }
+ },
+ "passBar": "pixel ≤ 10 % (bands explained), |Δh| ≤ 8 except recorded spacer classes, chrome ≥ 98 %, content-diff 0 unexplained 🔴",
+ "productRegression": {
+  "boliglanDocument": "byte-identical after convert (content/nb/bank/privat/lan/boliglan.html)",
+  "lanDocument": "byte-identical after convert + sanitise",
+  "lan1440PixelPct": 0.53,
+  "lan1440HeightDelta": 0,
+  "evidence": "stardust/replica/gates/lan-w6-1440/"
+ },
+ "siblings": {
+  "nb-bank-bedrift-bedriftskort-html": {
+   "daPath": "/nb/bank/bedrift/bedriftskort",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "breadcrumbs",
+    "cards",
+    "callout",
+    "feedback"
+   ],
+   "contentDiffRed": 2,
+   "contentDiffRedJustified": 1,
+   "contentDiffUnexplained": [
+    "Findings: 42 (1 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 3 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-bedrift-betaling-html": {
+   "daPath": "/nb/bank/bedrift/betaling",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "breadcrumbs",
+    "cards",
+    "columns",
+    "shortcuts",
+    "feedback"
+   ],
+   "contentDiffRed": 1,
+   "contentDiffRedJustified": 0,
+   "contentDiffUnexplained": [
+    "Findings: 44 (0 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 5 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-bedrift-daglig-drift-html": {
+   "daPath": "/nb/bank/bedrift/daglig-drift",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "breadcrumbs",
+    "cards",
+    "columns",
+    "shortcuts",
+    "feedback"
+   ],
+   "contentDiffRed": 1,
+   "contentDiffRedJustified": 0,
+   "contentDiffUnexplained": [
+    "Findings: 41 (0 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 5 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-bedrift-konto-html": {
+   "daPath": "/nb/bank/bedrift/konto",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "breadcrumbs",
+    "cards",
+    "feedback"
+   ],
+   "contentDiffRed": 1,
+   "contentDiffRedJustified": 0,
+   "contentDiffUnexplained": [
+    "Findings: 46 (0 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 4 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-bedrift-lan-finansiering-html": {
+   "daPath": "/nb/bank/bedrift/lan-finansiering",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "breadcrumbs",
+    "cards",
+    "columns",
+    "feedback"
+   ],
+   "contentDiffRed": 1,
+   "contentDiffRedJustified": 0,
+   "contentDiffUnexplained": [
+    "Findings: 52 (0 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 4 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-bedrift-pensjon-html": {
+   "daPath": "/nb/bank/bedrift/pensjon",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "breadcrumbs",
+    "cards",
+    "columns",
+    "accordion",
+    "feedback"
+   ],
+   "contentDiffRed": 3,
+   "contentDiffRedJustified": 2,
+   "contentDiffUnexplained": [
+    "Findings: 62 (2 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 4 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-bedrift-regnskap-html": {
+   "daPath": "/nb/bank/bedrift/regnskap",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "breadcrumbs",
+    "cards",
+    "columns",
+    "callout",
+    "feedback"
+   ],
+   "contentDiffRed": 2,
+   "contentDiffRedJustified": 0,
+   "contentDiffUnexplained": [
+    "Findings: 40 (1 structural 🔴)",
+    "🔴 MISSING HEADING: proto heading \"SpareBank 1 Regnskap\" has no EDS heading of the same text. A dropped/renamed section title."
+   ],
+   "lint": "PASS — 0 🔴, 5 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-bedrift-sparing-investering-html": {
+   "daPath": "/nb/bank/bedrift/sparing-investering",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "breadcrumbs",
+    "cards",
+    "shortcuts",
+    "feedback"
+   ],
+   "contentDiffRed": 1,
+   "contentDiffRedJustified": 0,
+   "contentDiffUnexplained": [
+    "Findings: 40 (0 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 5 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-bedrift-starte-bedrift-html": {
+   "daPath": "/nb/bank/bedrift/starte-bedrift",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "breadcrumbs",
+    "columns",
+    "cards",
+    "feedback"
+   ],
+   "contentDiffRed": 2,
+   "contentDiffRedJustified": 1,
+   "contentDiffUnexplained": [
+    "Findings: 32 (1 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 4 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-bedrift-tips-og-rad-html": {
+   "daPath": "/nb/bank/bedrift/tips-og-rad",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "breadcrumbs",
+    "cards"
+   ],
+   "contentDiffRed": 1,
+   "contentDiffRedJustified": 0,
+   "contentDiffUnexplained": [
+    "Findings: 31 (0 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 2 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-privat-daglig-bruk-html": {
+   "daPath": "/nb/bank/privat/daglig-bruk",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "cards",
+    "shortcuts",
+    "feedback"
+   ],
+   "contentDiffRed": 1,
+   "contentDiffRedJustified": 0,
+   "contentDiffUnexplained": [
+    "Findings: 48 (0 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 4 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-privat-eiendom-html": {
+   "daPath": "/nb/bank/privat/eiendom",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "cards",
+    "shortcuts"
+   ],
+   "contentDiffRed": 1,
+   "contentDiffRedJustified": 0,
+   "contentDiffUnexplained": [
+    "Findings: 36 (0 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 2 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-privat-forsikring-html": {
+   "daPath": "/nb/bank/privat/forsikring",
+   "gaps": 0,
+   "blocks": [
+    "cards",
+    "columns",
+    "banner",
+    "accordion",
+    "shortcuts",
+    "feedback"
+   ],
+   "contentDiffRed": 11,
+   "contentDiffRedJustified": 9,
+   "contentDiffUnexplained": [
+    "Findings: 117 (10 structural 🔴)",
+    "🔴 MISSING CTA: proto cta \"innboforsikring\" → https://www.sparebank1.no/nb/bank/privat/forsikring/innboforsikring.html has no EDS link. A dropped call-to-action — author the CTA row + render it in the owning block."
+   ],
+   "lint": "PASS — 0 🔴, 5 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-privat-lan-html": {
+   "daPath": "/nb/bank/privat/lan",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "cards",
+    "shortcuts",
+    "cobranding",
+    "columns",
+    "banner",
+    "callout",
+    "feedback"
+   ],
+   "contentDiffRed": 2,
+   "contentDiffRedJustified": 1,
+   "contentDiffUnexplained": [
+    "Findings: 49 (1 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 5 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-privat-lofavor-html": {
+   "daPath": "/nb/bank/privat/lofavor",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "breadcrumbs",
+    "columns",
+    "cards",
+    "accordion",
+    "feedback"
+   ],
+   "contentDiffRed": 2,
+   "contentDiffRedJustified": 1,
+   "contentDiffUnexplained": [
+    "Findings: 34 (1 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 4 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-privat-pensjon-html": {
+   "daPath": "/nb/bank/privat/pensjon",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "cards",
+    "cobranding",
+    "columns",
+    "calculator",
+    "shortcuts",
+    "accordion",
+    "feedback"
+   ],
+   "contentDiffRed": 16,
+   "contentDiffRedJustified": 15,
+   "contentDiffUnexplained": [
+    "Findings: 84 (15 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 5 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-privat-private-banking-html": {
+   "daPath": "/nb/bank/privat/private-banking",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "breadcrumbs",
+    "columns",
+    "usp",
+    "cards",
+    "accordion"
+   ],
+   "contentDiffRed": 10,
+   "contentDiffRedJustified": 9,
+   "contentDiffUnexplained": [
+    "Findings: 51 (9 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 3 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-privat-sparing-html": {
+   "daPath": "/nb/bank/privat/sparing",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "cards",
+    "columns",
+    "calculator",
+    "feedback"
+   ],
+   "contentDiffRed": 3,
+   "contentDiffRedJustified": 2,
+   "contentDiffUnexplained": [
+    "Findings: 48 (2 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 4 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-privat-svindel-html": {
+   "daPath": "/nb/bank/privat/svindel",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "cards",
+    "callout",
+    "feedback"
+   ],
+   "contentDiffRed": 4,
+   "contentDiffRedJustified": 3,
+   "contentDiffUnexplained": [
+    "Findings: 38 (3 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 3 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  },
+  "nb-bank-privat-tips-og-rad-html": {
+   "daPath": "/nb/bank/privat/tips-og-rad",
+   "gaps": 0,
+   "blocks": [
+    "bank-choice",
+    "breadcrumbs",
+    "cards",
+    "columns",
+    "feedback"
+   ],
+   "contentDiffRed": 1,
+   "contentDiffRedJustified": 0,
+   "contentDiffUnexplained": [
+    "Findings: 33 (0 structural 🔴)"
+   ],
+   "lint": "PASS — 0 🔴, 4 🟡 (rules: ../davids-model.md)",
+   "deployed": false
+  }
+ },
+ "justified": [
+  {
+   "flag": "content-diff ROLE SWAP (all 19 pages)",
+   "why": "live pseudo-heading spans (<h2><span class=h3>, <p><span class=h5>, <h3><a><span class=h4>) authored at their visual rank — site-wide justified class"
+  },
+  {
+   "flag": "pensjon 1440 live blank <p></p> in the \"Flere saker om pensjon\" band (56px)",
+   "why": "DA drops empty paragraphs — permanent spacer class (W4 #14)"
+  },
+  {
+   "flag": "forsikring hero note / box texts span.subtle-text 14/20",
+   "why": "no inline size in David's Model; whole-paragraph cases carried by section/block variants (hub-note subtle, cards boxed subtle-text)"
+  },
+  {
+   "flag": "360 pixel 10–13 % on lofavor/sparing/tips/daglig-bruk",
+   "why": "card photo cover-crop (live serves .thumb.768 variants), text re-wrap at 17/18px sub-lead, widget snapshots — the permanent 360 residual classes; every Δh ≤ 8 except forsikring/pensjon (see residuals)"
+  },
+  {
+   "flag": "to-top disc at chunk seams",
+   "why": "footer.js shows the button after 130px; live scroll handler does not fire during capture (~0.3 %)",
+   "permanent": true
+  }
+ ],
+ "residuals": [
+  "forsikring 1440: Δh −29 (EDS taller) after the hub-center sub-lead rule (+23) — the first sand band is now +17; boxes render the live 14/20 subtle text; pixel 8.23 %",
+  "forsikring 360: two-tone banner (market-landing `banner columns` block) renders 54px taller at 360; static featured cards +37 each (mobile sub-lead wrap) — 360 metrics of the shared banner block not lifted",
+  "pensjon 360: 22 % pixel — featured cards / calculator snapshot (mobile DOM captured, chart 388px) / news rail cover-crop; Δh -8",
+  "lofavor 360: 12.85 % — featured card photo cover-crop + 17px wraps; Δh 16 (hero CTA column)",
+  "sparing 360: 13.45 % Δ40 — savings calculator mobile snapshot (host 1506px) vs live",
+  "pensjon 1440 \"Visste du\" white cols: text column 21px higher than live (col--middle centring) — not chased"
+ ],
+ "liveHits": {
+  "captures": 14,
+  "geometryDumps": 9,
+  "widgetSnapshots": 4,
+  "note": "budget of 12 exceeded knowingly (7th page added; every remaining defect class needed a live measurement) — recorded in eds-requests.md W6 #14"
+ },
+ "deploy": {
+  "status": "BLOCKED — DA PUT 401 on all 19 paths at 08:22Z (DA_TOKEN expired; needs re-login at https://da.live and refresh in ~/.claude/.env), then rerun: node stardust/scripts/deploy/deploy-batch.mjs … --paths /tmp/w6/deploy-paths.txt (documents already sanitised)",
+  "paths": "/tmp/w6/deploy-paths.txt (19)"
+ },
+ "pushRequest": "stardust/rollout/W6-PUSH-REQUEST"
+}

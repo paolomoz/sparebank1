@@ -22,7 +22,7 @@
   {
    "module": "band",
    "blocks": [
-    "columns"
+    "cards"
    ]
   },
   {
@@ -60,8 +60,11 @@
    "blocks": []
   },
   {
-   "module": "module",
-   "blocks": []
+   "module": "disclosure",
+   "blocks": [
+    "accordion",
+    "cards"
+   ]
   },
   {
    "module": "static-cards",
@@ -83,7 +86,9 @@
   },
   {
    "module": "reference",
-   "blocks": []
+   "blocks": [
+    "columns"
+   ]
   },
   {
    "module": "shortcuts",
@@ -99,36 +104,37 @@
   }
  ],
  "blocks": [
+  "cards",
   "columns",
   "banner",
-  "cards",
   "accordion",
   "shortcuts",
   "feedback"
  ],
  "notes": [
+  "lint D1 richtext hub-note subtle: the whole paragraph is a live span.subtle-text (14/20) — carried as the section style (David's Model has no inline size)",
   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "spacer: blank <p> dropped (live renders it as vertical space)",
+  "lint D3 cards boxed: the live white background-container cells of a grid row (illustration, title, text, expander) — one row per box [media][body][expander: label paragraph, then the revealed list (EW8: the label moves into the expand button)]",
+  "lint D1 cards boxed subtle-text: every live box paragraph is a span.subtle-text (14/20) — carried as the block variant (no inline size in David's Model)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-koffert-reise-rosa.svg is 47074 bytes of SVG (> 40000) — authored as DA media dame-koffert-reise-rosa.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/barekraft-skifte-sykkeldekk-lys-bakgrunn.svg is 52880 bytes of SVG (> 40000) — authored as DA media barekraft-skifte-sykkeldekk-lys-bakgrunn.png (rasterised)",
+  "lint D3 cards boxed: the live white background-container cells of a grid row (illustration, title, text, expander) — one row per box [media][body][expander: label paragraph, then the revealed list (EW8: the label moves into the expand button)]",
+  "lint D1 cards boxed subtle-text: every live box paragraph is a span.subtle-text (14/20) — carried as the block variant (no inline size in David's Model)",
+  "cards grid: consecutive same-shaped card rows folded into one block (D9)",
   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "lint D3 banner columns: one row per half — [illustration][heading, line, CTA(, partner logo)]; the colour variants are read in row order (like the columns lg-* cell model)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/Mennesker_personer_voksen_forelder_barn.svg is 77637 bytes of SVG (> 40000) — authored as DA media Mennesker_personer_voksen_forelder_barn.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/barn_spiller_fotball.svg is 93129 bytes of SVG (> 40000) — authored as DA media barn_spiller_fotball.png (rasterised)",
+  "lint D5 cards static featured hub: the live featured card list (photo + centred h3 + lead + CTA) — one row per card [media][body]",
   "lint D1 columns (image): a standalone illustration authored at 175px — the one-cell columns block carries the wN sizing model the default-content image cannot express",
-  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
-  "module progressive-disclosure: the replica prototype carries this module as richtext only (author.mjs unknown) — authored as default content; replica request filed",
-  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "lint D1 accordion disclosure next: the live progressive-disclosure pill reveals a card grid + text — the label row toggles the following section (disclosure-panel, hidden at rest; EW8: the label moves into the button); no nested blocks",
   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
-  "spacer: blank <p> dropped (live renders it as vertical space)",
-  "spacer: blank <p> dropped (live renders it as vertical space)",
-  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
-  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
-  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
-  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
-  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
-  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/bonde-ku-landbruk-mork.svg is 56362 bytes of SVG (> 40000) — authored as DA media bonde-ku-landbruk-mork.png (rasterised)",
+  "lint D3 cards boxed: the live white background-container cells of a grid row (illustration, title, text, expander) — one row per box [media][body][expander: label paragraph, then the revealed list (EW8: the label moves into the expand button)]",
+  "lint D1 cards boxed subtle-text: every live box paragraph is a span.subtle-text (14/20) — carried as the block variant (no inline size in David's Model)",
+  "cards grid: consecutive same-shaped card rows folded into one block (D9)",
   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
@@ -137,6 +143,19 @@
   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
   "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: blank <p> dropped (live renders it as vertical space)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "spacer: leading/trailing <br> dropped from a paragraph (live renders a blank line)",
+  "band: a visible rule between band modules → the section is split at the rule (rule-visible carries the live 1px line + 64/72px rhythm)",
+  "reference cols: the live reference module holds a columns-grid (partner logo + text) in a syrin band — columns block, section style reference-cols",
   "lint D1 shortcuts: one cell with a plain list of links (D5 simple list) — the block renders the live pill buttons with chevrons; the heading above stays default content",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
@@ -146,7 +165,8 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/dame-koffert-reise-rosa.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/mennesker/2024/barekraft-skifte-sykkeldekk-lys-bakgrunn.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/staende/Mennesker_personer_voksen_forelder_barn.svg",
-  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/barn_spiller_fotball.svg"
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/barn_spiller_fotball.svg",
+  "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/liggende/bonde-ku-landbruk-mork.svg"
  ],
- "writtenAt": "2026-09-14T20:56:51.572Z"
+ "writtenAt": "2026-09-15T08:21:03.993Z"
 }

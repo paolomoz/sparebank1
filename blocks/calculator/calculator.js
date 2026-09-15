@@ -8,7 +8,9 @@
  */
 export default async function decorate(block) {
   const a = block.querySelector('a'); if (!a) return;
-  const url = new URL(a.getAttribute('href'), window.location.href);
+  let url = new URL(a.getAttribute('href'), window.location.href);
+  // additive (category-hub siblings): a `widget-*` snapshot captured in its live mobile state (<name>-360.html) serves viewports under 768 — the live apps re-render their layout per breakpoint
+  if ([...block.classList].some((c) => c.startsWith('widget-')) && window.matchMedia('(max-width: 767px)').matches) { const m = url.pathname.replace(/\.html$/, '-360.html'); try { const head = await fetch(m, { method: 'HEAD' }); if (head.ok) url = new URL(m, window.location.href); } catch { /* keep the desktop snapshot */ } }
   const label = a.textContent.trim();
   block.textContent = '';
   const host = document.createElement('div'); host.className = 'calculator__host'; host.setAttribute('role', 'region'); host.setAttribute('aria-label', label);

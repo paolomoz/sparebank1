@@ -61,3 +61,8 @@ main .section .banner-wrapper { max-width: var(--container); }
   .banner.columns .banner-small__bottom p.banner-small__bottom-image, .banner.columns .banner-small__bottom-image { margin: 5px 0 0 20px; }
 }
 /* ===== /market-landing ===== */
+
+/* ===== category-hub siblings (W6, additive) ===== */
+.banner.columns .banner-small__column--color6 { background: #c2e7da; } /* live banner-small__bg-color6 rgb(194 231 218) */
+.banner.columns.color6 .banner-small__inner--col { background: transparent; } /* the colour lives on the half, not the inner box (the core color4 inner rule painted a sand box on the mint half at 360) */
+/* ===== /category-hub siblings ===== */

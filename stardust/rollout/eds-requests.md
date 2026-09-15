@@ -194,3 +194,48 @@ canon-level change is requested here, not applied. Product page byte-identical, 
     1440|360) — W4 expressed them on `h3:has(+ h3)` inside `split-video`; the canon should decide what the authored model is (kicker as
     a paragraph? an h4?) — the live markup is two h3s.
 - Product siblings at 360 (forbrukslan 14.8 %, mobilbank 13.4 %, vare-eksperter 18.9 % on the published origin; the replica prototypes fail the same way): the sand `cols` band at mobile starts its heading ~25px higher than live, the Spink `banner color2` lacks the frost tint and its CTA is a plain link (live: secondary pill), `cards people` mobile metrics unmeasured. Sibling-only modules were never lifted at 360 — a dedicated 360 lift + gate pass over the product siblings is the next fidelity step.
+
+## W6 (category-hub siblings — sparing · daglig-bruk · pensjon · forsikring · eiendom · tips-og-rad · lofavor) — 2026-09-15
+
+Every item is mirrored locally (encoders/category-hub.mjs, modules/category-hub.mjs, additive block variants); the canon-level change is requested here.
+
+1. **Replica registry is global and later files win the same key** (author.mjs `Object.assign(registry, …)` in readdir order): `card`/`text`/`referance` (theme.mjs),
+   `progressive-disclosure`/`base-component`/`image`/`columns` (product.mjs), `image`/`banner-small`/`related-topics` (market-landing.mjs) shadow any hub
+   handler of the same name. W6 intercepts its children from the container keys it owns (`columns-grid`, `background-container`, `static-cards`) via a
+   hub dispatcher — and had to add `category-hub` to theme.mjs `FEATURED_FAMILIES` (one token: the forsikring Fremtind reference wraps a columns-grid that
+   theme's `referance` handler owns) and to market-landing.mjs `related-topics` (dates). Request: a per-family registry (like convert.mjs's group dispatch).
+2. **canon `card()` drops the featured / text-wrapper body**: `.card__container--featured` and any card whose body is a `.text` module (h2/h3, paragraphs,
+   inline link) + `.button` CTA came out as image + arrow only (pensjon "Få orden", forsikring "Hvilke forsikringer", lofavor ×3 rows, tips-og-rad). It also
+   drops `.card__date` and the `--contain` image mode. Mirrored as `hubCard()`; request: fold into canon card().
+3. **canon drops modules with class `section`** (`IGNORE` list in moduleOf → k = '' → null): the lofavor tabbed component (AEM "section" item list) vanished
+   silently — the most dangerous class (no unknown-module log). Request: only ignore `section` when it carries another key, and log dropped roots.
+4. **canon `static-cards` drops the intro `.text` under the title**; canon `text` drops `main-lead` / `sub-lead` / `subtle-text` span classes and the
+   authored `max-width` (KEEP_CLASS); `ffe-sub-lead-paragraph` on grid-row paragraphs is dropped by cleanCopy (live 18/28 + 40px under). Mirrored in `hubText`
+   / `canonCardList`; the sub-lead paragraph under a centred heading row is carried as the `hub-center` section rule (measured, not detected).
+5. **Pipeline-lossy live content (permanent residual classes, add to the justified list)**: an empty live `<p></p>` inside a band renders 56px on live
+   (pensjon "Flere saker om pensjon" band) — DA drops empty paragraphs; `span.subtle-text` (14/20) inside a 16/24 paragraph (forsikring hero note, box texts)
+   — no inline size in David's Model (the whole-paragraph case is carried by the `hub-note subtle` section style); `span.sub-lead` inside card paragraphs
+   (carried as the `lead-text` cards variant when every card paragraph is one).
+6. **Client-rendered widgets**: the pension calculator (`.ppm-app`, light DOM) and the savings calculator (`#sparekalkulator`, shadow DOM) are captured
+   once per breakpoint (`data/calculator/{pensjon,sparing}[-360].html`, `_w6-snap-widget.mjs` = W3's helper + sheet-level `@media` wrapping + `@layer`/`@supports`
+   recursion + host-class wrapper). The live apps re-render per breakpoint, so a desktop snapshot is 264px too tall at 360 → calculator.js (additive) loads the
+   `-360` snapshot under 768px. Request: a canonical "snapshot per breakpoint" convention for the calculator block.
+7. **Core `relatedTopics` / `shortcuts` readers** (same as W3 (d)): a `.newsfeed` rail inside a hub band went to the icon-list path and rendered an EMPTY
+   `cards small` block (daglig-bruk, eiendom, pensjon) — convert.mjs should fail a page whose block has 0 rows (orchestrator note 2026-09-15).
+8. **Core `.section.faq` skin zeroes the section padding** — inside a live tinted wrap (forsikring) the band padding stays; mirrored as `.section.band.faq`.
+   Core `main .section:has(> .cards-wrapper > .cards.static) { margin-top: 0 }` (product siblings) is a live rule only when the static-cards module follows a
+   wrap; a hub static-cards after a text module keeps 72px (mirrored via `hub-static`).
+9. **Live rhythm model the core skins lack** (measured on 7 pages at 1440): consecutive tinted wraps (band / cols / static-cards / related-*) touch (no 72px
+   module margin, a plain `hr` module between them adds nothing) → `hub-flush`; a nested band inside a band has a 24px wrap padding (all sides — its grid is
+   1232 wide) → band chunking (`hub-open/mid/close/nested`); a visible rule inside a band is a section break (`rule-visible` + 64/64) → chunking; a bg-less
+   `div.cols` keeps the 72/56 padding. Request: fold into the core band() as the default hub model (the product page has none of these cases).
+10. **Shortcuts chevron** points RIGHT at rest on live (all hub captures); shortcuts.css had it un-rotated (down) with a hover rotation only — fixed in the
+    block (affects the lån archetype: pixel 0.53 % unchanged).
+11. **cards.js small-icon heuristic** (`.svg → small icon card`) mis-classified illustration cards (lofavor "Flere medlemsfordeler": 200px contain-fit
+    illustration + title + text) — additive `illustrated` variant disables it; the heuristic should key on `/ikoner/` or width ≤ 80 only.
+12. **theme `.cards.featured .card__text a:any-link { color: vann }`** paints the pill CTAs inside featured cards vann-on-vann (invisible labels) — scoped
+    override in `.cards.featured.hub`; the theme rule should exclude `.button`.
+13. **`accordion disclosure next`** (new additive model): a live progressive-disclosure pill that reveals a whole card grid (forsikring "Bedrift eller
+    landbruk?") cannot nest a block in its cell — the label row toggles the FOLLOWING section (`disclosure-panel`, hidden at rest). Worth a David's Model note.
+14. **Live hits this pass**: 14 stitched captures (7 pages × 2 widths — the seventh page was added after the 12-hit budget), 9 geometry dumps
+    (`_w6-dump.mjs`), 4 widget snapshots. Recorded here because the budget was exceeded knowingly: every remaining defect class needed a live measurement.

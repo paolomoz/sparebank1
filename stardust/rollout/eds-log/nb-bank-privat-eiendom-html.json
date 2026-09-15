@@ -51,11 +51,12 @@
  ],
  "notes": [
   "lint D3 bank-choice: rows are role-shaped by position (heading, sublead, [label][placeholder], position button, expand button, [bank link][tagline]×N) — the block reads them positionally",
-  "cards nav: 3 visual-nav modules (0 photo, 3 icon) folded into one block — one row per card",
+  "cards nav: 3 visual-nav modules (3 photo, 0 icon) folded into one block — one row per card",
+  "cards nav big: the live \"big\" visual-nav card (photo + card with a 36/44 title-medium heading and a 19.2/32 lead) — variant big",
   "lint D1 shortcuts: one cell with a plain list of links (D5 simple list) — the block renders the live pill buttons with chevrons; the heading above stays default content"
  ],
  "gaps": [],
  "assets": [],
  "rasterise": [],
- "writtenAt": "2026-09-14T20:56:51.466Z"
+ "writtenAt": "2026-09-15T08:17:17.617Z"
 }

@@ -7,6 +7,7 @@
  */
 import * as L from '../lib.mjs';
 import { ENCODERS as CORE, richtext, cardRows, bandBg, styleOf } from '../encoders.mjs';
+import HUB from './category-hub.mjs';
 import hub, { familyOf, normaliseHrefs, tint } from './category-hub.mjs';
 
 const { section, block, heading, q, qa, cls, esc, inline, pic } = L;
@@ -47,7 +48,7 @@ export default {
 
   // news rail with publication dates: [tag][title][date] — the date is the short paragraph after the title (cards news marks it)
   'related-topics': (root, ctx) => {
-    if (!isMarket(ctx)) return CORE['related-topics'](root, ctx);
+    if (!isMarket(ctx)) return HUB['related-topics'] ? HUB['related-topics'](root, ctx) : CORE['related-topics'](root, ctx); // W6: hub pages get their own rail (dates, bodies) — falls back to the core
     const cards = qa(root, '.newsfeed .card').map(normaliseHrefs);
     const rows = cardRows(cards, ctx).map((row, i) => { const d = q(cards[i], '.card__date'); return d ? [row[0], `${row[1]}<p>${esc(d.textContent.trim())}</p>`] : row; });
     if (cards.some((c) => q(c, '.card__date'))) ctx.notes.push('cards news: a news card carries its publication date as the paragraph after the title (live .card__date)');
@@ -58,7 +59,7 @@ export default {
 
   // top-level "Sammenlign priser" text: on market landings the h2 renders at h2 size in the medium face (live .main > .richtext h2), 620px column
   richtext: (root, ctx) => {
-    if (!isMarket(ctx)) return CORE.richtext(root, ctx);
+    if (!isMarket(ctx)) return HUB.richtext(root, ctx); // W6: the group applies this file last — hand non-market pages to the hub richtext (title+lead absorption, hub-note), which itself falls back to the core
     const parts = [...root.children].map((n) => (/^h[1-6]$/i.test(n.tagName) ? heading(n, ctx) : richtext({ childNodes: [n] }, ctx)));
     return { html: section(parts, { style: 'market-compare, center, narrow, gap-48' }), blocks: [] };
   },

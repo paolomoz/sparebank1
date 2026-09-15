@@ -22,12 +22,14 @@
   {
    "module": "band",
    "blocks": [
-    "columns"
+    "cards"
    ]
   },
   {
-   "module": "module",
-   "blocks": []
+   "module": "text-and-image",
+   "blocks": [
+    "columns"
+   ]
   },
   {
    "module": "feedback",
@@ -39,6 +41,7 @@
  "blocks": [
   "bank-choice",
   "breadcrumbs",
+  "cards",
   "columns",
   "feedback"
  ],
@@ -48,9 +51,14 @@
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-hverdagen.svg is 61249 bytes of SVG (> 40000) — authored as DA media tips-og-rad-hverdagen.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-mitt-hjem.svg is 86797 bytes of SVG (> 40000) — authored as DA media tips-og-rad-mitt-hjem.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-familieliv.svg is 61914 bytes of SVG (> 40000) — authored as DA media tips-og-rad-familieliv.png (rasterised)",
+  "lint D3 cards boxed: the live white background-container cells of a grid row (illustration, title, text, expander) — one row per box [media][body][expander: label paragraph, then the revealed list (EW8: the label moves into the expand button)]",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-toffe-tider.svg is 63833 bytes of SVG (> 40000) — authored as DA media tips-og-rad-toffe-tider.png (rasterised)",
   "media: https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-ung.svg is 128311 bytes of SVG (> 40000) — authored as DA media tips-og-rad-ung.png (rasterised)",
-  "module text-and-image: the replica prototype carries this module as richtext only (author.mjs unknown) — authored as default content; replica request filed",
+  "lint D3 cards boxed: the live white background-container cells of a grid row (illustration, title, text, expander) — one row per box [media][body][expander: label paragraph, then the revealed list (EW8: the label moves into the expand button)]",
+  "band: a nested band (live wrap padding 24px) → its own flush section chunk (hub-nested)",
+  "cards grid: consecutive same-shaped card rows folded into one block (D9)",
+  "image: a live 3px LO logo (authoring debris) dropped",
+  "columns text-and-image: the live text-and-image module (text + CTA beside the partner logo and an illustration) — the media cell holds both images (logo first, media-logo model)",
   "lint D1 feedback: interactive widget (thumbs up/down, thanks state; dynamics #5 interim) — the row carries its question only"
  ],
  "gaps": [],
@@ -62,5 +70,5 @@
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-toffe-tider.svg",
   "https://www.sparebank1.no/content/dam/SB1/illustrasjoner/komposisjoner/2024/tips-og-rad-ung.svg"
  ],
- "writtenAt": "2026-09-14T20:56:52.240Z"
+ "writtenAt": "2026-09-15T08:21:04.092Z"
 }

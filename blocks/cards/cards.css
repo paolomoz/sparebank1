@@ -313,3 +313,97 @@
   .cards.grid.cols-9 .card-list { grid-template-columns: repeat(3, 1fr); max-width: min(75%, 960px); }
 }
 /* ===== /markedsnytt-listing ===== */
+
+/* ===== category-hub siblings (W6, additive variants) =====
+   Values lifted live 2026-09-15 (stardust/scripts/replica/_w6-dump.mjs on pensjon/forsikring/lofavor/tips-og-rad/eiendom at 1440 + 360).
+   featured hub — the live card__container--featured on hub pages: 200/270px media (contain illustration with 8px top/side padding, or a cover photo
+   with `photo`), h2>span.h3 title 20/24 → 28/36 medium (margin 0 0 8 → 24), 16/24 paragraphs, the CTA row pinned to the bottom; `center` = live
+   text-align center on the body. boxed — the white background-container "category box" (padding 16 → 24, no border/radius, 30px-radius
+   illustration, h3 28/36 with its own link, 16/24 text, an expander: inline text button "Se alle ⌄" (`inline-expand`) or a secondary pill).
+   illustrated — medium clickable cards whose media is a contain-fit illustration (200px area, image top-aligned, 8px padding).
+   plain — medium text-only cards (20/24 title). nav big — the eiendom "big" visual-nav card (36/44 title-medium heading, 19.2/32 lead). */
+.cards.featured.hub .card { grid-template-rows: 200px 1fr; height: 100%; margin-bottom: 0; } /* live: the grid row stretches every card to the tallest; the 16px sits in the cell padding below */
+.cards.featured.hub .card-list li { padding-bottom: 32px; }
+.cards.featured.hub .card__actions p { margin: 8px 0; }
+.cards.featured.hub .card--small, .cards.featured.hub .card--no-image { grid-template-rows: 1fr; align-items: stretch; }
+.cards.featured.hub .card__body { display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr auto; align-content: stretch; align-items: start; padding: 16px; }
+.cards.featured.hub .card--small .card__body { align-items: start; }
+.cards.featured.hub .card__content > :first-child { margin-top: 0; }
+.cards.featured.hub .card__title { display: block; margin: 0 0 8px; font-family: var(--font-medium); font-size: 20px; line-height: 28px; color: var(--fjell); }
+.cards.featured.hub .card__title a:any-link { color: inherit; border: 0; }
+.cards.featured.hub .card__text { margin: 16px 0; font-size: 16px; line-height: 24px; color: var(--text); }
+.cards.featured.hub .card__text a:not(.button):any-link { color: var(--vann); border-bottom: 1px solid var(--vann); }
+.cards.featured.hub .card__actions { align-self: end; margin-top: 0; } /* live: the text-wrapper keeps its 16px paragraph margin, the button block adds 8/8 */
+.cards.featured.hub .card__actions p.button-wrapper { margin: 8px 0; }
+.cards.featured.hub .card__actions a.button { display: flex; width: 100%; }
+.cards.featured.hub .card__actions a.button:any-link { color: var(--white); } /* the theme featured rule paints every card__text link vann — the pills keep their own colours */
+.cards.featured.hub .card__actions a.button.secondary:any-link { color: var(--vann); }
+.cards.featured.hub .card__actions a.button:hover { color: var(--white); }
+.cards.featured.hub .card__actions a:not(.button):any-link { display: inline-block; padding: 8px 17px; min-height: 44px; line-height: 24px; box-sizing: border-box; color: var(--vann); border: 2px solid transparent; border-radius: 22px; text-decoration: underline; }
+.cards.featured.hub.center .card__content, .cards.featured.hub.center .card__actions { text-align: center; }
+.cards.featured.hub .card__media picture, .cards.featured.hub .card__media img { object-position: 50% 50%; }
+.cards.featured.hub.photo .card__media { max-height: none; }
+.cards.featured.hub.photo .card__media img { display: block; width: 100%; height: 200px; max-height: none; padding: 0; object-fit: cover; }
+.cards.featured.hub .card__arrow { display: none; }
+.cards.grid.hub .card__arrow .icon, .cards.news.hub .card__arrow .icon { display: block; height: 32px; line-height: 0; }
+@media (width <= 767px) { .cards.news.hub .card-list li { margin-top: 0; } } /* live 360 rail: the heading's 24px is the whole gap to the cards */
+.cards.grid.hub .card { height: auto; } /* live: the card sits on its 16px margin inside the row (col = card + 16 + 16) */ /* live title-only photo card: 32px arrow row (pensjon "Gode råd" card 266px) */
+.cards.featured.hub.lead-text .card__text:not(.button-wrapper) { margin: 16px 0 18px; font-size: 18px; line-height: 28px; } /* live span.sub-lead paragraphs */
+
+.cards.grid.boxed .card-list li { padding: 0 16px 16px; } /* live column content padding 16 (box = column − 32: forsikring 288 in 320, tips 379 in 411) */
+.cards.boxed .card, .cards.boxed .card--medium, .cards.boxed .card--small { display: flex; flex-direction: column; grid-template-rows: none; height: 100%; padding: 16px; border: 0; border-radius: 0; background: var(--white); }
+.cards.boxed .card--clickable:hover { background: var(--white); box-shadow: none; }
+.cards.boxed .card__media { flex: 0 0 auto; height: auto; border-radius: 0; overflow: visible; line-height: 24px; }
+.cards.boxed .card__media picture { display: inline; }
+.cards.boxed .card__media img { display: inline; width: 100%; height: auto; border-radius: 30px; object-fit: fill; vertical-align: baseline; }
+.cards.boxed.h200 .card__media img { height: 200px; object-fit: contain; }
+.cards.boxed .card__body { display: flex; flex: 1 1 auto; flex-direction: column; padding: 0; }
+.cards.boxed .card__content { flex: 1 1 auto; line-height: 24px; }
+.cards.boxed .card__title { display: block; margin: 0 0 8px; font-family: var(--font-medium); font-size: 20px; line-height: 24px; color: var(--fjell); }
+.cards.boxed .card__title a:any-link { color: var(--vann); border-bottom: 1px solid var(--vann); }
+.cards.boxed h4.card__title { font-size: 18px; line-height: 28px; } /* live h3 > a > span.h4 (forsikring): 18/28 in the mobile h3 line, 22px glyphs on the 36px h3 line from 768 */
+@media (width <= 767px) { .cards.static.hub .card-list li, .cards.static.featured.hub .card-list li { width: 100%; } .cards.featured.hub.lead-text .card__text:not(.button-wrapper) { margin-bottom: 17px; font-size: 17px; line-height: 24px; } } /* live 360: static cards fill the 328px column; mobile sub-lead 17/24 */
+.cards.boxed.subtle-text .card__text:not(:has(a)) { font-size: 14px; line-height: 20px; margin: 16px 0; } /* live span.subtle-text box paragraphs (forsikring) — the 16/24 paragraph strut stays: 48px for two lines */
+.cards.boxed.subtle-text .card__text:not(:has(a))::after { content: ''; display: block; height: 4px; } /* live h3 > a > span.h4 (forsikring): 22/28 glyphs on the h3's 36px line */
+.cards.boxed .card__text { margin: 16px 0; font-size: 16px; line-height: 24px; color: var(--text); }
+.cards.boxed .card__text a:not(.button):any-link { color: var(--vann); border-bottom: 1px solid var(--vann); }
+.cards.boxed .card__arrow { display: none; }
+.cards.boxed .card__expander { margin: 0 0 16px; }
+.cards.boxed .card__expander p { margin: 0; }
+.cards.boxed .card__expand { display: flex; width: 100%; height: 44px; min-height: 44px; margin: 0; }
+.cards.boxed .card__expand .card__expand-icon { display: none; }
+.cards.boxed .card__content > :last-child { margin-bottom: 0; } /* the live 16px paragraph margin is the disclosure module's own spacing (card__expander margin) */
+.cards.boxed .card__expand--inline { display: inline-flex; align-items: center; gap: 4px; height: 24px; min-height: 0; margin: 0; padding: 0 8px; border: 0; border-radius: 22px; background: none; color: var(--vann); font: 16px/18.4px var(--font); cursor: pointer; }
+.cards.boxed .card__expand--inline .card__expand-icon { display: inline-flex; width: 16px; height: 16px; line-height: 0; }
+.cards.boxed .card__expand--inline svg { width: 16px; height: 16px; transition: transform 0.2s var(--ease); }
+.cards.boxed .card--open .card__expand--inline svg { transform: rotate(180deg); }
+.cards.boxed.inline-expand .card__expander { text-align: center; line-height: 24px; }
+.cards.boxed .card__panel { padding-top: 16px; text-align: left; }
+.cards.boxed .card__panel p { margin: 16px 0; }
+.cards.boxed .card__panel[hidden] { display: none; }
+
+.cards.illustrated .card__media { display: block; height: var(--card-image-height); border-radius: 15px 15px 0 0; overflow: hidden; }
+.cards.illustrated .card__media img { box-sizing: border-box; height: var(--card-image-height); padding: 8px 8px 0; object-fit: contain; object-position: 50% 0; }
+.cards.plain .card--no-image .card__title { font-size: 20px; line-height: 24px; }
+.cards.plain .card--no-image .card__body { align-items: start; align-content: start; }
+
+.cards.nav.big .card--medium { height: 500px; }
+.cards.nav.big .card--medium .card__media, .cards.nav.big .card--medium .card__media picture, .cards.nav.big .card--medium .card__media img { height: 500px; }
+.cards.nav.big .card--medium .card__body { margin: -136px 16px 0; }
+
+@media (width >= 768px) {
+  .cards.featured.hub .card { grid-template-rows: 270px 1fr; }
+  .cards.featured.hub .card--small, .cards.featured.hub .card--no-image { grid-template-rows: 1fr; }
+  .cards.featured.hub .card__title { margin-bottom: 24px; font-size: 28px; line-height: 36px; }
+  .cards.featured.hub .card__actions a.button { display: inline-flex; width: auto; }
+  .cards.featured.hub.photo .card__media img { height: 270px; }
+  .cards.boxed .card { padding: 24px; }
+  .cards.boxed .card__title { margin-bottom: 24px; font-size: 28px; line-height: 36px; }
+  .cards.boxed h4.card__title { font-size: 22px; line-height: 36px; }
+  .cards.boxed .card__expand { display: inline-flex; width: auto; }
+  .cards.nav.big .card--medium { height: 292px; }
+  .cards.nav.big .card--medium .card__media, .cards.nav.big .card--medium .card__media picture, .cards.nav.big .card--medium .card__media img { height: 260px; }
+  .cards.nav.big .card--medium .card__body { margin: 16px 16px 16px 8px; }
+  .cards.nav.big .card--medium .card__title { font-family: var(--font-heading); font-size: 36px; line-height: 44px; }
+}
+/* ===== /category-hub siblings ===== */

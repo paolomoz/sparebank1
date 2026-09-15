@@ -1,0 +1,14 @@
+{
+ "url": "https://www.sparebank1.no/nb/bank/privat/pensjon.html",
+ "hostSel": ".base-component .ppm-app",
+ "shadow": false,
+ "rect": {
+  "w": 1280,
+  "h": 520
+ },
+ "hostClass": "ppm-app",
+ "hostId": "",
+ "capturedAt": "2026-09-15T05:41:10.349Z",
+ "bytes": 251005,
+ "note": "W6: body wrapped in <div class=\"ppm-app\"> (host class; the captured rules are .ppm-app descendant selectors); relative asset URLs made absolute"
+}

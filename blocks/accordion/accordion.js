@@ -57,6 +57,12 @@ function decorateDisclosure(block) {
   const [labelCell, contentCell] = [...row.children]; const id = `${block.dataset.blockName || 'disclosure'}-${Math.random().toString(36).slice(2, 6)}`;
   const btn = el('button', { type: 'button', class: 'button secondary disclosure__btn', 'aria-expanded': 'false', 'aria-controls': id });
   while (labelCell?.firstChild) btn.append(labelCell.firstChild);
+  if (block.classList.contains('next') && !contentCell) { // additive (category-hub siblings): the revealed content is the FOLLOWING section (a card grid cannot nest in a cell) — hidden at rest
+    const target = block.closest('.section')?.nextElementSibling; if (!target) return;
+    target.id = target.id || id; btn.setAttribute('aria-controls', target.id); target.classList.add('disclosure-panel'); target.hidden = true;
+    btn.addEventListener('click', () => { const open = btn.getAttribute('aria-expanded') === 'true'; btn.setAttribute('aria-expanded', String(!open)); target.hidden = open; block.classList.toggle('disclosure--open', !open); });
+    block.replaceChildren(el('div', { class: 'disclosure__toggle' }, btn)); return;
+  }
   const inner = el('div', { class: 'disclosure__inner' }); while (contentCell?.firstChild) inner.append(contentCell.firstChild);
   const content = el('div', { class: `disclosure__content${block.classList.contains('box') ? ' disclosure__content--box' : ''}` }, inner);
   const panel = el('div', { class: 'disclosure__panel', id, role: 'region', hidden: true }, content);
